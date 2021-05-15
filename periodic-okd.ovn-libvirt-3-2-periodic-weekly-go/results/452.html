@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 14 May 2021 12:02:39 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 15 May 2021 10:57:56 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 14 May 2021 16:42:53 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 15 May 2021 12:56:42 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 04:40:14.60
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 01:58:46.25
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#hosts">3 hosts</a>
+                            <a href="../playbooks/1.html#hosts">5 hosts</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">453 results</a>
+                            <a href="../playbooks/1.html#results">618 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">46 files</a>
+                            <a href="../playbooks/1.html#files">47 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_okd : verify that all the csr are loaded and aproved for the deployed nodes</a></li>
-            <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/46.html#line-19">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_okd/tasks/50_post_deployment_tasks.yml:19</a>
+            <li><strong>Task</strong>: ../../roles/kubeinit_apache : Ensure user specific systemd instance are persistent</a></li>
+            <li><strong>Action</strong>: ansible.builtin.command</li>
+            <li><strong>Path</strong>: <a href="../files/38.html#line-63">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_apache/tasks/main.yml:63</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 14 May 2021 14:18:45 -0400</li>
-            <li><strong>Ended</strong>: 14 May 2021 15:01:52 -0400</li>
-            <li><strong>Duration</strong>: 00:43:06.66</li>
+            <li><strong>Started</strong>: 15 May 2021 11:38:54 -0400</li>
+            <li><strong>Ended</strong>: 15 May 2021 11:38:55 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.98</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -204,17 +204,6 @@
                 </tr>
             </thead>
             <tbody>
-                
-                <tr role="row">
-                    <td role="cell" id="attempts" data-label="attempts" class="pf-m-width-20">
-                        <a href="#attempts">attempts</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>15
-</pre></div>
-
-                    </td>
-                </tr>
                 
                 <tr role="row">
                     <td role="cell" id="changed" data-label="changed" class="pf-m-width-20">
@@ -232,8 +221,11 @@
                         <a href="#cmd">cmd</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>set -o pipefail
-export KUBECONFIG=~/install_dir/auth/kubeconfig; oc get csr -ojson | jq -r &#39;.items[] | .metadata.name&#39; | xargs oc adm certificate approve &gt;/dev/null 2&gt;&amp;1; oc get csr | grep Approved
+                        <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;/usr/bin/loginctl&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;enable-linger&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;root&quot;</span>
+<span class="p">]</span>
 </pre></div>
 
                     </td>
@@ -244,7 +236,7 @@ export KUBECONFIG=~/install_dir/auth/kubeconfig; oc get csr -ojson | jq -r &#39;
                         <a href="#delta">delta</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:02:20.080259
+                        <div class="codehilite"><pre><span></span>0:00:00.017214
 </pre></div>
 
                     </td>
@@ -255,7 +247,7 @@ export KUBECONFIG=~/install_dir/auth/kubeconfig; oc get csr -ojson | jq -r &#39;
                         <a href="#end">end</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-14 19:01:51.869434
+                        <div class="codehilite"><pre><span></span>2021-05-15 15:38:55.559676
 </pre></div>
 
                     </td>
@@ -268,12 +260,12 @@ export KUBECONFIG=~/install_dir/auth/kubeconfig; oc get csr -ojson | jq -r &#39;
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nexport KUBECONFIG=~/install_dir/auth/kubeconfig; oc get csr -ojson | jq -r &#39;.items[] | .metadata.name&#39; | xargs oc adm certificate approve &gt;/dev/null 2&gt;&amp;1; oc get csr | grep Approved\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;/usr/bin/loginctl enable-linger root\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
@@ -302,7 +294,7 @@ export KUBECONFIG=~/install_dir/auth/kubeconfig; oc get csr -ojson | jq -r &#39;
                         <a href="#start">start</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-14 18:59:31.789175
+                        <div class="codehilite"><pre><span></span>2021-05-15 15:38:55.542462
 </pre></div>
 
                     </td>
@@ -335,16 +327,7 @@ export KUBECONFIG=~/install_dir/auth/kubeconfig; oc get csr -ojson | jq -r &#39;
                         <a href="#stdout">stdout</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>csr-6jm2f   29m    kubernetes.io/kube-apiserver-client-kubelet   system:serviceaccount:openshift-machine-config-operator:node-bootstrapper   Approved
-csr-8tsqw   103m   kubernetes.io/kube-apiserver-client-kubelet   system:serviceaccount:openshift-machine-config-operator:node-bootstrapper   Approved,Issued
-csr-hkhhq   98m    kubernetes.io/kubelet-serving                 system:node:localhost                                                       Approved,Issued
-csr-hpvh7   13m    kubernetes.io/kube-apiserver-client-kubelet   system:serviceaccount:openshift-machine-config-operator:node-bootstrapper   Approved
-csr-khb9x   103m   kubernetes.io/kubelet-serving                 system:node:master1.okdcluster.kubeinit.local                               Approved,Issued
-csr-kpxtk   29m    kubernetes.io/kube-apiserver-client-kubelet   system:serviceaccount:openshift-machine-config-operator:node-bootstrapper   Approved
-csr-pvjnh   103m   kubernetes.io/kube-apiserver-client-kubelet   system:serviceaccount:openshift-machine-config-operator:node-bootstrapper   Approved,Issued
-csr-q6gx8   13m    kubernetes.io/kube-apiserver-client-kubelet   system:serviceaccount:openshift-machine-config-operator:node-bootstrapper   Approved
-csr-vtgcp   103m   kubernetes.io/kubelet-serving                 system:node:master0.okdcluster.kubeinit.local                               Approved,Issued
-csr-xwlm8   98m    kubernetes.io/kube-apiserver-client-kubelet   system:serviceaccount:openshift-machine-config-operator:node-bootstrapper   Approved,Issued
+                        <div class="codehilite"><pre><span></span>
 </pre></div>
 
                     </td>
@@ -355,18 +338,7 @@ csr-xwlm8   98m    kubernetes.io/kube-apiserver-client-kubelet   system:servicea
                         <a href="#stdout_lines">stdout_lines</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;csr-6jm2f   29m    kubernetes.io/kube-apiserver-client-kubelet   system:serviceaccount:openshift-machine-config-operator:node-bootstrapper   Approved&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;csr-8tsqw   103m   kubernetes.io/kube-apiserver-client-kubelet   system:serviceaccount:openshift-machine-config-operator:node-bootstrapper   Approved,Issued&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;csr-hkhhq   98m    kubernetes.io/kubelet-serving                 system:node:localhost                                                       Approved,Issued&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;csr-hpvh7   13m    kubernetes.io/kube-apiserver-client-kubelet   system:serviceaccount:openshift-machine-config-operator:node-bootstrapper   Approved&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;csr-khb9x   103m   kubernetes.io/kubelet-serving                 system:node:master1.okdcluster.kubeinit.local                               Approved,Issued&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;csr-kpxtk   29m    kubernetes.io/kube-apiserver-client-kubelet   system:serviceaccount:openshift-machine-config-operator:node-bootstrapper   Approved&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;csr-pvjnh   103m   kubernetes.io/kube-apiserver-client-kubelet   system:serviceaccount:openshift-machine-config-operator:node-bootstrapper   Approved,Issued&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;csr-q6gx8   13m    kubernetes.io/kube-apiserver-client-kubelet   system:serviceaccount:openshift-machine-config-operator:node-bootstrapper   Approved&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;csr-vtgcp   103m   kubernetes.io/kubelet-serving                 system:node:master0.okdcluster.kubeinit.local                               Approved,Issued&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;csr-xwlm8   98m    kubernetes.io/kube-apiserver-client-kubelet   system:serviceaccount:openshift-machine-config-operator:node-bootstrapper   Approved,Issued&quot;</span>
-<span class="p">]</span>
+                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
 </pre></div>
 
                     </td>

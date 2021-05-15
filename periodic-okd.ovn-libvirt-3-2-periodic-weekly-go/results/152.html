@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 14 May 2021 12:02:39 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 15 May 2021 10:57:56 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 14 May 2021 16:42:53 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 15 May 2021 12:56:42 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 04:40:14.60
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 01:58:46.25
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#hosts">3 hosts</a>
+                            <a href="../playbooks/1.html#hosts">5 hosts</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">453 results</a>
+                            <a href="../playbooks/1.html#results">618 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">46 files</a>
+                            <a href="../playbooks/1.html#files">47 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Install OVN packages in Ubuntu/Debian (Slave Hypervisor)</a></li>
-            <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/13.html#line-77">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/20_ovn_install.yml:77</a>
-            <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-01</a></li>
-            <li><strong>Status</strong>: skipped</li>
-            <li><strong>Started</strong>: 14 May 2021 12:04:36 -0400</li>
-            <li><strong>Ended</strong>: 14 May 2021 12:04:36 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.02</li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Set qemu user depending on the operative system</a></li>
+            <li><strong>Action</strong>: ansible.builtin.set_fact</li>
+            <li><strong>Path</strong>: <a href="../files/11.html#line-154">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/main.yml:154</a>
+            <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-03</a></li>
+            <li><strong>Status</strong>: ok</li>
+            <li><strong>Started</strong>: 15 May 2021 11:09:06 -0400</li>
+            <li><strong>Ended</strong>: 15 May 2021 11:09:06 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.06</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -206,22 +206,24 @@
             <tbody>
                 
                 <tr role="row">
-                    <td role="cell" id="changed" data-label="changed" class="pf-m-width-20">
-                        <a href="#changed">changed</a>
+                    <td role="cell" id="ansible_facts" data-label="ansible_facts" class="pf-m-width-20">
+                        <a href="#ansible_facts">ansible_facts</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>False
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;kubeinit_qemu_user&quot;</span><span class="p">:</span> <span class="s2">&quot;qemu&quot;</span>
+<span class="p">}</span>
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="skip_reason" data-label="skip_reason" class="pf-m-width-20">
-                        <a href="#skip_reason">skip_reason</a>
+                    <td role="cell" id="changed" data-label="changed" class="pf-m-width-20">
+                        <a href="#changed">changed</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>Conditional result was False
+                        <div class="codehilite"><pre><span></span>False
 </pre></div>
 
                     </td>

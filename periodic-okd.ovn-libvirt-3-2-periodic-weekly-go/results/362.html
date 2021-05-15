@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 14 May 2021 12:02:39 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 15 May 2021 10:57:56 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 14 May 2021 16:42:53 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 15 May 2021 12:56:42 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 04:40:14.60
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 01:58:46.25
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#hosts">3 hosts</a>
+                            <a href="../playbooks/1.html#hosts">5 hosts</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">453 results</a>
+                            <a href="../playbooks/1.html#results">618 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">46 files</a>
+                            <a href="../playbooks/1.html#files">47 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_okd : Render ignition files</a></li>
-            <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/34.html#line-257">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_okd/tasks/10_configure_service_nodes.yml:257</a>
+            <li><strong>Task</strong>: ../../roles/kubeinit_validations : Check that the hypervisor has enough RAM</a></li>
+            <li><strong>Action</strong>: ansible.builtin.include</li>
+            <li><strong>Path</strong>: <a href="../files/22.html#line-25">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_validations/tasks/00_libvirt.yml:25</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
-            <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 14 May 2021 12:48:02 -0400</li>
-            <li><strong>Ended</strong>: 14 May 2021 12:48:17 -0400</li>
-            <li><strong>Duration</strong>: 00:00:14.35</li>
+            <li><strong>Status</strong>: ok</li>
+            <li><strong>Started</strong>: 15 May 2021 11:13:07 -0400</li>
+            <li><strong>Ended</strong>: 15 May 2021 11:13:07 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.01</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -210,222 +210,29 @@
                         <a href="#changed">changed</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>True
+                        <div class="codehilite"><pre><span></span>False
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="cmd" data-label="cmd" class="pf-m-width-20">
-                        <a href="#cmd">cmd</a>
+                    <td role="cell" id="include" data-label="include" class="pf-m-width-20">
+                        <a href="#include">include</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span># We backup first the manifests
-tar -czvf install_manifests_backup.tar.gz ~/install_dir/
-openshift-install create ignition-configs --dir=install_dir/
-cp -R install_dir/* &quot;/var/kubeinit/apache/htdocs/okd4/&quot;
+                        <div class="codehilite"><pre><span></span>20_libvirt_available_ram.yml
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="delta" data-label="delta" class="pf-m-width-20">
-                        <a href="#delta">delta</a>
+                    <td role="cell" id="include_args" data-label="include_args" class="pf-m-width-20">
+                        <a href="#include_args">include_args</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:00:13.506621
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="end" data-label="end" class="pf-m-width-20">
-                        <a href="#end">end</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-14 16:48:16.962839
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
-                        <a href="#invocation">invocation</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;# We backup first the manifests\ntar -czvf install_manifests_backup.tar.gz ~/install_dir/\nopenshift-install create ignition-configs --dir=install_dir/\ncp -R install_dir/* \&quot;/var/kubeinit/apache/htdocs/okd4/\&quot;\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="rc" data-label="rc" class="pf-m-width-20">
-                        <a href="#rc">rc</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="start" data-label="start" class="pf-m-width-20">
-                        <a href="#start">start</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-14 16:48:03.456218
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stderr" data-label="stderr" class="pf-m-width-20">
-                        <a href="#stderr">stderr</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>tar: Removing leading `/&#39; from member names
-level=info msg=&quot;Consuming OpenShift Install (Manifests) from target directory&quot;
-level=info msg=&quot;Consuming Openshift Manifests from target directory&quot;
-level=info msg=&quot;Consuming Worker Machines from target directory&quot;
-level=info msg=&quot;Consuming Common Manifests from target directory&quot;
-level=info msg=&quot;Consuming Master Machines from target directory&quot;
-level=info msg=&quot;Ignition-Configs created in: install_dir and install_dir/auth&quot;
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stderr_lines" data-label="stderr_lines" class="pf-m-width-20">
-                        <a href="#stderr_lines">stderr_lines</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;tar: Removing leading `/&#39; from member names&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;level=info msg=\&quot;Consuming OpenShift Install (Manifests) from target directory\&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;level=info msg=\&quot;Consuming Openshift Manifests from target directory\&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;level=info msg=\&quot;Consuming Worker Machines from target directory\&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;level=info msg=\&quot;Consuming Common Manifests from target directory\&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;level=info msg=\&quot;Consuming Master Machines from target directory\&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;level=info msg=\&quot;Ignition-Configs created in: install_dir and install_dir/auth\&quot;&quot;</span>
-<span class="p">]</span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stdout" data-label="stdout" class="pf-m-width-20">
-                        <a href="#stdout">stdout</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>/root/install_dir/
-/root/install_dir/.openshift_install.log
-/root/install_dir/.openshift_install_state.json
-/root/install_dir/openshift/
-/root/install_dir/openshift/99_openshift-cluster-api_master-user-data-secret.yaml
-/root/install_dir/openshift/99_openshift-machineconfig_99-master-ssh.yaml
-/root/install_dir/openshift/99_openshift-cluster-api_worker-user-data-secret.yaml
-/root/install_dir/openshift/99_openshift-machineconfig_99-worker-ssh.yaml
-/root/install_dir/openshift/99_kubeadmin-password-secret.yaml
-/root/install_dir/openshift/openshift-install-manifests.yaml
-/root/install_dir/manifests/
-/root/install_dir/manifests/04-openshift-machine-config-operator.yaml
-/root/install_dir/manifests/cluster-config.yaml
-/root/install_dir/manifests/cluster-dns-02-config.yml
-/root/install_dir/manifests/cluster-infrastructure-02-config.yml
-/root/install_dir/manifests/cluster-ingress-02-config.yml
-/root/install_dir/manifests/cluster-network-01-crd.yml
-/root/install_dir/manifests/cluster-network-02-config.yml
-/root/install_dir/manifests/cluster-proxy-01-config.yaml
-/root/install_dir/manifests/cluster-scheduler-02-config.yml
-/root/install_dir/manifests/cvo-overrides.yaml
-/root/install_dir/manifests/etcd-ca-bundle-configmap.yaml
-/root/install_dir/manifests/etcd-client-secret.yaml
-/root/install_dir/manifests/etcd-metric-client-secret.yaml
-/root/install_dir/manifests/etcd-metric-serving-ca-configmap.yaml
-/root/install_dir/manifests/etcd-metric-signer-secret.yaml
-/root/install_dir/manifests/etcd-namespace.yaml
-/root/install_dir/manifests/etcd-service.yaml
-/root/install_dir/manifests/etcd-serving-ca-configmap.yaml
-/root/install_dir/manifests/etcd-signer-secret.yaml
-/root/install_dir/manifests/image-content-source-policy-0.yaml
-/root/install_dir/manifests/image-content-source-policy-1.yaml
-/root/install_dir/manifests/kube-cloud-config.yaml
-/root/install_dir/manifests/kube-system-configmap-root-ca.yaml
-/root/install_dir/manifests/machine-config-server-tls-secret.yaml
-/root/install_dir/manifests/openshift-config-secret-pull-secret.yaml
-/root/install_dir/manifests/user-ca-bundle-config.yaml
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stdout_lines" data-label="stdout_lines" class="pf-m-width-20">
-                        <a href="#stdout_lines">stdout_lines</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;/root/install_dir/&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/.openshift_install.log&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/.openshift_install_state.json&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/openshift/&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/openshift/99_openshift-cluster-api_master-user-data-secret.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/openshift/99_openshift-machineconfig_99-master-ssh.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/openshift/99_openshift-cluster-api_worker-user-data-secret.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/openshift/99_openshift-machineconfig_99-worker-ssh.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/openshift/99_kubeadmin-password-secret.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/openshift/openshift-install-manifests.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/04-openshift-machine-config-operator.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/cluster-config.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/cluster-dns-02-config.yml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/cluster-infrastructure-02-config.yml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/cluster-ingress-02-config.yml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/cluster-network-01-crd.yml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/cluster-network-02-config.yml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/cluster-proxy-01-config.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/cluster-scheduler-02-config.yml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/cvo-overrides.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/etcd-ca-bundle-configmap.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/etcd-client-secret.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/etcd-metric-client-secret.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/etcd-metric-serving-ca-configmap.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/etcd-metric-signer-secret.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/etcd-namespace.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/etcd-service.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/etcd-serving-ca-configmap.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/etcd-signer-secret.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/image-content-source-policy-0.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/image-content-source-policy-1.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/kube-cloud-config.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/kube-system-configmap-root-ca.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/machine-config-server-tls-secret.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/openshift-config-secret-pull-secret.yaml&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;/root/install_dir/manifests/user-ca-bundle-config.yaml&quot;</span>
-<span class="p">]</span>
+                        <div class="codehilite"><pre><span></span><span class="p">{}</span>
 </pre></div>
 
                     </td>

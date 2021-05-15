@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 14 May 2021 12:02:39 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 15 May 2021 10:57:56 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 14 May 2021 16:42:53 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 15 May 2021 12:56:42 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 04:40:14.60
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 01:58:46.25
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#hosts">3 hosts</a>
+                            <a href="../playbooks/1.html#hosts">5 hosts</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">453 results</a>
+                            <a href="../playbooks/1.html#results">618 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">46 files</a>
+                            <a href="../playbooks/1.html#files">47 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Undefine deployment networks</a></li>
-            <li><strong>Action</strong>: community.libvirt.virt_net</li>
-            <li><strong>Path</strong>: <a href="../files/12.html#line-35">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/10_cleanup.yml:35</a>
-            <li><strong>Host</strong>: <a href="../hosts/3.html">hypervisor-02</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : install CentOS based requirements</a></li>
+            <li><strong>Action</strong>: ansible.builtin.package</li>
+            <li><strong>Path</strong>: <a href="../files/11.html#line-107">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/main.yml:107</a>
+            <li><strong>Host</strong>: <a href="../hosts/4.html">hypervisor-04</a></li>
             <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 14 May 2021 12:03:49 -0400</li>
-            <li><strong>Ended</strong>: 14 May 2021 12:03:49 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.78</li>
+            <li><strong>Started</strong>: 15 May 2021 10:58:35 -0400</li>
+            <li><strong>Ended</strong>: 15 May 2021 10:58:41 -0400</li>
+            <li><strong>Duration</strong>: 00:00:06.76</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -217,11 +217,99 @@
                 </tr>
                 
                 <tr role="row">
+                    <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
+                        <a href="#invocation">invocation</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;allow_downgrade&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;allowerasing&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;autoremove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;bugfix&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;conf_file&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;disable_excludes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;disable_gpg_check&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;disable_plugin&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;disablerepo&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;download_dir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;download_only&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;enable_plugin&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;enablerepo&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;exclude&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;install_repoquery&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;install_weak_deps&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;installroot&quot;</span><span class="p">:</span> <span class="s2">&quot;/&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;list&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;lock_timeout&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;libguestfs-tools-c&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;python3-libselinux&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;libvirt&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;libvirt-daemon&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;libvirt-daemon-kvm&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;libvirt-client&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;qemu-kvm&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;virt-install&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;virt-top&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;virt-viewer&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;libguestfs-tools&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;lvm2&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;python3-libvirt&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;python3-lxml&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;python3-netaddr&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;curl&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;binutils&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;qt5-qtbase&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;gcc&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;make&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;patch&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;libgomp&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;glibc-headers&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;glibc-devel&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;kernel-headers&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;kernel-devel&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;bash-completion&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;nano&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;wget&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;python3-pip&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;iptables-services&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;net-tools&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;xz&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;firewalld&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;perl-XML-XPath&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;releasever&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;security&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;skip_broken&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;update_only&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;validate_certs&quot;</span><span class="p">:</span> <span class="kc">true</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
                     <td role="cell" id="msg" data-label="msg" class="pf-m-width-20">
                         <a href="#msg">msg</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>All items completed
+                        <div class="codehilite"><pre><span></span>Nothing to do
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="rc" data-label="rc" class="pf-m-width-20">
+                        <a href="#rc">rc</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>0
 </pre></div>
 
                     </td>
@@ -232,38 +320,7 @@
                         <a href="#results">results</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;autostart&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;undefine&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;kimgtnet0&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;uri&quot;</span><span class="p">:</span> <span class="s2">&quot;qemu:///system&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;xml&quot;</span><span class="p">:</span> <span class="kc">null</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;bridge&quot;</span><span class="p">:</span> <span class="s2">&quot;kimgtbr0&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;cidr&quot;</span><span class="p">:</span> <span class="mi">24</span><span class="p">,</span>
-            <span class="nt">&quot;enabled&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;10.0.0.253&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;gateway&quot;</span><span class="p">:</span> <span class="s2">&quot;10.0.0.254&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;main&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;kimgtnet0&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;net&quot;</span><span class="p">:</span> <span class="s2">&quot;10.0.0.0&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;netmask&quot;</span><span class="p">:</span> <span class="s2">&quot;255.255.255.0&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;10.0.0.1&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;template&quot;</span><span class="p">:</span> <span class="s2">&quot;cluster-net.xml.j2&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;internal&quot;</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;undefine&quot;</span><span class="p">:</span> <span class="mi">0</span>
-    <span class="p">}</span>
-<span class="p">]</span>
+                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
 </pre></div>
 
                     </td>

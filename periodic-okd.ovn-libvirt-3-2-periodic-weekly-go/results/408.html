@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 14 May 2021 12:02:39 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 15 May 2021 10:57:56 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 14 May 2021 16:42:53 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 15 May 2021 12:56:42 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 04:40:14.60
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 01:58:46.25
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#hosts">3 hosts</a>
+                            <a href="../playbooks/1.html#hosts">5 hosts</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">453 results</a>
+                            <a href="../playbooks/1.html#results">618 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">46 files</a>
+                            <a href="../playbooks/1.html#files">47 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Create the network interface template for networking details</a></li>
-            <li><strong>Action</strong>: ansible.builtin.template</li>
-            <li><strong>Path</strong>: <a href="../files/31.html#line-19">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/60_okd_deploy_nodes.yml:19</a>
+            <li><strong>Task</strong>: ../../roles/kubeinit_okd : Reboot immediately after the package update</a></li>
+            <li><strong>Action</strong>: ansible.builtin.shell</li>
+            <li><strong>Path</strong>: <a href="../files/33.html#line-38">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_okd/tasks/00_bounce_packages.yml:38</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
-            <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 14 May 2021 12:57:26 -0400</li>
-            <li><strong>Ended</strong>: 14 May 2021 12:57:30 -0400</li>
-            <li><strong>Duration</strong>: 00:00:03.44</li>
+            <li><strong>Status</strong>: skipped</li>
+            <li><strong>Started</strong>: 15 May 2021 11:28:56 -0400</li>
+            <li><strong>Ended</strong>: 15 May 2021 11:28:56 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.02</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -210,185 +210,18 @@
                         <a href="#changed">changed</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>True
+                        <div class="codehilite"><pre><span></span>False
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="checksum" data-label="checksum" class="pf-m-width-20">
-                        <a href="#checksum">checksum</a>
+                    <td role="cell" id="skip_reason" data-label="skip_reason" class="pf-m-width-20">
+                        <a href="#skip_reason">skip_reason</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>ba76f7b46ae84988e2903cb4de425730b6532b6a
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="dest" data-label="dest" class="pf-m-width-20">
-                        <a href="#dest">dest</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>/tmp/okd-master-03/ifcfg-eth0
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="diff" data-label="diff" class="pf-m-width-20">
-                        <a href="#diff">diff</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="gid" data-label="gid" class="pf-m-width-20">
-                        <a href="#gid">gid</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="group" data-label="group" class="pf-m-width-20">
-                        <a href="#group">group</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>root
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
-                        <a href="#invocation">invocation</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_original_basename&quot;</span><span class="p">:</span> <span class="s2">&quot;ifcfg-eth0.j2&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;backup&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;checksum&quot;</span><span class="p">:</span> <span class="s2">&quot;ba76f7b46ae84988e2903cb4de425730b6532b6a&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;content&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;dest&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/okd-master-03/ifcfg-eth0&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;directory_mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;follow&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;local_follow&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;0644&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;remote_src&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.ansible/tmp/ansible-tmp-1621011447.1678538-2133155-68553326320492/source&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;validate&quot;</span><span class="p">:</span> <span class="kc">null</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="md5sum" data-label="md5sum" class="pf-m-width-20">
-                        <a href="#md5sum">md5sum</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>e160ed05576b1a8199901ffbec4351fd
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="mode" data-label="mode" class="pf-m-width-20">
-                        <a href="#mode">mode</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0644
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="owner" data-label="owner" class="pf-m-width-20">
-                        <a href="#owner">owner</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>root
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="secontext" data-label="secontext" class="pf-m-width-20">
-                        <a href="#secontext">secontext</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>unconfined_u:object_r:admin_home_t:s0
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="size" data-label="size" class="pf-m-width-20">
-                        <a href="#size">size</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>637
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="src" data-label="src" class="pf-m-width-20">
-                        <a href="#src">src</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>/root/.ansible/tmp/ansible-tmp-1621011447.1678538-2133155-68553326320492/source
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="state" data-label="state" class="pf-m-width-20">
-                        <a href="#state">state</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>file
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="uid" data-label="uid" class="pf-m-width-20">
-                        <a href="#uid">uid</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0
+                        <div class="codehilite"><pre><span></span>Conditional result was False
 </pre></div>
 
                     </td>

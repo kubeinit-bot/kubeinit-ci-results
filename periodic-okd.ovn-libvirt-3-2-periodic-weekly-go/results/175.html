@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 14 May 2021 12:02:39 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 15 May 2021 10:57:56 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 14 May 2021 16:42:53 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 15 May 2021 12:56:42 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 04:40:14.60
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 01:58:46.25
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#hosts">3 hosts</a>
+                            <a href="../playbooks/1.html#hosts">5 hosts</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">453 results</a>
+                            <a href="../playbooks/1.html#results">618 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">46 files</a>
+                            <a href="../playbooks/1.html#files">47 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : remove and create the cluster switch if exists</a></li>
-            <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/16.html#line-36">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/50_ovn_post_setup.yml:36</a>
-            <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-01</a></li>
-            <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 14 May 2021 12:04:56 -0400</li>
-            <li><strong>Ended</strong>: 14 May 2021 12:04:56 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.75</li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Make sure we have a &#39;toor&#39; group</a></li>
+            <li><strong>Action</strong>: ansible.builtin.group</li>
+            <li><strong>Path</strong>: <a href="../files/11.html#line-226">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/main.yml:226</a>
+            <li><strong>Host</strong>: <a href="../hosts/3.html">hypervisor-02</a></li>
+            <li><strong>Status</strong>: ok</li>
+            <li><strong>Started</strong>: 15 May 2021 11:10:42 -0400</li>
+            <li><strong>Ended</strong>: 15 May 2021 11:10:43 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.98</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -210,44 +210,18 @@
                         <a href="#changed">changed</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>True
+                        <div class="codehilite"><pre><span></span>False
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="cmd" data-label="cmd" class="pf-m-width-20">
-                        <a href="#cmd">cmd</a>
+                    <td role="cell" id="gid" data-label="gid" class="pf-m-width-20">
+                        <a href="#gid">gid</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>#
-# Create a logical switch
-#
-ovn-nbctl ls-del sw0
-ovn-nbctl --wait=hv ls-add sw0
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="delta" data-label="delta" class="pf-m-width-20">
-                        <a href="#delta">delta</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:00:00.028556
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="end" data-label="end" class="pf-m-width-20">
-                        <a href="#end">end</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-14 18:04:56.915585
+                        <div class="codehilite"><pre><span></span>1001
 </pre></div>
 
                     </td>
@@ -260,17 +234,12 @@ ovn-nbctl --wait=hv ls-add sw0
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;#\n# Create a logical switch\n#\novn-nbctl ls-del sw0\novn-nbctl --wait=hv ls-add sw0\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="nt">&quot;gid&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;local&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;toor&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;non_unique&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;system&quot;</span><span class="p">:</span> <span class="kc">false</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -279,68 +248,33 @@ ovn-nbctl --wait=hv ls-add sw0
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="rc" data-label="rc" class="pf-m-width-20">
-                        <a href="#rc">rc</a>
+                    <td role="cell" id="name" data-label="name" class="pf-m-width-20">
+                        <a href="#name">name</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0
+                        <div class="codehilite"><pre><span></span>toor
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="start" data-label="start" class="pf-m-width-20">
-                        <a href="#start">start</a>
+                    <td role="cell" id="state" data-label="state" class="pf-m-width-20">
+                        <a href="#state">state</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-14 18:04:56.887029
+                        <div class="codehilite"><pre><span></span>present
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="stderr" data-label="stderr" class="pf-m-width-20">
-                        <a href="#stderr">stderr</a>
+                    <td role="cell" id="system" data-label="system" class="pf-m-width-20">
+                        <a href="#system">system</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>ovn-nbctl: sw0: switch name not found
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stderr_lines" data-label="stderr_lines" class="pf-m-width-20">
-                        <a href="#stderr_lines">stderr_lines</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;ovn-nbctl: sw0: switch name not found&quot;</span>
-<span class="p">]</span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stdout" data-label="stdout" class="pf-m-width-20">
-                        <a href="#stdout">stdout</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stdout_lines" data-label="stdout_lines" class="pf-m-width-20">
-                        <a href="#stdout_lines">stdout_lines</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
+                        <div class="codehilite"><pre><span></span>False
 </pre></div>
 
                     </td>

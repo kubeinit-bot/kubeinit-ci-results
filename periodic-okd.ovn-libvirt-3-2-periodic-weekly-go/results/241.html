@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 14 May 2021 12:02:39 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 15 May 2021 10:57:56 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 14 May 2021 16:42:53 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 15 May 2021 12:56:42 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 04:40:14.60
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 01:58:46.25
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#hosts">3 hosts</a>
+                            <a href="../playbooks/1.html#hosts">5 hosts</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">453 results</a>
+                            <a href="../playbooks/1.html#results">618 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">46 files</a>
+                            <a href="../playbooks/1.html#files">47 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Set guest images facts for OCP</a></li>
-            <li><strong>Action</strong>: ansible.builtin.set_fact</li>
-            <li><strong>Path</strong>: <a href="../files/31.html#line-105">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/60_okd_deploy_nodes.yml:105</a>
-            <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
-            <li><strong>Status</strong>: skipped</li>
-            <li><strong>Started</strong>: 14 May 2021 12:07:15 -0400</li>
-            <li><strong>Ended</strong>: 14 May 2021 12:07:15 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.02</li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : check if /root/.ssh/known_hosts exists</a></li>
+            <li><strong>Action</strong>: ansible.builtin.stat</li>
+            <li><strong>Path</strong>: <a href="../files/12.html#line-102">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/10_cleanup.yml:102</a>
+            <li><strong>Host</strong>: <a href="../hosts/5.html">hypervisor-01</a></li>
+            <li><strong>Status</strong>: ok</li>
+            <li><strong>Started</strong>: 15 May 2021 11:11:40 -0400</li>
+            <li><strong>Ended</strong>: 15 May 2021 11:11:41 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.92</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -217,11 +217,77 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="skip_reason" data-label="skip_reason" class="pf-m-width-20">
-                        <a href="#skip_reason">skip_reason</a>
+                    <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
+                        <a href="#invocation">invocation</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>Conditional result was False
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;checksum_algorithm&quot;</span><span class="p">:</span> <span class="s2">&quot;sha1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;follow&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;get_attributes&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;get_checksum&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;get_md5&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;get_mime&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.ssh/known_hosts&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stat" data-label="stat" class="pf-m-width-20">
+                        <a href="#stat">stat</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;atime&quot;</span><span class="p">:</span> <span class="mf">1621067453.3045459</span><span class="p">,</span>
+    <span class="nt">&quot;attr_flags&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="p">[],</span>
+    <span class="nt">&quot;block_size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span>
+    <span class="nt">&quot;blocks&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+    <span class="nt">&quot;charset&quot;</span><span class="p">:</span> <span class="s2">&quot;us-ascii&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;checksum&quot;</span><span class="p">:</span> <span class="s2">&quot;4e99566529d0dc2148a8e693792f7cb67bc156e9&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ctime&quot;</span><span class="p">:</span> <span class="mf">1621066627.0574608</span><span class="p">,</span>
+    <span class="nt">&quot;dev&quot;</span><span class="p">:</span> <span class="mi">33</span><span class="p">,</span>
+    <span class="nt">&quot;device_type&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;exists&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;gid&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;gr_name&quot;</span><span class="p">:</span> <span class="s2">&quot;root&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;inode&quot;</span><span class="p">:</span> <span class="mi">91738</span><span class="p">,</span>
+    <span class="nt">&quot;isblk&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;ischr&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;isdir&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;isfifo&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;isgid&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;islnk&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;isreg&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;issock&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;isuid&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;mimetype&quot;</span><span class="p">:</span> <span class="s2">&quot;text/plain&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;0644&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;mtime&quot;</span><span class="p">:</span> <span class="mf">1621066627.0574608</span><span class="p">,</span>
+    <span class="nt">&quot;nlink&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.ssh/known_hosts&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;pw_name&quot;</span><span class="p">:</span> <span class="s2">&quot;root&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;readable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;rgrp&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;roth&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;rusr&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="mi">172</span><span class="p">,</span>
+    <span class="nt">&quot;uid&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;112933&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;wgrp&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;woth&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;writeable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;wusr&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;xgrp&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;xoth&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;xusr&quot;</span><span class="p">:</span> <span class="kc">false</span>
+<span class="p">}</span>
 </pre></div>
 
                     </td>

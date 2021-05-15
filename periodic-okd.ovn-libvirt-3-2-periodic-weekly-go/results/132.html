@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 14 May 2021 12:02:39 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 15 May 2021 10:57:56 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 14 May 2021 16:42:53 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 15 May 2021 12:56:42 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 04:40:14.60
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 01:58:46.25
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#hosts">3 hosts</a>
+                            <a href="../playbooks/1.html#hosts">5 hosts</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">453 results</a>
+                            <a href="../playbooks/1.html#results">618 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">46 files</a>
+                            <a href="../playbooks/1.html#files">47 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Clean OVN/OVS resources</a></li>
-            <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/12.html#line-81">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/10_cleanup.yml:81</a>
-            <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-01</a></li>
-            <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 14 May 2021 12:04:11 -0400</li>
-            <li><strong>Ended</strong>: 14 May 2021 12:04:12 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.86</li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : install Debian based requirements</a></li>
+            <li><strong>Action</strong>: ansible.builtin.package</li>
+            <li><strong>Path</strong>: <a href="../files/11.html#line-121">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/main.yml:121</a>
+            <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-03</a></li>
+            <li><strong>Status</strong>: skipped</li>
+            <li><strong>Started</strong>: 15 May 2021 11:03:58 -0400</li>
+            <li><strong>Ended</strong>: 15 May 2021 11:03:58 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.06</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -217,139 +217,11 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="cmd" data-label="cmd" class="pf-m-width-20">
-                        <a href="#cmd">cmd</a>
+                    <td role="cell" id="skip_reason" data-label="skip_reason" class="pf-m-width-20">
+                        <a href="#skip_reason">skip_reason</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>###############################################
-# WARNING: We can not remove the external     #
-# bridge interface kiextbr0, the connection   #
-# will be lost if this is executed in the HVs #
-###############################################
-ovs-vsctl del-br br-int || true
-ovs-vsctl del-br br-ex || true
-ovn-nbctl ls-del sw0 || true
-ovn-nbctl ls-del sw1 || true
-ovn-nbctl lr-del lr0 || true
-ovn-nbctl ls-del public || true
-ip route del 10.0.0.0/24 via 172.16.0.1 dev br-ex || true
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="delta" data-label="delta" class="pf-m-width-20">
-                        <a href="#delta">delta</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:00:00.142038
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="end" data-label="end" class="pf-m-width-20">
-                        <a href="#end">end</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-14 18:04:12.478036
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
-                        <a href="#invocation">invocation</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;###############################################\n# WARNING: We can not remove the external     #\n# bridge interface kiextbr0, the connection   #\n# will be lost if this is executed in the HVs #\n###############################################\novs-vsctl del-br br-int || true\novs-vsctl del-br br-ex || true\novn-nbctl ls-del sw0 || true\novn-nbctl ls-del sw1 || true\novn-nbctl lr-del lr0 || true\novn-nbctl ls-del public || true\nip route del 10.0.0.0/24 via 172.16.0.1 dev br-ex || true\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="rc" data-label="rc" class="pf-m-width-20">
-                        <a href="#rc">rc</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="start" data-label="start" class="pf-m-width-20">
-                        <a href="#start">start</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-14 18:04:12.335998
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stderr" data-label="stderr" class="pf-m-width-20">
-                        <a href="#stderr">stderr</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>ovn-nbctl: sw1: switch name not found
-Cannot find device &quot;br-ex&quot;
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stderr_lines" data-label="stderr_lines" class="pf-m-width-20">
-                        <a href="#stderr_lines">stderr_lines</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;ovn-nbctl: sw1: switch name not found&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Cannot find device \&quot;br-ex\&quot;&quot;</span>
-<span class="p">]</span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stdout" data-label="stdout" class="pf-m-width-20">
-                        <a href="#stdout">stdout</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stdout_lines" data-label="stdout_lines" class="pf-m-width-20">
-                        <a href="#stdout_lines">stdout_lines</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
+                        <div class="codehilite"><pre><span></span>Conditional result was False
 </pre></div>
 
                     </td>

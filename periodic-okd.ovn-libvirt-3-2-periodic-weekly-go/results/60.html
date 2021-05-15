@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 14 May 2021 12:02:39 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 15 May 2021 10:57:56 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 14 May 2021 16:42:53 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 15 May 2021 12:56:42 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 04:40:14.60
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 01:58:46.25
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#hosts">3 hosts</a>
+                            <a href="../playbooks/1.html#hosts">5 hosts</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">453 results</a>
+                            <a href="../playbooks/1.html#results">618 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">46 files</a>
+                            <a href="../playbooks/1.html#files">47 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Set fact for AMD virtualization</a></li>
-            <li><strong>Action</strong>: ansible.builtin.set_fact</li>
-            <li><strong>Path</strong>: <a href="../files/11.html#line-48">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/main.yml:48</a>
-            <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-01</a></li>
-            <li><strong>Status</strong>: skipped</li>
-            <li><strong>Started</strong>: 14 May 2021 12:03:04 -0400</li>
-            <li><strong>Ended</strong>: 14 May 2021 12:03:04 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.02</li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_prepare : Fetch the public key</a></li>
+            <li><strong>Action</strong>: ansible.builtin.slurp</li>
+            <li><strong>Path</strong>: <a href="../files/10.html#line-59">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_hypervisor.yml:59</a>
+            <li><strong>Host</strong>: <a href="../hosts/4.html">hypervisor-04</a></li>
+            <li><strong>Status</strong>: ok</li>
+            <li><strong>Started</strong>: 15 May 2021 10:58:21 -0400</li>
+            <li><strong>Ended</strong>: 15 May 2021 10:58:21 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.78</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -217,11 +217,48 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="skip_reason" data-label="skip_reason" class="pf-m-width-20">
-                        <a href="#skip_reason">skip_reason</a>
+                    <td role="cell" id="content" data-label="content" class="pf-m-width-20">
+                        <a href="#content">content</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>Conditional result was False
+                        <div class="codehilite"><pre><span></span>c3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBREFRQUJBQUFDQVFEa0hxSTdDMCtsZmVwT2Z4Ymh2OUxuNThwU1p6RC96ODl6bi9JanZaNjBkS1d5N2s1K0xsUWtDSW8wV3dqWm0zV3FrQ1VVY0p6MFJRWVNYdHNZa2VXVHhxNGhxRHNmTCtVZGo2a3cvd29EMncvTGk2TTZad2lWRkxsZmdWSTlRYnBGeTEwZTc4K29Ia3lmK2dvOHpVbThDU0hnQVFYYWNQVUd3YUozNGlsbGxGcktMb0NMa0hNL2kwQUQ5T1VrMFBFWFlwMDQ0Mk1pcERLcmdJaVZwNXRxd1VJTkgyRnFoOW0rQkN1N1JGaW0xS29UMVRKaXM2Uk1MMVdJV0N2QnpzVlkrYTU0RS95RU1FS2NINVlzNW1GMXN2UGhkUVR4UEZFTWtnREpVNlNFeVFNeForWTdsbkVpUmlLQUxiTGdpOHJRblkrUktVSm9mV0E4Ylg5dGZ5cUhwcUVSZVlvOFVpOW1VTEpKTHV0TE5tMVlxekxqMEpyOVp5dElOb1Y1TFBNTmFCcHlwRDl1cVRjcDQrZG5qVlBZeHBmQkV6SEpOR3hWZi9WUk5yWHhjZ29BTW5uc0lEeVFLVzBieGZWQUsyTlN4U1drQTFDQktaSXZoVzFyYkJMdzdwOWJXSEQ3TUd2K3NiQTkyUFNYZVFld0ZTRGlmY1BqcSsyY0FyTno5NCtoZmtzNDdlN3kreG9IYVZQSXRkQmtqbDMvME4wakxHemhvQVFETzYxRythNGQ4UFkvSU0xaytyZksySVhObFFBZVJGbG5saGEvV1FJSG5OVld5N0tmZk81VFFadXhwRC9jOTBZQnBuV29OVnNOZXBOWm5DTjVvTEoza015SmMzY1lXcTNPWlN4TkxRNW9JSDROOFlzS3I3eWoyaGljUk84N3lxOHprWThTQ1E9PSAK
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="encoding" data-label="encoding" class="pf-m-width-20">
+                        <a href="#encoding">encoding</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>base64
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
+                        <a href="#invocation">invocation</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.ssh/id_rsa.pub&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="source" data-label="source" class="pf-m-width-20">
+                        <a href="#source">source</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>/root/.ssh/id_rsa.pub
 </pre></div>
 
                     </td>

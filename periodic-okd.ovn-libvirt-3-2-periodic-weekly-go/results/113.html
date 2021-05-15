@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 14 May 2021 12:02:39 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 15 May 2021 10:57:56 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 14 May 2021 16:42:53 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 15 May 2021 12:56:42 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 04:40:14.60
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 01:58:46.25
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#hosts">3 hosts</a>
+                            <a href="../playbooks/1.html#hosts">5 hosts</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">453 results</a>
+                            <a href="../playbooks/1.html#results">618 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">46 files</a>
+                            <a href="../playbooks/1.html#files">47 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Generate an OpenSSH keypair with the default values (4096 bits, rsa)</a></li>
-            <li><strong>Action</strong>: community.crypto.openssh_keypair</li>
-            <li><strong>Path</strong>: <a href="../files/11.html#line-263">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/main.yml:263</a>
-            <li><strong>Host</strong>: <a href="../hosts/3.html">hypervisor-02</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Load kvm_intel module</a></li>
+            <li><strong>Action</strong>: community.general.modprobe</li>
+            <li><strong>Path</strong>: <a href="../files/11.html#line-77">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/main.yml:77</a>
+            <li><strong>Host</strong>: <a href="../hosts/4.html">hypervisor-04</a></li>
             <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 14 May 2021 12:03:44 -0400</li>
-            <li><strong>Ended</strong>: 14 May 2021 12:03:45 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.77</li>
+            <li><strong>Started</strong>: 15 May 2021 10:58:31 -0400</li>
+            <li><strong>Ended</strong>: 15 May 2021 10:58:32 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.74</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -217,8 +217,36 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="comment" data-label="comment" class="pf-m-width-20">
-                        <a href="#comment">comment</a>
+                    <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
+                        <a href="#invocation">invocation</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;kvm_intel&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;params&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="name" data-label="name" class="pf-m-width-20">
+                        <a href="#name">name</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>kvm_intel
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="params" data-label="params" class="pf-m-width-20">
+                        <a href="#params">params</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span>
@@ -228,85 +256,11 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="filename" data-label="filename" class="pf-m-width-20">
-                        <a href="#filename">filename</a>
+                    <td role="cell" id="state" data-label="state" class="pf-m-width-20">
+                        <a href="#state">state</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>/home/toor/.ssh/id_rsa
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="fingerprint" data-label="fingerprint" class="pf-m-width-20">
-                        <a href="#fingerprint">fingerprint</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>SHA256:8s/UG+INw35w399HfpOsNfde7jiehDjuGz/P+qKdkMU
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
-                        <a href="#invocation">invocation</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;toor&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="s2">&quot;toor&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/home/toor/.ssh/id_rsa&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;regenerate&quot;</span><span class="p">:</span> <span class="s2">&quot;partial_idempotence&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;rsa&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="public_key" data-label="public_key" class="pf-m-width-20">
-                        <a href="#public_key">public_key</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC2igr7TlNL5Av90acY/4nGnPNXGQfYMv4hEtHxAR8JQbjHaw7wn9qH6hGhCouZaGaDq0UKTcD/TzKOpgQpAC5AN2nn6JcR/OykfYspR1LElHg1mgXljZ0nQajai4HpY1VcP86AaBsDnKJwcKL2y0TV9VxKAQtxDnNTkYH93kiAFFtVaIoO3kCUdmXCQf8NfzNgod+NgZVnIZT0b6pVIP8q9j7p8zxyNTWEMk7xzM0HSC8EpApW2DOTamGGgQCFMjaUpoC4L4vbdcIL7A3T5vpbB8kwhelU4UtoM83dHNbXWWX45s/9UZNvmZcaq7GloAAXYDIzWmszkCq5k/pGDx6Xmfv7beA3AcpoVAtYq/NMfEybye7c4MgMc6bgHYah/uYb97y35QCcJu68zZ1NgrdfPrjB3qL79kHwEJPbYY6+lELe47x/NI9qSZoyW60VYsM2QwOGrEvKD8gfmPbnIIyFcwOEfPn/RdIKsqe0/09ZL8bkrTWqoj0fY5vb0kYslcx69TO/Wsnh+iarGY/VMNxGf6eDFIt/NjvSlj6vmi3GCSfBM1rjGim8VAiTbSm8+lT9qakMgen1uj7+aH1yxHDCS4CEprZYL3/W8Sa9hLNamPaSlQhDRVCJmma0hciZqhBQ7AA/oeNE3V6SbU88PVcORU5QEA/C2B2cKspNXCQfLw==
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="size" data-label="size" class="pf-m-width-20">
-                        <a href="#size">size</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>4096
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="type" data-label="type" class="pf-m-width-20">
-                        <a href="#type">type</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>rsa
+                        <div class="codehilite"><pre><span></span>present
 </pre></div>
 
                     </td>

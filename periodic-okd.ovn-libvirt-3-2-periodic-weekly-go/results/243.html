@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 14 May 2021 12:02:39 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 15 May 2021 10:57:56 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 14 May 2021 16:42:53 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 15 May 2021 12:56:42 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 04:40:14.60
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 01:58:46.25
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#hosts">3 hosts</a>
+                            <a href="../playbooks/1.html#hosts">5 hosts</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">453 results</a>
+                            <a href="../playbooks/1.html#results">618 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">46 files</a>
+                            <a href="../playbooks/1.html#files">47 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : wait until okd-service-01 is running</a></li>
-            <li><strong>Action</strong>: community.libvirt.virt</li>
-            <li><strong>Path</strong>: <a href="../files/31.html#line-158">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/60_okd_deploy_nodes.yml:158</a>
-            <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
-            <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 14 May 2021 12:07:15 -0400</li>
-            <li><strong>Ended</strong>: 14 May 2021 12:07:16 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.84</li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Reset ssh keys in hypervisor</a></li>
+            <li><strong>Action</strong>: ansible.builtin.shell</li>
+            <li><strong>Path</strong>: <a href="../files/12.html#line-107">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/10_cleanup.yml:107</a>
+            <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-03</a></li>
+            <li><strong>Status</strong>: skipped</li>
+            <li><strong>Started</strong>: 15 May 2021 11:11:42 -0400</li>
+            <li><strong>Ended</strong>: 15 May 2021 11:11:42 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.08</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -206,17 +206,6 @@
             <tbody>
                 
                 <tr role="row">
-                    <td role="cell" id="attempts" data-label="attempts" class="pf-m-width-20">
-                        <a href="#attempts">attempts</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>1
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
                     <td role="cell" id="changed" data-label="changed" class="pf-m-width-20">
                         <a href="#changed">changed</a>
                     </td>
@@ -228,32 +217,71 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
-                        <a href="#invocation">invocation</a>
+                    <td role="cell" id="msg" data-label="msg" class="pf-m-width-20">
+                        <a href="#msg">msg</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;autostart&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;list_vms&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;running&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;uri&quot;</span><span class="p">:</span> <span class="s2">&quot;qemu:///system&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;xml&quot;</span><span class="p">:</span> <span class="kc">null</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+                        <div class="codehilite"><pre><span></span>All items completed
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="list_vms" data-label="list_vms" class="pf-m-width-20">
-                        <a href="#list_vms">list_vms</a>
+                    <td role="cell" id="results" data-label="results" class="pf-m-width-20">
+                        <a href="#results">results</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;okd-service-01&quot;</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-service-01&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;skip_reason&quot;</span><span class="p">:</span> <span class="s2">&quot;Conditional result was False&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;skipped&quot;</span><span class="p">:</span> <span class="kc">true</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-master-01&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;skip_reason&quot;</span><span class="p">:</span> <span class="s2">&quot;Conditional result was False&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;skipped&quot;</span><span class="p">:</span> <span class="kc">true</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-master-02&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;skip_reason&quot;</span><span class="p">:</span> <span class="s2">&quot;Conditional result was False&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;skipped&quot;</span><span class="p">:</span> <span class="kc">true</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-master-03&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;skip_reason&quot;</span><span class="p">:</span> <span class="s2">&quot;Conditional result was False&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;skipped&quot;</span><span class="p">:</span> <span class="kc">true</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-worker-01&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;skip_reason&quot;</span><span class="p">:</span> <span class="s2">&quot;Conditional result was False&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;skipped&quot;</span><span class="p">:</span> <span class="kc">true</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-worker-02&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;skip_reason&quot;</span><span class="p">:</span> <span class="s2">&quot;Conditional result was False&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;skipped&quot;</span><span class="p">:</span> <span class="kc">true</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-bootstrap-01&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;skip_reason&quot;</span><span class="p">:</span> <span class="s2">&quot;Conditional result was False&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;skipped&quot;</span><span class="p">:</span> <span class="kc">true</span>
+    <span class="p">}</span>
 <span class="p">]</span>
 </pre></div>
 

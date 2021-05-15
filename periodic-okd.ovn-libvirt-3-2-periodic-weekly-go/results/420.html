@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 14 May 2021 12:02:39 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 15 May 2021 10:57:56 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 14 May 2021 16:42:53 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 15 May 2021 12:56:42 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 04:40:14.60
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 01:58:46.25
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#hosts">3 hosts</a>
+                            <a href="../playbooks/1.html#hosts">5 hosts</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">453 results</a>
+                            <a href="../playbooks/1.html#results">618 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">46 files</a>
+                            <a href="../playbooks/1.html#files">47 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_okd : verify that master nodes are ok</a></li>
-            <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/43.html#line-17">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_okd/tasks/20_check_nodes_ready.yml:17</a>
+            <li><strong>Task</strong>: ../../roles/kubeinit_prepare : Create a minimal podman pod for the service containers running on service node VMs</a></li>
+            <li><strong>Action</strong>: containers.podman.podman_pod</li>
+            <li><strong>Path</strong>: <a href="../files/35.html#line-48">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_podman.yml:48</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 14 May 2021 12:59:40 -0400</li>
-            <li><strong>Ended</strong>: 14 May 2021 13:32:31 -0400</li>
-            <li><strong>Duration</strong>: 00:32:50.46</li>
+            <li><strong>Started</strong>: 15 May 2021 11:35:34 -0400</li>
+            <li><strong>Ended</strong>: 15 May 2021 11:36:30 -0400</li>
+            <li><strong>Duration</strong>: 00:00:55.59</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -206,11 +206,13 @@
             <tbody>
                 
                 <tr role="row">
-                    <td role="cell" id="attempts" data-label="attempts" class="pf-m-width-20">
-                        <a href="#attempts">attempts</a>
+                    <td role="cell" id="actions" data-label="actions" class="pf-m-width-20">
+                        <a href="#actions">actions</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>28
+                        <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;created kubeinit-service-pod&quot;</span>
+<span class="p">]</span>
 </pre></div>
 
                     </td>
@@ -228,57 +230,41 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="cmd" data-label="cmd" class="pf-m-width-20">
-                        <a href="#cmd">cmd</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>set -o pipefail
-export KUBECONFIG=~/install_dir/auth/kubeconfig; oc get nodes | grep master | grep &quot; Ready&quot;
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="delta" data-label="delta" class="pf-m-width-20">
-                        <a href="#delta">delta</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:00:00.350121
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="end" data-label="end" class="pf-m-width-20">
-                        <a href="#end">end</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-14 17:32:30.788121
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
                     <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
                         <a href="#invocation">invocation</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nexport KUBECONFIG=~/install_dir/auth/kubeconfig; oc get nodes | grep master | grep \&quot; Ready\&quot;\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="nt">&quot;add_host&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;cgroup_parent&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;debug&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;dns&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;10.0.0.100&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;10.64.63.6&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;dns_opt&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;dns_search&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;okdcluster.kubeinit.local&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;podman&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;hostname&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;infra&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;infra_command&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;infra_conmon_pidfile&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;infra_image&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;ip&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;label_file&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;mac_address&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;kubeinit-service-pod&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;network&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;no_hosts&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;pod_id_file&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;publish&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;recreate&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;share&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;created&quot;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -287,22 +273,80 @@ export KUBECONFIG=~/install_dir/auth/kubeconfig; oc get nodes | grep master | gr
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="rc" data-label="rc" class="pf-m-width-20">
-                        <a href="#rc">rc</a>
+                    <td role="cell" id="pod" data-label="pod" class="pf-m-width-20">
+                        <a href="#pod">pod</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;CgroupParent&quot;</span><span class="p">:</span> <span class="s2">&quot;machine.slice&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;CgroupPath&quot;</span><span class="p">:</span> <span class="s2">&quot;machine.slice/machine-libpod_pod_c957b9a88ff2a94be3755200f7939e0e194df1519f667ba1b2e04c3c5436afef.slice&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Containers&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;Id&quot;</span><span class="p">:</span> <span class="s2">&quot;69836553d48009cededcc756572ffff9190745d1b31656c5cd6072a5ad7a5b99&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;c957b9a88ff2-infra&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;State&quot;</span><span class="p">:</span> <span class="s2">&quot;configured&quot;</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;CreateCgroup&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;CreateCommand&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;podman&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;pod&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;create&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;--name&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;kubeinit-service-pod&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;--dns&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;10.0.0.100&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;--dns&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;10.64.63.6&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;--dns-search&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;okdcluster.kubeinit.local&quot;</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;CreateInfra&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;Created&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-15T15:35:35.990329661Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Hostname&quot;</span><span class="p">:</span> <span class="s2">&quot;kubeinit-service-pod&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Id&quot;</span><span class="p">:</span> <span class="s2">&quot;c957b9a88ff2a94be3755200f7939e0e194df1519f667ba1b2e04c3c5436afef&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;InfraConfig&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;DNSOption&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;DNSSearch&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;okdcluster.kubeinit.local&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;DNSServer&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;10.0.0.100&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;10.64.63.6&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;HostAdd&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;HostNetwork&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;NetworkOptions&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;Networks&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;NoManageHosts&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;NoManageResolvConf&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;PortBindings&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="nt">&quot;StaticIP&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;StaticMAC&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;InfraContainerID&quot;</span><span class="p">:</span> <span class="s2">&quot;69836553d48009cededcc756572ffff9190745d1b31656c5cd6072a5ad7a5b99&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;kubeinit-service-pod&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;NumContainers&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="nt">&quot;SharedNamespaces&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;ipc&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;uts&quot;</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;State&quot;</span><span class="p">:</span> <span class="s2">&quot;Created&quot;</span>
+<span class="p">}</span>
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="start" data-label="start" class="pf-m-width-20">
-                        <a href="#start">start</a>
+                    <td role="cell" id="podman_actions" data-label="podman_actions" class="pf-m-width-20">
+                        <a href="#podman_actions">podman_actions</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-14 17:32:30.438000
+                        <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;podman pod create --name kubeinit-service-pod --dns 10.0.0.100 --dns 10.64.63.6 --dns-search okdcluster.kubeinit.local&quot;</span>
+<span class="p">]</span>
 </pre></div>
 
                     </td>
@@ -335,9 +379,7 @@ export KUBECONFIG=~/install_dir/auth/kubeconfig; oc get nodes | grep master | gr
                         <a href="#stdout">stdout</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>localhost                           Ready    master   8m41s   v1.19.2+f173eb4-1049
-master0.okdcluster.kubeinit.local   Ready    master   14m     v1.19.2+f173eb4-1049
-master1.okdcluster.kubeinit.local   Ready    master   14m     v1.19.2+f173eb4-1049
+                        <div class="codehilite"><pre><span></span>c957b9a88ff2a94be3755200f7939e0e194df1519f667ba1b2e04c3c5436afef
 </pre></div>
 
                     </td>
@@ -349,9 +391,7 @@ master1.okdcluster.kubeinit.local   Ready    master   14m     v1.19.2+f173eb4-10
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;localhost                           Ready    master   8m41s   v1.19.2+f173eb4-1049&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;master0.okdcluster.kubeinit.local   Ready    master   14m     v1.19.2+f173eb4-1049&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;master1.okdcluster.kubeinit.local   Ready    master   14m     v1.19.2+f173eb4-1049&quot;</span>
+    <span class="s2">&quot;c957b9a88ff2a94be3755200f7939e0e194df1519f667ba1b2e04c3c5436afef&quot;</span>
 <span class="p">]</span>
 </pre></div>
 
