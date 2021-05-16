@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 09 May 2021 05:44:46 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 06:10:54 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 09 May 2021 06:01:51 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 06:51:16 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:17:04.87
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:40:22.55
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
                             <a href="../playbooks/2.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/2.html#plays">3 plays</a>
+                            <a href="../playbooks/2.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/2.html#results">399 results</a>
+                            <a href="../playbooks/2.html#results">406 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/2.html#files">36 files</a>
+                            <a href="../playbooks/2.html#files">48 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Set trustbundle fact to contents of domain.crt</a></li>
-            <li><strong>Action</strong>: ansible.builtin.set_fact</li>
-            <li><strong>Path</strong>: <a href="../files/61.html#line-273">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:273</a>
+            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Generate an OpenSSL private key</a></li>
+            <li><strong>Action</strong>: community.crypto.openssl_privatekey</li>
+            <li><strong>Path</strong>: <a href="../files/87.html#line-95">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:95</a>
             <li><strong>Host</strong>: <a href="../hosts/3.html">localhost</a></li>
-            <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 09 May 2021 05:55:52 -0400</li>
-            <li><strong>Ended</strong>: 09 May 2021 05:55:52 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.02</li>
+            <li><strong>Status</strong>: changed</li>
+            <li><strong>Started</strong>: 16 May 2021 06:35:15 -0400</li>
+            <li><strong>Ended</strong>: 16 May 2021 06:35:15 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.77</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -206,12 +206,47 @@
             <tbody>
                 
                 <tr role="row">
-                    <td role="cell" id="ansible_facts" data-label="ansible_facts" class="pf-m-width-20">
-                        <a href="#ansible_facts">ansible_facts</a>
+                    <td role="cell" id="changed" data-label="changed" class="pf-m-width-20">
+                        <a href="#changed">changed</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>True
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="filename" data-label="filename" class="pf-m-width-20">
+                        <a href="#filename">filename</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>/var/kubeinit/local_registry/certs/domain.key
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="fingerprint" data-label="fingerprint" class="pf-m-width-20">
+                        <a href="#fingerprint">fingerprint</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;trustbundle&quot;</span><span class="p">:</span> <span class="s2">&quot;-----BEGIN CERTIFICATE-----\nMIIGajCCBFKgAwIBAgIURIhorI+8fmNkXCfzsD2NM8ypB+4wDQYJKoZIhvcNAQEL\nBQAwgY4xCzAJBgNVBAYTAlVTMRAwDgYDVQQIDAdNeVN0YXRlMQ8wDQYDVQQHDAZN\neUNpdHkxEjAQBgNVBAoMCU15Q29tcGFueTEVMBMGA1UECwwMTXlEZXBhcnRtZW50\nMTEwLwYDVQQDDChya2Utc2VydmljZS0wMS5ya2VjbHVzdGVyLmt1YmVpbml0Lmxv\nY2FsMB4XDTIxMDUwOTA5NTU0MFoXDTMxMDUwNzA5NTU0MFowgY4xCzAJBgNVBAYT\nAlVTMRAwDgYDVQQIDAdNeVN0YXRlMQ8wDQYDVQQHDAZNeUNpdHkxEjAQBgNVBAoM\nCU15Q29tcGFueTEVMBMGA1UECwwMTXlEZXBhcnRtZW50MTEwLwYDVQQDDChya2Ut\nc2VydmljZS0wMS5ya2VjbHVzdGVyLmt1YmVpbml0LmxvY2FsMIICIjANBgkqhkiG\n9w0BAQEFAAOCAg8AMIICCgKCAgEAr9m86K3bOIkUieZAbjzwYgeOhCStGsdLkoe3\nAT/JBne91COSsA+B0hP3+2G1w2/NiMiwWifQbhU1u88bgUWxJ4NlON5MMGB/xs1q\nLXnlWoHHGR5Cj62bhyuuv0eS7SE4nwHskr0V2iDkV86wUp4TMUAf/kS4OscsHa9t\ncg16owf+nrw/PmtyQYVmSC0dKClb27EnG69yFnsgs2iB4r7vgVfQxWWV/4AgN5yv\nhQCtjEdA8PtJAqDaSib8KOPLF0a5bIbhJJXOsX2gzbWThzynsmLtf4OuD4onPEVe\nVOM28jAECE8vtZW0xtJ3idtxRezC08zBvNtqFiwFtO436YUafIM9kDn1FBHwQ7lR\n4eiO6WeanyZarIprAOBK6b0RHNBosIE1RVaV2dM44+QxBoCDnS1i8uBOgW1G3yTf\naB3cDpAMISyC1RchcM+BcrSpGhZeTlFLf2HGTkNW4EqzxVZJq71A4qjoNHtMuNfI\nuGfOzn517SvrkQNSdD5t4udXz+oANh00CTxRVhNhN+XuoW2OTwje2kSG8WOaRVqb\n9dCB2NjEw8Jtpx5c2KmQ7mSBGOL7cUcckRLHQuLLwC7ZLKjaQyWF8FxnRkZD1U0r\n86fPQ0lnpjQPtlugwocmCHzFPRilsANhI3BBQ1YphcpKNMDb6vbpPyHeyX+MpzM3\nCj6WgRECAwEAAaOBvTCBujBnBgNVHREEYDBegg5ya2Utc2VydmljZS0wMYIocmtl\nLXNlcnZpY2UtMDEucmtlY2x1c3Rlci5rdWJlaW5pdC5sb2NhbIIicmVnaXN0cnku\ncmtlY2x1c3Rlci5rdWJlaW5pdC5sb2NhbDAPBgNVHRMBAf8EBTADAQH/MB0GA1Ud\nDgQWBBQeCdSs8i3nadJKINIciCzZ6OSQOTAfBgNVHSMEGDAWgBQeCdSs8i3nadJK\nINIciCzZ6OSQOTANBgkqhkiG9w0BAQsFAAOCAgEAPgAMcK5JBT+OLzcPO1lRsfNA\nFxPi5lf5XZnW/oG8vq1gSGTlgeyUeUFONEVTCXWe/quhQkf2ukDOg1ZenevVUS7c\nEA4Uzhhu3DItGZQvZZYkuB40JBE/zmBkWbYqeXzjnwj6Erbs8r++XqeidjYgMp7S\niGU4obSgr2o0qju5jwIapbM5VQQLOLxZLCjTJF5HO0MkTkehaM1BfNqOWA4OubHg\nXg81Cxmfr3zga4ergY4OtuaQzfTluxA5KE87a8aWv+RtcdcOl+zV0QjpFqyaMtwn\nVmFZC7q5MBOeYh0PlQ9PkZV9Gkw6wpiqMEgRjxLaF6Jt6q3HuplaqVUpwef4WmMT\nGA0fZIFOyUB6drbwvKxxC+Iabn7/6JVm60GmvHQawlg+CCX/MD6r1KtzszuunbuJ\nShl/FUsDn25qbwlJgQ22rLhGQXO4KuMUak/0r30o7plEWeBaQ+Nhdivw83lrG43r\n5kVLNAJvH+1fwdR1EGf6sYbgr9TdN65juDLn4YLc/V1x2Br1294EvAJg9KMBlwN1\n5VHXd2PXRXJfjvoNF1d9A7AOs9Q1i/VR0iFFAhP1APbSyRCCSywbZuMNo6ytgCPG\nVYEl0q/kabUG0f4Pfmyf+ncRJvsWV0qvbLIdae94wNyV+r2mHC9loE43BIpiJROl\nu4rsoDFVvCZYTwyRQzM=\n-----END CERTIFICATE-----\n&quot;</span>
+    <span class="nt">&quot;blake2b&quot;</span><span class="p">:</span> <span class="s2">&quot;12:e6:bd:e3:2a:77:a1:53:56:23:3d:ef:c2:86:fe:aa:7b:21:aa:2a:c3:87:7f:c7:4f:f1:66:86:25:2e:68:97:31:c4:90:60:8e:aa:51:45:4f:0d:72:b0:3e:0e:58:c7:72:57:52:59:3b:fb:e2:5a:4e:4c:58:33:10:8e:70:c5&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;blake2s&quot;</span><span class="p">:</span> <span class="s2">&quot;b2:ed:a2:8d:fd:94:2d:80:95:1c:68:a9:a4:40:21:18:9c:98:81:e3:f5:4b:a4:c7:94:e4:55:50:1f:a8:0e:1d&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;md5&quot;</span><span class="p">:</span> <span class="s2">&quot;ab:ac:20:90:6c:70:1f:60:e8:f4:1d:de:b9:3b:21:55&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sha1&quot;</span><span class="p">:</span> <span class="s2">&quot;db:42:8b:2e:34:79:b4:09:5f:a2:99:72:38:72:cd:58:d7:d2:9a:53&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sha224&quot;</span><span class="p">:</span> <span class="s2">&quot;2d:64:04:cb:a4:7f:23:f7:e8:dd:2f:ee:db:21:3b:5c:92:fc:a8:e9:20:e2:de:95:2e:af:cd:3f&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sha256&quot;</span><span class="p">:</span> <span class="s2">&quot;78:85:13:09:cd:82:de:d7:78:62:7b:09:e8:1b:5e:a0:5f:91:53:ce:9c:56:48:c3:26:f2:47:4b:cd:98:d3:43&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sha384&quot;</span><span class="p">:</span> <span class="s2">&quot;b1:2a:68:07:03:27:ad:53:98:2b:5c:77:47:32:70:7f:2d:04:dd:8c:60:62:57:3b:47:96:42:a2:01:12:06:df:54:d4:a3:13:56:5c:aa:0d:c5:ad:1c:74:5a:05:f2:51&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sha3_224&quot;</span><span class="p">:</span> <span class="s2">&quot;d9:71:6e:87:2d:bd:be:73:c6:f0:50:f0:5a:b5:97:a4:e7:5e:65:5c:5f:c5:5a:9f:84:b8:96:df&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sha3_256&quot;</span><span class="p">:</span> <span class="s2">&quot;ee:f9:63:6c:c9:4d:65:18:d6:7e:46:4d:6a:9b:dc:fe:43:87:7e:4b:ca:0f:60:53:a1:1d:59:19:e9:b7:b5:4f&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sha3_384&quot;</span><span class="p">:</span> <span class="s2">&quot;f4:eb:fd:8f:63:98:6c:9c:d9:e3:84:1c:70:1b:c3:a6:6e:ae:94:15:f6:31:7c:ef:51:a2:14:4a:74:22:b9:6e:ac:c0:03:c0:36:c0:c8:b8:0b:fb:ab:74:d0:63:36:75&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sha3_512&quot;</span><span class="p">:</span> <span class="s2">&quot;50:6a:74:c4:a6:bf:4e:30:b7:72:b6:6c:dc:61:c1:64:1a:90:c5:93:04:01:59:e4:a3:ca:54:44:ee:59:7b:17:7d:e8:83:68:aa:fc:40:2a:99:a3:40:23:f2:59:30:bd:c6:55:31:52:30:83:15:f9:7d:ad:00:73:65:f2:fc:bd&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;sha512&quot;</span><span class="p">:</span> <span class="s2">&quot;fa:ef:c6:05:80:20:99:5d:e8:75:d6:37:3a:aa:f6:d7:5a:89:a4:3e:03:d7:69:0f:c7:3c:5d:8d:8b:d9:04:73:3c:24:77:cd:00:05:8b:53:65:7a:ac:a2:77:e5:ac:76:aa:74:09:5e:3c:c6:36:f4:ee:c4:52:45:f6:d1:eb:a7&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;shake_128&quot;</span><span class="p">:</span> <span class="s2">&quot;76:d6:eb:8d:fe:87:41:29:22:88:42:f9:36:4a:f6:1a:35:68:1a:ca:c5:02:bd:79:59:e1:be:72:22:96:b2:95&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;shake_256&quot;</span><span class="p">:</span> <span class="s2">&quot;0b:10:05:36:62:d3:eb:b0:cc:4e:7d:7d:fc:e1:62:b5:01:81:98:76:26:35:89:3f:66:1e:d1:16:9e:2b:11:75&quot;</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -219,11 +254,59 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="changed" data-label="changed" class="pf-m-width-20">
-                        <a href="#changed">changed</a>
+                    <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
+                        <a href="#invocation">invocation</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>False
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;backup&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;cipher&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;curve&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;auto_ignore&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;format_mismatch&quot;</span><span class="p">:</span> <span class="s2">&quot;regenerate&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;0600&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;passphrase&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/local_registry/certs/domain.key&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;regenerate&quot;</span><span class="p">:</span> <span class="s2">&quot;full_idempotence&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;return_content&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;select_crypto_backend&quot;</span><span class="p">:</span> <span class="s2">&quot;auto&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span>
+        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;RSA&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="size" data-label="size" class="pf-m-width-20">
+                        <a href="#size">size</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>4096
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="type" data-label="type" class="pf-m-width-20">
+                        <a href="#type">type</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>RSA
 </pre></div>
 
                     </td>

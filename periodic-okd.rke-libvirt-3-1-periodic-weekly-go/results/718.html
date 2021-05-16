@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 09 May 2021 05:44:46 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 06:10:54 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 09 May 2021 06:01:51 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 06:51:16 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:17:04.87
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:40:22.55
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
                             <a href="../playbooks/2.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/2.html#plays">3 plays</a>
+                            <a href="../playbooks/2.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/2.html#results">399 results</a>
+                            <a href="../playbooks/2.html#results">406 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/2.html#files">36 files</a>
+                            <a href="../playbooks/2.html#files">48 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_haproxy : Reload systemd service</a></li>
-            <li><strong>Action</strong>: ansible.builtin.systemd</li>
-            <li><strong>Path</strong>: <a href="../files/66.html#line-82">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_haproxy/tasks/main.yml:82</a>
+            <li><strong>Task</strong>: ../../roles/kubeinit_bind : Create a podman container to serve the Bind server</a></li>
+            <li><strong>Action</strong>: containers.podman.podman_container</li>
+            <li><strong>Path</strong>: <a href="../files/89.html#line-65">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_bind/tasks/main.yml:65</a>
             <li><strong>Host</strong>: <a href="../hosts/3.html">localhost</a></li>
-            <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 09 May 2021 05:58:53 -0400</li>
-            <li><strong>Ended</strong>: 09 May 2021 05:58:54 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.38</li>
+            <li><strong>Status</strong>: changed</li>
+            <li><strong>Started</strong>: 16 May 2021 06:40:00 -0400</li>
+            <li><strong>Ended</strong>: 16 May 2021 06:40:18 -0400</li>
+            <li><strong>Duration</strong>: 00:00:18.54</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -206,11 +206,410 @@
             <tbody>
                 
                 <tr role="row">
+                    <td role="cell" id="actions" data-label="actions" class="pf-m-width-20">
+                        <a href="#actions">actions</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;pulled image docker.io/internetsystemsconsortium/bind9:9.11&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;created kubeinit-bind&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
                     <td role="cell" id="changed" data-label="changed" class="pf-m-width-20">
                         <a href="#changed">changed</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>False
+                        <div class="codehilite"><pre><span></span>True
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="container" data-label="container" class="pf-m-width-20">
+                        <a href="#container">container</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;AppArmorProfile&quot;</span><span class="p">:</span> <span class="s2">&quot;containers-default-0.14.10&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Args&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;-g&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;-c&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;/etc/bind/named.conf&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;-u&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;bind&quot;</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;BoundingCaps&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;CAP_AUDIT_WRITE&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_CHOWN&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_DAC_OVERRIDE&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_FOWNER&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_FSETID&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_KILL&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_MKNOD&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_NET_BIND_SERVICE&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_NET_RAW&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_SETFCAP&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_SETGID&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_SETPCAP&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_SETUID&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_SYS_CHROOT&quot;</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;Config&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;Annotations&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;io.kubernetes.cri-o.ContainerType&quot;</span><span class="p">:</span> <span class="s2">&quot;container&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;io.kubernetes.cri-o.SandboxID&quot;</span><span class="p">:</span> <span class="s2">&quot;kubeinit-service-pod&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;io.kubernetes.cri-o.TTY&quot;</span><span class="p">:</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;io.podman.annotations.autoremove&quot;</span><span class="p">:</span> <span class="s2">&quot;FALSE&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;io.podman.annotations.init&quot;</span><span class="p">:</span> <span class="s2">&quot;FALSE&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;io.podman.annotations.privileged&quot;</span><span class="p">:</span> <span class="s2">&quot;FALSE&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;io.podman.annotations.publish-all&quot;</span><span class="p">:</span> <span class="s2">&quot;FALSE&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;AttachStderr&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;AttachStdin&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;AttachStdout&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;Cmd&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;/usr/sbin/named&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;-g&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;-c&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;/etc/bind/named.conf&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;-u&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;bind&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;CreateCommand&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;podman&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;container&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;create&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;--name&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;kubeinit-bind&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;--pod&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;kubeinit-service-pod&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;--network&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;host&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;--volume&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;/var/kubeinit/bind/named.conf:/etc/bind/named.conf&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;--volume&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;/var/kubeinit/bind/:/etc/bind/kubeinit/:Z&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;docker.io/internetsystemsconsortium/bind9:9.11&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;Domainname&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Entrypoint&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Env&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;TERM=xterm&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;DEBIAN_FRONTEND=noninteractive&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;LC_ALL=C.UTF-8&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;container=podman&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;HOSTNAME=kubeinit-service-pod&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;Hostname&quot;</span><span class="p">:</span> <span class="s2">&quot;kubeinit-service-pod&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Image&quot;</span><span class="p">:</span> <span class="s2">&quot;docker.io/internetsystemsconsortium/bind9:9.11&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Labels&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;OnBuild&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;OpenStdin&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;StdinOnce&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;StopSignal&quot;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+        <span class="nt">&quot;Tty&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;User&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Volumes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;WorkingDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;ConmonPidFile&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/run/containers/storage/overlay-containers/2f822cc2e45b433445f3bacb7390bf10a9a29ddc8a2a854875ac0f7c35fa99b9/userdata/conmon.pid&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Created&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-16T10:40:16.587270756Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Dependencies&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;827703c178871add5998cc65e1d4656f182a4ea724caa2a2f87e4f21882ef35d&quot;</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;Driver&quot;</span><span class="p">:</span> <span class="s2">&quot;overlay&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;EffectiveCaps&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;CAP_AUDIT_WRITE&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_CHOWN&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_DAC_OVERRIDE&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_FOWNER&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_FSETID&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_KILL&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_MKNOD&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_NET_BIND_SERVICE&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_NET_RAW&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_SETFCAP&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_SETGID&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_SETPCAP&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_SETUID&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CAP_SYS_CHROOT&quot;</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;ExecIDs&quot;</span><span class="p">:</span> <span class="p">[],</span>
+    <span class="nt">&quot;ExitCommand&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;/usr/bin/podman&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;--root&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;/var/lib/containers/storage&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;--runroot&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;/var/run/containers/storage&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;--log-level&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;error&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;--cgroup-manager&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;systemd&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;--tmpdir&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;/var/run/libpod&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;--runtime&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;runc&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;--events-backend&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;file&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;container&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;cleanup&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;2f822cc2e45b433445f3bacb7390bf10a9a29ddc8a2a854875ac0f7c35fa99b9&quot;</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;GraphDriver&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;Data&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;LowerDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/containers/storage/overlay/7aeba912741f842ce1e7d4525502ee81d4d777a62177ec56e4e4095417d3b691/diff:/var/lib/containers/storage/overlay/3ae6ba2b43799880a0c77b23d13d05a513d2667ddf5b47b40d6795e20fec8276/diff:/var/lib/containers/storage/overlay/ff7ae329e30dc9a3f47880f22a30932171deea71652ff6630e363264dd0c342c/diff:/var/lib/containers/storage/overlay/06846ad8f3450b439ceb36e5590707de8159e83c2d985f5abee787010e2df0ca/diff:/var/lib/containers/storage/overlay/4f94bb2cf77fc4f88d0aa6d28239a896449c3229f67114c390dad30152253642/diff:/var/lib/containers/storage/overlay/2797ba454f16dcf8b05aa5e5d89c2ad15701157354f1c59bf3226199a7ef6624/diff:/var/lib/containers/storage/overlay/7e665b1cd056eb6dca22e359214929254d3aab525ba8ec18fcaf5707b9e7c15c/diff:/var/lib/containers/storage/overlay/ccdbb80308cc5ef43b605ac28fac29c6a597f89f5a169bbedbb8dec29c987439/diff&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;UpperDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/containers/storage/overlay/aec345c912b3d2e1eaebfb47acb337c9608b0091be50c0cf5bb3f6d9a89448cb/diff&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;WorkDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/containers/storage/overlay/aec345c912b3d2e1eaebfb47acb337c9608b0091be50c0cf5bb3f6d9a89448cb/work&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;overlay&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;HostConfig&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;AutoRemove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;Binds&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;f392fb7c17362fc439ccfec005f8c6cef1f3e2f140d29600e8b081aa9a857203:/etc/bind:rprivate,rw,nodev,exec,nosuid,rbind&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;bbd86a1007ee5f4d720adb1022bccc9b6167b81e1a0dd33b4886a7f70c1e1771:/var/cache/bind:rprivate,rw,nodev,exec,nosuid,rbind&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;7a7b73edebbb28b79c9b1851fe41d96c24c5e00d353ea88844719c23716b3e76:/var/lib/bind:rprivate,rw,nodev,exec,nosuid,rbind&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;19854ed4039a5f785101eab2d9894e6e65848109cfd6d1ef5726c78572114948:/var/log:rprivate,rw,nodev,exec,nosuid,rbind&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;/var/kubeinit/bind/named.conf:/etc/bind/named.conf:rw,rprivate,rbind&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;/var/kubeinit/bind:/etc/bind/kubeinit:Z,rw,rprivate,rbind&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;BlkioDeviceReadBps&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;BlkioDeviceReadIOps&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;BlkioDeviceWriteBps&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;BlkioDeviceWriteIOps&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;BlkioWeight&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;BlkioWeightDevice&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;CapAdd&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;CapDrop&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;Cgroup&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;CgroupMode&quot;</span><span class="p">:</span> <span class="s2">&quot;host&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;CgroupParent&quot;</span><span class="p">:</span> <span class="s2">&quot;machine.slice/machine-libpod_pod_30a1c1e1170659d0ead9e8ca490aa49c020d1d6a0132af882f95e3ac6bdd0570.slice&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Cgroups&quot;</span><span class="p">:</span> <span class="s2">&quot;default&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ConsoleSize&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="mi">0</span><span class="p">,</span>
+            <span class="mi">0</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;ContainerIDFile&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;CpuCount&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;CpuPercent&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;CpuPeriod&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;CpuQuota&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;CpuRealtimePeriod&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;CpuRealtimeRuntime&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;CpuShares&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;CpusetCpus&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;CpusetMems&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Devices&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;DiskQuota&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Dns&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;DnsOptions&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;DnsSearch&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;ExtraHosts&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;GroupAdd&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;IOMaximumBandwidth&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;IOMaximumIOps&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;IpcMode&quot;</span><span class="p">:</span> <span class="s2">&quot;container:827703c178871add5998cc65e1d4656f182a4ea724caa2a2f87e4f21882ef35d&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Isolation&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;KernelMemory&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Links&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;LogConfig&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;Config&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;k8s-file&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;Memory&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;MemoryReservation&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;MemorySwap&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;MemorySwappiness&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;NanoCpus&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;NetworkMode&quot;</span><span class="p">:</span> <span class="s2">&quot;host&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;OomKillDisable&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;OomScoreAdj&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;PidMode&quot;</span><span class="p">:</span> <span class="s2">&quot;private&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;PidsLimit&quot;</span><span class="p">:</span> <span class="mi">2048</span><span class="p">,</span>
+        <span class="nt">&quot;PortBindings&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="nt">&quot;Privileged&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;PublishAllPorts&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;ReadonlyRootfs&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;RestartPolicy&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;MaximumRetryCount&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;Runtime&quot;</span><span class="p">:</span> <span class="s2">&quot;oci&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;SecurityOpt&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;ShmSize&quot;</span><span class="p">:</span> <span class="mi">65536000</span><span class="p">,</span>
+        <span class="nt">&quot;Tmpfs&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="nt">&quot;UTSMode&quot;</span><span class="p">:</span> <span class="s2">&quot;container:827703c178871add5998cc65e1d4656f182a4ea724caa2a2f87e4f21882ef35d&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Ulimits&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;Hard&quot;</span><span class="p">:</span> <span class="mi">1048576</span><span class="p">,</span>
+                <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;RLIMIT_NOFILE&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;Soft&quot;</span><span class="p">:</span> <span class="mi">1048576</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;Hard&quot;</span><span class="p">:</span> <span class="mi">4194304</span><span class="p">,</span>
+                <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;RLIMIT_NPROC&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;Soft&quot;</span><span class="p">:</span> <span class="mi">4194304</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;UsernsMode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;VolumeDriver&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;VolumesFrom&quot;</span><span class="p">:</span> <span class="kc">null</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;HostnamePath&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;HostsPath&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Id&quot;</span><span class="p">:</span> <span class="s2">&quot;2f822cc2e45b433445f3bacb7390bf10a9a29ddc8a2a854875ac0f7c35fa99b9&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Image&quot;</span><span class="p">:</span> <span class="s2">&quot;2de040736c9fa4cc543d8b12f09fd437d463ca9cfe19d125718a20786d9e8752&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ImageName&quot;</span><span class="p">:</span> <span class="s2">&quot;docker.io/internetsystemsconsortium/bind9:9.11&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;IsInfra&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nt">&quot;LogPath&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/containers/storage/overlay-containers/2f822cc2e45b433445f3bacb7390bf10a9a29ddc8a2a854875ac0f7c35fa99b9/userdata/ctr.log&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;LogTag&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;MountLabel&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Mounts&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;Destination&quot;</span><span class="p">:</span> <span class="s2">&quot;/etc/bind&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Driver&quot;</span><span class="p">:</span> <span class="s2">&quot;local&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Mode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;f392fb7c17362fc439ccfec005f8c6cef1f3e2f140d29600e8b081aa9a857203&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Options&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;nodev&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;exec&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;nosuid&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;rbind&quot;</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;Propagation&quot;</span><span class="p">:</span> <span class="s2">&quot;rprivate&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;RW&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;Source&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/containers/storage/volumes/f392fb7c17362fc439ccfec005f8c6cef1f3e2f140d29600e8b081aa9a857203/_data&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;volume&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;Destination&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/cache/bind&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Driver&quot;</span><span class="p">:</span> <span class="s2">&quot;local&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Mode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;bbd86a1007ee5f4d720adb1022bccc9b6167b81e1a0dd33b4886a7f70c1e1771&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Options&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;nodev&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;exec&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;nosuid&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;rbind&quot;</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;Propagation&quot;</span><span class="p">:</span> <span class="s2">&quot;rprivate&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;RW&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;Source&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/containers/storage/volumes/bbd86a1007ee5f4d720adb1022bccc9b6167b81e1a0dd33b4886a7f70c1e1771/_data&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;volume&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;Destination&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/bind&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Driver&quot;</span><span class="p">:</span> <span class="s2">&quot;local&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Mode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;7a7b73edebbb28b79c9b1851fe41d96c24c5e00d353ea88844719c23716b3e76&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Options&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;nodev&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;exec&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;nosuid&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;rbind&quot;</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;Propagation&quot;</span><span class="p">:</span> <span class="s2">&quot;rprivate&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;RW&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;Source&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/containers/storage/volumes/7a7b73edebbb28b79c9b1851fe41d96c24c5e00d353ea88844719c23716b3e76/_data&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;volume&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;Destination&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/log&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Driver&quot;</span><span class="p">:</span> <span class="s2">&quot;local&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Mode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;19854ed4039a5f785101eab2d9894e6e65848109cfd6d1ef5726c78572114948&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Options&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;nodev&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;exec&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;nosuid&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;rbind&quot;</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;Propagation&quot;</span><span class="p">:</span> <span class="s2">&quot;rprivate&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;RW&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;Source&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/containers/storage/volumes/19854ed4039a5f785101eab2d9894e6e65848109cfd6d1ef5726c78572114948/_data&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;volume&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;Destination&quot;</span><span class="p">:</span> <span class="s2">&quot;/etc/bind/named.conf&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Driver&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Mode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Options&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;rbind&quot;</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;Propagation&quot;</span><span class="p">:</span> <span class="s2">&quot;rprivate&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;RW&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;Source&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/bind/named.conf&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;bind&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;Destination&quot;</span><span class="p">:</span> <span class="s2">&quot;/etc/bind/kubeinit&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Driver&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Mode&quot;</span><span class="p">:</span> <span class="s2">&quot;Z&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Options&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;rbind&quot;</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;Propagation&quot;</span><span class="p">:</span> <span class="s2">&quot;rprivate&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;RW&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;Source&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/bind&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;bind&quot;</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;kubeinit-bind&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Namespace&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;NetworkSettings&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;Bridge&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;EndpointID&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Gateway&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;GlobalIPv6Address&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;GlobalIPv6PrefixLen&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;HairpinMode&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;IPAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;IPPrefixLen&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;IPv6Gateway&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;LinkLocalIPv6Address&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;LinkLocalIPv6PrefixLen&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;MacAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Ports&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="nt">&quot;SandboxID&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;SandboxKey&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;OCIRuntime&quot;</span><span class="p">:</span> <span class="s2">&quot;runc&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Path&quot;</span><span class="p">:</span> <span class="s2">&quot;/usr/sbin/named&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Pod&quot;</span><span class="p">:</span> <span class="s2">&quot;30a1c1e1170659d0ead9e8ca490aa49c020d1d6a0132af882f95e3ac6bdd0570&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ProcessLabel&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ResolvConfPath&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;RestartCount&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;Rootfs&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;State&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;Dead&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;Error&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ExitCode&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;FinishedAt&quot;</span><span class="p">:</span> <span class="s2">&quot;0001-01-01T00:00:00Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Healthcheck&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;FailingStreak&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="nt">&quot;Log&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;Status&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;OOMKilled&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;OciVersion&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.2-dev&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Paused&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;Pid&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;Restarting&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;Running&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;StartedAt&quot;</span><span class="p">:</span> <span class="s2">&quot;0001-01-01T00:00:00Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;Status&quot;</span><span class="p">:</span> <span class="s2">&quot;configured&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;StaticDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/containers/storage/overlay-containers/2f822cc2e45b433445f3bacb7390bf10a9a29ddc8a2a854875ac0f7c35fa99b9/userdata&quot;</span>
+<span class="p">}</span>
 </pre></div>
 
                     </td>
@@ -223,16 +622,120 @@
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;daemon_reexec&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;daemon_reload&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;enabled&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;masked&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;no_block&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;scope&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="kc">null</span>
+        <span class="nt">&quot;annotation&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;authfile&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;blkio_weight&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;blkio_weight_device&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;cap_add&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;cap_drop&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;cgroup_parent&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;cgroupns&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;cgroups&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;cidfile&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;cmd_args&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;conmon_pidfile&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;cpu_period&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;cpu_rt_period&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;cpu_rt_runtime&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;cpu_shares&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;cpus&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;cpuset_cpus&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;cpuset_mems&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;debug&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;detach&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;detach_keys&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;device_read_bps&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;device_read_iops&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;device_write_bps&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;device_write_iops&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;dns&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;dns_option&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;dns_search&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;entrypoint&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;env&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;env_file&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;env_host&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;etc_hosts&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;podman&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;expose&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;force_restart&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;gidmap&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;group_add&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;healthcheck&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;healthcheck_interval&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;healthcheck_retries&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;healthcheck_start_period&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;healthcheck_timeout&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;hostname&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;http_proxy&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;docker.io/internetsystemsconsortium/bind9:9.11&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;image_strict&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;image_volume&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;init&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;init_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;interactive&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;ip&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;ipc&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;kernel_memory&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;label_file&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;log_driver&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;log_level&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;log_opt&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;mac_address&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;memory&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;memory_reservation&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;memory_swap&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;memory_swappiness&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;mount&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;kubeinit-bind&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;network&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;host&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;no_hosts&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;oom_kill_disable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;oom_score_adj&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;pid&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;pids_limit&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;pod&quot;</span><span class="p">:</span> <span class="s2">&quot;kubeinit-service-pod&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;privileged&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;publish&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;publish_all&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;read_only&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;read_only_tmpfs&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;recreate&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;restart_policy&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;rm&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;rootfs&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;security_opt&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;shm_size&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;sig_proxy&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;stopped&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stop_signal&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;stop_timeout&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;subgidname&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;subuidname&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;sysctl&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;systemd&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;tmpfs&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;tty&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;uidmap&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;ulimit&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;userns&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;uts&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;volume&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;/var/kubeinit/bind/named.conf:/etc/bind/named.conf&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;/var/kubeinit/bind/:/etc/bind/kubeinit/:Z&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;volumes&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;/var/kubeinit/bind/named.conf:/etc/bind/named.conf&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;/var/kubeinit/bind/:/etc/bind/kubeinit/:Z&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;volumes_from&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;workdir&quot;</span><span class="p">:</span> <span class="kc">null</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -241,20 +744,59 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="name" data-label="name" class="pf-m-width-20">
-                        <a href="#name">name</a>
+                    <td role="cell" id="podman_actions" data-label="podman_actions" class="pf-m-width-20">
+                        <a href="#podman_actions">podman_actions</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        None
+                        <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;podman create --name kubeinit-bind --pod kubeinit-service-pod --network host --volume /var/kubeinit/bind/named.conf:/etc/bind/named.conf --volume /var/kubeinit/bind/:/etc/bind/kubeinit/:Z docker.io/internetsystemsconsortium/bind9:9.11&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="status" data-label="status" class="pf-m-width-20">
-                        <a href="#status">status</a>
+                    <td role="cell" id="stderr" data-label="stderr" class="pf-m-width-20">
+                        <a href="#stderr">stderr</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">{}</span>
+                        <div class="codehilite"><pre><span></span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stderr_lines" data-label="stderr_lines" class="pf-m-width-20">
+                        <a href="#stderr_lines">stderr_lines</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stdout" data-label="stdout" class="pf-m-width-20">
+                        <a href="#stdout">stdout</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>2f822cc2e45b433445f3bacb7390bf10a9a29ddc8a2a854875ac0f7c35fa99b9
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stdout_lines" data-label="stdout_lines" class="pf-m-width-20">
+                        <a href="#stdout_lines">stdout_lines</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;2f822cc2e45b433445f3bacb7390bf10a9a29ddc8a2a854875ac0f7c35fa99b9&quot;</span>
+<span class="p">]</span>
 </pre></div>
 
                     </td>

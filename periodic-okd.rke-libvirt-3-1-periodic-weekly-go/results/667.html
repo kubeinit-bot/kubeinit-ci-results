@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 09 May 2021 05:44:46 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 06:10:54 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 09 May 2021 06:01:51 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 06:51:16 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:17:04.87
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:40:22.55
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
                             <a href="../playbooks/2.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/2.html#plays">3 plays</a>
+                            <a href="../playbooks/2.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/2.html#results">399 results</a>
+                            <a href="../playbooks/2.html#results">406 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/2.html#files">36 files</a>
+                            <a href="../playbooks/2.html#files">48 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Generate an OpenSSL private key</a></li>
-            <li><strong>Action</strong>: community.crypto.openssl_privatekey</li>
-            <li><strong>Path</strong>: <a href="../files/61.html#line-95">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:95</a>
+            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Make sure needed packages are installed</a></li>
+            <li><strong>Action</strong>: ansible.builtin.package</li>
+            <li><strong>Path</strong>: <a href="../files/85.html#line-25">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/00_install.yml:25</a>
             <li><strong>Host</strong>: <a href="../hosts/3.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 09 May 2021 05:55:38 -0400</li>
-            <li><strong>Ended</strong>: 09 May 2021 05:55:39 -0400</li>
-            <li><strong>Duration</strong>: 00:00:01.01</li>
+            <li><strong>Started</strong>: 16 May 2021 06:34:51 -0400</li>
+            <li><strong>Ended</strong>: 16 May 2021 06:35:02 -0400</li>
+            <li><strong>Duration</strong>: 00:00:11.06</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -206,6 +206,28 @@
             <tbody>
                 
                 <tr role="row">
+                    <td role="cell" id="cache_update_time" data-label="cache_update_time" class="pf-m-width-20">
+                        <a href="#cache_update_time">cache_update_time</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>1621161289
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="cache_updated" data-label="cache_updated" class="pf-m-width-20">
+                        <a href="#cache_updated">cache_updated</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>False
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
                     <td role="cell" id="changed" data-label="changed" class="pf-m-width-20">
                         <a href="#changed">changed</a>
                     </td>
@@ -217,37 +239,11 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="filename" data-label="filename" class="pf-m-width-20">
-                        <a href="#filename">filename</a>
+                    <td role="cell" id="diff" data-label="diff" class="pf-m-width-20">
+                        <a href="#diff">diff</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>/var/kubeinit/local_registry/certs/domain.key
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="fingerprint" data-label="fingerprint" class="pf-m-width-20">
-                        <a href="#fingerprint">fingerprint</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;blake2b&quot;</span><span class="p">:</span> <span class="s2">&quot;e7:67:9b:58:8e:2d:aa:e1:0f:f6:6b:07:46:bf:c7:4f:c4:fd:8a:e4:bf:5a:11:d2:c5:e2:67:cb:7f:dc:41:6f:45:3b:ff:32:56:2b:64:36:a9:f8:89:93:ac:b2:15:6f:02:02:49:d4:b9:47:64:a2:09:bd:ff:42:b5:c2:fb:8b&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;blake2s&quot;</span><span class="p">:</span> <span class="s2">&quot;3f:71:f4:e6:cc:ff:16:2e:1b:13:b8:a6:8c:e0:fe:ad:a4:0c:5f:e4:f4:a3:0e:e6:70:39:18:5b:2a:4a:c8:43&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;md5&quot;</span><span class="p">:</span> <span class="s2">&quot;7a:81:99:c9:7b:45:75:e1:bd:80:2b:29:8f:f5:21:b8&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;sha1&quot;</span><span class="p">:</span> <span class="s2">&quot;ae:6d:50:7f:0e:a4:e0:82:41:a6:7b:10:e6:65:47:be:43:eb:80:e2&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;sha224&quot;</span><span class="p">:</span> <span class="s2">&quot;c5:ce:0e:09:33:19:74:7d:e0:ee:cb:9a:a1:fa:d2:be:dc:7b:fb:9e:bf:9a:7b:be:d2:1a:a3:00&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;sha256&quot;</span><span class="p">:</span> <span class="s2">&quot;44:84:b0:87:69:9d:5a:75:25:86:a3:63:36:ab:11:67:cd:70:e1:94:01:4e:02:79:e7:3a:a5:1c:03:89:f5:00&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;sha384&quot;</span><span class="p">:</span> <span class="s2">&quot;c6:50:ce:a6:8d:31:48:d9:a5:a7:f1:36:a8:de:83:64:09:0b:7e:58:f9:a4:cc:6a:24:96:d8:b1:36:69:8b:28:1b:06:28:41:13:d4:2a:3d:65:fe:01:62:e5:9e:b7:ca&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;sha3_224&quot;</span><span class="p">:</span> <span class="s2">&quot;26:9a:39:df:0b:40:78:b8:89:07:52:e7:c6:7f:ee:74:38:28:67:0c:9a:56:66:70:72:e3:d3:57&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;sha3_256&quot;</span><span class="p">:</span> <span class="s2">&quot;f1:e6:e5:48:3f:00:3d:e5:51:99:a0:a5:39:cd:5f:6b:00:65:d2:05:de:bf:04:7f:15:46:49:a3:f3:be:67:62&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;sha3_384&quot;</span><span class="p">:</span> <span class="s2">&quot;d4:e4:e9:94:e5:13:7f:56:7d:11:b4:6b:3d:74:9a:c4:77:34:2c:18:a4:c5:62:aa:6b:67:8c:02:f8:9b:6b:98:cc:c8:d6:ec:94:26:f0:31:2f:5e:53:b1:0d:b0:d1:f0&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;sha3_512&quot;</span><span class="p">:</span> <span class="s2">&quot;6b:a0:ed:cb:bf:ed:0c:d2:56:3f:d4:48:cb:f6:2b:b7:e2:37:89:14:62:46:e1:24:c6:ea:ec:ca:1d:e1:fa:31:9b:3e:3a:4b:17:71:3f:96:0f:9d:22:23:f6:1f:c8:f9:7b:a6:c0:e4:35:7c:c6:5f:08:eb:2c:c6:cd:7e:c1:94&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;sha512&quot;</span><span class="p">:</span> <span class="s2">&quot;84:34:cb:6d:18:21:9d:1c:4b:59:1b:77:73:c8:52:7f:48:8c:85:cf:50:f8:19:ce:82:52:c0:76:9c:32:da:10:c3:70:bb:50:f2:c6:c4:2b:70:eb:ea:91:c9:6d:5d:58:cf:2d:07:3f:11:02:06:bc:c8:a0:87:ff:26:08:6f:0c&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;shake_128&quot;</span><span class="p">:</span> <span class="s2">&quot;d3:05:be:6c:51:cc:8d:f0:04:d9:cf:71:71:07:95:65:88:50:4c:27:bb:1f:1b:6a:cb:97:6b:32:f2:9f:ac:c4&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;shake_256&quot;</span><span class="p">:</span> <span class="s2">&quot;53:f0:86:96:54:65:e8:c3:3c:de:4d:de:c5:63:f5:e7:7b:39:c9:b3:fb:5f:7a:08:58:08:5c:8c:1a:b1:7f:42&quot;</span>
-<span class="p">}</span>
+                        <div class="codehilite"><pre><span></span><span class="p">{}</span>
 </pre></div>
 
                     </td>
@@ -260,29 +256,36 @@
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;backup&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;cipher&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;curve&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;allow_unauthenticated&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;autoclean&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;autoremove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;cache_valid_time&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;deb&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;default_release&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;dpkg_options&quot;</span><span class="p">:</span> <span class="s2">&quot;force-confdef,force-confold&quot;</span><span class="p">,</span>
         <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;auto_ignore&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;format_mismatch&quot;</span><span class="p">:</span> <span class="s2">&quot;regenerate&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;0600&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;passphrase&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/local_registry/certs/domain.key&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;regenerate&quot;</span><span class="p">:</span> <span class="s2">&quot;full_idempotence&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;return_content&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;select_crypto_backend&quot;</span><span class="p">:</span> <span class="s2">&quot;auto&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span>
+        <span class="nt">&quot;force_apt_get&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;install_recommends&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;python3&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;python3-dns&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;jq&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;skopeo&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;only_upgrade&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;package&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;python3&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;python3-dns&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;jq&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;skopeo&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;policy_rc_d&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;purge&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;RSA&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span>
+        <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;update_cache_retries&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+        <span class="nt">&quot;update_cache_retry_max_delay&quot;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
+        <span class="nt">&quot;upgrade&quot;</span><span class="p">:</span> <span class="kc">null</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -291,22 +294,128 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="size" data-label="size" class="pf-m-width-20">
-                        <a href="#size">size</a>
+                    <td role="cell" id="stderr" data-label="stderr" class="pf-m-width-20">
+                        <a href="#stderr">stderr</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>4096
+                        <div class="codehilite"><pre><span></span>
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="type" data-label="type" class="pf-m-width-20">
-                        <a href="#type">type</a>
+                    <td role="cell" id="stderr_lines" data-label="stderr_lines" class="pf-m-width-20">
+                        <a href="#stderr_lines">stderr_lines</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>RSA
+                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stdout" data-label="stdout" class="pf-m-width-20">
+                        <a href="#stdout">stdout</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  python3-dns skopeo
+0 upgraded, 2 newly installed, 0 to remove and 2 not upgraded.
+Need to get 5680 kB of archives.
+After this operation, 20.6 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu groovy/universe amd64 python3-dns all 3.2.1-1 [25.6 kB]
+Get:2 http://archive.ubuntu.com/ubuntu groovy/universe amd64 skopeo amd64 1.1.0-4 [5654 kB]
+Fetched 5680 kB in 1s (4655 kB/s)
+Selecting previously unselected package python3-dns.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 71685 files and directories currently installed.)
+Preparing to unpack .../python3-dns_3.2.1-1_all.deb ...
+Unpacking python3-dns (3.2.1-1) ...
+Selecting previously unselected package skopeo.
+Preparing to unpack .../skopeo_1.1.0-4_amd64.deb ...
+Unpacking skopeo (1.1.0-4) ...
+Setting up skopeo (1.1.0-4) ...
+Setting up python3-dns (3.2.1-1) ...
+Processing triggers for man-db (2.9.3-2) ...
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stdout_lines" data-label="stdout_lines" class="pf-m-width-20">
+                        <a href="#stdout_lines">stdout_lines</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;Reading package lists...&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Building dependency tree...&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Reading state information...&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;The following NEW packages will be installed:&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;  python3-dns skopeo&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;0 upgraded, 2 newly installed, 0 to remove and 2 not upgraded.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Need to get 5680 kB of archives.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;After this operation, 20.6 MB of additional disk space will be used.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Get:1 http://archive.ubuntu.com/ubuntu groovy/universe amd64 python3-dns all 3.2.1-1 [25.6 kB]&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Get:2 http://archive.ubuntu.com/ubuntu groovy/universe amd64 skopeo amd64 1.1.0-4 [5654 kB]&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Fetched 5680 kB in 1s (4655 kB/s)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Selecting previously unselected package python3-dns.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... &quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 5%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 10%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 15%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 20%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 25%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 30%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 35%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 40%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 45%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 50%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 55%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 60%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 65%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 70%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 75%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 80%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 85%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 90%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 95%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 100%&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;(Reading database ... 71685 files and directories currently installed.)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Preparing to unpack .../python3-dns_3.2.1-1_all.deb ...&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Unpacking python3-dns (3.2.1-1) ...&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Selecting previously unselected package skopeo.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Preparing to unpack .../skopeo_1.1.0-4_amd64.deb ...&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Unpacking skopeo (1.1.0-4) ...&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Setting up skopeo (1.1.0-4) ...&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Setting up python3-dns (3.2.1-1) ...&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Processing triggers for man-db (2.9.3-2) ...&quot;</span>
+<span class="p">]</span>
 </pre></div>
 
                     </td>

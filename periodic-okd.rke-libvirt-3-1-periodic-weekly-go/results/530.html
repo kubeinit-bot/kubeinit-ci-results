@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 02 May 2021 06:43:55 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 06:10:54 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 02 May 2021 07:01:35 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 06:51:16 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:17:39.87
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:40:22.55
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
                             <a href="../playbooks/2.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/2.html#plays">3 plays</a>
+                            <a href="../playbooks/2.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/2.html#results">414 results</a>
+                            <a href="../playbooks/2.html#results">406 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/2.html#files">35 files</a>
+                            <a href="../playbooks/2.html#files">48 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Install OVN packages in Fedora (Slave Hypervisor)</a></li>
-            <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/48.html#line-69">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/20_ovn_install.yml:69</a>
-            <li><strong>Host</strong>: <a href="../hosts/4.html">hypervisor-01</a></li>
-            <li><strong>Status</strong>: skipped</li>
-            <li><strong>Started</strong>: 02 May 2021 06:44:44 -0400</li>
-            <li><strong>Ended</strong>: 02 May 2021 06:44:44 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.01</li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_validations : debug</a></li>
+            <li><strong>Action</strong>: ansible.builtin.debug</li>
+            <li><strong>Path</strong>: <a href="../files/73.html#line-78">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_validations/tasks/30_libvirt_check_cpu_cores.yml:78</a>
+            <li><strong>Host</strong>: <a href="../hosts/3.html">localhost</a></li>
+            <li><strong>Status</strong>: ok</li>
+            <li><strong>Started</strong>: 16 May 2021 06:12:15 -0400</li>
+            <li><strong>Ended</strong>: 16 May 2021 06:12:16 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.02</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -217,11 +217,13 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="skip_reason" data-label="skip_reason" class="pf-m-width-20">
-                        <a href="#skip_reason">skip_reason</a>
+                    <td role="cell" id="kubeinit_validations_libvirt_summarized_cores_usage" data-label="kubeinit_validations_libvirt_summarized_cores_usage" class="pf-m-width-20">
+                        <a href="#kubeinit_validations_libvirt_summarized_cores_usage">kubeinit_validations_libvirt_summarized_cores_usage</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>Conditional result was False
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;hypervisor-01&quot;</span><span class="p">:</span> <span class="s2">&quot;40&quot;</span>
+<span class="p">}</span>
 </pre></div>
 
                     </td>

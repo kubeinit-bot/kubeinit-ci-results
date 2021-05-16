@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 29 Apr 2021 09:44:58 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 05:26:33 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 29 Apr 2021 10:10:21 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 06:10:52 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:25:23.07
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:44:18.93
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">397 results</a>
+                            <a href="../playbooks/1.html#results">382 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">35 files</a>
+                            <a href="../playbooks/1.html#files">48 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: Check that the service node is up and running</a></li>
-            <li><strong>Action</strong>: ansible.builtin.include_role</li>
-            <li><strong>Path</strong>: <a href="../files/10.html#line-58">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_okd/tasks/main.yml:58</a>
-            <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-01</a></li>
-            <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 29 Apr 2021 09:46:36 -0400</li>
-            <li><strong>Ended</strong>: 29 Apr 2021 09:46:36 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.02</li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Inject toor virt-customize assets</a></li>
+            <li><strong>Action</strong>: ansible.builtin.shell</li>
+            <li><strong>Path</strong>: <a href="../files/31.html#line-51">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/60_okd_deploy_nodes.yml:51</a>
+            <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
+            <li><strong>Status</strong>: changed</li>
+            <li><strong>Started</strong>: 16 May 2021 05:27:41 -0400</li>
+            <li><strong>Ended</strong>: 16 May 2021 05:28:08 -0400</li>
+            <li><strong>Duration</strong>: 00:00:27.12</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -210,38 +210,164 @@
                         <a href="#changed">changed</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>False
+                        <div class="codehilite"><pre><span></span>True
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="msg" data-label="msg" class="pf-m-width-20">
-                        <a href="#msg">msg</a>
+                    <td role="cell" id="cmd" data-label="cmd" class="pf-m-width-20">
+                        <a href="#cmd">cmd</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>All items completed
+                        <div class="codehilite"><pre><span></span>virt-customize -a /var/lib/libvirt/images/okd-service-01.qcow2  --install python3  --run-command &quot;sed -i &#39;s/PasswordAuthentication no/PasswordAuthentication yes/g&#39; /etc/ssh/sshd_config&quot;  --run-command &#39;id -u toor &amp;&gt;/dev/null || /usr/sbin/useradd -u 1000 toor&#39;  --run-command &quot;sed -i s/^SELINUX=.*$/SELINUX=disabled/g /etc/selinux/config&quot;  --ssh-inject toor:file:/home/toor/.ssh/id_rsa.pub  --ssh-inject root:file:/root/.ssh/authorized_keys  --run-command &quot;echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYWNjkSfVT1mFHsPSx4rHF81QfAwFTcoSzBYDoRjTdRvygS+iJDmG0KVdRD72Q/xBnx8MhrB+kNZaEx5SSqqzHc8KBrb+x4jYTAJhkSb2n/Msj/PvT3pZjUWhxOCuMvMp9tDmcN1BcwNb7A8FVFAAssV7rMzs2TauVLZk+BzDAU9XJ657aOJZgOXRQ/dOC6es55Q/AkfTM5Q07WbV0VHoPKMdxLXfiZNG7OcGpLrVRUrwEq0F9L0b032dOxQc1N/Xl4LudeE4OECrxyeQletlL4HALNryUkBLFAC+xVWe76Rf83pIK1W7jDb1CgS0wCXAZfwCH7Tig+QStJfSMhjSICWEc3cx9RbJ2WyhuJgM/HN4990mM+112MjwW8DnXfumSM6+g0dAVYfFZHZRLtji1/Iv0Rh3Myoq/QjhJ5A6VaIQ56WmdBc2Nl5rsJ82CjMFXuyC/zZ5sPzh++mAWZjGN+4pZCNMa0OinZhE+8C/DVfgNM2tbnAnBJNdQ0gNS0GDdMxSs9GewS0PByJO7T3HYbLK1o7HO9rdyqB6jtDiUXd+FKhZBDvXhyiKuYX7AZzDe7XYPM/SOru69X9y/zrbhShoBjVM6SpinivVdLz6Mk4zGb+30cp8Kw19VEAG0cRR3eEqqPajnkLMatQJRQ0X/lT0QY//CKKD0X51G/LRksw==  &gt;&gt; /root/.ssh/authorized_keys&quot;  --hostname okd-service-01.okdcluster.kubeinit.local  --copy-in /tmp/okd-service-01/ifcfg-eth0:/etc/sysconfig/network-scripts  --copy-in /tmp/okd-service-01/hosts.redhat.tmpl:/etc/cloud/templates  --copy-in /tmp/okd-service-01/cloud.cfg:/etc/cloud  --selinux-relabel --root-password password:asdfasdf
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="results" data-label="results" class="pf-m-width-20">
-                        <a href="#results">results</a>
+                    <td role="cell" id="delta" data-label="delta" class="pf-m-width-20">
+                        <a href="#delta">delta</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>0:00:26.913457
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="end" data-label="end" class="pf-m-width-20">
+                        <a href="#end">end</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>2021-05-16 05:28:08.820250
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
+                        <a href="#invocation">invocation</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;virt-customize -a /var/lib/libvirt/images/okd-service-01.qcow2  --install python3  --run-command \&quot;sed -i &#39;s/PasswordAuthentication no/PasswordAuthentication yes/g&#39; /etc/ssh/sshd_config\&quot;  --run-command &#39;id -u toor &amp;&gt;/dev/null || /usr/sbin/useradd -u 1000 toor&#39;  --run-command \&quot;sed -i s/^SELINUX=.*$/SELINUX=disabled/g /etc/selinux/config\&quot;  --ssh-inject toor:file:/home/toor/.ssh/id_rsa.pub  --ssh-inject root:file:/root/.ssh/authorized_keys  --run-command \&quot;echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYWNjkSfVT1mFHsPSx4rHF81QfAwFTcoSzBYDoRjTdRvygS+iJDmG0KVdRD72Q/xBnx8MhrB+kNZaEx5SSqqzHc8KBrb+x4jYTAJhkSb2n/Msj/PvT3pZjUWhxOCuMvMp9tDmcN1BcwNb7A8FVFAAssV7rMzs2TauVLZk+BzDAU9XJ657aOJZgOXRQ/dOC6es55Q/AkfTM5Q07WbV0VHoPKMdxLXfiZNG7OcGpLrVRUrwEq0F9L0b032dOxQc1N/Xl4LudeE4OECrxyeQletlL4HALNryUkBLFAC+xVWe76Rf83pIK1W7jDb1CgS0wCXAZfwCH7Tig+QStJfSMhjSICWEc3cx9RbJ2WyhuJgM/HN4990mM+112MjwW8DnXfumSM6+g0dAVYfFZHZRLtji1/Iv0Rh3Myoq/QjhJ5A6VaIQ56WmdBc2Nl5rsJ82CjMFXuyC/zZ5sPzh++mAWZjGN+4pZCNMa0OinZhE+8C/DVfgNM2tbnAnBJNdQ0gNS0GDdMxSs9GewS0PByJO7T3HYbLK1o7HO9rdyqB6jtDiUXd+FKhZBDvXhyiKuYX7AZzDe7XYPM/SOru69X9y/zrbhShoBjVM6SpinivVdLz6Mk4zGb+30cp8Kw19VEAG0cRR3eEqqPajnkLMatQJRQ0X/lT0QY//CKKD0X51G/LRksw==  &gt;&gt; /root/.ssh/authorized_keys\&quot;  --hostname okd-service-01.okdcluster.kubeinit.local  --copy-in /tmp/okd-service-01/ifcfg-eth0:/etc/sysconfig/network-scripts  --copy-in /tmp/okd-service-01/hosts.redhat.tmpl:/etc/cloud/templates  --copy-in /tmp/okd-service-01/cloud.cfg:/etc/cloud  --selinux-relabel --root-password password:asdfasdf\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="rc" data-label="rc" class="pf-m-width-20">
+                        <a href="#rc">rc</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>0
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="start" data-label="start" class="pf-m-width-20">
+                        <a href="#start">start</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>2021-05-16 05:27:41.906793
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stderr" data-label="stderr" class="pf-m-width-20">
+                        <a href="#stderr">stderr</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stderr_lines" data-label="stderr_lines" class="pf-m-width-20">
+                        <a href="#stderr_lines">stderr_lines</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stdout" data-label="stdout" class="pf-m-width-20">
+                        <a href="#stdout">stdout</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>[   0.0] Examining the guest ...
+[   4.5] Setting a random seed
+[   4.6] Setting the machine ID in /etc/machine-id
+[   4.6] Installing packages: python3
+[  11.9] Running: sed -i &#39;s/PasswordAuthentication no/PasswordAuthentication yes/g&#39; /etc/ssh/sshd_config
+[  11.9] Running: id -u toor &amp;&gt;/dev/null || /usr/sbin/useradd -u 1000 toor
+[  12.2] Running: sed -i s/^SELINUX=.*$/SELINUX=disabled/g /etc/selinux/config
+[  12.2] SSH key inject: toor
+[  13.2] SSH key inject: root
+[  14.1] Running: echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYWNjkSfVT1mFHsPSx4rHF81QfAwFTcoSzBYDoRjTdRvygS+iJDmG0KVdRD72Q/xBnx8MhrB+kNZaEx5SSqqzHc8KBrb+x4jYTAJhkSb2n/Msj/PvT3pZjUWhxOCuMvMp9tDmcN1BcwNb7A8FVFAAssV7rMzs2TauVLZk+BzDAU9XJ657aOJZgOXRQ/dOC6es55Q/AkfTM5Q07WbV0VHoPKMdxLXfiZNG7OcGpLrVRUrwEq0F9L0b032dOxQc1N/Xl4LudeE4OECrxyeQletlL4HALNryUkBLFAC+xVWe76Rf83pIK1W7jDb1CgS0wCXAZfwCH7Tig+QStJfSMhjSICWEc3cx9RbJ2WyhuJgM/HN4990mM+112MjwW8DnXfumSM6+g0dAVYfFZHZRLtji1/Iv0Rh3Myoq/QjhJ5A6VaIQ56WmdBc2Nl5rsJ82CjMFXuyC/zZ5sPzh++mAWZjGN+4pZCNMa0OinZhE+8C/DVfgNM2tbnAnBJNdQ0gNS0GDdMxSs9GewS0PByJO7T3HYbLK1o7HO9rdyqB6jtDiUXd+FKhZBDvXhyiKuYX7AZzDe7XYPM/SOru69X9y/zrbhShoBjVM6SpinivVdLz6Mk4zGb+30cp8Kw19VEAG0cRR3eEqqPajnkLMatQJRQ0X/lT0QY//CKKD0X51G/LRksw==  &gt;&gt; /root/.ssh/authorized_keys
+[  14.2] Setting the hostname: okd-service-01.okdcluster.kubeinit.local
+[  14.2] Copying: /tmp/okd-service-01/ifcfg-eth0 to /etc/sysconfig/network-scripts
+[  14.2] Copying: /tmp/okd-service-01/hosts.redhat.tmpl to /etc/cloud/templates
+[  14.2] Copying: /tmp/okd-service-01/cloud.cfg to /etc/cloud
+[  14.2] Setting passwords
+[  15.2] SELinux relabelling
+[  26.6] Finishing off
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stdout_lines" data-label="stdout_lines" class="pf-m-width-20">
+                        <a href="#stdout_lines">stdout_lines</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;cluster_role_item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;cluster_role_item&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-service-01&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;include_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;../../roles/kubeinit_libvirt&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;public&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nt">&quot;tasks_from&quot;</span><span class="p">:</span> <span class="s2">&quot;70_check_nodes_up.yml&quot;</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
+    <span class="s2">&quot;[   0.0] Examining the guest ...&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   4.5] Setting a random seed&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   4.6] Setting the machine ID in /etc/machine-id&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   4.6] Installing packages: python3&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  11.9] Running: sed -i &#39;s/PasswordAuthentication no/PasswordAuthentication yes/g&#39; /etc/ssh/sshd_config&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  11.9] Running: id -u toor &amp;&gt;/dev/null || /usr/sbin/useradd -u 1000 toor&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  12.2] Running: sed -i s/^SELINUX=.*$/SELINUX=disabled/g /etc/selinux/config&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  12.2] SSH key inject: toor&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  13.2] SSH key inject: root&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  14.1] Running: echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYWNjkSfVT1mFHsPSx4rHF81QfAwFTcoSzBYDoRjTdRvygS+iJDmG0KVdRD72Q/xBnx8MhrB+kNZaEx5SSqqzHc8KBrb+x4jYTAJhkSb2n/Msj/PvT3pZjUWhxOCuMvMp9tDmcN1BcwNb7A8FVFAAssV7rMzs2TauVLZk+BzDAU9XJ657aOJZgOXRQ/dOC6es55Q/AkfTM5Q07WbV0VHoPKMdxLXfiZNG7OcGpLrVRUrwEq0F9L0b032dOxQc1N/Xl4LudeE4OECrxyeQletlL4HALNryUkBLFAC+xVWe76Rf83pIK1W7jDb1CgS0wCXAZfwCH7Tig+QStJfSMhjSICWEc3cx9RbJ2WyhuJgM/HN4990mM+112MjwW8DnXfumSM6+g0dAVYfFZHZRLtji1/Iv0Rh3Myoq/QjhJ5A6VaIQ56WmdBc2Nl5rsJ82CjMFXuyC/zZ5sPzh++mAWZjGN+4pZCNMa0OinZhE+8C/DVfgNM2tbnAnBJNdQ0gNS0GDdMxSs9GewS0PByJO7T3HYbLK1o7HO9rdyqB6jtDiUXd+FKhZBDvXhyiKuYX7AZzDe7XYPM/SOru69X9y/zrbhShoBjVM6SpinivVdLz6Mk4zGb+30cp8Kw19VEAG0cRR3eEqqPajnkLMatQJRQ0X/lT0QY//CKKD0X51G/LRksw==  &gt;&gt; /root/.ssh/authorized_keys&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  14.2] Setting the hostname: okd-service-01.okdcluster.kubeinit.local&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  14.2] Copying: /tmp/okd-service-01/ifcfg-eth0 to /etc/sysconfig/network-scripts&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  14.2] Copying: /tmp/okd-service-01/hosts.redhat.tmpl to /etc/cloud/templates&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  14.2] Copying: /tmp/okd-service-01/cloud.cfg to /etc/cloud&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  14.2] Setting passwords&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  15.2] SELinux relabelling&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  26.6] Finishing off&quot;</span>
 <span class="p">]</span>
 </pre></div>
 

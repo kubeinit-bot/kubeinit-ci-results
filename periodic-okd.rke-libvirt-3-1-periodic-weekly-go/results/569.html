@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 02 May 2021 06:43:55 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 06:10:54 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 02 May 2021 07:01:35 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 06:51:16 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:17:39.87
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:40:22.55
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
                             <a href="../playbooks/2.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/2.html#plays">3 plays</a>
+                            <a href="../playbooks/2.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/2.html#results">414 results</a>
+                            <a href="../playbooks/2.html#results">406 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/2.html#files">35 files</a>
+                            <a href="../playbooks/2.html#files">48 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Create VM definition for the service nodes</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Inject toor virt-customize assets</a></li>
             <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/51.html#line-75">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/60_rke_deploy_nodes.yml:75</a>
-            <li><strong>Host</strong>: <a href="../hosts/4.html">hypervisor-01</a></li>
+            <li><strong>Path</strong>: <a href="../files/79.html#line-55">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/60_rke_deploy_nodes.yml:55</a>
+            <li><strong>Host</strong>: <a href="../hosts/3.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 02 May 2021 06:45:45 -0400</li>
-            <li><strong>Ended</strong>: 02 May 2021 06:45:49 -0400</li>
-            <li><strong>Duration</strong>: 00:00:03.34</li>
+            <li><strong>Started</strong>: 16 May 2021 06:13:51 -0400</li>
+            <li><strong>Ended</strong>: 16 May 2021 06:14:03 -0400</li>
+            <li><strong>Duration</strong>: 00:00:11.62</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -221,7 +221,7 @@
                         <a href="#cmd">cmd</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>virt-install    --connect qemu:///system    --name=rke-master-02    --memory memory=24576    --cpuset=auto    --vcpus=8,maxvcpus=16    --os-type=linux    --os-variant=ubuntu18.04    --autostart                            --network network=kimgtnet0,mac=52:54:00:76:69:82,model=virtio                          --graphics none    --noautoconsole    --import    --disk /var/lib/libvirt/images/rke-master-02.qcow2,format=qcow2,bus=virtio
+                        <div class="codehilite"><pre><span></span>virt-customize -a /var/lib/libvirt/images/rke-master-03.qcow2  --run-command &#39;useradd -s /bin/bash -u 1000 -p &quot;$(openssl passwd -1 asdfasdf)&quot; toor&#39;  --run-command &#39;echo &quot;toor ALL=(root) NOPASSWD:ALL&quot; &gt; /etc/sudoers.d/toor&#39;  --run-command &#39;mkdir -p /home/toor/.ssh&#39;  --run-command &quot;sed -i &#39;s/PermitRootLogin no/PermitRootLogin yes/g&#39; /etc/ssh/sshd_config&quot;  --run-command &quot;sed -i &#39;s/PasswordAuthentication no/PasswordAuthentication yes/g&#39; /etc/ssh/sshd_config&quot;  --run-command &quot;dpkg-reconfigure openssh-server&quot;  --ssh-inject toor:file:/home/toor/.ssh/id_rsa.pub  --ssh-inject root:file:/root/.ssh/authorized_keys  --run-command &quot;echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYWNjkSfVT1mFHsPSx4rHF81QfAwFTcoSzBYDoRjTdRvygS+iJDmG0KVdRD72Q/xBnx8MhrB+kNZaEx5SSqqzHc8KBrb+x4jYTAJhkSb2n/Msj/PvT3pZjUWhxOCuMvMp9tDmcN1BcwNb7A8FVFAAssV7rMzs2TauVLZk+BzDAU9XJ657aOJZgOXRQ/dOC6es55Q/AkfTM5Q07WbV0VHoPKMdxLXfiZNG7OcGpLrVRUrwEq0F9L0b032dOxQc1N/Xl4LudeE4OECrxyeQletlL4HALNryUkBLFAC+xVWe76Rf83pIK1W7jDb1CgS0wCXAZfwCH7Tig+QStJfSMhjSICWEc3cx9RbJ2WyhuJgM/HN4990mM+112MjwW8DnXfumSM6+g0dAVYfFZHZRLtji1/Iv0Rh3Myoq/QjhJ5A6VaIQ56WmdBc2Nl5rsJ82CjMFXuyC/zZ5sPzh++mAWZjGN+4pZCNMa0OinZhE+8C/DVfgNM2tbnAnBJNdQ0gNS0GDdMxSs9GewS0PByJO7T3HYbLK1o7HO9rdyqB6jtDiUXd+FKhZBDvXhyiKuYX7AZzDe7XYPM/SOru69X9y/zrbhShoBjVM6SpinivVdLz6Mk4zGb+30cp8Kw19VEAG0cRR3eEqqPajnkLMatQJRQ0X/lT0QY//CKKD0X51G/LRksw==  &gt;&gt; /root/.ssh/authorized_keys&quot;  --hostname rke-master-03.rkecluster.kubeinit.local  --copy-in /tmp/rke-master-03/00-installer-ubuntu-netconfig.yaml:/etc/netplan  --copy-in /tmp/rke-master-03/hosts.debian.tmpl:/etc/cloud/templates  --copy-in /tmp/rke-master-03/90_dpkg.cfg:/etc/cloud/cloud.cfg.d  --copy-in /tmp/rke-master-03/cloud.cfg:/etc/cloud
 </pre></div>
 
                     </td>
@@ -232,7 +232,7 @@
                         <a href="#delta">delta</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:00:03.100461
+                        <div class="codehilite"><pre><span></span>0:00:11.404357
 </pre></div>
 
                     </td>
@@ -243,7 +243,7 @@
                         <a href="#end">end</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-02 06:45:49.265452
+                        <div class="codehilite"><pre><span></span>2021-05-16 06:14:03.474077
 </pre></div>
 
                     </td>
@@ -256,7 +256,7 @@
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;virt-install    --connect qemu:///system    --name=rke-master-02    --memory memory=24576    --cpuset=auto    --vcpus=8,maxvcpus=16    --os-type=linux    --os-variant=ubuntu18.04    --autostart                            --network network=kimgtnet0,mac=52:54:00:76:69:82,model=virtio                          --graphics none    --noautoconsole    --import    --disk /var/lib/libvirt/images/rke-master-02.qcow2,format=qcow2,bus=virtio\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;virt-customize -a /var/lib/libvirt/images/rke-master-03.qcow2  --run-command &#39;useradd -s /bin/bash -u 1000 -p \&quot;$(openssl passwd -1 asdfasdf)\&quot; toor&#39;  --run-command &#39;echo \&quot;toor ALL=(root) NOPASSWD:ALL\&quot; &gt; /etc/sudoers.d/toor&#39;  --run-command &#39;mkdir -p /home/toor/.ssh&#39;  --run-command \&quot;sed -i &#39;s/PermitRootLogin no/PermitRootLogin yes/g&#39; /etc/ssh/sshd_config\&quot;  --run-command \&quot;sed -i &#39;s/PasswordAuthentication no/PasswordAuthentication yes/g&#39; /etc/ssh/sshd_config\&quot;  --run-command \&quot;dpkg-reconfigure openssh-server\&quot;  --ssh-inject toor:file:/home/toor/.ssh/id_rsa.pub  --ssh-inject root:file:/root/.ssh/authorized_keys  --run-command \&quot;echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYWNjkSfVT1mFHsPSx4rHF81QfAwFTcoSzBYDoRjTdRvygS+iJDmG0KVdRD72Q/xBnx8MhrB+kNZaEx5SSqqzHc8KBrb+x4jYTAJhkSb2n/Msj/PvT3pZjUWhxOCuMvMp9tDmcN1BcwNb7A8FVFAAssV7rMzs2TauVLZk+BzDAU9XJ657aOJZgOXRQ/dOC6es55Q/AkfTM5Q07WbV0VHoPKMdxLXfiZNG7OcGpLrVRUrwEq0F9L0b032dOxQc1N/Xl4LudeE4OECrxyeQletlL4HALNryUkBLFAC+xVWe76Rf83pIK1W7jDb1CgS0wCXAZfwCH7Tig+QStJfSMhjSICWEc3cx9RbJ2WyhuJgM/HN4990mM+112MjwW8DnXfumSM6+g0dAVYfFZHZRLtji1/Iv0Rh3Myoq/QjhJ5A6VaIQ56WmdBc2Nl5rsJ82CjMFXuyC/zZ5sPzh++mAWZjGN+4pZCNMa0OinZhE+8C/DVfgNM2tbnAnBJNdQ0gNS0GDdMxSs9GewS0PByJO7T3HYbLK1o7HO9rdyqB6jtDiUXd+FKhZBDvXhyiKuYX7AZzDe7XYPM/SOru69X9y/zrbhShoBjVM6SpinivVdLz6Mk4zGb+30cp8Kw19VEAG0cRR3eEqqPajnkLMatQJRQ0X/lT0QY//CKKD0X51G/LRksw==  &gt;&gt; /root/.ssh/authorized_keys\&quot;  --hostname rke-master-03.rkecluster.kubeinit.local  --copy-in /tmp/rke-master-03/00-installer-ubuntu-netconfig.yaml:/etc/netplan  --copy-in /tmp/rke-master-03/hosts.debian.tmpl:/etc/cloud/templates  --copy-in /tmp/rke-master-03/90_dpkg.cfg:/etc/cloud/cloud.cfg.d  --copy-in /tmp/rke-master-03/cloud.cfg:/etc/cloud\n&quot;</span><span class="p">,</span>
         <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
@@ -290,7 +290,7 @@
                         <a href="#start">start</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-02 06:45:46.164991
+                        <div class="codehilite"><pre><span></span>2021-05-16 06:13:52.069720
 </pre></div>
 
                     </td>
@@ -323,8 +323,26 @@
                         <a href="#stdout">stdout</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>Starting install...
-Domain creation completed.
+                        <div class="codehilite"><pre><span></span>[   0.0] Examining the guest ...
+[   5.2] Setting a random seed
+virt-customize: warning: random seed could not be set for this type of 
+guest
+[   5.2] Setting the machine ID in /etc/machine-id
+[   5.2] Running: useradd -s /bin/bash -u 1000 -p &quot;$(openssl passwd -1 asdfasdf)&quot; toor
+[   6.3] Running: echo &quot;toor ALL=(root) NOPASSWD:ALL&quot; &gt; /etc/sudoers.d/toor
+[   6.3] Running: mkdir -p /home/toor/.ssh
+[   6.4] Running: sed -i &#39;s/PermitRootLogin no/PermitRootLogin yes/g&#39; /etc/ssh/sshd_config
+[   6.4] Running: sed -i &#39;s/PasswordAuthentication no/PasswordAuthentication yes/g&#39; /etc/ssh/sshd_config
+[   6.4] Running: dpkg-reconfigure openssh-server
+[   7.9] SSH key inject: toor
+[   8.8] SSH key inject: root
+[   9.7] Running: echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYWNjkSfVT1mFHsPSx4rHF81QfAwFTcoSzBYDoRjTdRvygS+iJDmG0KVdRD72Q/xBnx8MhrB+kNZaEx5SSqqzHc8KBrb+x4jYTAJhkSb2n/Msj/PvT3pZjUWhxOCuMvMp9tDmcN1BcwNb7A8FVFAAssV7rMzs2TauVLZk+BzDAU9XJ657aOJZgOXRQ/dOC6es55Q/AkfTM5Q07WbV0VHoPKMdxLXfiZNG7OcGpLrVRUrwEq0F9L0b032dOxQc1N/Xl4LudeE4OECrxyeQletlL4HALNryUkBLFAC+xVWe76Rf83pIK1W7jDb1CgS0wCXAZfwCH7Tig+QStJfSMhjSICWEc3cx9RbJ2WyhuJgM/HN4990mM+112MjwW8DnXfumSM6+g0dAVYfFZHZRLtji1/Iv0Rh3Myoq/QjhJ5A6VaIQ56WmdBc2Nl5rsJ82CjMFXuyC/zZ5sPzh++mAWZjGN+4pZCNMa0OinZhE+8C/DVfgNM2tbnAnBJNdQ0gNS0GDdMxSs9GewS0PByJO7T3HYbLK1o7HO9rdyqB6jtDiUXd+FKhZBDvXhyiKuYX7AZzDe7XYPM/SOru69X9y/zrbhShoBjVM6SpinivVdLz6Mk4zGb+30cp8Kw19VEAG0cRR3eEqqPajnkLMatQJRQ0X/lT0QY//CKKD0X51G/LRksw==  &gt;&gt; /root/.ssh/authorized_keys
+[   9.7] Setting the hostname: rke-master-03.rkecluster.kubeinit.local
+[  10.6] Copying: /tmp/rke-master-03/00-installer-ubuntu-netconfig.yaml to /etc/netplan
+[  10.6] Copying: /tmp/rke-master-03/hosts.debian.tmpl to /etc/cloud/templates
+[  10.6] Copying: /tmp/rke-master-03/90_dpkg.cfg to /etc/cloud/cloud.cfg.d
+[  10.6] Copying: /tmp/rke-master-03/cloud.cfg to /etc/cloud
+[  11.1] Finishing off
 </pre></div>
 
                     </td>
@@ -336,9 +354,26 @@ Domain creation completed.
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Starting install...&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Domain creation completed.&quot;</span>
+    <span class="s2">&quot;[   0.0] Examining the guest ...&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   5.2] Setting a random seed&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;virt-customize: warning: random seed could not be set for this type of &quot;</span><span class="p">,</span>
+    <span class="s2">&quot;guest&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   5.2] Setting the machine ID in /etc/machine-id&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   5.2] Running: useradd -s /bin/bash -u 1000 -p \&quot;$(openssl passwd -1 asdfasdf)\&quot; toor&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   6.3] Running: echo \&quot;toor ALL=(root) NOPASSWD:ALL\&quot; &gt; /etc/sudoers.d/toor&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   6.3] Running: mkdir -p /home/toor/.ssh&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   6.4] Running: sed -i &#39;s/PermitRootLogin no/PermitRootLogin yes/g&#39; /etc/ssh/sshd_config&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   6.4] Running: sed -i &#39;s/PasswordAuthentication no/PasswordAuthentication yes/g&#39; /etc/ssh/sshd_config&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   6.4] Running: dpkg-reconfigure openssh-server&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   7.9] SSH key inject: toor&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   8.8] SSH key inject: root&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   9.7] Running: echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYWNjkSfVT1mFHsPSx4rHF81QfAwFTcoSzBYDoRjTdRvygS+iJDmG0KVdRD72Q/xBnx8MhrB+kNZaEx5SSqqzHc8KBrb+x4jYTAJhkSb2n/Msj/PvT3pZjUWhxOCuMvMp9tDmcN1BcwNb7A8FVFAAssV7rMzs2TauVLZk+BzDAU9XJ657aOJZgOXRQ/dOC6es55Q/AkfTM5Q07WbV0VHoPKMdxLXfiZNG7OcGpLrVRUrwEq0F9L0b032dOxQc1N/Xl4LudeE4OECrxyeQletlL4HALNryUkBLFAC+xVWe76Rf83pIK1W7jDb1CgS0wCXAZfwCH7Tig+QStJfSMhjSICWEc3cx9RbJ2WyhuJgM/HN4990mM+112MjwW8DnXfumSM6+g0dAVYfFZHZRLtji1/Iv0Rh3Myoq/QjhJ5A6VaIQ56WmdBc2Nl5rsJ82CjMFXuyC/zZ5sPzh++mAWZjGN+4pZCNMa0OinZhE+8C/DVfgNM2tbnAnBJNdQ0gNS0GDdMxSs9GewS0PByJO7T3HYbLK1o7HO9rdyqB6jtDiUXd+FKhZBDvXhyiKuYX7AZzDe7XYPM/SOru69X9y/zrbhShoBjVM6SpinivVdLz6Mk4zGb+30cp8Kw19VEAG0cRR3eEqqPajnkLMatQJRQ0X/lT0QY//CKKD0X51G/LRksw==  &gt;&gt; /root/.ssh/authorized_keys&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   9.7] Setting the hostname: rke-master-03.rkecluster.kubeinit.local&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  10.6] Copying: /tmp/rke-master-03/00-installer-ubuntu-netconfig.yaml to /etc/netplan&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  10.6] Copying: /tmp/rke-master-03/hosts.debian.tmpl to /etc/cloud/templates&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  10.6] Copying: /tmp/rke-master-03/90_dpkg.cfg to /etc/cloud/cloud.cfg.d&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  10.6] Copying: /tmp/rke-master-03/cloud.cfg to /etc/cloud&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  11.1] Finishing off&quot;</span>
 <span class="p">]</span>
 </pre></div>
 

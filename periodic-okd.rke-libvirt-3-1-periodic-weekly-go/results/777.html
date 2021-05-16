@@ -48,15 +48,15 @@
 
 
 
-<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-danger pf-m-inline">
+<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-success pf-m-inline">
 
     <ul class="pf-c-data-list" role="list">
         <li class="pf-c-data-list__item">
             <div class="pf-c-data-list__item-row">
                 <div class="pf-c-data-list__item-control pf-m-fit-content">
                     
-<div class="pf-c-alert__icon" title="Playbook completed with errors">
-    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+<div class="pf-c-alert__icon" title="Playbook completed successfully">
+    <i class="fas fa-check-circle" aria-hidden="true"></i>
 </div>
 
                 </div>
@@ -64,53 +64,53 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 09 May 2021 06:01:52 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 06:10:54 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 09 May 2021 06:20:15 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 06:51:16 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:18:23.10
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:40:22.55
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/submariner.yml">
-                            <a href="../playbooks/3.html">
-                                ...kubeinit/tmp/kubeinit/playbooks/submariner.yml
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
+                            <a href="../playbooks/2.html">
+                                ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml
                             </a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/3.html#hosts">1 hosts</a>
+                            <a href="../playbooks/2.html#hosts">2 hosts</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/3.html#plays">1 plays</a>
+                            <a href="../playbooks/2.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/3.html#results">39 results</a>
+                            <a href="../playbooks/2.html#results">406 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/3.html#files">18 files</a>
+                            <a href="../playbooks/2.html#files">48 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/3.html#records">0 records</a>
+                            <a href="../playbooks/2.html#records">0 records</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_prepare : add all master nodes to the all_master_nodes group</a></li>
-            <li><strong>Action</strong>: ansible.builtin.add_host</li>
-            <li><strong>Path</strong>: <a href="../files/78.html#line-41">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/main.yml:41</a>
-            <li><strong>Host</strong>: <a href="../hosts/5.html">hypervisor-01</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_rke : Install root public from service node in masters</a></li>
+            <li><strong>Action</strong>: ansible.builtin.shell</li>
+            <li><strong>Path</strong>: <a href="../files/93.html#line-19">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_rke/tasks/40_configure_master_nodes.yml:19</a>
+            <li><strong>Host</strong>: <a href="../hosts/3.html">localhost</a></li>
             <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 09 May 2021 06:01:55 -0400</li>
-            <li><strong>Ended</strong>: 09 May 2021 06:01:55 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.03</li>
+            <li><strong>Started</strong>: 16 May 2021 06:41:31 -0400</li>
+            <li><strong>Ended</strong>: 16 May 2021 06:41:31 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.20</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -217,68 +217,124 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="msg" data-label="msg" class="pf-m-width-20">
-                        <a href="#msg">msg</a>
+                    <td role="cell" id="cmd" data-label="cmd" class="pf-m-width-20">
+                        <a href="#cmd">cmd</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>All items completed
+                        <div class="codehilite"><pre><span></span>echo &quot;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDXN/pPXP0dnnaf4QclITAqWp+XiQptv3joRduqDV81Y/+DgDiKHtkZX7mrtHVhJahsqh/vi3mubkFJm71JbvE5gGQSWVlGLakJctClKJk9x7ZP7ameuMnuxaUes9Eo+1vq08eR5kj9MEa69ekgBELJ7Hhgece6RmXOy+Cvd7n5rfh1s5qG/h6CtzV6rgk7rKAzzp9ONU418b0/k6YhN7OMyy97lJpS7xeUW9ux42Sv1zqiVih+bSvtt/DbjQLqAzM+++2SdRf5uul15wJMtVvYdqnpMkWGopyil25HmZi0SP/KyqN/y18QFMURozqoQ2THkkwRaBYMnHoqMuLFkDfFycxOWovvjseRG0azrj9r+G74ifVEf7ht3yhLsvQUG/W9q2G0m6o+HylyoKe8JfcFtszLtrBJd4ri6wHbVwqnJWRNjjCf2wTQQh90CJeXjYltOiMwGKCnCDA/JIjRQQWF96+jjfLv0GsDS2wBChSs3Nj3+tiYvRQ4t8d+/GN9S3E= root@rke-service-01&quot; &gt;&gt; /root/.ssh/authorized_keys
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="results" data-label="results" class="pf-m-width-20">
-                        <a href="#results">results</a>
+                    <td role="cell" id="delta" data-label="delta" class="pf-m-width-20">
+                        <a href="#delta">delta</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;add_host&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;groups&quot;</span><span class="p">:</span> <span class="p">[</span>
-                <span class="s2">&quot;all_master_nodes&quot;</span>
-            <span class="p">],</span>
-            <span class="nt">&quot;host_name&quot;</span><span class="p">:</span> <span class="s2">&quot;rke-master-01&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;host_vars&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;all_master_nodes&quot;</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rke-master-01&quot;</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;add_host&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;groups&quot;</span><span class="p">:</span> <span class="p">[</span>
-                <span class="s2">&quot;all_master_nodes&quot;</span>
-            <span class="p">],</span>
-            <span class="nt">&quot;host_name&quot;</span><span class="p">:</span> <span class="s2">&quot;rke-master-02&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;host_vars&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;all_master_nodes&quot;</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rke-master-02&quot;</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;add_host&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;groups&quot;</span><span class="p">:</span> <span class="p">[</span>
-                <span class="s2">&quot;all_master_nodes&quot;</span>
-            <span class="p">],</span>
-            <span class="nt">&quot;host_name&quot;</span><span class="p">:</span> <span class="s2">&quot;rke-master-03&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;host_vars&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;all_master_nodes&quot;</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rke-master-03&quot;</span>
+                        <div class="codehilite"><pre><span></span>0:00:00.005429
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="end" data-label="end" class="pf-m-width-20">
+                        <a href="#end">end</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>2021-05-16 10:41:31.415585
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
+                        <a href="#invocation">invocation</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;echo \&quot;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDXN/pPXP0dnnaf4QclITAqWp+XiQptv3joRduqDV81Y/+DgDiKHtkZX7mrtHVhJahsqh/vi3mubkFJm71JbvE5gGQSWVlGLakJctClKJk9x7ZP7ameuMnuxaUes9Eo+1vq08eR5kj9MEa69ekgBELJ7Hhgece6RmXOy+Cvd7n5rfh1s5qG/h6CtzV6rgk7rKAzzp9ONU418b0/k6YhN7OMyy97lJpS7xeUW9ux42Sv1zqiVih+bSvtt/DbjQLqAzM+++2SdRf5uul15wJMtVvYdqnpMkWGopyil25HmZi0SP/KyqN/y18QFMURozqoQ2THkkwRaBYMnHoqMuLFkDfFycxOWovvjseRG0azrj9r+G74ifVEf7ht3yhLsvQUG/W9q2G0m6o+HylyoKe8JfcFtszLtrBJd4ri6wHbVwqnJWRNjjCf2wTQQh90CJeXjYltOiMwGKCnCDA/JIjRQQWF96+jjfLv0GsDS2wBChSs3Nj3+tiYvRQ4t8d+/GN9S3E= root@rke-service-01\&quot; &gt;&gt; /root/.ssh/authorized_keys\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
     <span class="p">}</span>
-<span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="rc" data-label="rc" class="pf-m-width-20">
+                        <a href="#rc">rc</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>0
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="start" data-label="start" class="pf-m-width-20">
+                        <a href="#start">start</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>2021-05-16 10:41:31.410156
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stderr" data-label="stderr" class="pf-m-width-20">
+                        <a href="#stderr">stderr</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stderr_lines" data-label="stderr_lines" class="pf-m-width-20">
+                        <a href="#stderr_lines">stderr_lines</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stdout" data-label="stdout" class="pf-m-width-20">
+                        <a href="#stdout">stdout</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stdout_lines" data-label="stdout_lines" class="pf-m-width-20">
+                        <a href="#stdout_lines">stdout_lines</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
 </pre></div>
 
                     </td>
