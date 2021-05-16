@@ -64,53 +64,53 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 28 Apr 2021 18:26:51 +0200
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 04:55:39 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 28 Apr 2021 19:21:36 +0200
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 05:23:36 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:54:45.14
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:27:57.11
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
-                            <a href="../playbooks/1.html">
-                                ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
+                            <a href="../playbooks/2.html">
+                                ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml
                             </a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#hosts">2 hosts</a>
+                            <a href="../playbooks/2.html#hosts">2 hosts</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/2.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">385 results</a>
+                            <a href="../playbooks/2.html#results">377 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">35 files</a>
+                            <a href="../playbooks/2.html#files">48 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#records">0 records</a>
+                            <a href="../playbooks/2.html#records">0 records</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,13 +184,13 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_okd : Print some final data</a></li>
-            <li><strong>Action</strong>: ansible.builtin.debug</li>
-            <li><strong>Path</strong>: <a href="../files/32.html#line-114">/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_okd/tasks/50_post_deployment_tasks.yml:114</a>
-            <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-01</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_prepare : add all worker nodes to the all_worker_nodes group</a></li>
+            <li><strong>Action</strong>: ansible.builtin.add_host</li>
+            <li><strong>Path</strong>: <a href="../files/51.html#line-44">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_localhost.yml:44</a>
+            <li><strong>Host</strong>: <a href="../hosts/3.html">localhost</a></li>
             <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 28 Apr 2021 19:21:07 +0200</li>
-            <li><strong>Ended</strong>: 28 Apr 2021 19:21:07 +0200</li>
+            <li><strong>Started</strong>: 16 May 2021 04:55:43 -0400</li>
+            <li><strong>Ended</strong>: 16 May 2021 04:55:43 -0400</li>
             <li><strong>Duration</strong>: 00:00:00.04</li>
         </ul>
     </div>
@@ -221,12 +221,48 @@
                         <a href="#msg">msg</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>All items completed
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="results" data-label="results" class="pf-m-width-20">
+                        <a href="#results">results</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;Get the kubeadmin password from the services machine&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  cat ~/install_dir/auth/kubeadmin-password&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;The OpenShift UI endpoint is:&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  console-openshift-console.apps.okdcluster.kubeinit.local&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;&quot;</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;add_host&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;groups&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;all_worker_nodes&quot;</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;host_name&quot;</span><span class="p">:</span> <span class="s2">&quot;rke-worker-01&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;host_vars&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;all_worker_nodes&quot;</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rke-worker-01&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;add_host&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;groups&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;all_worker_nodes&quot;</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;host_name&quot;</span><span class="p">:</span> <span class="s2">&quot;rke-worker-02&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;host_vars&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;all_worker_nodes&quot;</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rke-worker-02&quot;</span>
+    <span class="p">}</span>
 <span class="p">]</span>
 </pre></div>
 

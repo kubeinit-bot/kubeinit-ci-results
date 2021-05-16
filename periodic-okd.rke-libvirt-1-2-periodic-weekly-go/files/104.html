@@ -66,53 +66,53 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 02 May 2021 05:06:57 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 05:23:38 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 02 May 2021 06:17:03 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 05:23:43 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 01:10:06.33
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:00:05.13
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/submariner-subctl-verify.yml">
-                            <a href="../playbooks/5.html">
-                                ...kubeinit/playbooks/submariner-subctl-verify.yml
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/submariner.yml">
+                            <a href="../playbooks/3.html">
+                                ...kubeinit/tmp/kubeinit/playbooks/submariner.yml
                             </a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/5.html#hosts">1 hosts</a>
+                            <a href="../playbooks/3.html#hosts">1 hosts</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/5.html#plays">1 plays</a>
+                            <a href="../playbooks/3.html#plays">1 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/5.html#results">24 results</a>
+                            <a href="../playbooks/3.html#results">3 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/5.html#files">13 files</a>
+                            <a href="../playbooks/3.html#files">16 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/5.html#records">0 records</a>
+                            <a href="../playbooks/3.html#records">0 records</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -183,10 +183,24 @@
 
 <div class="pf-c-card" style="margin: 1em 0;">
     <div class="pf-c-card__header pf-c-title pf-m-md">
-        <strong>/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/scenario_variables.yml</strong>
+        <strong>/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/hosts/rke/group_vars/all.yml</strong>
     </div>
     <div class="pf-c-card__body">
-        <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"><a href="#line-1">1</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a name="line-1"></a><span class="nt">kubeinit_common_dns_master</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10.64.63.6</span>
+        <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"><a href="#line-1">1</a></span>
+<span class="normal"><a href="#line-2">2</a></span>
+<span class="normal"><a href="#line-3">3</a></span>
+<span class="normal"><a href="#line-4">4</a></span>
+<span class="normal"><a href="#line-5">5</a></span>
+<span class="normal"><a href="#line-6">6</a></span>
+<span class="normal"><a href="#line-7">7</a></span>
+<span class="normal"><a href="#line-8">8</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a id="line-1" name="line-1"></a><span class="nn">---</span>
+</span><span id="line-2"><a id="line-2" name="line-2"></a><span class="c1"># Docker hub login variables</span>
+</span><span id="line-3"><a id="line-3" name="line-3"></a><span class="nt">kubeinit_common_docker_username</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">lookup(&#39;env&#39;,&#39;KUBEINIT_COMMON_DOCKER_USERNAME&#39;)</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">default</span><span class="nv"> </span><span class="s">(&#39;&#39;)</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-4"><a id="line-4" name="line-4"></a><span class="nt">kubeinit_common_docker_password</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">lookup(&#39;env&#39;,&#39;KUBEINIT_COMMON_DOCKER_PASSWORD&#39;)</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">default</span><span class="nv"> </span><span class="s">(&#39;&#39;)</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-5"><a id="line-5" name="line-5"></a>
+</span><span id="line-6"><a id="line-6" name="line-6"></a><span class="nt">kubeinit_common_dns_master</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">lookup(&#39;env&#39;,&#39;KUBEINIT_COMMON_DNS_MASTER&#39;)</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">&#39;1.1.1.1&#39;</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-7"><a id="line-7" name="line-7"></a><span class="nt">kubeinit_common_external_access_enabled</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">(lookup(&#39;env&#39;,&#39;KUBEINIT_COMMON_EXTERNAL_ACCESS_ENABLED&#39;)</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">bool)</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">false</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-8"><a id="line-8" name="line-8"></a><span class="nt">kubeinit_common_ovn_enabled_default</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">(lookup(&#39;env&#39;,&#39;KUBEINIT_COMMON_OVN_ENABLED_DEFAULT&#39;)</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">bool)</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">false</span><span class="nv"> </span><span class="s">}}&quot;</span>
 </span></pre></div>
 </td></tr></table>
     </div>

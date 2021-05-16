@@ -66,25 +66,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 09 May 2021 04:42:22 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 04:55:39 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 09 May 2021 04:56:52 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 05:23:36 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:14:30.66
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:27:57.11
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
                             <a href="../playbooks/2.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml
                             </a>
@@ -97,17 +97,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/2.html#plays">3 plays</a>
+                            <a href="../playbooks/2.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/2.html#results">370 results</a>
+                            <a href="../playbooks/2.html#results">377 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/2.html#files">36 files</a>
+                            <a href="../playbooks/2.html#files">48 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -183,7 +183,7 @@
 
 <div class="pf-c-card" style="margin: 1em 0;">
     <div class="pf-c-card__header pf-c-title pf-m-md">
-        <strong>/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/40_ovn_setup.yml</strong>
+        <strong>/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/set_facts.yml</strong>
     </div>
     <div class="pf-c-card__body">
         <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"><a href="#line-1"> 1</a></span>
@@ -222,53 +222,43 @@
 <span class="normal"><a href="#line-34">34</a></span>
 <span class="normal"><a href="#line-35">35</a></span>
 <span class="normal"><a href="#line-36">36</a></span>
-<span class="normal"><a href="#line-37">37</a></span>
-<span class="normal"><a href="#line-38">38</a></span>
-<span class="normal"><a href="#line-39">39</a></span>
-<span class="normal"><a href="#line-40">40</a></span>
-<span class="normal"><a href="#line-41">41</a></span>
-<span class="normal"><a href="#line-42">42</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a name="line-1"></a><span class="nn">---</span>
-</span><span id="line-2"><a name="line-2"></a><span class="c1"># Copyright kubeinit.com</span>
-</span><span id="line-3"><a name="line-3"></a><span class="c1"># All Rights Reserved.</span>
-</span><span id="line-4"><a name="line-4"></a><span class="c1">#</span>
-</span><span id="line-5"><a name="line-5"></a><span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
-</span><span id="line-6"><a name="line-6"></a><span class="c1"># not use this file except in compliance with the License. You may obtain</span>
-</span><span id="line-7"><a name="line-7"></a><span class="c1"># a copy of the License at</span>
-</span><span id="line-8"><a name="line-8"></a><span class="c1">#</span>
-</span><span id="line-9"><a name="line-9"></a><span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
-</span><span id="line-10"><a name="line-10"></a><span class="c1">#</span>
-</span><span id="line-11"><a name="line-11"></a><span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
-</span><span id="line-12"><a name="line-12"></a><span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT</span>
-</span><span id="line-13"><a name="line-13"></a><span class="c1"># WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the</span>
-</span><span id="line-14"><a name="line-14"></a><span class="c1"># License for the specific language governing permissions and limitations</span>
-</span><span id="line-15"><a name="line-15"></a><span class="c1"># under the License.</span>
-</span><span id="line-16"><a name="line-16"></a>
-</span><span id="line-17"><a name="line-17"></a><span class="c1">##</span>
-</span><span id="line-18"><a name="line-18"></a><span class="c1">## OVN hypervisors setup.</span>
-</span><span id="line-19"><a name="line-19"></a><span class="c1">##</span>
-</span><span id="line-20"><a name="line-20"></a>
-</span><span id="line-21"><a name="line-21"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Set up the OVN network details</span>
-</span><span id="line-22"><a name="line-22"></a>  <span class="nt">block</span><span class="p">:</span>
-</span><span id="line-23"><a name="line-23"></a>
-</span><span id="line-24"><a name="line-24"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">configure OVS on the Hypervisors</span>
-</span><span id="line-25"><a name="line-25"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-26"><a name="line-26"></a>        <span class="no">CENTRAL_IP={{ kubeinit_bastion_host_address }} # This is the IP of the first HV</span>
-</span><span id="line-27"><a name="line-27"></a>        <span class="no">LOCAL_IP={{ hostvars[kubeinit_deployment_node_name][&#39;ansible_default_ipv4&#39;][&#39;address&#39;] }} # This is the IP of the current HV</span>
-</span><span id="line-28"><a name="line-28"></a>        <span class="no">ENCAP_TYPE={{ kubeinit_libvirt_ovn_encapsulation }}</span>
-</span><span id="line-29"><a name="line-29"></a>        <span class="no">sudo ovs-vsctl set Open_vSwitch . \</span>
-</span><span id="line-30"><a name="line-30"></a>            <span class="no">external_ids:ovn-remote=&quot;tcp:$CENTRAL_IP:{{ kubeinit_libvirt_ovn_southbound_port }}&quot; \</span>
-</span><span id="line-31"><a name="line-31"></a>            <span class="no">external_ids:ovn-nb=&quot;tcp:$CENTRAL_IP:{{ kubeinit_libvirt_ovn_northbound_port }}&quot; \</span>
-</span><span id="line-32"><a name="line-32"></a>            <span class="no">external_ids:ovn-encap-ip=$LOCAL_IP \</span>
-</span><span id="line-33"><a name="line-33"></a>            <span class="no">external_ids:ovn-encap-type=&quot;$ENCAP_TYPE&quot; \</span>
-</span><span id="line-34"><a name="line-34"></a>            <span class="no">external_ids:system-id=&quot;{{ kubeinit_deployment_node_name }}&quot;</span>
-</span><span id="line-35"><a name="line-35"></a>
-</span><span id="line-36"><a name="line-36"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">configure OVN in the first Hypervisor</span>
-</span><span id="line-37"><a name="line-37"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-38"><a name="line-38"></a>        <span class="no"># Below two commands only for master. For SSL, other steps are required.</span>
-</span><span id="line-39"><a name="line-39"></a>        <span class="no">sudo ovn-nbctl set-connection ptcp:{{ kubeinit_libvirt_ovn_northbound_port }}</span>
-</span><span id="line-40"><a name="line-40"></a>        <span class="no">sudo ovn-sbctl set-connection ptcp:{{ kubeinit_libvirt_ovn_southbound_port }}</span>
-</span><span id="line-41"><a name="line-41"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
-</span><span id="line-42"><a name="line-42"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name</span>
+<span class="normal"><a href="#line-37">37</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a id="line-1" name="line-1"></a><span class="nn">---</span>
+</span><span id="line-2"><a id="line-2" name="line-2"></a><span class="c1"># Copyright 2020 KubeInit.</span>
+</span><span id="line-3"><a id="line-3" name="line-3"></a><span class="c1"># All Rights Reserved.</span>
+</span><span id="line-4"><a id="line-4" name="line-4"></a><span class="c1">#</span>
+</span><span id="line-5"><a id="line-5" name="line-5"></a><span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+</span><span id="line-6"><a id="line-6" name="line-6"></a><span class="c1"># not use this file except in compliance with the License. You may obtain</span>
+</span><span id="line-7"><a id="line-7" name="line-7"></a><span class="c1"># a copy of the License at</span>
+</span><span id="line-8"><a id="line-8" name="line-8"></a><span class="c1">#</span>
+</span><span id="line-9"><a id="line-9" name="line-9"></a><span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
+</span><span id="line-10"><a id="line-10" name="line-10"></a><span class="c1">#</span>
+</span><span id="line-11"><a id="line-11" name="line-11"></a><span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
+</span><span id="line-12"><a id="line-12" name="line-12"></a><span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT</span>
+</span><span id="line-13"><a id="line-13" name="line-13"></a><span class="c1"># WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the</span>
+</span><span id="line-14"><a id="line-14" name="line-14"></a><span class="c1"># License for the specific language governing permissions and limitations</span>
+</span><span id="line-15"><a id="line-15" name="line-15"></a><span class="c1"># under the License.</span>
+</span><span id="line-16"><a id="line-16" name="line-16"></a>
+</span><span id="line-17"><a id="line-17" name="line-17"></a>
+</span><span id="line-18"><a id="line-18" name="line-18"></a><span class="c1">#</span>
+</span><span id="line-19"><a id="line-19" name="line-19"></a><span class="c1"># Set facts</span>
+</span><span id="line-20"><a id="line-20" name="line-20"></a><span class="c1">#</span>
+</span><span id="line-21"><a id="line-21" name="line-21"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">define host, node and ovn related facts</span>
+</span><span id="line-22"><a id="line-22" name="line-22"></a>  <span class="nt">ansible.builtin.set_fact</span><span class="p">:</span>
+</span><span id="line-23"><a id="line-23" name="line-23"></a>    <span class="nt">kubeinit_libvirt_ovn_enabled</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">True</span><span class="nv"> </span><span class="s">if</span><span class="nv"> </span><span class="s">(groups[&#39;all_hosts&#39;]</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">length</span><span class="nv"> </span><span class="s">&gt;</span><span class="nv"> </span><span class="s">1)</span><span class="nv"> </span><span class="s">else</span><span class="nv"> </span><span class="s">kubeinit_common_ovn_enabled_default</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-24"><a id="line-24" name="line-24"></a>    <span class="nt">kubeinit_bastion_host</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">groups[&#39;all_hosts&#39;][0]</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-25"><a id="line-25" name="line-25"></a>    <span class="nt">kubeinit_apache_service_address</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[groups[&#39;all_service_nodes&#39;][0]].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-26"><a id="line-26" name="line-26"></a>    <span class="nt">kubeinit_bind_service_address</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[groups[&#39;all_service_nodes&#39;][0]].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-27"><a id="line-27" name="line-27"></a>    <span class="nt">kubeinit_haproxy_service_address</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[groups[&#39;all_service_nodes&#39;][0]].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-28"><a id="line-28" name="line-28"></a>    <span class="nt">kubeinit_nexus_service_address</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[groups[&#39;all_service_nodes&#39;][0]].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-29"><a id="line-29" name="line-29"></a>    <span class="nt">kubeinit_nexus_service_hostname</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[groups[&#39;all_service_nodes&#39;][0]].inventory_hostname</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-30"><a id="line-30" name="line-30"></a>    <span class="nt">kubeinit_nfs_service_address</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[groups[&#39;all_service_nodes&#39;][0]].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-31"><a id="line-31" name="line-31"></a>    <span class="nt">kubeinit_registry_service_hostname</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[groups[&#39;all_service_nodes&#39;][0]].inventory_hostname</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-32"><a id="line-32" name="line-32"></a>    <span class="nt">kubeinit_services_service_address</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[groups[&#39;all_service_nodes&#39;][0]].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-33"><a id="line-33" name="line-33"></a>    <span class="nt">kubeinit_services_service_hostname</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[groups[&#39;all_service_nodes&#39;][0]].inventory_hostname</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-34"><a id="line-34" name="line-34"></a>    <span class="nt">kubeinit_services_pod_name</span><span class="p">:</span> <span class="s">&quot;kubeinit-service-pod&quot;</span>
+</span><span id="line-35"><a id="line-35" name="line-35"></a>    <span class="nt">kubeinit_service_user</span><span class="p">:</span> <span class="s">&quot;root&quot;</span>
+</span><span id="line-36"><a id="line-36" name="line-36"></a>    <span class="nt">kubeinit_service_user_dir</span><span class="p">:</span> <span class="s">&quot;/root&quot;</span>
+</span><span id="line-37"><a id="line-37" name="line-37"></a>    <span class="nt">kubeinit_ingress_hostname</span><span class="p">:</span> <span class="s">&quot;ingress&quot;</span>
 </span></pre></div>
 </td></tr></table>
     </div>

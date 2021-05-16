@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 09 May 2021 04:10:36 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 04:10:30 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 09 May 2021 04:42:20 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 04:55:38 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:31:44.03
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:45:08.05
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">363 results</a>
+                            <a href="../playbooks/1.html#results">371 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">36 files</a>
+                            <a href="../playbooks/1.html#files">48 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Reset ssh keys in hypervisor</a></li>
-            <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/6.html#line-107">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/10_cleanup.yml:107</a>
-            <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
-            <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 09 May 2021 04:10:52 -0400</li>
-            <li><strong>Ended</strong>: 09 May 2021 04:10:53 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.94</li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_prepare : Update the /etc/hosts file with node name</a></li>
+            <li><strong>Action</strong>: ansible.builtin.lineinfile</li>
+            <li><strong>Path</strong>: <a href="../files/10.html#line-70">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_hypervisor.yml:70</a>
+            <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-01</a></li>
+            <li><strong>Status</strong>: changed</li>
+            <li><strong>Started</strong>: 16 May 2021 04:10:40 -0400</li>
+            <li><strong>Ended</strong>: 16 May 2021 04:10:40 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.35</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -206,11 +206,78 @@
             <tbody>
                 
                 <tr role="row">
+                    <td role="cell" id="backup" data-label="backup" class="pf-m-width-20">
+                        <a href="#backup">backup</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>/etc/hosts.34451.2021-05-16@04:10:40~
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
                     <td role="cell" id="changed" data-label="changed" class="pf-m-width-20">
                         <a href="#changed">changed</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>False
+                        <div class="codehilite"><pre><span></span>True
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="diff" data-label="diff" class="pf-m-width-20">
+                        <a href="#diff">diff</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;after&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;after_header&quot;</span><span class="p">:</span> <span class="s2">&quot;/etc/hosts (content)&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;before&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;before_header&quot;</span><span class="p">:</span> <span class="s2">&quot;/etc/hosts (content)&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;after_header&quot;</span><span class="p">:</span> <span class="s2">&quot;/etc/hosts (file attributes)&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;before_header&quot;</span><span class="p">:</span> <span class="s2">&quot;/etc/hosts (file attributes)&quot;</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
+                        <a href="#invocation">invocation</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;backrefs&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;backup&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;create&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;firstmatch&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;insertafter&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;insertbefore&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;line&quot;</span><span class="p">:</span> <span class="s2">&quot;127.0.0.1    hypervisor-01    dell-r740-001    nyctea&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/etc/hosts&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;regexp&quot;</span><span class="p">:</span> <span class="s2">&quot;.*    hypervisor-01    dell-r740-001    nyctea&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;validate&quot;</span><span class="p">:</span> <span class="kc">null</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 
                     </td>
@@ -221,198 +288,7 @@
                         <a href="#msg">msg</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>All items completed
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="results" data-label="results" class="pf-m-width-20">
-                        <a href="#results">results</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  okd-service-01\nssh-keygen -R  okd-service-01.okdcluster.kubeinit.local\nssh-keygen -R  10.0.0.100\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:00.010364&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-09 04:10:52.919276&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  okd-service-01\nssh-keygen -R  okd-service-01.okdcluster.kubeinit.local\nssh-keygen -R  10.0.0.100\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-service-01&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-09 04:10:52.908912&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;Host okd-service-01 not found in /root/.ssh/known_hosts\r\nHost okd-service-01.okdcluster.kubeinit.local not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Host okd-service-01 not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Host okd-service-01.okdcluster.kubeinit.local not found in /root/.ssh/known_hosts&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;# Host 10.0.0.100 found: line 5\n/root/.ssh/known_hosts updated.\nOriginal contents retained as /root/.ssh/known_hosts.old&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;# Host 10.0.0.100 found: line 5&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;/root/.ssh/known_hosts updated.&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Original contents retained as /root/.ssh/known_hosts.old&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  okd-master-01\nssh-keygen -R  okd-master-01.okdcluster.kubeinit.local\nssh-keygen -R  10.0.0.1\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:00.010270&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-09 04:10:53.106517&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  okd-master-01\nssh-keygen -R  okd-master-01.okdcluster.kubeinit.local\nssh-keygen -R  10.0.0.1\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-master-01&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-09 04:10:53.096247&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;Host okd-master-01 not found in /root/.ssh/known_hosts\r\nHost okd-master-01.okdcluster.kubeinit.local not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Host okd-master-01 not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Host okd-master-01.okdcluster.kubeinit.local not found in /root/.ssh/known_hosts&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;# Host 10.0.0.1 found: line 5\n/root/.ssh/known_hosts updated.\nOriginal contents retained as /root/.ssh/known_hosts.old&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;# Host 10.0.0.1 found: line 5&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;/root/.ssh/known_hosts updated.&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Original contents retained as /root/.ssh/known_hosts.old&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  okd-worker-01\nssh-keygen -R  okd-worker-01.okdcluster.kubeinit.local\nssh-keygen -R  10.0.0.6\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:00.010319&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-09 04:10:53.291250&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  okd-worker-01\nssh-keygen -R  okd-worker-01.okdcluster.kubeinit.local\nssh-keygen -R  10.0.0.6\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-worker-01&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-09 04:10:53.280931&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;Host okd-worker-01 not found in /root/.ssh/known_hosts\r\nHost okd-worker-01.okdcluster.kubeinit.local not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Host okd-worker-01 not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Host okd-worker-01.okdcluster.kubeinit.local not found in /root/.ssh/known_hosts&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;# Host 10.0.0.6 found: line 4\n/root/.ssh/known_hosts updated.\nOriginal contents retained as /root/.ssh/known_hosts.old&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;# Host 10.0.0.6 found: line 4&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;/root/.ssh/known_hosts updated.&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Original contents retained as /root/.ssh/known_hosts.old&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  okd-worker-02\nssh-keygen -R  okd-worker-02.okdcluster.kubeinit.local\nssh-keygen -R  10.0.0.7\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:00.010267&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-09 04:10:53.475394&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  okd-worker-02\nssh-keygen -R  okd-worker-02.okdcluster.kubeinit.local\nssh-keygen -R  10.0.0.7\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-worker-02&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-09 04:10:53.465127&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;Host okd-worker-02 not found in /root/.ssh/known_hosts\r\nHost okd-worker-02.okdcluster.kubeinit.local not found in /root/.ssh/known_hosts\r\nHost 10.0.0.7 not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Host okd-worker-02 not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Host okd-worker-02.okdcluster.kubeinit.local not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Host 10.0.0.7 not found in /root/.ssh/known_hosts&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  okd-bootstrap-01\nssh-keygen -R  okd-bootstrap-01.okdcluster.kubeinit.local\nssh-keygen -R  10.0.0.200\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:00.010287&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-09 04:10:53.659632&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  okd-bootstrap-01\nssh-keygen -R  okd-bootstrap-01.okdcluster.kubeinit.local\nssh-keygen -R  10.0.0.200\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-bootstrap-01&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-09 04:10:53.649345&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;Host okd-bootstrap-01 not found in /root/.ssh/known_hosts\r\nHost okd-bootstrap-01.okdcluster.kubeinit.local not found in /root/.ssh/known_hosts\r\nHost 10.0.0.200 not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Host okd-bootstrap-01 not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Host okd-bootstrap-01.okdcluster.kubeinit.local not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Host 10.0.0.200 not found in /root/.ssh/known_hosts&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[]</span>
-    <span class="p">}</span>
-<span class="p">]</span>
+                        <div class="codehilite"><pre><span></span>line added
 </pre></div>
 
                     </td>

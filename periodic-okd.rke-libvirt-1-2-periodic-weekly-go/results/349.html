@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 28 Apr 2021 18:26:51 +0200
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 04:10:30 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 28 Apr 2021 19:21:36 +0200
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 04:55:38 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:54:45.14
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:45:08.05
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">385 results</a>
+                            <a href="../playbooks/1.html#results">371 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">35 files</a>
+                            <a href="../playbooks/1.html#files">48 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Create the network cloudinit templates for networking details</a></li>
-            <li><strong>Action</strong>: ansible.builtin.template</li>
-            <li><strong>Path</strong>: <a href="../files/16.html#line-38">/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/60_okd_deploy_nodes.yml:38</a>
-            <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-01</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_okd : use single node cluster</a></li>
+            <li><strong>Action</strong>: ansible.builtin.shell</li>
+            <li><strong>Path</strong>: <a href="../files/45.html#line-47">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_okd/tasks/50_post_deployment_tasks.yml:47</a>
+            <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 28 Apr 2021 19:10:10 +0200</li>
-            <li><strong>Ended</strong>: 28 Apr 2021 19:10:11 +0200</li>
-            <li><strong>Duration</strong>: 00:00:00.77</li>
+            <li><strong>Started</strong>: 16 May 2021 04:54:09 -0400</li>
+            <li><strong>Ended</strong>: 16 May 2021 04:54:21 -0400</li>
+            <li><strong>Duration</strong>: 00:00:11.81</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -217,55 +217,60 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="checksum" data-label="checksum" class="pf-m-width-20">
-                        <a href="#checksum">checksum</a>
+                    <td role="cell" id="cmd" data-label="cmd" class="pf-m-width-20">
+                        <a href="#cmd">cmd</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>ab9f619980b23e668bda2b22453593f6d9a65599
+                        <div class="codehilite"><pre><span></span>set -o pipefail
+export KUBECONFIG=~/install_dir/auth/kubeconfig
+oc get nodes
+
+oc patch clusterversion/version --type=&#39;merge&#39; -p &quot;$(cat &lt;&lt;- EOF
+spec:
+  overrides:
+    - group: apps/v1
+      kind: Deployment
+      name: etcd-quorum-guard
+      namespace: openshift-machine-config-operator
+      unmanaged: true
+EOF
+)&quot;
+oc scale --replicas=1 deployment/etcd-quorum-guard -n openshift-machine-config-operator || true
+oc scale --replicas=1 ingresscontroller/default -n openshift-ingress-operator || true
+oc scale --replicas=1 deployment.apps/console -n openshift-console || true
+oc scale --replicas=1 deployment.apps/downloads -n openshift-console || true
+oc scale --replicas=1 deployment.apps/oauth-openshift -n openshift-authentication || true
+oc scale --replicas=1 deployment.apps/packageserver -n openshift-operator-lifecycle-manager || true
+# Optional
+oc scale --replicas=1 deployment.apps/prometheus-adapter -n openshift-monitoring || true
+oc scale --replicas=1 deployment.apps/thanos-querier -n openshift-monitoring || true
+oc scale --replicas=1 statefulset.apps/prometheus-k8s -n openshift-monitoring || true
+oc scale --replicas=1 statefulset.apps/alertmanager-main -n openshift-monitoring || true
+
+oc patch etcd cluster -p=&#39;{&quot;spec&quot;: {&quot;unsupportedConfigOverrides&quot;: {&quot;useUnsupportedUnsafeNonHANonProductionUnstableEtcd&quot;: true }}}&#39; --type=merge
+oc patch authentications.operator.openshift.io cluster -p=&#39;{&quot;spec&quot;: {&quot;unsupportedConfigOverrides&quot;: {&quot;useUnsupportedUnsafeNonHANonProductionUnstableOAuthServer&quot;: true }}}&#39; --type=merge
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="dest" data-label="dest" class="pf-m-width-20">
-                        <a href="#dest">dest</a>
+                    <td role="cell" id="delta" data-label="delta" class="pf-m-width-20">
+                        <a href="#delta">delta</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>/tmp/okd-worker-02/cloud.cfg
+                        <div class="codehilite"><pre><span></span>0:00:11.525459
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="diff" data-label="diff" class="pf-m-width-20">
-                        <a href="#diff">diff</a>
+                    <td role="cell" id="end" data-label="end" class="pf-m-width-20">
+                        <a href="#end">end</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="gid" data-label="gid" class="pf-m-width-20">
-                        <a href="#gid">gid</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="group" data-label="group" class="pf-m-width-20">
-                        <a href="#group">group</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>root
+                        <div class="codehilite"><pre><span></span>2021-05-16 08:54:21.111756
 </pre></div>
 
                     </td>
@@ -278,27 +283,17 @@
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_original_basename&quot;</span><span class="p">:</span> <span class="s2">&quot;102-cloudinit-cloud.cfg.j2&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;backup&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;checksum&quot;</span><span class="p">:</span> <span class="s2">&quot;ab9f619980b23e668bda2b22453593f6d9a65599&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;content&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;dest&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/okd-worker-02/cloud.cfg&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;directory_mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;follow&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;local_follow&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;0644&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;remote_src&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.ansible/tmp/ansible-tmp-1619629810.3192108-1798209-198123008254010/source&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;validate&quot;</span><span class="p">:</span> <span class="kc">null</span>
+        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nexport KUBECONFIG=~/install_dir/auth/kubeconfig\noc get nodes\n\noc patch clusterversion/version --type=&#39;merge&#39; -p \&quot;$(cat &lt;&lt;- EOF\nspec:\n  overrides:\n    - group: apps/v1\n      kind: Deployment\n      name: etcd-quorum-guard\n      namespace: openshift-machine-config-operator\n      unmanaged: true\nEOF\n)\&quot;\noc scale --replicas=1 deployment/etcd-quorum-guard -n openshift-machine-config-operator || true\noc scale --replicas=1 ingresscontroller/default -n openshift-ingress-operator || true\noc scale --replicas=1 deployment.apps/console -n openshift-console || true\noc scale --replicas=1 deployment.apps/downloads -n openshift-console || true\noc scale --replicas=1 deployment.apps/oauth-openshift -n openshift-authentication || true\noc scale --replicas=1 deployment.apps/packageserver -n openshift-operator-lifecycle-manager || true\n# Optional\noc scale --replicas=1 deployment.apps/prometheus-adapter -n openshift-monitoring || true\noc scale --replicas=1 deployment.apps/thanos-querier -n openshift-monitoring || true\noc scale --replicas=1 statefulset.apps/prometheus-k8s -n openshift-monitoring || true\noc scale --replicas=1 statefulset.apps/alertmanager-main -n openshift-monitoring || true\n\noc patch etcd cluster -p=&#39;{\&quot;spec\&quot;: {\&quot;unsupportedConfigOverrides\&quot;: {\&quot;useUnsupportedUnsafeNonHANonProductionUnstableEtcd\&quot;: true }}}&#39; --type=merge\noc patch authentications.operator.openshift.io cluster -p=&#39;{\&quot;spec\&quot;: {\&quot;unsupportedConfigOverrides\&quot;: {\&quot;useUnsupportedUnsafeNonHANonProductionUnstableOAuthServer\&quot;: true }}}&#39; --type=merge\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -307,77 +302,100 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="md5sum" data-label="md5sum" class="pf-m-width-20">
-                        <a href="#md5sum">md5sum</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2761ace56a7d7dc19de02cbe2c7b6dc3
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="mode" data-label="mode" class="pf-m-width-20">
-                        <a href="#mode">mode</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0644
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="owner" data-label="owner" class="pf-m-width-20">
-                        <a href="#owner">owner</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>root
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="size" data-label="size" class="pf-m-width-20">
-                        <a href="#size">size</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>4033
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="src" data-label="src" class="pf-m-width-20">
-                        <a href="#src">src</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>/root/.ansible/tmp/ansible-tmp-1619629810.3192108-1798209-198123008254010/source
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="state" data-label="state" class="pf-m-width-20">
-                        <a href="#state">state</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>file
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="uid" data-label="uid" class="pf-m-width-20">
-                        <a href="#uid">uid</a>
+                    <td role="cell" id="rc" data-label="rc" class="pf-m-width-20">
+                        <a href="#rc">rc</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span>0
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="start" data-label="start" class="pf-m-width-20">
+                        <a href="#start">start</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>2021-05-16 08:54:09.586297
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stderr" data-label="stderr" class="pf-m-width-20">
+                        <a href="#stderr">stderr</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>Error from server (NotFound): deployments.apps &quot;etcd-quorum-guard&quot; not found
+Error from server (NotFound): deployments.apps &quot;console&quot; not found
+Error from server (NotFound): deployments.apps &quot;oauth-openshift&quot; not found
+Error from server (NotFound): deployments.apps &quot;thanos-querier&quot; not found
+Error from server (NotFound): statefulsets.apps &quot;prometheus-k8s&quot; not found
+Error from server (NotFound): statefulsets.apps &quot;alertmanager-main&quot; not found
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stderr_lines" data-label="stderr_lines" class="pf-m-width-20">
+                        <a href="#stderr_lines">stderr_lines</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;Error from server (NotFound): deployments.apps \&quot;etcd-quorum-guard\&quot; not found&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Error from server (NotFound): deployments.apps \&quot;console\&quot; not found&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Error from server (NotFound): deployments.apps \&quot;oauth-openshift\&quot; not found&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Error from server (NotFound): deployments.apps \&quot;thanos-querier\&quot; not found&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Error from server (NotFound): statefulsets.apps \&quot;prometheus-k8s\&quot; not found&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Error from server (NotFound): statefulsets.apps \&quot;alertmanager-main\&quot; not found&quot;</span>
+<span class="p">]</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stdout" data-label="stdout" class="pf-m-width-20">
+                        <a href="#stdout">stdout</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>NAME            STATUS   ROLES    AGE     VERSION
+okd-master-01   Ready    master   17m     v1.19.2+f173eb4-1049
+okd-worker-01   Ready    worker   3m14s   v1.19.2+f173eb4-1049
+okd-worker-02   Ready    worker   3m      v1.19.2+f173eb4-1049
+clusterversion.config.openshift.io/version patched
+ingresscontroller.operator.openshift.io/default scaled
+deployment.apps/downloads scaled
+deployment.apps/packageserver scaled
+deployment.apps/prometheus-adapter scaled
+etcd.operator.openshift.io/cluster patched (no change)
+authentication.operator.openshift.io/cluster patched (no change)
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stdout_lines" data-label="stdout_lines" class="pf-m-width-20">
+                        <a href="#stdout_lines">stdout_lines</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;NAME            STATUS   ROLES    AGE     VERSION&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;okd-master-01   Ready    master   17m     v1.19.2+f173eb4-1049&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;okd-worker-01   Ready    worker   3m14s   v1.19.2+f173eb4-1049&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;okd-worker-02   Ready    worker   3m      v1.19.2+f173eb4-1049&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;clusterversion.config.openshift.io/version patched&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;ingresscontroller.operator.openshift.io/default scaled&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;deployment.apps/downloads scaled&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;deployment.apps/packageserver scaled&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;deployment.apps/prometheus-adapter scaled&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;etcd.operator.openshift.io/cluster patched (no change)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;authentication.operator.openshift.io/cluster patched (no change)&quot;</span>
+<span class="p">]</span>
 </pre></div>
 
                     </td>

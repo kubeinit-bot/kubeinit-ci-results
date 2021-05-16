@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 28 Apr 2021 18:26:51 +0200
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 04:10:30 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 28 Apr 2021 19:21:36 +0200
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 04:55:38 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:54:45.14
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:45:08.05
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">385 results</a>
+                            <a href="../playbooks/1.html#results">371 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">35 files</a>
+                            <a href="../playbooks/1.html#files">48 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_okd : use single node cluster</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_nfs : patch imageregistry operator to claim storage</a></li>
             <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/32.html#line-47">/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_okd/tasks/50_post_deployment_tasks.yml:47</a>
-            <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-01</a></li>
+            <li><strong>Path</strong>: <a href="../files/46.html#line-265">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_nfs/tasks/main.yml:265</a>
+            <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 28 Apr 2021 19:20:28 +0200</li>
-            <li><strong>Ended</strong>: 28 Apr 2021 19:20:40 +0200</li>
-            <li><strong>Duration</strong>: 00:00:12.32</li>
+            <li><strong>Started</strong>: 16 May 2021 04:54:50 -0400</li>
+            <li><strong>Ended</strong>: 16 May 2021 04:55:00 -0400</li>
+            <li><strong>Duration</strong>: 00:00:09.34</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -221,34 +221,9 @@
                         <a href="#cmd">cmd</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>set -o pipefail
-export KUBECONFIG=~/install_dir/auth/kubeconfig
-oc get nodes
-
-oc patch clusterversion/version --type=&#39;merge&#39; -p &quot;$(cat &lt;&lt;- EOF
-spec:
-  overrides:
-    - group: apps/v1
-      kind: Deployment
-      name: etcd-quorum-guard
-      namespace: openshift-machine-config-operator
-      unmanaged: true
-EOF
-)&quot;
-oc scale --replicas=1 deployment/etcd-quorum-guard -n openshift-machine-config-operator || true
-oc scale --replicas=1 ingresscontroller/default -n openshift-ingress-operator || true
-oc scale --replicas=1 deployment.apps/console -n openshift-console || true
-oc scale --replicas=1 deployment.apps/downloads -n openshift-console || true
-oc scale --replicas=1 deployment.apps/oauth-openshift -n openshift-authentication || true
-oc scale --replicas=1 deployment.apps/packageserver -n openshift-operator-lifecycle-manager || true
-# Optional
-oc scale --replicas=1 deployment.apps/prometheus-adapter -n openshift-monitoring || true
-oc scale --replicas=1 deployment.apps/thanos-querier -n openshift-monitoring || true
-oc scale --replicas=1 statefulset.apps/prometheus-k8s -n openshift-monitoring || true
-oc scale --replicas=1 statefulset.apps/alertmanager-main -n openshift-monitoring || true
-
-oc patch etcd cluster -p=&#39;{&quot;spec&quot;: {&quot;unsupportedConfigOverrides&quot;: {&quot;useUnsupportedUnsafeNonHANonProductionUnstableEtcd&quot;: true }}}&#39; --type=merge
-oc patch authentications.operator.openshift.io cluster -p=&#39;{&quot;spec&quot;: {&quot;unsupportedConfigOverrides&quot;: {&quot;useUnsupportedUnsafeNonHANonProductionUnstableOAuthServer&quot;: true }}}&#39; --type=merge
+                        <div class="codehilite"><pre><span></span># We patch the imageregistry operator to create a claim that managed-nfs-storage will satisfy
+export KUBECONFIG=~/.kube/config
+oc patch --request-timeout=1800s configs.imageregistry.operator.openshift.io cluster --type merge --patch &#39;{&quot;spec&quot;: {&quot;storage&quot;: {&quot;pvc&quot;: {&quot;claim&quot;: &quot;&quot; }}}}&#39;
 </pre></div>
 
                     </td>
@@ -259,7 +234,7 @@ oc patch authentications.operator.openshift.io cluster -p=&#39;{&quot;spec&quot;
                         <a href="#delta">delta</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:00:12.012194
+                        <div class="codehilite"><pre><span></span>0:00:09.043172
 </pre></div>
 
                     </td>
@@ -270,7 +245,7 @@ oc patch authentications.operator.openshift.io cluster -p=&#39;{&quot;spec&quot;
                         <a href="#end">end</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-04-28 17:20:40.883369
+                        <div class="codehilite"><pre><span></span>2021-05-16 08:54:59.936918
 </pre></div>
 
                     </td>
@@ -283,7 +258,7 @@ oc patch authentications.operator.openshift.io cluster -p=&#39;{&quot;spec&quot;
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nexport KUBECONFIG=~/install_dir/auth/kubeconfig\noc get nodes\n\noc patch clusterversion/version --type=&#39;merge&#39; -p \&quot;$(cat &lt;&lt;- EOF\nspec:\n  overrides:\n    - group: apps/v1\n      kind: Deployment\n      name: etcd-quorum-guard\n      namespace: openshift-machine-config-operator\n      unmanaged: true\nEOF\n)\&quot;\noc scale --replicas=1 deployment/etcd-quorum-guard -n openshift-machine-config-operator || true\noc scale --replicas=1 ingresscontroller/default -n openshift-ingress-operator || true\noc scale --replicas=1 deployment.apps/console -n openshift-console || true\noc scale --replicas=1 deployment.apps/downloads -n openshift-console || true\noc scale --replicas=1 deployment.apps/oauth-openshift -n openshift-authentication || true\noc scale --replicas=1 deployment.apps/packageserver -n openshift-operator-lifecycle-manager || true\n# Optional\noc scale --replicas=1 deployment.apps/prometheus-adapter -n openshift-monitoring || true\noc scale --replicas=1 deployment.apps/thanos-querier -n openshift-monitoring || true\noc scale --replicas=1 statefulset.apps/prometheus-k8s -n openshift-monitoring || true\noc scale --replicas=1 statefulset.apps/alertmanager-main -n openshift-monitoring || true\n\noc patch etcd cluster -p=&#39;{\&quot;spec\&quot;: {\&quot;unsupportedConfigOverrides\&quot;: {\&quot;useUnsupportedUnsafeNonHANonProductionUnstableEtcd\&quot;: true }}}&#39; --type=merge\noc patch authentications.operator.openshift.io cluster -p=&#39;{\&quot;spec\&quot;: {\&quot;unsupportedConfigOverrides\&quot;: {\&quot;useUnsupportedUnsafeNonHANonProductionUnstableOAuthServer\&quot;: true }}}&#39; --type=merge\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;# We patch the imageregistry operator to create a claim that managed-nfs-storage will satisfy\nexport KUBECONFIG=~/.kube/config\noc patch --request-timeout=1800s configs.imageregistry.operator.openshift.io cluster --type merge --patch &#39;{\&quot;spec\&quot;: {\&quot;storage\&quot;: {\&quot;pvc\&quot;: {\&quot;claim\&quot;: \&quot;\&quot; }}}}&#39;\n&quot;</span><span class="p">,</span>
         <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
@@ -317,7 +292,7 @@ oc patch authentications.operator.openshift.io cluster -p=&#39;{&quot;spec&quot;
                         <a href="#start">start</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-04-28 17:20:28.871175
+                        <div class="codehilite"><pre><span></span>2021-05-16 08:54:50.893746
 </pre></div>
 
                     </td>
@@ -328,10 +303,7 @@ oc patch authentications.operator.openshift.io cluster -p=&#39;{&quot;spec&quot;
                         <a href="#stderr">stderr</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>Error from server (NotFound): deployments.apps &quot;etcd-quorum-guard&quot; not found
-Error from server (NotFound): deployments.apps &quot;console&quot; not found
-Error from server (NotFound): deployments.apps &quot;oauth-openshift&quot; not found
-Error from server (NotFound): statefulsets.apps &quot;prometheus-k8s&quot; not found
+                        <div class="codehilite"><pre><span></span>
 </pre></div>
 
                     </td>
@@ -342,12 +314,7 @@ Error from server (NotFound): statefulsets.apps &quot;prometheus-k8s&quot; not f
                         <a href="#stderr_lines">stderr_lines</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;Error from server (NotFound): deployments.apps \&quot;etcd-quorum-guard\&quot; not found&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Error from server (NotFound): deployments.apps \&quot;console\&quot; not found&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Error from server (NotFound): deployments.apps \&quot;oauth-openshift\&quot; not found&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Error from server (NotFound): statefulsets.apps \&quot;prometheus-k8s\&quot; not found&quot;</span>
-<span class="p">]</span>
+                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
 </pre></div>
 
                     </td>
@@ -358,19 +325,7 @@ Error from server (NotFound): statefulsets.apps &quot;prometheus-k8s&quot; not f
                         <a href="#stdout">stdout</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>NAME            STATUS   ROLES    AGE     VERSION
-okd-master-01   Ready    master   17m     v1.19.2+f173eb4-1049
-okd-worker-01   Ready    worker   3m16s   v1.19.2+f173eb4-1049
-okd-worker-02   Ready    worker   3m16s   v1.19.2+f173eb4-1049
-clusterversion.config.openshift.io/version patched
-ingresscontroller.operator.openshift.io/default scaled
-deployment.apps/downloads scaled
-deployment.apps/packageserver scaled
-deployment.apps/prometheus-adapter scaled
-deployment.apps/thanos-querier scaled
-statefulset.apps/alertmanager-main scaled
-etcd.operator.openshift.io/cluster patched (no change)
-authentication.operator.openshift.io/cluster patched (no change)
+                        <div class="codehilite"><pre><span></span>config.imageregistry.operator.openshift.io/cluster patched
 </pre></div>
 
                     </td>
@@ -382,19 +337,7 @@ authentication.operator.openshift.io/cluster patched (no change)
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;NAME            STATUS   ROLES    AGE     VERSION&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;okd-master-01   Ready    master   17m     v1.19.2+f173eb4-1049&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;okd-worker-01   Ready    worker   3m16s   v1.19.2+f173eb4-1049&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;okd-worker-02   Ready    worker   3m16s   v1.19.2+f173eb4-1049&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;clusterversion.config.openshift.io/version patched&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;ingresscontroller.operator.openshift.io/default scaled&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;deployment.apps/downloads scaled&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;deployment.apps/packageserver scaled&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;deployment.apps/prometheus-adapter scaled&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;deployment.apps/thanos-querier scaled&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;statefulset.apps/alertmanager-main scaled&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;etcd.operator.openshift.io/cluster patched (no change)&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;authentication.operator.openshift.io/cluster patched (no change)&quot;</span>
+    <span class="s2">&quot;config.imageregistry.operator.openshift.io/cluster patched&quot;</span>
 <span class="p">]</span>
 </pre></div>
 

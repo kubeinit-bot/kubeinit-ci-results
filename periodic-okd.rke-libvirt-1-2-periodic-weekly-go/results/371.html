@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 28 Apr 2021 18:26:51 +0200
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 04:10:30 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 28 Apr 2021 19:21:36 +0200
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 04:55:38 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:54:45.14
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:45:08.05
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">385 results</a>
+                            <a href="../playbooks/1.html#results">371 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">35 files</a>
+                            <a href="../playbooks/1.html#files">48 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_nfs : add security context constraint for nfs provisioner</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_kubevirt : Install KubeVirt</a></li>
             <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/33.html#line-212">/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_nfs/tasks/main.yml:212</a>
-            <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-01</a></li>
+            <li><strong>Path</strong>: <a href="../files/48.html#line-18">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_kubevirt/tasks/main.yml:18</a>
+            <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 28 Apr 2021 19:20:52 +0200</li>
-            <li><strong>Ended</strong>: 28 Apr 2021 19:20:53 +0200</li>
-            <li><strong>Duration</strong>: 00:00:00.89</li>
+            <li><strong>Started</strong>: 16 May 2021 04:55:23 -0400</li>
+            <li><strong>Ended</strong>: 16 May 2021 04:55:37 -0400</li>
+            <li><strong>Duration</strong>: 00:00:14.38</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -221,46 +221,16 @@
                         <a href="#cmd">cmd</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>cat &lt;&lt; EOF &gt; ~/nfs_scc.yaml
-apiVersion: security.openshift.io/v1
-kind: SecurityContextConstraints
-metadata:
-  name: nfs-provisioner
-allowHostDirVolumePlugin: true
-allowHostIPC: false
-allowHostNetwork: false
-allowHostPID: false
-allowHostPorts: false
-allowPrivilegedContainer: false
-allowedCapabilities:
-- DAC_READ_SEARCH
-- SYS_RESOURCE
-defaultAddCapabilities: null
-fsGroup:
-  type: MustRunAs
-priority: null
-readOnlyRootFilesystem: false
-requiredDropCapabilities:
-- KILL
-- MKNOD
-- SYS_CHROOT
-runAsUser:
-  type: RunAsAny
-seLinuxContext:
-  type: MustRunAs
-supplementalGroups:
-  type: RunAsAny
-volumes:
-- configMap
-- downwardAPI
-- emptyDir
-- hostPath
-- nfs
-- persistentVolumeClaim
-- secret
-EOF
-export KUBECONFIG=~/.kube/config
-kubectl apply -f ~/nfs_scc.yaml --request-timeout=1800s
+                        <div class="codehilite"><pre><span></span>set -o pipefail
+export KUBECONFIG=~/install_dir/auth/kubeconfig;
+export KUBEVIRT_VERSION=&quot;v0.32.0&quot;
+# Latest
+# export KUBEVIRT_VERSION=$(curl -s https://api.github.com/repos/kubevirt/kubevirt/releases | grep tag_name | grep -v -- - | sort -V | tail -1 | awk -F&#39;:&#39; &#39;{print $2}&#39; | sed &#39;s/,//&#39; | xargs)
+echo $KUBEVIRT_VERSION
+kubectl create -f https://github.com/kubevirt/kubevirt/releases/download/${KUBEVIRT_VERSION}/kubevirt-operator.yaml
+kubectl create -f https://github.com/kubevirt/kubevirt/releases/download/${KUBEVIRT_VERSION}/kubevirt-cr.yaml
+curl -L -o virtctl https://github.com/kubevirt/kubevirt/releases/download/${KUBEVIRT_VERSION}/virtctl-${KUBEVIRT_VERSION}-linux-x86_64
+chmod +x virtctl
 </pre></div>
 
                     </td>
@@ -271,7 +241,7 @@ kubectl apply -f ~/nfs_scc.yaml --request-timeout=1800s
                         <a href="#delta">delta</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:00:00.591867
+                        <div class="codehilite"><pre><span></span>0:00:14.080211
 </pre></div>
 
                     </td>
@@ -282,7 +252,7 @@ kubectl apply -f ~/nfs_scc.yaml --request-timeout=1800s
                         <a href="#end">end</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-04-28 17:20:53.839673
+                        <div class="codehilite"><pre><span></span>2021-05-16 08:55:37.737327
 </pre></div>
 
                     </td>
@@ -295,7 +265,7 @@ kubectl apply -f ~/nfs_scc.yaml --request-timeout=1800s
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;cat &lt;&lt; EOF &gt; ~/nfs_scc.yaml\napiVersion: security.openshift.io/v1\nkind: SecurityContextConstraints\nmetadata:\n  name: nfs-provisioner\nallowHostDirVolumePlugin: true\nallowHostIPC: false\nallowHostNetwork: false\nallowHostPID: false\nallowHostPorts: false\nallowPrivilegedContainer: false\nallowedCapabilities:\n- DAC_READ_SEARCH\n- SYS_RESOURCE\ndefaultAddCapabilities: null\nfsGroup:\n  type: MustRunAs\npriority: null\nreadOnlyRootFilesystem: false\nrequiredDropCapabilities:\n- KILL\n- MKNOD\n- SYS_CHROOT\nrunAsUser:\n  type: RunAsAny\nseLinuxContext:\n  type: MustRunAs\nsupplementalGroups:\n  type: RunAsAny\nvolumes:\n- configMap\n- downwardAPI\n- emptyDir\n- hostPath\n- nfs\n- persistentVolumeClaim\n- secret\nEOF\nexport KUBECONFIG=~/.kube/config\nkubectl apply -f ~/nfs_scc.yaml --request-timeout=1800s\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nexport KUBECONFIG=~/install_dir/auth/kubeconfig;\nexport KUBEVIRT_VERSION=\&quot;v0.32.0\&quot;\n# Latest\n# export KUBEVIRT_VERSION=$(curl -s https://api.github.com/repos/kubevirt/kubevirt/releases | grep tag_name | grep -v -- - | sort -V | tail -1 | awk -F&#39;:&#39; &#39;{print $2}&#39; | sed &#39;s/,//&#39; | xargs)\necho $KUBEVIRT_VERSION\nkubectl create -f https://github.com/kubevirt/kubevirt/releases/download/${KUBEVIRT_VERSION}/kubevirt-operator.yaml\nkubectl create -f https://github.com/kubevirt/kubevirt/releases/download/${KUBEVIRT_VERSION}/kubevirt-cr.yaml\ncurl -L -o virtctl https://github.com/kubevirt/kubevirt/releases/download/${KUBEVIRT_VERSION}/virtctl-${KUBEVIRT_VERSION}-linux-x86_64\nchmod +x virtctl\n&quot;</span><span class="p">,</span>
         <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
@@ -329,7 +299,7 @@ kubectl apply -f ~/nfs_scc.yaml --request-timeout=1800s
                         <a href="#start">start</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-04-28 17:20:53.247806
+                        <div class="codehilite"><pre><span></span>2021-05-16 08:55:23.657116
 </pre></div>
 
                     </td>
@@ -340,7 +310,15 @@ kubectl apply -f ~/nfs_scc.yaml --request-timeout=1800s
                         <a href="#stderr">stderr</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>
+                        <div class="codehilite"><pre><span></span>Warning: apiextensions.k8s.io/v1beta1 CustomResourceDefinition is deprecated in v1.16+, unavailable in v1.22+; use apiextensions.k8s.io/v1 CustomResourceDefinition
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   634  100   634    0     0   4090      0 --:--:-- --:--:-- --:--:--  4064
+
+100 39.9M  100 39.9M    0     0  37.6M      0  0:00:01  0:00:01 --:--:-- 37.6M
 </pre></div>
 
                     </td>
@@ -351,7 +329,17 @@ kubectl apply -f ~/nfs_scc.yaml --request-timeout=1800s
                         <a href="#stderr_lines">stderr_lines</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
+                        <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;Warning: apiextensions.k8s.io/v1beta1 CustomResourceDefinition is deprecated in v1.16+, unavailable in v1.22+; use apiextensions.k8s.io/v1 CustomResourceDefinition&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;                                 Dload  Upload   Total   Spent    Left  Speed&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;100   634  100   634    0     0   4090      0 --:--:-- --:--:-- --:--:--  4064&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;100 39.9M  100 39.9M    0     0  37.6M      0  0:00:01  0:00:01 --:--:-- 37.6M&quot;</span>
+<span class="p">]</span>
 </pre></div>
 
                     </td>
@@ -362,7 +350,18 @@ kubectl apply -f ~/nfs_scc.yaml --request-timeout=1800s
                         <a href="#stdout">stdout</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>securitycontextconstraints.security.openshift.io/nfs-provisioner created
+                        <div class="codehilite"><pre><span></span>v0.32.0
+namespace/kubevirt created
+customresourcedefinition.apiextensions.k8s.io/kubevirts.kubevirt.io created
+priorityclass.scheduling.k8s.io/kubevirt-cluster-critical created
+clusterrole.rbac.authorization.k8s.io/kubevirt.io:operator created
+serviceaccount/kubevirt-operator created
+role.rbac.authorization.k8s.io/kubevirt-operator created
+rolebinding.rbac.authorization.k8s.io/kubevirt-operator-rolebinding created
+clusterrole.rbac.authorization.k8s.io/kubevirt-operator created
+clusterrolebinding.rbac.authorization.k8s.io/kubevirt-operator created
+deployment.apps/virt-operator created
+kubevirt.kubevirt.io/kubevirt created
 </pre></div>
 
                     </td>
@@ -374,7 +373,18 @@ kubectl apply -f ~/nfs_scc.yaml --request-timeout=1800s
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;securitycontextconstraints.security.openshift.io/nfs-provisioner created&quot;</span>
+    <span class="s2">&quot;v0.32.0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;namespace/kubevirt created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;customresourcedefinition.apiextensions.k8s.io/kubevirts.kubevirt.io created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;priorityclass.scheduling.k8s.io/kubevirt-cluster-critical created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;clusterrole.rbac.authorization.k8s.io/kubevirt.io:operator created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;serviceaccount/kubevirt-operator created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;role.rbac.authorization.k8s.io/kubevirt-operator created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;rolebinding.rbac.authorization.k8s.io/kubevirt-operator-rolebinding created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;clusterrole.rbac.authorization.k8s.io/kubevirt-operator created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;clusterrolebinding.rbac.authorization.k8s.io/kubevirt-operator created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;deployment.apps/virt-operator created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;kubevirt.kubevirt.io/kubevirt created&quot;</span>
 <span class="p">]</span>
 </pre></div>
 
