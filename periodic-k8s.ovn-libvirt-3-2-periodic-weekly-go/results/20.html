@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 13:28:19 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 18:10:14 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 13:28:29 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 18:18:31 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:00:09.45
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:08:16.74
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -90,22 +90,22 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#hosts">1 hosts</a>
+                            <a href="../playbooks/1.html#hosts">5 hosts</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">1 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">20 results</a>
+                            <a href="../playbooks/1.html#results">397 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">3 files</a>
+                            <a href="../playbooks/1.html#files">31 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -188,10 +188,10 @@
             <li><strong>Action</strong>: community.crypto.openssh_keypair</li>
             <li><strong>Path</strong>: <a href="../files/3.html#line-130">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_localhost.yml:130</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
-            <li><strong>Status</strong>: unreachable</li>
-            <li><strong>Started</strong>: 16 May 2021 13:28:25 -0400</li>
-            <li><strong>Ended</strong>: 16 May 2021 13:28:29 -0400</li>
-            <li><strong>Duration</strong>: 00:00:04.32</li>
+            <li><strong>Status</strong>: ok</li>
+            <li><strong>Started</strong>: 16 May 2021 18:10:19 -0400</li>
+            <li><strong>Ended</strong>: 16 May 2021 18:10:29 -0400</li>
+            <li><strong>Duration</strong>: 00:00:09.60</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -235,27 +235,131 @@
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
     <span class="p">{</span>
         <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.ssh/id_rsa&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;fingerprint&quot;</span><span class="p">:</span> <span class="s2">&quot;SHA256:JL+tYAadp+0lcBhtvHQCLJRU7xKMpOGeac6EToONTYM&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;root&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="s2">&quot;root&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.ssh/id_rsa&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;regenerate&quot;</span><span class="p">:</span> <span class="s2">&quot;partial_idempotence&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;rsa&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
         <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;hypervisor-01&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;Data could not be sent to remote host \&quot;nycteaa\&quot;. Make sure this host can be reached over ssh: root@nycteaa: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).\r\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;unreachable&quot;</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="nt">&quot;public_key&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDbYvLYbqWPW/CeCzAnmO9D1WirGaa3P0hwHbKMmYlLIoSzf0OOBMl13tNBYwmIh15B6WQYilZgF8X3eg9q3u06EXQ7Okn7JnDuridaTopTe8hlfILED0b/K8PDk2YscfA3lL7MjYOnUVTETErath8EE2DZMUUI4pr5HvIHT46QzbO+MJqzBZtU6709zbf+eYodijZx97U0qnjEg/k7ApKvZE/p4hpb1LgBx6YRLn1si1CfL/Oi/zCw4o5LgtCrxELWrV0iFkwXI9zyja1Z6qwlzMj2YOZUUue4kWh/NGYkBahEhMqFwGk8ovPT67wUEOG+Weh2sha5J6SdBknRfNVHfuDUImDaPN+/lOqs16mN9OVhuchSwdPxjc8UHo8KJZ1/EDWkll23O64haG5TQ9g7qz/ux/yCnW5ssBKZ2ej7dzHbU2BzUgY8i2wbn4YfLd4zGeZAw1csEIbduiilZi+ja7ZAsxoi2hfJ4SBBcOSsqONhgZs4Q7yArJIk4iww5JUSUNoXyrC4c0YCEtolBZJpQ2kKXpsm4ZlZfPdCDbAYt2WX3RAkCum6gZa81NzGz8RnxzDA4pFck9eFV+JPUylKIKgoFvKRe7wtHPPxqnijUSj/vkJVVteA2ugdRuwmZURB1E6Xy+S3wrE4+G5mvGP0qR8r7uUS2Q4nUAOcqaatow==&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;rsa&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
         <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.ssh/id_rsa&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;fingerprint&quot;</span><span class="p">:</span> <span class="s2">&quot;SHA256:XMtMmdK7SOGi7xUiq6e7pfE6GbVXRsAQaxKyL92KzTQ&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;root&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="s2">&quot;root&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.ssh/id_rsa&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;regenerate&quot;</span><span class="p">:</span> <span class="s2">&quot;partial_idempotence&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;rsa&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
         <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;hypervisor-02&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;Data could not be sent to remote host \&quot;tyto\&quot;. Make sure this host can be reached over ssh: root@tyto: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).\r\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;unreachable&quot;</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="nt">&quot;public_key&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDMBDPRNLMAkamJxST25h6C5kpDsbDfZOJSB5DCo4Gt6OFOnuUuLPnionBkfePIug0ETikjH2sFssFNWFPZNqgBFISSTrxgrORTfITdl9+x9djubNvR5GoYixC6cNQ76PReZCP30OLFfUwKhlCr3ivNZQDF5gcUF8Mj91eLJDubYGPSaZ3xgyOPUc4wdsw92t9bi61jHyKGmKSgp9TK8oROG7ORRMItsTuPvXWAejUtJ0S1LM2VO/l2NBRDuZIO+kO35Jbz9uCj2GQfTHrp4LEdOPIKAeIqSvYSG4RqTNJZQ5zMdApw5660uAx8upA7YrQaEwRC8J3zqgDnf0fxDGRJ/yKv5bdmAWt9Q825nVUJnwCofJqqk/MllOn1f4BE0OiI/DQBkKwoQRQTGhWg+smO+zLNVPSMIQ5N5h0tI5eetlO0G9pQX4b/xIoYXPTLYRlOdn1GQg33JTSsIjlYv1U6YSaAi8DvaX0Ht4/R3b0mcS284Uabzxcn9efeimNK0fxga9zFZuoVMdQ/f4TGqcaS9bOIAGMXuYNbZUEiaDx6qEncP0XPp/SbxHdWTiC+O+EObUv1TdEc2DQ5vMOUL+o9kOfcz+a+4Pjeasu0tPVPj+UH6/16e9EwphZtvvjgDFT6BsZz6HDJyW5hR8BmTauqCpQMKkY8GRf83KqnwwOMBw==&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;rsa&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
         <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.ssh/id_rsa&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;fingerprint&quot;</span><span class="p">:</span> <span class="s2">&quot;SHA256:T/ZNK0z+d9wtx1luFbffl/zAF3/ZOh0+9ft9VuJTZRs&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;root&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="s2">&quot;root&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.ssh/id_rsa&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;regenerate&quot;</span><span class="p">:</span> <span class="s2">&quot;partial_idempotence&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;rsa&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
         <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;hypervisor-03&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;Data could not be sent to remote host \&quot;strix\&quot;. Make sure this host can be reached over ssh: root@strix: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).\r\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;unreachable&quot;</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="nt">&quot;public_key&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDdGpVCrh6oOue1V2tAPbou5bBQ+CWuesmqgjeEIGf/ircHL1rWIUtZ3Luuzjg6WYrP5nXychfz4Qmi1gMwkNosxPrmhcAgMdAZZyqE3FRzXPiV4zIgQznyIkxbgQ157UEemz/tdV/Urc5qDc/FF/LT2Zol22h7RgIC1qrA2zz++PGgsbDihXpavi262ikOaTvoWn3JSYjpwebIx/ZGbrjYE7viIpUp42+Insl1zEv+Ya+4I2qceXv4BO73h5fD4cqmtE/i4KbDn/VUH8zw1OPdTKegwRWdPcC4FzkpuKD/eoKYmLslKZ0zyBuLFsoNxH/rQr2eEwFmudVgldjEjqvVakVIPBP+ZKDQ0Y6FK3s2mbbWVI7TP0WSeOw4whgJejbgYLvm1kcYrtWc/cRT58+r2lA3y5SW9NjW0kVB/duvQ5wnTxUjhpyDvCuAYJ7DcQQ/4qBi/BX6mVYxUyVEXg5oPc+r1PjyuHsP5q30VjqFie00ZEWiA36ywWTGlmUr22TmLvtckUoGqXQB2pBH27vIJYW8buzuch6DmnsiK6J0RML0UjIwqPPK15laeby5xpcCWcboqhNTz2KI8u8ndh1NZizWZLWwYo/956aICf1OoIGy1L0+Z4d+O2F0h855idovp7jUmvJQMHPo6dmwpagkFCUytko0i5SrY6IBnFqelw==&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;rsa&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
         <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.ssh/id_rsa&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;fingerprint&quot;</span><span class="p">:</span> <span class="s2">&quot;SHA256:7ccehp/j+ANmPhxx2CRDrVUj+wSeK9XQzHpgofoNcro&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;root&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="s2">&quot;root&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.ssh/id_rsa&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;regenerate&quot;</span><span class="p">:</span> <span class="s2">&quot;partial_idempotence&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;rsa&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
         <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;hypervisor-04&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;Data could not be sent to remote host \&quot;otus\&quot;. Make sure this host can be reached over ssh: root@otus: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).\r\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;unreachable&quot;</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="nt">&quot;public_key&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDkHqI7C0+lfepOfxbhv9Ln58pSZzD/z89zn/IjvZ60dKWy7k5+LlQkCIo0WwjZm3WqkCUUcJz0RQYSXtsYkeWTxq4hqDsfL+Udj6kw/woD2w/Li6M6ZwiVFLlfgVI9QbpFy10e78+oHkyf+go8zUm8CSHgAQXacPUGwaJ34illlFrKLoCLkHM/i0AD9OUk0PEXYp0442MipDKrgIiVp5tqwUINH2Fqh9m+BCu7RFim1KoT1TJis6RML1WIWCvBzsVY+a54E/yEMEKcH5Ys5mF1svPhdQTxPFEMkgDJU6SEyQMxZ+Y7lnEiRiKALbLgi8rQnY+RKUJofWA8bX9tfyqHpqEReYo8Ui9mULJJLutLNm1YqzLj0Jr9ZytINoV5LPMNaBpypD9uqTcp4+dnjVPYxpfBEzHJNGxVf/VRNrXxcgoAMnnsIDyQKW0bxfVAK2NSxSWkA1CBKZIvhW1rbBLw7p9bWHD7MGv+sbA92PSXeQewFSDifcPjq+2cArNz94+hfks47e7y+xoHaVPItdBkjl3/0N0jLGzhoAQDO61G+a4d8PY/IM1k+rfK2IXNlQAeRFlnlha/WQIHnNVWy7KffO5TQZuxpD/c90YBpnWoNVsNepNZnCN5oLJ3kMyJc3cYWq3OZSxNLQ5oIH4N8YsKr7yj2hicRO87yq8zkY8SCQ==&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;rsa&quot;</span>
     <span class="p">}</span>
 <span class="p">]</span>
 </pre></div>
