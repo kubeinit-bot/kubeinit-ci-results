@@ -48,15 +48,15 @@
 
 
 
-<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-danger pf-m-inline">
+<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-success pf-m-inline">
 
     <ul class="pf-c-data-list" role="list">
         <li class="pf-c-data-list__item">
             <div class="pf-c-data-list__item-row">
                 <div class="pf-c-data-list__item-control pf-m-fit-content">
                     
-<div class="pf-c-alert__icon" title="Playbook completed with errors">
-    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+<div class="pf-c-alert__icon" title="Playbook completed successfully">
+    <i class="fas fa-check-circle" aria-hidden="true"></i>
 </div>
 
                 </div>
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 03:05:56 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 05:59:39 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 05:30:50 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 08:22:44 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 02:24:54.21
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 02:23:04.42
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">751 results</a>
+                            <a href="../playbooks/1.html#results">766 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">40 files</a>
+                            <a href="../playbooks/1.html#files">42 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -189,9 +189,9 @@
             <li><strong>Path</strong>: <a href="../files/40.html#line-111">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_k8s/tasks/30_configure_master_nodes.yml:111</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 17 May 2021 05:18:05 -0400</li>
-            <li><strong>Ended</strong>: 17 May 2021 05:23:14 -0400</li>
-            <li><strong>Duration</strong>: 00:05:08.81</li>
+            <li><strong>Started</strong>: 17 May 2021 08:10:58 -0400</li>
+            <li><strong>Ended</strong>: 17 May 2021 08:16:19 -0400</li>
+            <li><strong>Duration</strong>: 00:05:21.13</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -222,7 +222,7 @@
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span>kubeadm reset -f || true
-sed &quot;s/$/    --control-plane --certificate-key 3e8d9f433d835794446e7f80dd71763362078d7b05e8e7d3764cd56ac12d35c4/g&quot; k8s_token &gt; ~/k8s_master_join_command.sh
+sed &quot;s/$/    --control-plane --certificate-key a5c135927580dc961fc66a575ddc7226397da84574000cdbb6a954762273a709/g&quot; k8s_token &gt; ~/k8s_master_join_command.sh
 sh k8s_master_join_command.sh
 </pre></div>
 
@@ -234,7 +234,7 @@ sh k8s_master_join_command.sh
                         <a href="#delta">delta</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:05:07.943747
+                        <div class="codehilite"><pre><span></span>0:05:20.265181
 </pre></div>
 
                     </td>
@@ -245,7 +245,7 @@ sh k8s_master_join_command.sh
                         <a href="#end">end</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-17 09:23:14.134195
+                        <div class="codehilite"><pre><span></span>2021-05-17 12:16:19.784476
 </pre></div>
 
                     </td>
@@ -258,7 +258,7 @@ sh k8s_master_join_command.sh
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;kubeadm reset -f || true\nsed \&quot;s/$/    --control-plane --certificate-key 3e8d9f433d835794446e7f80dd71763362078d7b05e8e7d3764cd56ac12d35c4/g\&quot; k8s_token &gt; ~/k8s_master_join_command.sh\nsh k8s_master_join_command.sh\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;kubeadm reset -f || true\nsed \&quot;s/$/    --control-plane --certificate-key a5c135927580dc961fc66a575ddc7226397da84574000cdbb6a954762273a709/g\&quot; k8s_token &gt; ~/k8s_master_join_command.sh\nsh k8s_master_join_command.sh\n&quot;</span><span class="p">,</span>
         <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
@@ -292,7 +292,7 @@ sh k8s_master_join_command.sh
                         <a href="#start">start</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-17 09:18:06.190448
+                        <div class="codehilite"><pre><span></span>2021-05-17 12:10:59.519295
 </pre></div>
 
                     </td>
@@ -303,8 +303,8 @@ sh k8s_master_join_command.sh
                         <a href="#stderr">stderr</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>W0517 09:18:06.298603   65275 removeetcdmember.go:79] [reset] No kubeadm config, using etcd pod spec to get data directory
-W0517 09:18:06.316725   65275 cleanupnode.go:99] [reset] Failed to evaluate the &quot;/var/lib/kubelet&quot; directory. Skipping its unmount and cleanup: lstat /var/lib/kubelet: no such file or directory
+                        <div class="codehilite"><pre><span></span>W0517 12:10:59.616471   65202 removeetcdmember.go:79] [reset] No kubeadm config, using etcd pod spec to get data directory
+W0517 12:10:59.635769   65202 cleanupnode.go:99] [reset] Failed to evaluate the &quot;/var/lib/kubelet&quot; directory. Skipping its unmount and cleanup: lstat /var/lib/kubelet: no such file or directory
 </pre></div>
 
                     </td>
@@ -316,8 +316,8 @@ W0517 09:18:06.316725   65275 cleanupnode.go:99] [reset] Failed to evaluate the 
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;W0517 09:18:06.298603   65275 removeetcdmember.go:79] [reset] No kubeadm config, using etcd pod spec to get data directory&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;W0517 09:18:06.316725   65275 cleanupnode.go:99] [reset] Failed to evaluate the \&quot;/var/lib/kubelet\&quot; directory. Skipping its unmount and cleanup: lstat /var/lib/kubelet: no such file or directory&quot;</span>
+    <span class="s2">&quot;W0517 12:10:59.616471   65202 removeetcdmember.go:79] [reset] No kubeadm config, using etcd pod spec to get data directory&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;W0517 12:10:59.635769   65202 cleanupnode.go:99] [reset] Failed to evaluate the \&quot;/var/lib/kubelet\&quot; directory. Skipping its unmount and cleanup: lstat /var/lib/kubelet: no such file or directory&quot;</span>
 <span class="p">]</span>
 </pre></div>
 
@@ -357,15 +357,15 @@ Please, check the contents of the $HOME/.kube/config file.
 [preflight] You can also perform this action in beforehand using &#39;kubeadm config images pull&#39;
 [download-certs] Downloading the certificates in Secret &quot;kubeadm-certs&quot; in the &quot;kube-system&quot; Namespace
 [certs] Using certificateDir folder &quot;/etc/kubernetes/pki&quot;
-[certs] Generating &quot;etcd/peer&quot; certificate and key
-[certs] etcd/peer serving cert is signed for DNS names [k8s-master-02.k8scluster.kubeinit.local localhost] and IPs [10.0.0.2 127.0.0.1 ::1]
-[certs] Generating &quot;etcd/healthcheck-client&quot; certificate and key
 [certs] Generating &quot;etcd/server&quot; certificate and key
 [certs] etcd/server serving cert is signed for DNS names [k8s-master-02.k8scluster.kubeinit.local localhost] and IPs [10.0.0.2 127.0.0.1 ::1]
+[certs] Generating &quot;etcd/healthcheck-client&quot; certificate and key
 [certs] Generating &quot;apiserver-etcd-client&quot; certificate and key
-[certs] Generating &quot;apiserver-kubelet-client&quot; certificate and key
+[certs] Generating &quot;etcd/peer&quot; certificate and key
+[certs] etcd/peer serving cert is signed for DNS names [k8s-master-02.k8scluster.kubeinit.local localhost] and IPs [10.0.0.2 127.0.0.1 ::1]
 [certs] Generating &quot;apiserver&quot; certificate and key
 [certs] apiserver serving cert is signed for DNS names [api.k8scluster.kubeinit.local k8s-master-02.k8scluster.kubeinit.local kubernetes kubernetes.default kubernetes.default.svc kubernetes.default.svc.cluster.local] and IPs [10.96.0.1 10.0.0.2]
+[certs] Generating &quot;apiserver-kubelet-client&quot; certificate and key
 [certs] Generating &quot;front-proxy-client&quot; certificate and key
 [certs] Valid certificates and keys now exist in &quot;/etc/kubernetes/pki&quot;
 [certs] Using the existing &quot;sa&quot; key
@@ -445,15 +445,15 @@ Run &#39;kubectl get nodes&#39; to see this node join the cluster.
     <span class="s2">&quot;[preflight] You can also perform this action in beforehand using &#39;kubeadm config images pull&#39;&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[download-certs] Downloading the certificates in Secret \&quot;kubeadm-certs\&quot; in the \&quot;kube-system\&quot; Namespace&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[certs] Using certificateDir folder \&quot;/etc/kubernetes/pki\&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[certs] Generating \&quot;etcd/peer\&quot; certificate and key&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[certs] etcd/peer serving cert is signed for DNS names [k8s-master-02.k8scluster.kubeinit.local localhost] and IPs [10.0.0.2 127.0.0.1 ::1]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[certs] Generating \&quot;etcd/healthcheck-client\&quot; certificate and key&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[certs] Generating \&quot;etcd/server\&quot; certificate and key&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[certs] etcd/server serving cert is signed for DNS names [k8s-master-02.k8scluster.kubeinit.local localhost] and IPs [10.0.0.2 127.0.0.1 ::1]&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[certs] Generating \&quot;etcd/healthcheck-client\&quot; certificate and key&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[certs] Generating \&quot;apiserver-etcd-client\&quot; certificate and key&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[certs] Generating \&quot;apiserver-kubelet-client\&quot; certificate and key&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[certs] Generating \&quot;etcd/peer\&quot; certificate and key&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[certs] etcd/peer serving cert is signed for DNS names [k8s-master-02.k8scluster.kubeinit.local localhost] and IPs [10.0.0.2 127.0.0.1 ::1]&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[certs] Generating \&quot;apiserver\&quot; certificate and key&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[certs] apiserver serving cert is signed for DNS names [api.k8scluster.kubeinit.local k8s-master-02.k8scluster.kubeinit.local kubernetes kubernetes.default kubernetes.default.svc kubernetes.default.svc.cluster.local] and IPs [10.96.0.1 10.0.0.2]&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[certs] Generating \&quot;apiserver-kubelet-client\&quot; certificate and key&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[certs] Generating \&quot;front-proxy-client\&quot; certificate and key&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[certs] Valid certificates and keys now exist in \&quot;/etc/kubernetes/pki\&quot;&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[certs] Using the existing \&quot;sa\&quot; key&quot;</span><span class="p">,</span>

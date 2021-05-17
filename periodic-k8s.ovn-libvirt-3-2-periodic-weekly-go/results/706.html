@@ -48,15 +48,15 @@
 
 
 
-<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-danger pf-m-inline">
+<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-success pf-m-inline">
 
     <ul class="pf-c-data-list" role="list">
         <li class="pf-c-data-list__item">
             <div class="pf-c-data-list__item-row">
                 <div class="pf-c-data-list__item-control pf-m-fit-content">
                     
-<div class="pf-c-alert__icon" title="Playbook completed with errors">
-    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+<div class="pf-c-alert__icon" title="Playbook completed successfully">
+    <i class="fas fa-check-circle" aria-hidden="true"></i>
 </div>
 
                 </div>
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 03:05:56 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 05:59:39 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 05:30:50 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 08:22:44 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 02:24:54.21
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 02:23:04.42
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">751 results</a>
+                            <a href="../playbooks/1.html#results">766 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">40 files</a>
+                            <a href="../playbooks/1.html#files">42 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -189,9 +189,9 @@
             <li><strong>Path</strong>: <a href="../files/40.html#line-22">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_k8s/tasks/30_configure_master_nodes.yml:22</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 17 May 2021 05:12:02 -0400</li>
-            <li><strong>Ended</strong>: 17 May 2021 05:17:09 -0400</li>
-            <li><strong>Duration</strong>: 00:05:07.58</li>
+            <li><strong>Started</strong>: 17 May 2021 08:04:44 -0400</li>
+            <li><strong>Ended</strong>: 17 May 2021 08:10:04 -0400</li>
+            <li><strong>Duration</strong>: 00:05:19.56</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -233,7 +233,7 @@ kubeadm init    --control-plane-endpoint &quot;api.k8scluster.kubeinit.local:644
                         <a href="#delta">delta</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:05:04.252461
+                        <div class="codehilite"><pre><span></span>0:05:16.251044
 </pre></div>
 
                     </td>
@@ -244,7 +244,7 @@ kubeadm init    --control-plane-endpoint &quot;api.k8scluster.kubeinit.local:644
                         <a href="#end">end</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-17 09:17:09.526326
+                        <div class="codehilite"><pre><span></span>2021-05-17 12:10:03.877121
 </pre></div>
 
                     </td>
@@ -291,7 +291,7 @@ kubeadm init    --control-plane-endpoint &quot;api.k8scluster.kubeinit.local:644
                         <a href="#start">start</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-17 09:12:05.273865
+                        <div class="codehilite"><pre><span></span>2021-05-17 12:04:47.626077
 </pre></div>
 
                     </td>
@@ -302,9 +302,9 @@ kubeadm init    --control-plane-endpoint &quot;api.k8scluster.kubeinit.local:644
                         <a href="#stderr">stderr</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>W0517 09:12:05.379381   64823 removeetcdmember.go:79] [reset] No kubeadm config, using etcd pod spec to get data directory
-W0517 09:12:05.399428   64823 cleanupnode.go:99] [reset] Failed to evaluate the &quot;/var/lib/kubelet&quot; directory. Skipping its unmount and cleanup: lstat /var/lib/kubelet: no such file or directory
-I0517 09:12:09.545409   64822 version.go:254] remote version is much newer: v1.21.1; falling back to: stable-1.20
+                        <div class="codehilite"><pre><span></span>W0517 12:04:47.727415   64962 removeetcdmember.go:79] [reset] No kubeadm config, using etcd pod spec to get data directory
+W0517 12:04:47.745190   64962 cleanupnode.go:99] [reset] Failed to evaluate the &quot;/var/lib/kubelet&quot; directory. Skipping its unmount and cleanup: lstat /var/lib/kubelet: no such file or directory
+I0517 12:04:52.078725   64961 version.go:254] remote version is much newer: v1.21.1; falling back to: stable-1.20
 </pre></div>
 
                     </td>
@@ -316,9 +316,9 @@ I0517 09:12:09.545409   64822 version.go:254] remote version is much newer: v1.2
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;W0517 09:12:05.379381   64823 removeetcdmember.go:79] [reset] No kubeadm config, using etcd pod spec to get data directory&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;W0517 09:12:05.399428   64823 cleanupnode.go:99] [reset] Failed to evaluate the \&quot;/var/lib/kubelet\&quot; directory. Skipping its unmount and cleanup: lstat /var/lib/kubelet: no such file or directory&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;I0517 09:12:09.545409   64822 version.go:254] remote version is much newer: v1.21.1; falling back to: stable-1.20&quot;</span>
+    <span class="s2">&quot;W0517 12:04:47.727415   64962 removeetcdmember.go:79] [reset] No kubeadm config, using etcd pod spec to get data directory&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;W0517 12:04:47.745190   64962 cleanupnode.go:99] [reset] Failed to evaluate the \&quot;/var/lib/kubelet\&quot; directory. Skipping its unmount and cleanup: lstat /var/lib/kubelet: no such file or directory&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;I0517 12:04:52.078725   64961 version.go:254] remote version is much newer: v1.21.1; falling back to: stable-1.20&quot;</span>
 <span class="p">]</span>
 </pre></div>
 
@@ -384,15 +384,15 @@ Please, check the contents of the $HOME/.kube/config file.
 [etcd] Creating static Pod manifest for local etcd in &quot;/etc/kubernetes/manifests&quot;
 [wait-control-plane] Waiting for the kubelet to boot up the control plane as static Pods from directory &quot;/etc/kubernetes/manifests&quot;. This can take up to 4m0s
 [kubelet-check] Initial timeout of 40s passed.
-[apiclient] All control plane components are healthy after 64.712288 seconds
+[apiclient] All control plane components are healthy after 80.648402 seconds
 [upload-config] Storing the configuration used in ConfigMap &quot;kubeadm-config&quot; in the &quot;kube-system&quot; Namespace
 [kubelet] Creating a ConfigMap &quot;kubelet-config-1.20&quot; in namespace kube-system with the configuration for the kubelets in the cluster
 [upload-certs] Storing the certificates in Secret &quot;kubeadm-certs&quot; in the &quot;kube-system&quot; Namespace
 [upload-certs] Using certificate key:
-3e8d9f433d835794446e7f80dd71763362078d7b05e8e7d3764cd56ac12d35c4
+a5c135927580dc961fc66a575ddc7226397da84574000cdbb6a954762273a709
 [mark-control-plane] Marking the node k8s-master-01.k8scluster.kubeinit.local as control-plane by adding the labels &quot;node-role.kubernetes.io/master=&#39;&#39;&quot; and &quot;node-role.kubernetes.io/control-plane=&#39;&#39; (deprecated)&quot;
 [mark-control-plane] Marking the node k8s-master-01.k8scluster.kubeinit.local as control-plane by adding the taints [node-role.kubernetes.io/master:NoSchedule]
-[bootstrap-token] Using token: l6uy6f.41njwnwygw542cck
+[bootstrap-token] Using token: clrqex.sldyntc2p708zlyh
 [bootstrap-token] Configuring bootstrap tokens, cluster-info ConfigMap, RBAC Roles
 [bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to get nodes
 [bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to post CSRs in order for nodes to get long term certificate credentials
@@ -421,9 +421,9 @@ Run &quot;kubectl apply -f [podnetwork].yaml&quot; with one of the options liste
 
 You can now join any number of the control-plane node running the following command on each as root:
 
-  kubeadm join api.k8scluster.kubeinit.local:6443 --token l6uy6f.41njwnwygw542cck \
-    --discovery-token-ca-cert-hash sha256:e8760e7e0c98c2e926e782126079573e14b5bf817f2ba0065b11af622e7ed178 \
-    --control-plane --certificate-key 3e8d9f433d835794446e7f80dd71763362078d7b05e8e7d3764cd56ac12d35c4
+  kubeadm join api.k8scluster.kubeinit.local:6443 --token clrqex.sldyntc2p708zlyh \
+    --discovery-token-ca-cert-hash sha256:fe6a2f7fe0e57d0f69ed4e015a631aeccf57a90aedfd5b9656c5708541967291 \
+    --control-plane --certificate-key a5c135927580dc961fc66a575ddc7226397da84574000cdbb6a954762273a709
 
 Please note that the certificate-key gives access to cluster sensitive data, keep it secret!
 As a safeguard, uploaded-certs will be deleted in two hours; If necessary, you can use
@@ -431,8 +431,8 @@ As a safeguard, uploaded-certs will be deleted in two hours; If necessary, you c
 
 Then you can join any number of worker nodes by running the following on each as root:
 
-kubeadm join api.k8scluster.kubeinit.local:6443 --token l6uy6f.41njwnwygw542cck \
-    --discovery-token-ca-cert-hash sha256:e8760e7e0c98c2e926e782126079573e14b5bf817f2ba0065b11af622e7ed178
+kubeadm join api.k8scluster.kubeinit.local:6443 --token clrqex.sldyntc2p708zlyh \
+    --discovery-token-ca-cert-hash sha256:fe6a2f7fe0e57d0f69ed4e015a631aeccf57a90aedfd5b9656c5708541967291
 </pre></div>
 
                     </td>
@@ -498,15 +498,15 @@ kubeadm join api.k8scluster.kubeinit.local:6443 --token l6uy6f.41njwnwygw542cck 
     <span class="s2">&quot;[etcd] Creating static Pod manifest for local etcd in \&quot;/etc/kubernetes/manifests\&quot;&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[wait-control-plane] Waiting for the kubelet to boot up the control plane as static Pods from directory \&quot;/etc/kubernetes/manifests\&quot;. This can take up to 4m0s&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[kubelet-check] Initial timeout of 40s passed.&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[apiclient] All control plane components are healthy after 64.712288 seconds&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[apiclient] All control plane components are healthy after 80.648402 seconds&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[upload-config] Storing the configuration used in ConfigMap \&quot;kubeadm-config\&quot; in the \&quot;kube-system\&quot; Namespace&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[kubelet] Creating a ConfigMap \&quot;kubelet-config-1.20\&quot; in namespace kube-system with the configuration for the kubelets in the cluster&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[upload-certs] Storing the certificates in Secret \&quot;kubeadm-certs\&quot; in the \&quot;kube-system\&quot; Namespace&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[upload-certs] Using certificate key:&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;3e8d9f433d835794446e7f80dd71763362078d7b05e8e7d3764cd56ac12d35c4&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;a5c135927580dc961fc66a575ddc7226397da84574000cdbb6a954762273a709&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[mark-control-plane] Marking the node k8s-master-01.k8scluster.kubeinit.local as control-plane by adding the labels \&quot;node-role.kubernetes.io/master=&#39;&#39;\&quot; and \&quot;node-role.kubernetes.io/control-plane=&#39;&#39; (deprecated)\&quot;&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[mark-control-plane] Marking the node k8s-master-01.k8scluster.kubeinit.local as control-plane by adding the taints [node-role.kubernetes.io/master:NoSchedule]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[bootstrap-token] Using token: l6uy6f.41njwnwygw542cck&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[bootstrap-token] Using token: clrqex.sldyntc2p708zlyh&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[bootstrap-token] Configuring bootstrap tokens, cluster-info ConfigMap, RBAC Roles&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to get nodes&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to post CSRs in order for nodes to get long term certificate credentials&quot;</span><span class="p">,</span>
@@ -535,9 +535,9 @@ kubeadm join api.k8scluster.kubeinit.local:6443 --token l6uy6f.41njwnwygw542cck 
     <span class="s2">&quot;&quot;</span><span class="p">,</span>
     <span class="s2">&quot;You can now join any number of the control-plane node running the following command on each as root:&quot;</span><span class="p">,</span>
     <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  kubeadm join api.k8scluster.kubeinit.local:6443 --token l6uy6f.41njwnwygw542cck \\&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;    --discovery-token-ca-cert-hash sha256:e8760e7e0c98c2e926e782126079573e14b5bf817f2ba0065b11af622e7ed178 \\&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;    --control-plane --certificate-key 3e8d9f433d835794446e7f80dd71763362078d7b05e8e7d3764cd56ac12d35c4&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;  kubeadm join api.k8scluster.kubeinit.local:6443 --token clrqex.sldyntc2p708zlyh \\&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    --discovery-token-ca-cert-hash sha256:fe6a2f7fe0e57d0f69ed4e015a631aeccf57a90aedfd5b9656c5708541967291 \\&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    --control-plane --certificate-key a5c135927580dc961fc66a575ddc7226397da84574000cdbb6a954762273a709&quot;</span><span class="p">,</span>
     <span class="s2">&quot;&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Please note that the certificate-key gives access to cluster sensitive data, keep it secret!&quot;</span><span class="p">,</span>
     <span class="s2">&quot;As a safeguard, uploaded-certs will be deleted in two hours; If necessary, you can use&quot;</span><span class="p">,</span>
@@ -545,8 +545,8 @@ kubeadm join api.k8scluster.kubeinit.local:6443 --token l6uy6f.41njwnwygw542cck 
     <span class="s2">&quot;&quot;</span><span class="p">,</span>
     <span class="s2">&quot;Then you can join any number of worker nodes by running the following on each as root:&quot;</span><span class="p">,</span>
     <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;kubeadm join api.k8scluster.kubeinit.local:6443 --token l6uy6f.41njwnwygw542cck \\&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;    --discovery-token-ca-cert-hash sha256:e8760e7e0c98c2e926e782126079573e14b5bf817f2ba0065b11af622e7ed178 &quot;</span>
+    <span class="s2">&quot;kubeadm join api.k8scluster.kubeinit.local:6443 --token clrqex.sldyntc2p708zlyh \\&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    --discovery-token-ca-cert-hash sha256:fe6a2f7fe0e57d0f69ed4e015a631aeccf57a90aedfd5b9656c5708541967291 &quot;</span>
 <span class="p">]</span>
 </pre></div>
 

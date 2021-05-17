@@ -50,15 +50,15 @@
 
 
 
-<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-danger pf-m-inline">
+<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-success pf-m-inline">
 
     <ul class="pf-c-data-list" role="list">
         <li class="pf-c-data-list__item">
             <div class="pf-c-data-list__item-row">
                 <div class="pf-c-data-list__item-control pf-m-fit-content">
                     
-<div class="pf-c-alert__icon" title="Playbook completed with errors">
-    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+<div class="pf-c-alert__icon" title="Playbook completed successfully">
+    <i class="fas fa-check-circle" aria-hidden="true"></i>
 </div>
 
                 </div>
@@ -66,16 +66,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 03:05:56 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 05:59:39 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 05:30:50 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 08:22:44 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 02:24:54.21
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 02:23:04.42
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -102,12 +102,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">751 results</a>
+                            <a href="../playbooks/1.html#results">766 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">40 files</a>
+                            <a href="../playbooks/1.html#files">42 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -183,7 +183,7 @@
 
 <div class="pf-c-card" style="margin: 1em 0;">
     <div class="pf-c-card__header pf-c-title pf-m-md">
-        Host: hypervisor-02
+        Host: hypervisor-01
     </div>
     <div class="pf-c-card__body">
         <table class="pf-c-table pf-m-grid-md pf-m-compact" role="grid" id="host-details">
@@ -201,7 +201,9 @@
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;10.37.146.91&quot;</span>
+    <span class="s2">&quot;172.16.0.254&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;169.254.95.120&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;10.37.146.97&quot;</span>
 <span class="p">]</span>
 </pre></div>
 
@@ -248,7 +250,7 @@
                         <a href="#ansible_bios_date">ansible_bios_date</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>11/21/2012
+                        <div class="codehilite"><pre><span></span>11/26/2012
 </pre></div>
 
                     </td>
@@ -259,7 +261,7 @@
                         <a href="#ansible_bios_vendor">ansible_bios_vendor</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>IBM
+                        <div class="codehilite"><pre><span></span>IBM Corp.
 </pre></div>
 
                     </td>
@@ -270,7 +272,7 @@
                         <a href="#ansible_bios_version">ansible_bios_version</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>-[D7E124AUS-1.30]-
+                        <div class="codehilite"><pre><span></span>-[D6E158AUS-1.16]-
 </pre></div>
 
                     </td>
@@ -281,7 +283,7 @@
                         <a href="#ansible_board_asset_tag">ansible_board_asset_tag</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>NA
+                        <div class="codehilite"><pre><span></span>(none)
 </pre></div>
 
                     </td>
@@ -292,7 +294,7 @@
                         <a href="#ansible_board_name">ansible_board_name</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>00Y7823
+                        <div class="codehilite"><pre><span></span>00J6159
 </pre></div>
 
                     </td>
@@ -303,7 +305,7 @@
                         <a href="#ansible_board_serial">ansible_board_serial</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>34D0KC
+                        <div class="codehilite"><pre><span></span>32L0T7
 </pre></div>
 
                     </td>
@@ -325,7 +327,31 @@
                         <a href="#ansible_board_version">ansible_board_version</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>NA
+                        <div class="codehilite"><pre><span></span>(none)
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="ansible_br_ex" data-label="ansible_br_ex" class="pf-m-width-20">
+                        <a href="#ansible_br_ex">ansible_br_ex</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;br-ex&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ipv4&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;172.16.0.254&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;broadcast&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;netmask&quot;</span><span class="p">:</span> <span class="s2">&quot;255.255.255.0&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;network&quot;</span><span class="p">:</span> <span class="s2">&quot;172.16.0.0&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;ce:d8:36:eb:c0:47&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span>
+    <span class="nt">&quot;promisc&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ether&quot;</span>
+<span class="p">}</span>
 </pre></div>
 
                     </td>
@@ -339,7 +365,7 @@
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
     <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;br-int&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;0a:a8:6d:80:5f:c5&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;f2:72:57:a8:55:4f&quot;</span><span class="p">,</span>
     <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span>
     <span class="nt">&quot;promisc&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ether&quot;</span>
@@ -402,7 +428,7 @@
     <span class="nt">&quot;BOOT_IMAGE&quot;</span><span class="p">:</span> <span class="s2">&quot;(hd0,msdos1)/vmlinuz-5.11.19-200.fc33.x86_64&quot;</span><span class="p">,</span>
     <span class="nt">&quot;console&quot;</span><span class="p">:</span> <span class="s2">&quot;ttyS0,115200n81&quot;</span><span class="p">,</span>
     <span class="nt">&quot;ro&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-    <span class="nt">&quot;root&quot;</span><span class="p">:</span> <span class="s2">&quot;UUID=3ee31d1b-4f50-43f6-8c1b-3d97daeadb75&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;root&quot;</span><span class="p">:</span> <span class="s2">&quot;UUID=cc9eda9e-3618-47fd-8f82-6bd0785233c2&quot;</span><span class="p">,</span>
     <span class="nt">&quot;rootflags&quot;</span><span class="p">:</span> <span class="s2">&quot;subvol=root&quot;</span>
 <span class="p">}</span>
 </pre></div>
@@ -418,16 +444,16 @@
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;date&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17&quot;</span><span class="p">,</span>
     <span class="nt">&quot;day&quot;</span><span class="p">:</span> <span class="s2">&quot;17&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;epoch&quot;</span><span class="p">:</span> <span class="s2">&quot;1621235176&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;hour&quot;</span><span class="p">:</span> <span class="s2">&quot;09&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;iso8601&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17T07:06:16Z&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;iso8601_basic&quot;</span><span class="p">:</span> <span class="s2">&quot;20210517T090616278844&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;iso8601_basic_short&quot;</span><span class="p">:</span> <span class="s2">&quot;20210517T090616&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;iso8601_micro&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17T07:06:16.278844Z&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;minute&quot;</span><span class="p">:</span> <span class="s2">&quot;06&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;epoch&quot;</span><span class="p">:</span> <span class="s2">&quot;1621245599&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;hour&quot;</span><span class="p">:</span> <span class="s2">&quot;11&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;iso8601&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17T09:59:59Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;iso8601_basic&quot;</span><span class="p">:</span> <span class="s2">&quot;20210517T115959218841&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;iso8601_basic_short&quot;</span><span class="p">:</span> <span class="s2">&quot;20210517T115959&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;iso8601_micro&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17T09:59:59.218841Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;minute&quot;</span><span class="p">:</span> <span class="s2">&quot;59&quot;</span><span class="p">,</span>
     <span class="nt">&quot;month&quot;</span><span class="p">:</span> <span class="s2">&quot;05&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;second&quot;</span><span class="p">:</span> <span class="s2">&quot;16&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;time&quot;</span><span class="p">:</span> <span class="s2">&quot;09:06:16&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;second&quot;</span><span class="p">:</span> <span class="s2">&quot;59&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;time&quot;</span><span class="p">:</span> <span class="s2">&quot;11:59:59&quot;</span><span class="p">,</span>
     <span class="nt">&quot;tz&quot;</span><span class="p">:</span> <span class="s2">&quot;CEST&quot;</span><span class="p">,</span>
     <span class="nt">&quot;tz_offset&quot;</span><span class="p">:</span> <span class="s2">&quot;+0200&quot;</span><span class="p">,</span>
     <span class="nt">&quot;weekday&quot;</span><span class="p">:</span> <span class="s2">&quot;Monday&quot;</span><span class="p">,</span>
@@ -446,12 +472,12 @@
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;10.37.146.91&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;10.37.146.97&quot;</span><span class="p">,</span>
     <span class="nt">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;eno1&quot;</span><span class="p">,</span>
     <span class="nt">&quot;broadcast&quot;</span><span class="p">:</span> <span class="s2">&quot;10.37.147.255&quot;</span><span class="p">,</span>
     <span class="nt">&quot;gateway&quot;</span><span class="p">:</span> <span class="s2">&quot;10.37.147.254&quot;</span><span class="p">,</span>
     <span class="nt">&quot;interface&quot;</span><span class="p">:</span> <span class="s2">&quot;eno1&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;40:f2:e9:0a:9e:cc&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;34:40:b5:d6:9a:e4&quot;</span><span class="p">,</span>
     <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span>
     <span class="nt">&quot;netmask&quot;</span><span class="p">:</span> <span class="s2">&quot;255.255.254.0&quot;</span><span class="p">,</span>
     <span class="nt">&quot;network&quot;</span><span class="p">:</span> <span class="s2">&quot;10.37.146.0&quot;</span><span class="p">,</span>
@@ -481,30 +507,30 @@
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;sda&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;scsi-3600605b00622a5f0268f70880acb2b0c&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;wwn-0x600605b00622a5f0268f70880acb2b0c&quot;</span>
+            <span class="s2">&quot;scsi-3600605b002a98c7020f5f8e1178d05de&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;wwn-0x600605b002a98c7020f5f8e1178d05de&quot;</span>
         <span class="p">],</span>
         <span class="nt">&quot;sda1&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;scsi-3600605b00622a5f0268f70880acb2b0c-part1&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;wwn-0x600605b00622a5f0268f70880acb2b0c-part1&quot;</span>
+            <span class="s2">&quot;scsi-3600605b002a98c7020f5f8e1178d05de-part1&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;wwn-0x600605b002a98c7020f5f8e1178d05de-part1&quot;</span>
         <span class="p">],</span>
         <span class="nt">&quot;sda2&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;scsi-3600605b00622a5f0268f70880acb2b0c-part2&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;wwn-0x600605b00622a5f0268f70880acb2b0c-part2&quot;</span>
+            <span class="s2">&quot;scsi-3600605b002a98c7020f5f8e1178d05de-part2&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;wwn-0x600605b002a98c7020f5f8e1178d05de-part2&quot;</span>
         <span class="p">]</span>
     <span class="p">},</span>
     <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;sda2&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;fedora_ibm-x3550m4-11&quot;</span>
+            <span class="s2">&quot;fedora_ibm-x3550m3-15&quot;</span>
         <span class="p">]</span>
     <span class="p">},</span>
     <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">{},</span>
     <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;sda1&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;10c774ec-f681-4e73-bbf2-338218d828c9&quot;</span>
+            <span class="s2">&quot;4d88df0c-a047-4fe8-bcd7-8ff6e2bd1686&quot;</span>
         <span class="p">],</span>
         <span class="nt">&quot;sda2&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;3ee31d1b-4f50-43f6-8c1b-3d97daeadb75&quot;</span>
+            <span class="s2">&quot;cc9eda9e-3618-47fd-8f82-6bd0785233c2&quot;</span>
         <span class="p">]</span>
     <span class="p">}</span>
 <span class="p">}</span>
@@ -524,54 +550,54 @@
         <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;RAID bus controller: Broadcom / LSI MegaRAID SAS 2008 [Falcon] (rev 03)&quot;</span><span class="p">,</span>
         <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span>
-                <span class="s2">&quot;scsi-3600605b00622a5f0268f70880acb2b0c&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;wwn-0x600605b00622a5f0268f70880acb2b0c&quot;</span>
+                <span class="s2">&quot;scsi-3600605b002a98c7020f5f8e1178d05de&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;wwn-0x600605b002a98c7020f5f8e1178d05de&quot;</span>
             <span class="p">],</span>
             <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">[],</span>
             <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">[],</span>
             <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">[]</span>
         <span class="p">},</span>
-        <span class="nt">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;ServeRAID M1115&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;ServeRAID M1015&quot;</span><span class="p">,</span>
         <span class="nt">&quot;partitions&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;sda1&quot;</span><span class="p">:</span> <span class="p">{</span>
                 <span class="nt">&quot;holders&quot;</span><span class="p">:</span> <span class="p">[],</span>
                 <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
                     <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span>
-                        <span class="s2">&quot;scsi-3600605b00622a5f0268f70880acb2b0c-part1&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;wwn-0x600605b00622a5f0268f70880acb2b0c-part1&quot;</span>
+                        <span class="s2">&quot;scsi-3600605b002a98c7020f5f8e1178d05de-part1&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;wwn-0x600605b002a98c7020f5f8e1178d05de-part1&quot;</span>
                     <span class="p">],</span>
                     <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">[],</span>
                     <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">[],</span>
                     <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">[</span>
-                        <span class="s2">&quot;10c774ec-f681-4e73-bbf2-338218d828c9&quot;</span>
+                        <span class="s2">&quot;4d88df0c-a047-4fe8-bcd7-8ff6e2bd1686&quot;</span>
                     <span class="p">]</span>
                 <span class="p">},</span>
                 <span class="nt">&quot;sectors&quot;</span><span class="p">:</span> <span class="s2">&quot;2097152&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;sectorsize&quot;</span><span class="p">:</span> <span class="mi">512</span><span class="p">,</span>
                 <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;1.00 GB&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2048&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;10c774ec-f681-4e73-bbf2-338218d828c9&quot;</span>
+                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;4d88df0c-a047-4fe8-bcd7-8ff6e2bd1686&quot;</span>
             <span class="p">},</span>
             <span class="nt">&quot;sda2&quot;</span><span class="p">:</span> <span class="p">{</span>
                 <span class="nt">&quot;holders&quot;</span><span class="p">:</span> <span class="p">[],</span>
                 <span class="nt">&quot;links&quot;</span><span class="p">:</span> <span class="p">{</span>
                     <span class="nt">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span>
-                        <span class="s2">&quot;scsi-3600605b00622a5f0268f70880acb2b0c-part2&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;wwn-0x600605b00622a5f0268f70880acb2b0c-part2&quot;</span>
+                        <span class="s2">&quot;scsi-3600605b002a98c7020f5f8e1178d05de-part2&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;wwn-0x600605b002a98c7020f5f8e1178d05de-part2&quot;</span>
                     <span class="p">],</span>
                     <span class="nt">&quot;labels&quot;</span><span class="p">:</span> <span class="p">[</span>
-                        <span class="s2">&quot;fedora_ibm-x3550m4-11&quot;</span>
+                        <span class="s2">&quot;fedora_ibm-x3550m3-15&quot;</span>
                     <span class="p">],</span>
                     <span class="nt">&quot;masters&quot;</span><span class="p">:</span> <span class="p">[],</span>
                     <span class="nt">&quot;uuids&quot;</span><span class="p">:</span> <span class="p">[</span>
-                        <span class="s2">&quot;3ee31d1b-4f50-43f6-8c1b-3d97daeadb75&quot;</span>
+                        <span class="s2">&quot;cc9eda9e-3618-47fd-8f82-6bd0785233c2&quot;</span>
                     <span class="p">]</span>
                 <span class="p">},</span>
                 <span class="nt">&quot;sectors&quot;</span><span class="p">:</span> <span class="s2">&quot;581883904&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;sectorsize&quot;</span><span class="p">:</span> <span class="mi">512</span><span class="p">,</span>
                 <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="s2">&quot;277.46 GB&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2099200&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;3ee31d1b-4f50-43f6-8c1b-3d97daeadb75&quot;</span>
+                <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;cc9eda9e-3618-47fd-8f82-6bd0785233c2&quot;</span>
             <span class="p">}</span>
         <span class="p">},</span>
         <span class="nt">&quot;removable&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
@@ -585,7 +611,7 @@
         <span class="nt">&quot;support_discard&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
         <span class="nt">&quot;vendor&quot;</span><span class="p">:</span> <span class="s2">&quot;IBM&quot;</span><span class="p">,</span>
         <span class="nt">&quot;virtual&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="nt">&quot;wwn&quot;</span><span class="p">:</span> <span class="s2">&quot;0x600605b00622a5f0268f70880acb2b0c&quot;</span>
+        <span class="nt">&quot;wwn&quot;</span><span class="p">:</span> <span class="s2">&quot;0x600605b002a98c7020f5f8e1178d05de&quot;</span>
     <span class="p">},</span>
     <span class="nt">&quot;zram0&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;holders&quot;</span><span class="p">:</span> <span class="p">[],</span>
@@ -759,15 +785,15 @@
     <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
     <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;eno1&quot;</span><span class="p">,</span>
     <span class="nt">&quot;ipv4&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;10.37.146.91&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;10.37.146.97&quot;</span><span class="p">,</span>
         <span class="nt">&quot;broadcast&quot;</span><span class="p">:</span> <span class="s2">&quot;10.37.147.255&quot;</span><span class="p">,</span>
         <span class="nt">&quot;netmask&quot;</span><span class="p">:</span> <span class="s2">&quot;255.255.254.0&quot;</span><span class="p">,</span>
         <span class="nt">&quot;network&quot;</span><span class="p">:</span> <span class="s2">&quot;10.37.146.0&quot;</span>
     <span class="p">},</span>
-    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;40:f2:e9:0a:9e:cc&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;module&quot;</span><span class="p">:</span> <span class="s2">&quot;igb&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;34:40:b5:d6:9a:e4&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;module&quot;</span><span class="p">:</span> <span class="s2">&quot;bnx2&quot;</span><span class="p">,</span>
     <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span>
-    <span class="nt">&quot;pciid&quot;</span><span class="p">:</span> <span class="s2">&quot;0000:06:00.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;pciid&quot;</span><span class="p">:</span> <span class="s2">&quot;0000:0b:00.0&quot;</span><span class="p">,</span>
     <span class="nt">&quot;promisc&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
     <span class="nt">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ether&quot;</span>
@@ -785,10 +811,10 @@
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
     <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;eno2&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;40:f2:e9:0a:9e:cd&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;module&quot;</span><span class="p">:</span> <span class="s2">&quot;igb&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;34:40:b5:d6:9a:e6&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;module&quot;</span><span class="p">:</span> <span class="s2">&quot;bnx2&quot;</span><span class="p">,</span>
     <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span>
-    <span class="nt">&quot;pciid&quot;</span><span class="p">:</span> <span class="s2">&quot;0000:06:00.1&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;pciid&quot;</span><span class="p">:</span> <span class="s2">&quot;0000:0b:00.1&quot;</span><span class="p">,</span>
     <span class="nt">&quot;promisc&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
     <span class="nt">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ether&quot;</span>
@@ -806,10 +832,10 @@
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
     <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;eno3&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;40:f2:e9:0a:9e:ce&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;module&quot;</span><span class="p">:</span> <span class="s2">&quot;igb&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;40:f2:e9:01:9b:7c&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;module&quot;</span><span class="p">:</span> <span class="s2">&quot;bnx2&quot;</span><span class="p">,</span>
     <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span>
-    <span class="nt">&quot;pciid&quot;</span><span class="p">:</span> <span class="s2">&quot;0000:06:00.2&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;pciid&quot;</span><span class="p">:</span> <span class="s2">&quot;0000:10:00.0&quot;</span><span class="p">,</span>
     <span class="nt">&quot;promisc&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
     <span class="nt">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ether&quot;</span>
@@ -827,12 +853,38 @@
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
     <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;eno4&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;40:f2:e9:0a:9e:cf&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;module&quot;</span><span class="p">:</span> <span class="s2">&quot;igb&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;40:f2:e9:01:9b:7e&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;module&quot;</span><span class="p">:</span> <span class="s2">&quot;bnx2&quot;</span><span class="p">,</span>
     <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span>
-    <span class="nt">&quot;pciid&quot;</span><span class="p">:</span> <span class="s2">&quot;0000:06:00.3&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;pciid&quot;</span><span class="p">:</span> <span class="s2">&quot;0000:10:00.1&quot;</span><span class="p">,</span>
     <span class="nt">&quot;promisc&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
     <span class="nt">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ether&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="ansible_enp0s29f0u2" data-label="ansible_enp0s29f0u2" class="pf-m-width-20">
+                        <a href="#ansible_enp0s29f0u2">ansible_enp0s29f0u2</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;enp0s29f0u2&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ipv4&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;169.254.95.120&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;broadcast&quot;</span><span class="p">:</span> <span class="s2">&quot;169.254.95.255&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;netmask&quot;</span><span class="p">:</span> <span class="s2">&quot;255.255.255.0&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;network&quot;</span><span class="p">:</span> <span class="s2">&quot;169.254.95.0&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;36:40:b5:fb:89:87&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;module&quot;</span><span class="p">:</span> <span class="s2">&quot;cdc_ether&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span>
+    <span class="nt">&quot;pciid&quot;</span><span class="p">:</span> <span class="s2">&quot;5-2:1.0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;promisc&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ether&quot;</span>
 <span class="p">}</span>
 </pre></div>
@@ -889,7 +941,7 @@
                         <a href="#ansible_fqdn">ansible_fqdn</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>hypervisor-02
+                        <div class="codehilite"><pre><span></span>hypervisor-01
 </pre></div>
 
                     </td>
@@ -903,7 +955,7 @@
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
     <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;genev_sys_6081&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;9a:03:14:76:d6:51&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;a2:46:dd:4a:03:ba&quot;</span><span class="p">,</span>
     <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">65000</span><span class="p">,</span>
     <span class="nt">&quot;promisc&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ether&quot;</span>
@@ -918,7 +970,7 @@
                         <a href="#ansible_hostname">ansible_hostname</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>ibm-x3550m4-11
+                        <div class="codehilite"><pre><span></span>ibm-x3550m3-15
 </pre></div>
 
                     </td>
@@ -941,14 +993,18 @@
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;eno1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;veth0-ma02&quot;</span><span class="p">,</span>
     <span class="s2">&quot;br-int&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;eno4&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;veth0-ma01&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;br-ex&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;eno1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;eno2&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;enp0s29f0u2&quot;</span><span class="p">,</span>
     <span class="s2">&quot;lo&quot;</span><span class="p">,</span>
     <span class="s2">&quot;ovs-system&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;eno3&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;eno2&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;eno4&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;genev_sys_6081&quot;</span>
+    <span class="s2">&quot;genev_sys_6081&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;eno3&quot;</span>
 <span class="p">]</span>
 </pre></div>
 
@@ -971,7 +1027,7 @@
                         <a href="#ansible_iscsi_iqn">ansible_iscsi_iqn</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>iqn.1994-05.com.redhat:ba65befd7ca1
+                        <div class="codehilite"><pre><span></span>iqn.1994-05.com.redhat:a9ca1971f953
 </pre></div>
 
                     </td>
@@ -1075,7 +1131,7 @@
                         <a href="#ansible_machine_id">ansible_machine_id</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>1486ce0690fb48bea5f5afbd56d6a7d3
+                        <div class="codehilite"><pre><span></span>5331bd9c3a7c4436a454d7a2c205d88e
 </pre></div>
 
                     </td>
@@ -1086,7 +1142,7 @@
                         <a href="#ansible_memfree_mb">ansible_memfree_mb</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>58662
+                        <div class="codehilite"><pre><span></span>103268
 </pre></div>
 
                     </td>
@@ -1099,13 +1155,13 @@
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;nocache&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;free&quot;</span><span class="p">:</span> <span class="mi">63707</span><span class="p">,</span>
-        <span class="nt">&quot;used&quot;</span><span class="p">:</span> <span class="mi">645</span>
+        <span class="nt">&quot;free&quot;</span><span class="p">:</span> <span class="mi">117908</span><span class="p">,</span>
+        <span class="nt">&quot;used&quot;</span><span class="p">:</span> <span class="mi">10871</span>
     <span class="p">},</span>
     <span class="nt">&quot;real&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;free&quot;</span><span class="p">:</span> <span class="mi">58662</span><span class="p">,</span>
-        <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="mi">64352</span><span class="p">,</span>
-        <span class="nt">&quot;used&quot;</span><span class="p">:</span> <span class="mi">5690</span>
+        <span class="nt">&quot;free&quot;</span><span class="p">:</span> <span class="mi">103268</span><span class="p">,</span>
+        <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="mi">128779</span><span class="p">,</span>
+        <span class="nt">&quot;used&quot;</span><span class="p">:</span> <span class="mi">25511</span>
     <span class="p">},</span>
     <span class="nt">&quot;swap&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;cached&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
@@ -1124,7 +1180,7 @@
                         <a href="#ansible_memtotal_mb">ansible_memtotal_mb</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>64352
+                        <div class="codehilite"><pre><span></span>128779
 </pre></div>
 
                     </td>
@@ -1137,10 +1193,10 @@
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
     <span class="p">{</span>
-        <span class="nt">&quot;block_available&quot;</span><span class="p">:</span> <span class="mi">71015691</span><span class="p">,</span>
+        <span class="nt">&quot;block_available&quot;</span><span class="p">:</span> <span class="mi">68081812</span><span class="p">,</span>
         <span class="nt">&quot;block_size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span>
         <span class="nt">&quot;block_total&quot;</span><span class="p">:</span> <span class="mi">72735488</span><span class="p">,</span>
-        <span class="nt">&quot;block_used&quot;</span><span class="p">:</span> <span class="mi">1719797</span><span class="p">,</span>
+        <span class="nt">&quot;block_used&quot;</span><span class="p">:</span> <span class="mi">4653676</span><span class="p">,</span>
         <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;/dev/sda2&quot;</span><span class="p">,</span>
         <span class="nt">&quot;fstype&quot;</span><span class="p">:</span> <span class="s2">&quot;btrfs&quot;</span><span class="p">,</span>
         <span class="nt">&quot;inode_available&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
@@ -1148,15 +1204,15 @@
         <span class="nt">&quot;inode_used&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
         <span class="nt">&quot;mount&quot;</span><span class="p">:</span> <span class="s2">&quot;/&quot;</span><span class="p">,</span>
         <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;rw,seclabel,relatime,space_cache,subvolid=258,subvol=/root,bind&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;size_available&quot;</span><span class="p">:</span> <span class="mi">290880270336</span><span class="p">,</span>
+        <span class="nt">&quot;size_available&quot;</span><span class="p">:</span> <span class="mi">278863101952</span><span class="p">,</span>
         <span class="nt">&quot;size_total&quot;</span><span class="p">:</span> <span class="mi">297924558848</span><span class="p">,</span>
-        <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;3ee31d1b-4f50-43f6-8c1b-3d97daeadb75&quot;</span>
+        <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;cc9eda9e-3618-47fd-8f82-6bd0785233c2&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-        <span class="nt">&quot;block_available&quot;</span><span class="p">:</span> <span class="mi">71015691</span><span class="p">,</span>
+        <span class="nt">&quot;block_available&quot;</span><span class="p">:</span> <span class="mi">68081812</span><span class="p">,</span>
         <span class="nt">&quot;block_size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span>
         <span class="nt">&quot;block_total&quot;</span><span class="p">:</span> <span class="mi">72735488</span><span class="p">,</span>
-        <span class="nt">&quot;block_used&quot;</span><span class="p">:</span> <span class="mi">1719797</span><span class="p">,</span>
+        <span class="nt">&quot;block_used&quot;</span><span class="p">:</span> <span class="mi">4653676</span><span class="p">,</span>
         <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;/dev/sda2&quot;</span><span class="p">,</span>
         <span class="nt">&quot;fstype&quot;</span><span class="p">:</span> <span class="s2">&quot;btrfs&quot;</span><span class="p">,</span>
         <span class="nt">&quot;inode_available&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
@@ -1164,15 +1220,15 @@
         <span class="nt">&quot;inode_used&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
         <span class="nt">&quot;mount&quot;</span><span class="p">:</span> <span class="s2">&quot;/home&quot;</span><span class="p">,</span>
         <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;rw,seclabel,relatime,space_cache,subvolid=256,subvol=/home,bind&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;size_available&quot;</span><span class="p">:</span> <span class="mi">290880270336</span><span class="p">,</span>
+        <span class="nt">&quot;size_available&quot;</span><span class="p">:</span> <span class="mi">278863101952</span><span class="p">,</span>
         <span class="nt">&quot;size_total&quot;</span><span class="p">:</span> <span class="mi">297924558848</span><span class="p">,</span>
-        <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;3ee31d1b-4f50-43f6-8c1b-3d97daeadb75&quot;</span>
+        <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;cc9eda9e-3618-47fd-8f82-6bd0785233c2&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
-        <span class="nt">&quot;block_available&quot;</span><span class="p">:</span> <span class="mi">194351</span><span class="p">,</span>
+        <span class="nt">&quot;block_available&quot;</span><span class="p">:</span> <span class="mi">194347</span><span class="p">,</span>
         <span class="nt">&quot;block_size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span>
         <span class="nt">&quot;block_total&quot;</span><span class="p">:</span> <span class="mi">249830</span><span class="p">,</span>
-        <span class="nt">&quot;block_used&quot;</span><span class="p">:</span> <span class="mi">55479</span><span class="p">,</span>
+        <span class="nt">&quot;block_used&quot;</span><span class="p">:</span> <span class="mi">55483</span><span class="p">,</span>
         <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;/dev/sda1&quot;</span><span class="p">,</span>
         <span class="nt">&quot;fstype&quot;</span><span class="p">:</span> <span class="s2">&quot;ext4&quot;</span><span class="p">,</span>
         <span class="nt">&quot;inode_available&quot;</span><span class="p">:</span> <span class="mi">65104</span><span class="p">,</span>
@@ -1180,9 +1236,9 @@
         <span class="nt">&quot;inode_used&quot;</span><span class="p">:</span> <span class="mi">432</span><span class="p">,</span>
         <span class="nt">&quot;mount&quot;</span><span class="p">:</span> <span class="s2">&quot;/boot&quot;</span><span class="p">,</span>
         <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;rw,seclabel,relatime&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;size_available&quot;</span><span class="p">:</span> <span class="mi">796061696</span><span class="p">,</span>
+        <span class="nt">&quot;size_available&quot;</span><span class="p">:</span> <span class="mi">796045312</span><span class="p">,</span>
         <span class="nt">&quot;size_total&quot;</span><span class="p">:</span> <span class="mi">1023303680</span><span class="p">,</span>
-        <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;10c774ec-f681-4e73-bbf2-338218d828c9&quot;</span>
+        <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;4d88df0c-a047-4fe8-bcd7-8ff6e2bd1686&quot;</span>
     <span class="p">}</span>
 <span class="p">]</span>
 </pre></div>
@@ -1195,7 +1251,7 @@
                         <a href="#ansible_nodename">ansible_nodename</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>ibm-x3550m4-11.lab.eng.brq.redhat.com
+                        <div class="codehilite"><pre><span></span>ibm-x3550m3-15.lab.eng.brq.redhat.com
 </pre></div>
 
                     </td>
@@ -1220,7 +1276,7 @@
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
     <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;ovs-system&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;5e:91:ed:a4:07:1f&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;22:1f:3c:5d:a7:42&quot;</span><span class="p">,</span>
     <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span>
     <span class="nt">&quot;promisc&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ether&quot;</span>
@@ -1250,7 +1306,7 @@
     <span class="nt">&quot;BOOT_IMAGE&quot;</span><span class="p">:</span> <span class="s2">&quot;(hd0,msdos1)/vmlinuz-5.11.19-200.fc33.x86_64&quot;</span><span class="p">,</span>
     <span class="nt">&quot;console&quot;</span><span class="p">:</span> <span class="s2">&quot;ttyS0,115200n81&quot;</span><span class="p">,</span>
     <span class="nt">&quot;ro&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-    <span class="nt">&quot;root&quot;</span><span class="p">:</span> <span class="s2">&quot;UUID=3ee31d1b-4f50-43f6-8c1b-3d97daeadb75&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;root&quot;</span><span class="p">:</span> <span class="s2">&quot;UUID=cc9eda9e-3618-47fd-8f82-6bd0785233c2&quot;</span><span class="p">,</span>
     <span class="nt">&quot;rootflags&quot;</span><span class="p">:</span> <span class="s2">&quot;subvol=root&quot;</span>
 <span class="p">}</span>
 </pre></div>
@@ -1266,28 +1322,28 @@
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
     <span class="s2">&quot;0&quot;</span><span class="p">,</span>
     <span class="s2">&quot;GenuineIntel&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Intel(R) Xeon(R) CPU E5-2609 0 @ 2.40GHz&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz&quot;</span><span class="p">,</span>
     <span class="s2">&quot;1&quot;</span><span class="p">,</span>
     <span class="s2">&quot;GenuineIntel&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Intel(R) Xeon(R) CPU E5-2609 0 @ 2.40GHz&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz&quot;</span><span class="p">,</span>
     <span class="s2">&quot;2&quot;</span><span class="p">,</span>
     <span class="s2">&quot;GenuineIntel&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Intel(R) Xeon(R) CPU E5-2609 0 @ 2.40GHz&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz&quot;</span><span class="p">,</span>
     <span class="s2">&quot;3&quot;</span><span class="p">,</span>
     <span class="s2">&quot;GenuineIntel&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Intel(R) Xeon(R) CPU E5-2609 0 @ 2.40GHz&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz&quot;</span><span class="p">,</span>
     <span class="s2">&quot;4&quot;</span><span class="p">,</span>
     <span class="s2">&quot;GenuineIntel&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Intel(R) Xeon(R) CPU E5-2609 0 @ 2.40GHz&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz&quot;</span><span class="p">,</span>
     <span class="s2">&quot;5&quot;</span><span class="p">,</span>
     <span class="s2">&quot;GenuineIntel&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Intel(R) Xeon(R) CPU E5-2609 0 @ 2.40GHz&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz&quot;</span><span class="p">,</span>
     <span class="s2">&quot;6&quot;</span><span class="p">,</span>
     <span class="s2">&quot;GenuineIntel&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Intel(R) Xeon(R) CPU E5-2609 0 @ 2.40GHz&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz&quot;</span><span class="p">,</span>
     <span class="s2">&quot;7&quot;</span><span class="p">,</span>
     <span class="s2">&quot;GenuineIntel&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Intel(R) Xeon(R) CPU E5-2609 0 @ 2.40GHz&quot;</span>
+    <span class="s2">&quot;Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz&quot;</span>
 <span class="p">]</span>
 </pre></div>
 
@@ -1310,7 +1366,7 @@
                         <a href="#ansible_processor_count">ansible_processor_count</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2
+                        <div class="codehilite"><pre><span></span>1
 </pre></div>
 
                     </td>
@@ -1332,7 +1388,7 @@
                         <a href="#ansible_processor_threads_per_core">ansible_processor_threads_per_core</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>1
+                        <div class="codehilite"><pre><span></span>2
 </pre></div>
 
                     </td>
@@ -1354,7 +1410,7 @@
                         <a href="#ansible_product_name">ansible_product_name</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>IBM System x3550 M4 Server -[7914B2G]-
+                        <div class="codehilite"><pre><span></span>System x3550 M3 -[7944D2G]-
 </pre></div>
 
                     </td>
@@ -1365,7 +1421,7 @@
                         <a href="#ansible_product_serial">ansible_product_serial</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>KD8X3D7
+                        <div class="codehilite"><pre><span></span>KD6L1D0
 </pre></div>
 
                     </td>
@@ -1376,7 +1432,7 @@
                         <a href="#ansible_product_uuid">ansible_product_uuid</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>b39d44a7-df25-3ccc-b6fe-a738aa931564
+                        <div class="codehilite"><pre><span></span>8b9aafc2-7740-3a69-a3a3-54aba6475ff3
 </pre></div>
 
                     </td>
@@ -1387,7 +1443,7 @@
                         <a href="#ansible_product_version">ansible_product_version</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>09
+                        <div class="codehilite"><pre><span></span>00
 </pre></div>
 
                     </td>
@@ -1499,7 +1555,7 @@
                         <a href="#ansible_ssh_host_key_ecdsa_public">ansible_ssh_host_key_ecdsa_public</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEuMV6IluCKc7gr9f5Fmre+1n52upuTjRMmkKXIfyNR3Vj6kHUKIYigplQN+U3BDtKCXBlqQ3SdpnU0r+54r8Zs=
+                        <div class="codehilite"><pre><span></span>AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNt/FCHTeLQcq/eh7GFv8JgLjN8ol0lUTqTi9VarK/FTih0wXp+RiZWdJwzImAT/8ffS8eejJeFxogqY/EJs6tI=
 </pre></div>
 
                     </td>
@@ -1521,7 +1577,7 @@
                         <a href="#ansible_ssh_host_key_ed25519_public">ansible_ssh_host_key_ed25519_public</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>AAAAC3NzaC1lZDI1NTE5AAAAIGpx+W3QaV2sZtgfc8YCuFK89IvvNKRdMO1W7Gm+0Tsr
+                        <div class="codehilite"><pre><span></span>AAAAC3NzaC1lZDI1NTE5AAAAIOd2wB8Z/vg2wXrQU/bX/aaoQuwkvGsqstbDbjy5m+TP
 </pre></div>
 
                     </td>
@@ -1543,7 +1599,7 @@
                         <a href="#ansible_ssh_host_key_rsa_public">ansible_ssh_host_key_rsa_public</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>AAAAB3NzaC1yc2EAAAADAQABAAABgQCz1jH8xVSwyE5KIsJ9iGzTkuPYoyMh1MUYyw2kILOKVDEMqFkOhdZC1AtsQzaheEpckCmB/QDfvRNLhzH7UJlodsBsEi3AfHfu+0tZoMDkvcnq6CFpGGZFBCaAwkiGu9zZqjVXDdakf2oUBaD8zE64vTmdE7IAzPYT9xRGKLKI8YHi1oyiNybBbQ4IqwN8LHMJrj7qcQEuffAGampGFwzGF5u4Tq1y/IOjKlNDPawAht84f0D7JCiSZxoSiRLZ5PTUoNP7WPbWQ2WZINc5TUrA08aNoo9g4tD6NEwFzkd6vPAAZCn3V4UVJ/oZYnhuaHMvtR4M8TEn2wt80Wbt2FMgG3V/7xBOMlZsvac0hYqJ2z7Gq+VQP9h31ivE5OgxI2U0GomkP7bpOY5064JCs5Ycgt9RAmnEnc6vaE7R3MSLyGrUNrbM+WKJDkvMEj5meqAfGH3U4fUKfx+fw+eyDID+ZsbgpKi6qJ+8Y4a01niS3yagSnr1AFvftvkAOu9gE3s=
+                        <div class="codehilite"><pre><span></span>AAAAB3NzaC1yc2EAAAADAQABAAABgQC8SF+9V8731MjMtw08KOib4QZoKhv9BZjexDbrtPAFxFb6KHsyvaP7zPTTR361hFHhIbN5WsEbILV8Ae9S9q15OlNmT2yudrVXgXmLwU5Kv6frfoJgc6JhXKVHbZD0XTTEYMZNdxQdpaD6euUvWCWLkrjjUwZkBQ7UrBfGivM9zmnkfPPPN41LE6EcdY2SZLapeG7rNcnwXqCgT13geSKU/N2wpcTQlD2qOBUs+Am1RYH1NPF13oGYaW3fT5xApdhPlEY75FNxxD82KqxSNGNlqEFRJHrxugbsuof9XeDHi5jMZ6DgXUnZYOK45o+60hJ7ghr21dcoSk0mIu4BCklPwywQUN2ywgLtMNmuRXzGqXZFsbGXYUEJNFaJtU5tipv/UqSZPy7CDmjPSAHSAfT/6j2zNISWLYutm9ddzg5lrxcN/CeJ4/3qCHIWm6s/YWYub1eVsd93lbj2v9XsmgRkYtroTXuuaLLH8sUmUe4BB9TIjZEYbVhNx8xiBfD/D40=
 </pre></div>
 
                     </td>
@@ -1631,7 +1687,7 @@
                         <a href="#ansible_uptime_seconds">ansible_uptime_seconds</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>229233
+                        <div class="codehilite"><pre><span></span>239565
 </pre></div>
 
                     </td>
@@ -1720,6 +1776,44 @@
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="mi">64</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="ansible_veth0_ma01" data-label="ansible_veth0_ma01" class="pf-m-width-20">
+                        <a href="#ansible_veth0_ma01">ansible_veth0_ma01</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;veth0-ma01&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;fe:54:00:47:91:72&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span>
+    <span class="nt">&quot;promisc&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ether&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="ansible_veth0_ma02" data-label="ansible_veth0_ma02" class="pf-m-width-20">
+                        <a href="#ansible_veth0_ma02">ansible_veth0_ma02</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;veth0-ma02&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;fe:54:00:94:59:96&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span>
+    <span class="nt">&quot;promisc&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ether&quot;</span>
+<span class="p">}</span>
 </pre></div>
 
                     </td>

@@ -48,15 +48,15 @@
 
 
 
-<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-danger pf-m-inline">
+<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-success pf-m-inline">
 
     <ul class="pf-c-data-list" role="list">
         <li class="pf-c-data-list__item">
             <div class="pf-c-data-list__item-row">
                 <div class="pf-c-data-list__item-control pf-m-fit-content">
                     
-<div class="pf-c-alert__icon" title="Playbook completed with errors">
-    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+<div class="pf-c-alert__icon" title="Playbook completed successfully">
+    <i class="fas fa-check-circle" aria-hidden="true"></i>
 </div>
 
                 </div>
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 03:05:56 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 05:59:39 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 05:30:50 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 08:22:44 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 02:24:54.21
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 02:23:04.42
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">751 results</a>
+                            <a href="../playbooks/1.html#results">766 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">40 files</a>
+                            <a href="../playbooks/1.html#files">42 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -188,10 +188,10 @@
             <li><strong>Action</strong>: ansible.builtin.shell</li>
             <li><strong>Path</strong>: <a href="../files/40.html#line-111">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_k8s/tasks/30_configure_master_nodes.yml:111</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
-            <li><strong>Status</strong>: failed</li>
-            <li><strong>Started</strong>: 17 May 2021 05:23:31 -0400</li>
-            <li><strong>Ended</strong>: 17 May 2021 05:30:50 -0400</li>
-            <li><strong>Duration</strong>: 00:07:18.63</li>
+            <li><strong>Status</strong>: ok</li>
+            <li><strong>Started</strong>: 17 May 2021 08:16:36 -0400</li>
+            <li><strong>Ended</strong>: 17 May 2021 08:20:39 -0400</li>
+            <li><strong>Duration</strong>: 00:04:02.77</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -222,7 +222,7 @@
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span>kubeadm reset -f || true
-sed &quot;s/$/    --control-plane --certificate-key 3e8d9f433d835794446e7f80dd71763362078d7b05e8e7d3764cd56ac12d35c4/g&quot; k8s_token &gt; ~/k8s_master_join_command.sh
+sed &quot;s/$/    --control-plane --certificate-key a5c135927580dc961fc66a575ddc7226397da84574000cdbb6a954762273a709/g&quot; k8s_token &gt; ~/k8s_master_join_command.sh
 sh k8s_master_join_command.sh
 </pre></div>
 
@@ -234,7 +234,7 @@ sh k8s_master_join_command.sh
                         <a href="#delta">delta</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:07:17.776019
+                        <div class="codehilite"><pre><span></span>0:04:01.907905
 </pre></div>
 
                     </td>
@@ -245,7 +245,7 @@ sh k8s_master_join_command.sh
                         <a href="#end">end</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-17 09:30:50.037355
+                        <div class="codehilite"><pre><span></span>2021-05-17 12:20:39.433900
 </pre></div>
 
                     </td>
@@ -258,7 +258,7 @@ sh k8s_master_join_command.sh
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;kubeadm reset -f || true\nsed \&quot;s/$/    --control-plane --certificate-key 3e8d9f433d835794446e7f80dd71763362078d7b05e8e7d3764cd56ac12d35c4/g\&quot; k8s_token &gt; ~/k8s_master_join_command.sh\nsh k8s_master_join_command.sh\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;kubeadm reset -f || true\nsed \&quot;s/$/    --control-plane --certificate-key a5c135927580dc961fc66a575ddc7226397da84574000cdbb6a954762273a709/g\&quot; k8s_token &gt; ~/k8s_master_join_command.sh\nsh k8s_master_join_command.sh\n&quot;</span><span class="p">,</span>
         <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
@@ -277,22 +277,11 @@ sh k8s_master_join_command.sh
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="msg" data-label="msg" class="pf-m-width-20">
-                        <a href="#msg">msg</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>non-zero return code
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
                     <td role="cell" id="rc" data-label="rc" class="pf-m-width-20">
                         <a href="#rc">rc</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>1
+                        <div class="codehilite"><pre><span></span>0
 </pre></div>
 
                     </td>
@@ -303,7 +292,7 @@ sh k8s_master_join_command.sh
                         <a href="#start">start</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-17 09:23:32.261336
+                        <div class="codehilite"><pre><span></span>2021-05-17 12:16:37.525995
 </pre></div>
 
                     </td>
@@ -314,28 +303,8 @@ sh k8s_master_join_command.sh
                         <a href="#stderr">stderr</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>W0517 09:23:32.400052   65327 removeetcdmember.go:79] [reset] No kubeadm config, using etcd pod spec to get data directory
-W0517 09:23:32.423481   65327 cleanupnode.go:99] [reset] Failed to evaluate the &quot;/var/lib/kubelet&quot; directory. Skipping its unmount and cleanup: lstat /var/lib/kubelet: no such file or directory
-{&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:&quot;2021-05-17T09:27:19.407Z&quot;,&quot;caller&quot;:&quot;clientv3/retry_interceptor.go:62&quot;,&quot;msg&quot;:&quot;retrying of unary invoker failed&quot;,&quot;target&quot;:&quot;endpoint://client-0d1a9a2e-9275-4b48-b0d6-d370f860042d/10.0.0.1:2379&quot;,&quot;attempt&quot;:0,&quot;error&quot;:&quot;rpc error: code = DeadlineExceeded desc = context deadline exceeded&quot;}
-{&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:&quot;2021-05-17T09:27:21.542Z&quot;,&quot;caller&quot;:&quot;clientv3/retry_interceptor.go:62&quot;,&quot;msg&quot;:&quot;retrying of unary invoker failed&quot;,&quot;target&quot;:&quot;endpoint://client-e516b770-7d07-467c-882d-3c5c03e8f26b/10.0.0.1:2379&quot;,&quot;attempt&quot;:0,&quot;error&quot;:&quot;rpc error: code = DeadlineExceeded desc = context deadline exceeded&quot;}
-{&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:&quot;2021-05-17T09:27:21.725Z&quot;,&quot;caller&quot;:&quot;clientv3/retry_interceptor.go:62&quot;,&quot;msg&quot;:&quot;retrying of unary invoker failed&quot;,&quot;target&quot;:&quot;endpoint://client-2c6f5ea4-125a-49ce-9b4d-24379126235e/10.0.0.1:2379&quot;,&quot;attempt&quot;:0,&quot;error&quot;:&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members&quot;}
-{&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:&quot;2021-05-17T09:27:21.991Z&quot;,&quot;caller&quot;:&quot;clientv3/retry_interceptor.go:62&quot;,&quot;msg&quot;:&quot;retrying of unary invoker failed&quot;,&quot;target&quot;:&quot;endpoint://client-63ef72e3-b75d-4570-a2ee-db9af49dd40a/10.0.0.1:2379&quot;,&quot;attempt&quot;:0,&quot;error&quot;:&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members&quot;}
-{&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:&quot;2021-05-17T09:27:22.381Z&quot;,&quot;caller&quot;:&quot;clientv3/retry_interceptor.go:62&quot;,&quot;msg&quot;:&quot;retrying of unary invoker failed&quot;,&quot;target&quot;:&quot;endpoint://client-e031c245-9840-4b19-8763-118cf3e36938/10.0.0.1:2379&quot;,&quot;attempt&quot;:0,&quot;error&quot;:&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members&quot;}
-{&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:&quot;2021-05-17T09:27:22.931Z&quot;,&quot;caller&quot;:&quot;clientv3/retry_interceptor.go:62&quot;,&quot;msg&quot;:&quot;retrying of unary invoker failed&quot;,&quot;target&quot;:&quot;endpoint://client-4ba352bc-a2c1-4a35-8c55-258aa34b8036/10.0.0.1:2379&quot;,&quot;attempt&quot;:0,&quot;error&quot;:&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members&quot;}
-{&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:&quot;2021-05-17T09:27:23.747Z&quot;,&quot;caller&quot;:&quot;clientv3/retry_interceptor.go:62&quot;,&quot;msg&quot;:&quot;retrying of unary invoker failed&quot;,&quot;target&quot;:&quot;endpoint://client-9df6cadd-5ccc-48b8-9d0f-75f9856a05d8/10.0.0.1:2379&quot;,&quot;attempt&quot;:0,&quot;error&quot;:&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members&quot;}
-{&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:&quot;2021-05-17T09:27:24.999Z&quot;,&quot;caller&quot;:&quot;clientv3/retry_interceptor.go:62&quot;,&quot;msg&quot;:&quot;retrying of unary invoker failed&quot;,&quot;target&quot;:&quot;endpoint://client-7048b91c-280c-4454-a19e-079fc2ade340/10.0.0.1:2379&quot;,&quot;attempt&quot;:0,&quot;error&quot;:&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members&quot;}
-{&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:&quot;2021-05-17T09:27:26.782Z&quot;,&quot;caller&quot;:&quot;clientv3/retry_interceptor.go:62&quot;,&quot;msg&quot;:&quot;retrying of unary invoker failed&quot;,&quot;target&quot;:&quot;endpoint://client-7b738843-fac2-490d-bbbd-d772fd379c8c/10.0.0.1:2379&quot;,&quot;attempt&quot;:0,&quot;error&quot;:&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members&quot;}
-{&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:&quot;2021-05-17T09:27:29.435Z&quot;,&quot;caller&quot;:&quot;clientv3/retry_interceptor.go:62&quot;,&quot;msg&quot;:&quot;retrying of unary invoker failed&quot;,&quot;target&quot;:&quot;endpoint://client-62ba62fa-2b52-45ae-b6ca-111096da8d57/10.0.0.1:2379&quot;,&quot;attempt&quot;:0,&quot;error&quot;:&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members&quot;}
-{&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:&quot;2021-05-17T09:27:33.451Z&quot;,&quot;caller&quot;:&quot;clientv3/retry_interceptor.go:62&quot;,&quot;msg&quot;:&quot;retrying of unary invoker failed&quot;,&quot;target&quot;:&quot;endpoint://client-2ff5a28e-313b-43e8-bf46-8a96edc62557/10.0.0.1:2379&quot;,&quot;attempt&quot;:0,&quot;error&quot;:&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members&quot;}
-{&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:&quot;2021-05-17T09:27:39.588Z&quot;,&quot;caller&quot;:&quot;clientv3/retry_interceptor.go:62&quot;,&quot;msg&quot;:&quot;retrying of unary invoker failed&quot;,&quot;target&quot;:&quot;endpoint://client-7322acfa-aa42-476c-a62b-882c172223c3/10.0.0.1:2379&quot;,&quot;attempt&quot;:0,&quot;error&quot;:&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members&quot;}
-{&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:&quot;2021-05-17T09:27:49.019Z&quot;,&quot;caller&quot;:&quot;clientv3/retry_interceptor.go:62&quot;,&quot;msg&quot;:&quot;retrying of unary invoker failed&quot;,&quot;target&quot;:&quot;endpoint://client-44c6119b-f35c-4a57-9338-1d56455c5366/10.0.0.1:2379&quot;,&quot;attempt&quot;:0,&quot;error&quot;:&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members&quot;}
-{&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:&quot;2021-05-17T09:28:02.407Z&quot;,&quot;caller&quot;:&quot;clientv3/retry_interceptor.go:62&quot;,&quot;msg&quot;:&quot;retrying of unary invoker failed&quot;,&quot;target&quot;:&quot;endpoint://client-022d0174-c341-4579-a93b-82bf53eed010/10.0.0.1:2379&quot;,&quot;attempt&quot;:0,&quot;error&quot;:&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members&quot;}
-{&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:&quot;2021-05-17T09:28:22.478Z&quot;,&quot;caller&quot;:&quot;clientv3/retry_interceptor.go:62&quot;,&quot;msg&quot;:&quot;retrying of unary invoker failed&quot;,&quot;target&quot;:&quot;endpoint://client-6b01b2b8-fadf-4ab4-91aa-6e9d4d7acddf/10.0.0.1:2379&quot;,&quot;attempt&quot;:0,&quot;error&quot;:&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members&quot;}
-{&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:&quot;2021-05-17T09:28:53.903Z&quot;,&quot;caller&quot;:&quot;clientv3/retry_interceptor.go:62&quot;,&quot;msg&quot;:&quot;retrying of unary invoker failed&quot;,&quot;target&quot;:&quot;endpoint://client-b511c756-fd70-479f-a337-77016a310696/10.0.0.1:2379&quot;,&quot;attempt&quot;:0,&quot;error&quot;:&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members&quot;}
-{&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:&quot;2021-05-17T09:29:38.632Z&quot;,&quot;caller&quot;:&quot;clientv3/retry_interceptor.go:62&quot;,&quot;msg&quot;:&quot;retrying of unary invoker failed&quot;,&quot;target&quot;:&quot;endpoint://client-6ee25d85-6e7e-4e91-ab19-f08d0e5972df/10.0.0.1:2379&quot;,&quot;attempt&quot;:0,&quot;error&quot;:&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members&quot;}
-{&quot;level&quot;:&quot;warn&quot;,&quot;ts&quot;:&quot;2021-05-17T09:30:50.029Z&quot;,&quot;caller&quot;:&quot;clientv3/retry_interceptor.go:62&quot;,&quot;msg&quot;:&quot;retrying of unary invoker failed&quot;,&quot;target&quot;:&quot;endpoint://client-adae2300-8b88-4372-bdb0-714dde8dfd2e/10.0.0.1:2379&quot;,&quot;attempt&quot;:0,&quot;error&quot;:&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members&quot;}
-error execution phase control-plane-join/etcd: error creating local etcd static pod manifest file: etcdserver: re-configuration failed due to not enough started members
-To see the stack trace of this error execute with --v=5 or higher
+                        <div class="codehilite"><pre><span></span>W0517 12:16:37.653881   65495 removeetcdmember.go:79] [reset] No kubeadm config, using etcd pod spec to get data directory
+W0517 12:16:37.677765   65495 cleanupnode.go:99] [reset] Failed to evaluate the &quot;/var/lib/kubelet&quot; directory. Skipping its unmount and cleanup: lstat /var/lib/kubelet: no such file or directory
 </pre></div>
 
                     </td>
@@ -347,28 +316,8 @@ To see the stack trace of this error execute with --v=5 or higher
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;W0517 09:23:32.400052   65327 removeetcdmember.go:79] [reset] No kubeadm config, using etcd pod spec to get data directory&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;W0517 09:23:32.423481   65327 cleanupnode.go:99] [reset] Failed to evaluate the \&quot;/var/lib/kubelet\&quot; directory. Skipping its unmount and cleanup: lstat /var/lib/kubelet: no such file or directory&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;{\&quot;level\&quot;:\&quot;warn\&quot;,\&quot;ts\&quot;:\&quot;2021-05-17T09:27:19.407Z\&quot;,\&quot;caller\&quot;:\&quot;clientv3/retry_interceptor.go:62\&quot;,\&quot;msg\&quot;:\&quot;retrying of unary invoker failed\&quot;,\&quot;target\&quot;:\&quot;endpoint://client-0d1a9a2e-9275-4b48-b0d6-d370f860042d/10.0.0.1:2379\&quot;,\&quot;attempt\&quot;:0,\&quot;error\&quot;:\&quot;rpc error: code = DeadlineExceeded desc = context deadline exceeded\&quot;}&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;{\&quot;level\&quot;:\&quot;warn\&quot;,\&quot;ts\&quot;:\&quot;2021-05-17T09:27:21.542Z\&quot;,\&quot;caller\&quot;:\&quot;clientv3/retry_interceptor.go:62\&quot;,\&quot;msg\&quot;:\&quot;retrying of unary invoker failed\&quot;,\&quot;target\&quot;:\&quot;endpoint://client-e516b770-7d07-467c-882d-3c5c03e8f26b/10.0.0.1:2379\&quot;,\&quot;attempt\&quot;:0,\&quot;error\&quot;:\&quot;rpc error: code = DeadlineExceeded desc = context deadline exceeded\&quot;}&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;{\&quot;level\&quot;:\&quot;warn\&quot;,\&quot;ts\&quot;:\&quot;2021-05-17T09:27:21.725Z\&quot;,\&quot;caller\&quot;:\&quot;clientv3/retry_interceptor.go:62\&quot;,\&quot;msg\&quot;:\&quot;retrying of unary invoker failed\&quot;,\&quot;target\&quot;:\&quot;endpoint://client-2c6f5ea4-125a-49ce-9b4d-24379126235e/10.0.0.1:2379\&quot;,\&quot;attempt\&quot;:0,\&quot;error\&quot;:\&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members\&quot;}&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;{\&quot;level\&quot;:\&quot;warn\&quot;,\&quot;ts\&quot;:\&quot;2021-05-17T09:27:21.991Z\&quot;,\&quot;caller\&quot;:\&quot;clientv3/retry_interceptor.go:62\&quot;,\&quot;msg\&quot;:\&quot;retrying of unary invoker failed\&quot;,\&quot;target\&quot;:\&quot;endpoint://client-63ef72e3-b75d-4570-a2ee-db9af49dd40a/10.0.0.1:2379\&quot;,\&quot;attempt\&quot;:0,\&quot;error\&quot;:\&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members\&quot;}&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;{\&quot;level\&quot;:\&quot;warn\&quot;,\&quot;ts\&quot;:\&quot;2021-05-17T09:27:22.381Z\&quot;,\&quot;caller\&quot;:\&quot;clientv3/retry_interceptor.go:62\&quot;,\&quot;msg\&quot;:\&quot;retrying of unary invoker failed\&quot;,\&quot;target\&quot;:\&quot;endpoint://client-e031c245-9840-4b19-8763-118cf3e36938/10.0.0.1:2379\&quot;,\&quot;attempt\&quot;:0,\&quot;error\&quot;:\&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members\&quot;}&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;{\&quot;level\&quot;:\&quot;warn\&quot;,\&quot;ts\&quot;:\&quot;2021-05-17T09:27:22.931Z\&quot;,\&quot;caller\&quot;:\&quot;clientv3/retry_interceptor.go:62\&quot;,\&quot;msg\&quot;:\&quot;retrying of unary invoker failed\&quot;,\&quot;target\&quot;:\&quot;endpoint://client-4ba352bc-a2c1-4a35-8c55-258aa34b8036/10.0.0.1:2379\&quot;,\&quot;attempt\&quot;:0,\&quot;error\&quot;:\&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members\&quot;}&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;{\&quot;level\&quot;:\&quot;warn\&quot;,\&quot;ts\&quot;:\&quot;2021-05-17T09:27:23.747Z\&quot;,\&quot;caller\&quot;:\&quot;clientv3/retry_interceptor.go:62\&quot;,\&quot;msg\&quot;:\&quot;retrying of unary invoker failed\&quot;,\&quot;target\&quot;:\&quot;endpoint://client-9df6cadd-5ccc-48b8-9d0f-75f9856a05d8/10.0.0.1:2379\&quot;,\&quot;attempt\&quot;:0,\&quot;error\&quot;:\&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members\&quot;}&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;{\&quot;level\&quot;:\&quot;warn\&quot;,\&quot;ts\&quot;:\&quot;2021-05-17T09:27:24.999Z\&quot;,\&quot;caller\&quot;:\&quot;clientv3/retry_interceptor.go:62\&quot;,\&quot;msg\&quot;:\&quot;retrying of unary invoker failed\&quot;,\&quot;target\&quot;:\&quot;endpoint://client-7048b91c-280c-4454-a19e-079fc2ade340/10.0.0.1:2379\&quot;,\&quot;attempt\&quot;:0,\&quot;error\&quot;:\&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members\&quot;}&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;{\&quot;level\&quot;:\&quot;warn\&quot;,\&quot;ts\&quot;:\&quot;2021-05-17T09:27:26.782Z\&quot;,\&quot;caller\&quot;:\&quot;clientv3/retry_interceptor.go:62\&quot;,\&quot;msg\&quot;:\&quot;retrying of unary invoker failed\&quot;,\&quot;target\&quot;:\&quot;endpoint://client-7b738843-fac2-490d-bbbd-d772fd379c8c/10.0.0.1:2379\&quot;,\&quot;attempt\&quot;:0,\&quot;error\&quot;:\&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members\&quot;}&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;{\&quot;level\&quot;:\&quot;warn\&quot;,\&quot;ts\&quot;:\&quot;2021-05-17T09:27:29.435Z\&quot;,\&quot;caller\&quot;:\&quot;clientv3/retry_interceptor.go:62\&quot;,\&quot;msg\&quot;:\&quot;retrying of unary invoker failed\&quot;,\&quot;target\&quot;:\&quot;endpoint://client-62ba62fa-2b52-45ae-b6ca-111096da8d57/10.0.0.1:2379\&quot;,\&quot;attempt\&quot;:0,\&quot;error\&quot;:\&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members\&quot;}&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;{\&quot;level\&quot;:\&quot;warn\&quot;,\&quot;ts\&quot;:\&quot;2021-05-17T09:27:33.451Z\&quot;,\&quot;caller\&quot;:\&quot;clientv3/retry_interceptor.go:62\&quot;,\&quot;msg\&quot;:\&quot;retrying of unary invoker failed\&quot;,\&quot;target\&quot;:\&quot;endpoint://client-2ff5a28e-313b-43e8-bf46-8a96edc62557/10.0.0.1:2379\&quot;,\&quot;attempt\&quot;:0,\&quot;error\&quot;:\&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members\&quot;}&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;{\&quot;level\&quot;:\&quot;warn\&quot;,\&quot;ts\&quot;:\&quot;2021-05-17T09:27:39.588Z\&quot;,\&quot;caller\&quot;:\&quot;clientv3/retry_interceptor.go:62\&quot;,\&quot;msg\&quot;:\&quot;retrying of unary invoker failed\&quot;,\&quot;target\&quot;:\&quot;endpoint://client-7322acfa-aa42-476c-a62b-882c172223c3/10.0.0.1:2379\&quot;,\&quot;attempt\&quot;:0,\&quot;error\&quot;:\&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members\&quot;}&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;{\&quot;level\&quot;:\&quot;warn\&quot;,\&quot;ts\&quot;:\&quot;2021-05-17T09:27:49.019Z\&quot;,\&quot;caller\&quot;:\&quot;clientv3/retry_interceptor.go:62\&quot;,\&quot;msg\&quot;:\&quot;retrying of unary invoker failed\&quot;,\&quot;target\&quot;:\&quot;endpoint://client-44c6119b-f35c-4a57-9338-1d56455c5366/10.0.0.1:2379\&quot;,\&quot;attempt\&quot;:0,\&quot;error\&quot;:\&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members\&quot;}&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;{\&quot;level\&quot;:\&quot;warn\&quot;,\&quot;ts\&quot;:\&quot;2021-05-17T09:28:02.407Z\&quot;,\&quot;caller\&quot;:\&quot;clientv3/retry_interceptor.go:62\&quot;,\&quot;msg\&quot;:\&quot;retrying of unary invoker failed\&quot;,\&quot;target\&quot;:\&quot;endpoint://client-022d0174-c341-4579-a93b-82bf53eed010/10.0.0.1:2379\&quot;,\&quot;attempt\&quot;:0,\&quot;error\&quot;:\&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members\&quot;}&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;{\&quot;level\&quot;:\&quot;warn\&quot;,\&quot;ts\&quot;:\&quot;2021-05-17T09:28:22.478Z\&quot;,\&quot;caller\&quot;:\&quot;clientv3/retry_interceptor.go:62\&quot;,\&quot;msg\&quot;:\&quot;retrying of unary invoker failed\&quot;,\&quot;target\&quot;:\&quot;endpoint://client-6b01b2b8-fadf-4ab4-91aa-6e9d4d7acddf/10.0.0.1:2379\&quot;,\&quot;attempt\&quot;:0,\&quot;error\&quot;:\&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members\&quot;}&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;{\&quot;level\&quot;:\&quot;warn\&quot;,\&quot;ts\&quot;:\&quot;2021-05-17T09:28:53.903Z\&quot;,\&quot;caller\&quot;:\&quot;clientv3/retry_interceptor.go:62\&quot;,\&quot;msg\&quot;:\&quot;retrying of unary invoker failed\&quot;,\&quot;target\&quot;:\&quot;endpoint://client-b511c756-fd70-479f-a337-77016a310696/10.0.0.1:2379\&quot;,\&quot;attempt\&quot;:0,\&quot;error\&quot;:\&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members\&quot;}&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;{\&quot;level\&quot;:\&quot;warn\&quot;,\&quot;ts\&quot;:\&quot;2021-05-17T09:29:38.632Z\&quot;,\&quot;caller\&quot;:\&quot;clientv3/retry_interceptor.go:62\&quot;,\&quot;msg\&quot;:\&quot;retrying of unary invoker failed\&quot;,\&quot;target\&quot;:\&quot;endpoint://client-6ee25d85-6e7e-4e91-ab19-f08d0e5972df/10.0.0.1:2379\&quot;,\&quot;attempt\&quot;:0,\&quot;error\&quot;:\&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members\&quot;}&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;{\&quot;level\&quot;:\&quot;warn\&quot;,\&quot;ts\&quot;:\&quot;2021-05-17T09:30:50.029Z\&quot;,\&quot;caller\&quot;:\&quot;clientv3/retry_interceptor.go:62\&quot;,\&quot;msg\&quot;:\&quot;retrying of unary invoker failed\&quot;,\&quot;target\&quot;:\&quot;endpoint://client-adae2300-8b88-4372-bdb0-714dde8dfd2e/10.0.0.1:2379\&quot;,\&quot;attempt\&quot;:0,\&quot;error\&quot;:\&quot;rpc error: code = Unknown desc = etcdserver: re-configuration failed due to not enough started members\&quot;}&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;error execution phase control-plane-join/etcd: error creating local etcd static pod manifest file: etcdserver: re-configuration failed due to not enough started members&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;To see the stack trace of this error execute with --v=5 or higher&quot;</span>
+    <span class="s2">&quot;W0517 12:16:37.653881   65495 removeetcdmember.go:79] [reset] No kubeadm config, using etcd pod spec to get data directory&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;W0517 12:16:37.677765   65495 cleanupnode.go:99] [reset] Failed to evaluate the \&quot;/var/lib/kubelet\&quot; directory. Skipping its unmount and cleanup: lstat /var/lib/kubelet: no such file or directory&quot;</span>
 <span class="p">]</span>
 </pre></div>
 
@@ -408,16 +357,16 @@ Please, check the contents of the $HOME/.kube/config file.
 [preflight] You can also perform this action in beforehand using &#39;kubeadm config images pull&#39;
 [download-certs] Downloading the certificates in Secret &quot;kubeadm-certs&quot; in the &quot;kube-system&quot; Namespace
 [certs] Using certificateDir folder &quot;/etc/kubernetes/pki&quot;
-[certs] Generating &quot;etcd/server&quot; certificate and key
-[certs] etcd/server serving cert is signed for DNS names [k8s-master-03.k8scluster.kubeinit.local localhost] and IPs [10.0.0.3 127.0.0.1 ::1]
-[certs] Generating &quot;etcd/healthcheck-client&quot; certificate and key
-[certs] Generating &quot;apiserver-etcd-client&quot; certificate and key
 [certs] Generating &quot;etcd/peer&quot; certificate and key
 [certs] etcd/peer serving cert is signed for DNS names [k8s-master-03.k8scluster.kubeinit.local localhost] and IPs [10.0.0.3 127.0.0.1 ::1]
-[certs] Generating &quot;front-proxy-client&quot; certificate and key
-[certs] Generating &quot;apiserver-kubelet-client&quot; certificate and key
+[certs] Generating &quot;etcd/server&quot; certificate and key
+[certs] etcd/server serving cert is signed for DNS names [k8s-master-03.k8scluster.kubeinit.local localhost] and IPs [10.0.0.3 127.0.0.1 ::1]
+[certs] Generating &quot;apiserver-etcd-client&quot; certificate and key
+[certs] Generating &quot;etcd/healthcheck-client&quot; certificate and key
 [certs] Generating &quot;apiserver&quot; certificate and key
 [certs] apiserver serving cert is signed for DNS names [api.k8scluster.kubeinit.local k8s-master-03.k8scluster.kubeinit.local kubernetes kubernetes.default kubernetes.default.svc kubernetes.default.svc.cluster.local] and IPs [10.96.0.1 10.0.0.3]
+[certs] Generating &quot;apiserver-kubelet-client&quot; certificate and key
+[certs] Generating &quot;front-proxy-client&quot; certificate and key
 [certs] Valid certificates and keys now exist in &quot;/etc/kubernetes/pki&quot;
 [certs] Using the existing &quot;sa&quot; key
 [kubeconfig] Generating kubeconfig files
@@ -434,7 +383,29 @@ Please, check the contents of the $HOME/.kube/config file.
 [kubelet-start] Writing kubelet environment file with flags to file &quot;/var/lib/kubelet/kubeadm-flags.env&quot;
 [kubelet-start] Starting the kubelet
 [kubelet-start] Waiting for the kubelet to perform the TLS Bootstrap...
+[etcd] Announced new etcd member joining to the existing etcd cluster
+[etcd] Creating static Pod manifest for &quot;etcd&quot;
+[etcd] Waiting for the new etcd member to join the cluster. This can take up to 40s
+[upload-config] Storing the configuration used in ConfigMap &quot;kubeadm-config&quot; in the &quot;kube-system&quot; Namespace
+[mark-control-plane] Marking the node k8s-master-03.k8scluster.kubeinit.local as control-plane by adding the labels &quot;node-role.kubernetes.io/master=&#39;&#39;&quot; and &quot;node-role.kubernetes.io/control-plane=&#39;&#39; (deprecated)&quot;
+[mark-control-plane] Marking the node k8s-master-03.k8scluster.kubeinit.local as control-plane by adding the taints [node-role.kubernetes.io/master:NoSchedule]
 [kubelet-check] Initial timeout of 40s passed.
+
+This node has joined the cluster and a new control plane instance was created:
+
+* Certificate signing request was sent to apiserver and approval was received.
+* The Kubelet was informed of the new secure connection details.
+* Control plane (master) label and taint were applied to the new node.
+* The Kubernetes control plane instances scaled up.
+* A new etcd member was added to the local/stacked etcd cluster.
+
+To start administering your cluster from this node, you need to run the following as a regular user:
+
+	mkdir -p $HOME/.kube
+	sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+	sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+Run &#39;kubectl get nodes&#39; to see this node join the cluster.
 </pre></div>
 
                     </td>
@@ -474,16 +445,16 @@ Please, check the contents of the $HOME/.kube/config file.
     <span class="s2">&quot;[preflight] You can also perform this action in beforehand using &#39;kubeadm config images pull&#39;&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[download-certs] Downloading the certificates in Secret \&quot;kubeadm-certs\&quot; in the \&quot;kube-system\&quot; Namespace&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[certs] Using certificateDir folder \&quot;/etc/kubernetes/pki\&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[certs] Generating \&quot;etcd/server\&quot; certificate and key&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[certs] etcd/server serving cert is signed for DNS names [k8s-master-03.k8scluster.kubeinit.local localhost] and IPs [10.0.0.3 127.0.0.1 ::1]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[certs] Generating \&quot;etcd/healthcheck-client\&quot; certificate and key&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[certs] Generating \&quot;apiserver-etcd-client\&quot; certificate and key&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[certs] Generating \&quot;etcd/peer\&quot; certificate and key&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[certs] etcd/peer serving cert is signed for DNS names [k8s-master-03.k8scluster.kubeinit.local localhost] and IPs [10.0.0.3 127.0.0.1 ::1]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[certs] Generating \&quot;front-proxy-client\&quot; certificate and key&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[certs] Generating \&quot;apiserver-kubelet-client\&quot; certificate and key&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[certs] Generating \&quot;etcd/server\&quot; certificate and key&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[certs] etcd/server serving cert is signed for DNS names [k8s-master-03.k8scluster.kubeinit.local localhost] and IPs [10.0.0.3 127.0.0.1 ::1]&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[certs] Generating \&quot;apiserver-etcd-client\&quot; certificate and key&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[certs] Generating \&quot;etcd/healthcheck-client\&quot; certificate and key&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[certs] Generating \&quot;apiserver\&quot; certificate and key&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[certs] apiserver serving cert is signed for DNS names [api.k8scluster.kubeinit.local k8s-master-03.k8scluster.kubeinit.local kubernetes kubernetes.default kubernetes.default.svc kubernetes.default.svc.cluster.local] and IPs [10.96.0.1 10.0.0.3]&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[certs] Generating \&quot;apiserver-kubelet-client\&quot; certificate and key&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[certs] Generating \&quot;front-proxy-client\&quot; certificate and key&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[certs] Valid certificates and keys now exist in \&quot;/etc/kubernetes/pki\&quot;&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[certs] Using the existing \&quot;sa\&quot; key&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[kubeconfig] Generating kubeconfig files&quot;</span><span class="p">,</span>
@@ -500,7 +471,29 @@ Please, check the contents of the $HOME/.kube/config file.
     <span class="s2">&quot;[kubelet-start] Writing kubelet environment file with flags to file \&quot;/var/lib/kubelet/kubeadm-flags.env\&quot;&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[kubelet-start] Starting the kubelet&quot;</span><span class="p">,</span>
     <span class="s2">&quot;[kubelet-start] Waiting for the kubelet to perform the TLS Bootstrap...&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[kubelet-check] Initial timeout of 40s passed.&quot;</span>
+    <span class="s2">&quot;[etcd] Announced new etcd member joining to the existing etcd cluster&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[etcd] Creating static Pod manifest for \&quot;etcd\&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[etcd] Waiting for the new etcd member to join the cluster. This can take up to 40s&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[upload-config] Storing the configuration used in ConfigMap \&quot;kubeadm-config\&quot; in the \&quot;kube-system\&quot; Namespace&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[mark-control-plane] Marking the node k8s-master-03.k8scluster.kubeinit.local as control-plane by adding the labels \&quot;node-role.kubernetes.io/master=&#39;&#39;\&quot; and \&quot;node-role.kubernetes.io/control-plane=&#39;&#39; (deprecated)\&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[mark-control-plane] Marking the node k8s-master-03.k8scluster.kubeinit.local as control-plane by adding the taints [node-role.kubernetes.io/master:NoSchedule]&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[kubelet-check] Initial timeout of 40s passed.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;This node has joined the cluster and a new control plane instance was created:&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;* Certificate signing request was sent to apiserver and approval was received.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;* The Kubelet was informed of the new secure connection details.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;* Control plane (master) label and taint were applied to the new node.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;* The Kubernetes control plane instances scaled up.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;* A new etcd member was added to the local/stacked etcd cluster.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;To start administering your cluster from this node, you need to run the following as a regular user:&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;\tmkdir -p $HOME/.kube&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;\tsudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;\tsudo chown $(id -u):$(id -g) $HOME/.kube/config&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Run &#39;kubectl get nodes&#39; to see this node join the cluster.&quot;</span>
 <span class="p">]</span>
 </pre></div>
 

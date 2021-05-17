@@ -48,15 +48,15 @@
 
 
 
-<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-danger pf-m-inline">
+<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-success pf-m-inline">
 
     <ul class="pf-c-data-list" role="list">
         <li class="pf-c-data-list__item">
             <div class="pf-c-data-list__item-row">
                 <div class="pf-c-data-list__item-control pf-m-fit-content">
                     
-<div class="pf-c-alert__icon" title="Playbook completed with errors">
-    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+<div class="pf-c-alert__icon" title="Playbook completed successfully">
+    <i class="fas fa-check-circle" aria-hidden="true"></i>
 </div>
 
                 </div>
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 03:05:56 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 05:59:39 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 05:30:50 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 08:22:44 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 02:24:54.21
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 02:23:04.42
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">751 results</a>
+                            <a href="../playbooks/1.html#results">766 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">40 files</a>
+                            <a href="../playbooks/1.html#files">42 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -189,9 +189,9 @@
             <li><strong>Path</strong>: <a href="../files/39.html#line-239">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_k8s/tasks/20_configure_common.yml:239</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 17 May 2021 05:06:55 -0400</li>
-            <li><strong>Ended</strong>: 17 May 2021 05:06:57 -0400</li>
-            <li><strong>Duration</strong>: 00:00:02.96</li>
+            <li><strong>Started</strong>: 17 May 2021 07:59:38 -0400</li>
+            <li><strong>Ended</strong>: 17 May 2021 07:59:41 -0400</li>
+            <li><strong>Duration</strong>: 00:00:03.05</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -234,7 +234,7 @@ systemctl status crio
                         <a href="#delta">delta</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:00:02.114954
+                        <div class="codehilite"><pre><span></span>0:00:02.196931
 </pre></div>
 
                     </td>
@@ -245,7 +245,7 @@ systemctl status crio
                         <a href="#end">end</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-17 09:06:57.784760
+                        <div class="codehilite"><pre><span></span>2021-05-17 11:59:41.572068
 </pre></div>
 
                     </td>
@@ -292,7 +292,7 @@ systemctl status crio
                         <a href="#start">start</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-17 09:06:55.669806
+                        <div class="codehilite"><pre><span></span>2021-05-17 11:59:39.375137
 </pre></div>
 
                     </td>
@@ -329,24 +329,24 @@ systemctl status crio
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span>● crio.service - Container Runtime Interface for OCI (CRI-O)
    Loaded: loaded (/usr/lib/systemd/system/crio.service; enabled; vendor preset: disabled)
-   Active: active (running) since Mon 2021-05-17 09:06:57 UTC; 23ms ago
+   Active: active (running) since Mon 2021-05-17 11:59:41 UTC; 24ms ago
      Docs: https://github.com/cri-o/cri-o
- Main PID: 61381 (crio)
-    Tasks: 12
-   Memory: 25.5M
+ Main PID: 61360 (crio)
+    Tasks: 13
+   Memory: 28.0M
    CGroup: /system.slice/crio.service
-           └─61381 /usr/bin/crio
+           └─61360 /usr/bin/crio
 
-May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local crio[61381]: time=&quot;2021-05-17 09:06:57.433786857Z&quot; level=info msg=&quot;Found CNI network crio (type=bridge) at /etc/cni/net.d/100-crio-bridge.conf&quot;
-May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local crio[61381]: time=&quot;2021-05-17 09:06:57.442870104Z&quot; level=info msg=&quot;Found CNI network 200-loopback.conf (type=loopback) at /etc/cni/net.d/200-loopback.conf&quot;
-May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local crio[61381]: time=&quot;2021-05-17 09:06:57.442958270Z&quot; level=info msg=&quot;Update default CNI network name to crio&quot;
-May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local crio[61381]: W0517 09:06:57.444459   61381 iptables.go:213] Error checking iptables version, assuming version at least 1.4.11: executable file not found in $PATH
-May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local crio[61381]: W0517 09:06:57.444766   61381 meta_hostport_manager.go:26] unable to ensure iptables chain: error creating chain &quot;KUBE-MARK-MASQ&quot;: executable file not found in $PATH:
-May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local crio[61381]: W0517 09:06:57.444880   61381 hostport_manager.go:71] The binary conntrack is not installed, this can cause failures in network connection cleanup.
-May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local crio[61381]: W0517 09:06:57.444966   61381 iptables.go:213] Error checking iptables version, assuming version at least 1.4.11: executable file not found in $PATH
-May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local crio[61381]: W0517 09:06:57.445129   61381 meta_hostport_manager.go:32] unable to ensure ip6tables chain: error creating chain &quot;KUBE-MARK-MASQ&quot;: executable file not found in $PATH:
-May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local crio[61381]: W0517 09:06:57.445173   61381 hostport_manager.go:71] The binary conntrack is not installed, this can cause failures in network connection cleanup.
-May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local systemd[1]: Started Container Runtime Interface for OCI (CRI-O).
+May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local crio[61360]: time=&quot;2021-05-17 11:59:41.206718840Z&quot; level=info msg=&quot;Found CNI network crio (type=bridge) at /etc/cni/net.d/100-crio-bridge.conf&quot;
+May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local crio[61360]: time=&quot;2021-05-17 11:59:41.216416582Z&quot; level=info msg=&quot;Found CNI network 200-loopback.conf (type=loopback) at /etc/cni/net.d/200-loopback.conf&quot;
+May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local crio[61360]: time=&quot;2021-05-17 11:59:41.216500411Z&quot; level=info msg=&quot;Update default CNI network name to crio&quot;
+May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local crio[61360]: W0517 11:59:41.217918   61360 iptables.go:213] Error checking iptables version, assuming version at least 1.4.11: executable file not found in $PATH
+May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local crio[61360]: W0517 11:59:41.218168   61360 meta_hostport_manager.go:26] unable to ensure iptables chain: error creating chain &quot;KUBE-MARK-MASQ&quot;: executable file not found in $PATH:
+May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local crio[61360]: W0517 11:59:41.218268   61360 hostport_manager.go:71] The binary conntrack is not installed, this can cause failures in network connection cleanup.
+May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local crio[61360]: W0517 11:59:41.218340   61360 iptables.go:213] Error checking iptables version, assuming version at least 1.4.11: executable file not found in $PATH
+May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local crio[61360]: W0517 11:59:41.218466   61360 meta_hostport_manager.go:32] unable to ensure ip6tables chain: error creating chain &quot;KUBE-MARK-MASQ&quot;: executable file not found in $PATH:
+May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local crio[61360]: W0517 11:59:41.218514   61360 hostport_manager.go:71] The binary conntrack is not installed, this can cause failures in network connection cleanup.
+May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local systemd[1]: Started Container Runtime Interface for OCI (CRI-O).
 </pre></div>
 
                     </td>
@@ -360,24 +360,24 @@ May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local systemd[1]: Started Cont
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
     <span class="s2">&quot;\u25cf crio.service - Container Runtime Interface for OCI (CRI-O)&quot;</span><span class="p">,</span>
     <span class="s2">&quot;   Loaded: loaded (/usr/lib/systemd/system/crio.service; enabled; vendor preset: disabled)&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;   Active: active (running) since Mon 2021-05-17 09:06:57 UTC; 23ms ago&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;   Active: active (running) since Mon 2021-05-17 11:59:41 UTC; 24ms ago&quot;</span><span class="p">,</span>
     <span class="s2">&quot;     Docs: https://github.com/cri-o/cri-o&quot;</span><span class="p">,</span>
-    <span class="s2">&quot; Main PID: 61381 (crio)&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;    Tasks: 12&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;   Memory: 25.5M&quot;</span><span class="p">,</span>
+    <span class="s2">&quot; Main PID: 61360 (crio)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;    Tasks: 13&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;   Memory: 28.0M&quot;</span><span class="p">,</span>
     <span class="s2">&quot;   CGroup: /system.slice/crio.service&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;           \u2514\u250061381 /usr/bin/crio&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;           \u2514\u250061360 /usr/bin/crio&quot;</span><span class="p">,</span>
     <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local crio[61381]: time=\&quot;2021-05-17 09:06:57.433786857Z\&quot; level=info msg=\&quot;Found CNI network crio (type=bridge) at /etc/cni/net.d/100-crio-bridge.conf\&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local crio[61381]: time=\&quot;2021-05-17 09:06:57.442870104Z\&quot; level=info msg=\&quot;Found CNI network 200-loopback.conf (type=loopback) at /etc/cni/net.d/200-loopback.conf\&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local crio[61381]: time=\&quot;2021-05-17 09:06:57.442958270Z\&quot; level=info msg=\&quot;Update default CNI network name to crio\&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local crio[61381]: W0517 09:06:57.444459   61381 iptables.go:213] Error checking iptables version, assuming version at least 1.4.11: executable file not found in $PATH&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local crio[61381]: W0517 09:06:57.444766   61381 meta_hostport_manager.go:26] unable to ensure iptables chain: error creating chain \&quot;KUBE-MARK-MASQ\&quot;: executable file not found in $PATH:&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local crio[61381]: W0517 09:06:57.444880   61381 hostport_manager.go:71] The binary conntrack is not installed, this can cause failures in network connection cleanup.&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local crio[61381]: W0517 09:06:57.444966   61381 iptables.go:213] Error checking iptables version, assuming version at least 1.4.11: executable file not found in $PATH&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local crio[61381]: W0517 09:06:57.445129   61381 meta_hostport_manager.go:32] unable to ensure ip6tables chain: error creating chain \&quot;KUBE-MARK-MASQ\&quot;: executable file not found in $PATH:&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local crio[61381]: W0517 09:06:57.445173   61381 hostport_manager.go:71] The binary conntrack is not installed, this can cause failures in network connection cleanup.&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;May 17 09:06:57 k8s-worker-01.k8scluster.kubeinit.local systemd[1]: Started Container Runtime Interface for OCI (CRI-O).&quot;</span>
+    <span class="s2">&quot;May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local crio[61360]: time=\&quot;2021-05-17 11:59:41.206718840Z\&quot; level=info msg=\&quot;Found CNI network crio (type=bridge) at /etc/cni/net.d/100-crio-bridge.conf\&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local crio[61360]: time=\&quot;2021-05-17 11:59:41.216416582Z\&quot; level=info msg=\&quot;Found CNI network 200-loopback.conf (type=loopback) at /etc/cni/net.d/200-loopback.conf\&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local crio[61360]: time=\&quot;2021-05-17 11:59:41.216500411Z\&quot; level=info msg=\&quot;Update default CNI network name to crio\&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local crio[61360]: W0517 11:59:41.217918   61360 iptables.go:213] Error checking iptables version, assuming version at least 1.4.11: executable file not found in $PATH&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local crio[61360]: W0517 11:59:41.218168   61360 meta_hostport_manager.go:26] unable to ensure iptables chain: error creating chain \&quot;KUBE-MARK-MASQ\&quot;: executable file not found in $PATH:&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local crio[61360]: W0517 11:59:41.218268   61360 hostport_manager.go:71] The binary conntrack is not installed, this can cause failures in network connection cleanup.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local crio[61360]: W0517 11:59:41.218340   61360 iptables.go:213] Error checking iptables version, assuming version at least 1.4.11: executable file not found in $PATH&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local crio[61360]: W0517 11:59:41.218466   61360 meta_hostport_manager.go:32] unable to ensure ip6tables chain: error creating chain \&quot;KUBE-MARK-MASQ\&quot;: executable file not found in $PATH:&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local crio[61360]: W0517 11:59:41.218514   61360 hostport_manager.go:71] The binary conntrack is not installed, this can cause failures in network connection cleanup.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;May 17 11:59:41 k8s-worker-01.k8scluster.kubeinit.local systemd[1]: Started Container Runtime Interface for OCI (CRI-O).&quot;</span>
 <span class="p">]</span>
 </pre></div>
 
