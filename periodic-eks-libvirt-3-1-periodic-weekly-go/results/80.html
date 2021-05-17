@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 13 May 2021 21:06:20 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 09:01:26 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 13 May 2021 21:29:09 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 09:43:32 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:22:48.53
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:42:05.64
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml
                             </a>
@@ -186,12 +186,12 @@
         <ul class="pf-c-list">
             <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Clean directories for config files per node</a></li>
             <li><strong>Action</strong>: ansible.builtin.file</li>
-            <li><strong>Path</strong>: <a href="../files/12.html#line-71">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/10_cleanup.yml:71</a>
+            <li><strong>Path</strong>: <a href="../files/12.html#line-71">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/10_cleanup.yml:71</a>
             <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-01</a></li>
-            <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 13 May 2021 21:07:03 -0400</li>
-            <li><strong>Ended</strong>: 13 May 2021 21:07:04 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.96</li>
+            <li><strong>Status</strong>: ok</li>
+            <li><strong>Started</strong>: 17 May 2021 09:02:01 -0400</li>
+            <li><strong>Ended</strong>: 17 May 2021 09:02:02 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.99</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -210,7 +210,7 @@
                         <a href="#changed">changed</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>True
+                        <div class="codehilite"><pre><span></span>False
 </pre></div>
 
                     </td>
@@ -235,25 +235,7 @@
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
     <span class="p">{</span>
         <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;diff&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;after&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/eks-service-01/&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;absent&quot;</span>
-            <span class="p">},</span>
-            <span class="nt">&quot;before&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/eks-service-01/&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;path_content&quot;</span><span class="p">:</span> <span class="p">{</span>
-                    <span class="nt">&quot;directories&quot;</span><span class="p">:</span> <span class="p">[],</span>
-                    <span class="nt">&quot;files&quot;</span><span class="p">:</span> <span class="p">[</span>
-                        <span class="s2">&quot;/tmp/eks-service-01/ifcfg-eth0&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;/tmp/eks-service-01/hosts.redhat.tmpl&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;/tmp/eks-service-01/cloud.cfg&quot;</span>
-                    <span class="p">]</span>
-                <span class="p">},</span>
-                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;directory&quot;</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
@@ -286,25 +268,7 @@
     <span class="p">},</span>
     <span class="p">{</span>
         <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;diff&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;after&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/eks-master-01/&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;absent&quot;</span>
-            <span class="p">},</span>
-            <span class="nt">&quot;before&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/eks-master-01/&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;path_content&quot;</span><span class="p">:</span> <span class="p">{</span>
-                    <span class="nt">&quot;directories&quot;</span><span class="p">:</span> <span class="p">[],</span>
-                    <span class="nt">&quot;files&quot;</span><span class="p">:</span> <span class="p">[</span>
-                        <span class="s2">&quot;/tmp/eks-master-01/ifcfg-eth0&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;/tmp/eks-master-01/hosts.redhat.tmpl&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;/tmp/eks-master-01/cloud.cfg&quot;</span>
-                    <span class="p">]</span>
-                <span class="p">},</span>
-                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;directory&quot;</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
@@ -337,25 +301,7 @@
     <span class="p">},</span>
     <span class="p">{</span>
         <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;diff&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;after&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/eks-master-02/&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;absent&quot;</span>
-            <span class="p">},</span>
-            <span class="nt">&quot;before&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/eks-master-02/&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;path_content&quot;</span><span class="p">:</span> <span class="p">{</span>
-                    <span class="nt">&quot;directories&quot;</span><span class="p">:</span> <span class="p">[],</span>
-                    <span class="nt">&quot;files&quot;</span><span class="p">:</span> <span class="p">[</span>
-                        <span class="s2">&quot;/tmp/eks-master-02/ifcfg-eth0&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;/tmp/eks-master-02/hosts.redhat.tmpl&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;/tmp/eks-master-02/cloud.cfg&quot;</span>
-                    <span class="p">]</span>
-                <span class="p">},</span>
-                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;directory&quot;</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
@@ -388,25 +334,7 @@
     <span class="p">},</span>
     <span class="p">{</span>
         <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;diff&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;after&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/eks-master-03/&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;absent&quot;</span>
-            <span class="p">},</span>
-            <span class="nt">&quot;before&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/eks-master-03/&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;path_content&quot;</span><span class="p">:</span> <span class="p">{</span>
-                    <span class="nt">&quot;directories&quot;</span><span class="p">:</span> <span class="p">[],</span>
-                    <span class="nt">&quot;files&quot;</span><span class="p">:</span> <span class="p">[</span>
-                        <span class="s2">&quot;/tmp/eks-master-03/ifcfg-eth0&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;/tmp/eks-master-03/hosts.redhat.tmpl&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;/tmp/eks-master-03/cloud.cfg&quot;</span>
-                    <span class="p">]</span>
-                <span class="p">},</span>
-                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;directory&quot;</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
@@ -439,25 +367,7 @@
     <span class="p">},</span>
     <span class="p">{</span>
         <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;diff&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;after&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/eks-worker-01/&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;absent&quot;</span>
-            <span class="p">},</span>
-            <span class="nt">&quot;before&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/eks-worker-01/&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;path_content&quot;</span><span class="p">:</span> <span class="p">{</span>
-                    <span class="nt">&quot;directories&quot;</span><span class="p">:</span> <span class="p">[],</span>
-                    <span class="nt">&quot;files&quot;</span><span class="p">:</span> <span class="p">[</span>
-                        <span class="s2">&quot;/tmp/eks-worker-01/ifcfg-eth0&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;/tmp/eks-worker-01/hosts.redhat.tmpl&quot;</span><span class="p">,</span>
-                        <span class="s2">&quot;/tmp/eks-worker-01/cloud.cfg&quot;</span>
-                    <span class="p">]</span>
-                <span class="p">},</span>
-                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;directory&quot;</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>

@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="../static/css/pygments.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -20,7 +20,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -66,16 +66,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 13 May 2021 21:06:20 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 09:01:26 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 13 May 2021 21:29:09 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 09:43:32 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:22:48.53
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:42:05.64
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml
                             </a>
@@ -183,7 +183,7 @@
 
 <div class="pf-c-card" style="margin: 1em 0;">
     <div class="pf-c-card__header pf-c-title pf-m-md">
-        <strong>/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/50_ovn_post_setup.yml</strong>
+        <strong>/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/50_ovn_post_setup.yml</strong>
     </div>
     <div class="pf-c-card__body">
         <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"><a href="#line-1">  1</a></span>
@@ -374,195 +374,195 @@
 <span class="normal"><a href="#line-186">186</a></span>
 <span class="normal"><a href="#line-187">187</a></span>
 <span class="normal"><a href="#line-188">188</a></span>
-<span class="normal"><a href="#line-189">189</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a name="line-1"></a><span class="nn">---</span>
-</span><span id="line-2"><a name="line-2"></a><span class="c1"># Copyright kubeinit.com</span>
-</span><span id="line-3"><a name="line-3"></a><span class="c1"># All Rights Reserved.</span>
-</span><span id="line-4"><a name="line-4"></a><span class="c1">#</span>
-</span><span id="line-5"><a name="line-5"></a><span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
-</span><span id="line-6"><a name="line-6"></a><span class="c1"># not use this file except in compliance with the License. You may obtain</span>
-</span><span id="line-7"><a name="line-7"></a><span class="c1"># a copy of the License at</span>
-</span><span id="line-8"><a name="line-8"></a><span class="c1">#</span>
-</span><span id="line-9"><a name="line-9"></a><span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
-</span><span id="line-10"><a name="line-10"></a><span class="c1">#</span>
-</span><span id="line-11"><a name="line-11"></a><span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
-</span><span id="line-12"><a name="line-12"></a><span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT</span>
-</span><span id="line-13"><a name="line-13"></a><span class="c1"># WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the</span>
-</span><span id="line-14"><a name="line-14"></a><span class="c1"># License for the specific language governing permissions and limitations</span>
-</span><span id="line-15"><a name="line-15"></a><span class="c1"># under the License.</span>
-</span><span id="line-16"><a name="line-16"></a>
-</span><span id="line-17"><a name="line-17"></a><span class="c1">##</span>
-</span><span id="line-18"><a name="line-18"></a><span class="c1">## OVN post deployment configuration steps.</span>
-</span><span id="line-19"><a name="line-19"></a><span class="c1">##</span>
-</span><span id="line-20"><a name="line-20"></a>
-</span><span id="line-21"><a name="line-21"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Post set up the OVN network details</span>
-</span><span id="line-22"><a name="line-22"></a>  <span class="nt">block</span><span class="p">:</span>
-</span><span id="line-23"><a name="line-23"></a>
-</span><span id="line-24"><a name="line-24"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">configure OVN in the first Hypervisor</span>
-</span><span id="line-25"><a name="line-25"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-26"><a name="line-26"></a>        <span class="no"># Below two commands only for master. For SSL, other steps are required.</span>
-</span><span id="line-27"><a name="line-27"></a>        <span class="no">ovn-nbctl set-connection ptcp:{{ kubeinit_libvirt_ovn_northbound_port }}</span>
-</span><span id="line-28"><a name="line-28"></a>        <span class="no">ovn-sbctl set-connection ptcp:{{ kubeinit_libvirt_ovn_southbound_port }}</span>
-</span><span id="line-29"><a name="line-29"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
-</span><span id="line-30"><a name="line-30"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name</span>
-</span><span id="line-31"><a name="line-31"></a>
-</span><span id="line-32"><a name="line-32"></a>    <span class="c1">#</span>
-</span><span id="line-33"><a name="line-33"></a>    <span class="c1"># We create the OVN switch that will be binded to each chassis (hypervisor)</span>
-</span><span id="line-34"><a name="line-34"></a>    <span class="c1"># In this switch we will create a port per guest</span>
-</span><span id="line-35"><a name="line-35"></a>    <span class="c1">#</span>
-</span><span id="line-36"><a name="line-36"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">remove and create the cluster switch if exists</span>
-</span><span id="line-37"><a name="line-37"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-38"><a name="line-38"></a>        <span class="no">#</span>
-</span><span id="line-39"><a name="line-39"></a>        <span class="no"># Create a logical switch</span>
-</span><span id="line-40"><a name="line-40"></a>        <span class="no">#</span>
-</span><span id="line-41"><a name="line-41"></a>        <span class="no">ovn-nbctl ls-del sw0</span>
-</span><span id="line-42"><a name="line-42"></a>        <span class="no">ovn-nbctl --wait=hv ls-add sw0</span>
-</span><span id="line-43"><a name="line-43"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
-</span><span id="line-44"><a name="line-44"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name</span>
-</span><span id="line-45"><a name="line-45"></a>
-</span><span id="line-46"><a name="line-46"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">create the DHCP options</span>
-</span><span id="line-47"><a name="line-47"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-48"><a name="line-48"></a>        <span class="no">#</span>
-</span><span id="line-49"><a name="line-49"></a>        <span class="no"># Create DHCP options</span>
-</span><span id="line-50"><a name="line-50"></a>        <span class="no">#</span>
-</span><span id="line-51"><a name="line-51"></a>        <span class="no">Dhcp_opts=$(ovn-nbctl create DHCP_Options cidr={{ kubeinit_inventory_network_net }}/{{ kubeinit_inventory_network_cidr }} \</span>
-</span><span id="line-52"><a name="line-52"></a>            <span class="no">options=&quot; \</span>
-</span><span id="line-53"><a name="line-53"></a>                    <span class="no">\&quot;server_id\&quot;=\&quot;{{ kubeinit_inventory_network_gateway }}\&quot; \</span>
-</span><span id="line-54"><a name="line-54"></a>                    <span class="no">\&quot;server_mac\&quot;=\&quot;00:00:00:65:77:09\&quot; \</span>
-</span><span id="line-55"><a name="line-55"></a>                    <span class="no">\&quot;lease_time\&quot;=\&quot;3600\&quot; \</span>
-</span><span id="line-56"><a name="line-56"></a>                    <span class="no">\&quot;router\&quot;=\&quot;{{ kubeinit_inventory_network_gateway }}\&quot; \</span>
-</span><span id="line-57"><a name="line-57"></a>                    <span class="no">\&quot;dns_server\&quot;=\&quot;{{ kubeinit_inventory_cluster_dns_server }}\&quot; \</span>
-</span><span id="line-58"><a name="line-58"></a>                    <span class="no">\&quot;mtu\&quot;=\&quot;1442\&quot; \</span>
-</span><span id="line-59"><a name="line-59"></a>                    <span class="no">&quot;)</span>
-</span><span id="line-60"><a name="line-60"></a>        <span class="no">echo $Dhcp_opts</span>
-</span><span id="line-61"><a name="line-61"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">dhcp_options</span>
-</span><span id="line-62"><a name="line-62"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;dhcp_options.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
-</span><span id="line-63"><a name="line-63"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
-</span><span id="line-64"><a name="line-64"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name</span>
-</span><span id="line-65"><a name="line-65"></a>
-</span><span id="line-66"><a name="line-66"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">register the dhcp options uuid</span>
-</span><span id="line-67"><a name="line-67"></a>      <span class="nt">ansible.builtin.set_fact</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit_provision_dhcp_options={{ dhcp_options.stdout }}</span>
-</span><span id="line-68"><a name="line-68"></a>      <span class="nt">with_items</span><span class="p">:</span>
-</span><span id="line-69"><a name="line-69"></a>        <span class="p p-Indicator">-</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">groups[&#39;all_hosts&#39;]</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-70"><a name="line-70"></a>      <span class="nt">delegate_to</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-71"><a name="line-71"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
-</span><span id="line-72"><a name="line-72"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name</span>
-</span><span id="line-73"><a name="line-73"></a>
-</span><span id="line-74"><a name="line-74"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Display the registered dhcp options</span>
-</span><span id="line-75"><a name="line-75"></a>      <span class="nt">ansible.builtin.debug</span><span class="p">:</span>
-</span><span id="line-76"><a name="line-76"></a>        <span class="nt">var</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit_provision_dhcp_options</span>
-</span><span id="line-77"><a name="line-77"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
-</span><span id="line-78"><a name="line-78"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name</span>
-</span><span id="line-79"><a name="line-79"></a>
-</span><span id="line-80"><a name="line-80"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">create OVS/OVN bindings for the VMs ports</span>
-</span><span id="line-81"><a name="line-81"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-82"><a name="line-82"></a>        <span class="no">#</span>
-</span><span id="line-83"><a name="line-83"></a>        <span class="no"># We create an OVN port using the interface ID and the mac address of the VM</span>
-</span><span id="line-84"><a name="line-84"></a>        <span class="no">#</span>
-</span><span id="line-85"><a name="line-85"></a>        <span class="no">ovn-nbctl --wait=hv lsp-add sw0 {{ hostvars[item].interfaceid }}</span>
-</span><span id="line-86"><a name="line-86"></a>
-</span><span id="line-87"><a name="line-87"></a>        <span class="no">#</span>
-</span><span id="line-88"><a name="line-88"></a>        <span class="no"># The port name is the interface id of the VM, now we assign the mac address of the VM to the port</span>
-</span><span id="line-89"><a name="line-89"></a>        <span class="no">#</span>
-</span><span id="line-90"><a name="line-90"></a>        <span class="no">ovn-nbctl lsp-set-addresses {{ hostvars[item].interfaceid }} &quot;{{ hostvars[item].mac }} {{ hostvars[item].ansible_host }}&quot;</span>
-</span><span id="line-91"><a name="line-91"></a>
-</span><span id="line-92"><a name="line-92"></a>        <span class="no">ovn-nbctl lsp-set-port-security {{ hostvars[item].interfaceid }} &quot;{{ hostvars[item].mac }} {{ hostvars[item].ansible_host }}&quot;</span>
-</span><span id="line-93"><a name="line-93"></a>
-</span><span id="line-94"><a name="line-94"></a>        <span class="no">ovn-nbctl lsp-set-dhcpv4-options {{ hostvars[item].interfaceid }} {{ kubeinit_provision_dhcp_options }}</span>
-</span><span id="line-95"><a name="line-95"></a>
-</span><span id="line-96"><a name="line-96"></a>      <span class="nt">with_items</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">groups[&#39;all_nodes&#39;]</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-97"><a name="line-97"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
-</span><span id="line-98"><a name="line-98"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name</span>
-</span><span id="line-99"><a name="line-99"></a>
-</span><span id="line-100"><a name="line-100"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Configuring a router connected to the guests switch</span>
-</span><span id="line-101"><a name="line-101"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-102"><a name="line-102"></a>        <span class="no">#</span>
-</span><span id="line-103"><a name="line-103"></a>        <span class="no"># Create a logical router to connect the VMs switch</span>
-</span><span id="line-104"><a name="line-104"></a>        <span class="no">#</span>
-</span><span id="line-105"><a name="line-105"></a>        <span class="no">ovn-nbctl --wait=hv lr-add lr0</span>
-</span><span id="line-106"><a name="line-106"></a>        <span class="no">ovn-nbctl --wait=hv lrp-add lr0 lr0-sw0 00:00:00:65:77:09 {{ kubeinit_inventory_network_gateway }}/{{ kubeinit_inventory_network_cidr }}</span>
-</span><span id="line-107"><a name="line-107"></a>        <span class="no">ovn-nbctl --wait=hv lsp-add sw0 sw0-lr0</span>
-</span><span id="line-108"><a name="line-108"></a>        <span class="no">ovn-nbctl lsp-set-type sw0-lr0 router</span>
-</span><span id="line-109"><a name="line-109"></a>        <span class="no">ovn-nbctl lsp-set-addresses sw0-lr0 router</span>
-</span><span id="line-110"><a name="line-110"></a>        <span class="no">ovn-nbctl lsp-set-options sw0-lr0 router-port=lr0-sw0</span>
-</span><span id="line-111"><a name="line-111"></a>        <span class="no">#</span>
-</span><span id="line-112"><a name="line-112"></a>        <span class="no"># We create the external access switch</span>
-</span><span id="line-113"><a name="line-113"></a>        <span class="no">#</span>
-</span><span id="line-114"><a name="line-114"></a>        <span class="no">ovn-nbctl --wait=hv ls-add public</span>
-</span><span id="line-115"><a name="line-115"></a>        <span class="no">ovn-nbctl --wait=hv lrp-add lr0 lr0-public 00:00:20:20:12:13 172.16.0.1/24</span>
-</span><span id="line-116"><a name="line-116"></a>        <span class="no">ovn-nbctl --wait=hv lsp-add public public-lr0</span>
-</span><span id="line-117"><a name="line-117"></a>        <span class="no">ovn-nbctl lsp-set-type public-lr0 router</span>
-</span><span id="line-118"><a name="line-118"></a>        <span class="no">ovn-nbctl lsp-set-addresses public-lr0 router</span>
-</span><span id="line-119"><a name="line-119"></a>        <span class="no">ovn-nbctl lsp-set-options public-lr0 router-port=lr0-public</span>
-</span><span id="line-120"><a name="line-120"></a>        <span class="no">#</span>
-</span><span id="line-121"><a name="line-121"></a>        <span class="no"># Create a localnet port</span>
-</span><span id="line-122"><a name="line-122"></a>        <span class="no">#</span>
-</span><span id="line-123"><a name="line-123"></a>        <span class="no">ovn-nbctl --wait=hv lsp-add public public-ln</span>
-</span><span id="line-124"><a name="line-124"></a>        <span class="no">ovn-nbctl lsp-set-type public-ln localnet</span>
-</span><span id="line-125"><a name="line-125"></a>        <span class="no">ovn-nbctl lsp-set-addresses public-ln unknown</span>
-</span><span id="line-126"><a name="line-126"></a>        <span class="no">ovn-nbctl lsp-set-options public-ln network_name=provider</span>
-</span><span id="line-127"><a name="line-127"></a>        <span class="no">#</span>
-</span><span id="line-128"><a name="line-128"></a>        <span class="no"># We add a bridge mapping from br-ex called provider</span>
-</span><span id="line-129"><a name="line-129"></a>        <span class="no">#</span>
-</span><span id="line-130"><a name="line-130"></a>        <span class="no">ovs-vsctl set Open_vSwitch . external-ids:ovn-bridge-mappings=provider:br-ex</span>
-</span><span id="line-131"><a name="line-131"></a>        <span class="no">#</span>
-</span><span id="line-132"><a name="line-132"></a>        <span class="no"># Configuring the chassis gateway to the first hypervisor</span>
-</span><span id="line-133"><a name="line-133"></a>        <span class="no">#</span>
-</span><span id="line-134"><a name="line-134"></a>        <span class="no">ovn-nbctl lrp-set-gateway-chassis lr0-public {{ kubeinit_bastion_host }}</span>
-</span><span id="line-135"><a name="line-135"></a>        <span class="no">ovn-nbctl \</span>
-</span><span id="line-136"><a name="line-136"></a>          <span class="no">--id=@gc0 create Gateway_Chassis name=lr0-public chassis_name={{ kubeinit_bastion_host }} priority=20 -- \</span>
-</span><span id="line-137"><a name="line-137"></a>          <span class="no">set Logical_Router_Port lr0-public &#39;gateway_chassis=[@gc0]&#39;</span>
-</span><span id="line-138"><a name="line-138"></a>        <span class="no">ovn-nbctl set logical_router_port lr0-public options:redirect-chassis={{ kubeinit_bastion_host }}</span>
-</span><span id="line-139"><a name="line-139"></a>        <span class="no">#</span>
-</span><span id="line-140"><a name="line-140"></a>        <span class="no"># Create an ovs br-ex bridge to connect to the host</span>
-</span><span id="line-141"><a name="line-141"></a>        <span class="no">#</span>
-</span><span id="line-142"><a name="line-142"></a>        <span class="no">ovs-vsctl --may-exist add-br br-ex</span>
-</span><span id="line-143"><a name="line-143"></a>        <span class="no">ip addr add 172.16.0.254/24 dev br-ex</span>
-</span><span id="line-144"><a name="line-144"></a>        <span class="no">ip link set br-ex up</span>
-</span><span id="line-145"><a name="line-145"></a>
-</span><span id="line-146"><a name="line-146"></a>        <span class="no">#</span>
-</span><span id="line-147"><a name="line-147"></a>        <span class="no"># Routes</span>
-</span><span id="line-148"><a name="line-148"></a>        <span class="no">#</span>
-</span><span id="line-149"><a name="line-149"></a>        <span class="no"># Connectivity from the host to the guest machines</span>
-</span><span id="line-150"><a name="line-150"></a>        <span class="no">ip route add {{ kubeinit_inventory_network_net }}/{{ kubeinit_inventory_network_cidr }} via 172.16.0.1 dev br-ex</span>
-</span><span id="line-151"><a name="line-151"></a>        <span class="no"># Connectivity to external/additional networks</span>
-</span><span id="line-152"><a name="line-152"></a>        <span class="no">ovn-nbctl lr-route-add lr0 0.0.0.0/0 172.16.0.254</span>
-</span><span id="line-153"><a name="line-153"></a>        <span class="no">#</span>
-</span><span id="line-154"><a name="line-154"></a>        <span class="no"># Disable rp_filter</span>
-</span><span id="line-155"><a name="line-155"></a>        <span class="no">#</span>
-</span><span id="line-156"><a name="line-156"></a>        <span class="no">sysctl net.ipv4.conf.all.rp_filter=2</span>
-</span><span id="line-157"><a name="line-157"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
-</span><span id="line-158"><a name="line-158"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name</span>
-</span><span id="line-159"><a name="line-159"></a>
-</span><span id="line-160"><a name="line-160"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Configuring NAT when not using the external bridge interface</span>
-</span><span id="line-161"><a name="line-161"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-162"><a name="line-162"></a>        <span class="no">#</span>
-</span><span id="line-163"><a name="line-163"></a>        <span class="no"># NAT from the external interface</span>
-</span><span id="line-164"><a name="line-164"></a>        <span class="no">#</span>
-</span><span id="line-165"><a name="line-165"></a>        <span class="no"># Get the external interface name</span>
-</span><span id="line-166"><a name="line-166"></a>        <span class="no">iface=$(ip route get &quot;8.8.8.8&quot; | grep -Po &#39;(?&lt;=(dev )).*(?= src| proto)&#39;)</span>
-</span><span id="line-167"><a name="line-167"></a>        <span class="no">#</span>
-</span><span id="line-168"><a name="line-168"></a>        <span class="no">iptables -t nat -A POSTROUTING -s {{ kubeinit_inventory_network_net }}/{{ kubeinit_inventory_network_cidr }} -o $iface -j MASQUERADE</span>
-</span><span id="line-169"><a name="line-169"></a>        <span class="no">#</span>
-</span><span id="line-170"><a name="line-170"></a>        <span class="no">iptables -A FORWARD -i $iface -j ACCEPT</span>
-</span><span id="line-171"><a name="line-171"></a>        <span class="no">iptables -A FORWARD -i br-ex -j ACCEPT</span>
-</span><span id="line-172"><a name="line-172"></a>        <span class="no">iptables -A FORWARD -o $iface -j ACCEPT</span>
-</span><span id="line-173"><a name="line-173"></a>        <span class="no">iptables -A FORWARD -o br-ex -j ACCEPT</span>
-</span><span id="line-174"><a name="line-174"></a>        <span class="no">#</span>
-</span><span id="line-175"><a name="line-175"></a>        <span class="no">iptables -A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT</span>
-</span><span id="line-176"><a name="line-176"></a>        <span class="no">#</span>
-</span><span id="line-177"><a name="line-177"></a>        <span class="no">iptables -P FORWARD ACCEPT</span>
-</span><span id="line-178"><a name="line-178"></a>        <span class="no">iptables -P INPUT ACCEPT</span>
-</span><span id="line-179"><a name="line-179"></a>        <span class="no">iptables -P OUTPUT ACCEPT</span>
-</span><span id="line-180"><a name="line-180"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
-</span><span id="line-181"><a name="line-181"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name</span>
-</span><span id="line-182"><a name="line-182"></a>
-</span><span id="line-183"><a name="line-183"></a>  <span class="nt">delegate_to</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[kubeinit_deployment_node_name].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-184"><a name="line-184"></a>
-</span><span id="line-185"><a name="line-185"></a><span class="c1"># When the deployment finishes, it shuold be possible to see the available chassis and ports by running:</span>
-</span><span id="line-186"><a name="line-186"></a><span class="c1"># ovn-nbctl show</span>
-</span><span id="line-187"><a name="line-187"></a><span class="c1"># ovn-sbctl show</span>
-</span><span id="line-188"><a name="line-188"></a><span class="c1"># ovs-vsctl show</span>
-</span><span id="line-189"><a name="line-189"></a><span class="c1"># ovs-vsctl list interface veth0-ma01</span>
+<span class="normal"><a href="#line-189">189</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a id="line-1" name="line-1"></a><span class="nn">---</span>
+</span><span id="line-2"><a id="line-2" name="line-2"></a><span class="c1"># Copyright kubeinit.com</span>
+</span><span id="line-3"><a id="line-3" name="line-3"></a><span class="c1"># All Rights Reserved.</span>
+</span><span id="line-4"><a id="line-4" name="line-4"></a><span class="c1">#</span>
+</span><span id="line-5"><a id="line-5" name="line-5"></a><span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+</span><span id="line-6"><a id="line-6" name="line-6"></a><span class="c1"># not use this file except in compliance with the License. You may obtain</span>
+</span><span id="line-7"><a id="line-7" name="line-7"></a><span class="c1"># a copy of the License at</span>
+</span><span id="line-8"><a id="line-8" name="line-8"></a><span class="c1">#</span>
+</span><span id="line-9"><a id="line-9" name="line-9"></a><span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
+</span><span id="line-10"><a id="line-10" name="line-10"></a><span class="c1">#</span>
+</span><span id="line-11"><a id="line-11" name="line-11"></a><span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
+</span><span id="line-12"><a id="line-12" name="line-12"></a><span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT</span>
+</span><span id="line-13"><a id="line-13" name="line-13"></a><span class="c1"># WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the</span>
+</span><span id="line-14"><a id="line-14" name="line-14"></a><span class="c1"># License for the specific language governing permissions and limitations</span>
+</span><span id="line-15"><a id="line-15" name="line-15"></a><span class="c1"># under the License.</span>
+</span><span id="line-16"><a id="line-16" name="line-16"></a>
+</span><span id="line-17"><a id="line-17" name="line-17"></a><span class="c1">##</span>
+</span><span id="line-18"><a id="line-18" name="line-18"></a><span class="c1">## OVN post deployment configuration steps.</span>
+</span><span id="line-19"><a id="line-19" name="line-19"></a><span class="c1">##</span>
+</span><span id="line-20"><a id="line-20" name="line-20"></a>
+</span><span id="line-21"><a id="line-21" name="line-21"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Post set up the OVN network details</span>
+</span><span id="line-22"><a id="line-22" name="line-22"></a>  <span class="nt">block</span><span class="p">:</span>
+</span><span id="line-23"><a id="line-23" name="line-23"></a>
+</span><span id="line-24"><a id="line-24" name="line-24"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">configure OVN in the first Hypervisor</span>
+</span><span id="line-25"><a id="line-25" name="line-25"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+</span><span id="line-26"><a id="line-26" name="line-26"></a>        <span class="no"># Below two commands only for master. For SSL, other steps are required.</span>
+</span><span id="line-27"><a id="line-27" name="line-27"></a>        <span class="no">ovn-nbctl set-connection ptcp:{{ kubeinit_libvirt_ovn_northbound_port }}</span>
+</span><span id="line-28"><a id="line-28" name="line-28"></a>        <span class="no">ovn-sbctl set-connection ptcp:{{ kubeinit_libvirt_ovn_southbound_port }}</span>
+</span><span id="line-29"><a id="line-29" name="line-29"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
+</span><span id="line-30"><a id="line-30" name="line-30"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name</span>
+</span><span id="line-31"><a id="line-31" name="line-31"></a>
+</span><span id="line-32"><a id="line-32" name="line-32"></a>    <span class="c1">#</span>
+</span><span id="line-33"><a id="line-33" name="line-33"></a>    <span class="c1"># We create the OVN switch that will be binded to each chassis (hypervisor)</span>
+</span><span id="line-34"><a id="line-34" name="line-34"></a>    <span class="c1"># In this switch we will create a port per guest</span>
+</span><span id="line-35"><a id="line-35" name="line-35"></a>    <span class="c1">#</span>
+</span><span id="line-36"><a id="line-36" name="line-36"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">remove and create the cluster switch if exists</span>
+</span><span id="line-37"><a id="line-37" name="line-37"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+</span><span id="line-38"><a id="line-38" name="line-38"></a>        <span class="no">#</span>
+</span><span id="line-39"><a id="line-39" name="line-39"></a>        <span class="no"># Create a logical switch</span>
+</span><span id="line-40"><a id="line-40" name="line-40"></a>        <span class="no">#</span>
+</span><span id="line-41"><a id="line-41" name="line-41"></a>        <span class="no">ovn-nbctl ls-del sw0</span>
+</span><span id="line-42"><a id="line-42" name="line-42"></a>        <span class="no">ovn-nbctl --wait=hv ls-add sw0</span>
+</span><span id="line-43"><a id="line-43" name="line-43"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
+</span><span id="line-44"><a id="line-44" name="line-44"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name</span>
+</span><span id="line-45"><a id="line-45" name="line-45"></a>
+</span><span id="line-46"><a id="line-46" name="line-46"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">create the DHCP options</span>
+</span><span id="line-47"><a id="line-47" name="line-47"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+</span><span id="line-48"><a id="line-48" name="line-48"></a>        <span class="no">#</span>
+</span><span id="line-49"><a id="line-49" name="line-49"></a>        <span class="no"># Create DHCP options</span>
+</span><span id="line-50"><a id="line-50" name="line-50"></a>        <span class="no">#</span>
+</span><span id="line-51"><a id="line-51" name="line-51"></a>        <span class="no">Dhcp_opts=$(ovn-nbctl create DHCP_Options cidr={{ kubeinit_inventory_network_net }}/{{ kubeinit_inventory_network_cidr }} \</span>
+</span><span id="line-52"><a id="line-52" name="line-52"></a>            <span class="no">options=&quot; \</span>
+</span><span id="line-53"><a id="line-53" name="line-53"></a>                    <span class="no">\&quot;server_id\&quot;=\&quot;{{ kubeinit_inventory_network_gateway }}\&quot; \</span>
+</span><span id="line-54"><a id="line-54" name="line-54"></a>                    <span class="no">\&quot;server_mac\&quot;=\&quot;00:00:00:65:77:09\&quot; \</span>
+</span><span id="line-55"><a id="line-55" name="line-55"></a>                    <span class="no">\&quot;lease_time\&quot;=\&quot;3600\&quot; \</span>
+</span><span id="line-56"><a id="line-56" name="line-56"></a>                    <span class="no">\&quot;router\&quot;=\&quot;{{ kubeinit_inventory_network_gateway }}\&quot; \</span>
+</span><span id="line-57"><a id="line-57" name="line-57"></a>                    <span class="no">\&quot;dns_server\&quot;=\&quot;{{ kubeinit_inventory_cluster_dns_server }}\&quot; \</span>
+</span><span id="line-58"><a id="line-58" name="line-58"></a>                    <span class="no">\&quot;mtu\&quot;=\&quot;1442\&quot; \</span>
+</span><span id="line-59"><a id="line-59" name="line-59"></a>                    <span class="no">&quot;)</span>
+</span><span id="line-60"><a id="line-60" name="line-60"></a>        <span class="no">echo $Dhcp_opts</span>
+</span><span id="line-61"><a id="line-61" name="line-61"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">dhcp_options</span>
+</span><span id="line-62"><a id="line-62" name="line-62"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;dhcp_options.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
+</span><span id="line-63"><a id="line-63" name="line-63"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
+</span><span id="line-64"><a id="line-64" name="line-64"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name</span>
+</span><span id="line-65"><a id="line-65" name="line-65"></a>
+</span><span id="line-66"><a id="line-66" name="line-66"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">register the dhcp options uuid</span>
+</span><span id="line-67"><a id="line-67" name="line-67"></a>      <span class="nt">ansible.builtin.set_fact</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit_provision_dhcp_options={{ dhcp_options.stdout }}</span>
+</span><span id="line-68"><a id="line-68" name="line-68"></a>      <span class="nt">with_items</span><span class="p">:</span>
+</span><span id="line-69"><a id="line-69" name="line-69"></a>        <span class="p p-Indicator">-</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">groups[&#39;all_hosts&#39;]</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-70"><a id="line-70" name="line-70"></a>      <span class="nt">delegate_to</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-71"><a id="line-71" name="line-71"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
+</span><span id="line-72"><a id="line-72" name="line-72"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name</span>
+</span><span id="line-73"><a id="line-73" name="line-73"></a>
+</span><span id="line-74"><a id="line-74" name="line-74"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Display the registered dhcp options</span>
+</span><span id="line-75"><a id="line-75" name="line-75"></a>      <span class="nt">ansible.builtin.debug</span><span class="p">:</span>
+</span><span id="line-76"><a id="line-76" name="line-76"></a>        <span class="nt">var</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit_provision_dhcp_options</span>
+</span><span id="line-77"><a id="line-77" name="line-77"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
+</span><span id="line-78"><a id="line-78" name="line-78"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name</span>
+</span><span id="line-79"><a id="line-79" name="line-79"></a>
+</span><span id="line-80"><a id="line-80" name="line-80"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">create OVS/OVN bindings for the VMs ports</span>
+</span><span id="line-81"><a id="line-81" name="line-81"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+</span><span id="line-82"><a id="line-82" name="line-82"></a>        <span class="no">#</span>
+</span><span id="line-83"><a id="line-83" name="line-83"></a>        <span class="no"># We create an OVN port using the interface ID and the mac address of the VM</span>
+</span><span id="line-84"><a id="line-84" name="line-84"></a>        <span class="no">#</span>
+</span><span id="line-85"><a id="line-85" name="line-85"></a>        <span class="no">ovn-nbctl --wait=hv lsp-add sw0 {{ hostvars[item].interfaceid }}</span>
+</span><span id="line-86"><a id="line-86" name="line-86"></a>
+</span><span id="line-87"><a id="line-87" name="line-87"></a>        <span class="no">#</span>
+</span><span id="line-88"><a id="line-88" name="line-88"></a>        <span class="no"># The port name is the interface id of the VM, now we assign the mac address of the VM to the port</span>
+</span><span id="line-89"><a id="line-89" name="line-89"></a>        <span class="no">#</span>
+</span><span id="line-90"><a id="line-90" name="line-90"></a>        <span class="no">ovn-nbctl lsp-set-addresses {{ hostvars[item].interfaceid }} &quot;{{ hostvars[item].mac }} {{ hostvars[item].ansible_host }}&quot;</span>
+</span><span id="line-91"><a id="line-91" name="line-91"></a>
+</span><span id="line-92"><a id="line-92" name="line-92"></a>        <span class="no">ovn-nbctl lsp-set-port-security {{ hostvars[item].interfaceid }} &quot;{{ hostvars[item].mac }} {{ hostvars[item].ansible_host }}&quot;</span>
+</span><span id="line-93"><a id="line-93" name="line-93"></a>
+</span><span id="line-94"><a id="line-94" name="line-94"></a>        <span class="no">ovn-nbctl lsp-set-dhcpv4-options {{ hostvars[item].interfaceid }} {{ kubeinit_provision_dhcp_options }}</span>
+</span><span id="line-95"><a id="line-95" name="line-95"></a>
+</span><span id="line-96"><a id="line-96" name="line-96"></a>      <span class="nt">with_items</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">groups[&#39;all_nodes&#39;]</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-97"><a id="line-97" name="line-97"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
+</span><span id="line-98"><a id="line-98" name="line-98"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name</span>
+</span><span id="line-99"><a id="line-99" name="line-99"></a>
+</span><span id="line-100"><a id="line-100" name="line-100"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Configuring a router connected to the guests switch</span>
+</span><span id="line-101"><a id="line-101" name="line-101"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+</span><span id="line-102"><a id="line-102" name="line-102"></a>        <span class="no">#</span>
+</span><span id="line-103"><a id="line-103" name="line-103"></a>        <span class="no"># Create a logical router to connect the VMs switch</span>
+</span><span id="line-104"><a id="line-104" name="line-104"></a>        <span class="no">#</span>
+</span><span id="line-105"><a id="line-105" name="line-105"></a>        <span class="no">ovn-nbctl --wait=hv lr-add lr0</span>
+</span><span id="line-106"><a id="line-106" name="line-106"></a>        <span class="no">ovn-nbctl --wait=hv lrp-add lr0 lr0-sw0 00:00:00:65:77:09 {{ kubeinit_inventory_network_gateway }}/{{ kubeinit_inventory_network_cidr }}</span>
+</span><span id="line-107"><a id="line-107" name="line-107"></a>        <span class="no">ovn-nbctl --wait=hv lsp-add sw0 sw0-lr0</span>
+</span><span id="line-108"><a id="line-108" name="line-108"></a>        <span class="no">ovn-nbctl lsp-set-type sw0-lr0 router</span>
+</span><span id="line-109"><a id="line-109" name="line-109"></a>        <span class="no">ovn-nbctl lsp-set-addresses sw0-lr0 router</span>
+</span><span id="line-110"><a id="line-110" name="line-110"></a>        <span class="no">ovn-nbctl lsp-set-options sw0-lr0 router-port=lr0-sw0</span>
+</span><span id="line-111"><a id="line-111" name="line-111"></a>        <span class="no">#</span>
+</span><span id="line-112"><a id="line-112" name="line-112"></a>        <span class="no"># We create the external access switch</span>
+</span><span id="line-113"><a id="line-113" name="line-113"></a>        <span class="no">#</span>
+</span><span id="line-114"><a id="line-114" name="line-114"></a>        <span class="no">ovn-nbctl --wait=hv ls-add public</span>
+</span><span id="line-115"><a id="line-115" name="line-115"></a>        <span class="no">ovn-nbctl --wait=hv lrp-add lr0 lr0-public 00:00:20:20:12:13 172.16.0.1/24</span>
+</span><span id="line-116"><a id="line-116" name="line-116"></a>        <span class="no">ovn-nbctl --wait=hv lsp-add public public-lr0</span>
+</span><span id="line-117"><a id="line-117" name="line-117"></a>        <span class="no">ovn-nbctl lsp-set-type public-lr0 router</span>
+</span><span id="line-118"><a id="line-118" name="line-118"></a>        <span class="no">ovn-nbctl lsp-set-addresses public-lr0 router</span>
+</span><span id="line-119"><a id="line-119" name="line-119"></a>        <span class="no">ovn-nbctl lsp-set-options public-lr0 router-port=lr0-public</span>
+</span><span id="line-120"><a id="line-120" name="line-120"></a>        <span class="no">#</span>
+</span><span id="line-121"><a id="line-121" name="line-121"></a>        <span class="no"># Create a localnet port</span>
+</span><span id="line-122"><a id="line-122" name="line-122"></a>        <span class="no">#</span>
+</span><span id="line-123"><a id="line-123" name="line-123"></a>        <span class="no">ovn-nbctl --wait=hv lsp-add public public-ln</span>
+</span><span id="line-124"><a id="line-124" name="line-124"></a>        <span class="no">ovn-nbctl lsp-set-type public-ln localnet</span>
+</span><span id="line-125"><a id="line-125" name="line-125"></a>        <span class="no">ovn-nbctl lsp-set-addresses public-ln unknown</span>
+</span><span id="line-126"><a id="line-126" name="line-126"></a>        <span class="no">ovn-nbctl lsp-set-options public-ln network_name=provider</span>
+</span><span id="line-127"><a id="line-127" name="line-127"></a>        <span class="no">#</span>
+</span><span id="line-128"><a id="line-128" name="line-128"></a>        <span class="no"># We add a bridge mapping from br-ex called provider</span>
+</span><span id="line-129"><a id="line-129" name="line-129"></a>        <span class="no">#</span>
+</span><span id="line-130"><a id="line-130" name="line-130"></a>        <span class="no">ovs-vsctl set Open_vSwitch . external-ids:ovn-bridge-mappings=provider:br-ex</span>
+</span><span id="line-131"><a id="line-131" name="line-131"></a>        <span class="no">#</span>
+</span><span id="line-132"><a id="line-132" name="line-132"></a>        <span class="no"># Configuring the chassis gateway to the first hypervisor</span>
+</span><span id="line-133"><a id="line-133" name="line-133"></a>        <span class="no">#</span>
+</span><span id="line-134"><a id="line-134" name="line-134"></a>        <span class="no">ovn-nbctl lrp-set-gateway-chassis lr0-public {{ kubeinit_bastion_host }}</span>
+</span><span id="line-135"><a id="line-135" name="line-135"></a>        <span class="no">ovn-nbctl \</span>
+</span><span id="line-136"><a id="line-136" name="line-136"></a>          <span class="no">--id=@gc0 create Gateway_Chassis name=lr0-public chassis_name={{ kubeinit_bastion_host }} priority=20 -- \</span>
+</span><span id="line-137"><a id="line-137" name="line-137"></a>          <span class="no">set Logical_Router_Port lr0-public &#39;gateway_chassis=[@gc0]&#39;</span>
+</span><span id="line-138"><a id="line-138" name="line-138"></a>        <span class="no">ovn-nbctl set logical_router_port lr0-public options:redirect-chassis={{ kubeinit_bastion_host }}</span>
+</span><span id="line-139"><a id="line-139" name="line-139"></a>        <span class="no">#</span>
+</span><span id="line-140"><a id="line-140" name="line-140"></a>        <span class="no"># Create an ovs br-ex bridge to connect to the host</span>
+</span><span id="line-141"><a id="line-141" name="line-141"></a>        <span class="no">#</span>
+</span><span id="line-142"><a id="line-142" name="line-142"></a>        <span class="no">ovs-vsctl --may-exist add-br br-ex</span>
+</span><span id="line-143"><a id="line-143" name="line-143"></a>        <span class="no">ip addr add 172.16.0.254/24 dev br-ex</span>
+</span><span id="line-144"><a id="line-144" name="line-144"></a>        <span class="no">ip link set br-ex up</span>
+</span><span id="line-145"><a id="line-145" name="line-145"></a>
+</span><span id="line-146"><a id="line-146" name="line-146"></a>        <span class="no">#</span>
+</span><span id="line-147"><a id="line-147" name="line-147"></a>        <span class="no"># Routes</span>
+</span><span id="line-148"><a id="line-148" name="line-148"></a>        <span class="no">#</span>
+</span><span id="line-149"><a id="line-149" name="line-149"></a>        <span class="no"># Connectivity from the host to the guest machines</span>
+</span><span id="line-150"><a id="line-150" name="line-150"></a>        <span class="no">ip route add {{ kubeinit_inventory_network_net }}/{{ kubeinit_inventory_network_cidr }} via 172.16.0.1 dev br-ex</span>
+</span><span id="line-151"><a id="line-151" name="line-151"></a>        <span class="no"># Connectivity to external/additional networks</span>
+</span><span id="line-152"><a id="line-152" name="line-152"></a>        <span class="no">ovn-nbctl lr-route-add lr0 0.0.0.0/0 172.16.0.254</span>
+</span><span id="line-153"><a id="line-153" name="line-153"></a>        <span class="no">#</span>
+</span><span id="line-154"><a id="line-154" name="line-154"></a>        <span class="no"># Disable rp_filter</span>
+</span><span id="line-155"><a id="line-155" name="line-155"></a>        <span class="no">#</span>
+</span><span id="line-156"><a id="line-156" name="line-156"></a>        <span class="no">sysctl net.ipv4.conf.all.rp_filter=2</span>
+</span><span id="line-157"><a id="line-157" name="line-157"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
+</span><span id="line-158"><a id="line-158" name="line-158"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name</span>
+</span><span id="line-159"><a id="line-159" name="line-159"></a>
+</span><span id="line-160"><a id="line-160" name="line-160"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Configuring NAT when not using the external bridge interface</span>
+</span><span id="line-161"><a id="line-161" name="line-161"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+</span><span id="line-162"><a id="line-162" name="line-162"></a>        <span class="no">#</span>
+</span><span id="line-163"><a id="line-163" name="line-163"></a>        <span class="no"># NAT from the external interface</span>
+</span><span id="line-164"><a id="line-164" name="line-164"></a>        <span class="no">#</span>
+</span><span id="line-165"><a id="line-165" name="line-165"></a>        <span class="no"># Get the external interface name</span>
+</span><span id="line-166"><a id="line-166" name="line-166"></a>        <span class="no">iface=$(ip route get &quot;8.8.8.8&quot; | grep -Po &#39;(?&lt;=(dev )).*(?= src| proto)&#39;)</span>
+</span><span id="line-167"><a id="line-167" name="line-167"></a>        <span class="no">#</span>
+</span><span id="line-168"><a id="line-168" name="line-168"></a>        <span class="no">iptables -t nat -A POSTROUTING -s {{ kubeinit_inventory_network_net }}/{{ kubeinit_inventory_network_cidr }} -o $iface -j MASQUERADE</span>
+</span><span id="line-169"><a id="line-169" name="line-169"></a>        <span class="no">#</span>
+</span><span id="line-170"><a id="line-170" name="line-170"></a>        <span class="no">iptables -A FORWARD -i $iface -j ACCEPT</span>
+</span><span id="line-171"><a id="line-171" name="line-171"></a>        <span class="no">iptables -A FORWARD -i br-ex -j ACCEPT</span>
+</span><span id="line-172"><a id="line-172" name="line-172"></a>        <span class="no">iptables -A FORWARD -o $iface -j ACCEPT</span>
+</span><span id="line-173"><a id="line-173" name="line-173"></a>        <span class="no">iptables -A FORWARD -o br-ex -j ACCEPT</span>
+</span><span id="line-174"><a id="line-174" name="line-174"></a>        <span class="no">#</span>
+</span><span id="line-175"><a id="line-175" name="line-175"></a>        <span class="no">iptables -A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT</span>
+</span><span id="line-176"><a id="line-176" name="line-176"></a>        <span class="no">#</span>
+</span><span id="line-177"><a id="line-177" name="line-177"></a>        <span class="no">iptables -P FORWARD ACCEPT</span>
+</span><span id="line-178"><a id="line-178" name="line-178"></a>        <span class="no">iptables -P INPUT ACCEPT</span>
+</span><span id="line-179"><a id="line-179" name="line-179"></a>        <span class="no">iptables -P OUTPUT ACCEPT</span>
+</span><span id="line-180"><a id="line-180" name="line-180"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
+</span><span id="line-181"><a id="line-181" name="line-181"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name</span>
+</span><span id="line-182"><a id="line-182" name="line-182"></a>
+</span><span id="line-183"><a id="line-183" name="line-183"></a>  <span class="nt">delegate_to</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[kubeinit_deployment_node_name].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-184"><a id="line-184" name="line-184"></a>
+</span><span id="line-185"><a id="line-185" name="line-185"></a><span class="c1"># When the deployment finishes, it shuold be possible to see the available chassis and ports by running:</span>
+</span><span id="line-186"><a id="line-186" name="line-186"></a><span class="c1"># ovn-nbctl show</span>
+</span><span id="line-187"><a id="line-187" name="line-187"></a><span class="c1"># ovn-sbctl show</span>
+</span><span id="line-188"><a id="line-188" name="line-188"></a><span class="c1"># ovs-vsctl show</span>
+</span><span id="line-189"><a id="line-189" name="line-189"></a><span class="c1"># ovs-vsctl list interface veth0-ma01</span>
 </span></pre></div>
 </td></tr></table>
     </div>
