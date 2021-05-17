@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -48,15 +48,15 @@
 
 
 
-<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-success pf-m-inline">
+<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-danger pf-m-inline">
 
     <ul class="pf-c-data-list" role="list">
         <li class="pf-c-data-list__item">
             <div class="pf-c-data-list__item-row">
                 <div class="pf-c-data-list__item-control pf-m-fit-content">
                     
-<div class="pf-c-alert__icon" title="Playbook completed successfully">
-    <i class="fas fa-check-circle" aria-hidden="true"></i>
+<div class="pf-c-alert__icon" title="Playbook completed with errors">
+    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
 </div>
 
                 </div>
@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 23 Apr 2021 04:17:48 +0200
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 09:44:44 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 23 Apr 2021 04:58:03 +0200
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 10:12:02 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:40:15.01
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:27:17.47
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml
                             </a>
@@ -90,22 +90,22 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#hosts">1 hosts</a>
+                            <a href="../playbooks/1.html#hosts">2 hosts</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">2 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">412 results</a>
+                            <a href="../playbooks/1.html#results">265 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">34 files</a>
+                            <a href="../playbooks/1.html#files">39 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_bind : Create named.conf</a></li>
-            <li><strong>Action</strong>: ansible.builtin.template</li>
-            <li><strong>Path</strong>: <a href="../files/27.html#line-43">/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_bind/tasks/main.yml:43</a>
-            <li><strong>Host</strong>: <a href="../hosts/1.html">hypervisor-01</a></li>
-            <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 23 Apr 2021 04:49:28 +0200</li>
-            <li><strong>Ended</strong>: 23 Apr 2021 04:49:29 +0200</li>
-            <li><strong>Duration</strong>: 00:00:00.85</li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Mirror RKE remote registry to local</a></li>
+            <li><strong>Action</strong>: ansible.builtin.shell</li>
+            <li><strong>Path</strong>: <a href="../files/39.html#line-2">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/20_mirror_eks.yml:2</a>
+            <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
+            <li><strong>Status</strong>: failed</li>
+            <li><strong>Started</strong>: 17 May 2021 10:11:46 -0400</li>
+            <li><strong>Ended</strong>: 17 May 2021 10:12:02 -0400</li>
+            <li><strong>Duration</strong>: 00:00:15.39</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -217,167 +217,142 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="checksum" data-label="checksum" class="pf-m-width-20">
-                        <a href="#checksum">checksum</a>
+                    <td role="cell" id="msg" data-label="msg" class="pf-m-width-20">
+                        <a href="#msg">msg</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>39b98f351307d943188281368d2007bd7cf4c276
+                        <div class="codehilite"><pre><span></span>All items completed
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="dest" data-label="dest" class="pf-m-width-20">
-                        <a href="#dest">dest</a>
+                    <td role="cell" id="results" data-label="results" class="pf-m-width-20">
+                        <a href="#results">results</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>/var/kubeinit/bind/named.conf
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="diff" data-label="diff" class="pf-m-width-20">
-                        <a href="#diff">diff</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="gid" data-label="gid" class="pf-m-width-20">
-                        <a href="#gid">gid</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="group" data-label="group" class="pf-m-width-20">
-                        <a href="#group">group</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>root
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
-                        <a href="#invocation">invocation</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_original_basename&quot;</span><span class="p">:</span> <span class="s2">&quot;named.conf.j2&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;backup&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;checksum&quot;</span><span class="p">:</span> <span class="s2">&quot;39b98f351307d943188281368d2007bd7cf4c276&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;content&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;dest&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/bind/named.conf&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;directory_mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;follow&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;local_follow&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;0644&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;remote_src&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.ansible/tmp/ansible-tmp-1619146168.341743-880108-248877202945612/source&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;validate&quot;</span><span class="p">:</span> <span class="kc">null</span>
+                        <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://docker  docker://eks-service-01.ekscluster.kubeinit.local:5000/docker  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://docker  docker://eks-service-01.ekscluster.kubeinit.local:5000/docker  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:14.297523&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 14:12:00.870215&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://docker  docker://eks-service-01.ekscluster.kubeinit.local:5000/docker  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://docker  docker://eks-service-01.ekscluster.kubeinit.local:5000/docker  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;docker&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 14:11:46.572692&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:493333e9491fba57ff1ea5b8058546fc5a3e124d325f8720c018568f852e385b\nCopying blob sha256:5a38b3726f4b24fa93b80450be63ad67fd3239c2f3b83695118d7b1a88447d84\nCopying blob sha256:28d445cfca767cb2a0dbdc152ed5eeed364db2b6353f8dedf8f917562c116b9b\nCopying blob sha256:e5fa5deb334027202841b051d10e7c7137fa3b63e97734309cedf6b48804df5f\nCopying blob sha256:2b7e0e3b754519331113e409b44b7401dda685cba747e0fbb619b907b85e65a6\nCopying blob sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba\nCopying blob sha256:32eb6dfb922720a338efac9871565ad3ca1a3ac69b540f214e1224bc55191c69\nCopying config sha256:d2979b152a7d43f040c7aef88c4c83de4e545227622b1045adf6fe409293f803\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:5a38b3726f4b24fa93b80450be63ad67fd3239c2f3b83695118d7b1a88447d84\nCopying blob sha256:493333e9491fba57ff1ea5b8058546fc5a3e124d325f8720c018568f852e385b\nCopying blob sha256:28d445cfca767cb2a0dbdc152ed5eeed364db2b6353f8dedf8f917562c116b9b\nCopying blob sha256:e5fa5deb334027202841b051d10e7c7137fa3b63e97734309cedf6b48804df5f\nCopying blob sha256:2b7e0e3b754519331113e409b44b7401dda685cba747e0fbb619b907b85e65a6\nCopying blob sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba\nCopying blob sha256:32eb6dfb922720a338efac9871565ad3ca1a3ac69b540f214e1224bc55191c69\nCopying config sha256:d2979b152a7d43f040c7aef88c4c83de4e545227622b1045adf6fe409293f803\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:493333e9491fba57ff1ea5b8058546fc5a3e124d325f8720c018568f852e385b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:5a38b3726f4b24fa93b80450be63ad67fd3239c2f3b83695118d7b1a88447d84&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:28d445cfca767cb2a0dbdc152ed5eeed364db2b6353f8dedf8f917562c116b9b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:e5fa5deb334027202841b051d10e7c7137fa3b63e97734309cedf6b48804df5f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:2b7e0e3b754519331113e409b44b7401dda685cba747e0fbb619b907b85e65a6&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:32eb6dfb922720a338efac9871565ad3ca1a3ac69b540f214e1224bc55191c69&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:d2979b152a7d43f040c7aef88c4c83de4e545227622b1045adf6fe409293f803&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:5a38b3726f4b24fa93b80450be63ad67fd3239c2f3b83695118d7b1a88447d84&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:493333e9491fba57ff1ea5b8058546fc5a3e124d325f8720c018568f852e385b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:28d445cfca767cb2a0dbdc152ed5eeed364db2b6353f8dedf8f917562c116b9b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:e5fa5deb334027202841b051d10e7c7137fa3b63e97734309cedf6b48804df5f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:2b7e0e3b754519331113e409b44b7401dda685cba747e0fbb619b907b85e65a6&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:32eb6dfb922720a338efac9871565ad3ca1a3ac69b540f214e1224bc55191c69&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:d2979b152a7d43f040c7aef88c4c83de4e545227622b1045adf6fe409293f803&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/\&quot;${ECR_BASE}/kubernetes/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:00.099707&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 14:12:01.268379&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/\&quot;${ECR_BASE}/kubernetes/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;\&quot;${ECR_BASE}/kubernetes/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;non-zero return code&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 14:12:01.168672&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-17T14:12:01Z\&quot; level=fatal msg=\&quot;Invalid source name docker:///kubernetes/kube-proxy:-: invalid reference format\&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;time=\&quot;2021-05-17T14:12:01Z\&quot; level=fatal msg=\&quot;Invalid source name docker:///kubernetes/kube-proxy:-: invalid reference format\&quot;&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/\&quot;${ECR_BASE}/kubernetes/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:00.104675&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 14:12:01.678399&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/\&quot;${ECR_BASE}/kubernetes/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;\&quot;${ECR_BASE}/kubernetes/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;non-zero return code&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 14:12:01.573724&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-17T14:12:01Z\&quot; level=fatal msg=\&quot;Invalid source name docker:///kubernetes/go-runner:-: invalid reference format\&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;time=\&quot;2021-05-17T14:12:01Z\&quot; level=fatal msg=\&quot;Invalid source name docker:///kubernetes/go-runner:-: invalid reference format\&quot;&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[]</span>
     <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="md5sum" data-label="md5sum" class="pf-m-width-20">
-                        <a href="#md5sum">md5sum</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>05dac4bb3aa04da53296436e910d2bdd
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="mode" data-label="mode" class="pf-m-width-20">
-                        <a href="#mode">mode</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0644
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="owner" data-label="owner" class="pf-m-width-20">
-                        <a href="#owner">owner</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>root
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="size" data-label="size" class="pf-m-width-20">
-                        <a href="#size">size</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>1047
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="src" data-label="src" class="pf-m-width-20">
-                        <a href="#src">src</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>/root/.ansible/tmp/ansible-tmp-1619146168.341743-880108-248877202945612/source
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="state" data-label="state" class="pf-m-width-20">
-                        <a href="#state">state</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>file
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="uid" data-label="uid" class="pf-m-width-20">
-                        <a href="#uid">uid</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0
+<span class="p">]</span>
 </pre></div>
 
                     </td>
