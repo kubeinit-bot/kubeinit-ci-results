@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 13 May 2021 21:44:50 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 10:13:42 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 13 May 2021 21:55:45 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 10:33:34 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:10:55.22
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:19:51.74
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml
                             </a>
@@ -186,12 +186,12 @@
         <ul class="pf-c-list">
             <li><strong>Task</strong>: ../../roles/kubeinit_registry : Mirror RKE remote registry to local</a></li>
             <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/39.html#line-2">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/20_mirror_eks.yml:2</a>
+            <li><strong>Path</strong>: <a href="../files/39.html#line-2">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/20_mirror_eks.yml:2</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: failed</li>
-            <li><strong>Started</strong>: 13 May 2021 21:55:34 -0400</li>
-            <li><strong>Ended</strong>: 13 May 2021 21:55:45 -0400</li>
-            <li><strong>Duration</strong>: 00:00:10.97</li>
+            <li><strong>Started</strong>: 17 May 2021 10:33:18 -0400</li>
+            <li><strong>Ended</strong>: 17 May 2021 10:33:33 -0400</li>
+            <li><strong>Duration</strong>: 00:00:15.40</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -237,8 +237,8 @@
         <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
         <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://docker  docker://eks-service-01.ekscluster.kubeinit.local:5000/docker  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://docker  docker://eks-service-01.ekscluster.kubeinit.local:5000/docker  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:10.370883&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-14 01:55:44.661341&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:14.343710&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 14:33:32.764009&quot;</span><span class="p">,</span>
         <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
@@ -257,29 +257,29 @@
         <span class="p">},</span>
         <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;docker&quot;</span><span class="p">,</span>
         <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-14 01:55:34.290458&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 14:33:18.420299&quot;</span><span class="p">,</span>
         <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
         <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:5a38b3726f4b24fa93b80450be63ad67fd3239c2f3b83695118d7b1a88447d84\nCopying blob sha256:28d445cfca767cb2a0dbdc152ed5eeed364db2b6353f8dedf8f917562c116b9b\nCopying blob sha256:493333e9491fba57ff1ea5b8058546fc5a3e124d325f8720c018568f852e385b\nCopying blob sha256:2b7e0e3b754519331113e409b44b7401dda685cba747e0fbb619b907b85e65a6\nCopying blob sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba\nCopying blob sha256:e5fa5deb334027202841b051d10e7c7137fa3b63e97734309cedf6b48804df5f\nCopying blob sha256:32eb6dfb922720a338efac9871565ad3ca1a3ac69b540f214e1224bc55191c69\nCopying config sha256:d2979b152a7d43f040c7aef88c4c83de4e545227622b1045adf6fe409293f803\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:2b7e0e3b754519331113e409b44b7401dda685cba747e0fbb619b907b85e65a6\nCopying blob sha256:e5fa5deb334027202841b051d10e7c7137fa3b63e97734309cedf6b48804df5f\nCopying blob sha256:5a38b3726f4b24fa93b80450be63ad67fd3239c2f3b83695118d7b1a88447d84\nCopying blob sha256:493333e9491fba57ff1ea5b8058546fc5a3e124d325f8720c018568f852e385b\nCopying blob sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba\nCopying blob sha256:28d445cfca767cb2a0dbdc152ed5eeed364db2b6353f8dedf8f917562c116b9b\nCopying blob sha256:32eb6dfb922720a338efac9871565ad3ca1a3ac69b540f214e1224bc55191c69\nCopying config sha256:d2979b152a7d43f040c7aef88c4c83de4e545227622b1045adf6fe409293f803\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:28d445cfca767cb2a0dbdc152ed5eeed364db2b6353f8dedf8f917562c116b9b\nCopying blob sha256:2b7e0e3b754519331113e409b44b7401dda685cba747e0fbb619b907b85e65a6\nCopying blob sha256:493333e9491fba57ff1ea5b8058546fc5a3e124d325f8720c018568f852e385b\nCopying blob sha256:e5fa5deb334027202841b051d10e7c7137fa3b63e97734309cedf6b48804df5f\nCopying blob sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba\nCopying blob sha256:5a38b3726f4b24fa93b80450be63ad67fd3239c2f3b83695118d7b1a88447d84\nCopying blob sha256:32eb6dfb922720a338efac9871565ad3ca1a3ac69b540f214e1224bc55191c69\nCopying config sha256:d2979b152a7d43f040c7aef88c4c83de4e545227622b1045adf6fe409293f803\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:5a38b3726f4b24fa93b80450be63ad67fd3239c2f3b83695118d7b1a88447d84\nCopying blob sha256:493333e9491fba57ff1ea5b8058546fc5a3e124d325f8720c018568f852e385b\nCopying blob sha256:e5fa5deb334027202841b051d10e7c7137fa3b63e97734309cedf6b48804df5f\nCopying blob sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba\nCopying blob sha256:28d445cfca767cb2a0dbdc152ed5eeed364db2b6353f8dedf8f917562c116b9b\nCopying blob sha256:2b7e0e3b754519331113e409b44b7401dda685cba747e0fbb619b907b85e65a6\nCopying blob sha256:32eb6dfb922720a338efac9871565ad3ca1a3ac69b540f214e1224bc55191c69\nCopying config sha256:d2979b152a7d43f040c7aef88c4c83de4e545227622b1045adf6fe409293f803\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
         <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
             <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:5a38b3726f4b24fa93b80450be63ad67fd3239c2f3b83695118d7b1a88447d84&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Copying blob sha256:28d445cfca767cb2a0dbdc152ed5eeed364db2b6353f8dedf8f917562c116b9b&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:493333e9491fba57ff1ea5b8058546fc5a3e124d325f8720c018568f852e385b&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Copying blob sha256:2b7e0e3b754519331113e409b44b7401dda685cba747e0fbb619b907b85e65a6&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:493333e9491fba57ff1ea5b8058546fc5a3e124d325f8720c018568f852e385b&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Copying blob sha256:e5fa5deb334027202841b051d10e7c7137fa3b63e97734309cedf6b48804df5f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:5a38b3726f4b24fa93b80450be63ad67fd3239c2f3b83695118d7b1a88447d84&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Copying blob sha256:32eb6dfb922720a338efac9871565ad3ca1a3ac69b540f214e1224bc55191c69&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Copying config sha256:d2979b152a7d43f040c7aef88c4c83de4e545227622b1045adf6fe409293f803&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:2b7e0e3b754519331113e409b44b7401dda685cba747e0fbb619b907b85e65a6&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:e5fa5deb334027202841b051d10e7c7137fa3b63e97734309cedf6b48804df5f&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Copying blob sha256:5a38b3726f4b24fa93b80450be63ad67fd3239c2f3b83695118d7b1a88447d84&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Copying blob sha256:493333e9491fba57ff1ea5b8058546fc5a3e124d325f8720c018568f852e385b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:e5fa5deb334027202841b051d10e7c7137fa3b63e97734309cedf6b48804df5f&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Copying blob sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Copying blob sha256:28d445cfca767cb2a0dbdc152ed5eeed364db2b6353f8dedf8f917562c116b9b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:2b7e0e3b754519331113e409b44b7401dda685cba747e0fbb619b907b85e65a6&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Copying blob sha256:32eb6dfb922720a338efac9871565ad3ca1a3ac69b540f214e1224bc55191c69&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Copying config sha256:d2979b152a7d43f040c7aef88c4c83de4e545227622b1045adf6fe409293f803&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
@@ -290,8 +290,8 @@
         <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
         <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/\&quot;${ECR_BASE}/kubernetes/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:00.038655&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-14 01:55:44.874161&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:00.103980&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 14:33:33.168709&quot;</span><span class="p">,</span>
         <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
@@ -311,10 +311,10 @@
         <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;\&quot;${ECR_BASE}/kubernetes/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;&quot;</span><span class="p">,</span>
         <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;non-zero return code&quot;</span><span class="p">,</span>
         <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-14 01:55:44.835506&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-14T01:55:44Z\&quot; level=fatal msg=\&quot;Invalid source name docker:///kubernetes/kube-proxy:-: invalid reference format\&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 14:33:33.064729&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-17T14:33:33Z\&quot; level=fatal msg=\&quot;Invalid source name docker:///kubernetes/kube-proxy:-: invalid reference format\&quot;&quot;</span><span class="p">,</span>
         <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-14T01:55:44Z\&quot; level=fatal msg=\&quot;Invalid source name docker:///kubernetes/kube-proxy:-: invalid reference format\&quot;&quot;</span>
+            <span class="s2">&quot;time=\&quot;2021-05-17T14:33:33Z\&quot; level=fatal msg=\&quot;Invalid source name docker:///kubernetes/kube-proxy:-: invalid reference format\&quot;&quot;</span>
         <span class="p">],</span>
         <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
         <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[]</span>
@@ -323,8 +323,8 @@
         <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
         <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/\&quot;${ECR_BASE}/kubernetes/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:00.040209&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-14 01:55:45.082416&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:00.097958&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 14:33:33.540915&quot;</span><span class="p">,</span>
         <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
@@ -344,10 +344,10 @@
         <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;\&quot;${ECR_BASE}/kubernetes/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;&quot;</span><span class="p">,</span>
         <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;non-zero return code&quot;</span><span class="p">,</span>
         <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-14 01:55:45.042207&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-14T01:55:45Z\&quot; level=fatal msg=\&quot;Invalid source name docker:///kubernetes/go-runner:-: invalid reference format\&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 14:33:33.442957&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-17T14:33:33Z\&quot; level=fatal msg=\&quot;Invalid source name docker:///kubernetes/go-runner:-: invalid reference format\&quot;&quot;</span><span class="p">,</span>
         <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-14T01:55:45Z\&quot; level=fatal msg=\&quot;Invalid source name docker:///kubernetes/go-runner:-: invalid reference format\&quot;&quot;</span>
+            <span class="s2">&quot;time=\&quot;2021-05-17T14:33:33Z\&quot; level=fatal msg=\&quot;Invalid source name docker:///kubernetes/go-runner:-: invalid reference format\&quot;&quot;</span>
         <span class="p">],</span>
         <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
         <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[]</span>
