@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 09 May 2021 21:34:42 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 21:55:12 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 09 May 2021 22:08:12 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 22:41:07 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:33:29.80
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:45:54.51
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">352 results</a>
+                            <a href="../playbooks/1.html#results">360 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">40 files</a>
+                            <a href="../playbooks/1.html#files">48 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_nfs : add security context constraint for nfs provisioner</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_okd : Copy the kubeconfig</a></li>
             <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/38.html#line-194">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_nfs/tasks/main.yml:194</a>
+            <li><strong>Path</strong>: <a href="../files/45.html#line-83">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_okd/tasks/50_post_deployment_tasks.yml:83</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 09 May 2021 22:07:53 -0400</li>
-            <li><strong>Ended</strong>: 09 May 2021 22:07:54 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.48</li>
+            <li><strong>Started</strong>: 16 May 2021 22:39:51 -0400</li>
+            <li><strong>Ended</strong>: 16 May 2021 22:39:51 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.30</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -221,46 +221,7 @@
                         <a href="#cmd">cmd</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>cat &lt;&lt; EOF &gt; ~/nfs_scc.yaml
-apiVersion: security.openshift.io/v1
-kind: SecurityContextConstraints
-metadata:
-  name: nfs-provisioner
-allowHostDirVolumePlugin: true
-allowHostIPC: false
-allowHostNetwork: false
-allowHostPID: false
-allowHostPorts: false
-allowPrivilegedContainer: false
-allowedCapabilities:
-- DAC_READ_SEARCH
-- SYS_RESOURCE
-defaultAddCapabilities: null
-fsGroup:
-  type: MustRunAs
-priority: null
-readOnlyRootFilesystem: false
-requiredDropCapabilities:
-- KILL
-- MKNOD
-- SYS_CHROOT
-runAsUser:
-  type: RunAsAny
-seLinuxContext:
-  type: MustRunAs
-supplementalGroups:
-  type: RunAsAny
-volumes:
-- configMap
-- downwardAPI
-- emptyDir
-- hostPath
-- nfs
-- persistentVolumeClaim
-- secret
-EOF
-export KUBECONFIG=~/.kube/config
-kubectl apply -f ~/nfs_scc.yaml --request-timeout=1800s
+                        <div class="codehilite"><pre><span></span>cp ~/install_dir/auth/kubeconfig ~/.kube/config
 </pre></div>
 
                     </td>
@@ -271,7 +232,7 @@ kubectl apply -f ~/nfs_scc.yaml --request-timeout=1800s
                         <a href="#delta">delta</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:00:00.287134
+                        <div class="codehilite"><pre><span></span>0:00:00.009879
 </pre></div>
 
                     </td>
@@ -282,7 +243,7 @@ kubectl apply -f ~/nfs_scc.yaml --request-timeout=1800s
                         <a href="#end">end</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-10 02:07:54.109867
+                        <div class="codehilite"><pre><span></span>2021-05-17 02:39:51.900345
 </pre></div>
 
                     </td>
@@ -295,12 +256,12 @@ kubectl apply -f ~/nfs_scc.yaml --request-timeout=1800s
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;cat &lt;&lt; EOF &gt; ~/nfs_scc.yaml\napiVersion: security.openshift.io/v1\nkind: SecurityContextConstraints\nmetadata:\n  name: nfs-provisioner\nallowHostDirVolumePlugin: true\nallowHostIPC: false\nallowHostNetwork: false\nallowHostPID: false\nallowHostPorts: false\nallowPrivilegedContainer: false\nallowedCapabilities:\n- DAC_READ_SEARCH\n- SYS_RESOURCE\ndefaultAddCapabilities: null\nfsGroup:\n  type: MustRunAs\npriority: null\nreadOnlyRootFilesystem: false\nrequiredDropCapabilities:\n- KILL\n- MKNOD\n- SYS_CHROOT\nrunAsUser:\n  type: RunAsAny\nseLinuxContext:\n  type: MustRunAs\nsupplementalGroups:\n  type: RunAsAny\nvolumes:\n- configMap\n- downwardAPI\n- emptyDir\n- hostPath\n- nfs\n- persistentVolumeClaim\n- secret\nEOF\nexport KUBECONFIG=~/.kube/config\nkubectl apply -f ~/nfs_scc.yaml --request-timeout=1800s\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;cp ~/install_dir/auth/kubeconfig ~/.kube/config\n&quot;</span><span class="p">,</span>
         <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
@@ -329,7 +290,7 @@ kubectl apply -f ~/nfs_scc.yaml --request-timeout=1800s
                         <a href="#start">start</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-10 02:07:53.822733
+                        <div class="codehilite"><pre><span></span>2021-05-17 02:39:51.890466
 </pre></div>
 
                     </td>
@@ -362,7 +323,7 @@ kubectl apply -f ~/nfs_scc.yaml --request-timeout=1800s
                         <a href="#stdout">stdout</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>securitycontextconstraints.security.openshift.io/nfs-provisioner created
+                        <div class="codehilite"><pre><span></span>
 </pre></div>
 
                     </td>
@@ -373,9 +334,7 @@ kubectl apply -f ~/nfs_scc.yaml --request-timeout=1800s
                         <a href="#stdout_lines">stdout_lines</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;securitycontextconstraints.security.openshift.io/nfs-provisioner created&quot;</span>
-<span class="p">]</span>
+                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
 </pre></div>
 
                     </td>

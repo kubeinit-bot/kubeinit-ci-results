@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 09 May 2021 21:34:42 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 21:55:12 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 09 May 2021 22:08:12 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 22:41:07 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:33:29.80
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:45:54.51
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">352 results</a>
+                            <a href="../playbooks/1.html#results">360 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">40 files</a>
+                            <a href="../playbooks/1.html#files">48 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Read in the contents of domain.crt</a></li>
-            <li><strong>Action</strong>: ansible.builtin.slurp</li>
-            <li><strong>Path</strong>: <a href="../files/33.html#line-135">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:135</a>
+            <li><strong>Task</strong>: ../../roles/kubeinit_registry : append auths to pullsecret</a></li>
+            <li><strong>Action</strong>: ansible.builtin.shell</li>
+            <li><strong>Path</strong>: <a href="../files/41.html#line-69">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:69</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
-            <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 09 May 2021 21:42:07 -0400</li>
-            <li><strong>Ended</strong>: 09 May 2021 21:42:07 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.17</li>
+            <li><strong>Status</strong>: changed</li>
+            <li><strong>Started</strong>: 16 May 2021 22:07:43 -0400</li>
+            <li><strong>Ended</strong>: 16 May 2021 22:07:43 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.37</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -210,29 +210,41 @@
                         <a href="#changed">changed</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>False
+                        <div class="codehilite"><pre><span></span>True
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="content" data-label="content" class="pf-m-width-20">
-                        <a href="#content">content</a>
+                    <td role="cell" id="cmd" data-label="cmd" class="pf-m-width-20">
+                        <a href="#cmd">cmd</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUdhakNDQkZLZ0F3SUJBZ0lVRWJHSXlQd1dFVXZwdDNwTzA0b2FNZ1lDemRzd0RRWUpLb1pJaHZjTkFRRUwKQlFBd2dZNHhDekFKQmdOVkJBWVRBbFZUTVJBd0RnWURWUVFJREFkTmVWTjBZWFJsTVE4d0RRWURWUVFIREFaTgplVU5wZEhreEVqQVFCZ05WQkFvTUNVMTVRMjl0Y0dGdWVURVZNQk1HQTFVRUN3d01UWGxFWlhCaGNuUnRaVzUwCk1URXdMd1lEVlFRRERDaHZhMlF0YzJWeWRtbGpaUzB3TVM1dmEyUmpiSFZ6ZEdWeUxtdDFZbVZwYm1sMExteHYKWTJGc01CNFhEVEl4TURVeE1EQXhOREl3TjFvWERUTXhNRFV3T0RBeE5ESXdOMW93Z1k0eEN6QUpCZ05WQkFZVApBbFZUTVJBd0RnWURWUVFJREFkTmVWTjBZWFJsTVE4d0RRWURWUVFIREFaTmVVTnBkSGt4RWpBUUJnTlZCQW9NCkNVMTVRMjl0Y0dGdWVURVZNQk1HQTFVRUN3d01UWGxFWlhCaGNuUnRaVzUwTVRFd0x3WURWUVFERENodmEyUXQKYzJWeWRtbGpaUzB3TVM1dmEyUmpiSFZ6ZEdWeUxtdDFZbVZwYm1sMExteHZZMkZzTUlJQ0lqQU5CZ2txaGtpRwo5dzBCQVFFRkFBT0NBZzhBTUlJQ0NnS0NBZ0VBdTlCQW4zSm9WM1hMSkpJQ3M3VDZPQ1krM2FCblJEK1cvalB4CmxHY0dPMDhUSGwzZVNQWVV0WUdXaE16ZnFCV3NyOUs3OC9QWWtmdDZMTEJsMllSby90ZFhGUnZXb2RJME5pUHcKMFZnV3pPR2poZG1ZaVRHWHpaTjNWZnd5TjhUaytaRkl1dDFtREltamxCdndGNGN6bTNPWXdiWnNQWENQRTFkaQpHTnZ4bGpLS2dmT0MwRnNwY3dwaGk2VzQ5RE1HQmdFWG0reGlZQk5Za0JCcFR5eUYxV0QyYU9oZkZMYzZydHJDCjBiTlRHVWMwd0lBTnltbWlCcTE4Y2tGTVhEYk5zdTg2SmJXbjZVK3FGdE9CRlVXS2VmdXRIK0ZYZnVveWoxNGoKZ1lINGE4Z1I3STc3WkZMaU0zSDFtZ2VFQXhaR2xrcTFzMWZqSE8wSGt0ZVNzcFBMMXZoaDR4dkl0amtYOVUxZQpGM21LQTdQcU5SdFd1b3gxTHQ5a0R0MzJTR1IxTGZzVUcwUmRRUGs1UlpCaS9yNjBOWGpFNW0waGVDOFVKRlBBCjVLeTBrRzZoRHJqeUtKelAzM3V5VXgwV2Q2ZW4reG5JaWRnUGl3N0lsWDVNRy9NNkdHYW9oNkgvZnZkY2U3SksKRDd4VDhLSjRocFNvcXZVL0hIdXQwbGdxVXBQeCtOcHJEekJ3N3hTaHl6MU5PQjVBNmhQbUtCNjd5VExXMkFFZwpUZGRCcVdWOEJpMGx4dUlkeEdaeUozVEkrNDNlWHNDVGE5Ti9FYTRDUjJZbVZTWnFPbW5LZWhmNFVuTjl4cjBVCkRZeUl6VDIrZlZiaGEvZzkvMVl3TG5NakJVNzJINzR6aHdMNFU1UFY2c2xncmtZaUVzOE0wendnaEdkMFZIb2gKcDQ1K1lUY0NBd0VBQWFPQnZUQ0J1akJuQmdOVkhSRUVZREJlZ2c1dmEyUXRjMlZ5ZG1salpTMHdNWUlvYjJ0awpMWE5sY25acFkyVXRNREV1YjJ0a1kyeDFjM1JsY2k1cmRXSmxhVzVwZEM1c2IyTmhiSUlpY21WbmFYTjBjbmt1CmIydGtZMngxYzNSbGNpNXJkV0psYVc1cGRDNXNiMk5oYkRBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUIwR0ExVWQKRGdRV0JCVDBRQ21VekpKdjM2N05idFlYcSszdVNiYzhOakFmQmdOVkhTTUVHREFXZ0JUMFFDbVV6Skp2MzY3TgpidFlYcSszdVNiYzhOakFOQmdrcWhraUc5dzBCQVFzRkFBT0NBZ0VBS0xYS205TFNGUjdoNVYvWElhMEQybDhyClpxTTdNMEhuTzY3bVQxM2NVRTFzRTFXUjc2NzVJZnVHVTl5RS83aUVYUUlicm5Uc1J4ZHlXeUsxcDFqak4yMlcKT0FlNU1rQUYwU3dqVFFUZTZJYnJpYlN2NzlvMTk2a1NLZHdjcTVxQnQvUmQ1Sm9UZEZMOU9VRUcxeHNUQnNnWgp1STg3S1dMMWFCM2tzWGpmbGwwWWZYUlJkVUIrSjJ4cC9lcitmQXYvNWswWkU0RnMwaUtqTThsYmt5bFVudnlmCmdnZ2Q5M3BtbUJRY2pJNUxGU0pFaGl6dXltdVI3UlV1dDdOMXE1aE9ZNlNyYVZ0MW9rcE5RSFliZXFMdGdaaTAKdlR1V21yWTN3emtKZkdLdm50MUxCMVJabkJiQ1E4Wmc2eUVMV1FJeTZwNnFXVFZpZStiSnlUR21kVGpEOC84MgppbDJLUDNWc04vU1RrajZqUVJIbjAzQVRmQVRVQ3dPUkNUcHFhSE85M2tma1dycEMwOGY2RFBhRnpYUFZRSU9FCkZZRTlNRGZqN2l1KzhRSkFHRGkzcXZVQ0xpSExnbExvNXdHNUlXeXcrejR3cCtIUFVpZGJiRmp0TmFhdjVXV0kKam5NekFIMEI2clFFM1lDVk1oZ0dJZG80ZmE1MHh2aktoQmYydDVrSGQyeXJpN1ZJZnBoTkxxYjEzdWRZQkVSWgo1UURjT3NBWTFBVXRYR3Z1dEhkK1I0V2hwK1ZFVG5LN0JjZ0MyK1RLblF3RWIzTmNWcWNaOHFSV2FYVStQTmwxCjYyM3RkMXVYd251MzlSL0FwZmVwL0hsYVRNV1pXRnNtcHpFYndKL1FaWkJFZEt3WUg4RndRcXdsV1hzUkxobHEKU1lsWEdzeHJxb3VpOWxra2t5ST0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+                        <div class="codehilite"><pre><span></span>set -o pipefail
+echo &#39;    { &quot;auths&quot;: {} }&#39; | jq -c  &#39;.auths +=   {&quot;okd-service-01.okdcluster.kubeinit.local:5000&quot;: {&quot;auth&quot;: &quot;cmVnaXN0cnl1c2VybmFtZTpyZWdpc3RyeXBhc3N3b3Jk&quot; } }&#39;
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="encoding" data-label="encoding" class="pf-m-width-20">
-                        <a href="#encoding">encoding</a>
+                    <td role="cell" id="delta" data-label="delta" class="pf-m-width-20">
+                        <a href="#delta">delta</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>base64
+                        <div class="codehilite"><pre><span></span>0:00:00.014669
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="end" data-label="end" class="pf-m-width-20">
+                        <a href="#end">end</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>2021-05-17 02:07:43.868265
 </pre></div>
 
                     </td>
@@ -245,7 +257,17 @@
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/local_registry/certs/domain.crt&quot;</span>
+        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\necho &#39;    { \&quot;auths\&quot;: {} }&#39; | jq -c  &#39;.auths +=   {\&quot;okd-service-01.okdcluster.kubeinit.local:5000\&quot;: {\&quot;auth\&quot;: \&quot;cmVnaXN0cnl1c2VybmFtZTpyZWdpc3RyeXBhc3N3b3Jk\&quot; } }&#39;\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -254,11 +276,74 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="source" data-label="source" class="pf-m-width-20">
-                        <a href="#source">source</a>
+                    <td role="cell" id="rc" data-label="rc" class="pf-m-width-20">
+                        <a href="#rc">rc</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>/var/kubeinit/local_registry/certs/domain.crt
+                        <div class="codehilite"><pre><span></span>0
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="start" data-label="start" class="pf-m-width-20">
+                        <a href="#start">start</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>2021-05-17 02:07:43.853596
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stderr" data-label="stderr" class="pf-m-width-20">
+                        <a href="#stderr">stderr</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stderr_lines" data-label="stderr_lines" class="pf-m-width-20">
+                        <a href="#stderr_lines">stderr_lines</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stdout" data-label="stdout" class="pf-m-width-20">
+                        <a href="#stdout">stdout</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;auths&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;okd-service-01.okdcluster.kubeinit.local:5000&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;auth&quot;</span><span class="p">:</span> <span class="s2">&quot;cmVnaXN0cnl1c2VybmFtZTpyZWdpc3RyeXBhc3N3b3Jk&quot;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stdout_lines" data-label="stdout_lines" class="pf-m-width-20">
+                        <a href="#stdout_lines">stdout_lines</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;{\&quot;auths\&quot;:{\&quot;okd-service-01.okdcluster.kubeinit.local:5000\&quot;:{\&quot;auth\&quot;:\&quot;cmVnaXN0cnl1c2VybmFtZTpyZWdpc3RyeXBhc3N3b3Jk\&quot;}}}&quot;</span>
+<span class="p">]</span>
 </pre></div>
 
                     </td>

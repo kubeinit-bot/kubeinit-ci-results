@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 27 Apr 2021 23:51:12 +0200
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 21:55:12 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 28 Apr 2021 00:47:54 +0200
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 22:41:07 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:56:41.70
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:45:54.51
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">373 results</a>
+                            <a href="../playbooks/1.html#results">360 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">35 files</a>
+                            <a href="../playbooks/1.html#files">48 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_nfs : apply nfs security policy to nfs user</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_kubevirt : Install KubeVirt</a></li>
             <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/33.html#line-260">/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_nfs/tasks/main.yml:260</a>
-            <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-01</a></li>
+            <li><strong>Path</strong>: <a href="../files/48.html#line-18">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_kubevirt/tasks/main.yml:18</a>
+            <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 28 Apr 2021 00:47:09 +0200</li>
-            <li><strong>Ended</strong>: 28 Apr 2021 00:47:10 +0200</li>
-            <li><strong>Duration</strong>: 00:00:00.47</li>
+            <li><strong>Started</strong>: 16 May 2021 22:40:54 -0400</li>
+            <li><strong>Ended</strong>: 16 May 2021 22:41:07 -0400</li>
+            <li><strong>Duration</strong>: 00:00:12.94</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -221,8 +221,16 @@
                         <a href="#cmd">cmd</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>export KUBECONFIG=~/.kube/config
-oc adm policy add-scc-to-user nfs-provisioner -z nfs-client-provisioner
+                        <div class="codehilite"><pre><span></span>set -o pipefail
+export KUBECONFIG=~/install_dir/auth/kubeconfig;
+export KUBEVIRT_VERSION=&quot;v0.32.0&quot;
+# Latest
+# export KUBEVIRT_VERSION=$(curl -s https://api.github.com/repos/kubevirt/kubevirt/releases | grep tag_name | grep -v -- - | sort -V | tail -1 | awk -F&#39;:&#39; &#39;{print $2}&#39; | sed &#39;s/,//&#39; | xargs)
+echo $KUBEVIRT_VERSION
+kubectl create -f https://github.com/kubevirt/kubevirt/releases/download/${KUBEVIRT_VERSION}/kubevirt-operator.yaml
+kubectl create -f https://github.com/kubevirt/kubevirt/releases/download/${KUBEVIRT_VERSION}/kubevirt-cr.yaml
+curl -L -o virtctl https://github.com/kubevirt/kubevirt/releases/download/${KUBEVIRT_VERSION}/virtctl-${KUBEVIRT_VERSION}-linux-x86_64
+chmod +x virtctl
 </pre></div>
 
                     </td>
@@ -233,7 +241,7 @@ oc adm policy add-scc-to-user nfs-provisioner -z nfs-client-provisioner
                         <a href="#delta">delta</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:00:00.170762
+                        <div class="codehilite"><pre><span></span>0:00:12.648787
 </pre></div>
 
                     </td>
@@ -244,7 +252,7 @@ oc adm policy add-scc-to-user nfs-provisioner -z nfs-client-provisioner
                         <a href="#end">end</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-04-27 22:47:10.153052
+                        <div class="codehilite"><pre><span></span>2021-05-17 02:41:07.143961
 </pre></div>
 
                     </td>
@@ -257,7 +265,7 @@ oc adm policy add-scc-to-user nfs-provisioner -z nfs-client-provisioner
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;export KUBECONFIG=~/.kube/config\noc adm policy add-scc-to-user nfs-provisioner -z nfs-client-provisioner\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nexport KUBECONFIG=~/install_dir/auth/kubeconfig;\nexport KUBEVIRT_VERSION=\&quot;v0.32.0\&quot;\n# Latest\n# export KUBEVIRT_VERSION=$(curl -s https://api.github.com/repos/kubevirt/kubevirt/releases | grep tag_name | grep -v -- - | sort -V | tail -1 | awk -F&#39;:&#39; &#39;{print $2}&#39; | sed &#39;s/,//&#39; | xargs)\necho $KUBEVIRT_VERSION\nkubectl create -f https://github.com/kubevirt/kubevirt/releases/download/${KUBEVIRT_VERSION}/kubevirt-operator.yaml\nkubectl create -f https://github.com/kubevirt/kubevirt/releases/download/${KUBEVIRT_VERSION}/kubevirt-cr.yaml\ncurl -L -o virtctl https://github.com/kubevirt/kubevirt/releases/download/${KUBEVIRT_VERSION}/virtctl-${KUBEVIRT_VERSION}-linux-x86_64\nchmod +x virtctl\n&quot;</span><span class="p">,</span>
         <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
@@ -291,7 +299,7 @@ oc adm policy add-scc-to-user nfs-provisioner -z nfs-client-provisioner
                         <a href="#start">start</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-04-27 22:47:09.982290
+                        <div class="codehilite"><pre><span></span>2021-05-17 02:40:54.495174
 </pre></div>
 
                     </td>
@@ -302,7 +310,15 @@ oc adm policy add-scc-to-user nfs-provisioner -z nfs-client-provisioner
                         <a href="#stderr">stderr</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>
+                        <div class="codehilite"><pre><span></span>Warning: apiextensions.k8s.io/v1beta1 CustomResourceDefinition is deprecated in v1.16+, unavailable in v1.22+; use apiextensions.k8s.io/v1 CustomResourceDefinition
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   634  100   634    0     0   4464      0 --:--:-- --:--:-- --:--:--  4464
+
+ 36 39.9M   36 14.5M    0     0  20.5M      0  0:00:01 --:--:--  0:00:01 20.5M
+100 39.9M  100 39.9M    0     0  41.6M      0 --:--:-- --:--:-- --:--:--  100M
 </pre></div>
 
                     </td>
@@ -313,7 +329,17 @@ oc adm policy add-scc-to-user nfs-provisioner -z nfs-client-provisioner
                         <a href="#stderr_lines">stderr_lines</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
+                        <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;Warning: apiextensions.k8s.io/v1beta1 CustomResourceDefinition is deprecated in v1.16+, unavailable in v1.22+; use apiextensions.k8s.io/v1 CustomResourceDefinition&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;                                 Dload  Upload   Total   Spent    Left  Speed&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;100   634  100   634    0     0   4464      0 --:--:-- --:--:-- --:--:--  4464&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot; 36 39.9M   36 14.5M    0     0  20.5M      0  0:00:01 --:--:--  0:00:01 20.5M&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;100 39.9M  100 39.9M    0     0  41.6M      0 --:--:-- --:--:-- --:--:--  100M&quot;</span>
+<span class="p">]</span>
 </pre></div>
 
                     </td>
@@ -324,7 +350,18 @@ oc adm policy add-scc-to-user nfs-provisioner -z nfs-client-provisioner
                         <a href="#stdout">stdout</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>clusterrole.rbac.authorization.k8s.io/system:openshift:scc:nfs-provisioner added: &quot;nfs-client-provisioner&quot;
+                        <div class="codehilite"><pre><span></span>v0.32.0
+namespace/kubevirt created
+customresourcedefinition.apiextensions.k8s.io/kubevirts.kubevirt.io created
+priorityclass.scheduling.k8s.io/kubevirt-cluster-critical created
+clusterrole.rbac.authorization.k8s.io/kubevirt.io:operator created
+serviceaccount/kubevirt-operator created
+role.rbac.authorization.k8s.io/kubevirt-operator created
+rolebinding.rbac.authorization.k8s.io/kubevirt-operator-rolebinding created
+clusterrole.rbac.authorization.k8s.io/kubevirt-operator created
+clusterrolebinding.rbac.authorization.k8s.io/kubevirt-operator created
+deployment.apps/virt-operator created
+kubevirt.kubevirt.io/kubevirt created
 </pre></div>
 
                     </td>
@@ -336,7 +373,18 @@ oc adm policy add-scc-to-user nfs-provisioner -z nfs-client-provisioner
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;clusterrole.rbac.authorization.k8s.io/system:openshift:scc:nfs-provisioner added: \&quot;nfs-client-provisioner\&quot;&quot;</span>
+    <span class="s2">&quot;v0.32.0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;namespace/kubevirt created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;customresourcedefinition.apiextensions.k8s.io/kubevirts.kubevirt.io created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;priorityclass.scheduling.k8s.io/kubevirt-cluster-critical created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;clusterrole.rbac.authorization.k8s.io/kubevirt.io:operator created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;serviceaccount/kubevirt-operator created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;role.rbac.authorization.k8s.io/kubevirt-operator created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;rolebinding.rbac.authorization.k8s.io/kubevirt-operator-rolebinding created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;clusterrole.rbac.authorization.k8s.io/kubevirt-operator created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;clusterrolebinding.rbac.authorization.k8s.io/kubevirt-operator created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;deployment.apps/virt-operator created&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;kubevirt.kubevirt.io/kubevirt created&quot;</span>
 <span class="p">]</span>
 </pre></div>
 

@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="../static/css/pygments.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -20,7 +20,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -66,25 +66,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 09 May 2021 21:34:42 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 21:55:12 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 09 May 2021 22:08:12 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 22:41:07 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:33:29.80
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:45:54.51
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -97,17 +97,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">352 results</a>
+                            <a href="../playbooks/1.html#results">360 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">40 files</a>
+                            <a href="../playbooks/1.html#files">48 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -183,7 +183,7 @@
 
 <div class="pf-c-card" style="margin: 1em 0;">
     <div class="pf-c-card__header pf-c-title pf-m-md">
-        <strong>/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_hypervisor.yml</strong>
+        <strong>/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_hypervisor.yml</strong>
     </div>
     <div class="pf-c-card__body">
         <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"><a href="#line-1"> 1</a></span>
@@ -263,84 +263,104 @@
 <span class="normal"><a href="#line-75">75</a></span>
 <span class="normal"><a href="#line-76">76</a></span>
 <span class="normal"><a href="#line-77">77</a></span>
-<span class="normal"><a href="#line-78">78</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a name="line-1"></a><span class="nn">---</span>
-</span><span id="line-2"><a name="line-2"></a><span class="c1"># Copyright 2019 KubeInit (kubeinit.com).</span>
-</span><span id="line-3"><a name="line-3"></a><span class="c1"># All Rights Reserved.</span>
-</span><span id="line-4"><a name="line-4"></a><span class="c1">#</span>
-</span><span id="line-5"><a name="line-5"></a><span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
-</span><span id="line-6"><a name="line-6"></a><span class="c1"># not use this file except in compliance with the License. You may obtain</span>
-</span><span id="line-7"><a name="line-7"></a><span class="c1"># a copy of the License at</span>
-</span><span id="line-8"><a name="line-8"></a><span class="c1">#</span>
-</span><span id="line-9"><a name="line-9"></a><span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
-</span><span id="line-10"><a name="line-10"></a><span class="c1">#</span>
-</span><span id="line-11"><a name="line-11"></a><span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
-</span><span id="line-12"><a name="line-12"></a><span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT</span>
-</span><span id="line-13"><a name="line-13"></a><span class="c1"># WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the</span>
-</span><span id="line-14"><a name="line-14"></a><span class="c1"># License for the specific language governing permissions and limitations</span>
-</span><span id="line-15"><a name="line-15"></a><span class="c1"># under the License.</span>
-</span><span id="line-16"><a name="line-16"></a>
-</span><span id="line-17"><a name="line-17"></a>
-</span><span id="line-18"><a name="line-18"></a><span class="c1">#</span>
-</span><span id="line-19"><a name="line-19"></a><span class="c1"># Prepare each hypervisor</span>
-</span><span id="line-20"><a name="line-20"></a><span class="c1">#</span>
-</span><span id="line-21"><a name="line-21"></a>
-</span><span id="line-22"><a name="line-22"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">delegate to kubeinit_deployment_node_name</span>
-</span><span id="line-23"><a name="line-23"></a>  <span class="nt">block</span><span class="p">:</span>
-</span><span id="line-24"><a name="line-24"></a>
-</span><span id="line-25"><a name="line-25"></a>    <span class="c1">#</span>
-</span><span id="line-26"><a name="line-26"></a>    <span class="c1"># Check that host OS are supported</span>
-</span><span id="line-27"><a name="line-27"></a>    <span class="c1">#</span>
-</span><span id="line-28"><a name="line-28"></a>
-</span><span id="line-29"><a name="line-29"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Fails if OS is not supported</span>
-</span><span id="line-30"><a name="line-30"></a>      <span class="nt">ansible.builtin.fail</span><span class="p">:</span>
-</span><span id="line-31"><a name="line-31"></a>        <span class="nt">msg</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">The hypervisor machine needs to be CentOS/RHEL</span>
-</span><span id="line-32"><a name="line-32"></a>      <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">not (ansible_distribution == &#39;CentOS&#39; or ansible_distribution == &#39;RedHat&#39; or ansible_distribution == &#39;Fedora&#39; or ansible_distribution == &#39;Debian&#39; or ansible_distribution == &#39;Ubuntu&#39;)</span>
-</span><span id="line-33"><a name="line-33"></a>
-</span><span id="line-34"><a name="line-34"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Fails if CentOS 7 hypervisor</span>
-</span><span id="line-35"><a name="line-35"></a>      <span class="nt">ansible.builtin.fail</span><span class="p">:</span>
-</span><span id="line-36"><a name="line-36"></a>        <span class="nt">msg</span><span class="p">:</span>
-</span><span id="line-37"><a name="line-37"></a>          <span class="p p-Indicator">-</span> <span class="s">&quot;CentOS</span><span class="nv"> </span><span class="s">7</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">supported</span><span class="nv"> </span><span class="s">as</span><span class="nv"> </span><span class="s">CentOS</span><span class="nv"> </span><span class="s">8</span><span class="nv"> </span><span class="s">guests</span><span class="nv"> </span><span class="s">are</span><span class="nv"> </span><span class="s">used.&quot;</span>
-</span><span id="line-38"><a name="line-38"></a>          <span class="p p-Indicator">-</span> <span class="s">&quot;Refer</span><span class="nv"> </span><span class="s">to:</span><span class="nv"> </span><span class="s">https://access.redhat.com/solutions/4073061&quot;</span>
-</span><span id="line-39"><a name="line-39"></a>          <span class="p p-Indicator">-</span> <span class="s">&quot;This</span><span class="nv"> </span><span class="s">issue</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">caused</span><span class="nv"> </span><span class="s">by</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">forward</span><span class="nv"> </span><span class="s">compatibility</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">xfs&quot;</span>
-</span><span id="line-40"><a name="line-40"></a>          <span class="p p-Indicator">-</span> <span class="s">&quot;file</span><span class="nv"> </span><span class="s">system</span><span class="nv"> </span><span class="s">between</span><span class="nv"> </span><span class="s">CentOS</span><span class="nv"> </span><span class="s">7</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">CentOS</span><span class="nv"> </span><span class="s">8.&quot;</span>
-</span><span id="line-41"><a name="line-41"></a>          <span class="p p-Indicator">-</span> <span class="s">&quot;Xfs</span><span class="nv"> </span><span class="s">file</span><span class="nv"> </span><span class="s">system</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">CentOS</span><span class="nv"> </span><span class="s">8</span><span class="nv"> </span><span class="s">uses</span><span class="nv"> </span><span class="s">reflink</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">sparse</span><span class="nv"> </span><span class="s">files,&quot;</span>
-</span><span id="line-42"><a name="line-42"></a>          <span class="p p-Indicator">-</span> <span class="s">&quot;but</span><span class="nv"> </span><span class="s">CentOS</span><span class="nv"> </span><span class="s">7</span><span class="nv"> </span><span class="s">kernel</span><span class="nv"> </span><span class="s">does</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">understand</span><span class="nv"> </span><span class="s">them</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">refuses</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">mount</span><span class="nv"> </span><span class="s">it.&quot;</span>
-</span><span id="line-43"><a name="line-43"></a>          <span class="p p-Indicator">-</span> <span class="s">&quot;This</span><span class="nv"> </span><span class="s">means</span><span class="nv"> </span><span class="s">that</span><span class="nv"> </span><span class="s">CentOS</span><span class="nv"> </span><span class="s">8</span><span class="nv"> </span><span class="s">guests</span><span class="nv"> </span><span class="s">won&#39;t</span><span class="nv"> </span><span class="s">work</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">CentOS</span><span class="nv"> </span><span class="s">8</span><span class="nv"> </span><span class="s">hosts.&quot;</span>
-</span><span id="line-44"><a name="line-44"></a>      <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">(ansible_distribution == &#39;CentOS&#39; and ansible_distribution_major_version == &quot;7&quot;)</span>
-</span><span id="line-45"><a name="line-45"></a>
-</span><span id="line-46"><a name="line-46"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Create a public key</span>
-</span><span id="line-47"><a name="line-47"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-48"><a name="line-48"></a>        <span class="no">set -eo pipefail</span>
-</span><span id="line-49"><a name="line-49"></a>        <span class="no">ssh-keygen -q -b 2048 -t rsa -N &quot;&quot; -C &quot;creating SSH&quot; -f ~/.ssh/id_rsa</span>
-</span><span id="line-50"><a name="line-50"></a>        <span class="no">creates=&quot;~/.ssh/id_rsa&quot;</span>
-</span><span id="line-51"><a name="line-51"></a>      <span class="nt">args</span><span class="p">:</span>
-</span><span id="line-52"><a name="line-52"></a>        <span class="nt">executable</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/bin/bash</span>
-</span><span id="line-53"><a name="line-53"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">render_publickey</span>
-</span><span id="line-54"><a name="line-54"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;render_publickey.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
-</span><span id="line-55"><a name="line-55"></a>
-</span><span id="line-56"><a name="line-56"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Fetch the public key</span>
-</span><span id="line-57"><a name="line-57"></a>      <span class="nt">ansible.builtin.slurp</span><span class="p">:</span>
-</span><span id="line-58"><a name="line-58"></a>        <span class="nt">src</span><span class="p">:</span> <span class="s">&quot;~/.ssh/id_rsa.pub&quot;</span>
-</span><span id="line-59"><a name="line-59"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">slurp_publickey</span>
-</span><span id="line-60"><a name="line-60"></a>
-</span><span id="line-61"><a name="line-61"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Add the key to authorized_keys</span>
-</span><span id="line-62"><a name="line-62"></a>      <span class="nt">ansible.posix.authorized_key</span><span class="p">:</span>
-</span><span id="line-63"><a name="line-63"></a>        <span class="nt">user</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">root</span>
-</span><span id="line-64"><a name="line-64"></a>        <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">present</span>
-</span><span id="line-65"><a name="line-65"></a>        <span class="nt">key</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">slurp_publickey.content</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">b64decode</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-66"><a name="line-66"></a>
-</span><span id="line-67"><a name="line-67"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Update the /etc/hosts file with node name</span>
-</span><span id="line-68"><a name="line-68"></a>      <span class="nt">vars</span><span class="p">:</span>
-</span><span id="line-69"><a name="line-69"></a>        <span class="nt">host</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_deployment_node_name</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-70"><a name="line-70"></a>      <span class="nt">ansible.builtin.lineinfile</span><span class="p">:</span>
-</span><span id="line-71"><a name="line-71"></a>        <span class="nt">path</span><span class="p">:</span> <span class="s">&quot;/etc/hosts&quot;</span>
-</span><span id="line-72"><a name="line-72"></a>        <span class="nt">regexp</span><span class="p">:</span> <span class="s">&quot;.*</span><span class="nv">    </span><span class="s">{{</span><span class="nv"> </span><span class="s">hostvars[host][&#39;inventory_hostname&#39;]</span><span class="nv"> </span><span class="s">}}</span><span class="nv">    </span><span class="s">{{</span><span class="nv"> </span><span class="s">hostvars[host][&#39;ansible_hostname&#39;]</span><span class="nv"> </span><span class="s">}}</span><span class="nv">    </span><span class="s">{{</span><span class="nv"> </span><span class="s">hostvars[host][&#39;ansible_host&#39;]</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-73"><a name="line-73"></a>        <span class="nt">line</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[host][&#39;ansible_env&#39;].SSH_CONNECTION.split(&#39;</span><span class="nv"> </span><span class="s">&#39;)[2]</span><span class="nv"> </span><span class="s">}}</span><span class="nv">    </span><span class="s">{{</span><span class="nv"> </span><span class="s">hostvars[host][&#39;inventory_hostname&#39;]</span><span class="nv"> </span><span class="s">}}</span><span class="nv">    </span><span class="s">{{</span><span class="nv"> </span><span class="s">hostvars[host][&#39;ansible_hostname&#39;]</span><span class="nv"> </span><span class="s">}}</span><span class="nv">    </span><span class="s">{{</span><span class="nv"> </span><span class="s">hostvars[host][&#39;ansible_host&#39;]</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-74"><a name="line-74"></a>        <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">present</span>
-</span><span id="line-75"><a name="line-75"></a>        <span class="nt">backup</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
-</span><span id="line-76"><a name="line-76"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">etchostsupdate</span>
-</span><span id="line-77"><a name="line-77"></a>
-</span><span id="line-78"><a name="line-78"></a>  <span class="nt">delegate_to</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_deployment_node_name</span><span class="nv"> </span><span class="s">}}&quot;</span>
+<span class="normal"><a href="#line-78">78</a></span>
+<span class="normal"><a href="#line-79">79</a></span>
+<span class="normal"><a href="#line-80">80</a></span>
+<span class="normal"><a href="#line-81">81</a></span>
+<span class="normal"><a href="#line-82">82</a></span>
+<span class="normal"><a href="#line-83">83</a></span>
+<span class="normal"><a href="#line-84">84</a></span>
+<span class="normal"><a href="#line-85">85</a></span>
+<span class="normal"><a href="#line-86">86</a></span>
+<span class="normal"><a href="#line-87">87</a></span>
+<span class="normal"><a href="#line-88">88</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a id="line-1" name="line-1"></a><span class="nn">---</span>
+</span><span id="line-2"><a id="line-2" name="line-2"></a><span class="c1"># Copyright 2019 KubeInit (kubeinit.com).</span>
+</span><span id="line-3"><a id="line-3" name="line-3"></a><span class="c1"># All Rights Reserved.</span>
+</span><span id="line-4"><a id="line-4" name="line-4"></a><span class="c1">#</span>
+</span><span id="line-5"><a id="line-5" name="line-5"></a><span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+</span><span id="line-6"><a id="line-6" name="line-6"></a><span class="c1"># not use this file except in compliance with the License. You may obtain</span>
+</span><span id="line-7"><a id="line-7" name="line-7"></a><span class="c1"># a copy of the License at</span>
+</span><span id="line-8"><a id="line-8" name="line-8"></a><span class="c1">#</span>
+</span><span id="line-9"><a id="line-9" name="line-9"></a><span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
+</span><span id="line-10"><a id="line-10" name="line-10"></a><span class="c1">#</span>
+</span><span id="line-11"><a id="line-11" name="line-11"></a><span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
+</span><span id="line-12"><a id="line-12" name="line-12"></a><span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT</span>
+</span><span id="line-13"><a id="line-13" name="line-13"></a><span class="c1"># WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the</span>
+</span><span id="line-14"><a id="line-14" name="line-14"></a><span class="c1"># License for the specific language governing permissions and limitations</span>
+</span><span id="line-15"><a id="line-15" name="line-15"></a><span class="c1"># under the License.</span>
+</span><span id="line-16"><a id="line-16" name="line-16"></a>
+</span><span id="line-17"><a id="line-17" name="line-17"></a>
+</span><span id="line-18"><a id="line-18" name="line-18"></a><span class="c1">#</span>
+</span><span id="line-19"><a id="line-19" name="line-19"></a><span class="c1"># Prepare each hypervisor</span>
+</span><span id="line-20"><a id="line-20" name="line-20"></a><span class="c1">#</span>
+</span><span id="line-21"><a id="line-21" name="line-21"></a>
+</span><span id="line-22"><a id="line-22" name="line-22"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">delegate to kubeinit_deployment_node_name</span>
+</span><span id="line-23"><a id="line-23" name="line-23"></a>  <span class="nt">block</span><span class="p">:</span>
+</span><span id="line-24"><a id="line-24" name="line-24"></a>
+</span><span id="line-25"><a id="line-25" name="line-25"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">set kubeinit_bastion_host_address fact</span>
+</span><span id="line-26"><a id="line-26" name="line-26"></a>      <span class="nt">ansible.builtin.set_fact</span><span class="p">:</span>
+</span><span id="line-27"><a id="line-27" name="line-27"></a>        <span class="nt">kubeinit_bastion_host_address</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[groups[&#39;all_hosts&#39;][0]][&#39;ansible_default_ipv4&#39;][&#39;address&#39;]</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-28"><a id="line-28" name="line-28"></a>
+</span><span id="line-29"><a id="line-29" name="line-29"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">define host, node and ovn related facts</span>
+</span><span id="line-30"><a id="line-30" name="line-30"></a>      <span class="nt">ansible.builtin.include</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">set_facts.yml</span>
+</span><span id="line-31"><a id="line-31" name="line-31"></a>
+</span><span id="line-32"><a id="line-32" name="line-32"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Fails if OS is not supported</span>
+</span><span id="line-33"><a id="line-33" name="line-33"></a>      <span class="nt">ansible.builtin.fail</span><span class="p">:</span>
+</span><span id="line-34"><a id="line-34" name="line-34"></a>        <span class="nt">msg</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">The hypervisor machine needs to be CentOS/RHEL</span>
+</span><span id="line-35"><a id="line-35" name="line-35"></a>      <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">not (ansible_distribution == &#39;CentOS&#39; or ansible_distribution == &#39;RedHat&#39; or ansible_distribution == &#39;Fedora&#39; or ansible_distribution == &#39;Debian&#39; or ansible_distribution == &#39;Ubuntu&#39;)</span>
+</span><span id="line-36"><a id="line-36" name="line-36"></a>
+</span><span id="line-37"><a id="line-37" name="line-37"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Fails if CentOS 7 hypervisor</span>
+</span><span id="line-38"><a id="line-38" name="line-38"></a>      <span class="nt">ansible.builtin.fail</span><span class="p">:</span>
+</span><span id="line-39"><a id="line-39" name="line-39"></a>        <span class="nt">msg</span><span class="p">:</span>
+</span><span id="line-40"><a id="line-40" name="line-40"></a>          <span class="p p-Indicator">-</span> <span class="s">&quot;CentOS</span><span class="nv"> </span><span class="s">7</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">supported</span><span class="nv"> </span><span class="s">as</span><span class="nv"> </span><span class="s">CentOS</span><span class="nv"> </span><span class="s">8</span><span class="nv"> </span><span class="s">guests</span><span class="nv"> </span><span class="s">are</span><span class="nv"> </span><span class="s">used.&quot;</span>
+</span><span id="line-41"><a id="line-41" name="line-41"></a>          <span class="p p-Indicator">-</span> <span class="s">&quot;Refer</span><span class="nv"> </span><span class="s">to:</span><span class="nv"> </span><span class="s">https://access.redhat.com/solutions/4073061&quot;</span>
+</span><span id="line-42"><a id="line-42" name="line-42"></a>          <span class="p p-Indicator">-</span> <span class="s">&quot;This</span><span class="nv"> </span><span class="s">issue</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">caused</span><span class="nv"> </span><span class="s">by</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">forward</span><span class="nv"> </span><span class="s">compatibility</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">xfs&quot;</span>
+</span><span id="line-43"><a id="line-43" name="line-43"></a>          <span class="p p-Indicator">-</span> <span class="s">&quot;file</span><span class="nv"> </span><span class="s">system</span><span class="nv"> </span><span class="s">between</span><span class="nv"> </span><span class="s">CentOS</span><span class="nv"> </span><span class="s">7</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">CentOS</span><span class="nv"> </span><span class="s">8.&quot;</span>
+</span><span id="line-44"><a id="line-44" name="line-44"></a>          <span class="p p-Indicator">-</span> <span class="s">&quot;Xfs</span><span class="nv"> </span><span class="s">file</span><span class="nv"> </span><span class="s">system</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">CentOS</span><span class="nv"> </span><span class="s">8</span><span class="nv"> </span><span class="s">uses</span><span class="nv"> </span><span class="s">reflink</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">sparse</span><span class="nv"> </span><span class="s">files,&quot;</span>
+</span><span id="line-45"><a id="line-45" name="line-45"></a>          <span class="p p-Indicator">-</span> <span class="s">&quot;but</span><span class="nv"> </span><span class="s">CentOS</span><span class="nv"> </span><span class="s">7</span><span class="nv"> </span><span class="s">kernel</span><span class="nv"> </span><span class="s">does</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">understand</span><span class="nv"> </span><span class="s">them</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">refuses</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">mount</span><span class="nv"> </span><span class="s">it.&quot;</span>
+</span><span id="line-46"><a id="line-46" name="line-46"></a>          <span class="p p-Indicator">-</span> <span class="s">&quot;This</span><span class="nv"> </span><span class="s">means</span><span class="nv"> </span><span class="s">that</span><span class="nv"> </span><span class="s">CentOS</span><span class="nv"> </span><span class="s">8</span><span class="nv"> </span><span class="s">guests</span><span class="nv"> </span><span class="s">won&#39;t</span><span class="nv"> </span><span class="s">work</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">CentOS</span><span class="nv"> </span><span class="s">8</span><span class="nv"> </span><span class="s">hosts.&quot;</span>
+</span><span id="line-47"><a id="line-47" name="line-47"></a>      <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">(ansible_distribution == &#39;CentOS&#39; and ansible_distribution_major_version == &quot;7&quot;)</span>
+</span><span id="line-48"><a id="line-48" name="line-48"></a>
+</span><span id="line-49"><a id="line-49" name="line-49"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Create a public key</span>
+</span><span id="line-50"><a id="line-50" name="line-50"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+</span><span id="line-51"><a id="line-51" name="line-51"></a>        <span class="no">set -eo pipefail</span>
+</span><span id="line-52"><a id="line-52" name="line-52"></a>        <span class="no">ssh-keygen -q -b 2048 -t rsa -N &quot;&quot; -C &quot;creating SSH&quot; -f ~/.ssh/id_rsa</span>
+</span><span id="line-53"><a id="line-53" name="line-53"></a>        <span class="no">creates=&quot;~/.ssh/id_rsa&quot;</span>
+</span><span id="line-54"><a id="line-54" name="line-54"></a>      <span class="nt">args</span><span class="p">:</span>
+</span><span id="line-55"><a id="line-55" name="line-55"></a>        <span class="nt">executable</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/bin/bash</span>
+</span><span id="line-56"><a id="line-56" name="line-56"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">render_publickey</span>
+</span><span id="line-57"><a id="line-57" name="line-57"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;render_publickey.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
+</span><span id="line-58"><a id="line-58" name="line-58"></a>
+</span><span id="line-59"><a id="line-59" name="line-59"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Fetch the public key</span>
+</span><span id="line-60"><a id="line-60" name="line-60"></a>      <span class="nt">ansible.builtin.slurp</span><span class="p">:</span>
+</span><span id="line-61"><a id="line-61" name="line-61"></a>        <span class="nt">src</span><span class="p">:</span> <span class="s">&quot;~/.ssh/id_rsa.pub&quot;</span>
+</span><span id="line-62"><a id="line-62" name="line-62"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">slurp_publickey</span>
+</span><span id="line-63"><a id="line-63" name="line-63"></a>
+</span><span id="line-64"><a id="line-64" name="line-64"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Add the key to authorized_keys</span>
+</span><span id="line-65"><a id="line-65" name="line-65"></a>      <span class="nt">ansible.posix.authorized_key</span><span class="p">:</span>
+</span><span id="line-66"><a id="line-66" name="line-66"></a>        <span class="nt">user</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">root</span>
+</span><span id="line-67"><a id="line-67" name="line-67"></a>        <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">present</span>
+</span><span id="line-68"><a id="line-68" name="line-68"></a>        <span class="nt">key</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">slurp_publickey.content</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">b64decode</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-69"><a id="line-69" name="line-69"></a>
+</span><span id="line-70"><a id="line-70" name="line-70"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Update the /etc/hosts file with node name</span>
+</span><span id="line-71"><a id="line-71" name="line-71"></a>      <span class="nt">vars</span><span class="p">:</span>
+</span><span id="line-72"><a id="line-72" name="line-72"></a>        <span class="nt">host</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_deployment_node_name</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-73"><a id="line-73" name="line-73"></a>      <span class="nt">ansible.builtin.lineinfile</span><span class="p">:</span>
+</span><span id="line-74"><a id="line-74" name="line-74"></a>        <span class="nt">path</span><span class="p">:</span> <span class="s">&quot;/etc/hosts&quot;</span>
+</span><span id="line-75"><a id="line-75" name="line-75"></a>        <span class="nt">regexp</span><span class="p">:</span> <span class="s">&quot;.*</span><span class="nv">    </span><span class="s">{{</span><span class="nv"> </span><span class="s">hostvars[host][&#39;inventory_hostname&#39;]</span><span class="nv"> </span><span class="s">}}</span><span class="nv">    </span><span class="s">{{</span><span class="nv"> </span><span class="s">hostvars[host][&#39;ansible_hostname&#39;]</span><span class="nv"> </span><span class="s">}}</span><span class="nv">    </span><span class="s">{{</span><span class="nv"> </span><span class="s">hostvars[host][&#39;ansible_host&#39;]</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-76"><a id="line-76" name="line-76"></a>        <span class="nt">line</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[host][&#39;ansible_env&#39;].SSH_CONNECTION.split(&#39;</span><span class="nv"> </span><span class="s">&#39;)[2]</span><span class="nv"> </span><span class="s">}}</span><span class="nv">    </span><span class="s">{{</span><span class="nv"> </span><span class="s">hostvars[host][&#39;inventory_hostname&#39;]</span><span class="nv"> </span><span class="s">}}</span><span class="nv">    </span><span class="s">{{</span><span class="nv"> </span><span class="s">hostvars[host][&#39;ansible_hostname&#39;]</span><span class="nv"> </span><span class="s">}}</span><span class="nv">    </span><span class="s">{{</span><span class="nv"> </span><span class="s">hostvars[host][&#39;ansible_host&#39;]</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-77"><a id="line-77" name="line-77"></a>        <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">present</span>
+</span><span id="line-78"><a id="line-78" name="line-78"></a>        <span class="nt">backup</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
+</span><span id="line-79"><a id="line-79" name="line-79"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">etchostsupdate</span>
+</span><span id="line-80"><a id="line-80" name="line-80"></a>
+</span><span id="line-81"><a id="line-81" name="line-81"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">provision the initial virtual infra</span>
+</span><span id="line-82"><a id="line-82" name="line-82"></a>      <span class="nt">ansible.builtin.include_role</span><span class="p">:</span>
+</span><span id="line-83"><a id="line-83" name="line-83"></a>        <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;../../roles/kubeinit_libvirt&quot;</span>
+</span><span id="line-84"><a id="line-84" name="line-84"></a>        <span class="nt">public</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="line-85"><a id="line-85" name="line-85"></a>
+</span><span id="line-86"><a id="line-86" name="line-86"></a>  <span class="nt">vars</span><span class="p">:</span>
+</span><span id="line-87"><a id="line-87" name="line-87"></a>    <span class="nt">kubeinit_deployment_node_name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">inventory_hostname</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-88"><a id="line-88" name="line-88"></a>  <span class="nt">delegate_to</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[kubeinit_deployment_node_name].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
 </span></pre></div>
 </td></tr></table>
     </div>
