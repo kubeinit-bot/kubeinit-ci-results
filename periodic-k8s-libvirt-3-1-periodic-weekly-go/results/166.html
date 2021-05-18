@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 10 May 2021 21:06:22 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 21:06:39 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 10 May 2021 21:36:17 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 21:56:21 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:29:54.63
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:49:42.36
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/k8s.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/k8s.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/k8s.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">468 results</a>
+                            <a href="../playbooks/1.html#results">476 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">34 files</a>
+                            <a href="../playbooks/1.html#files">42 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -186,12 +186,12 @@
         <ul class="pf-c-list">
             <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Grow the partitions</a></li>
             <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/23.html#line-42">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/60_k8s_deploy_nodes.yml:42</a>
+            <li><strong>Path</strong>: <a href="../files/31.html#line-42">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/60_k8s_deploy_nodes.yml:42</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 10 May 2021 21:08:28 -0400</li>
-            <li><strong>Ended</strong>: 10 May 2021 21:08:32 -0400</li>
-            <li><strong>Duration</strong>: 00:00:03.90</li>
+            <li><strong>Started</strong>: 17 May 2021 21:08:22 -0400</li>
+            <li><strong>Ended</strong>: 17 May 2021 21:08:31 -0400</li>
+            <li><strong>Duration</strong>: 00:00:08.76</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -221,8 +221,8 @@
                         <a href="#cmd">cmd</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>qemu-img convert -f qcow2 &#39;/var/lib/libvirt/images/CentOS-Stream-GenericCloud-8-20210210.0.x86_64.qcow2&#39; -O qcow2 &#39;/var/lib/libvirt/images/k8s-master-02.qcow2&#39;
-qemu-img resize /var/lib/libvirt/images/k8s-master-02.qcow2 +25G
+                        <div class="codehilite"><pre><span></span>qemu-img convert -f qcow2 &#39;/var/lib/libvirt/images/CentOS-Stream-GenericCloud-8-20210210.0.x86_64.qcow2&#39; -O qcow2 &#39;/var/lib/libvirt/images/k8s-master-01.qcow2&#39;
+qemu-img resize /var/lib/libvirt/images/k8s-master-01.qcow2 +25G
 </pre></div>
 
                     </td>
@@ -233,7 +233,7 @@ qemu-img resize /var/lib/libvirt/images/k8s-master-02.qcow2 +25G
                         <a href="#delta">delta</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:00:03.709044
+                        <div class="codehilite"><pre><span></span>0:00:08.546489
 </pre></div>
 
                     </td>
@@ -244,7 +244,7 @@ qemu-img resize /var/lib/libvirt/images/k8s-master-02.qcow2 +25G
                         <a href="#end">end</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-10 21:08:32.002122
+                        <div class="codehilite"><pre><span></span>2021-05-17 21:08:31.331484
 </pre></div>
 
                     </td>
@@ -257,7 +257,7 @@ qemu-img resize /var/lib/libvirt/images/k8s-master-02.qcow2 +25G
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;qemu-img convert -f qcow2 &#39;/var/lib/libvirt/images/CentOS-Stream-GenericCloud-8-20210210.0.x86_64.qcow2&#39; -O qcow2 &#39;/var/lib/libvirt/images/k8s-master-02.qcow2&#39;\nqemu-img resize /var/lib/libvirt/images/k8s-master-02.qcow2 +25G\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;qemu-img convert -f qcow2 &#39;/var/lib/libvirt/images/CentOS-Stream-GenericCloud-8-20210210.0.x86_64.qcow2&#39; -O qcow2 &#39;/var/lib/libvirt/images/k8s-master-01.qcow2&#39;\nqemu-img resize /var/lib/libvirt/images/k8s-master-01.qcow2 +25G\n&quot;</span><span class="p">,</span>
         <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
@@ -291,7 +291,7 @@ qemu-img resize /var/lib/libvirt/images/k8s-master-02.qcow2 +25G
                         <a href="#start">start</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-10 21:08:28.293078
+                        <div class="codehilite"><pre><span></span>2021-05-17 21:08:22.784995
 </pre></div>
 
                     </td>

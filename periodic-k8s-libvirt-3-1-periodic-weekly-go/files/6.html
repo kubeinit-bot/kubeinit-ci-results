@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="../static/css/pygments.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -20,7 +20,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -66,25 +66,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 10 May 2021 21:06:22 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 21:06:39 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 10 May 2021 21:36:17 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 21:56:21 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:29:54.63
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:49:42.36
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/k8s.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/k8s.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/k8s.yml
                             </a>
@@ -97,17 +97,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">468 results</a>
+                            <a href="../playbooks/1.html#results">476 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">34 files</a>
+                            <a href="../playbooks/1.html#files">42 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -183,7 +183,7 @@
 
 <div class="pf-c-card" style="margin: 1em 0;">
     <div class="pf-c-card__header pf-c-title pf-m-md">
-        <strong>/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_prepare/defaults/main.yml</strong>
+        <strong>/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_prepare/vars/main.yml</strong>
     </div>
     <div class="pf-c-card__body">
         <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"><a href="#line-1"> 1</a></span>
@@ -207,28 +207,28 @@
 <span class="normal"><a href="#line-19">19</a></span>
 <span class="normal"><a href="#line-20">20</a></span>
 <span class="normal"><a href="#line-21">21</a></span>
-<span class="normal"><a href="#line-22">22</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a name="line-1"></a><span class="nn">---</span>
-</span><span id="line-2"><a name="line-2"></a><span class="c1"># Copyright 2020 KubeInit.</span>
-</span><span id="line-3"><a name="line-3"></a><span class="c1"># All Rights Reserved.</span>
-</span><span id="line-4"><a name="line-4"></a><span class="c1">#</span>
-</span><span id="line-5"><a name="line-5"></a><span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
-</span><span id="line-6"><a name="line-6"></a><span class="c1"># not use this file except in compliance with the License. You may obtain</span>
-</span><span id="line-7"><a name="line-7"></a><span class="c1"># a copy of the License at</span>
-</span><span id="line-8"><a name="line-8"></a><span class="c1">#</span>
-</span><span id="line-9"><a name="line-9"></a><span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
-</span><span id="line-10"><a name="line-10"></a><span class="c1">#</span>
-</span><span id="line-11"><a name="line-11"></a><span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
-</span><span id="line-12"><a name="line-12"></a><span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT</span>
-</span><span id="line-13"><a name="line-13"></a><span class="c1"># WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the</span>
-</span><span id="line-14"><a name="line-14"></a><span class="c1"># License for the specific language governing permissions and limitations</span>
-</span><span id="line-15"><a name="line-15"></a><span class="c1"># under the License.</span>
-</span><span id="line-16"><a name="line-16"></a>
-</span><span id="line-17"><a name="line-17"></a>
-</span><span id="line-18"><a name="line-18"></a><span class="c1"># All variables intended for modification should be placed in this file.</span>
-</span><span id="line-19"><a name="line-19"></a>
-</span><span id="line-20"><a name="line-20"></a><span class="c1"># All variables within this role should have a prefix of &quot;kubeinit_prepare_&quot;</span>
-</span><span id="line-21"><a name="line-21"></a><span class="nt">kubeinit_prepare_debug</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">(ansible_verbosity</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">int)</span><span class="nv"> </span><span class="s">&gt;=</span><span class="nv"> </span><span class="s">2</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">bool</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-22"><a name="line-22"></a><span class="nt">kubeinit_prepare_hide_sensitive_logs</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="normal"><a href="#line-22">22</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a id="line-1" name="line-1"></a><span class="nn">---</span>
+</span><span id="line-2"><a id="line-2" name="line-2"></a><span class="c1"># Copyright 2020 KubeInit.</span>
+</span><span id="line-3"><a id="line-3" name="line-3"></a><span class="c1"># All Rights Reserved.</span>
+</span><span id="line-4"><a id="line-4" name="line-4"></a><span class="c1">#</span>
+</span><span id="line-5"><a id="line-5" name="line-5"></a><span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+</span><span id="line-6"><a id="line-6" name="line-6"></a><span class="c1"># not use this file except in compliance with the License. You may obtain</span>
+</span><span id="line-7"><a id="line-7" name="line-7"></a><span class="c1"># a copy of the License at</span>
+</span><span id="line-8"><a id="line-8" name="line-8"></a><span class="c1">#</span>
+</span><span id="line-9"><a id="line-9" name="line-9"></a><span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
+</span><span id="line-10"><a id="line-10" name="line-10"></a><span class="c1">#</span>
+</span><span id="line-11"><a id="line-11" name="line-11"></a><span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
+</span><span id="line-12"><a id="line-12" name="line-12"></a><span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT</span>
+</span><span id="line-13"><a id="line-13" name="line-13"></a><span class="c1"># WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the</span>
+</span><span id="line-14"><a id="line-14" name="line-14"></a><span class="c1"># License for the specific language governing permissions and limitations</span>
+</span><span id="line-15"><a id="line-15" name="line-15"></a><span class="c1"># under the License.</span>
+</span><span id="line-16"><a id="line-16" name="line-16"></a>
+</span><span id="line-17"><a id="line-17" name="line-17"></a>
+</span><span id="line-18"><a id="line-18" name="line-18"></a><span class="c1"># While options found within the vars/ path can be overridden using extra</span>
+</span><span id="line-19"><a id="line-19" name="line-19"></a><span class="c1"># vars, items within this path are considered part of the role and not</span>
+</span><span id="line-20"><a id="line-20" name="line-20"></a><span class="c1"># intended to be modified.</span>
+</span><span id="line-21"><a id="line-21" name="line-21"></a>
+</span><span id="line-22"><a id="line-22" name="line-22"></a><span class="c1"># All variables within this role should have a prefix of &quot;kubeinit_prepare_&quot;</span>
 </span></pre></div>
 </td></tr></table>
     </div>
