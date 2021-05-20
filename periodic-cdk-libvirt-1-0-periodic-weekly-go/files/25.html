@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="../static/css/pygments.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -20,7 +20,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -66,16 +66,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 11 May 2021 21:25:25 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 11:47:09 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 11 May 2021 21:30:27 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 11:54:50 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:05:02.59
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:07:40.89
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/cdk.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/cdk.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/cdk.yml
                             </a>
@@ -97,17 +97,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">257 results</a>
+                            <a href="../playbooks/1.html#results">271 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">34 files</a>
+                            <a href="../playbooks/1.html#files">39 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -183,7 +183,7 @@
 
 <div class="pf-c-card" style="margin: 1em 0;">
     <div class="pf-c-card__header pf-c-title pf-m-md">
-        <strong>/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_cdk/tasks/00_bounce_packages.yml</strong>
+        <strong>/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_validations/meta/main.yml</strong>
     </div>
     <div class="pf-c-card__body">
         <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"><a href="#line-1"> 1</a></span>
@@ -227,80 +227,48 @@
 <span class="normal"><a href="#line-39">39</a></span>
 <span class="normal"><a href="#line-40">40</a></span>
 <span class="normal"><a href="#line-41">41</a></span>
-<span class="normal"><a href="#line-42">42</a></span>
-<span class="normal"><a href="#line-43">43</a></span>
-<span class="normal"><a href="#line-44">44</a></span>
-<span class="normal"><a href="#line-45">45</a></span>
-<span class="normal"><a href="#line-46">46</a></span>
-<span class="normal"><a href="#line-47">47</a></span>
-<span class="normal"><a href="#line-48">48</a></span>
-<span class="normal"><a href="#line-49">49</a></span>
-<span class="normal"><a href="#line-50">50</a></span>
-<span class="normal"><a href="#line-51">51</a></span>
-<span class="normal"><a href="#line-52">52</a></span>
-<span class="normal"><a href="#line-53">53</a></span>
-<span class="normal"><a href="#line-54">54</a></span>
-<span class="normal"><a href="#line-55">55</a></span>
-<span class="normal"><a href="#line-56">56</a></span>
-<span class="normal"><a href="#line-57">57</a></span>
-<span class="normal"><a href="#line-58">58</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a name="line-1"></a><span class="nn">---</span>
-</span><span id="line-2"><a name="line-2"></a><span class="c1"># Copyright kubeinit.com</span>
-</span><span id="line-3"><a name="line-3"></a><span class="c1"># All Rights Reserved.</span>
-</span><span id="line-4"><a name="line-4"></a><span class="c1">#</span>
-</span><span id="line-5"><a name="line-5"></a><span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
-</span><span id="line-6"><a name="line-6"></a><span class="c1"># not use this file except in compliance with the License. You may obtain</span>
-</span><span id="line-7"><a name="line-7"></a><span class="c1"># a copy of the License at</span>
-</span><span id="line-8"><a name="line-8"></a><span class="c1">#</span>
-</span><span id="line-9"><a name="line-9"></a><span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
-</span><span id="line-10"><a name="line-10"></a><span class="c1">#</span>
-</span><span id="line-11"><a name="line-11"></a><span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
-</span><span id="line-12"><a name="line-12"></a><span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT</span>
-</span><span id="line-13"><a name="line-13"></a><span class="c1"># WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the</span>
-</span><span id="line-14"><a name="line-14"></a><span class="c1"># License for the specific language governing permissions and limitations</span>
-</span><span id="line-15"><a name="line-15"></a><span class="c1"># under the License.</span>
-</span><span id="line-16"><a name="line-16"></a>
-</span><span id="line-17"><a name="line-17"></a><span class="c1">#</span>
-</span><span id="line-18"><a name="line-18"></a><span class="c1"># Initial config</span>
-</span><span id="line-19"><a name="line-19"></a><span class="c1">#</span>
-</span><span id="line-20"><a name="line-20"></a>
-</span><span id="line-21"><a name="line-21"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Configure common requirements in guests</span>
-</span><span id="line-22"><a name="line-22"></a>  <span class="nt">block</span><span class="p">:</span>
-</span><span id="line-23"><a name="line-23"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Disable</span><span class="nv"> </span><span class="s">IPv6&quot;</span>
-</span><span id="line-24"><a name="line-24"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-25"><a name="line-25"></a>        <span class="no">set -o pipefail</span>
-</span><span id="line-26"><a name="line-26"></a>        <span class="no"># Disable IPv6</span>
-</span><span id="line-27"><a name="line-27"></a>        <span class="no">echo &quot;net.ipv6.conf.all.disable_ipv6 = 1&quot; &gt; /etc/sysctl.d/70-ipv6.conf</span>
-</span><span id="line-28"><a name="line-28"></a>        <span class="no">echo &quot;net.ipv6.conf.default.disable_ipv6 = 1&quot; &gt;&gt; /etc/sysctl.d/70-ipv6.conf</span>
-</span><span id="line-29"><a name="line-29"></a>        <span class="no">sysctl --load /etc/sysctl.d/70-ipv6.conf</span>
-</span><span id="line-30"><a name="line-30"></a>      <span class="nt">args</span><span class="p">:</span>
-</span><span id="line-31"><a name="line-31"></a>        <span class="nt">executable</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/bin/bash</span>
-</span><span id="line-32"><a name="line-32"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">disable_ipv6</span>
-</span><span id="line-33"><a name="line-33"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;disable_ipv6.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
-</span><span id="line-34"><a name="line-34"></a>
-</span><span id="line-35"><a name="line-35"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Force apt-get update</span>
-</span><span id="line-36"><a name="line-36"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-37"><a name="line-37"></a>        <span class="no">apt-get update</span>
-</span><span id="line-38"><a name="line-38"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-</span><span id="line-39"><a name="line-39"></a>
-</span><span id="line-40"><a name="line-40"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">update packages</span>
-</span><span id="line-41"><a name="line-41"></a>      <span class="nt">ansible.builtin.package</span><span class="p">:</span>
-</span><span id="line-42"><a name="line-42"></a>        <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;*&quot;</span>
-</span><span id="line-43"><a name="line-43"></a>        <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">latest</span>
-</span><span id="line-44"><a name="line-44"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">update_packages</span>
-</span><span id="line-45"><a name="line-45"></a>
-</span><span id="line-46"><a name="line-46"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Enable cloud init</span>
-</span><span id="line-47"><a name="line-47"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-48"><a name="line-48"></a>        <span class="no">systemctl enable cloud-init</span>
-</span><span id="line-49"><a name="line-49"></a>        <span class="no">systemctl start cloud-init</span>
-</span><span id="line-50"><a name="line-50"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-</span><span id="line-51"><a name="line-51"></a>
-</span><span id="line-52"><a name="line-52"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Reboot immediately after the package update</span>
-</span><span id="line-53"><a name="line-53"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="s">&quot;sleep</span><span class="nv"> </span><span class="s">5</span><span class="nv"> </span><span class="s">&amp;&amp;</span><span class="nv"> </span><span class="s">reboot&quot;</span>
-</span><span id="line-54"><a name="line-54"></a>      <span class="nt">async</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
-</span><span id="line-55"><a name="line-55"></a>      <span class="nt">poll</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0</span>
-</span><span id="line-56"><a name="line-56"></a>      <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">update_packages is changed and kubeinit_cdk_reboot_after_package_update</span>
-</span><span id="line-57"><a name="line-57"></a>
-</span><span id="line-58"><a name="line-58"></a>  <span class="nt">delegate_to</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[kubeinit_deployment_node_name].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
+<span class="normal"><a href="#line-42">42</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a id="line-1" name="line-1"></a><span class="nn">---</span>
+</span><span id="line-2"><a id="line-2" name="line-2"></a><span class="c1"># Copyright 2020 KubeInit.</span>
+</span><span id="line-3"><a id="line-3" name="line-3"></a><span class="c1"># All Rights Reserved.</span>
+</span><span id="line-4"><a id="line-4" name="line-4"></a><span class="c1">#</span>
+</span><span id="line-5"><a id="line-5" name="line-5"></a><span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+</span><span id="line-6"><a id="line-6" name="line-6"></a><span class="c1"># not use this file except in compliance with the License. You may obtain</span>
+</span><span id="line-7"><a id="line-7" name="line-7"></a><span class="c1"># a copy of the License at</span>
+</span><span id="line-8"><a id="line-8" name="line-8"></a><span class="c1">#</span>
+</span><span id="line-9"><a id="line-9" name="line-9"></a><span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
+</span><span id="line-10"><a id="line-10" name="line-10"></a><span class="c1">#</span>
+</span><span id="line-11"><a id="line-11" name="line-11"></a><span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
+</span><span id="line-12"><a id="line-12" name="line-12"></a><span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT</span>
+</span><span id="line-13"><a id="line-13" name="line-13"></a><span class="c1"># WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the</span>
+</span><span id="line-14"><a id="line-14" name="line-14"></a><span class="c1"># License for the specific language governing permissions and limitations</span>
+</span><span id="line-15"><a id="line-15" name="line-15"></a><span class="c1"># under the License.</span>
+</span><span id="line-16"><a id="line-16" name="line-16"></a>
+</span><span id="line-17"><a id="line-17" name="line-17"></a>
+</span><span id="line-18"><a id="line-18" name="line-18"></a><span class="nt">galaxy_info</span><span class="p">:</span>
+</span><span id="line-19"><a id="line-19" name="line-19"></a>  <span class="nt">author</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">KubeInit</span>
+</span><span id="line-20"><a id="line-20" name="line-20"></a>  <span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">KubeInit Role -- kubeinit_validations</span>
+</span><span id="line-21"><a id="line-21" name="line-21"></a>  <span class="nt">company</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Red Hat</span>
+</span><span id="line-22"><a id="line-22" name="line-22"></a>  <span class="nt">license</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Apache-2.0</span>
+</span><span id="line-23"><a id="line-23" name="line-23"></a>  <span class="nt">min_ansible_version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2.7</span>
+</span><span id="line-24"><a id="line-24" name="line-24"></a>  <span class="c1">#</span>
+</span><span id="line-25"><a id="line-25" name="line-25"></a>  <span class="c1"># Provide a list of supported platforms, and for each platform a list of versions.</span>
+</span><span id="line-26"><a id="line-26" name="line-26"></a>  <span class="c1"># If you don&#39;t wish to enumerate all versions for a particular platform, use &#39;all&#39;.</span>
+</span><span id="line-27"><a id="line-27" name="line-27"></a>  <span class="c1"># To view available platforms and versions (or releases), visit:</span>
+</span><span id="line-28"><a id="line-28" name="line-28"></a>  <span class="c1"># https://galaxy.ansible.com/api/v1/platforms/</span>
+</span><span id="line-29"><a id="line-29" name="line-29"></a>  <span class="c1">#</span>
+</span><span id="line-30"><a id="line-30" name="line-30"></a>  <span class="nt">platforms</span><span class="p">:</span>
+</span><span id="line-31"><a id="line-31" name="line-31"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">CentOS</span>
+</span><span id="line-32"><a id="line-32" name="line-32"></a>      <span class="nt">versions</span><span class="p">:</span>
+</span><span id="line-33"><a id="line-33" name="line-33"></a>        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">7</span>
+</span><span id="line-34"><a id="line-34" name="line-34"></a>        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">8</span>
+</span><span id="line-35"><a id="line-35" name="line-35"></a>
+</span><span id="line-36"><a id="line-36" name="line-36"></a>  <span class="nt">galaxy_tags</span><span class="p">:</span>
+</span><span id="line-37"><a id="line-37" name="line-37"></a>    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit</span>
+</span><span id="line-38"><a id="line-38" name="line-38"></a>
+</span><span id="line-39"><a id="line-39" name="line-39"></a>
+</span><span id="line-40"><a id="line-40" name="line-40"></a><span class="c1"># List your role dependencies here, one per line. Be sure to remove the &#39;[]&#39; above,</span>
+</span><span id="line-41"><a id="line-41" name="line-41"></a><span class="c1"># if you add dependencies to this list.</span>
+</span><span id="line-42"><a id="line-42" name="line-42"></a><span class="nt">dependencies</span><span class="p">:</span> <span class="p p-Indicator">[]</span>
 </span></pre></div>
 </td></tr></table>
     </div>

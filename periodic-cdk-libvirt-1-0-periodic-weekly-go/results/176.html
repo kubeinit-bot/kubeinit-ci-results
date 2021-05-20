@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 04 May 2021 21:22:06 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 11:47:09 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 04 May 2021 21:26:25 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 11:54:50 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:04:19.82
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:07:40.89
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/cdk.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/cdk.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/cdk.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">265 results</a>
+                            <a href="../playbooks/1.html#results">271 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">27 files</a>
+                            <a href="../playbooks/1.html#files">39 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_cdk : Force apt-get update</a></li>
-            <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/19.html#line-35">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_cdk/tasks/00_bounce_packages.yml:35</a>
+            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Create the hosts template</a></li>
+            <li><strong>Action</strong>: ansible.builtin.template</li>
+            <li><strong>Path</strong>: <a href="../files/28.html#line-25">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/60_rke_deploy_nodes.yml:25</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
-            <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 04 May 2021 21:24:01 -0400</li>
-            <li><strong>Ended</strong>: 04 May 2021 21:24:07 -0400</li>
-            <li><strong>Duration</strong>: 00:00:06.45</li>
+            <li><strong>Status</strong>: changed</li>
+            <li><strong>Started</strong>: 20 May 2021 11:49:42 -0400</li>
+            <li><strong>Ended</strong>: 20 May 2021 11:49:42 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.54</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -210,40 +210,62 @@
                         <a href="#changed">changed</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>False
+                        <div class="codehilite"><pre><span></span>True
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="cmd" data-label="cmd" class="pf-m-width-20">
-                        <a href="#cmd">cmd</a>
+                    <td role="cell" id="checksum" data-label="checksum" class="pf-m-width-20">
+                        <a href="#checksum">checksum</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>apt-get update
+                        <div class="codehilite"><pre><span></span>2f5ec57304b46462892f348be452b46b90b135cd
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="delta" data-label="delta" class="pf-m-width-20">
-                        <a href="#delta">delta</a>
+                    <td role="cell" id="dest" data-label="dest" class="pf-m-width-20">
+                        <a href="#dest">dest</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:00:06.302033
+                        <div class="codehilite"><pre><span></span>/tmp/cdk-master-01/hosts.debian.tmpl
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="end" data-label="end" class="pf-m-width-20">
-                        <a href="#end">end</a>
+                    <td role="cell" id="diff" data-label="diff" class="pf-m-width-20">
+                        <a href="#diff">diff</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-05 01:24:07.020582
+                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="gid" data-label="gid" class="pf-m-width-20">
+                        <a href="#gid">gid</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>0
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="group" data-label="group" class="pf-m-width-20">
+                        <a href="#group">group</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>root
 </pre></div>
 
                     </td>
@@ -256,17 +278,27 @@
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;apt-get update\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="nt">&quot;_original_basename&quot;</span><span class="p">:</span> <span class="s2">&quot;101-cloudinit-hosts.tmpl.j2&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;backup&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;checksum&quot;</span><span class="p">:</span> <span class="s2">&quot;2f5ec57304b46462892f348be452b46b90b135cd&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;content&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;dest&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/cdk-master-01/hosts.debian.tmpl&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;directory_mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;follow&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;local_follow&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;0644&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;remote_src&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.ansible/tmp/ansible-tmp-1621525782.2254772-607502-93526748222421/source&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;validate&quot;</span><span class="p">:</span> <span class="kc">null</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -275,151 +307,77 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="rc" data-label="rc" class="pf-m-width-20">
-                        <a href="#rc">rc</a>
+                    <td role="cell" id="md5sum" data-label="md5sum" class="pf-m-width-20">
+                        <a href="#md5sum">md5sum</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>51afa50aa8780000e5990736ead97673
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="mode" data-label="mode" class="pf-m-width-20">
+                        <a href="#mode">mode</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>0644
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="owner" data-label="owner" class="pf-m-width-20">
+                        <a href="#owner">owner</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>root
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="size" data-label="size" class="pf-m-width-20">
+                        <a href="#size">size</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>1178
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="src" data-label="src" class="pf-m-width-20">
+                        <a href="#src">src</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>/root/.ansible/tmp/ansible-tmp-1621525782.2254772-607502-93526748222421/source
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="state" data-label="state" class="pf-m-width-20">
+                        <a href="#state">state</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>file
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="uid" data-label="uid" class="pf-m-width-20">
+                        <a href="#uid">uid</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span>0
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="start" data-label="start" class="pf-m-width-20">
-                        <a href="#start">start</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-05 01:24:00.718549
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stderr" data-label="stderr" class="pf-m-width-20">
-                        <a href="#stderr">stderr</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stderr_lines" data-label="stderr_lines" class="pf-m-width-20">
-                        <a href="#stderr_lines">stderr_lines</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stdout" data-label="stdout" class="pf-m-width-20">
-                        <a href="#stdout">stdout</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>Hit:1 http://archive.ubuntu.com/ubuntu groovy InRelease
-Get:2 http://archive.ubuntu.com/ubuntu groovy-updates InRelease [115 kB]
-Get:3 http://security.ubuntu.com/ubuntu groovy-security InRelease [110 kB]
-Get:4 http://security.ubuntu.com/ubuntu groovy-security/main amd64 Packages [287 kB]
-Get:5 http://security.ubuntu.com/ubuntu groovy-security/main Translation-en [69.5 kB]
-Get:6 http://security.ubuntu.com/ubuntu groovy-security/main amd64 c-n-f Metadata [4,080 B]
-Get:7 http://security.ubuntu.com/ubuntu groovy-security/universe amd64 Packages [67.6 kB]
-Get:8 http://security.ubuntu.com/ubuntu groovy-security/universe Translation-en [31.5 kB]
-Get:9 http://security.ubuntu.com/ubuntu groovy-security/universe amd64 c-n-f Metadata [3,084 B]
-Get:10 http://security.ubuntu.com/ubuntu groovy-security/multiverse amd64 Packages [8,100 B]
-Get:11 http://security.ubuntu.com/ubuntu groovy-security/multiverse Translation-en [2,320 B]
-Get:12 http://security.ubuntu.com/ubuntu groovy-security/multiverse amd64 c-n-f Metadata [304 B]
-Get:13 http://archive.ubuntu.com/ubuntu groovy-backports InRelease [101 kB]
-Get:14 http://archive.ubuntu.com/ubuntu groovy/universe amd64 Packages [12.6 MB]
-Get:15 http://archive.ubuntu.com/ubuntu groovy/universe Translation-en [5,262 kB]
-Get:16 http://archive.ubuntu.com/ubuntu groovy/universe amd64 c-n-f Metadata [270 kB]
-Get:17 http://archive.ubuntu.com/ubuntu groovy/multiverse amd64 Packages [202 kB]
-Get:18 http://archive.ubuntu.com/ubuntu groovy/multiverse Translation-en [106 kB]
-Get:19 http://archive.ubuntu.com/ubuntu groovy/multiverse amd64 c-n-f Metadata [9,260 B]
-Get:20 http://archive.ubuntu.com/ubuntu groovy-updates/main amd64 Packages [445 kB]
-Get:21 http://archive.ubuntu.com/ubuntu groovy-updates/main Translation-en [112 kB]
-Get:22 http://archive.ubuntu.com/ubuntu groovy-updates/main amd64 c-n-f Metadata [7,680 B]
-Get:23 http://archive.ubuntu.com/ubuntu groovy-updates/universe amd64 Packages [165 kB]
-Get:24 http://archive.ubuntu.com/ubuntu groovy-updates/universe Translation-en [64.9 kB]
-Get:25 http://archive.ubuntu.com/ubuntu groovy-updates/universe amd64 c-n-f Metadata [5,292 B]
-Get:26 http://archive.ubuntu.com/ubuntu groovy-updates/multiverse amd64 Packages [14.0 kB]
-Get:27 http://archive.ubuntu.com/ubuntu groovy-updates/multiverse Translation-en [4,012 B]
-Get:28 http://archive.ubuntu.com/ubuntu groovy-updates/multiverse amd64 c-n-f Metadata [544 B]
-Get:29 http://archive.ubuntu.com/ubuntu groovy-backports/main amd64 c-n-f Metadata [112 B]
-Get:30 http://archive.ubuntu.com/ubuntu groovy-backports/restricted amd64 c-n-f Metadata [116 B]
-Get:31 http://archive.ubuntu.com/ubuntu groovy-backports/universe amd64 Packages [3,924 B]
-Get:32 http://archive.ubuntu.com/ubuntu groovy-backports/universe Translation-en [1,324 B]
-Get:33 http://archive.ubuntu.com/ubuntu groovy-backports/universe amd64 c-n-f Metadata [188 B]
-Get:34 http://archive.ubuntu.com/ubuntu groovy-backports/multiverse amd64 c-n-f Metadata [116 B]
-Fetched 20.1 MB in 4s (5,504 kB/s)
-Reading package lists...
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stdout_lines" data-label="stdout_lines" class="pf-m-width-20">
-                        <a href="#stdout_lines">stdout_lines</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;Hit:1 http://archive.ubuntu.com/ubuntu groovy InRelease&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:2 http://archive.ubuntu.com/ubuntu groovy-updates InRelease [115 kB]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:3 http://security.ubuntu.com/ubuntu groovy-security InRelease [110 kB]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:4 http://security.ubuntu.com/ubuntu groovy-security/main amd64 Packages [287 kB]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:5 http://security.ubuntu.com/ubuntu groovy-security/main Translation-en [69.5 kB]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:6 http://security.ubuntu.com/ubuntu groovy-security/main amd64 c-n-f Metadata [4,080 B]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:7 http://security.ubuntu.com/ubuntu groovy-security/universe amd64 Packages [67.6 kB]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:8 http://security.ubuntu.com/ubuntu groovy-security/universe Translation-en [31.5 kB]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:9 http://security.ubuntu.com/ubuntu groovy-security/universe amd64 c-n-f Metadata [3,084 B]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:10 http://security.ubuntu.com/ubuntu groovy-security/multiverse amd64 Packages [8,100 B]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:11 http://security.ubuntu.com/ubuntu groovy-security/multiverse Translation-en [2,320 B]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:12 http://security.ubuntu.com/ubuntu groovy-security/multiverse amd64 c-n-f Metadata [304 B]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:13 http://archive.ubuntu.com/ubuntu groovy-backports InRelease [101 kB]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:14 http://archive.ubuntu.com/ubuntu groovy/universe amd64 Packages [12.6 MB]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:15 http://archive.ubuntu.com/ubuntu groovy/universe Translation-en [5,262 kB]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:16 http://archive.ubuntu.com/ubuntu groovy/universe amd64 c-n-f Metadata [270 kB]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:17 http://archive.ubuntu.com/ubuntu groovy/multiverse amd64 Packages [202 kB]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:18 http://archive.ubuntu.com/ubuntu groovy/multiverse Translation-en [106 kB]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:19 http://archive.ubuntu.com/ubuntu groovy/multiverse amd64 c-n-f Metadata [9,260 B]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:20 http://archive.ubuntu.com/ubuntu groovy-updates/main amd64 Packages [445 kB]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:21 http://archive.ubuntu.com/ubuntu groovy-updates/main Translation-en [112 kB]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:22 http://archive.ubuntu.com/ubuntu groovy-updates/main amd64 c-n-f Metadata [7,680 B]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:23 http://archive.ubuntu.com/ubuntu groovy-updates/universe amd64 Packages [165 kB]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:24 http://archive.ubuntu.com/ubuntu groovy-updates/universe Translation-en [64.9 kB]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:25 http://archive.ubuntu.com/ubuntu groovy-updates/universe amd64 c-n-f Metadata [5,292 B]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:26 http://archive.ubuntu.com/ubuntu groovy-updates/multiverse amd64 Packages [14.0 kB]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:27 http://archive.ubuntu.com/ubuntu groovy-updates/multiverse Translation-en [4,012 B]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:28 http://archive.ubuntu.com/ubuntu groovy-updates/multiverse amd64 c-n-f Metadata [544 B]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:29 http://archive.ubuntu.com/ubuntu groovy-backports/main amd64 c-n-f Metadata [112 B]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:30 http://archive.ubuntu.com/ubuntu groovy-backports/restricted amd64 c-n-f Metadata [116 B]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:31 http://archive.ubuntu.com/ubuntu groovy-backports/universe amd64 Packages [3,924 B]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:32 http://archive.ubuntu.com/ubuntu groovy-backports/universe Translation-en [1,324 B]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:33 http://archive.ubuntu.com/ubuntu groovy-backports/universe amd64 c-n-f Metadata [188 B]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Get:34 http://archive.ubuntu.com/ubuntu groovy-backports/multiverse amd64 c-n-f Metadata [116 B]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Fetched 20.1 MB in 4s (5,504 kB/s)&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Reading package lists...&quot;</span>
-<span class="p">]</span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="warnings" data-label="warnings" class="pf-m-width-20">
-                        <a href="#warnings">warnings</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;Consider using the apt module rather than running &#39;apt-get&#39;.  If you need to use command because apt is insufficient you can add &#39;warn: false&#39; to this command task or set &#39;command_warnings=False&#39; in ansible.cfg to get rid of this message.&quot;</span>
-<span class="p">]</span>
 </pre></div>
 
                     </td>
