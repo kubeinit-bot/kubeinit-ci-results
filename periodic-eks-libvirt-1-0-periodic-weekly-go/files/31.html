@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="../static/css/pygments.css">
     
-    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -20,7 +20,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -66,16 +66,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 10:13:42 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 17:51:39 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 10:33:34 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 18:10:56 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:19:51.74
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:19:16.73
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -102,12 +102,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">247 results</a>
+                            <a href="../playbooks/1.html#results">245 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">39 files</a>
+                            <a href="../playbooks/1.html#files">36 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -183,7 +183,7 @@
 
 <div class="pf-c-card" style="margin: 1em 0;">
     <div class="pf-c-card__header pf-c-title pf-m-md">
-        <strong>/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/60_k8s_deploy_nodes.yml</strong>
+        <strong>/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_eks/tasks/10_configure_service_nodes.yml</strong>
     </div>
     <div class="pf-c-card__body">
         <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"><a href="#line-1">  1</a></span>
@@ -289,7 +289,39 @@
 <span class="normal"><a href="#line-101">101</a></span>
 <span class="normal"><a href="#line-102">102</a></span>
 <span class="normal"><a href="#line-103">103</a></span>
-<span class="normal"><a href="#line-104">104</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a id="line-1" name="line-1"></a><span class="nn">---</span>
+<span class="normal"><a href="#line-104">104</a></span>
+<span class="normal"><a href="#line-105">105</a></span>
+<span class="normal"><a href="#line-106">106</a></span>
+<span class="normal"><a href="#line-107">107</a></span>
+<span class="normal"><a href="#line-108">108</a></span>
+<span class="normal"><a href="#line-109">109</a></span>
+<span class="normal"><a href="#line-110">110</a></span>
+<span class="normal"><a href="#line-111">111</a></span>
+<span class="normal"><a href="#line-112">112</a></span>
+<span class="normal"><a href="#line-113">113</a></span>
+<span class="normal"><a href="#line-114">114</a></span>
+<span class="normal"><a href="#line-115">115</a></span>
+<span class="normal"><a href="#line-116">116</a></span>
+<span class="normal"><a href="#line-117">117</a></span>
+<span class="normal"><a href="#line-118">118</a></span>
+<span class="normal"><a href="#line-119">119</a></span>
+<span class="normal"><a href="#line-120">120</a></span>
+<span class="normal"><a href="#line-121">121</a></span>
+<span class="normal"><a href="#line-122">122</a></span>
+<span class="normal"><a href="#line-123">123</a></span>
+<span class="normal"><a href="#line-124">124</a></span>
+<span class="normal"><a href="#line-125">125</a></span>
+<span class="normal"><a href="#line-126">126</a></span>
+<span class="normal"><a href="#line-127">127</a></span>
+<span class="normal"><a href="#line-128">128</a></span>
+<span class="normal"><a href="#line-129">129</a></span>
+<span class="normal"><a href="#line-130">130</a></span>
+<span class="normal"><a href="#line-131">131</a></span>
+<span class="normal"><a href="#line-132">132</a></span>
+<span class="normal"><a href="#line-133">133</a></span>
+<span class="normal"><a href="#line-134">134</a></span>
+<span class="normal"><a href="#line-135">135</a></span>
+<span class="normal"><a href="#line-136">136</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a id="line-1" name="line-1"></a><span class="nn">---</span>
 </span><span id="line-2"><a id="line-2" name="line-2"></a><span class="c1"># Copyright kubeinit.com</span>
 </span><span id="line-3"><a id="line-3" name="line-3"></a><span class="c1"># All Rights Reserved.</span>
 </span><span id="line-4"><a id="line-4" name="line-4"></a><span class="c1">#</span>
@@ -305,94 +337,126 @@
 </span><span id="line-14"><a id="line-14" name="line-14"></a><span class="c1"># License for the specific language governing permissions and limitations</span>
 </span><span id="line-15"><a id="line-15" name="line-15"></a><span class="c1"># under the License.</span>
 </span><span id="line-16"><a id="line-16" name="line-16"></a>
-</span><span id="line-17"><a id="line-17" name="line-17"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Deploy a CentOS based guest</span>
+</span><span id="line-17"><a id="line-17" name="line-17"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Configure the service node</span>
 </span><span id="line-18"><a id="line-18" name="line-18"></a>  <span class="nt">block</span><span class="p">:</span>
-</span><span id="line-19"><a id="line-19" name="line-19"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Create the network interface template for networking details</span>
-</span><span id="line-20"><a id="line-20" name="line-20"></a>      <span class="nt">ansible.builtin.template</span><span class="p">:</span>
-</span><span id="line-21"><a id="line-21" name="line-21"></a>        <span class="nt">src</span><span class="p">:</span> <span class="s">&quot;../../roles/kubeinit_libvirt/templates/ifcfg-eth0.j2&quot;</span>
-</span><span id="line-22"><a id="line-22" name="line-22"></a>        <span class="nt">dest</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_libvirt_hypervisor_tmp_dir</span><span class="nv"> </span><span class="s">}}/{{</span><span class="nv"> </span><span class="s">kubeinit_deployment_node_name</span><span class="nv"> </span><span class="s">}}/ifcfg-eth0&quot;</span>
-</span><span id="line-23"><a id="line-23" name="line-23"></a>        <span class="nt">mode</span><span class="p">:</span> <span class="s">&quot;0644&quot;</span>
-</span><span id="line-24"><a id="line-24" name="line-24"></a>
-</span><span id="line-25"><a id="line-25" name="line-25"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Create the hosts template</span>
-</span><span id="line-26"><a id="line-26" name="line-26"></a>      <span class="nt">ansible.builtin.template</span><span class="p">:</span>
-</span><span id="line-27"><a id="line-27" name="line-27"></a>        <span class="nt">src</span><span class="p">:</span> <span class="s">&quot;../../roles/kubeinit_libvirt/templates/101-cloudinit-hosts.tmpl.j2&quot;</span>
-</span><span id="line-28"><a id="line-28" name="line-28"></a>        <span class="nt">dest</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_libvirt_hypervisor_tmp_dir</span><span class="nv"> </span><span class="s">}}/{{</span><span class="nv"> </span><span class="s">kubeinit_deployment_node_name</span><span class="nv"> </span><span class="s">}}/hosts.redhat.tmpl&quot;</span>
-</span><span id="line-29"><a id="line-29" name="line-29"></a>        <span class="nt">mode</span><span class="p">:</span> <span class="s">&quot;0644&quot;</span>
-</span><span id="line-30"><a id="line-30" name="line-30"></a>
-</span><span id="line-31"><a id="line-31" name="line-31"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Create the network cloudinit templates for networking details</span>
-</span><span id="line-32"><a id="line-32" name="line-32"></a>      <span class="nt">ansible.builtin.template</span><span class="p">:</span>
-</span><span id="line-33"><a id="line-33" name="line-33"></a>        <span class="nt">src</span><span class="p">:</span> <span class="s">&quot;../../roles/kubeinit_libvirt/templates/102-cloudinit-cloud.cfg.j2&quot;</span>
-</span><span id="line-34"><a id="line-34" name="line-34"></a>        <span class="nt">dest</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_libvirt_hypervisor_tmp_dir</span><span class="nv"> </span><span class="s">}}/{{</span><span class="nv"> </span><span class="s">kubeinit_deployment_node_name</span><span class="nv"> </span><span class="s">}}/cloud.cfg&quot;</span>
-</span><span id="line-35"><a id="line-35" name="line-35"></a>        <span class="nt">mode</span><span class="p">:</span> <span class="s">&quot;0644&quot;</span>
-</span><span id="line-36"><a id="line-36" name="line-36"></a>
-</span><span id="line-37"><a id="line-37" name="line-37"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Remove old disk images</span>
-</span><span id="line-38"><a id="line-38" name="line-38"></a>      <span class="nt">ansible.builtin.file</span><span class="p">:</span>
-</span><span id="line-39"><a id="line-39" name="line-39"></a>        <span class="nt">path</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_libvirt_target_image_dir</span><span class="nv"> </span><span class="s">}}/{{</span><span class="nv"> </span><span class="s">kubeinit_deployment_node_name</span><span class="nv"> </span><span class="s">}}.qcow2&quot;</span>
-</span><span id="line-40"><a id="line-40" name="line-40"></a>        <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">absent</span>
+</span><span id="line-19"><a id="line-19" name="line-19"></a>
+</span><span id="line-20"><a id="line-20" name="line-20"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">install common requirements</span>
+</span><span id="line-21"><a id="line-21" name="line-21"></a>      <span class="nt">ansible.builtin.yum</span><span class="p">:</span>
+</span><span id="line-22"><a id="line-22" name="line-22"></a>        <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_eks_common_dependencies</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-23"><a id="line-23" name="line-23"></a>        <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">present</span>
+</span><span id="line-24"><a id="line-24" name="line-24"></a>        <span class="nt">use_backend</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">dnf</span>
+</span><span id="line-25"><a id="line-25" name="line-25"></a>
+</span><span id="line-26"><a id="line-26" name="line-26"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Add the local DNS server as a local resolver</span>
+</span><span id="line-27"><a id="line-27" name="line-27"></a>      <span class="nt">ansible.builtin.lineinfile</span><span class="p">:</span>
+</span><span id="line-28"><a id="line-28" name="line-28"></a>        <span class="nt">path</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/etc/resolv.conf</span>
+</span><span id="line-29"><a id="line-29" name="line-29"></a>        <span class="nt">line</span><span class="p">:</span> <span class="s">&quot;nameserver</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">kubeinit_bind_service_address</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-30"><a id="line-30" name="line-30"></a>        <span class="nt">insertbefore</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">nameserver.*</span>
+</span><span id="line-31"><a id="line-31" name="line-31"></a>
+</span><span id="line-32"><a id="line-32" name="line-32"></a>    <span class="c1">#</span>
+</span><span id="line-33"><a id="line-33" name="line-33"></a>    <span class="c1"># Kubernetes config</span>
+</span><span id="line-34"><a id="line-34" name="line-34"></a>    <span class="c1">#</span>
+</span><span id="line-35"><a id="line-35" name="line-35"></a>
+</span><span id="line-36"><a id="line-36" name="line-36"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">install requirements for kubectl</span>
+</span><span id="line-37"><a id="line-37" name="line-37"></a>      <span class="nt">ansible.builtin.package</span><span class="p">:</span>
+</span><span id="line-38"><a id="line-38" name="line-38"></a>        <span class="nt">name</span><span class="p">:</span>
+</span><span id="line-39"><a id="line-39" name="line-39"></a>          <span class="p p-Indicator">-</span> <span class="s">&quot;kubectl-{{</span><span class="nv"> </span><span class="s">kubeinit_eks_kubernetes_version</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-40"><a id="line-40" name="line-40"></a>        <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">present</span>
 </span><span id="line-41"><a id="line-41" name="line-41"></a>
-</span><span id="line-42"><a id="line-42" name="line-42"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Grow the partitions</span>
-</span><span id="line-43"><a id="line-43" name="line-43"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-44"><a id="line-44" name="line-44"></a>        <span class="no">qemu-img convert -f qcow2 &#39;{{ kubeinit_libvirt_target_image_dir }}/{{ kubeinit_libvirt_source_images.centos.image }}&#39; -O qcow2 &#39;{{ kubeinit_libvirt_target_image_dir }}/{{ kubeinit_deployment_node_name }}.qcow2&#39;</span>
-</span><span id="line-45"><a id="line-45" name="line-45"></a>        <span class="no">qemu-img resize {{ kubeinit_libvirt_target_image_dir }}/{{ kubeinit_deployment_node_name }}.qcow2 +{{ hostvars[kubeinit_deployment_node_name].disk }}</span>
-</span><span id="line-46"><a id="line-46" name="line-46"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">grow_img</span>
-</span><span id="line-47"><a id="line-47" name="line-47"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;grow_img.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
-</span><span id="line-48"><a id="line-48" name="line-48"></a>
-</span><span id="line-49"><a id="line-49" name="line-49"></a>    <span class="c1"># This will inject the VM configuration in the case of a CentOS machine</span>
-</span><span id="line-50"><a id="line-50" name="line-50"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Inject</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">kubeinit_libvirt_cloud_user</span><span class="nv"> </span><span class="s">}}</span><span class="nv"> </span><span class="s">virt-customize</span><span class="nv"> </span><span class="s">assets</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">kubeinit_deployment_node_name</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-51"><a id="line-51" name="line-51"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-52"><a id="line-52" name="line-52"></a>        <span class="no">virt-customize -a {{ kubeinit_libvirt_target_image_dir }}/{{ kubeinit_deployment_node_name }}.qcow2 \</span>
-</span><span id="line-53"><a id="line-53" name="line-53"></a>          <span class="no">--install python3 \</span>
-</span><span id="line-54"><a id="line-54" name="line-54"></a>          <span class="no">--run-command &quot;sed -i &#39;s/PasswordAuthentication no/PasswordAuthentication yes/g&#39; /etc/ssh/sshd_config&quot; \</span>
-</span><span id="line-55"><a id="line-55" name="line-55"></a>          <span class="no">--run-command &#39;id -u {{ kubeinit_libvirt_cloud_user }} &amp;&gt;/dev/null || /usr/sbin/useradd -u 1000 {{ kubeinit_libvirt_cloud_user }}&#39; \</span>
-</span><span id="line-56"><a id="line-56" name="line-56"></a>          <span class="no">--run-command &quot;sed -i s/^SELINUX=.*$/SELINUX=disabled/g /etc/selinux/config&quot; \</span>
-</span><span id="line-57"><a id="line-57" name="line-57"></a>          <span class="no">--ssh-inject {{ kubeinit_libvirt_cloud_user }}:file:{{ kubeinit_libvirt_source_keystore_dir }}/{{ kubeinit_libvirt_source_pubkey_file }} \</span>
-</span><span id="line-58"><a id="line-58" name="line-58"></a>          <span class="no">--ssh-inject root:file:/root/.ssh/authorized_keys \</span>
-</span><span id="line-59"><a id="line-59" name="line-59"></a>          <span class="no">--run-command &quot;echo {{ kubeinit_provision_vms_public_key }} &gt;&gt; /root/.ssh/authorized_keys&quot; \</span>
-</span><span id="line-60"><a id="line-60" name="line-60"></a>          <span class="no">--hostname {{ kubeinit_deployment_node_name }}.{{ kubeinit_inventory_cluster_name }}.{{ kubeinit_inventory_cluster_domain }} \</span>
-</span><span id="line-61"><a id="line-61" name="line-61"></a>          <span class="no">--copy-in {{ kubeinit_libvirt_hypervisor_tmp_dir }}/{{ kubeinit_deployment_node_name }}/ifcfg-eth0:/etc/sysconfig/network-scripts \</span>
-</span><span id="line-62"><a id="line-62" name="line-62"></a>          <span class="no">--copy-in {{ kubeinit_libvirt_hypervisor_tmp_dir }}/{{ kubeinit_deployment_node_name }}/hosts.redhat.tmpl:/etc/cloud/templates \</span>
-</span><span id="line-63"><a id="line-63" name="line-63"></a>          <span class="no">--copy-in {{ kubeinit_libvirt_hypervisor_tmp_dir }}/{{ kubeinit_deployment_node_name }}/cloud.cfg:/etc/cloud \</span>
-</span><span id="line-64"><a id="line-64" name="line-64"></a>          <span class="no">--selinux-relabel --root-password password:{{ kubeinit_libvirt_vms_default_password }}</span>
-</span><span id="line-65"><a id="line-65" name="line-65"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">virt_inject</span>
-</span><span id="line-66"><a id="line-66" name="line-66"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;virt_inject.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
-</span><span id="line-67"><a id="line-67" name="line-67"></a>
-</span><span id="line-68"><a id="line-68" name="line-68"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Create</span><span class="nv"> </span><span class="s">VM</span><span class="nv"> </span><span class="s">definition</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">kubeinit_deployment_node_name</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-69"><a id="line-69" name="line-69"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-70"><a id="line-70" name="line-70"></a>        <span class="no">virt-install \</span>
-</span><span id="line-71"><a id="line-71" name="line-71"></a>            <span class="no">--connect qemu:///system \</span>
-</span><span id="line-72"><a id="line-72" name="line-72"></a>            <span class="no">--name={{ kubeinit_deployment_node_name }} \</span>
-</span><span id="line-73"><a id="line-73" name="line-73"></a>            <span class="no">--memory memory={{ hostvars[kubeinit_deployment_node_name].ram // 1024 }} \</span>
-</span><span id="line-74"><a id="line-74" name="line-74"></a>            <span class="no">--cpuset=auto \</span>
-</span><span id="line-75"><a id="line-75" name="line-75"></a>            <span class="no">--vcpus={{ hostvars[kubeinit_deployment_node_name].vcpus }},maxvcpus={{ hostvars[kubeinit_deployment_node_name].maxvcpus }} \</span>
-</span><span id="line-76"><a id="line-76" name="line-76"></a>            <span class="no">--os-type=linux \</span>
-</span><span id="line-77"><a id="line-77" name="line-77"></a>            <span class="no">--os-variant=rhel8.0 \</span>
-</span><span id="line-78"><a id="line-78" name="line-78"></a>            <span class="no">--autostart \</span>
-</span><span id="line-79"><a id="line-79" name="line-79"></a>            <span class="no">{% for net in kubeinit_libvirt_cluster_nets %}</span>
-</span><span id="line-80"><a id="line-80" name="line-80"></a>              <span class="no">{% if net.enabled %}</span>
-</span><span id="line-81"><a id="line-81" name="line-81"></a>                <span class="no">{% if kubeinit_libvirt_ovn_enabled %}</span>
-</span><span id="line-82"><a id="line-82" name="line-82"></a>                  <span class="no">--network network={{ net.name }}{% if net.main %},mac={{ hostvars[kubeinit_deployment_node_name].mac }},virtualport.parameters.interfaceid={{ hostvars[kubeinit_deployment_node_name].interfaceid }}{% endif %},target.dev=veth0-{{ kubeinit_deployment_node_name.split(&quot;-&quot;)[1][:2] }}{{ kubeinit_deployment_node_name.split(&quot;-&quot;)[2] }},model=virtio \</span>
-</span><span id="line-83"><a id="line-83" name="line-83"></a>                <span class="no">{% else %}</span>
-</span><span id="line-84"><a id="line-84" name="line-84"></a>                  <span class="no">--network network={{ net.name }}{% if net.main %},mac={{ hostvars[kubeinit_deployment_node_name].mac }}{% endif %},model=virtio \</span>
-</span><span id="line-85"><a id="line-85" name="line-85"></a>                <span class="no">{% endif %}</span>
-</span><span id="line-86"><a id="line-86" name="line-86"></a>              <span class="no">{% endif %}</span>
-</span><span id="line-87"><a id="line-87" name="line-87"></a>            <span class="no">{% endfor %}</span>
-</span><span id="line-88"><a id="line-88" name="line-88"></a>            <span class="no">--graphics none \</span>
-</span><span id="line-89"><a id="line-89" name="line-89"></a>            <span class="no">--noautoconsole \</span>
-</span><span id="line-90"><a id="line-90" name="line-90"></a>            <span class="no">--import \</span>
-</span><span id="line-91"><a id="line-91" name="line-91"></a>            <span class="no">--disk {{ kubeinit_libvirt_target_image_dir }}/{{ kubeinit_deployment_node_name }}.qcow2,format=qcow2,bus=virtio</span>
-</span><span id="line-92"><a id="line-92" name="line-92"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">virt_install</span>
-</span><span id="line-93"><a id="line-93" name="line-93"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;virt_install.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
+</span><span id="line-42"><a id="line-42" name="line-42"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">install services requirements</span>
+</span><span id="line-43"><a id="line-43" name="line-43"></a>      <span class="nt">ansible.builtin.yum</span><span class="p">:</span>
+</span><span id="line-44"><a id="line-44" name="line-44"></a>        <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_eks_service_dependencies</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-45"><a id="line-45" name="line-45"></a>        <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">present</span>
+</span><span id="line-46"><a id="line-46" name="line-46"></a>        <span class="nt">use_backend</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">dnf</span>
+</span><span id="line-47"><a id="line-47" name="line-47"></a>
+</span><span id="line-48"><a id="line-48" name="line-48"></a>    <span class="c1">#</span>
+</span><span id="line-49"><a id="line-49" name="line-49"></a>    <span class="c1"># Prepare podman</span>
+</span><span id="line-50"><a id="line-50" name="line-50"></a>    <span class="c1">#</span>
+</span><span id="line-51"><a id="line-51" name="line-51"></a>
+</span><span id="line-52"><a id="line-52" name="line-52"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Prepare podman</span>
+</span><span id="line-53"><a id="line-53" name="line-53"></a>      <span class="c1"># delegate_facts: true</span>
+</span><span id="line-54"><a id="line-54" name="line-54"></a>      <span class="nt">ansible.builtin.import_role</span><span class="p">:</span>
+</span><span id="line-55"><a id="line-55" name="line-55"></a>        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">../../roles/kubeinit_prepare</span>
+</span><span id="line-56"><a id="line-56" name="line-56"></a>        <span class="nt">tasks_from</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">prepare_podman</span>
+</span><span id="line-57"><a id="line-57" name="line-57"></a>
+</span><span id="line-58"><a id="line-58" name="line-58"></a>    <span class="c1">#</span>
+</span><span id="line-59"><a id="line-59" name="line-59"></a>    <span class="c1"># Configure local registry</span>
+</span><span id="line-60"><a id="line-60" name="line-60"></a>    <span class="c1">#</span>
+</span><span id="line-61"><a id="line-61" name="line-61"></a>
+</span><span id="line-62"><a id="line-62" name="line-62"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Get</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">required</span><span class="nv"> </span><span class="s">container</span><span class="nv"> </span><span class="s">images&quot;</span>
+</span><span id="line-63"><a id="line-63" name="line-63"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+</span><span id="line-64"><a id="line-64" name="line-64"></a>        <span class="no">set -o pipefail</span>
+</span><span id="line-65"><a id="line-65" name="line-65"></a>        <span class="no">wget https://raw.githubusercontent.com/aws/eks-distro/main/development/pull-all.sh</span>
+</span><span id="line-66"><a id="line-66" name="line-66"></a>        <span class="no">cat pull-all.sh | grep &#39;docker pull&#39; | cut -d&#39; &#39; -f3 &gt; ~/kubeinit_deployment_images.txt</span>
+</span><span id="line-67"><a id="line-67" name="line-67"></a>      <span class="nt">args</span><span class="p">:</span>
+</span><span id="line-68"><a id="line-68" name="line-68"></a>        <span class="nt">executable</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/bin/bash</span>
+</span><span id="line-69"><a id="line-69" name="line-69"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">render_images_list</span>
+</span><span id="line-70"><a id="line-70" name="line-70"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;render_images_list.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
+</span><span id="line-71"><a id="line-71" name="line-71"></a>
+</span><span id="line-72"><a id="line-72" name="line-72"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Configure a local container image registry</span>
+</span><span id="line-73"><a id="line-73" name="line-73"></a>      <span class="c1"># delegate_facts: true</span>
+</span><span id="line-74"><a id="line-74" name="line-74"></a>      <span class="nt">ansible.builtin.import_role</span><span class="p">:</span>
+</span><span id="line-75"><a id="line-75" name="line-75"></a>        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">../../roles/kubeinit_registry</span>
+</span><span id="line-76"><a id="line-76" name="line-76"></a>        <span class="nt">tasks_from</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">main</span>
+</span><span id="line-77"><a id="line-77" name="line-77"></a>      <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit_registry_enabled|bool</span>
+</span><span id="line-78"><a id="line-78" name="line-78"></a>
+</span><span id="line-79"><a id="line-79" name="line-79"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Mirror local registry</span>
+</span><span id="line-80"><a id="line-80" name="line-80"></a>      <span class="nt">ansible.builtin.import_role</span><span class="p">:</span>
+</span><span id="line-81"><a id="line-81" name="line-81"></a>        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">../../roles/kubeinit_registry</span>
+</span><span id="line-82"><a id="line-82" name="line-82"></a>        <span class="nt">tasks_from</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">20_mirror_eks.yml</span>
+</span><span id="line-83"><a id="line-83" name="line-83"></a>      <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit_registry_enabled|bool</span>
+</span><span id="line-84"><a id="line-84" name="line-84"></a>
+</span><span id="line-85"><a id="line-85" name="line-85"></a>    <span class="c1">#</span>
+</span><span id="line-86"><a id="line-86" name="line-86"></a>    <span class="c1"># Configure bind</span>
+</span><span id="line-87"><a id="line-87" name="line-87"></a>    <span class="c1">#</span>
+</span><span id="line-88"><a id="line-88" name="line-88"></a>
+</span><span id="line-89"><a id="line-89" name="line-89"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Configure Bind</span>
+</span><span id="line-90"><a id="line-90" name="line-90"></a>      <span class="c1"># delegate_facts: true</span>
+</span><span id="line-91"><a id="line-91" name="line-91"></a>      <span class="nt">ansible.builtin.import_role</span><span class="p">:</span>
+</span><span id="line-92"><a id="line-92" name="line-92"></a>        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">../../roles/kubeinit_bind</span>
+</span><span id="line-93"><a id="line-93" name="line-93"></a>        <span class="nt">tasks_from</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">main</span>
 </span><span id="line-94"><a id="line-94" name="line-94"></a>
-</span><span id="line-95"><a id="line-95" name="line-95"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">wait until {{ kubeinit_deployment_node_name }} is running</span>
-</span><span id="line-96"><a id="line-96" name="line-96"></a>      <span class="nt">community.libvirt.virt</span><span class="p">:</span>
-</span><span id="line-97"><a id="line-97" name="line-97"></a>        <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">list_vms</span>
-</span><span id="line-98"><a id="line-98" name="line-98"></a>        <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">running</span>
-</span><span id="line-99"><a id="line-99" name="line-99"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">running_vms</span>
-</span><span id="line-100"><a id="line-100" name="line-100"></a>      <span class="nt">retries</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">30</span>
-</span><span id="line-101"><a id="line-101" name="line-101"></a>      <span class="nt">delay</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10</span>
-</span><span id="line-102"><a id="line-102" name="line-102"></a>      <span class="nt">until</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit_deployment_node_name in running_vms.list_vms</span>
-</span><span id="line-103"><a id="line-103" name="line-103"></a>
-</span><span id="line-104"><a id="line-104" name="line-104"></a>  <span class="nt">delegate_to</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[kubeinit_deployment_node_name].target</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-95"><a id="line-95" name="line-95"></a>    <span class="c1">#</span>
+</span><span id="line-96"><a id="line-96" name="line-96"></a>    <span class="c1"># Configure HAproxy</span>
+</span><span id="line-97"><a id="line-97" name="line-97"></a>    <span class="c1">#</span>
+</span><span id="line-98"><a id="line-98" name="line-98"></a>
+</span><span id="line-99"><a id="line-99" name="line-99"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Configure HAProxy</span>
+</span><span id="line-100"><a id="line-100" name="line-100"></a>      <span class="c1"># delegate_facts: true</span>
+</span><span id="line-101"><a id="line-101" name="line-101"></a>      <span class="nt">ansible.builtin.import_role</span><span class="p">:</span>
+</span><span id="line-102"><a id="line-102" name="line-102"></a>        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">../../roles/kubeinit_haproxy</span>
+</span><span id="line-103"><a id="line-103" name="line-103"></a>        <span class="nt">tasks_from</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">main</span>
+</span><span id="line-104"><a id="line-104" name="line-104"></a>
+</span><span id="line-105"><a id="line-105" name="line-105"></a>    <span class="c1">#</span>
+</span><span id="line-106"><a id="line-106" name="line-106"></a>    <span class="c1"># Configure httpd</span>
+</span><span id="line-107"><a id="line-107" name="line-107"></a>    <span class="c1">#</span>
+</span><span id="line-108"><a id="line-108" name="line-108"></a>
+</span><span id="line-109"><a id="line-109" name="line-109"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Configure Apache</span>
+</span><span id="line-110"><a id="line-110" name="line-110"></a>      <span class="c1"># delegate_facts: true</span>
+</span><span id="line-111"><a id="line-111" name="line-111"></a>      <span class="nt">ansible.builtin.import_role</span><span class="p">:</span>
+</span><span id="line-112"><a id="line-112" name="line-112"></a>        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">../../roles/kubeinit_apache</span>
+</span><span id="line-113"><a id="line-113" name="line-113"></a>        <span class="nt">tasks_from</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">main</span>
+</span><span id="line-114"><a id="line-114" name="line-114"></a>
+</span><span id="line-115"><a id="line-115" name="line-115"></a>    <span class="c1">#</span>
+</span><span id="line-116"><a id="line-116" name="line-116"></a>    <span class="c1"># Include the install configuration</span>
+</span><span id="line-117"><a id="line-117" name="line-117"></a>    <span class="c1">#</span>
+</span><span id="line-118"><a id="line-118" name="line-118"></a>
+</span><span id="line-119"><a id="line-119" name="line-119"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Render</span><span class="nv"> </span><span class="s">root</span><span class="nv"> </span><span class="s">keys</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">service</span><span class="nv"> </span><span class="s">node&quot;</span>
+</span><span id="line-120"><a id="line-120" name="line-120"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+</span><span id="line-121"><a id="line-121" name="line-121"></a>        <span class="no">cd</span>
+</span><span id="line-122"><a id="line-122" name="line-122"></a>        <span class="no">mkdir ~/.ssh</span>
+</span><span id="line-123"><a id="line-123" name="line-123"></a>        <span class="no">ssh-keygen -t rsa -N &quot;&quot; -f .ssh/id_rsa &lt;&lt;&lt; y</span>
+</span><span id="line-124"><a id="line-124" name="line-124"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">render_service_keys</span>
+</span><span id="line-125"><a id="line-125" name="line-125"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;render_service_keys.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
+</span><span id="line-126"><a id="line-126" name="line-126"></a>
+</span><span id="line-127"><a id="line-127" name="line-127"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">get root service machine public key</span>
+</span><span id="line-128"><a id="line-128" name="line-128"></a>      <span class="nt">ansible.builtin.command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">cat /root/.ssh/id_rsa.pub</span>
+</span><span id="line-129"><a id="line-129" name="line-129"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">public_key_service_content</span>
+</span><span id="line-130"><a id="line-130" name="line-130"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;public_key_service_content.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
+</span><span id="line-131"><a id="line-131" name="line-131"></a>
+</span><span id="line-132"><a id="line-132" name="line-132"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">register the public key of the root service machine public key</span>
+</span><span id="line-133"><a id="line-133" name="line-133"></a>      <span class="nt">ansible.builtin.set_fact</span><span class="p">:</span>
+</span><span id="line-134"><a id="line-134" name="line-134"></a>        <span class="l l-Scalar l-Scalar-Plain">kubeinit_provision_service_public_key={{ public_key_service_content.stdout }}</span>
+</span><span id="line-135"><a id="line-135" name="line-135"></a>
+</span><span id="line-136"><a id="line-136" name="line-136"></a>  <span class="nt">delegate_to</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[kubeinit_deployment_node_name].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
 </span></pre></div>
 </td></tr></table>
     </div>

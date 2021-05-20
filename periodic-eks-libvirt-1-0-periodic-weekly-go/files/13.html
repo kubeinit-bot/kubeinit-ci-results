@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="../static/css/pygments.css">
     
-    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -20,7 +20,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -66,16 +66,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 10:13:42 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 17:51:39 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 10:33:34 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 18:10:56 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:19:51.74
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:19:16.73
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -102,12 +102,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">247 results</a>
+                            <a href="../playbooks/1.html#results">245 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">39 files</a>
+                            <a href="../playbooks/1.html#files">36 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -183,7 +183,7 @@
 
 <div class="pf-c-card" style="margin: 1em 0;">
     <div class="pf-c-card__header pf-c-title pf-m-md">
-        <strong>/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/20_ovn_install.yml</strong>
+        <strong>/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/10_cleanup.yml</strong>
     </div>
     <div class="pf-c-card__body">
         <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"><a href="#line-1">  1</a></span>
@@ -309,19 +309,7 @@
 <span class="normal"><a href="#line-121">121</a></span>
 <span class="normal"><a href="#line-122">122</a></span>
 <span class="normal"><a href="#line-123">123</a></span>
-<span class="normal"><a href="#line-124">124</a></span>
-<span class="normal"><a href="#line-125">125</a></span>
-<span class="normal"><a href="#line-126">126</a></span>
-<span class="normal"><a href="#line-127">127</a></span>
-<span class="normal"><a href="#line-128">128</a></span>
-<span class="normal"><a href="#line-129">129</a></span>
-<span class="normal"><a href="#line-130">130</a></span>
-<span class="normal"><a href="#line-131">131</a></span>
-<span class="normal"><a href="#line-132">132</a></span>
-<span class="normal"><a href="#line-133">133</a></span>
-<span class="normal"><a href="#line-134">134</a></span>
-<span class="normal"><a href="#line-135">135</a></span>
-<span class="normal"><a href="#line-136">136</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a id="line-1" name="line-1"></a><span class="nn">---</span>
+<span class="normal"><a href="#line-124">124</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a id="line-1" name="line-1"></a><span class="nn">---</span>
 </span><span id="line-2"><a id="line-2" name="line-2"></a><span class="c1"># Copyright kubeinit.com</span>
 </span><span id="line-3"><a id="line-3" name="line-3"></a><span class="c1"># All Rights Reserved.</span>
 </span><span id="line-4"><a id="line-4" name="line-4"></a><span class="c1">#</span>
@@ -338,125 +326,113 @@
 </span><span id="line-15"><a id="line-15" name="line-15"></a><span class="c1"># under the License.</span>
 </span><span id="line-16"><a id="line-16" name="line-16"></a>
 </span><span id="line-17"><a id="line-17" name="line-17"></a><span class="c1">##</span>
-</span><span id="line-18"><a id="line-18" name="line-18"></a><span class="c1">## OVN packages setup in the Hypervisors.</span>
+</span><span id="line-18"><a id="line-18" name="line-18"></a><span class="c1">## Cleanup tasks</span>
 </span><span id="line-19"><a id="line-19" name="line-19"></a><span class="c1">##</span>
-</span><span id="line-20"><a id="line-20" name="line-20"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Set up Hypervisors with OVN (package install)</span>
+</span><span id="line-20"><a id="line-20" name="line-20"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Cleanup the environment</span>
 </span><span id="line-21"><a id="line-21" name="line-21"></a>  <span class="nt">block</span><span class="p">:</span>
 </span><span id="line-22"><a id="line-22" name="line-22"></a>
-</span><span id="line-23"><a id="line-23" name="line-23"></a>    <span class="c1">#</span>
-</span><span id="line-24"><a id="line-24" name="line-24"></a>    <span class="c1"># We install all OVN requirements in the first hypervisor</span>
-</span><span id="line-25"><a id="line-25" name="line-25"></a>    <span class="c1">#</span>
-</span><span id="line-26"><a id="line-26" name="line-26"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Install OVN packages in CentOS/RHEL (Master Hypervisor)</span>
-</span><span id="line-27"><a id="line-27" name="line-27"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-28"><a id="line-28" name="line-28"></a>        <span class="no"># http://mirror.centos.org/centos/8/nfv/x86_64/openvswitch-2/Packages/o/</span>
-</span><span id="line-29"><a id="line-29" name="line-29"></a>        <span class="no">dnf install -y centos-release-nfv-openvswitch</span>
-</span><span id="line-30"><a id="line-30" name="line-30"></a>        <span class="no">yum install -y openvswitch2.13 ovn2.13 ovn2.13-central ovn2.13-host</span>
-</span><span id="line-31"><a id="line-31" name="line-31"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
-</span><span id="line-32"><a id="line-32" name="line-32"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name and</span>
-</span><span id="line-33"><a id="line-33" name="line-33"></a>        <span class="no">(ansible_distribution == &#39;CentOS&#39; or ansible_distribution == &#39;RedHat&#39;)</span>
-</span><span id="line-34"><a id="line-34" name="line-34"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-</span><span id="line-35"><a id="line-35" name="line-35"></a>
-</span><span id="line-36"><a id="line-36" name="line-36"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Install OVN packages in Fedora (Master Hypervisor)</span>
-</span><span id="line-37"><a id="line-37" name="line-37"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-38"><a id="line-38" name="line-38"></a>        <span class="no">yum install -y openvswitch ovn ovn-central ovn-host</span>
-</span><span id="line-39"><a id="line-39" name="line-39"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
-</span><span id="line-40"><a id="line-40" name="line-40"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name and</span>
-</span><span id="line-41"><a id="line-41" name="line-41"></a>        <span class="no">(ansible_distribution == &#39;Fedora&#39;)</span>
-</span><span id="line-42"><a id="line-42" name="line-42"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-</span><span id="line-43"><a id="line-43" name="line-43"></a>
-</span><span id="line-44"><a id="line-44" name="line-44"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Install OVN packages in Ubuntu/Debian (Master Hypervisor)</span>
-</span><span id="line-45"><a id="line-45" name="line-45"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-46"><a id="line-46" name="line-46"></a>        <span class="no">apt-get install -y openvswitch-common \</span>
-</span><span id="line-47"><a id="line-47" name="line-47"></a>                           <span class="no">openvswitch-switch \</span>
-</span><span id="line-48"><a id="line-48" name="line-48"></a>                           <span class="no">ovn-common \</span>
-</span><span id="line-49"><a id="line-49" name="line-49"></a>                           <span class="no">ovn-host \</span>
-</span><span id="line-50"><a id="line-50" name="line-50"></a>                           <span class="no">ovn-central</span>
-</span><span id="line-51"><a id="line-51" name="line-51"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
-</span><span id="line-52"><a id="line-52" name="line-52"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name and</span>
-</span><span id="line-53"><a id="line-53" name="line-53"></a>        <span class="no">(ansible_distribution == &#39;Debian&#39; or ansible_distribution == &#39;Ubuntu&#39;)</span>
-</span><span id="line-54"><a id="line-54" name="line-54"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-</span><span id="line-55"><a id="line-55" name="line-55"></a>
-</span><span id="line-56"><a id="line-56" name="line-56"></a>    <span class="c1">#</span>
-</span><span id="line-57"><a id="line-57" name="line-57"></a>    <span class="c1"># We DO NOT install ovn-central (OVN requirement) in the other hypervisors</span>
-</span><span id="line-58"><a id="line-58" name="line-58"></a>    <span class="c1">#</span>
-</span><span id="line-59"><a id="line-59" name="line-59"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Install OVN packages in CentOS/RHEL (Slave Hypervisor)</span>
-</span><span id="line-60"><a id="line-60" name="line-60"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-61"><a id="line-61" name="line-61"></a>        <span class="no"># http://mirror.centos.org/centos/8/nfv/x86_64/openvswitch-2/Packages/o/</span>
-</span><span id="line-62"><a id="line-62" name="line-62"></a>        <span class="no">dnf install -y centos-release-nfv-openvswitch</span>
-</span><span id="line-63"><a id="line-63" name="line-63"></a>        <span class="no">yum install -y openvswitch2.13 ovn2.13 ovn2.13-host</span>
-</span><span id="line-64"><a id="line-64" name="line-64"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
-</span><span id="line-65"><a id="line-65" name="line-65"></a>        <span class="no">(kubeinit_bastion_host not in kubeinit_deployment_node_name) and</span>
-</span><span id="line-66"><a id="line-66" name="line-66"></a>        <span class="no">(ansible_distribution == &#39;CentOS&#39; or ansible_distribution == &#39;RedHat&#39;)</span>
-</span><span id="line-67"><a id="line-67" name="line-67"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-</span><span id="line-68"><a id="line-68" name="line-68"></a>
-</span><span id="line-69"><a id="line-69" name="line-69"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Install OVN packages in Fedora (Slave Hypervisor)</span>
-</span><span id="line-70"><a id="line-70" name="line-70"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-71"><a id="line-71" name="line-71"></a>        <span class="no">yum install -y openvswitch ovn ovn-host</span>
-</span><span id="line-72"><a id="line-72" name="line-72"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
-</span><span id="line-73"><a id="line-73" name="line-73"></a>        <span class="no">(kubeinit_bastion_host not in kubeinit_deployment_node_name) and</span>
-</span><span id="line-74"><a id="line-74" name="line-74"></a>        <span class="no">(ansible_distribution == &#39;Fedora&#39;)</span>
-</span><span id="line-75"><a id="line-75" name="line-75"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+</span><span id="line-23"><a id="line-23" name="line-23"></a>    <span class="c1">##</span>
+</span><span id="line-24"><a id="line-24" name="line-24"></a>    <span class="c1">## Clean networks</span>
+</span><span id="line-25"><a id="line-25" name="line-25"></a>    <span class="c1">##</span>
+</span><span id="line-26"><a id="line-26" name="line-26"></a>
+</span><span id="line-27"><a id="line-27" name="line-27"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Destroy deployment networks</span>
+</span><span id="line-28"><a id="line-28" name="line-28"></a>      <span class="nt">community.libvirt.virt_net</span><span class="p">:</span>
+</span><span id="line-29"><a id="line-29" name="line-29"></a>        <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">destroy</span>
+</span><span id="line-30"><a id="line-30" name="line-30"></a>        <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">item.name</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-31"><a id="line-31" name="line-31"></a>      <span class="nt">with_items</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_libvirt_cluster_nets</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-32"><a id="line-32" name="line-32"></a>      <span class="nt">ignore_errors</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="line-33"><a id="line-33" name="line-33"></a>      <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit_libvirt_destroy_nets|bool and not kubeinit_libvirt_multicluster_keep_predefined_networks</span>
+</span><span id="line-34"><a id="line-34" name="line-34"></a>
+</span><span id="line-35"><a id="line-35" name="line-35"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Undefine deployment networks</span>
+</span><span id="line-36"><a id="line-36" name="line-36"></a>      <span class="nt">community.libvirt.virt_net</span><span class="p">:</span>
+</span><span id="line-37"><a id="line-37" name="line-37"></a>        <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">undefine</span>
+</span><span id="line-38"><a id="line-38" name="line-38"></a>        <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">item.name</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-39"><a id="line-39" name="line-39"></a>      <span class="nt">with_items</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_libvirt_cluster_nets</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-40"><a id="line-40" name="line-40"></a>      <span class="nt">ignore_errors</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="line-41"><a id="line-41" name="line-41"></a>      <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit_libvirt_destroy_nets|bool and not kubeinit_libvirt_multicluster_keep_predefined_networks</span>
+</span><span id="line-42"><a id="line-42" name="line-42"></a>
+</span><span id="line-43"><a id="line-43" name="line-43"></a>    <span class="c1">##</span>
+</span><span id="line-44"><a id="line-44" name="line-44"></a>    <span class="c1">## Clean VMs</span>
+</span><span id="line-45"><a id="line-45" name="line-45"></a>    <span class="c1">##</span>
+</span><span id="line-46"><a id="line-46" name="line-46"></a>
+</span><span id="line-47"><a id="line-47" name="line-47"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Destroy vms</span>
+</span><span id="line-48"><a id="line-48" name="line-48"></a>      <span class="nt">community.libvirt.virt</span><span class="p">:</span>
+</span><span id="line-49"><a id="line-49" name="line-49"></a>        <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-50"><a id="line-50" name="line-50"></a>        <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">destroy</span>
+</span><span id="line-51"><a id="line-51" name="line-51"></a>      <span class="nt">with_items</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">groups[&#39;all_nodes&#39;]</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-52"><a id="line-52" name="line-52"></a>      <span class="nt">ignore_errors</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="line-53"><a id="line-53" name="line-53"></a>
+</span><span id="line-54"><a id="line-54" name="line-54"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Undefine vms</span>
+</span><span id="line-55"><a id="line-55" name="line-55"></a>      <span class="nt">community.libvirt.virt</span><span class="p">:</span>
+</span><span id="line-56"><a id="line-56" name="line-56"></a>        <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-57"><a id="line-57" name="line-57"></a>        <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">undefine</span>
+</span><span id="line-58"><a id="line-58" name="line-58"></a>      <span class="nt">with_items</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">groups[&#39;all_nodes&#39;]</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-59"><a id="line-59" name="line-59"></a>      <span class="nt">ignore_errors</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="line-60"><a id="line-60" name="line-60"></a>
+</span><span id="line-61"><a id="line-61" name="line-61"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Remove VMs storage</span>
+</span><span id="line-62"><a id="line-62" name="line-62"></a>      <span class="nt">ansible.builtin.file</span><span class="p">:</span>
+</span><span id="line-63"><a id="line-63" name="line-63"></a>        <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">absent</span>
+</span><span id="line-64"><a id="line-64" name="line-64"></a>        <span class="nt">path</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_libvirt_target_image_dir</span><span class="nv"> </span><span class="s">}}/{{</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">}}.qcow2&quot;</span>
+</span><span id="line-65"><a id="line-65" name="line-65"></a>      <span class="nt">with_items</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">groups[&#39;all_nodes&#39;]</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-66"><a id="line-66" name="line-66"></a>
+</span><span id="line-67"><a id="line-67" name="line-67"></a>    <span class="c1">##</span>
+</span><span id="line-68"><a id="line-68" name="line-68"></a>    <span class="c1">## Clean folders</span>
+</span><span id="line-69"><a id="line-69" name="line-69"></a>    <span class="c1">##</span>
+</span><span id="line-70"><a id="line-70" name="line-70"></a>
+</span><span id="line-71"><a id="line-71" name="line-71"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Clean directories for config files per node</span>
+</span><span id="line-72"><a id="line-72" name="line-72"></a>      <span class="nt">ansible.builtin.file</span><span class="p">:</span>
+</span><span id="line-73"><a id="line-73" name="line-73"></a>        <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">absent</span>
+</span><span id="line-74"><a id="line-74" name="line-74"></a>        <span class="nt">path</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_libvirt_hypervisor_tmp_dir</span><span class="nv"> </span><span class="s">}}/{{</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">}}/&quot;</span>
+</span><span id="line-75"><a id="line-75" name="line-75"></a>      <span class="nt">with_items</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">groups[&#39;all_nodes&#39;]</span><span class="nv"> </span><span class="s">}}&quot;</span>
 </span><span id="line-76"><a id="line-76" name="line-76"></a>
-</span><span id="line-77"><a id="line-77" name="line-77"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Install OVN packages in Ubuntu/Debian (Slave Hypervisor)</span>
-</span><span id="line-78"><a id="line-78" name="line-78"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-79"><a id="line-79" name="line-79"></a>        <span class="no">apt-get install -y openvswitch-common \</span>
-</span><span id="line-80"><a id="line-80" name="line-80"></a>                           <span class="no">openvswitch-switch \</span>
-</span><span id="line-81"><a id="line-81" name="line-81"></a>                           <span class="no">ovn-common \</span>
-</span><span id="line-82"><a id="line-82" name="line-82"></a>                           <span class="no">ovn-host</span>
-</span><span id="line-83"><a id="line-83" name="line-83"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
-</span><span id="line-84"><a id="line-84" name="line-84"></a>        <span class="no">(kubeinit_bastion_host not in kubeinit_deployment_node_name) and</span>
-</span><span id="line-85"><a id="line-85" name="line-85"></a>        <span class="no">(ansible_distribution == &#39;Debian&#39; or ansible_distribution == &#39;Ubuntu&#39;)</span>
-</span><span id="line-86"><a id="line-86" name="line-86"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-</span><span id="line-87"><a id="line-87" name="line-87"></a>
-</span><span id="line-88"><a id="line-88" name="line-88"></a>    <span class="c1"># - name: refresh firewalld services list</span>
-</span><span id="line-89"><a id="line-89" name="line-89"></a>    <span class="c1">#   ansible.builtin.shell: |</span>
-</span><span id="line-90"><a id="line-90" name="line-90"></a>    <span class="c1">#     firewall-cmd --reload</span>
-</span><span id="line-91"><a id="line-91" name="line-91"></a>    <span class="c1">#   when: &gt;</span>
-</span><span id="line-92"><a id="line-92" name="line-92"></a>    <span class="c1">#     (ansible_distribution == &#39;CentOS&#39; or ansible_distribution == &#39;RedHat&#39; or ansible_distribution == &#39;Fedora&#39;)</span>
-</span><span id="line-93"><a id="line-93" name="line-93"></a>    <span class="c1">#</span>
-</span><span id="line-94"><a id="line-94" name="line-94"></a>    <span class="c1"># - name: Enable OVN central in firewalld</span>
-</span><span id="line-95"><a id="line-95" name="line-95"></a>    <span class="c1">#   ansible.posix.firewalld:</span>
-</span><span id="line-96"><a id="line-96" name="line-96"></a>    <span class="c1">#     service: ovn-central-firewall-service</span>
-</span><span id="line-97"><a id="line-97" name="line-97"></a>    <span class="c1">#     permanent: yes</span>
-</span><span id="line-98"><a id="line-98" name="line-98"></a>    <span class="c1">#     state: enabled</span>
-</span><span id="line-99"><a id="line-99" name="line-99"></a>    <span class="c1">#     immediate: yes</span>
-</span><span id="line-100"><a id="line-100" name="line-100"></a>    <span class="c1">#   when: &gt;</span>
-</span><span id="line-101"><a id="line-101" name="line-101"></a>    <span class="c1">#     kubeinit_bastion_host in kubeinit_deployment_node_name and</span>
-</span><span id="line-102"><a id="line-102" name="line-102"></a>    <span class="c1">#     (ansible_distribution == &#39;CentOS&#39; or ansible_distribution == &#39;RedHat&#39; or ansible_distribution == &#39;Fedora&#39;)</span>
-</span><span id="line-103"><a id="line-103" name="line-103"></a>    <span class="c1">#</span>
-</span><span id="line-104"><a id="line-104" name="line-104"></a>    <span class="c1"># - name: Enable OVN controller in firewalld</span>
-</span><span id="line-105"><a id="line-105" name="line-105"></a>    <span class="c1">#   ansible.posix.firewalld:</span>
-</span><span id="line-106"><a id="line-106" name="line-106"></a>    <span class="c1">#     service: ovn-host-firewall-service</span>
-</span><span id="line-107"><a id="line-107" name="line-107"></a>    <span class="c1">#     permanent: yes</span>
-</span><span id="line-108"><a id="line-108" name="line-108"></a>    <span class="c1">#     state: enabled</span>
-</span><span id="line-109"><a id="line-109" name="line-109"></a>    <span class="c1">#     immediate: yes</span>
-</span><span id="line-110"><a id="line-110" name="line-110"></a>    <span class="c1">#   when: &gt;</span>
-</span><span id="line-111"><a id="line-111" name="line-111"></a>    <span class="c1">#     (ansible_distribution == &#39;CentOS&#39; or ansible_distribution == &#39;RedHat&#39; or ansible_distribution == &#39;Fedora&#39;)</span>
-</span><span id="line-112"><a id="line-112" name="line-112"></a>
-</span><span id="line-113"><a id="line-113" name="line-113"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">enable and start OVN services in the first hypervisor</span>
-</span><span id="line-114"><a id="line-114" name="line-114"></a>      <span class="nt">ansible.builtin.service</span><span class="p">:</span>
-</span><span id="line-115"><a id="line-115" name="line-115"></a>        <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-116"><a id="line-116" name="line-116"></a>        <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">started</span>
-</span><span id="line-117"><a id="line-117" name="line-117"></a>        <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
-</span><span id="line-118"><a id="line-118" name="line-118"></a>      <span class="nt">with_items</span><span class="p">:</span>
-</span><span id="line-119"><a id="line-119" name="line-119"></a>        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">openvswitch</span>
-</span><span id="line-120"><a id="line-120" name="line-120"></a>        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ovn-northd</span>
-</span><span id="line-121"><a id="line-121" name="line-121"></a>        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ovn-controller</span>
-</span><span id="line-122"><a id="line-122" name="line-122"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
-</span><span id="line-123"><a id="line-123" name="line-123"></a>        <span class="no">kubeinit_bastion_host in kubeinit_deployment_node_name</span>
-</span><span id="line-124"><a id="line-124" name="line-124"></a>
-</span><span id="line-125"><a id="line-125" name="line-125"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">enable and start OVN services in the rest of the hypervisors</span>
-</span><span id="line-126"><a id="line-126" name="line-126"></a>      <span class="nt">ansible.builtin.service</span><span class="p">:</span>
-</span><span id="line-127"><a id="line-127" name="line-127"></a>        <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">item</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-128"><a id="line-128" name="line-128"></a>        <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">started</span>
-</span><span id="line-129"><a id="line-129" name="line-129"></a>        <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
-</span><span id="line-130"><a id="line-130" name="line-130"></a>      <span class="nt">with_items</span><span class="p">:</span>
-</span><span id="line-131"><a id="line-131" name="line-131"></a>        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">openvswitch</span>
-</span><span id="line-132"><a id="line-132" name="line-132"></a>        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ovn-controller</span>
-</span><span id="line-133"><a id="line-133" name="line-133"></a>      <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
-</span><span id="line-134"><a id="line-134" name="line-134"></a>        <span class="no">(kubeinit_bastion_host not in kubeinit_deployment_node_name)</span>
-</span><span id="line-135"><a id="line-135" name="line-135"></a>
-</span><span id="line-136"><a id="line-136" name="line-136"></a>      <span class="nt">ignore_errors</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">True</span>
+</span><span id="line-77"><a id="line-77" name="line-77"></a>
+</span><span id="line-78"><a id="line-78" name="line-78"></a>    <span class="c1">##</span>
+</span><span id="line-79"><a id="line-79" name="line-79"></a>    <span class="c1">## Clean OVN resources</span>
+</span><span id="line-80"><a id="line-80" name="line-80"></a>    <span class="c1">##</span>
+</span><span id="line-81"><a id="line-81" name="line-81"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Clean OVN/OVS resources</span>
+</span><span id="line-82"><a id="line-82" name="line-82"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+</span><span id="line-83"><a id="line-83" name="line-83"></a>        <span class="no">###############################################</span>
+</span><span id="line-84"><a id="line-84" name="line-84"></a>        <span class="no"># WARNING: We can not remove the external     #</span>
+</span><span id="line-85"><a id="line-85" name="line-85"></a>        <span class="no"># bridge interface kiextbr0, the connection   #</span>
+</span><span id="line-86"><a id="line-86" name="line-86"></a>        <span class="no"># will be lost if this is executed in the HVs #</span>
+</span><span id="line-87"><a id="line-87" name="line-87"></a>        <span class="no">###############################################</span>
+</span><span id="line-88"><a id="line-88" name="line-88"></a>        <span class="no">ovs-vsctl del-br br-int || true</span>
+</span><span id="line-89"><a id="line-89" name="line-89"></a>        <span class="no">ovs-vsctl del-br br-ex || true</span>
+</span><span id="line-90"><a id="line-90" name="line-90"></a>        <span class="no">ovn-nbctl ls-del sw0 || true</span>
+</span><span id="line-91"><a id="line-91" name="line-91"></a>        <span class="no">ovn-nbctl ls-del sw1 || true</span>
+</span><span id="line-92"><a id="line-92" name="line-92"></a>        <span class="no">ovn-nbctl lr-del lr0 || true</span>
+</span><span id="line-93"><a id="line-93" name="line-93"></a>        <span class="no">ovn-nbctl ls-del public || true</span>
+</span><span id="line-94"><a id="line-94" name="line-94"></a>        <span class="no">ip route del {{ kubeinit_inventory_network_net }}/{{ kubeinit_inventory_network_cidr }} via 172.16.0.1 dev br-ex || true</span>
+</span><span id="line-95"><a id="line-95" name="line-95"></a>      <span class="nt">ignore_errors</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="line-96"><a id="line-96" name="line-96"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+</span><span id="line-97"><a id="line-97" name="line-97"></a>
+</span><span id="line-98"><a id="line-98" name="line-98"></a>    <span class="c1">##</span>
+</span><span id="line-99"><a id="line-99" name="line-99"></a>    <span class="c1">## Clean keys</span>
+</span><span id="line-100"><a id="line-100" name="line-100"></a>    <span class="c1">##</span>
+</span><span id="line-101"><a id="line-101" name="line-101"></a>
+</span><span id="line-102"><a id="line-102" name="line-102"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">check if /root/.ssh/known_hosts exists</span>
+</span><span id="line-103"><a id="line-103" name="line-103"></a>      <span class="nt">ansible.builtin.stat</span><span class="p">:</span>
+</span><span id="line-104"><a id="line-104" name="line-104"></a>        <span class="nt">path</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/root/.ssh/known_hosts</span>
+</span><span id="line-105"><a id="line-105" name="line-105"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">known_hosts_file</span>
+</span><span id="line-106"><a id="line-106" name="line-106"></a>
+</span><span id="line-107"><a id="line-107" name="line-107"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Reset ssh keys in hypervisor</span>
+</span><span id="line-108"><a id="line-108" name="line-108"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+</span><span id="line-109"><a id="line-109" name="line-109"></a>        <span class="no">ssh-keygen -R  {{ item }}</span>
+</span><span id="line-110"><a id="line-110" name="line-110"></a>        <span class="no">ssh-keygen -R  {{ item }}.{{ kubeinit_inventory_cluster_name }}.{{ kubeinit_inventory_cluster_domain }}</span>
+</span><span id="line-111"><a id="line-111" name="line-111"></a>        <span class="no">ssh-keygen -R  {{ hostvars[item].ansible_host }}</span>
+</span><span id="line-112"><a id="line-112" name="line-112"></a>      <span class="nt">with_items</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">groups[&#39;all_nodes&#39;]</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-113"><a id="line-113" name="line-113"></a>      <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">known_hosts_file.stat.exists | bool</span>
+</span><span id="line-114"><a id="line-114" name="line-114"></a>      <span class="nt">ignore_errors</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="line-115"><a id="line-115" name="line-115"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
+</span><span id="line-116"><a id="line-116" name="line-116"></a>
+</span><span id="line-117"><a id="line-117" name="line-117"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Delete keys in ~/.ssh/known_hosts</span>
+</span><span id="line-118"><a id="line-118" name="line-118"></a>      <span class="nt">ansible.builtin.lineinfile</span><span class="p">:</span>
+</span><span id="line-119"><a id="line-119" name="line-119"></a>        <span class="nt">dest</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">~/.ssh/known_hosts</span>
+</span><span id="line-120"><a id="line-120" name="line-120"></a>        <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">absent</span>
+</span><span id="line-121"><a id="line-121" name="line-121"></a>        <span class="nt">regexp</span><span class="p">:</span> <span class="s">&#39;{{</span><span class="nv"> </span><span class="s">hostvars[item].ansible_host</span><span class="nv"> </span><span class="s">}}&#39;</span>
+</span><span id="line-122"><a id="line-122" name="line-122"></a>      <span class="nt">with_items</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">groups[&#39;all_nodes&#39;]</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-123"><a id="line-123" name="line-123"></a>
+</span><span id="line-124"><a id="line-124" name="line-124"></a>  <span class="nt">delegate_to</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[kubeinit_deployment_node_name].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
 </span></pre></div>
 </td></tr></table>
     </div>

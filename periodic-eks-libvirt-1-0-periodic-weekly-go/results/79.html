@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 10:13:42 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 17:51:39 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 10:33:34 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 18:10:56 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:19:51.74
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:19:16.73
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">247 results</a>
+                            <a href="../playbooks/1.html#results">245 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">39 files</a>
+                            <a href="../playbooks/1.html#files">36 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Remove VMs storage</a></li>
-            <li><strong>Action</strong>: ansible.builtin.file</li>
-            <li><strong>Path</strong>: <a href="../files/12.html#line-61">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/10_cleanup.yml:61</a>
+            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : create the treeinfo directory for RHCOS</a></li>
+            <li><strong>Action</strong>: ansible.builtin.shell</li>
+            <li><strong>Path</strong>: <a href="../files/12.html#line-211">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/main.yml:211</a>
             <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-01</a></li>
-            <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 17 May 2021 10:14:14 -0400</li>
-            <li><strong>Ended</strong>: 17 May 2021 10:14:14 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.47</li>
+            <li><strong>Status</strong>: skipped</li>
+            <li><strong>Started</strong>: 20 May 2021 17:52:14 -0400</li>
+            <li><strong>Ended</strong>: 20 May 2021 17:52:14 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.02</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -217,89 +217,11 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="msg" data-label="msg" class="pf-m-width-20">
-                        <a href="#msg">msg</a>
+                    <td role="cell" id="skip_reason" data-label="skip_reason" class="pf-m-width-20">
+                        <a href="#skip_reason">skip_reason</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>All items completed
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="results" data-label="results" class="pf-m-width-20">
-                        <a href="#results">results</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_diff_peek&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;_original_basename&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;access_time&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;access_time_format&quot;</span><span class="p">:</span> <span class="s2">&quot;%Y%m%d%H%M.%S&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;follow&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;modification_time&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;modification_time_format&quot;</span><span class="p">:</span> <span class="s2">&quot;%Y%m%d%H%M.%S&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/libvirt/images/eks-service-01.qcow2&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;recurse&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-                <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;absent&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;eks-service-01&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/libvirt/images/eks-service-01.qcow2&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;absent&quot;</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_diff_peek&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;_original_basename&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;access_time&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;access_time_format&quot;</span><span class="p">:</span> <span class="s2">&quot;%Y%m%d%H%M.%S&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;follow&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;modification_time&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;modification_time_format&quot;</span><span class="p">:</span> <span class="s2">&quot;%Y%m%d%H%M.%S&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/libvirt/images/eks-master-01.qcow2&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;recurse&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-                <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;absent&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;eks-master-01&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/libvirt/images/eks-master-01.qcow2&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;absent&quot;</span>
-    <span class="p">}</span>
-<span class="p">]</span>
+                        <div class="codehilite"><pre><span></span>Conditional result was False
 </pre></div>
 
                     </td>
