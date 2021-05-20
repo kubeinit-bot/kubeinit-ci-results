@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 09:01:26 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 16:41:19 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 09:43:32 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 17:22:49 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:42:05.64
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:41:29.78
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">301 results</a>
+                            <a href="../playbooks/1.html#results">308 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">39 files</a>
+                            <a href="../playbooks/1.html#files">36 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_prepare : add all bootstrap nodes the all_bootstrap_nodes group</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_prepare : add all worker nodes to the all_worker_nodes group</a></li>
             <li><strong>Action</strong>: ansible.builtin.add_host</li>
-            <li><strong>Path</strong>: <a href="../files/3.html#line-51">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_localhost.yml:51</a>
+            <li><strong>Path</strong>: <a href="../files/3.html#line-49">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_localhost.yml:49</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
-            <li><strong>Status</strong>: skipped</li>
-            <li><strong>Started</strong>: 17 May 2021 09:01:28 -0400</li>
-            <li><strong>Ended</strong>: 17 May 2021 09:01:28 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.02</li>
+            <li><strong>Status</strong>: ok</li>
+            <li><strong>Started</strong>: 20 May 2021 16:41:21 -0400</li>
+            <li><strong>Ended</strong>: 20 May 2021 16:41:21 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.03</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -217,22 +217,38 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="results" data-label="results" class="pf-m-width-20">
-                        <a href="#results">results</a>
+                    <td role="cell" id="msg" data-label="msg" class="pf-m-width-20">
+                        <a href="#msg">msg</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
+                        <div class="codehilite"><pre><span></span>All items completed
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="skipped_reason" data-label="skipped_reason" class="pf-m-width-20">
-                        <a href="#skipped_reason">skipped_reason</a>
+                    <td role="cell" id="results" data-label="results" class="pf-m-width-20">
+                        <a href="#results">results</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>No items in the list
+                        <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;add_host&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;groups&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;all_worker_nodes&quot;</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;host_name&quot;</span><span class="p">:</span> <span class="s2">&quot;eks-worker-01&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;host_vars&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;all_worker_nodes&quot;</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;eks-worker-01&quot;</span>
+    <span class="p">}</span>
+<span class="p">]</span>
 </pre></div>
 
                     </td>

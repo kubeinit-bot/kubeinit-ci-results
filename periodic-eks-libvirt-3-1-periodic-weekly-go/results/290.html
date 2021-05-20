@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -48,15 +48,15 @@
 
 
 
-<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-success pf-m-inline">
+<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-danger pf-m-inline">
 
     <ul class="pf-c-data-list" role="list">
         <li class="pf-c-data-list__item">
             <div class="pf-c-data-list__item-row">
                 <div class="pf-c-data-list__item-control pf-m-fit-content">
                     
-<div class="pf-c-alert__icon" title="Playbook completed successfully">
-    <i class="fas fa-check-circle" aria-hidden="true"></i>
+<div class="pf-c-alert__icon" title="Playbook completed with errors">
+    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
 </div>
 
                 </div>
@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 23 Apr 2021 03:06:33 +0200
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 16:41:19 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 23 Apr 2021 04:12:59 +0200
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 17:22:49 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 01:06:26.60
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:41:29.78
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml
                             </a>
@@ -90,22 +90,22 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#hosts">1 hosts</a>
+                            <a href="../playbooks/1.html#hosts">2 hosts</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">2 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">556 results</a>
+                            <a href="../playbooks/1.html#results">308 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">34 files</a>
+                            <a href="../playbooks/1.html#files">36 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Read in the contents of domain.crt</a></li>
-            <li><strong>Action</strong>: ansible.builtin.slurp</li>
-            <li><strong>Path</strong>: <a href="../files/23.html#line-267">/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:267</a>
-            <li><strong>Host</strong>: <a href="../hosts/1.html">hypervisor-01</a></li>
-            <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 23 Apr 2021 03:46:30 +0200</li>
-            <li><strong>Ended</strong>: 23 Apr 2021 03:46:30 +0200</li>
-            <li><strong>Duration</strong>: 00:00:00.42</li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Copy cert to pki directory</a></li>
+            <li><strong>Action</strong>: ansible.builtin.copy</li>
+            <li><strong>Path</strong>: <a href="../files/34.html#line-111">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:111</a>
+            <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
+            <li><strong>Status</strong>: skipped</li>
+            <li><strong>Started</strong>: 20 May 2021 17:22:17 -0400</li>
+            <li><strong>Ended</strong>: 20 May 2021 17:22:17 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.02</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -217,48 +217,11 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="content" data-label="content" class="pf-m-width-20">
-                        <a href="#content">content</a>
+                    <td role="cell" id="skip_reason" data-label="skip_reason" class="pf-m-width-20">
+                        <a href="#skip_reason">skip_reason</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUdhakNDQkZLZ0F3SUJBZ0lVSElxUlVEZUFObEhTQm1NTG50b1NURGtBVnpRd0RRWUpLb1pJaHZjTkFRRUwKQlFBd2dZNHhDekFKQmdOVkJBWVRBbFZUTVJBd0RnWURWUVFJREFkTmVWTjBZWFJsTVE4d0RRWURWUVFIREFaTgplVU5wZEhreEVqQVFCZ05WQkFvTUNVMTVRMjl0Y0dGdWVURVZNQk1HQTFVRUN3d01UWGxFWlhCaGNuUnRaVzUwCk1URXdMd1lEVlFRRERDaGxhM010YzJWeWRtbGpaUzB3TVM1bGEzTmpiSFZ6ZEdWeUxtdDFZbVZwYm1sMExteHYKWTJGc01CNFhEVEl4TURReU16QXhORFl4TkZvWERUTXhNRFF5TVRBeE5EWXhORm93Z1k0eEN6QUpCZ05WQkFZVApBbFZUTVJBd0RnWURWUVFJREFkTmVWTjBZWFJsTVE4d0RRWURWUVFIREFaTmVVTnBkSGt4RWpBUUJnTlZCQW9NCkNVMTVRMjl0Y0dGdWVURVZNQk1HQTFVRUN3d01UWGxFWlhCaGNuUnRaVzUwTVRFd0x3WURWUVFERENobGEzTXQKYzJWeWRtbGpaUzB3TVM1bGEzTmpiSFZ6ZEdWeUxtdDFZbVZwYm1sMExteHZZMkZzTUlJQ0lqQU5CZ2txaGtpRwo5dzBCQVFFRkFBT0NBZzhBTUlJQ0NnS0NBZ0VBcUN1aXNvNWhHVk5mMU40QTZTZjIzc1JFbWVhK21kQWlhRUErCnNKTTFLekxQY05PNG9od0Fyc0FuZ0xoYjFSQit5bkxIRHhmVzNob2JJM0JIbDJ2MHRjS2VOS2JwTmJnMm9YY20KQkRtOGRiRTM5eUM5emhIN040a2hZY3Z3Y0lRR2JoUFpCYTkzRzJiSmhPNmhRTmt3VjBWZTFSSVVWRTlqRmpTVAp4VDh5dHZwTGdaMFpmeGUrZy9oRmdTTUE2WlFyUGZRdnZHVDBKMU9hd1NodmpkZ0tKbWZvQkp5bFI5MnExcUF6CnZCRXpjaTZSZnlmcHg3cGtEMzRRZ2Y4QUs5T2svc3hrTmIrK2R1SDFsbmQwck1GR1ZnNmZSUGxYcUZWTXZWcmUKTjhFRTFkZUZlQmUvYTdkYVN0cktpNWVlVFdyaVppUkpLY0hXa2lIYmpWeGxPeXRUSHNhQ2lPZkVtaWpISzFkUgpwdVh1TXJyVGg4V3dYMUtJT2NYS1FDWkUxSzEvQlZTZk9XQ0N3Z0U5OGNVNlVuWEFLTFpCc0tkV1lWVkNYUTVNCnBFSGxnSXhiY0NVS0J6cFIraUs3d1RybG9uYUhjaUpZYzZJOFdSSjVJcVBYbXpzSE9LbEpGaGw0VXVNYyt4bmUKOUMzcURLcURvMkhOZmR2TjJQNDlEakFXZ0NtU1VTdk00K3lwTmsxWDJPNkx6VkQ0ZmxTN0VLMGVhbE85cmpiQgoxeWMyK1BtUUw5dWc2Y0UvcnhJTHIzQlZCU3E4ZEpoV3VBazhENmlHK3I5VktVa0E3dXFsN1pjNGdoY0U1ZlptCjg5TnhVaCtvMXV2NHhZY2RqNTk2VmU5aEJNdVJVZ1pvTjVmcHBsaEFzRmRIR0VRUWRwdDNnNXdTWUlONk1SajAKYnZOUGVwTUNBd0VBQWFPQnZUQ0J1akJuQmdOVkhSRUVZREJlZ2c1bGEzTXRjMlZ5ZG1salpTMHdNWUlvWld0egpMWE5sY25acFkyVXRNREV1Wld0elkyeDFjM1JsY2k1cmRXSmxhVzVwZEM1c2IyTmhiSUlpY21WbmFYTjBjbmt1ClpXdHpZMngxYzNSbGNpNXJkV0psYVc1cGRDNXNiMk5oYkRBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUIwR0ExVWQKRGdRV0JCVHJjejFxTVIvYjZiWWJQU1plWEQ4amt0eXFvakFmQmdOVkhTTUVHREFXZ0JUcmN6MXFNUi9iNmJZYgpQU1plWEQ4amt0eXFvakFOQmdrcWhraUc5dzBCQVFzRkFBT0NBZ0VBQ0s2dUhYQVJETVZScnV3SlkzdGZUL2lBCm5tcHJVK2NGcEs0Mi9pNXRrYjFYWEo3RHpNY0ZpdWNmZC9vSU5iNFZVdG94RXplODdsQmI2TFdRTzd2M2w4VmoKRjVudnVPNnRTRUpLWG9MRDVRMWJFNWFGblBacDRDbUV2VXhxeWpmZlNtclkvSUhwd1VmdWpUdXJpb3kwZVFDQQp1UGtXMy9wZ1VDUDR0V1ZROHV1N0wrZWlYQ3RHUGF0RkZWNUEwSWZ4Zzl4UjMwQ2Q1Ukw2NlFHN1NrbnAyMXB1CnR3ZHJzMnVpb0R6enNwN0xKSHpXTCthV1FFQml6M3UwTXlRam1RTnZzWmxjdjdzVVB0bE52MGdVajNkcm92YWUKbCtZdWR3OHU2UGVOZW9GVUZRVmlYRU1GVjF5Tm84Z2VQanRCek1EcGxITmFXWnBaakVQd0ZCdHhZRWY3RnA1NwprY296MkZIZ2JualNIaENHVXNVVktQUUhEZlA5aTlrbmtlem55NmFjZDZUZ3NSb3NSbWxHWm5BSnZkWE1NWHV0ClBhSUJDckVxdE5raGJWNmRodmE1ZDFhMUViaStPSDEvV1pyTEp1UTAxcmR0ZHZQei8yQXBCMVErTmVMTTRVQWcKazlPdkpQOFVUU0NNM0w0cWhlNm9UN2drUWlsMTlzSHp5RkR5djkwNmJyWGpXUEdFV2Y0c2s3Z2NnSG1Lazd0awpnMU56OUlTZ1hpOGlId2FZR21qaVRzZk1Tc2lJTDcwTi9NaVhxdTBicW1ETGt6cERTWGJrT1pYR3FWN3RKS3dVCmp5WkJqWUxSQmZUdXcrTjQ4c3JKMXdwUXJsS3pHQXo3L0s5T3hsSHFuQmY5UXhRaU44bmtCeEZqZWVqcERwUFMKb2R5RWJoS2J4bG1JaGFXZ0FCdz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="encoding" data-label="encoding" class="pf-m-width-20">
-                        <a href="#encoding">encoding</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>base64
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
-                        <a href="#invocation">invocation</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/local_registry/certs/domain.crt&quot;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="source" data-label="source" class="pf-m-width-20">
-                        <a href="#source">source</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>/var/kubeinit/local_registry/certs/domain.crt
+                        <div class="codehilite"><pre><span></span>Conditional result was False
 </pre></div>
 
                     </td>

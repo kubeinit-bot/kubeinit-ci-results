@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -48,15 +48,15 @@
 
 
 
-<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-success pf-m-inline">
+<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-danger pf-m-inline">
 
     <ul class="pf-c-data-list" role="list">
         <li class="pf-c-data-list__item">
             <div class="pf-c-data-list__item-row">
                 <div class="pf-c-data-list__item-control pf-m-fit-content">
                     
-<div class="pf-c-alert__icon" title="Playbook completed successfully">
-    <i class="fas fa-check-circle" aria-hidden="true"></i>
+<div class="pf-c-alert__icon" title="Playbook completed with errors">
+    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
 </div>
 
                 </div>
@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 23 Apr 2021 03:06:33 +0200
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 16:41:19 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 23 Apr 2021 04:12:59 +0200
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 17:22:49 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 01:06:26.60
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:41:29.78
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml
                             </a>
@@ -90,22 +90,22 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#hosts">1 hosts</a>
+                            <a href="../playbooks/1.html#hosts">2 hosts</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">2 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">556 results</a>
+                            <a href="../playbooks/1.html#results">308 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">34 files</a>
+                            <a href="../playbooks/1.html#files">36 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Reload systemd service</a></li>
-            <li><strong>Action</strong>: ansible.builtin.systemd</li>
-            <li><strong>Path</strong>: <a href="../files/23.html#line-244">/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:244</a>
-            <li><strong>Host</strong>: <a href="../hosts/1.html">hypervisor-01</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Read in the contents of domain.crt</a></li>
+            <li><strong>Action</strong>: ansible.builtin.slurp</li>
+            <li><strong>Path</strong>: <a href="../files/34.html#line-90">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:90</a>
+            <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 23 Apr 2021 03:46:27 +0200</li>
-            <li><strong>Ended</strong>: 23 Apr 2021 03:46:28 +0200</li>
-            <li><strong>Duration</strong>: 00:00:00.76</li>
+            <li><strong>Started</strong>: 20 May 2021 17:22:16 -0400</li>
+            <li><strong>Ended</strong>: 20 May 2021 17:22:17 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.25</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -217,22 +217,35 @@
                 </tr>
                 
                 <tr role="row">
+                    <td role="cell" id="content" data-label="content" class="pf-m-width-20">
+                        <a href="#content">content</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUdhakNDQkZLZ0F3SUJBZ0lVYVZtS0dQUFFnTFBlakUyNVE1eXNxN1pGUFd3d0RRWUpLb1pJaHZjTkFRRUwKQlFBd2dZNHhDekFKQmdOVkJBWVRBbFZUTVJBd0RnWURWUVFJREFkTmVWTjBZWFJsTVE4d0RRWURWUVFIREFaTgplVU5wZEhreEVqQVFCZ05WQkFvTUNVMTVRMjl0Y0dGdWVURVZNQk1HQTFVRUN3d01UWGxFWlhCaGNuUnRaVzUwCk1URXdMd1lEVlFRRERDaGxhM010YzJWeWRtbGpaUzB3TVM1bGEzTmpiSFZ6ZEdWeUxtdDFZbVZwYm1sMExteHYKWTJGc01CNFhEVEl4TURVeU1ESXhNakl4TmxvWERUTXhNRFV4T0RJeE1qSXhObG93Z1k0eEN6QUpCZ05WQkFZVApBbFZUTVJBd0RnWURWUVFJREFkTmVWTjBZWFJsTVE4d0RRWURWUVFIREFaTmVVTnBkSGt4RWpBUUJnTlZCQW9NCkNVMTVRMjl0Y0dGdWVURVZNQk1HQTFVRUN3d01UWGxFWlhCaGNuUnRaVzUwTVRFd0x3WURWUVFERENobGEzTXQKYzJWeWRtbGpaUzB3TVM1bGEzTmpiSFZ6ZEdWeUxtdDFZbVZwYm1sMExteHZZMkZzTUlJQ0lqQU5CZ2txaGtpRwo5dzBCQVFFRkFBT0NBZzhBTUlJQ0NnS0NBZ0VBcGFaekNTem5kcjJzMGFMa1B4VTMzVkErTDVyalhOK2RkV2hQCmJXK1lnaFR6TjVPd3ptOEpOZVkxTnl2b0Yzcnk3RWpEbW5HeGxTSC95aTRDZE5uS0FUOGhtS2JGaG1JRmZnOHoKRlc1am16OWZCeXZyUlN2T2xXekFtb0h3SmJsQmw0enlKcXN4UDBMZTQvdkhWYVlyQ3FLSDY2UkwzeW0xcEtIcAowUUZhYlN6NGsyd2FMN1MvbGJBQmM4RjRYZDQ4ZnRObEhHUTlUV2I5Z1RNazdXL0JkbWJkQXFwNW1SQlhydjJHCk1PN1NjTHFWREhGRU53NS80MGE1VkdVbm5Wb09aTmhVcnkxRlRDblQyNnhHSjhTcFpNZElkUkpiRFdKT2NlOHQKNG9WTU9makRtN3NiL052SXZZb0FFd2o2WWI2WUVTZ1RTRHQ3dlFiY2x5MUFhVlc5RlVlL1BkWmZUWFE2RGd4VgpCdWI2YittNWw5SmJiMzVZSGNtb3JRaFowYUdHckxXV0RhZjF1N0Nxejc1dTF6eTdIeGpVYklkUnRQenVTTFhGCkE5YjNhZGRwakJDTDBuTWp2bWFaV0tZaVZzT3lRRDdxaVgwMmgyZmIwQWsvTXl1UHpCR3R1akFnTzEyNGthR0QKWUw4SVFTbFo5YVg4UGs4VzhZMXhJVWdES0o0aFVZb3VhSkJYU1QyU1RHejZTTjlRN09jbS9NNGRxNlgxSTVTcQpOTnk3L3hwMEc4NWRIK0JIeFVyVjIxczdURjgrR25ZQnVwdXNVN3NyemEzTThrTjQ0aXBHK0lmV3p4NHlyOVRnCmJVSkpUREFHWHNFRmFvWHc3WmJmZmUxb2FYRTUrNjUzZjdBQTJ0azV4RXd6dmowU0JHeHNEZ2J6dDllYzZ6eVIKcWZWK2xYY0NBd0VBQWFPQnZUQ0J1akJuQmdOVkhSRUVZREJlZ2c1bGEzTXRjMlZ5ZG1salpTMHdNWUlvWld0egpMWE5sY25acFkyVXRNREV1Wld0elkyeDFjM1JsY2k1cmRXSmxhVzVwZEM1c2IyTmhiSUlpY21WbmFYTjBjbmt1ClpXdHpZMngxYzNSbGNpNXJkV0psYVc1cGRDNXNiMk5oYkRBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUIwR0ExVWQKRGdRV0JCUXlvQU1KREpSUmVHQVlqdzQ1VFdTckVOTFVsekFmQmdOVkhTTUVHREFXZ0JReW9BTUpESlJSZUdBWQpqdzQ1VFdTckVOTFVsekFOQmdrcWhraUc5dzBCQVFzRkFBT0NBZ0VBUm01aUF0clBiNXNQWWNENFZPbUh0MldSClpmamlpbk1GUElIM0I0aTdtSzJFOElobFdEZlBwd1pyNlFKamZxeU9qQWtCRDRTVHJkSkRoTGw3bUt0Nk9VWFkKKzhHVVpUem96YjIybnAvTkpvMlJhdVd5R3A4ZG5ESXZSU0pIL2M4MHM0VVNZbVMxR1ZTSGd4U28zMDdoUXJtMwpDQTNHMGhMaFJvcTNPVHNvUVNqRFJpN2dNWDR0dnRmRU9vUjNqeDg5K2VFR1YzcHkvbnFhbUpoZVcrY2NzSzdTCnJUMzhoTGZ3RTFRTEtYUVhQVFJGMWdRaFFBSDNnWUEzK3RXVytFQ0RSdnhWek9KUjkxNUlBanpDMER5bEk3dGQKc2dMcUVIWXBrOEU2alh2UXE4TXJvN21MNVZSMnRjMnM5VEREcjl0YW1IUEJSNTlWQlk0dkRLSlNmT0J4WUFMQgpvalpGNTFMczh3LzBocVZVWERkZFpGRmFCOU1ERWNtcXRQTUY2YWU4di81eVhtam9wMzhvZzdhUkZQS3lXekV3CkMvRnczSmpvNzRsN3J2ZEQ1R1IvSWozcVdNR3ZET2xpa1V4NG1jVUEwWjJvaHFFL3VKUUF3ZEovWnpjQ0Q0THUKT0xFWWJLOGJRRXNtQ2pLd0U1TElNbjZ2bGVIRVNyWG96Mk81TFQwQXNyazZ2ZUM2RTYxOXpBRTd0aTFncHNETQpvOVExYWYwQVpWUFJ0aG12aUY2ajArSU1Gd3hFemwwTDdhUmZuc0pDWS9ib09WZFZZdkM3WnhqVWJDUlI1RUpQCnhpcUlVc1dwUEIrZUJDd0ZnWjJrVVNCWU9YWFY1QmN0MG1ZbC9VQ2hlZEZUVTdxTitxRjdHS0cwZEJHMlRXV2IKeE1sMTR5eG85RTdJVkJUYWV0ST0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="encoding" data-label="encoding" class="pf-m-width-20">
+                        <a href="#encoding">encoding</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>base64
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
                     <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
                         <a href="#invocation">invocation</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;daemon_reexec&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;daemon_reload&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;enabled&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;masked&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;no_block&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;scope&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="kc">null</span>
+        <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/local_registry/certs/domain.crt&quot;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -241,20 +254,11 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="name" data-label="name" class="pf-m-width-20">
-                        <a href="#name">name</a>
+                    <td role="cell" id="source" data-label="source" class="pf-m-width-20">
+                        <a href="#source">source</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        None
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="status" data-label="status" class="pf-m-width-20">
-                        <a href="#status">status</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">{}</span>
+                        <div class="codehilite"><pre><span></span>/var/kubeinit/local_registry/certs/domain.crt
 </pre></div>
 
                     </td>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 09:01:26 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 16:41:19 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 09:43:32 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 17:22:49 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:42:05.64
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:41:29.78
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">301 results</a>
+                            <a href="../playbooks/1.html#results">308 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">39 files</a>
+                            <a href="../playbooks/1.html#files">36 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_prepare : reset local ssh keys</a></li>
-            <li><strong>Action</strong>: ansible.builtin.shell</li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_prepare : list all_bootstrap_nodes</a></li>
+            <li><strong>Action</strong>: ansible.builtin.debug</li>
             <li><strong>Path</strong>: <a href="../files/3.html#line-121">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_localhost.yml:121</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
-            <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 17 May 2021 09:01:30 -0400</li>
-            <li><strong>Ended</strong>: 17 May 2021 09:01:31 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.94</li>
+            <li><strong>Status</strong>: skipped</li>
+            <li><strong>Started</strong>: 20 May 2021 16:41:23 -0400</li>
+            <li><strong>Ended</strong>: 20 May 2021 16:41:23 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.02</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -217,208 +217,22 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="msg" data-label="msg" class="pf-m-width-20">
-                        <a href="#msg">msg</a>
+                    <td role="cell" id="results" data-label="results" class="pf-m-width-20">
+                        <a href="#results">results</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>All items completed
+                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="results" data-label="results" class="pf-m-width-20">
-                        <a href="#results">results</a>
+                    <td role="cell" id="skipped_reason" data-label="skipped_reason" class="pf-m-width-20">
+                        <a href="#skipped_reason">skipped_reason</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  eks-service-01\nssh-keygen -R  eks-service-01.ekscluster.kubeinit.local\nssh-keygen -R  10.0.0.100\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:00.017680&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 09:01:30.785580&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  eks-service-01\nssh-keygen -R  eks-service-01.ekscluster.kubeinit.local\nssh-keygen -R  10.0.0.100\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;eks-service-01&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 09:01:30.767900&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;Host eks-service-01 not found in /root/.ssh/known_hosts\r\nHost eks-service-01.ekscluster.kubeinit.local not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Host eks-service-01 not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Host eks-service-01.ekscluster.kubeinit.local not found in /root/.ssh/known_hosts&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;# Host 10.0.0.100 found: line 6\n/root/.ssh/known_hosts updated.\nOriginal contents retained as /root/.ssh/known_hosts.old&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;# Host 10.0.0.100 found: line 6&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;/root/.ssh/known_hosts updated.&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Original contents retained as /root/.ssh/known_hosts.old&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  eks-master-01\nssh-keygen -R  eks-master-01.ekscluster.kubeinit.local\nssh-keygen -R  10.0.0.1\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:00.016396&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 09:01:30.936645&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  eks-master-01\nssh-keygen -R  eks-master-01.ekscluster.kubeinit.local\nssh-keygen -R  10.0.0.1\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;eks-master-01&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 09:01:30.920249&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;Host eks-master-01 not found in /root/.ssh/known_hosts\r\nHost eks-master-01.ekscluster.kubeinit.local not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Host eks-master-01 not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Host eks-master-01.ekscluster.kubeinit.local not found in /root/.ssh/known_hosts&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;# Host 10.0.0.1 found: line 6\n/root/.ssh/known_hosts updated.\nOriginal contents retained as /root/.ssh/known_hosts.old&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;# Host 10.0.0.1 found: line 6&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;/root/.ssh/known_hosts updated.&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Original contents retained as /root/.ssh/known_hosts.old&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  eks-master-02\nssh-keygen -R  eks-master-02.ekscluster.kubeinit.local\nssh-keygen -R  10.0.0.2\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:00.014743&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 09:01:31.097969&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  eks-master-02\nssh-keygen -R  eks-master-02.ekscluster.kubeinit.local\nssh-keygen -R  10.0.0.2\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;eks-master-02&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 09:01:31.083226&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;Host eks-master-02 not found in /root/.ssh/known_hosts\r\nHost eks-master-02.ekscluster.kubeinit.local not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Host eks-master-02 not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Host eks-master-02.ekscluster.kubeinit.local not found in /root/.ssh/known_hosts&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;# Host 10.0.0.2 found: line 6\n/root/.ssh/known_hosts updated.\nOriginal contents retained as /root/.ssh/known_hosts.old&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;# Host 10.0.0.2 found: line 6&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;/root/.ssh/known_hosts updated.&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Original contents retained as /root/.ssh/known_hosts.old&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  eks-master-03\nssh-keygen -R  eks-master-03.ekscluster.kubeinit.local\nssh-keygen -R  10.0.0.3\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:00.015925&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 09:01:31.259165&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  eks-master-03\nssh-keygen -R  eks-master-03.ekscluster.kubeinit.local\nssh-keygen -R  10.0.0.3\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;eks-master-03&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 09:01:31.243240&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;Host eks-master-03 not found in /root/.ssh/known_hosts\r\nHost eks-master-03.ekscluster.kubeinit.local not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Host eks-master-03 not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Host eks-master-03.ekscluster.kubeinit.local not found in /root/.ssh/known_hosts&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;# Host 10.0.0.3 found: line 6\n/root/.ssh/known_hosts updated.\nOriginal contents retained as /root/.ssh/known_hosts.old&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;# Host 10.0.0.3 found: line 6&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;/root/.ssh/known_hosts updated.&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Original contents retained as /root/.ssh/known_hosts.old&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  eks-worker-01\nssh-keygen -R  eks-worker-01.ekscluster.kubeinit.local\nssh-keygen -R  10.0.0.6\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:00.017526&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 09:01:31.420124&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh-keygen -R  eks-worker-01\nssh-keygen -R  eks-worker-01.ekscluster.kubeinit.local\nssh-keygen -R  10.0.0.6\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;eks-worker-01&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17 09:01:31.402598&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;Host eks-worker-01 not found in /root/.ssh/known_hosts\r\nHost eks-worker-01.ekscluster.kubeinit.local not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Host eks-worker-01 not found in /root/.ssh/known_hosts&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Host eks-worker-01.ekscluster.kubeinit.local not found in /root/.ssh/known_hosts&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;# Host 10.0.0.6 found: line 6\n/root/.ssh/known_hosts updated.\nOriginal contents retained as /root/.ssh/known_hosts.old&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;# Host 10.0.0.6 found: line 6&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;/root/.ssh/known_hosts updated.&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Original contents retained as /root/.ssh/known_hosts.old&quot;</span>
-        <span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">]</span>
+                        <div class="codehilite"><pre><span></span>No items in the list
 </pre></div>
 
                     </td>
