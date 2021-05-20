@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 12 May 2021 21:37:38 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 19 May 2021 22:03:55 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 12 May 2021 21:47:59 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 19 May 2021 22:21:20 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:10:21.45
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:17:25.51
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml
                             </a>
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">319 results</a>
+                            <a href="../playbooks/1.html#results">321 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">47 files</a>
+                            <a href="../playbooks/1.html#files">44 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Read in the contents of domain.crt</a></li>
-            <li><strong>Action</strong>: ansible.builtin.slurp</li>
-            <li><strong>Path</strong>: <a href="../files/39.html#line-135">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:135</a>
+            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Copy cert to pki directory</a></li>
+            <li><strong>Action</strong>: ansible.builtin.copy</li>
+            <li><strong>Path</strong>: <a href="../files/35.html#line-111">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:111</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
-            <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 12 May 2021 21:42:58 -0400</li>
-            <li><strong>Ended</strong>: 12 May 2021 21:42:59 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.15</li>
+            <li><strong>Status</strong>: changed</li>
+            <li><strong>Started</strong>: 19 May 2021 22:13:32 -0400</li>
+            <li><strong>Ended</strong>: 19 May 2021 22:13:32 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.31</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -210,29 +210,51 @@
                         <a href="#changed">changed</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>False
+                        <div class="codehilite"><pre><span></span>True
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="content" data-label="content" class="pf-m-width-20">
-                        <a href="#content">content</a>
+                    <td role="cell" id="checksum" data-label="checksum" class="pf-m-width-20">
+                        <a href="#checksum">checksum</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUdhakNDQkZLZ0F3SUJBZ0lVS3E3Z2wrZ0E3NEZ4UUg5cHQrNmR3OW41MGN3d0RRWUpLb1pJaHZjTkFRRUwKQlFBd2dZNHhDekFKQmdOVkJBWVRBbFZUTVJBd0RnWURWUVFJREFkTmVWTjBZWFJsTVE4d0RRWURWUVFIREFaTgplVU5wZEhreEVqQVFCZ05WQkFvTUNVMTVRMjl0Y0dGdWVURVZNQk1HQTFVRUN3d01UWGxFWlhCaGNuUnRaVzUwCk1URXdMd1lEVlFRRERDaHlhMlV0YzJWeWRtbGpaUzB3TVM1eWEyVmpiSFZ6ZEdWeUxtdDFZbVZwYm1sMExteHYKWTJGc01CNFhEVEl4TURVeE16QXhOREkxT0ZvWERUTXhNRFV4TVRBeE5ESTFPRm93Z1k0eEN6QUpCZ05WQkFZVApBbFZUTVJBd0RnWURWUVFJREFkTmVWTjBZWFJsTVE4d0RRWURWUVFIREFaTmVVTnBkSGt4RWpBUUJnTlZCQW9NCkNVMTVRMjl0Y0dGdWVURVZNQk1HQTFVRUN3d01UWGxFWlhCaGNuUnRaVzUwTVRFd0x3WURWUVFERENoeWEyVXQKYzJWeWRtbGpaUzB3TVM1eWEyVmpiSFZ6ZEdWeUxtdDFZbVZwYm1sMExteHZZMkZzTUlJQ0lqQU5CZ2txaGtpRwo5dzBCQVFFRkFBT0NBZzhBTUlJQ0NnS0NBZ0VBeU9sN05TK1AyUXFGdjZBWGtTYTVXdHNJcFdwQURnblJmYThLCkN1VG9zR3YzZWJldlIwUlFFaWNMeWlpWVVnd3U1UlE5V0RHbzBJUWxqdThSNy9ZVFJtQzg0cDJEL211amlHNVMKaS9lbmF5ZkhMSlk5YXBFVzdQck9GS2RoUEhRdkNOcnFSMlN4WXI5YmN6d0phUDBURTNWeHN3QlVFZW5HeVFpLwpiU2RadkdGRDg5Z2VrVjl1YVZDeHZpK1M4RlRBRmZTT3FkL1lkZStwcjNKT211WVg1VVE4cE42endPTS9OUG5DClJIQWlKeWNtejNwQWdjamZubm9yR1NOSEwwT256WGhrTU5hbEVoSjJOdnYxTHB2UkQxR1AraXd3YlF1dXF0a3IKQ2VadGZFTE5tSXpMaUFMQkxKZ2tIazcrZEsxT25tUENoMDNDV1N3NmN6aDFEOTQxcmg5WHpHV3cyU0QyZjI5SAoyRjd6bDdab1k3cDBITkdIcFlPR1lPVVhmQ0J3MWdPM2d4RGQyeHdvQXArQkV4bktydG5aU1JpR3BzcXQ3NUFuClZuZllyQjlpMEVDWTlKbzg1M3pFTHc1WDNuNHVORjdwZTk5V21QSlFEV1VjRWZTcG44Y0xORzlDN05JTHBxaFAKTUNsSzRSTWE2LzRFOEdTUDNEMEUxVjlFK2M2UnVlcG5RbWFORFE2U1B1cWJGNlNJcFRLN2daN2RISlZJR0FoSwpEWUI5TWZQZEtNMWxVaXBNbzZtU2FXNGs0RmpzYWlhZDR2TTdlZVQ2QUR2eWVKT1JVR3dpMnE4WXRyUGhUUmhLCkh5SWNFQlhWUC9Kd2lIR0pRL1p1RzFtT25NNDFoV0U2S1VCakNwYlJ5c3U4bXpYQU1GQ2ttdXIxM3REalRWSFgKTVpMVHRrMENBd0VBQWFPQnZUQ0J1akJuQmdOVkhSRUVZREJlZ2c1eWEyVXRjMlZ5ZG1salpTMHdNWUlvY210bApMWE5sY25acFkyVXRNREV1Y210bFkyeDFjM1JsY2k1cmRXSmxhVzVwZEM1c2IyTmhiSUlpY21WbmFYTjBjbmt1CmNtdGxZMngxYzNSbGNpNXJkV0psYVc1cGRDNXNiMk5oYkRBUEJnTlZIUk1CQWY4RUJUQURBUUgvTUIwR0ExVWQKRGdRV0JCU1ZyY0I3N0M3Y0tiNjV1RXNYb0owS1RweFNnREFmQmdOVkhTTUVHREFXZ0JTVnJjQjc3QzdjS2I2NQp1RXNYb0owS1RweFNnREFOQmdrcWhraUc5dzBCQVFzRkFBT0NBZ0VBb3NrVWpvcG1oTVluZG9wS3JtY1Z2cndIClFsTFArTWUwWXViSExIbElaSVg0S2J3eDY2VkpqQnpPclpYNXFaWWhnR1FCYUpnQ0lmSTI5OG5tYStGU0VsZngKNUE3bTBnLzROWGZZWWRCb1JwYlZXMlZ5UTVPYWh3ME5XQ0s2dVVtd01tOEcyMlNHRTRsWG5LZEZqQWhkQXRXSgpjWlE0Z0p0SFBzV1loaTh3QldNUjF4bGxtNkkzdERVOUNJendvb3JDaHgwQWJPMGhKeVhKSklYOWJnQUo1MlFXCnpYMUdmL3R1MThIZkRDdDZtU1NmWDZNVk1pZEZGMytSV1Jib05TK1BjRG13aUgyQUQvUS90RitkdDFXQ0tnOC8KMTNvTU0vRGx0MlZwMnJHNkVVd3BZdDBCTnJ1ODc2RUNiWFMwOTNIWmZoR2dZbXFDRFIweHk2Q1Y3bmZ0eVRHVQpsVDNkWVB4bld5eDlETXM1aUlhS2t2SW9BQ2xoemtaemNCMjdDK21vbDhXMTZ0MkhOaDJnaWc5RWtkeUpRcmVhCnI3OWh6ZHFNWHk1QkhaczdOTmJhVUFGc2tKK1JDTXltVEZlSnhVVDA4NDZ6TWpIUFZ4UkQ5ZVVrTUlKeFJzODYKUll0b1U3clBTNThNUS8vRDQrMVRjSVpHVkxhQUk1Wm1SSVVpR0hkK1ZiOXBGQjdxWEF4eXk4SmY4anpzRWxWRApFL2t2cGVSYXh1SklNeVdJbGxCUjhwMTlmU281S0hQT1cyOWk2TExVVSt3MjkwYkh2M0dDK1dSOXo0elUyK1JkCjE0Q3lVQjlGOStTajlKUU1qMXhrT1RhdThmS0NGMlpKNlR1MVk4M29ZV2o2WjIyeEZsRmlRRlVJbUdpMHlxV0kKaHQ1NHozYUt6bHM3cjZLTVFURT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+                        <div class="codehilite"><pre><span></span>a47526353cf5faa6a9afbcd12d849569d8dfa96e
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="encoding" data-label="encoding" class="pf-m-width-20">
-                        <a href="#encoding">encoding</a>
+                    <td role="cell" id="dest" data-label="dest" class="pf-m-width-20">
+                        <a href="#dest">dest</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>base64
+                        <div class="codehilite"><pre><span></span>/usr/local/share/ca-certificates/domain.crt
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="gid" data-label="gid" class="pf-m-width-20">
+                        <a href="#gid">gid</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>0
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="group" data-label="group" class="pf-m-width-20">
+                        <a href="#group">group</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>root
 </pre></div>
 
                     </td>
@@ -245,7 +267,27 @@
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/local_registry/certs/domain.crt&quot;</span>
+        <span class="nt">&quot;_original_basename&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;backup&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;checksum&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;content&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;dest&quot;</span><span class="p">:</span> <span class="s2">&quot;/usr/local/share/ca-certificates/domain.crt&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;directory_mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;follow&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;root&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;local_follow&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="mi">420</span><span class="p">,</span>
+        <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="s2">&quot;root&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;remote_src&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/local_registry/certs/domain.crt&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;validate&quot;</span><span class="p">:</span> <span class="kc">null</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -254,11 +296,77 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="source" data-label="source" class="pf-m-width-20">
-                        <a href="#source">source</a>
+                    <td role="cell" id="md5sum" data-label="md5sum" class="pf-m-width-20">
+                        <a href="#md5sum">md5sum</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>531f34137588433bbaa890c60c9f7abe
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="mode" data-label="mode" class="pf-m-width-20">
+                        <a href="#mode">mode</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>0644
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="owner" data-label="owner" class="pf-m-width-20">
+                        <a href="#owner">owner</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>root
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="size" data-label="size" class="pf-m-width-20">
+                        <a href="#size">size</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>2285
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="src" data-label="src" class="pf-m-width-20">
+                        <a href="#src">src</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span>/var/kubeinit/local_registry/certs/domain.crt
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="state" data-label="state" class="pf-m-width-20">
+                        <a href="#state">state</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>file
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="uid" data-label="uid" class="pf-m-width-20">
+                        <a href="#uid">uid</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>0
 </pre></div>
 
                     </td>
