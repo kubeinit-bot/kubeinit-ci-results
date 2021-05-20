@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 12 May 2021 21:24:12 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 19 May 2021 21:40:17 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 12 May 2021 21:36:11 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 19 May 2021 22:02:17 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:11:58.57
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:21:59.94
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml
                             </a>
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">348 results</a>
+                            <a href="../playbooks/1.html#results">353 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">48 files</a>
+                            <a href="../playbooks/1.html#files">45 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Enable Ubuntu repositories</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_rke : Render net info</a></li>
             <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/37.html#line-3">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/00_install.yml:3</a>
+            <li><strong>Path</strong>: <a href="../files/32.html#line-30">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_rke/tasks/20_configure_service_nodes.yml:30</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 12 May 2021 21:30:46 -0400</li>
-            <li><strong>Ended</strong>: 12 May 2021 21:30:49 -0400</li>
-            <li><strong>Duration</strong>: 00:00:02.95</li>
+            <li><strong>Started</strong>: 19 May 2021 21:53:05 -0400</li>
+            <li><strong>Ended</strong>: 19 May 2021 21:53:06 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.24</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -222,9 +222,8 @@
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span>set -o pipefail
-apt-get install software-properties-common -y
-. /etc/os-release
-sudo apt-get update -qq
+echo &quot;10.42.0.0/16&quot; &gt; ~/pod_cidr
+echo &quot;10.43.0.0/16&quot; &gt; ~/service_cidr
 </pre></div>
 
                     </td>
@@ -235,7 +234,7 @@ sudo apt-get update -qq
                         <a href="#delta">delta</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:00:02.792530
+                        <div class="codehilite"><pre><span></span>0:00:00.006537
 </pre></div>
 
                     </td>
@@ -246,7 +245,7 @@ sudo apt-get update -qq
                         <a href="#end">end</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-13 01:30:49.446571
+                        <div class="codehilite"><pre><span></span>2021-05-20 01:53:05.750584
 </pre></div>
 
                     </td>
@@ -259,7 +258,7 @@ sudo apt-get update -qq
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\napt-get install software-properties-common -y\n. /etc/os-release\nsudo apt-get update -qq\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\necho \&quot;10.42.0.0/16\&quot; &gt; ~/pod_cidr\necho \&quot;10.43.0.0/16\&quot; &gt; ~/service_cidr\n&quot;</span><span class="p">,</span>
         <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
@@ -293,7 +292,7 @@ sudo apt-get update -qq
                         <a href="#start">start</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-13 01:30:46.654041
+                        <div class="codehilite"><pre><span></span>2021-05-20 01:53:05.744047
 </pre></div>
 
                     </td>
@@ -326,11 +325,7 @@ sudo apt-get update -qq
                         <a href="#stdout">stdout</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>Reading package lists...
-Building dependency tree...
-Reading state information...
-software-properties-common is already the newest version (0.99.3.1).
-0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+                        <div class="codehilite"><pre><span></span>
 </pre></div>
 
                     </td>
@@ -341,13 +336,7 @@ software-properties-common is already the newest version (0.99.3.1).
                         <a href="#stdout_lines">stdout_lines</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;Reading package lists...&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Building dependency tree...&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Reading state information...&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;software-properties-common is already the newest version (0.99.3.1).&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.&quot;</span>
-<span class="p">]</span>
+                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
 </pre></div>
 
                     </td>

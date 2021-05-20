@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="../static/css/pygments.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -20,7 +20,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -66,16 +66,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 12 May 2021 21:24:12 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 19 May 2021 21:40:17 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 12 May 2021 21:36:11 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 19 May 2021 22:02:17 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:11:58.57
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:21:59.94
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml
                             </a>
@@ -102,12 +102,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">348 results</a>
+                            <a href="../playbooks/1.html#results">353 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">48 files</a>
+                            <a href="../playbooks/1.html#files">45 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -183,120 +183,432 @@
 
 <div class="pf-c-card" style="margin: 1em 0;">
     <div class="pf-c-card__header pf-c-title pf-m-md">
-        <strong>/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_podman.yml</strong>
+        <strong>/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml</strong>
     </div>
     <div class="pf-c-card__body">
-        <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"><a href="#line-1"> 1</a></span>
-<span class="normal"><a href="#line-2"> 2</a></span>
-<span class="normal"><a href="#line-3"> 3</a></span>
-<span class="normal"><a href="#line-4"> 4</a></span>
-<span class="normal"><a href="#line-5"> 5</a></span>
-<span class="normal"><a href="#line-6"> 6</a></span>
-<span class="normal"><a href="#line-7"> 7</a></span>
-<span class="normal"><a href="#line-8"> 8</a></span>
-<span class="normal"><a href="#line-9"> 9</a></span>
-<span class="normal"><a href="#line-10">10</a></span>
-<span class="normal"><a href="#line-11">11</a></span>
-<span class="normal"><a href="#line-12">12</a></span>
-<span class="normal"><a href="#line-13">13</a></span>
-<span class="normal"><a href="#line-14">14</a></span>
-<span class="normal"><a href="#line-15">15</a></span>
-<span class="normal"><a href="#line-16">16</a></span>
-<span class="normal"><a href="#line-17">17</a></span>
-<span class="normal"><a href="#line-18">18</a></span>
-<span class="normal"><a href="#line-19">19</a></span>
-<span class="normal"><a href="#line-20">20</a></span>
-<span class="normal"><a href="#line-21">21</a></span>
-<span class="normal"><a href="#line-22">22</a></span>
-<span class="normal"><a href="#line-23">23</a></span>
-<span class="normal"><a href="#line-24">24</a></span>
-<span class="normal"><a href="#line-25">25</a></span>
-<span class="normal"><a href="#line-26">26</a></span>
-<span class="normal"><a href="#line-27">27</a></span>
-<span class="normal"><a href="#line-28">28</a></span>
-<span class="normal"><a href="#line-29">29</a></span>
-<span class="normal"><a href="#line-30">30</a></span>
-<span class="normal"><a href="#line-31">31</a></span>
-<span class="normal"><a href="#line-32">32</a></span>
-<span class="normal"><a href="#line-33">33</a></span>
-<span class="normal"><a href="#line-34">34</a></span>
-<span class="normal"><a href="#line-35">35</a></span>
-<span class="normal"><a href="#line-36">36</a></span>
-<span class="normal"><a href="#line-37">37</a></span>
-<span class="normal"><a href="#line-38">38</a></span>
-<span class="normal"><a href="#line-39">39</a></span>
-<span class="normal"><a href="#line-40">40</a></span>
-<span class="normal"><a href="#line-41">41</a></span>
-<span class="normal"><a href="#line-42">42</a></span>
-<span class="normal"><a href="#line-43">43</a></span>
-<span class="normal"><a href="#line-44">44</a></span>
-<span class="normal"><a href="#line-45">45</a></span>
-<span class="normal"><a href="#line-46">46</a></span>
-<span class="normal"><a href="#line-47">47</a></span>
-<span class="normal"><a href="#line-48">48</a></span>
-<span class="normal"><a href="#line-49">49</a></span>
-<span class="normal"><a href="#line-50">50</a></span>
-<span class="normal"><a href="#line-51">51</a></span>
-<span class="normal"><a href="#line-52">52</a></span>
-<span class="normal"><a href="#line-53">53</a></span>
-<span class="normal"><a href="#line-54">54</a></span>
-<span class="normal"><a href="#line-55">55</a></span>
-<span class="normal"><a href="#line-56">56</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a name="line-1"></a><span class="nn">---</span>
-</span><span id="line-2"><a name="line-2"></a><span class="c1"># Copyright 2020 KubeInit.</span>
-</span><span id="line-3"><a name="line-3"></a><span class="c1"># All Rights Reserved.</span>
-</span><span id="line-4"><a name="line-4"></a><span class="c1">#</span>
-</span><span id="line-5"><a name="line-5"></a><span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
-</span><span id="line-6"><a name="line-6"></a><span class="c1"># not use this file except in compliance with the License. You may obtain</span>
-</span><span id="line-7"><a name="line-7"></a><span class="c1"># a copy of the License at</span>
-</span><span id="line-8"><a name="line-8"></a><span class="c1">#</span>
-</span><span id="line-9"><a name="line-9"></a><span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
-</span><span id="line-10"><a name="line-10"></a><span class="c1">#</span>
-</span><span id="line-11"><a name="line-11"></a><span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
-</span><span id="line-12"><a name="line-12"></a><span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT</span>
-</span><span id="line-13"><a name="line-13"></a><span class="c1"># WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the</span>
-</span><span id="line-14"><a name="line-14"></a><span class="c1"># License for the specific language governing permissions and limitations</span>
-</span><span id="line-15"><a name="line-15"></a><span class="c1"># under the License.</span>
-</span><span id="line-16"><a name="line-16"></a>
-</span><span id="line-17"><a name="line-17"></a>
-</span><span id="line-18"><a name="line-18"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Install podman if required</span>
-</span><span id="line-19"><a name="line-19"></a>  <span class="nt">ansible.builtin.package</span><span class="p">:</span>
-</span><span id="line-20"><a name="line-20"></a>    <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">present</span>
-</span><span id="line-21"><a name="line-21"></a>    <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;podman&quot;</span>
-</span><span id="line-22"><a name="line-22"></a>
-</span><span id="line-23"><a name="line-23"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Create the docker.io password file</span>
-</span><span id="line-24"><a name="line-24"></a>  <span class="nt">ansible.builtin.template</span><span class="p">:</span>
-</span><span id="line-25"><a name="line-25"></a>    <span class="nt">src</span><span class="p">:</span> <span class="s">&quot;docker_io_pass.j2&quot;</span>
-</span><span id="line-26"><a name="line-26"></a>    <span class="nt">dest</span><span class="p">:</span> <span class="s">&quot;~/docker_io_pass&quot;</span>
-</span><span id="line-27"><a name="line-27"></a>    <span class="nt">mode</span><span class="p">:</span> <span class="s">&quot;0755&quot;</span>
-</span><span id="line-28"><a name="line-28"></a>  <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">&gt;</span>
-</span><span id="line-29"><a name="line-29"></a>    <span class="no">kubeinit_common_docker_username is defined and</span>
-</span><span id="line-30"><a name="line-30"></a>    <span class="no">kubeinit_common_docker_password is defined and</span>
-</span><span id="line-31"><a name="line-31"></a>    <span class="no">kubeinit_common_docker_username and</span>
-</span><span id="line-32"><a name="line-32"></a>    <span class="no">kubeinit_common_docker_password</span>
-</span><span id="line-33"><a name="line-33"></a>
-</span><span id="line-34"><a name="line-34"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Podman login to docker.io</span>
-</span><span id="line-35"><a name="line-35"></a>  <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-36"><a name="line-36"></a>    <span class="no">set -o pipefail</span>
-</span><span id="line-37"><a name="line-37"></a>    <span class="no">podman login --username {{ kubeinit_common_docker_username }} --password-stdin &lt; ~/docker_io_pass docker.io</span>
-</span><span id="line-38"><a name="line-38"></a>  <span class="nt">args</span><span class="p">:</span>
-</span><span id="line-39"><a name="line-39"></a>    <span class="nt">executable</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/bin/bash</span>
-</span><span id="line-40"><a name="line-40"></a>  <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">podman_login</span>
-</span><span id="line-41"><a name="line-41"></a>  <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;podman_login.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
-</span><span id="line-42"><a name="line-42"></a>  <span class="nt">when</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-43"><a name="line-43"></a>    <span class="no">kubeinit_common_docker_username is defined and</span>
-</span><span id="line-44"><a name="line-44"></a>    <span class="no">kubeinit_common_docker_password is defined and</span>
-</span><span id="line-45"><a name="line-45"></a>    <span class="no">kubeinit_common_docker_username and</span>
-</span><span id="line-46"><a name="line-46"></a>    <span class="no">kubeinit_common_docker_password</span>
-</span><span id="line-47"><a name="line-47"></a>
-</span><span id="line-48"><a name="line-48"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Create a minimal podman pod for the service containers running on service node VMs</span>
-</span><span id="line-49"><a name="line-49"></a>  <span class="nt">containers.podman.podman_pod</span><span class="p">:</span>
-</span><span id="line-50"><a name="line-50"></a>    <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_services_pod_name</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-51"><a name="line-51"></a>    <span class="nt">dns</span><span class="p">:</span>
-</span><span id="line-52"><a name="line-52"></a>      <span class="p p-Indicator">-</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_services_service_address</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-53"><a name="line-53"></a>      <span class="p p-Indicator">-</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_common_dns_master</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-54"><a name="line-54"></a>    <span class="nt">dns_search</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_inventory_cluster_name</span><span class="nv"> </span><span class="s">}}.{{</span><span class="nv"> </span><span class="s">kubeinit_inventory_cluster_domain</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-55"><a name="line-55"></a>    <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">created</span>
-</span><span id="line-56"><a name="line-56"></a>  <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">services_podman_pod_info</span>
+        <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"><a href="#line-1">  1</a></span>
+<span class="normal"><a href="#line-2">  2</a></span>
+<span class="normal"><a href="#line-3">  3</a></span>
+<span class="normal"><a href="#line-4">  4</a></span>
+<span class="normal"><a href="#line-5">  5</a></span>
+<span class="normal"><a href="#line-6">  6</a></span>
+<span class="normal"><a href="#line-7">  7</a></span>
+<span class="normal"><a href="#line-8">  8</a></span>
+<span class="normal"><a href="#line-9">  9</a></span>
+<span class="normal"><a href="#line-10"> 10</a></span>
+<span class="normal"><a href="#line-11"> 11</a></span>
+<span class="normal"><a href="#line-12"> 12</a></span>
+<span class="normal"><a href="#line-13"> 13</a></span>
+<span class="normal"><a href="#line-14"> 14</a></span>
+<span class="normal"><a href="#line-15"> 15</a></span>
+<span class="normal"><a href="#line-16"> 16</a></span>
+<span class="normal"><a href="#line-17"> 17</a></span>
+<span class="normal"><a href="#line-18"> 18</a></span>
+<span class="normal"><a href="#line-19"> 19</a></span>
+<span class="normal"><a href="#line-20"> 20</a></span>
+<span class="normal"><a href="#line-21"> 21</a></span>
+<span class="normal"><a href="#line-22"> 22</a></span>
+<span class="normal"><a href="#line-23"> 23</a></span>
+<span class="normal"><a href="#line-24"> 24</a></span>
+<span class="normal"><a href="#line-25"> 25</a></span>
+<span class="normal"><a href="#line-26"> 26</a></span>
+<span class="normal"><a href="#line-27"> 27</a></span>
+<span class="normal"><a href="#line-28"> 28</a></span>
+<span class="normal"><a href="#line-29"> 29</a></span>
+<span class="normal"><a href="#line-30"> 30</a></span>
+<span class="normal"><a href="#line-31"> 31</a></span>
+<span class="normal"><a href="#line-32"> 32</a></span>
+<span class="normal"><a href="#line-33"> 33</a></span>
+<span class="normal"><a href="#line-34"> 34</a></span>
+<span class="normal"><a href="#line-35"> 35</a></span>
+<span class="normal"><a href="#line-36"> 36</a></span>
+<span class="normal"><a href="#line-37"> 37</a></span>
+<span class="normal"><a href="#line-38"> 38</a></span>
+<span class="normal"><a href="#line-39"> 39</a></span>
+<span class="normal"><a href="#line-40"> 40</a></span>
+<span class="normal"><a href="#line-41"> 41</a></span>
+<span class="normal"><a href="#line-42"> 42</a></span>
+<span class="normal"><a href="#line-43"> 43</a></span>
+<span class="normal"><a href="#line-44"> 44</a></span>
+<span class="normal"><a href="#line-45"> 45</a></span>
+<span class="normal"><a href="#line-46"> 46</a></span>
+<span class="normal"><a href="#line-47"> 47</a></span>
+<span class="normal"><a href="#line-48"> 48</a></span>
+<span class="normal"><a href="#line-49"> 49</a></span>
+<span class="normal"><a href="#line-50"> 50</a></span>
+<span class="normal"><a href="#line-51"> 51</a></span>
+<span class="normal"><a href="#line-52"> 52</a></span>
+<span class="normal"><a href="#line-53"> 53</a></span>
+<span class="normal"><a href="#line-54"> 54</a></span>
+<span class="normal"><a href="#line-55"> 55</a></span>
+<span class="normal"><a href="#line-56"> 56</a></span>
+<span class="normal"><a href="#line-57"> 57</a></span>
+<span class="normal"><a href="#line-58"> 58</a></span>
+<span class="normal"><a href="#line-59"> 59</a></span>
+<span class="normal"><a href="#line-60"> 60</a></span>
+<span class="normal"><a href="#line-61"> 61</a></span>
+<span class="normal"><a href="#line-62"> 62</a></span>
+<span class="normal"><a href="#line-63"> 63</a></span>
+<span class="normal"><a href="#line-64"> 64</a></span>
+<span class="normal"><a href="#line-65"> 65</a></span>
+<span class="normal"><a href="#line-66"> 66</a></span>
+<span class="normal"><a href="#line-67"> 67</a></span>
+<span class="normal"><a href="#line-68"> 68</a></span>
+<span class="normal"><a href="#line-69"> 69</a></span>
+<span class="normal"><a href="#line-70"> 70</a></span>
+<span class="normal"><a href="#line-71"> 71</a></span>
+<span class="normal"><a href="#line-72"> 72</a></span>
+<span class="normal"><a href="#line-73"> 73</a></span>
+<span class="normal"><a href="#line-74"> 74</a></span>
+<span class="normal"><a href="#line-75"> 75</a></span>
+<span class="normal"><a href="#line-76"> 76</a></span>
+<span class="normal"><a href="#line-77"> 77</a></span>
+<span class="normal"><a href="#line-78"> 78</a></span>
+<span class="normal"><a href="#line-79"> 79</a></span>
+<span class="normal"><a href="#line-80"> 80</a></span>
+<span class="normal"><a href="#line-81"> 81</a></span>
+<span class="normal"><a href="#line-82"> 82</a></span>
+<span class="normal"><a href="#line-83"> 83</a></span>
+<span class="normal"><a href="#line-84"> 84</a></span>
+<span class="normal"><a href="#line-85"> 85</a></span>
+<span class="normal"><a href="#line-86"> 86</a></span>
+<span class="normal"><a href="#line-87"> 87</a></span>
+<span class="normal"><a href="#line-88"> 88</a></span>
+<span class="normal"><a href="#line-89"> 89</a></span>
+<span class="normal"><a href="#line-90"> 90</a></span>
+<span class="normal"><a href="#line-91"> 91</a></span>
+<span class="normal"><a href="#line-92"> 92</a></span>
+<span class="normal"><a href="#line-93"> 93</a></span>
+<span class="normal"><a href="#line-94"> 94</a></span>
+<span class="normal"><a href="#line-95"> 95</a></span>
+<span class="normal"><a href="#line-96"> 96</a></span>
+<span class="normal"><a href="#line-97"> 97</a></span>
+<span class="normal"><a href="#line-98"> 98</a></span>
+<span class="normal"><a href="#line-99"> 99</a></span>
+<span class="normal"><a href="#line-100">100</a></span>
+<span class="normal"><a href="#line-101">101</a></span>
+<span class="normal"><a href="#line-102">102</a></span>
+<span class="normal"><a href="#line-103">103</a></span>
+<span class="normal"><a href="#line-104">104</a></span>
+<span class="normal"><a href="#line-105">105</a></span>
+<span class="normal"><a href="#line-106">106</a></span>
+<span class="normal"><a href="#line-107">107</a></span>
+<span class="normal"><a href="#line-108">108</a></span>
+<span class="normal"><a href="#line-109">109</a></span>
+<span class="normal"><a href="#line-110">110</a></span>
+<span class="normal"><a href="#line-111">111</a></span>
+<span class="normal"><a href="#line-112">112</a></span>
+<span class="normal"><a href="#line-113">113</a></span>
+<span class="normal"><a href="#line-114">114</a></span>
+<span class="normal"><a href="#line-115">115</a></span>
+<span class="normal"><a href="#line-116">116</a></span>
+<span class="normal"><a href="#line-117">117</a></span>
+<span class="normal"><a href="#line-118">118</a></span>
+<span class="normal"><a href="#line-119">119</a></span>
+<span class="normal"><a href="#line-120">120</a></span>
+<span class="normal"><a href="#line-121">121</a></span>
+<span class="normal"><a href="#line-122">122</a></span>
+<span class="normal"><a href="#line-123">123</a></span>
+<span class="normal"><a href="#line-124">124</a></span>
+<span class="normal"><a href="#line-125">125</a></span>
+<span class="normal"><a href="#line-126">126</a></span>
+<span class="normal"><a href="#line-127">127</a></span>
+<span class="normal"><a href="#line-128">128</a></span>
+<span class="normal"><a href="#line-129">129</a></span>
+<span class="normal"><a href="#line-130">130</a></span>
+<span class="normal"><a href="#line-131">131</a></span>
+<span class="normal"><a href="#line-132">132</a></span>
+<span class="normal"><a href="#line-133">133</a></span>
+<span class="normal"><a href="#line-134">134</a></span>
+<span class="normal"><a href="#line-135">135</a></span>
+<span class="normal"><a href="#line-136">136</a></span>
+<span class="normal"><a href="#line-137">137</a></span>
+<span class="normal"><a href="#line-138">138</a></span>
+<span class="normal"><a href="#line-139">139</a></span>
+<span class="normal"><a href="#line-140">140</a></span>
+<span class="normal"><a href="#line-141">141</a></span>
+<span class="normal"><a href="#line-142">142</a></span>
+<span class="normal"><a href="#line-143">143</a></span>
+<span class="normal"><a href="#line-144">144</a></span>
+<span class="normal"><a href="#line-145">145</a></span>
+<span class="normal"><a href="#line-146">146</a></span>
+<span class="normal"><a href="#line-147">147</a></span>
+<span class="normal"><a href="#line-148">148</a></span>
+<span class="normal"><a href="#line-149">149</a></span>
+<span class="normal"><a href="#line-150">150</a></span>
+<span class="normal"><a href="#line-151">151</a></span>
+<span class="normal"><a href="#line-152">152</a></span>
+<span class="normal"><a href="#line-153">153</a></span>
+<span class="normal"><a href="#line-154">154</a></span>
+<span class="normal"><a href="#line-155">155</a></span>
+<span class="normal"><a href="#line-156">156</a></span>
+<span class="normal"><a href="#line-157">157</a></span>
+<span class="normal"><a href="#line-158">158</a></span>
+<span class="normal"><a href="#line-159">159</a></span>
+<span class="normal"><a href="#line-160">160</a></span>
+<span class="normal"><a href="#line-161">161</a></span>
+<span class="normal"><a href="#line-162">162</a></span>
+<span class="normal"><a href="#line-163">163</a></span>
+<span class="normal"><a href="#line-164">164</a></span>
+<span class="normal"><a href="#line-165">165</a></span>
+<span class="normal"><a href="#line-166">166</a></span>
+<span class="normal"><a href="#line-167">167</a></span>
+<span class="normal"><a href="#line-168">168</a></span>
+<span class="normal"><a href="#line-169">169</a></span>
+<span class="normal"><a href="#line-170">170</a></span>
+<span class="normal"><a href="#line-171">171</a></span>
+<span class="normal"><a href="#line-172">172</a></span>
+<span class="normal"><a href="#line-173">173</a></span>
+<span class="normal"><a href="#line-174">174</a></span>
+<span class="normal"><a href="#line-175">175</a></span>
+<span class="normal"><a href="#line-176">176</a></span>
+<span class="normal"><a href="#line-177">177</a></span>
+<span class="normal"><a href="#line-178">178</a></span>
+<span class="normal"><a href="#line-179">179</a></span>
+<span class="normal"><a href="#line-180">180</a></span>
+<span class="normal"><a href="#line-181">181</a></span>
+<span class="normal"><a href="#line-182">182</a></span>
+<span class="normal"><a href="#line-183">183</a></span>
+<span class="normal"><a href="#line-184">184</a></span>
+<span class="normal"><a href="#line-185">185</a></span>
+<span class="normal"><a href="#line-186">186</a></span>
+<span class="normal"><a href="#line-187">187</a></span>
+<span class="normal"><a href="#line-188">188</a></span>
+<span class="normal"><a href="#line-189">189</a></span>
+<span class="normal"><a href="#line-190">190</a></span>
+<span class="normal"><a href="#line-191">191</a></span>
+<span class="normal"><a href="#line-192">192</a></span>
+<span class="normal"><a href="#line-193">193</a></span>
+<span class="normal"><a href="#line-194">194</a></span>
+<span class="normal"><a href="#line-195">195</a></span>
+<span class="normal"><a href="#line-196">196</a></span>
+<span class="normal"><a href="#line-197">197</a></span>
+<span class="normal"><a href="#line-198">198</a></span>
+<span class="normal"><a href="#line-199">199</a></span>
+<span class="normal"><a href="#line-200">200</a></span>
+<span class="normal"><a href="#line-201">201</a></span>
+<span class="normal"><a href="#line-202">202</a></span>
+<span class="normal"><a href="#line-203">203</a></span>
+<span class="normal"><a href="#line-204">204</a></span>
+<span class="normal"><a href="#line-205">205</a></span>
+<span class="normal"><a href="#line-206">206</a></span>
+<span class="normal"><a href="#line-207">207</a></span>
+<span class="normal"><a href="#line-208">208</a></span>
+<span class="normal"><a href="#line-209">209</a></span>
+<span class="normal"><a href="#line-210">210</a></span>
+<span class="normal"><a href="#line-211">211</a></span>
+<span class="normal"><a href="#line-212">212</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a id="line-1" name="line-1"></a><span class="nn">---</span>
+</span><span id="line-2"><a id="line-2" name="line-2"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Generate the htpasswd entry</span>
+</span><span id="line-3"><a id="line-3" name="line-3"></a>  <span class="nt">community.general.htpasswd</span><span class="p">:</span>
+</span><span id="line-4"><a id="line-4" name="line-4"></a>    <span class="nt">path</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_directory_auth</span><span class="nv"> </span><span class="s">}}/htpasswd&quot;</span>
+</span><span id="line-5"><a id="line-5" name="line-5"></a>    <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_user</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-6"><a id="line-6" name="line-6"></a>    <span class="nt">password</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_password</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-7"><a id="line-7" name="line-7"></a>    <span class="nt">owner</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_service_user</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-8"><a id="line-8" name="line-8"></a>    <span class="nt">group</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_service_user</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-9"><a id="line-9" name="line-9"></a>    <span class="nt">crypt_scheme</span><span class="p">:</span> <span class="s">&quot;bcrypt&quot;</span>
+</span><span id="line-10"><a id="line-10" name="line-10"></a>    <span class="nt">mode</span><span class="p">:</span> <span class="s">&#39;0755&#39;</span>
+</span><span id="line-11"><a id="line-11" name="line-11"></a>
+</span><span id="line-12"><a id="line-12" name="line-12"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Set disconnected_auth</span>
+</span><span id="line-13"><a id="line-13" name="line-13"></a>  <span class="nt">ansible.builtin.set_fact</span><span class="p">:</span>
+</span><span id="line-14"><a id="line-14" name="line-14"></a>    <span class="nt">disconnected_registry_up</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_user</span><span class="nv"> </span><span class="s">}}:{{</span><span class="nv"> </span><span class="s">kubeinit_registry_password</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-15"><a id="line-15" name="line-15"></a>
+</span><span id="line-16"><a id="line-16" name="line-16"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Create registry auth for pullsecret</span>
+</span><span id="line-17"><a id="line-17" name="line-17"></a>  <span class="nt">ansible.builtin.set_fact</span><span class="p">:</span>
+</span><span id="line-18"><a id="line-18" name="line-18"></a>    <span class="c1"># The spaces after the first single quote is required, do not remove</span>
+</span><span id="line-19"><a id="line-19" name="line-19"></a>    <span class="c1"># Something in Ansible appears to be recognizing this as valid Python,</span>
+</span><span id="line-20"><a id="line-20" name="line-20"></a>    <span class="c1"># so it&#39;s getting transformed into a Python list and then serialized</span>
+</span><span id="line-21"><a id="line-21" name="line-21"></a>    <span class="c1"># using Python&#39;s str(), which is why we end up with the single-quoted values.</span>
+</span><span id="line-22"><a id="line-22" name="line-22"></a>    <span class="nt">disconnected_auth</span><span class="p">:</span> <span class="s">&#39;</span><span class="nv">  </span><span class="s">{&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_uri</span><span class="nv"> </span><span class="s">}}&quot;:</span><span class="nv"> </span><span class="s">{&quot;auth&quot;:</span><span class="nv"> </span><span class="s">&quot;{{</span><span class="nv"> </span><span class="s">disconnected_registry_up</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">b64encode</span><span class="nv"> </span><span class="s">}}&quot;</span><span class="nv"> </span><span class="s">}</span><span class="nv"> </span><span class="s">}&#39;</span>
+</span><span id="line-23"><a id="line-23" name="line-23"></a>
+</span><span id="line-24"><a id="line-24" name="line-24"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">append auths to pullsecret</span>
+</span><span id="line-25"><a id="line-25" name="line-25"></a>  <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+</span><span id="line-26"><a id="line-26" name="line-26"></a>    <span class="no">set -o pipefail</span>
+</span><span id="line-27"><a id="line-27" name="line-27"></a>    <span class="no">echo &#39;{{ kubeinit_registry_pullsecret }}&#39; | jq -c \</span>
+</span><span id="line-28"><a id="line-28" name="line-28"></a>      <span class="no">&#39;.auths += {{ disconnected_auth }}&#39;</span>
+</span><span id="line-29"><a id="line-29" name="line-29"></a>  <span class="nt">args</span><span class="p">:</span>
+</span><span id="line-30"><a id="line-30" name="line-30"></a>    <span class="nt">executable</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/bin/bash</span>
+</span><span id="line-31"><a id="line-31" name="line-31"></a>  <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">new_pullsecret</span>
+</span><span id="line-32"><a id="line-32" name="line-32"></a>  <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;new_pullsecret.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
+</span><span id="line-33"><a id="line-33" name="line-33"></a>
+</span><span id="line-34"><a id="line-34" name="line-34"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Override final kubeinit_registry_pullsecret with both auths</span>
+</span><span id="line-35"><a id="line-35" name="line-35"></a>  <span class="nt">ansible.builtin.set_fact</span><span class="p">:</span>
+</span><span id="line-36"><a id="line-36" name="line-36"></a>    <span class="nt">kubeinit_registry_pullsecret</span><span class="p">:</span> <span class="s">&#39;</span><span class="nv">  </span><span class="s">{{</span><span class="nv"> </span><span class="s">new_pullsecret.stdout</span><span class="nv"> </span><span class="s">}}&#39;</span>
+</span><span id="line-37"><a id="line-37" name="line-37"></a>
+</span><span id="line-38"><a id="line-38" name="line-38"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Debug the creds dictionary</span>
+</span><span id="line-39"><a id="line-39" name="line-39"></a>  <span class="nt">ansible.builtin.debug</span><span class="p">:</span>
+</span><span id="line-40"><a id="line-40" name="line-40"></a>    <span class="nt">var</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit_registry_pullsecret</span>
+</span><span id="line-41"><a id="line-41" name="line-41"></a>
+</span><span id="line-42"><a id="line-42" name="line-42"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Write auth for disconnected registry auth details</span>
+</span><span id="line-43"><a id="line-43" name="line-43"></a>  <span class="nt">ansible.builtin.copy</span><span class="p">:</span>
+</span><span id="line-44"><a id="line-44" name="line-44"></a>    <span class="nt">content</span><span class="p">:</span> <span class="s">&#39;</span><span class="nv">  </span><span class="s">{{</span><span class="nv"> </span><span class="s">kubeinit_registry_pullsecret</span><span class="nv"> </span><span class="s">}}&#39;</span>
+</span><span id="line-45"><a id="line-45" name="line-45"></a>    <span class="nt">dest</span><span class="p">:</span> <span class="s">&quot;~/{{</span><span class="nv"> </span><span class="s">kubeinit_registry_auth_file</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-46"><a id="line-46" name="line-46"></a>    <span class="nt">mode</span><span class="p">:</span> <span class="s">&#39;0755&#39;</span>
+</span><span id="line-47"><a id="line-47" name="line-47"></a>    <span class="nt">backup</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
+</span><span id="line-48"><a id="line-48" name="line-48"></a>    <span class="nt">force</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
+</span><span id="line-49"><a id="line-49" name="line-49"></a>
+</span><span id="line-50"><a id="line-50" name="line-50"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Generate an OpenSSL private key</span>
+</span><span id="line-51"><a id="line-51" name="line-51"></a>  <span class="nt">community.crypto.openssl_privatekey</span><span class="p">:</span>
+</span><span id="line-52"><a id="line-52" name="line-52"></a>    <span class="nt">path</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_directory_cert</span><span class="nv"> </span><span class="s">}}/domain.key&quot;</span>
+</span><span id="line-53"><a id="line-53" name="line-53"></a>
+</span><span id="line-54"><a id="line-54" name="line-54"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Generate an OpenSSL CSR</span>
+</span><span id="line-55"><a id="line-55" name="line-55"></a>  <span class="nt">community.crypto.openssl_csr</span><span class="p">:</span>
+</span><span id="line-56"><a id="line-56" name="line-56"></a>    <span class="nt">path</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_directory_cert</span><span class="nv"> </span><span class="s">}}/domain.csr&quot;</span>
+</span><span id="line-57"><a id="line-57" name="line-57"></a>    <span class="nt">privatekey_path</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_directory_cert</span><span class="nv"> </span><span class="s">}}/domain.key&quot;</span>
+</span><span id="line-58"><a id="line-58" name="line-58"></a>    <span class="nt">common_name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_fqdn</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-59"><a id="line-59" name="line-59"></a>    <span class="nt">country_name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_common_certificate_country</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-60"><a id="line-60" name="line-60"></a>    <span class="nt">state_or_province_name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_common_certificate_state</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-61"><a id="line-61" name="line-61"></a>    <span class="nt">locality_name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_common_certificate_locality</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-62"><a id="line-62" name="line-62"></a>    <span class="nt">organization_name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_common_certificate_organization</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-63"><a id="line-63" name="line-63"></a>    <span class="nt">organizational_unit_name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_common_certificate_organizational_unit</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-64"><a id="line-64" name="line-64"></a>    <span class="nt">basic_constraints_critical</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
+</span><span id="line-65"><a id="line-65" name="line-65"></a>    <span class="nt">create_subject_key_identifier</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
+</span><span id="line-66"><a id="line-66" name="line-66"></a>    <span class="nt">basic_constraints</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="s">&#39;CA:TRUE&#39;</span><span class="p p-Indicator">]</span>
+</span><span id="line-67"><a id="line-67" name="line-67"></a>    <span class="nt">subject_alt_name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">item.value</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">map(&#39;regex_replace&#39;,</span><span class="nv"> </span><span class="s">&#39;^&#39;,</span><span class="nv"> </span><span class="s">&#39;DNS:&#39;)</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">list</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-68"><a id="line-68" name="line-68"></a>  <span class="nt">with_dict</span><span class="p">:</span>
+</span><span id="line-69"><a id="line-69" name="line-69"></a>    <span class="nt">dns_server</span><span class="p">:</span>
+</span><span id="line-70"><a id="line-70" name="line-70"></a>    <span class="p p-Indicator">-</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-71"><a id="line-71" name="line-71"></a>    <span class="p p-Indicator">-</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_fqdn</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-72"><a id="line-72" name="line-72"></a>    <span class="p p-Indicator">-</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_fqdn_alt</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-73"><a id="line-73" name="line-73"></a>
+</span><span id="line-74"><a id="line-74" name="line-74"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Generate a selfsigned OpenSSL CA Certificate</span>
+</span><span id="line-75"><a id="line-75" name="line-75"></a>  <span class="nt">community.crypto.x509_certificate</span><span class="p">:</span>
+</span><span id="line-76"><a id="line-76" name="line-76"></a>    <span class="nt">path</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_directory_cert</span><span class="nv"> </span><span class="s">}}/domainCA.crt&quot;</span>
+</span><span id="line-77"><a id="line-77" name="line-77"></a>    <span class="nt">privatekey_path</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_directory_cert</span><span class="nv"> </span><span class="s">}}/domain.key&quot;</span>
+</span><span id="line-78"><a id="line-78" name="line-78"></a>    <span class="nt">csr_path</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_directory_cert</span><span class="nv"> </span><span class="s">}}/domain.csr&quot;</span>
+</span><span id="line-79"><a id="line-79" name="line-79"></a>    <span class="nt">provider</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">selfsigned</span>
+</span><span id="line-80"><a id="line-80" name="line-80"></a>
+</span><span id="line-81"><a id="line-81" name="line-81"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Generate an ownca OpenSSL Certificate</span>
+</span><span id="line-82"><a id="line-82" name="line-82"></a>  <span class="nt">community.crypto.x509_certificate</span><span class="p">:</span>
+</span><span id="line-83"><a id="line-83" name="line-83"></a>    <span class="nt">path</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_directory_cert</span><span class="nv"> </span><span class="s">}}/domain.crt&quot;</span>
+</span><span id="line-84"><a id="line-84" name="line-84"></a>    <span class="nt">ownca_privatekey_path</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_directory_cert</span><span class="nv"> </span><span class="s">}}/domain.key&quot;</span>
+</span><span id="line-85"><a id="line-85" name="line-85"></a>    <span class="nt">csr_path</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_directory_cert</span><span class="nv"> </span><span class="s">}}/domain.csr&quot;</span>
+</span><span id="line-86"><a id="line-86" name="line-86"></a>    <span class="nt">ownca_path</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_directory_cert</span><span class="nv"> </span><span class="s">}}/domainCA.crt&quot;</span>
+</span><span id="line-87"><a id="line-87" name="line-87"></a>    <span class="nt">ownca_create_authority_key_identifier</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
+</span><span id="line-88"><a id="line-88" name="line-88"></a>    <span class="nt">provider</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ownca</span>
+</span><span id="line-89"><a id="line-89" name="line-89"></a>
+</span><span id="line-90"><a id="line-90" name="line-90"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Read in the contents of domain.crt</span>
+</span><span id="line-91"><a id="line-91" name="line-91"></a>  <span class="nt">ansible.builtin.slurp</span><span class="p">:</span>
+</span><span id="line-92"><a id="line-92" name="line-92"></a>    <span class="nt">src</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_directory_cert</span><span class="nv"> </span><span class="s">}}/domain.crt&quot;</span>
+</span><span id="line-93"><a id="line-93" name="line-93"></a>  <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">domain_cert_b64</span>
+</span><span id="line-94"><a id="line-94" name="line-94"></a>
+</span><span id="line-95"><a id="line-95" name="line-95"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Set trustbundle fact to contents of domain.crt</span>
+</span><span id="line-96"><a id="line-96" name="line-96"></a>  <span class="nt">ansible.builtin.set_fact</span><span class="p">:</span>
+</span><span id="line-97"><a id="line-97" name="line-97"></a>    <span class="nt">trustbundle</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">domain_cert_b64.content</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">string</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">b64decode</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-98"><a id="line-98" name="line-98"></a>
+</span><span id="line-99"><a id="line-99" name="line-99"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Copy cert to pki directory</span>
+</span><span id="line-100"><a id="line-100" name="line-100"></a>  <span class="nt">ansible.builtin.copy</span><span class="p">:</span>
+</span><span id="line-101"><a id="line-101" name="line-101"></a>    <span class="nt">src</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_directory_cert</span><span class="nv"> </span><span class="s">}}/domain.crt&quot;</span>
+</span><span id="line-102"><a id="line-102" name="line-102"></a>    <span class="nt">dest</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/etc/pki/ca-trust/source/anchors/domain.crt</span>
+</span><span id="line-103"><a id="line-103" name="line-103"></a>    <span class="nt">remote_src</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
+</span><span id="line-104"><a id="line-104" name="line-104"></a>    <span class="nt">group</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_service_user</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-105"><a id="line-105" name="line-105"></a>    <span class="nt">owner</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_service_user</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-106"><a id="line-106" name="line-106"></a>    <span class="nt">mode</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0644</span>
+</span><span id="line-107"><a id="line-107" name="line-107"></a>    <span class="nt">force</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
+</span><span id="line-108"><a id="line-108" name="line-108"></a>    <span class="nt">backup</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
+</span><span id="line-109"><a id="line-109" name="line-109"></a>  <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit_inventory_cluster_distro == &#39;k8s&#39; or kubeinit_inventory_cluster_distro == &#39;okd&#39; or kubeinit_inventory_cluster_distro == &#39;eks&#39;</span>
+</span><span id="line-110"><a id="line-110" name="line-110"></a>
+</span><span id="line-111"><a id="line-111" name="line-111"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Copy cert to pki directory</span>
+</span><span id="line-112"><a id="line-112" name="line-112"></a>  <span class="nt">ansible.builtin.copy</span><span class="p">:</span>
+</span><span id="line-113"><a id="line-113" name="line-113"></a>    <span class="nt">src</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_directory_cert</span><span class="nv"> </span><span class="s">}}/domain.crt&quot;</span>
+</span><span id="line-114"><a id="line-114" name="line-114"></a>    <span class="nt">dest</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/usr/local/share/ca-certificates/domain.crt</span>
+</span><span id="line-115"><a id="line-115" name="line-115"></a>    <span class="nt">remote_src</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
+</span><span id="line-116"><a id="line-116" name="line-116"></a>    <span class="nt">group</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_service_user</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-117"><a id="line-117" name="line-117"></a>    <span class="nt">owner</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_service_user</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-118"><a id="line-118" name="line-118"></a>    <span class="nt">mode</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">0644</span>
+</span><span id="line-119"><a id="line-119" name="line-119"></a>    <span class="nt">force</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
+</span><span id="line-120"><a id="line-120" name="line-120"></a>    <span class="nt">backup</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
+</span><span id="line-121"><a id="line-121" name="line-121"></a>  <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit_inventory_cluster_distro == &#39;rke&#39; or kubeinit_inventory_cluster_distro == &#39;cdk&#39;</span>
+</span><span id="line-122"><a id="line-122" name="line-122"></a>
+</span><span id="line-123"><a id="line-123" name="line-123"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Install all certs in ubuntu</span>
+</span><span id="line-124"><a id="line-124" name="line-124"></a>  <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+</span><span id="line-125"><a id="line-125" name="line-125"></a>    <span class="no">set -e</span>
+</span><span id="line-126"><a id="line-126" name="line-126"></a>    <span class="no">mkdir -p /usr/local/share/ca-certificates/kubeinit/</span>
+</span><span id="line-127"><a id="line-127" name="line-127"></a>    <span class="no">openssl x509 -inform PEM -in {{ kubeinit_registry_directory_cert }}/domainCA.crt &gt; {{ kubeinit_registry_directory_cert }}/domainCA.pem</span>
+</span><span id="line-128"><a id="line-128" name="line-128"></a>    <span class="no">cp {{ kubeinit_registry_directory_cert }}/* /usr/local/share/ca-certificates/kubeinit/</span>
+</span><span id="line-129"><a id="line-129" name="line-129"></a>  <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">install_all_certs</span>
+</span><span id="line-130"><a id="line-130" name="line-130"></a>  <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;install_all_certs.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
+</span><span id="line-131"><a id="line-131" name="line-131"></a>  <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit_inventory_cluster_distro == &#39;rke&#39; or kubeinit_inventory_cluster_distro == &#39;cdk&#39;</span>
+</span><span id="line-132"><a id="line-132" name="line-132"></a>
+</span><span id="line-133"><a id="line-133" name="line-133"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Update the CA trust files</span>
+</span><span id="line-134"><a id="line-134" name="line-134"></a>  <span class="nt">ansible.builtin.command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">update-ca-trust extract</span>
+</span><span id="line-135"><a id="line-135" name="line-135"></a>  <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">update_ca_trust_files</span>
+</span><span id="line-136"><a id="line-136" name="line-136"></a>  <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;update_ca_trust_files.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
+</span><span id="line-137"><a id="line-137" name="line-137"></a>  <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit_inventory_cluster_distro == &#39;k8s&#39; or kubeinit_inventory_cluster_distro == &#39;okd&#39; or kubeinit_inventory_cluster_distro == &#39;eks&#39;</span>
+</span><span id="line-138"><a id="line-138" name="line-138"></a>
+</span><span id="line-139"><a id="line-139" name="line-139"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Update the CA trust files</span>
+</span><span id="line-140"><a id="line-140" name="line-140"></a>  <span class="nt">ansible.builtin.command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">update-ca-certificates</span>
+</span><span id="line-141"><a id="line-141" name="line-141"></a>  <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">update_ca_certs</span>
+</span><span id="line-142"><a id="line-142" name="line-142"></a>  <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;update_ca_certs.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
+</span><span id="line-143"><a id="line-143" name="line-143"></a>  <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit_inventory_cluster_distro == &#39;rke&#39; or kubeinit_inventory_cluster_distro == &#39;cdk&#39;</span>
+</span><span id="line-144"><a id="line-144" name="line-144"></a>
+</span><span id="line-145"><a id="line-145" name="line-145"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Create a podman container to serve the registry</span>
+</span><span id="line-146"><a id="line-146" name="line-146"></a>  <span class="nt">containers.podman.podman_container</span><span class="p">:</span>
+</span><span id="line-147"><a id="line-147" name="line-147"></a>    <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_service_name</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-148"><a id="line-148" name="line-148"></a>    <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">docker.io/library/registry:2</span>
+</span><span id="line-149"><a id="line-149" name="line-149"></a>    <span class="nt">pod</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_services_pod_name</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-150"><a id="line-150" name="line-150"></a>    <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">stopped</span>
+</span><span id="line-151"><a id="line-151" name="line-151"></a>    <span class="nt">network</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_services_podman_network</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-152"><a id="line-152" name="line-152"></a>    <span class="nt">volumes</span><span class="p">:</span>
+</span><span id="line-153"><a id="line-153" name="line-153"></a>    <span class="p p-Indicator">-</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_directory_auth</span><span class="nv"> </span><span class="s">}}:/auth:z&quot;</span>
+</span><span id="line-154"><a id="line-154" name="line-154"></a>    <span class="p p-Indicator">-</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_directory_cert</span><span class="nv"> </span><span class="s">}}:/certs:z&quot;</span>
+</span><span id="line-155"><a id="line-155" name="line-155"></a>    <span class="p p-Indicator">-</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_directory_data</span><span class="nv"> </span><span class="s">}}:/var/lib/registry:z&quot;</span>
+</span><span id="line-156"><a id="line-156" name="line-156"></a>    <span class="nt">env</span><span class="p">:</span>
+</span><span id="line-157"><a id="line-157" name="line-157"></a>      <span class="nt">REGISTRY_AUTH</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">htpasswd</span>
+</span><span id="line-158"><a id="line-158" name="line-158"></a>      <span class="nt">REGISTRY_AUTH_HTPASSWD_REALM</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Registry</span>
+</span><span id="line-159"><a id="line-159" name="line-159"></a>      <span class="nt">REGISTRY_HTTP_SECRET</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ALongRandomSecretForRegistry</span>
+</span><span id="line-160"><a id="line-160" name="line-160"></a>      <span class="nt">REGISTRY_AUTH_HTPASSWD_PATH</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">auth/htpasswd</span>
+</span><span id="line-161"><a id="line-161" name="line-161"></a>      <span class="nt">REGISTRY_HTTP_TLS_CERTIFICATE</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">certs/domain.crt</span>
+</span><span id="line-162"><a id="line-162" name="line-162"></a>      <span class="nt">REGISTRY_HTTP_TLS_KEY</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">certs/domain.key</span>
+</span><span id="line-163"><a id="line-163" name="line-163"></a>      <span class="nt">REGISTRY_COMPATIBILITY_SCHEMA1_ENABLED</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="line-164"><a id="line-164" name="line-164"></a>  <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">registry_podman_container_info</span>
+</span><span id="line-165"><a id="line-165" name="line-165"></a>
+</span><span id="line-166"><a id="line-166" name="line-166"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Setting Podman facts about the container that will run the registry</span>
+</span><span id="line-167"><a id="line-167" name="line-167"></a>  <span class="nt">ansible.builtin.set_fact</span><span class="p">:</span>
+</span><span id="line-168"><a id="line-168" name="line-168"></a>    <span class="nt">container_registry_name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">registry_podman_container_info.container.Name</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-169"><a id="line-169" name="line-169"></a>    <span class="nt">container_registry_pidfile</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">registry_podman_container_info.container.ConmonPidFile</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-170"><a id="line-170" name="line-170"></a>
+</span><span id="line-171"><a id="line-171" name="line-171"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Create systemd service for podman container</span>
+</span><span id="line-172"><a id="line-172" name="line-172"></a>  <span class="nt">ansible.builtin.include_role</span><span class="p">:</span>
+</span><span id="line-173"><a id="line-173" name="line-173"></a>    <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;../../roles/kubeinit_services&quot;</span>
+</span><span id="line-174"><a id="line-174" name="line-174"></a>    <span class="nt">tasks_from</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">create_managed_service</span>
+</span><span id="line-175"><a id="line-175" name="line-175"></a>    <span class="nt">public</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="line-176"><a id="line-176" name="line-176"></a>  <span class="nt">vars</span><span class="p">:</span>
+</span><span id="line-177"><a id="line-177" name="line-177"></a>    <span class="nt">kubeinit_services_systemd_service_name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_service_name</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-178"><a id="line-178" name="line-178"></a>    <span class="nt">kubeinit_services_podman_container_name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">container_registry_name</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-179"><a id="line-179" name="line-179"></a>    <span class="nt">kubeinit_services_podman_container_pidfile</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">container_registry_pidfile</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-180"><a id="line-180" name="line-180"></a>
+</span><span id="line-181"><a id="line-181" name="line-181"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Fetch the domain cert from the registry host</span>
+</span><span id="line-182"><a id="line-182" name="line-182"></a>  <span class="nt">ansible.builtin.fetch</span><span class="p">:</span>
+</span><span id="line-183"><a id="line-183" name="line-183"></a>    <span class="nt">dest</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/tmp/domain.crt</span>
+</span><span id="line-184"><a id="line-184" name="line-184"></a>    <span class="nt">src</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_directory_cert</span><span class="nv"> </span><span class="s">}}/domain.crt&quot;</span>
+</span><span id="line-185"><a id="line-185" name="line-185"></a>    <span class="nt">flat</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
+</span><span id="line-186"><a id="line-186" name="line-186"></a>
+</span><span id="line-187"><a id="line-187" name="line-187"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Create temporary pullsecret file</span>
+</span><span id="line-188"><a id="line-188" name="line-188"></a>  <span class="nt">ansible.builtin.copy</span><span class="p">:</span>
+</span><span id="line-189"><a id="line-189" name="line-189"></a>    <span class="nt">content</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_registry_pullsecret</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-190"><a id="line-190" name="line-190"></a>    <span class="nt">dest</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_service_user_dir</span><span class="nv"> </span><span class="s">}}/pullsecret.json&quot;</span>
+</span><span id="line-191"><a id="line-191" name="line-191"></a>    <span class="nt">mode</span><span class="p">:</span> <span class="s">&#39;0755&#39;</span>
+</span><span id="line-192"><a id="line-192" name="line-192"></a>    <span class="nt">force</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
+</span><span id="line-193"><a id="line-193" name="line-193"></a>
+</span><span id="line-194"><a id="line-194" name="line-194"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Check if the registry is up and running</span>
+</span><span id="line-195"><a id="line-195" name="line-195"></a>  <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+</span><span id="line-196"><a id="line-196" name="line-196"></a>    <span class="no">set -o pipefail</span>
+</span><span id="line-197"><a id="line-197" name="line-197"></a>    <span class="no">set -e</span>
+</span><span id="line-198"><a id="line-198" name="line-198"></a>    <span class="no">curl -v --silent --user {{ kubeinit_registry_user }}:{{ kubeinit_registry_password }} https://{{ kubeinit_registry_uri }}/v2/_catalog --stderr - | grep &#39;\{&quot;repositories&quot;:&#39;</span>
+</span><span id="line-199"><a id="line-199" name="line-199"></a>    <span class="no"># curl -v --silent --user {{ kubeinit_registry_user }}:{{ kubeinit_registry_password }} https://{{ kubeinit_registry_uri }}/v2/openshift/tags/list</span>
+</span><span id="line-200"><a id="line-200" name="line-200"></a>  <span class="nt">args</span><span class="p">:</span>
+</span><span id="line-201"><a id="line-201" name="line-201"></a>    <span class="nt">executable</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/bin/bash</span>
+</span><span id="line-202"><a id="line-202" name="line-202"></a>  <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">check_registry</span>
+</span><span id="line-203"><a id="line-203" name="line-203"></a>  <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;check_registry.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
+</span><span id="line-204"><a id="line-204" name="line-204"></a>
+</span><span id="line-205"><a id="line-205" name="line-205"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Load images file</span>
+</span><span id="line-206"><a id="line-206" name="line-206"></a>  <span class="nt">ansible.builtin.slurp</span><span class="p">:</span>
+</span><span id="line-207"><a id="line-207" name="line-207"></a>    <span class="nt">src</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">~/kubeinit_deployment_images.txt</span>
+</span><span id="line-208"><a id="line-208" name="line-208"></a>  <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">load_images</span>
+</span><span id="line-209"><a id="line-209" name="line-209"></a>
+</span><span id="line-210"><a id="line-210" name="line-210"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Set up variable with images list</span>
+</span><span id="line-211"><a id="line-211" name="line-211"></a>  <span class="nt">ansible.builtin.set_fact</span><span class="p">:</span>
+</span><span id="line-212"><a id="line-212" name="line-212"></a>    <span class="nt">kubeinit_registry_images</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">(load_images.content</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">b64decode).split(&#39;\n&#39;)</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">select()</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">list</span><span class="nv"> </span><span class="s">}}&quot;</span>
 </span></pre></div>
 </td></tr></table>
     </div>

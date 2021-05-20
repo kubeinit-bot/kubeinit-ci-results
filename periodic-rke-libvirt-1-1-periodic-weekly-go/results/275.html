@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 12 May 2021 21:24:12 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 19 May 2021 21:40:17 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 12 May 2021 21:36:11 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 19 May 2021 22:02:17 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:11:58.57
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:21:59.94
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml
                             </a>
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">348 results</a>
+                            <a href="../playbooks/1.html#results">353 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">48 files</a>
+                            <a href="../playbooks/1.html#files">45 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Start kubeinit-registry.service</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_services : Enable kubeinit-registry.service</a></li>
             <li><strong>Action</strong>: ansible.builtin.systemd</li>
-            <li><strong>Path</strong>: <a href="../files/39.html#line-264">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:264</a>
+            <li><strong>Path</strong>: <a href="../files/36.html#line-58">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_services/tasks/create_managed_service.yml:58</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 12 May 2021 21:31:14 -0400</li>
-            <li><strong>Ended</strong>: 12 May 2021 21:31:15 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.67</li>
+            <li><strong>Started</strong>: 19 May 2021 21:53:48 -0400</li>
+            <li><strong>Ended</strong>: 19 May 2021 21:53:48 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.54</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -217,6 +217,17 @@
                 </tr>
                 
                 <tr role="row">
+                    <td role="cell" id="enabled" data-label="enabled" class="pf-m-width-20">
+                        <a href="#enabled">enabled</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>True
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
                     <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
                         <a href="#invocation">invocation</a>
                     </td>
@@ -225,13 +236,13 @@
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;daemon_reexec&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;daemon_reload&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;enabled&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;enabled&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;masked&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;kubeinit-registry&quot;</span><span class="p">,</span>
         <span class="nt">&quot;no_block&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;scope&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;started&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="kc">null</span>
     <span class="p">}</span>
 <span class="p">}</span>
@@ -252,17 +263,6 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="state" data-label="state" class="pf-m-width-20">
-                        <a href="#state">state</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>started
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
                     <td role="cell" id="status" data-label="status" class="pf-m-width-20">
                         <a href="#status">status</a>
                     </td>
@@ -271,14 +271,14 @@
     <span class="nt">&quot;ActiveEnterTimestampMonotonic&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
     <span class="nt">&quot;ActiveExitTimestampMonotonic&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
     <span class="nt">&quot;ActiveState&quot;</span><span class="p">:</span> <span class="s2">&quot;inactive&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;After&quot;</span><span class="p">:</span> <span class="s2">&quot;-.slice basic.target&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;After&quot;</span><span class="p">:</span> <span class="s2">&quot;basic.target -.slice&quot;</span><span class="p">,</span>
     <span class="nt">&quot;AllowIsolate&quot;</span><span class="p">:</span> <span class="s2">&quot;no&quot;</span><span class="p">,</span>
     <span class="nt">&quot;AllowedCPUs&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
     <span class="nt">&quot;AllowedMemoryNodes&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
     <span class="nt">&quot;AmbientCapabilities&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
     <span class="nt">&quot;AssertResult&quot;</span><span class="p">:</span> <span class="s2">&quot;no&quot;</span><span class="p">,</span>
     <span class="nt">&quot;AssertTimestampMonotonic&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;Before&quot;</span><span class="p">:</span> <span class="s2">&quot;default.target shutdown.target&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Before&quot;</span><span class="p">:</span> <span class="s2">&quot;shutdown.target&quot;</span><span class="p">,</span>
     <span class="nt">&quot;BlockIOAccounting&quot;</span><span class="p">:</span> <span class="s2">&quot;no&quot;</span><span class="p">,</span>
     <span class="nt">&quot;BlockIOWeight&quot;</span><span class="p">:</span> <span class="s2">&quot;[not set]&quot;</span><span class="p">,</span>
     <span class="nt">&quot;CPUAccounting&quot;</span><span class="p">:</span> <span class="s2">&quot;no&quot;</span><span class="p">,</span>
@@ -336,7 +336,7 @@
     <span class="nt">&quot;IOReadBytes&quot;</span><span class="p">:</span> <span class="s2">&quot;18446744073709551615&quot;</span><span class="p">,</span>
     <span class="nt">&quot;IOReadOperations&quot;</span><span class="p">:</span> <span class="s2">&quot;18446744073709551615&quot;</span><span class="p">,</span>
     <span class="nt">&quot;IOSchedulingClass&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;IOSchedulingPriority&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;IOSchedulingPriority&quot;</span><span class="p">:</span> <span class="s2">&quot;4&quot;</span><span class="p">,</span>
     <span class="nt">&quot;IOWeight&quot;</span><span class="p">:</span> <span class="s2">&quot;[not set]&quot;</span><span class="p">,</span>
     <span class="nt">&quot;IOWriteBytes&quot;</span><span class="p">:</span> <span class="s2">&quot;18446744073709551615&quot;</span><span class="p">,</span>
     <span class="nt">&quot;IOWriteOperations&quot;</span><span class="p">:</span> <span class="s2">&quot;18446744073709551615&quot;</span><span class="p">,</span>
@@ -368,8 +368,8 @@
     <span class="nt">&quot;LimitFSIZESoft&quot;</span><span class="p">:</span> <span class="s2">&quot;infinity&quot;</span><span class="p">,</span>
     <span class="nt">&quot;LimitLOCKS&quot;</span><span class="p">:</span> <span class="s2">&quot;infinity&quot;</span><span class="p">,</span>
     <span class="nt">&quot;LimitLOCKSSoft&quot;</span><span class="p">:</span> <span class="s2">&quot;infinity&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;LimitMEMLOCK&quot;</span><span class="p">:</span> <span class="s2">&quot;1569610752&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;LimitMEMLOCKSoft&quot;</span><span class="p">:</span> <span class="s2">&quot;1569610752&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;LimitMEMLOCK&quot;</span><span class="p">:</span> <span class="s2">&quot;1569611264&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;LimitMEMLOCKSoft&quot;</span><span class="p">:</span> <span class="s2">&quot;1569611264&quot;</span><span class="p">,</span>
     <span class="nt">&quot;LimitMSGQUEUE&quot;</span><span class="p">:</span> <span class="s2">&quot;819200&quot;</span><span class="p">,</span>
     <span class="nt">&quot;LimitMSGQUEUESoft&quot;</span><span class="p">:</span> <span class="s2">&quot;819200&quot;</span><span class="p">,</span>
     <span class="nt">&quot;LimitNICE&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
@@ -419,7 +419,7 @@
     <span class="nt">&quot;OOMPolicy&quot;</span><span class="p">:</span> <span class="s2">&quot;stop&quot;</span><span class="p">,</span>
     <span class="nt">&quot;OOMScoreAdjust&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
     <span class="nt">&quot;OnFailureJobMode&quot;</span><span class="p">:</span> <span class="s2">&quot;replace&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;PIDFile&quot;</span><span class="p">:</span> <span class="s2">&quot;/run/containers/storage/overlay-containers/17209da3d481962715f2a93898a36dd38e19425683af2741c32fa1bb418d59bd/userdata/conmon.pid&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;PIDFile&quot;</span><span class="p">:</span> <span class="s2">&quot;/run/containers/storage/overlay-containers/f24bf597b074329765002713902543ecf3f82271f307ddd9061fbc6931230839/userdata/conmon.pid&quot;</span><span class="p">,</span>
     <span class="nt">&quot;Perpetual&quot;</span><span class="p">:</span> <span class="s2">&quot;no&quot;</span><span class="p">,</span>
     <span class="nt">&quot;PrivateDevices&quot;</span><span class="p">:</span> <span class="s2">&quot;no&quot;</span><span class="p">,</span>
     <span class="nt">&quot;PrivateMounts&quot;</span><span class="p">:</span> <span class="s2">&quot;no&quot;</span><span class="p">,</span>
@@ -439,7 +439,7 @@
     <span class="nt">&quot;ReloadResult&quot;</span><span class="p">:</span> <span class="s2">&quot;success&quot;</span><span class="p">,</span>
     <span class="nt">&quot;RemainAfterExit&quot;</span><span class="p">:</span> <span class="s2">&quot;no&quot;</span><span class="p">,</span>
     <span class="nt">&quot;RemoveIPC&quot;</span><span class="p">:</span> <span class="s2">&quot;no&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;Requires&quot;</span><span class="p">:</span> <span class="s2">&quot;-.slice basic.target&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Requires&quot;</span><span class="p">:</span> <span class="s2">&quot;basic.target -.slice&quot;</span><span class="p">,</span>
     <span class="nt">&quot;Restart&quot;</span><span class="p">:</span> <span class="s2">&quot;on-failure&quot;</span><span class="p">,</span>
     <span class="nt">&quot;RestartKillSignal&quot;</span><span class="p">:</span> <span class="s2">&quot;15&quot;</span><span class="p">,</span>
     <span class="nt">&quot;RestartUSec&quot;</span><span class="p">:</span> <span class="s2">&quot;100ms&quot;</span><span class="p">,</span>
@@ -497,9 +497,8 @@
     <span class="nt">&quot;UID&quot;</span><span class="p">:</span> <span class="s2">&quot;[not set]&quot;</span><span class="p">,</span>
     <span class="nt">&quot;UMask&quot;</span><span class="p">:</span> <span class="s2">&quot;0022&quot;</span><span class="p">,</span>
     <span class="nt">&quot;UnitFilePreset&quot;</span><span class="p">:</span> <span class="s2">&quot;enabled&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;UnitFileState&quot;</span><span class="p">:</span> <span class="s2">&quot;enabled&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;UnitFileState&quot;</span><span class="p">:</span> <span class="s2">&quot;disabled&quot;</span><span class="p">,</span>
     <span class="nt">&quot;UtmpMode&quot;</span><span class="p">:</span> <span class="s2">&quot;init&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;WantedBy&quot;</span><span class="p">:</span> <span class="s2">&quot;default.target&quot;</span><span class="p">,</span>
     <span class="nt">&quot;WatchdogSignal&quot;</span><span class="p">:</span> <span class="s2">&quot;6&quot;</span><span class="p">,</span>
     <span class="nt">&quot;WatchdogTimestampMonotonic&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
     <span class="nt">&quot;WatchdogUSec&quot;</span><span class="p">:</span> <span class="s2">&quot;infinity&quot;</span><span class="p">,</span>

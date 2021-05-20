@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 12 May 2021 21:24:12 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 19 May 2021 21:40:17 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 12 May 2021 21:36:11 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 19 May 2021 22:02:17 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:11:58.57
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:21:59.94
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml
                             </a>
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">348 results</a>
+                            <a href="../playbooks/1.html#results">353 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">48 files</a>
+                            <a href="../playbooks/1.html#files">45 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Mirror RKE remote registry to local</a></li>
-            <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/40.html#line-2">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/20_mirror_rke.yml:2</a>
+            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Set up variable with images list</a></li>
+            <li><strong>Action</strong>: ansible.builtin.set_fact</li>
+            <li><strong>Path</strong>: <a href="../files/35.html#line-210">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:210</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
-            <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 12 May 2021 21:31:17 -0400</li>
-            <li><strong>Ended</strong>: 12 May 2021 21:33:43 -0400</li>
-            <li><strong>Duration</strong>: 00:02:26.36</li>
+            <li><strong>Status</strong>: ok</li>
+            <li><strong>Started</strong>: 19 May 2021 21:53:52 -0400</li>
+            <li><strong>Ended</strong>: 19 May 2021 21:53:52 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.03</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -206,1017 +206,47 @@
             <tbody>
                 
                 <tr role="row">
+                    <td role="cell" id="ansible_facts" data-label="ansible_facts" class="pf-m-width-20">
+                        <a href="#ansible_facts">ansible_facts</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;kubeinit_registry_images&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;rancher/coreos-etcd:v3.4.13-rancher1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rancher/rke-tools:v0.1.65&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rancher/k8s-dns-kube-dns:1.15.10&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rancher/k8s-dns-dnsmasq-nanny:1.15.10&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rancher/k8s-dns-sidecar:1.15.10&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rancher/cluster-proportional-autoscaler:1.8.1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rancher/coredns-coredns:1.7.0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rancher/k8s-dns-node-cache:1.15.13&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rancher/hyperkube:v1.19.3-rancher1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rancher/coreos-flannel:v0.13.0-rancher1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rancher/flannel-cni:v0.3.0-rancher6&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rancher/calico-node:v3.16.1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rancher/calico-cni:v3.16.1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rancher/calico-kube-controllers:v3.16.1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rancher/calico-ctl:v3.16.1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rancher/calico-pod2daemon-flexvol:v3.16.1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;weaveworks/weave-kube:2.7.0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;weaveworks/weave-npc:2.7.0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rancher/pause:3.2&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rancher/nginx-ingress-controller:nginx-0.35.0-rancher1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rancher/nginx-ingress-controller-defaultbackend:1.5-rancher1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rancher/metrics-server:v0.3.6&quot;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
                     <td role="cell" id="changed" data-label="changed" class="pf-m-width-20">
                         <a href="#changed">changed</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>True
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="msg" data-label="msg" class="pf-m-width-20">
-                        <a href="#msg">msg</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>All items completed
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="results" data-label="results" class="pf-m-width-20">
-                        <a href="#results">results</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/coreos-etcd:v3.4.13-rancher1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:05.550024&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:31:23.310221&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/coreos-etcd:v3.4.13-rancher1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/coreos-etcd:v3.4.13-rancher1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:31:17.760197&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:31:17Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/coreos-etcd:v3.4.13-rancher1\&quot; tagged=true\ntime=\&quot;2021-05-13T01:31:17Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/coreos-etcd:v3.4.13-rancher1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/coreos-etcd:v3.4.13-rancher1\&quot;\ntime=\&quot;2021-05-13T01:31:23Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:17Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/coreos-etcd:v3.4.13-rancher1\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:17Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/coreos-etcd:v3.4.13-rancher1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/coreos-etcd:v3.4.13-rancher1\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:23Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:55e324bf8b2bb0964842898a53871ce65965a6d7c641bb1fab71e6cb482a25ca\nCopying blob sha256:a03f0963b089bb943a08e66656c2d9e42bcfd5a5ca1202fde6669ce4b414efec\nCopying blob sha256:5699b9d03e0f6864ecf5cdfbb68c105c861585861e68461d4d7650fd300bf84b\nCopying blob sha256:44fecd6a0530d0fb22d57daca465d8405a775dbbd945efa4173f6bb30e4a1f02\nCopying blob sha256:39fafc05754f195f134ca11ecdb1c9a691ab0848c697fffeb5a85f900caaf6e1\nCopying blob sha256:fef29bc17c992e81de534089c380c8c2d27782a156da2b4817ad213e4909aada\nCopying config sha256:7a8adaf3e7ad5a182ec3bd7919cb5f82ba888967b71e6ebeaec55373658d1961\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:55e324bf8b2bb0964842898a53871ce65965a6d7c641bb1fab71e6cb482a25ca&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:a03f0963b089bb943a08e66656c2d9e42bcfd5a5ca1202fde6669ce4b414efec&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:5699b9d03e0f6864ecf5cdfbb68c105c861585861e68461d4d7650fd300bf84b&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:44fecd6a0530d0fb22d57daca465d8405a775dbbd945efa4173f6bb30e4a1f02&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:39fafc05754f195f134ca11ecdb1c9a691ab0848c697fffeb5a85f900caaf6e1&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:fef29bc17c992e81de534089c380c8c2d27782a156da2b4817ad213e4909aada&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:7a8adaf3e7ad5a182ec3bd7919cb5f82ba888967b71e6ebeaec55373658d1961&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/rke-tools:v0.1.65    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:09.542894&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:31:33.001465&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/rke-tools:v0.1.65    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/rke-tools:v0.1.65&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:31:23.458571&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:31:23Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/rke-tools:v0.1.65\&quot; tagged=true\ntime=\&quot;2021-05-13T01:31:23Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/rke-tools:v0.1.65\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/rke-tools:v0.1.65\&quot;\ntime=\&quot;2021-05-13T01:31:32Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:23Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/rke-tools:v0.1.65\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:23Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/rke-tools:v0.1.65\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/rke-tools:v0.1.65\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:32Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:7e638fd663f1663a65f3a444be2cb3490f8a4f8356788f38fc0ba3e2334016ef\nCopying blob sha256:ad26925fbaa34f48c6121e49ea0d6835abb16c75aa7c25778044d7af90829f46\nCopying blob sha256:8376eb50f57eafec1bdd096f4705efa0d143ef21927b8747aa7e8300280bae4c\nCopying blob sha256:c938c53391c517504a3a74de9a8424e50d8743fef96bfcde9922d746f00146f5\nCopying blob sha256:3f7290122d8b3a176efa15620664a1a318b5ddc328ffe0a6169fc18e34a29c87\nCopying blob sha256:cbdbe7a5bc2a134ca8ec91be58565ec07d037386d1f1d8385412d224deafca08\nCopying blob sha256:00ad92d94124b08583cefd66ca78a7a7878f59cb2f259a3d77abff7153cde824\nCopying blob sha256:3d0ba921269497b61591403d729b0fe8759da5bb291c663c82966150bc75bea8\nCopying blob sha256:c82bbc7c37e6f7e62ba734185b631577e799ceb13bbd5c80c2680daeafcd11b7\nCopying blob sha256:dec11a202056fa74953468b7804703f5c297f1f1cf27293d3be9cb5ae106d7ae\nCopying blob sha256:04b3195993b110496aff0575b08ffb8c7be4bb41f2efc018f537f1cdb00146a2\nCopying blob sha256:924df336e783d0d43340e65abb0a25072ddd61d26ac661f48c96395225c80178\nCopying blob sha256:39c590602422b84d55f4bf03ed49b9386fbdf5bf0de95a75c816bb7868602542\nCopying blob sha256:553801d49a4d0f7764530f607f13c3a33d71b4067192e5a8b6528fb8888b6399\nCopying blob sha256:e27ecfdcbde3cb94f6589eac659e2661c0b9b64212a81ea059ea08c82d0e73f4\nCopying blob sha256:aa134f2ded072f4abbc88b7b1b8dc9aedb1af2a47fd565075aa681b13afaf498\nCopying config sha256:1df47b3cc6eae797d7913ce31be0e67f30954ac489dc0573c8579686e62e80e0\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:7e638fd663f1663a65f3a444be2cb3490f8a4f8356788f38fc0ba3e2334016ef&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:ad26925fbaa34f48c6121e49ea0d6835abb16c75aa7c25778044d7af90829f46&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:8376eb50f57eafec1bdd096f4705efa0d143ef21927b8747aa7e8300280bae4c&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:c938c53391c517504a3a74de9a8424e50d8743fef96bfcde9922d746f00146f5&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:3f7290122d8b3a176efa15620664a1a318b5ddc328ffe0a6169fc18e34a29c87&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:cbdbe7a5bc2a134ca8ec91be58565ec07d037386d1f1d8385412d224deafca08&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:00ad92d94124b08583cefd66ca78a7a7878f59cb2f259a3d77abff7153cde824&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:3d0ba921269497b61591403d729b0fe8759da5bb291c663c82966150bc75bea8&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:c82bbc7c37e6f7e62ba734185b631577e799ceb13bbd5c80c2680daeafcd11b7&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:dec11a202056fa74953468b7804703f5c297f1f1cf27293d3be9cb5ae106d7ae&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:04b3195993b110496aff0575b08ffb8c7be4bb41f2efc018f537f1cdb00146a2&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:924df336e783d0d43340e65abb0a25072ddd61d26ac661f48c96395225c80178&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:39c590602422b84d55f4bf03ed49b9386fbdf5bf0de95a75c816bb7868602542&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:553801d49a4d0f7764530f607f13c3a33d71b4067192e5a8b6528fb8888b6399&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:e27ecfdcbde3cb94f6589eac659e2661c0b9b64212a81ea059ea08c82d0e73f4&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:aa134f2ded072f4abbc88b7b1b8dc9aedb1af2a47fd565075aa681b13afaf498&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:1df47b3cc6eae797d7913ce31be0e67f30954ac489dc0573c8579686e62e80e0&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/k8s-dns-kube-dns:1.15.10    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:05.581123&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:31:38.734027&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/k8s-dns-kube-dns:1.15.10    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/k8s-dns-kube-dns:1.15.10&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:31:33.152904&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:31:33Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/k8s-dns-kube-dns:1.15.10\&quot; tagged=true\ntime=\&quot;2021-05-13T01:31:33Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/k8s-dns-kube-dns:1.15.10\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/k8s-dns-kube-dns:1.15.10\&quot;\ntime=\&quot;2021-05-13T01:31:38Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:33Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/k8s-dns-kube-dns:1.15.10\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:33Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/k8s-dns-kube-dns:1.15.10\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/k8s-dns-kube-dns:1.15.10\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:38Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:39fafc05754f195f134ca11ecdb1c9a691ab0848c697fffeb5a85f900caaf6e1\nCopying blob sha256:2e6f1429f7ea567654b47310d0b6f73a97a56d367bb40fc83bc9fd2fe4d35250\nCopying config sha256:6ed6d4e00bb94b48abe6f69b055e3f44550f4654e2b5059ac8522193ec2b118a\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:39fafc05754f195f134ca11ecdb1c9a691ab0848c697fffeb5a85f900caaf6e1&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:2e6f1429f7ea567654b47310d0b6f73a97a56d367bb40fc83bc9fd2fe4d35250&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:6ed6d4e00bb94b48abe6f69b055e3f44550f4654e2b5059ac8522193ec2b118a&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/k8s-dns-dnsmasq-nanny:1.15.10    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:05.641803&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:31:44.523923&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/k8s-dns-dnsmasq-nanny:1.15.10    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/k8s-dns-dnsmasq-nanny:1.15.10&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:31:38.882120&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:31:38Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/k8s-dns-dnsmasq-nanny:1.15.10\&quot; tagged=true\ntime=\&quot;2021-05-13T01:31:38Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/k8s-dns-dnsmasq-nanny:1.15.10\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/k8s-dns-dnsmasq-nanny:1.15.10\&quot;\ntime=\&quot;2021-05-13T01:31:44Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:38Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/k8s-dns-dnsmasq-nanny:1.15.10\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:38Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/k8s-dns-dnsmasq-nanny:1.15.10\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/k8s-dns-dnsmasq-nanny:1.15.10\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:44Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:39fafc05754f195f134ca11ecdb1c9a691ab0848c697fffeb5a85f900caaf6e1\nCopying blob sha256:ae621079be451ba8d58723e3f63dc9eeed83a44f92344febdeca08ada74f7c3e\nCopying blob sha256:44ce79395947febfd45b0c5ff3886fc6d7d05e4f0c220148806bd475b52663c7\nCopying blob sha256:5b5a0cf630f774c1fb42b499d96d92a758dbb7aae05f9e35be5422e88862db0a\nCopying blob sha256:b777d23c0e0bdde9bc0fdfa1e99076a81921f796c21584666aceb41e55fc674f\nCopying config sha256:291869eae41a4320d04d1fea27b7f18001c8a7a4ebd5443a8703415239d8755f\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:39fafc05754f195f134ca11ecdb1c9a691ab0848c697fffeb5a85f900caaf6e1&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:ae621079be451ba8d58723e3f63dc9eeed83a44f92344febdeca08ada74f7c3e&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:44ce79395947febfd45b0c5ff3886fc6d7d05e4f0c220148806bd475b52663c7&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:5b5a0cf630f774c1fb42b499d96d92a758dbb7aae05f9e35be5422e88862db0a&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:b777d23c0e0bdde9bc0fdfa1e99076a81921f796c21584666aceb41e55fc674f&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:291869eae41a4320d04d1fea27b7f18001c8a7a4ebd5443a8703415239d8755f&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/k8s-dns-sidecar:1.15.10    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:05.448141&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:31:50.119753&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/k8s-dns-sidecar:1.15.10    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/k8s-dns-sidecar:1.15.10&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:31:44.671612&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:31:44Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/k8s-dns-sidecar:1.15.10\&quot; tagged=true\ntime=\&quot;2021-05-13T01:31:44Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/k8s-dns-sidecar:1.15.10\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/k8s-dns-sidecar:1.15.10\&quot;\ntime=\&quot;2021-05-13T01:31:50Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:44Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/k8s-dns-sidecar:1.15.10\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:44Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/k8s-dns-sidecar:1.15.10\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/k8s-dns-sidecar:1.15.10\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:50Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:39fafc05754f195f134ca11ecdb1c9a691ab0848c697fffeb5a85f900caaf6e1\nCopying blob sha256:708ee6a1d63a7bbb973749b584f374afa21c897186082c94e6eaf9fb02355eb0\nCopying config sha256:42732ed159c9638e55bb37c6a762b53bccafff9f81de81e0061746416bcd1e0b\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:39fafc05754f195f134ca11ecdb1c9a691ab0848c697fffeb5a85f900caaf6e1&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:708ee6a1d63a7bbb973749b584f374afa21c897186082c94e6eaf9fb02355eb0&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:42732ed159c9638e55bb37c6a762b53bccafff9f81de81e0061746416bcd1e0b&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/cluster-proportional-autoscaler:1.8.1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:05.424599&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:31:55.691813&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/cluster-proportional-autoscaler:1.8.1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/cluster-proportional-autoscaler:1.8.1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:31:50.267214&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:31:50Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/cluster-proportional-autoscaler:1.8.1\&quot; tagged=true\ntime=\&quot;2021-05-13T01:31:50Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/cluster-proportional-autoscaler:1.8.1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/cluster-proportional-autoscaler:1.8.1\&quot;\ntime=\&quot;2021-05-13T01:31:55Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:50Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/cluster-proportional-autoscaler:1.8.1\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:50Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/cluster-proportional-autoscaler:1.8.1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/cluster-proportional-autoscaler:1.8.1\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:55Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:dee69c5a91077e9085175985dc55ddde4ddb75ee97713cbece90f9e0a64b1e12\nCopying blob sha256:3c2cba919283a210665e480bcbf943eaaf4ed87a83f02e81bb286b8bdead0e75\nCopying blob sha256:24f0c933cbef83faee52f82c7f889c727b1ece5123b92d036c52fa865480f037\nCopying config sha256:4f1064cf7caf1f3620ea638e2f25cc1a3a6a43656f918323023c0e638d54ac65\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:dee69c5a91077e9085175985dc55ddde4ddb75ee97713cbece90f9e0a64b1e12&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:3c2cba919283a210665e480bcbf943eaaf4ed87a83f02e81bb286b8bdead0e75&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:24f0c933cbef83faee52f82c7f889c727b1ece5123b92d036c52fa865480f037&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:4f1064cf7caf1f3620ea638e2f25cc1a3a6a43656f918323023c0e638d54ac65&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/coredns-coredns:1.7.0    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:05.417115&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:32:01.256563&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/coredns-coredns:1.7.0    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/coredns-coredns:1.7.0&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:31:55.839448&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:31:55Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/coredns-coredns:1.7.0\&quot; tagged=true\ntime=\&quot;2021-05-13T01:31:55Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/coredns-coredns:1.7.0\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/coredns-coredns:1.7.0\&quot;\ntime=\&quot;2021-05-13T01:32:01Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:55Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/coredns-coredns:1.7.0\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:31:55Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/coredns-coredns:1.7.0\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/coredns-coredns:1.7.0\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:01Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:c6568d217a0023041ef9f729e8836b19f863bcdb612bb3a329ebc165539f5a80\nCopying blob sha256:6937ebe10f0225ac2ef529a733a02d46829421411fb9e33145f19d4026d75478\nCopying config sha256:bfe3a36ebd2528b454be6aebece806db5b40407b833e2af9617bf39afaff8c16\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:c6568d217a0023041ef9f729e8836b19f863bcdb612bb3a329ebc165539f5a80&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:6937ebe10f0225ac2ef529a733a02d46829421411fb9e33145f19d4026d75478&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:bfe3a36ebd2528b454be6aebece806db5b40407b833e2af9617bf39afaff8c16&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/k8s-dns-node-cache:1.15.13    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:05.689414&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:32:07.094814&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/k8s-dns-node-cache:1.15.13    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/k8s-dns-node-cache:1.15.13&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:32:01.405400&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:32:01Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/k8s-dns-node-cache:1.15.13\&quot; tagged=true\ntime=\&quot;2021-05-13T01:32:01Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/k8s-dns-node-cache:1.15.13\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/k8s-dns-node-cache:1.15.13\&quot;\ntime=\&quot;2021-05-13T01:32:07Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:01Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/k8s-dns-node-cache:1.15.13\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:01Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/k8s-dns-node-cache:1.15.13\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/k8s-dns-node-cache:1.15.13\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:07Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:2929430b55305c835c7d5964fb3a99ae383ec8cf5c0bda49e59c337e7a1abc80\nCopying blob sha256:597de8ba0c30cdd0b372023aa2ea3ca9b3affbcba5ac8db922f57d6cb67db7c8\nCopying blob sha256:b95c36eac3c42ac2f47d871d7b399e8afe8d680234abc021254038b16ab96488\nCopying config sha256:4e32fda46b4ee6e9a22a914190f712da6ea479424da82912890fed6ff3b40b9b\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:2929430b55305c835c7d5964fb3a99ae383ec8cf5c0bda49e59c337e7a1abc80&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:597de8ba0c30cdd0b372023aa2ea3ca9b3affbcba5ac8db922f57d6cb67db7c8&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:b95c36eac3c42ac2f47d871d7b399e8afe8d680234abc021254038b16ab96488&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:4e32fda46b4ee6e9a22a914190f712da6ea479424da82912890fed6ff3b40b9b&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/hyperkube:v1.19.3-rancher1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:11.908579&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:32:19.151837&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/hyperkube:v1.19.3-rancher1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/hyperkube:v1.19.3-rancher1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:32:07.243258&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:32:07Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/hyperkube:v1.19.3-rancher1\&quot; tagged=true\ntime=\&quot;2021-05-13T01:32:07Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/hyperkube:v1.19.3-rancher1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/hyperkube:v1.19.3-rancher1\&quot;\ntime=\&quot;2021-05-13T01:32:19Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:07Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/hyperkube:v1.19.3-rancher1\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:07Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/hyperkube:v1.19.3-rancher1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/hyperkube:v1.19.3-rancher1\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:19Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:184c5578bbea4e7dd5ca30665c35baa716b1a9cc3fdb48f0bf1ed51dd6d62df1\nCopying blob sha256:46d371e02073acecf750a166495a63358517af793de739a51b680c973fae8fb9\nCopying blob sha256:f7bfea53ad120b47cea5488f0b8331e737a97b33003517b0bd05e83925b578f0\nCopying blob sha256:1aec72d1f1d92423939e3b119e7d40e87cb8c9879928298857486f65ea2a6697\nCopying blob sha256:54ee1f796a1e650627269605cb8e6a596b77b324e6f0a1e4443dc41def0e58a6\nCopying blob sha256:b66c17bbf772fa072c280b10fe87bc999420042b5fce5b111db38b4fe7c40b49\nCopying blob sha256:495dae4b4e553db46258dc0c4d56e485501874479f19f2b7c7a48d02a2ca1951\nCopying blob sha256:ff6c8302aa68b40e51e57898ac11ad52eb4d0133ec7e7e83ad066cfc7186b61c\nCopying blob sha256:643bb288c2e31a6a3a4658a7d3d227f0598033469129d0e98e089a2f24e6e4ba\nCopying blob sha256:59d539e211dc27326da35f93337a6f3e75d9afaa2b3d16a9ac8d45ebb11bc039\nCopying blob sha256:867b8a7754b85037e1794bf9df6370301628824d14217911cf8f59b63a8e86bc\nCopying blob sha256:5c72f97b4917012ce45b600f5e2cd7faa3ab19a3e0d0ce46151d1f15eaf18367\nCopying blob sha256:f8037258395eca80e50b3476d06ab3542caec501c6a2339aa5754255acfbec54\nCopying blob sha256:b7f420131e8377aecea2afce290d08896587941fac5384347ad09370167bd57f\nCopying config sha256:4beef00ca5dafcda3c3f5257124d255716541217e857955d76e1544d78e4b984\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:184c5578bbea4e7dd5ca30665c35baa716b1a9cc3fdb48f0bf1ed51dd6d62df1&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:46d371e02073acecf750a166495a63358517af793de739a51b680c973fae8fb9&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:f7bfea53ad120b47cea5488f0b8331e737a97b33003517b0bd05e83925b578f0&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:1aec72d1f1d92423939e3b119e7d40e87cb8c9879928298857486f65ea2a6697&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:54ee1f796a1e650627269605cb8e6a596b77b324e6f0a1e4443dc41def0e58a6&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:b66c17bbf772fa072c280b10fe87bc999420042b5fce5b111db38b4fe7c40b49&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:495dae4b4e553db46258dc0c4d56e485501874479f19f2b7c7a48d02a2ca1951&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:ff6c8302aa68b40e51e57898ac11ad52eb4d0133ec7e7e83ad066cfc7186b61c&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:643bb288c2e31a6a3a4658a7d3d227f0598033469129d0e98e089a2f24e6e4ba&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:59d539e211dc27326da35f93337a6f3e75d9afaa2b3d16a9ac8d45ebb11bc039&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:867b8a7754b85037e1794bf9df6370301628824d14217911cf8f59b63a8e86bc&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:5c72f97b4917012ce45b600f5e2cd7faa3ab19a3e0d0ce46151d1f15eaf18367&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:f8037258395eca80e50b3476d06ab3542caec501c6a2339aa5754255acfbec54&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:b7f420131e8377aecea2afce290d08896587941fac5384347ad09370167bd57f&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:4beef00ca5dafcda3c3f5257124d255716541217e857955d76e1544d78e4b984&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/coreos-flannel:v0.13.0-rancher1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:07.318206&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:32:26.619964&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/coreos-flannel:v0.13.0-rancher1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/coreos-flannel:v0.13.0-rancher1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:32:19.301758&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:32:19Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/coreos-flannel:v0.13.0-rancher1\&quot; tagged=true\ntime=\&quot;2021-05-13T01:32:19Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/coreos-flannel:v0.13.0-rancher1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/coreos-flannel:v0.13.0-rancher1\&quot;\ntime=\&quot;2021-05-13T01:32:26Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:19Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/coreos-flannel:v0.13.0-rancher1\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:19Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/coreos-flannel:v0.13.0-rancher1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/coreos-flannel:v0.13.0-rancher1\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:26Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:954276d325df7f69648a98c72652920208779301c7eca74065d180c9bd062dcc\nCopying blob sha256:3091ac99776e6339c58607574b024d866537679e02e33136b72f6d555ef352be\nCopying blob sha256:df20fa9351a15782c64e6dddb2d4a6f50bf6d3688060a34c4014b0d9a752eb4c\nCopying blob sha256:e0d1d1f1d25e0ac0b1e08d7588b737af0ae8b598203999369d1b75d2d5173cd2\nCopying blob sha256:179d3681d6f8da273c4518bb7633f2e7a33bf99d96bff21bbac066a48bf712d5\nCopying blob sha256:4ede9682957cd6caad6676ec8d48ec509528144df35ab57990f542576dba66f6\nCopying blob sha256:a02d32e478837166d2f3e2b1cead177188e351c04ee4f1ec37aba4acefbdd1d7\nCopying config sha256:0bfefe9f649b4574f7c64d280b7c3a88ce22dba2acae84c81f52169a5703631e\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:954276d325df7f69648a98c72652920208779301c7eca74065d180c9bd062dcc&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:3091ac99776e6339c58607574b024d866537679e02e33136b72f6d555ef352be&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:df20fa9351a15782c64e6dddb2d4a6f50bf6d3688060a34c4014b0d9a752eb4c&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:e0d1d1f1d25e0ac0b1e08d7588b737af0ae8b598203999369d1b75d2d5173cd2&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:179d3681d6f8da273c4518bb7633f2e7a33bf99d96bff21bbac066a48bf712d5&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:4ede9682957cd6caad6676ec8d48ec509528144df35ab57990f542576dba66f6&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:a02d32e478837166d2f3e2b1cead177188e351c04ee4f1ec37aba4acefbdd1d7&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:0bfefe9f649b4574f7c64d280b7c3a88ce22dba2acae84c81f52169a5703631e&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/flannel-cni:v0.3.0-rancher6    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:09.559143&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:32:36.329441&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/flannel-cni:v0.3.0-rancher6    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/flannel-cni:v0.3.0-rancher6&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:32:26.770298&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:32:26Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/flannel-cni:v0.3.0-rancher6\&quot; tagged=true\ntime=\&quot;2021-05-13T01:32:26Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/flannel-cni:v0.3.0-rancher6\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/flannel-cni:v0.3.0-rancher6\&quot;\ntime=\&quot;2021-05-13T01:32:36Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:26Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/flannel-cni:v0.3.0-rancher6\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:26Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/flannel-cni:v0.3.0-rancher6\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/flannel-cni:v0.3.0-rancher6\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:36Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:02f2a76033c0318b287c55e9aff924cd77e27eb48bec7988b1025df9e58e782f\nCopying blob sha256:fc8799e55fb4a59c4235f7b8e2f46cb728a4eb6e4537f050fddfbe053f08736e\nCopying blob sha256:592c32df1077897a4e5343918f2f0ce0ceafbd593a0a95b671816256bd5aa0c9\nCopying blob sha256:9b68cf9769f4c352e74c7d9fe4586d3126cc30e78306ee77382bb78ad35a7e41\nCopying blob sha256:b80050e670c724cf5363936a52c67254ecfcc6aef5566b58345513ed06182c97\nCopying blob sha256:d9cbbca60e5f0fc028b13c01e70e96cc2eefe7858ccc5a33c9a8faa8b03286aa\nCopying blob sha256:4d93c54826bf7972113740e054ecd48804c0dc25b6b31ae94f446508affa0d42\nCopying blob sha256:a33c2423528f81d5eb932c58dad1514f5d7d70cc78bdb2b9554812dfb0e82b28\nCopying blob sha256:4f27b8b3212ee00690ff0632d00d2e17d3b46c1964682f9c71a5df68c3ee322a\nCopying blob sha256:82afcfe21b050874eb80d760e95ad36a58e2e853c904a20a236d8485456f4725\nCopying blob sha256:9c4a6d986496816c6cc305a4fbc532d5e45a45434b84ad6e5a069c09d477f571\nCopying blob sha256:5b586ebd23ce24f7be59d23a790272ef75baa74cc28289e8111f29faf253144e\nCopying blob sha256:08515d811cfa99d45267df7f2c571277b8a96d93a4f71d3a5d6a13448b7a7e49\nCopying blob sha256:b1fee27985c0c7e3744247ff2ae442fc70021f5919378de8d7a934cc45c1a03b\nCopying blob sha256:7c0287c6d91072c998d7c924220f5fec684ddcba6b4adc06f805738e5ea6d4d4\nCopying blob sha256:2e14386c9199cdc9a76c63c6df0f4bb8cffb95be04b5febe481bf36b9efb8487\nCopying config sha256:204d7aaf689a4e577048b4c77f6024e5baaeba63c8620a6c4062ff87c805849c\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:02f2a76033c0318b287c55e9aff924cd77e27eb48bec7988b1025df9e58e782f&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:fc8799e55fb4a59c4235f7b8e2f46cb728a4eb6e4537f050fddfbe053f08736e&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:592c32df1077897a4e5343918f2f0ce0ceafbd593a0a95b671816256bd5aa0c9&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:9b68cf9769f4c352e74c7d9fe4586d3126cc30e78306ee77382bb78ad35a7e41&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:b80050e670c724cf5363936a52c67254ecfcc6aef5566b58345513ed06182c97&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:d9cbbca60e5f0fc028b13c01e70e96cc2eefe7858ccc5a33c9a8faa8b03286aa&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:4d93c54826bf7972113740e054ecd48804c0dc25b6b31ae94f446508affa0d42&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:a33c2423528f81d5eb932c58dad1514f5d7d70cc78bdb2b9554812dfb0e82b28&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:4f27b8b3212ee00690ff0632d00d2e17d3b46c1964682f9c71a5df68c3ee322a&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:82afcfe21b050874eb80d760e95ad36a58e2e853c904a20a236d8485456f4725&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:9c4a6d986496816c6cc305a4fbc532d5e45a45434b84ad6e5a069c09d477f571&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:5b586ebd23ce24f7be59d23a790272ef75baa74cc28289e8111f29faf253144e&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:08515d811cfa99d45267df7f2c571277b8a96d93a4f71d3a5d6a13448b7a7e49&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:b1fee27985c0c7e3744247ff2ae442fc70021f5919378de8d7a934cc45c1a03b&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:7c0287c6d91072c998d7c924220f5fec684ddcba6b4adc06f805738e5ea6d4d4&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:2e14386c9199cdc9a76c63c6df0f4bb8cffb95be04b5febe481bf36b9efb8487&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:204d7aaf689a4e577048b4c77f6024e5baaeba63c8620a6c4062ff87c805849c&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/calico-node:v3.16.1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:05.633922&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:32:42.111345&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/calico-node:v3.16.1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/calico-node:v3.16.1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:32:36.477423&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:32:36Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/calico-node:v3.16.1\&quot; tagged=true\ntime=\&quot;2021-05-13T01:32:36Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/calico-node:v3.16.1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/calico-node:v3.16.1\&quot;\ntime=\&quot;2021-05-13T01:32:42Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:36Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/calico-node:v3.16.1\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:36Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/calico-node:v3.16.1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/calico-node:v3.16.1\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:42Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:ccde0e58b29426ce5854938ded63ac60dcd374511a1f11f46086871076d2d5aa\nCopying blob sha256:45a7d4550680c9a58cbd0da99e4f128f0adfe7941a2eacbc61b359bafebcba12\nCopying config sha256:0f351f210d5e10e83519f2587ef39ef8b38184a91784240b3932c91bb0654a11\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:ccde0e58b29426ce5854938ded63ac60dcd374511a1f11f46086871076d2d5aa&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:45a7d4550680c9a58cbd0da99e4f128f0adfe7941a2eacbc61b359bafebcba12&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:0f351f210d5e10e83519f2587ef39ef8b38184a91784240b3932c91bb0654a11&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/calico-cni:v3.16.1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:05.665881&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:32:47.924406&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/calico-cni:v3.16.1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/calico-cni:v3.16.1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:32:42.258525&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:32:42Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/calico-cni:v3.16.1\&quot; tagged=true\ntime=\&quot;2021-05-13T01:32:42Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/calico-cni:v3.16.1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/calico-cni:v3.16.1\&quot;\ntime=\&quot;2021-05-13T01:32:47Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:42Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/calico-cni:v3.16.1\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:42Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/calico-cni:v3.16.1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/calico-cni:v3.16.1\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:47Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:a73a5c66f3f6e7c1b28b735e413d7fb5a21ba246b40ead70e6f5f6cbf1712381\nCopying blob sha256:13ac60062e28ab1d21a8dbc2b90c5a7a8584809d583df319090617dd36ff96f6\nCopying blob sha256:2f0bc7f21c59b83e6bd11c9bdf5863690f20ccab0c9e263da4653eff1f4d2437\nCopying config sha256:4ab373b1fac4c3dd2a948d26799009c47ce84668b7931eb83e2feb09b94cf6cf\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:a73a5c66f3f6e7c1b28b735e413d7fb5a21ba246b40ead70e6f5f6cbf1712381&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:13ac60062e28ab1d21a8dbc2b90c5a7a8584809d583df319090617dd36ff96f6&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:2f0bc7f21c59b83e6bd11c9bdf5863690f20ccab0c9e263da4653eff1f4d2437&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:4ab373b1fac4c3dd2a948d26799009c47ce84668b7931eb83e2feb09b94cf6cf&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/calico-kube-controllers:v3.16.1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:05.186603&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:32:53.259335&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/calico-kube-controllers:v3.16.1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/calico-kube-controllers:v3.16.1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:32:48.072732&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:32:48Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/calico-kube-controllers:v3.16.1\&quot; tagged=true\ntime=\&quot;2021-05-13T01:32:48Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/calico-kube-controllers:v3.16.1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/calico-kube-controllers:v3.16.1\&quot;\ntime=\&quot;2021-05-13T01:32:53Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:48Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/calico-kube-controllers:v3.16.1\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:48Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/calico-kube-controllers:v3.16.1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/calico-kube-controllers:v3.16.1\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:53Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:c3b6c9523e63a0cd3a52774be5b7662c79e0ca60fa56611a4a1c2e4e97130cb8\nCopying blob sha256:8e2f94a620e8c7561feda9cbd74095062d672e9ae7b0cd8c4f1ca36ad3223ba9\nCopying blob sha256:afe793c1486995aee14c55d752fe37499f3e3b5a54a348536587b4a36f5b651f\nCopying config sha256:03feeb39a75a335d5265a43d121d84d539b9db7ed2c85db04652434d0dc59de5\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:c3b6c9523e63a0cd3a52774be5b7662c79e0ca60fa56611a4a1c2e4e97130cb8&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:8e2f94a620e8c7561feda9cbd74095062d672e9ae7b0cd8c4f1ca36ad3223ba9&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:afe793c1486995aee14c55d752fe37499f3e3b5a54a348536587b4a36f5b651f&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:03feeb39a75a335d5265a43d121d84d539b9db7ed2c85db04652434d0dc59de5&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/calico-ctl:v3.16.1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:05.303104&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:32:58.709374&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/calico-ctl:v3.16.1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/calico-ctl:v3.16.1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:32:53.406270&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:32:53Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/calico-ctl:v3.16.1\&quot; tagged=true\ntime=\&quot;2021-05-13T01:32:53Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/calico-ctl:v3.16.1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/calico-ctl:v3.16.1\&quot;\ntime=\&quot;2021-05-13T01:32:58Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:53Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/calico-ctl:v3.16.1\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:53Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/calico-ctl:v3.16.1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/calico-ctl:v3.16.1\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:58Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:6d483bccce50011716c1a19fcae1c6d4ada3f8d1c006d8c90573ba4a68277cee\nCopying blob sha256:6f9ad4b16d486a7089efc7b58980a3e555f05b479e34050a565f285184d6b9c4\nCopying blob sha256:6fbcc28b24bfad2d2706ba6f120bd4392d685e4c2e902007cc2be74229a78277\nCopying blob sha256:ddc345fdc0898d71f7e49d7f7ce6208b93932c1e5b778e35068b33e9d7e89156\nCopying config sha256:865c05e95841df2493e3ecc08b1c16e2f883962d57abb07364b1442e5b898458\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:6d483bccce50011716c1a19fcae1c6d4ada3f8d1c006d8c90573ba4a68277cee&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:6f9ad4b16d486a7089efc7b58980a3e555f05b479e34050a565f285184d6b9c4&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:6fbcc28b24bfad2d2706ba6f120bd4392d685e4c2e902007cc2be74229a78277&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:ddc345fdc0898d71f7e49d7f7ce6208b93932c1e5b778e35068b33e9d7e89156&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:865c05e95841df2493e3ecc08b1c16e2f883962d57abb07364b1442e5b898458&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/calico-pod2daemon-flexvol:v3.16.1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:07.056483&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:33:05.914204&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/calico-pod2daemon-flexvol:v3.16.1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/calico-pod2daemon-flexvol:v3.16.1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:32:58.857721&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:32:58Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/calico-pod2daemon-flexvol:v3.16.1\&quot; tagged=true\ntime=\&quot;2021-05-13T01:32:58Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/calico-pod2daemon-flexvol:v3.16.1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/calico-pod2daemon-flexvol:v3.16.1\&quot;\ntime=\&quot;2021-05-13T01:33:05Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:58Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/calico-pod2daemon-flexvol:v3.16.1\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:32:58Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/calico-pod2daemon-flexvol:v3.16.1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/calico-pod2daemon-flexvol:v3.16.1\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:33:05Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:2b552828c4ef9910c8b3190394b9a9b3e47501ec04e0ea5267d0613a4bae539a\nCopying blob sha256:d1afa19b670cb9e9165f250ea074be9f322ebd6f41fe40896ec9387801fb7502\nCopying blob sha256:d6fcb911d9622508ea658b5c71774a36237d6a160acde23bdb0b5422d38410d2\nCopying blob sha256:1fc0dbbbe20bf0c2195619da5ed664bc8d81b15b627a9e5328a9725ce84cdc36\nCopying blob sha256:659bac19c2e86d3b84b4316be72a3d9742c70c8267c2a9c3a74a5ba4292f8714\nCopying blob sha256:5476dad6c33f15cc05dd84fc161d1b7fb37d416d244e4b8222b9912f61f4fbdd\nCopying blob sha256:4d87e81187744b8bc8a72bdc7bf940fd7cafa07788f0eefcbdbfcf523513638f\nCopying config sha256:4cbe1ed86c35615f0255388fb6957aa9e2872b1919e90eb37cb1404954d42a5d\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:2b552828c4ef9910c8b3190394b9a9b3e47501ec04e0ea5267d0613a4bae539a&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:d1afa19b670cb9e9165f250ea074be9f322ebd6f41fe40896ec9387801fb7502&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:d6fcb911d9622508ea658b5c71774a36237d6a160acde23bdb0b5422d38410d2&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:1fc0dbbbe20bf0c2195619da5ed664bc8d81b15b627a9e5328a9725ce84cdc36&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:659bac19c2e86d3b84b4316be72a3d9742c70c8267c2a9c3a74a5ba4292f8714&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:5476dad6c33f15cc05dd84fc161d1b7fb37d416d244e4b8222b9912f61f4fbdd&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:4d87e81187744b8bc8a72bdc7bf940fd7cafa07788f0eefcbdbfcf523513638f&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:4cbe1ed86c35615f0255388fb6957aa9e2872b1919e90eb37cb1404954d42a5d&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/weaveworks/weave-kube:2.7.0    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/weaveworks\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:06.023624&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:33:12.086201&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/weaveworks/weave-kube:2.7.0    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/weaveworks\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;weaveworks/weave-kube:2.7.0&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:33:06.062577&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:33:06Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/weaveworks/weave-kube:2.7.0\&quot; tagged=true\ntime=\&quot;2021-05-13T01:33:06Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://weaveworks/weave-kube:2.7.0\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/weaveworks/weave-kube:2.7.0\&quot;\ntime=\&quot;2021-05-13T01:33:12Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:33:06Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/weaveworks/weave-kube:2.7.0\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:33:06Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://weaveworks/weave-kube:2.7.0\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/weaveworks/weave-kube:2.7.0\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:33:12Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:35b26289b9d697ac7feeb7232449aae20e1a2e16ce256ea4ddfb7f1ff1edb979\nCopying blob sha256:6db334ac978e0a73e4c45848d645a985366feb9ea3deda17783a867b131e8cfa\nCopying blob sha256:21c83c5242199776c232920ddb58cfa2a46b17e42ed831ca9001c8dbc532d22d\nCopying blob sha256:3c1275a4379d2502776601dc3dcb2fe0c18dd2fb6863f7b7e8e36b1b67bcb106\nCopying blob sha256:71ff85185d24ddeafadfb307f05ad0789f4a48118597bd905d574949d4a1cb04\nCopying blob sha256:ba29370426598c6a762690b3ea5636a80d66041d08d0934db157b3a022875ffc\nCopying config sha256:a8ef3e215aac35ab53a499ad28cbff1d6d6b2bb5a5c03adb66794b9dca8343b4\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:35b26289b9d697ac7feeb7232449aae20e1a2e16ce256ea4ddfb7f1ff1edb979&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:6db334ac978e0a73e4c45848d645a985366feb9ea3deda17783a867b131e8cfa&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:21c83c5242199776c232920ddb58cfa2a46b17e42ed831ca9001c8dbc532d22d&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:3c1275a4379d2502776601dc3dcb2fe0c18dd2fb6863f7b7e8e36b1b67bcb106&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:71ff85185d24ddeafadfb307f05ad0789f4a48118597bd905d574949d4a1cb04&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:ba29370426598c6a762690b3ea5636a80d66041d08d0934db157b3a022875ffc&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:a8ef3e215aac35ab53a499ad28cbff1d6d6b2bb5a5c03adb66794b9dca8343b4&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/weaveworks/weave-npc:2.7.0    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/weaveworks\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:05.467175&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:33:17.700126&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/weaveworks/weave-npc:2.7.0    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/weaveworks\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;weaveworks/weave-npc:2.7.0&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:33:12.232951&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:33:12Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/weaveworks/weave-npc:2.7.0\&quot; tagged=true\ntime=\&quot;2021-05-13T01:33:12Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://weaveworks/weave-npc:2.7.0\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/weaveworks/weave-npc:2.7.0\&quot;\ntime=\&quot;2021-05-13T01:33:17Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:33:12Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/weaveworks/weave-npc:2.7.0\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:33:12Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://weaveworks/weave-npc:2.7.0\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/weaveworks/weave-npc:2.7.0\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:33:17Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:21c83c5242199776c232920ddb58cfa2a46b17e42ed831ca9001c8dbc532d22d\nCopying blob sha256:8cde1ccec9e7585a4cf15e7a5e1eead9dfbf30946b623c2c04d982f0b52e5467\nCopying blob sha256:84e012ce0eaee87015dbbe2437ef34d0615f5ea050f95c2402f153d656b3d655\nCopying blob sha256:817644f679273d314d2d54bb0ae8db0eb45103e8ce7d27b9a268b89abf91dfbe\nCopying blob sha256:b4bce76b204ae62b99f4cda7a62b49850c21094e7247d607916b0930fc3aabb5\nCopying config sha256:db66692318fca8d333d4faf4ffdf4c43204a4bddb6d6f2ad4b064bfa8edf5bd6\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:21c83c5242199776c232920ddb58cfa2a46b17e42ed831ca9001c8dbc532d22d&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:8cde1ccec9e7585a4cf15e7a5e1eead9dfbf30946b623c2c04d982f0b52e5467&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:84e012ce0eaee87015dbbe2437ef34d0615f5ea050f95c2402f153d656b3d655&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:817644f679273d314d2d54bb0ae8db0eb45103e8ce7d27b9a268b89abf91dfbe&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:b4bce76b204ae62b99f4cda7a62b49850c21094e7247d607916b0930fc3aabb5&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:db66692318fca8d333d4faf4ffdf4c43204a4bddb6d6f2ad4b064bfa8edf5bd6&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/pause:3.2    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:05.273243&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:33:23.122685&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/pause:3.2    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/pause:3.2&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:33:17.849442&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:33:17Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/pause:3.2\&quot; tagged=true\ntime=\&quot;2021-05-13T01:33:17Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/pause:3.2\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/pause:3.2\&quot;\ntime=\&quot;2021-05-13T01:33:23Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:33:17Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/pause:3.2\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:33:17Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/pause:3.2\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/pause:3.2\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:33:23Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:c74f8866df097496217c9f15efe8f8d3db05d19d678a02d01cc7eaed520bb136\nCopying config sha256:e004ddc1b078f7f6375b7294b9ebb9026cdda37a880dbd0c9da5e0885ef075cf\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:c74f8866df097496217c9f15efe8f8d3db05d19d678a02d01cc7eaed520bb136&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:e004ddc1b078f7f6375b7294b9ebb9026cdda37a880dbd0c9da5e0885ef075cf&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/nginx-ingress-controller:nginx-0.35.0-rancher1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:09.601092&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:33:32.870763&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/nginx-ingress-controller:nginx-0.35.0-rancher1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/nginx-ingress-controller:nginx-0.35.0-rancher1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:33:23.269671&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:33:23Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/nginx-ingress-controller:nginx-0.35.0-rancher1\&quot; tagged=true\ntime=\&quot;2021-05-13T01:33:23Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/nginx-ingress-controller:nginx-0.35.0-rancher1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/nginx-ingress-controller:nginx-0.35.0-rancher1\&quot;\ntime=\&quot;2021-05-13T01:33:32Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:33:23Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/nginx-ingress-controller:nginx-0.35.0-rancher1\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:33:23Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/nginx-ingress-controller:nginx-0.35.0-rancher1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/nginx-ingress-controller:nginx-0.35.0-rancher1\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:33:32Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:cbdbe7a5bc2a134ca8ec91be58565ec07d037386d1f1d8385412d224deafca08\nCopying blob sha256:d1671d9e0bb2aa10c07db1de74b2b480b64bcef63849745de1ac9f38fca41dd3\nCopying blob sha256:938c06e274bc5fb1357937dd2bfab660cfa8817a34ba0a66ee54cfe9f01ad694\nCopying blob sha256:40c8e26605289ecd8fdaf6891cb072eb5a2fc5fc01ae0abbd26f75ad4c419708\nCopying blob sha256:e641e75c0259849f124399675cc2106c02548be6810edd9fcec25a4ef239f5db\nCopying blob sha256:8889cff62ac0e1104becd637cc33177248e51d94d0a6910e9c913d363637626e\nCopying blob sha256:002bcff428b5c04fcaf3f4919bcb475cde567b591b29fa4cddcea1fcda33d09c\nCopying blob sha256:04d8129c14be12271b36905ea97274486a963b122f650aa6e875116b1ed7ff5c\nCopying blob sha256:4dc30e66d20725457d37cbdf0ac7a11ed59382ac0bc77eb6316b2c42e72ae99d\nCopying blob sha256:e84904a6ab235f7b85f7a6b6912b73aaa4e857fc0eb02a24a74e7bc437d086b2\nCopying blob sha256:47f88634a9bee7e9694051e0cd4c6b82df67540ac2525344c2e7e513acf8b595\nCopying blob sha256:2eda75388f3213122fd08009e7e1bc80edee6be92a9012c96330b7cceae2660a\nCopying blob sha256:12e1bfd14bb8284df65d5f7cfc57fad6f5499bc0a9e899c804ca9099fe63590c\nCopying blob sha256:80d9fe430514c7eb57dff84b92078b2c2ecc771a956c1b3a287d0ffb3b7559a2\nCopying blob sha256:42a364923935371ddd6bd287f5569d8f2cf594795319f862cfc60b0e89e6973e\nCopying config sha256:9afe4570cb305419d967366a8f0c8b93363e13063d897b07a1f951d4dede4428\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:cbdbe7a5bc2a134ca8ec91be58565ec07d037386d1f1d8385412d224deafca08&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:d1671d9e0bb2aa10c07db1de74b2b480b64bcef63849745de1ac9f38fca41dd3&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:938c06e274bc5fb1357937dd2bfab660cfa8817a34ba0a66ee54cfe9f01ad694&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:40c8e26605289ecd8fdaf6891cb072eb5a2fc5fc01ae0abbd26f75ad4c419708&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:e641e75c0259849f124399675cc2106c02548be6810edd9fcec25a4ef239f5db&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:8889cff62ac0e1104becd637cc33177248e51d94d0a6910e9c913d363637626e&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:002bcff428b5c04fcaf3f4919bcb475cde567b591b29fa4cddcea1fcda33d09c&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:04d8129c14be12271b36905ea97274486a963b122f650aa6e875116b1ed7ff5c&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:4dc30e66d20725457d37cbdf0ac7a11ed59382ac0bc77eb6316b2c42e72ae99d&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:e84904a6ab235f7b85f7a6b6912b73aaa4e857fc0eb02a24a74e7bc437d086b2&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:47f88634a9bee7e9694051e0cd4c6b82df67540ac2525344c2e7e513acf8b595&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:2eda75388f3213122fd08009e7e1bc80edee6be92a9012c96330b7cceae2660a&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:12e1bfd14bb8284df65d5f7cfc57fad6f5499bc0a9e899c804ca9099fe63590c&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:80d9fe430514c7eb57dff84b92078b2c2ecc771a956c1b3a287d0ffb3b7559a2&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:42a364923935371ddd6bd287f5569d8f2cf594795319f862cfc60b0e89e6973e&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:9afe4570cb305419d967366a8f0c8b93363e13063d897b07a1f951d4dede4428&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/nginx-ingress-controller-defaultbackend:1.5-rancher1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:05.386836&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:33:38.404162&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/nginx-ingress-controller-defaultbackend:1.5-rancher1    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/nginx-ingress-controller-defaultbackend:1.5-rancher1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:33:33.017326&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:33:33Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/nginx-ingress-controller-defaultbackend:1.5-rancher1\&quot; tagged=true\ntime=\&quot;2021-05-13T01:33:33Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/nginx-ingress-controller-defaultbackend:1.5-rancher1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/nginx-ingress-controller-defaultbackend:1.5-rancher1\&quot;\ntime=\&quot;2021-05-13T01:33:38Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:33:33Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/nginx-ingress-controller-defaultbackend:1.5-rancher1\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:33:33Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/nginx-ingress-controller-defaultbackend:1.5-rancher1\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/nginx-ingress-controller-defaultbackend:1.5-rancher1\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:33:38Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:65f4220de95d2e3d12484679abe7bb33323b1fd3ef681d878f1d2bc5abc8ee06\nCopying config sha256:b5af743e598496e8ebd7a6eb3fea76a6464041581520d1c2315c95f993287303\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:65f4220de95d2e3d12484679abe7bb33323b1fd3ef681d878f1d2bc5abc8ee06&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:b5af743e598496e8ebd7a6eb3fea76a6464041581520d1c2315c95f993287303&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/metrics-server:v0.3.6    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:05.393648&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:33:43.945917&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\nskopeo sync    --src docker    --dest docker    docker.io/rancher/metrics-server:v0.3.6    --dest-creds registryusername:registrypassword    rke-service-01.rkecluster.kubeinit.local:5000/rancher\n&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;rancher/metrics-server:v0.3.6&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-13 01:33:38.552269&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-13T01:33:38Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/metrics-server:v0.3.6\&quot; tagged=true\ntime=\&quot;2021-05-13T01:33:38Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/metrics-server:v0.3.6\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/metrics-server:v0.3.6\&quot;\ntime=\&quot;2021-05-13T01:33:43Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:33:38Z\&quot; level=info msg=\&quot;Tag presence check\&quot; imagename=\&quot;docker.io/rancher/metrics-server:v0.3.6\&quot; tagged=true&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:33:38Z\&quot; level=info msg=\&quot;Copying image tag 1/1\&quot; from=\&quot;docker://rancher/metrics-server:v0.3.6\&quot; to=\&quot;docker://rke-service-01.rkecluster.kubeinit.local:5000/rancher/metrics-server:v0.3.6\&quot;&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;time=\&quot;2021-05-13T01:33:43Z\&quot; level=info msg=\&quot;Synced 1 images from 1 sources\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:e8d8785a314f385d3675a017f4e2df1707c528c06e7a7989663fdab4900bd8ff\nCopying blob sha256:b2f4b24bed0dade029d7164c181e0c8b2c0846fb3a1e2aabf4141480382849b2\nCopying config sha256:9dd718864ce61b4c0805eaf75f87b95302960e65d4857cb8b6591864394be55b\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:e8d8785a314f385d3675a017f4e2df1707c528c06e7a7989663fdab4900bd8ff&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:b2f4b24bed0dade029d7164c181e0c8b2c0846fb3a1e2aabf4141480382849b2&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:9dd718864ce61b4c0805eaf75f87b95302960e65d4857cb8b6591864394be55b&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Storing signatures&quot;</span>
-        <span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">]</span>
+                        <div class="codehilite"><pre><span></span>False
 </pre></div>
 
                     </td>
