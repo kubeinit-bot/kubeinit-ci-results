@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 12 May 2021 21:06:24 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 19 May 2021 21:06:13 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 12 May 2021 21:22:53 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 19 May 2021 21:38:31 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:16:29.36
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:32:18.32
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/rke.yml
                             </a>
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">406 results</a>
+                            <a href="../playbooks/1.html#results">417 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">48 files</a>
+                            <a href="../playbooks/1.html#files">45 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Disable IPv6</a></li>
-            <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/11.html#line-82">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/main.yml:82</a>
+            <li><strong>Task</strong>: ../../roles/kubeinit_prepare : Fetch the public key</a></li>
+            <li><strong>Action</strong>: ansible.builtin.slurp</li>
+            <li><strong>Path</strong>: <a href="../files/11.html#line-59">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_hypervisor.yml:59</a>
             <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-01</a></li>
             <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 12 May 2021 21:06:39 -0400</li>
-            <li><strong>Ended</strong>: 12 May 2021 21:06:39 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.19</li>
+            <li><strong>Started</strong>: 19 May 2021 21:06:31 -0400</li>
+            <li><strong>Ended</strong>: 19 May 2021 21:06:31 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.24</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -217,35 +217,22 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="cmd" data-label="cmd" class="pf-m-width-20">
-                        <a href="#cmd">cmd</a>
+                    <td role="cell" id="content" data-label="content" class="pf-m-width-20">
+                        <a href="#content">content</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>echo &quot;net.ipv6.conf.all.disable_ipv6 = 1&quot; &gt; /etc/sysctl.d/70-ipv6.conf
-echo &quot;net.ipv6.conf.default.disable_ipv6 = 1&quot; &gt;&gt; /etc/sysctl.d/70-ipv6.conf
-sysctl --load /etc/sysctl.d/70-ipv6.conf
+                        <div class="codehilite"><pre><span></span>c3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBREFRQUJBQUFDQVFEWVdOamtTZlZUMW1GSHNQU3g0ckhGODFRZkF3RlRjb1N6QllEb1JqVGRSdnlnUytpSkRtRzBLVmRSRDcyUS94Qm54OE1ockIra05aYUV4NVNTcXF6SGM4S0JyYit4NGpZVEFKaGtTYjJuL01zai9QdlQzcFpqVVdoeE9DdU12TXA5dERtY04xQmN3TmI3QThGVkZBQXNzVjdyTXpzMlRhdVZMWmsrQnpEQVU5WEo2NTdhT0paZ09YUlEvZE9DNmVzNTVRL0FrZlRNNVEwN1diVjBWSG9QS01keExYZmlaTkc3T2NHcExyVlJVcndFcTBGOUwwYjAzMmRPeFFjMU4vWGw0THVkZUU0T0VDcnh5ZVFsZXRsTDRIQUxOcnlVa0JMRkFDK3hWV2U3NlJmODNwSUsxVzdqRGIxQ2dTMHdDWEFaZndDSDdUaWcrUVN0SmZTTWhqU0lDV0VjM2N4OVJiSjJXeWh1SmdNL0hONDk5MG1NKzExMk1qd1c4RG5YZnVtU002K2cwZEFWWWZGWkhaUkx0amkxL0l2MFJoM015b3EvUWpoSjVBNlZhSVE1NldtZEJjMk5sNXJzSjgyQ2pNRlh1eUMvelo1c1B6aCsrbUFXWmpHTis0cFpDTk1hME9pblpoRSs4Qy9EVmZnTk0ydGJuQW5CSk5kUTBnTlMwR0RkTXhTczlHZXdTMFBCeUpPN1QzSFliTEsxbzdITzlyZHlxQjZqdERpVVhkK0ZLaFpCRHZYaHlpS3VZWDdBWnpEZTdYWVBNL1NPcnU2OVg5eS96cmJoU2hvQmpWTTZTcGluaXZWZEx6Nk1rNHpHYiszMGNwOEt3MTlWRUFHMGNSUjNlRXFxUGFqbmtMTWF0UUpSUTBYL2xUMFFZLy9DS0tEMFg1MUcvTFJrc3c9PSAK
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="delta" data-label="delta" class="pf-m-width-20">
-                        <a href="#delta">delta</a>
+                    <td role="cell" id="encoding" data-label="encoding" class="pf-m-width-20">
+                        <a href="#encoding">encoding</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:00:00.003795
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="end" data-label="end" class="pf-m-width-20">
-                        <a href="#end">end</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-12 21:06:39.923410
+                        <div class="codehilite"><pre><span></span>base64
 </pre></div>
 
                     </td>
@@ -258,17 +245,7 @@ sysctl --load /etc/sysctl.d/70-ipv6.conf
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;echo \&quot;net.ipv6.conf.all.disable_ipv6 = 1\&quot; &gt; /etc/sysctl.d/70-ipv6.conf\necho \&quot;net.ipv6.conf.default.disable_ipv6 = 1\&quot; &gt;&gt; /etc/sysctl.d/70-ipv6.conf\nsysctl --load /etc/sysctl.d/70-ipv6.conf\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.ssh/id_rsa.pub&quot;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -277,70 +254,11 @@ sysctl --load /etc/sysctl.d/70-ipv6.conf
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="rc" data-label="rc" class="pf-m-width-20">
-                        <a href="#rc">rc</a>
+                    <td role="cell" id="source" data-label="source" class="pf-m-width-20">
+                        <a href="#source">source</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="start" data-label="start" class="pf-m-width-20">
-                        <a href="#start">start</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-12 21:06:39.919615
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stderr" data-label="stderr" class="pf-m-width-20">
-                        <a href="#stderr">stderr</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stderr_lines" data-label="stderr_lines" class="pf-m-width-20">
-                        <a href="#stderr_lines">stderr_lines</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stdout" data-label="stdout" class="pf-m-width-20">
-                        <a href="#stdout">stdout</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>net.ipv6.conf.all.disable_ipv6 = 1
-net.ipv6.conf.default.disable_ipv6 = 1
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stdout_lines" data-label="stdout_lines" class="pf-m-width-20">
-                        <a href="#stdout_lines">stdout_lines</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;net.ipv6.conf.all.disable_ipv6 = 1&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;net.ipv6.conf.default.disable_ipv6 = 1&quot;</span>
-<span class="p">]</span>
+                        <div class="codehilite"><pre><span></span>/root/.ssh/id_rsa.pub
 </pre></div>
 
                     </td>
