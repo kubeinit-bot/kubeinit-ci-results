@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 28 Apr 2021 03:22:03 +0200
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 11:35:17 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 28 Apr 2021 03:30:19 +0200
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 11:45:32 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:08:16.19
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:10:14.56
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/cdk.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/cdk.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/cdk.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">296 results</a>
+                            <a href="../playbooks/1.html#results">304 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">27 files</a>
+                            <a href="../playbooks/1.html#files">40 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: Upgrade packages and restart</a></li>
-            <li><strong>Action</strong>: ansible.builtin.include_role</li>
-            <li><strong>Path</strong>: <a href="../files/10.html#line-70">/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_cdk/tasks/main.yml:70</a>
-            <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-01</a></li>
-            <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 28 Apr 2021 03:24:34 +0200</li>
-            <li><strong>Ended</strong>: 28 Apr 2021 03:24:34 +0200</li>
-            <li><strong>Duration</strong>: 00:00:00.03</li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Inject toor virt-customize assets</a></li>
+            <li><strong>Action</strong>: ansible.builtin.shell</li>
+            <li><strong>Path</strong>: <a href="../files/28.html#line-55">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/60_rke_deploy_nodes.yml:55</a>
+            <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
+            <li><strong>Status</strong>: changed</li>
+            <li><strong>Started</strong>: 20 May 2021 11:38:00 -0400</li>
+            <li><strong>Ended</strong>: 20 May 2021 11:38:11 -0400</li>
+            <li><strong>Duration</strong>: 00:00:10.72</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -210,56 +210,170 @@
                         <a href="#changed">changed</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>False
+                        <div class="codehilite"><pre><span></span>True
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="msg" data-label="msg" class="pf-m-width-20">
-                        <a href="#msg">msg</a>
+                    <td role="cell" id="cmd" data-label="cmd" class="pf-m-width-20">
+                        <a href="#cmd">cmd</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>All items completed
+                        <div class="codehilite"><pre><span></span>virt-customize -a /var/lib/libvirt/images/cdk-master-01.qcow2  --run-command &#39;useradd -s /bin/bash -u 1000 -p &quot;$(openssl passwd -1 asdfasdf)&quot; toor&#39;  --run-command &#39;echo &quot;toor ALL=(root) NOPASSWD:ALL&quot; &gt; /etc/sudoers.d/toor&#39;  --run-command &#39;mkdir -p /home/toor/.ssh&#39;  --run-command &quot;sed -i &#39;s/PermitRootLogin no/PermitRootLogin yes/g&#39; /etc/ssh/sshd_config&quot;  --run-command &quot;sed -i &#39;s/PasswordAuthentication no/PasswordAuthentication yes/g&#39; /etc/ssh/sshd_config&quot;  --run-command &quot;dpkg-reconfigure openssh-server&quot;  --ssh-inject toor:file:/home/toor/.ssh/id_rsa.pub  --ssh-inject root:file:/root/.ssh/authorized_keys  --run-command &quot;echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYWNjkSfVT1mFHsPSx4rHF81QfAwFTcoSzBYDoRjTdRvygS+iJDmG0KVdRD72Q/xBnx8MhrB+kNZaEx5SSqqzHc8KBrb+x4jYTAJhkSb2n/Msj/PvT3pZjUWhxOCuMvMp9tDmcN1BcwNb7A8FVFAAssV7rMzs2TauVLZk+BzDAU9XJ657aOJZgOXRQ/dOC6es55Q/AkfTM5Q07WbV0VHoPKMdxLXfiZNG7OcGpLrVRUrwEq0F9L0b032dOxQc1N/Xl4LudeE4OECrxyeQletlL4HALNryUkBLFAC+xVWe76Rf83pIK1W7jDb1CgS0wCXAZfwCH7Tig+QStJfSMhjSICWEc3cx9RbJ2WyhuJgM/HN4990mM+112MjwW8DnXfumSM6+g0dAVYfFZHZRLtji1/Iv0Rh3Myoq/QjhJ5A6VaIQ56WmdBc2Nl5rsJ82CjMFXuyC/zZ5sPzh++mAWZjGN+4pZCNMa0OinZhE+8C/DVfgNM2tbnAnBJNdQ0gNS0GDdMxSs9GewS0PByJO7T3HYbLK1o7HO9rdyqB6jtDiUXd+FKhZBDvXhyiKuYX7AZzDe7XYPM/SOru69X9y/zrbhShoBjVM6SpinivVdLz6Mk4zGb+30cp8Kw19VEAG0cRR3eEqqPajnkLMatQJRQ0X/lT0QY//CKKD0X51G/LRksw==  &gt;&gt; /root/.ssh/authorized_keys&quot;  --hostname cdk-master-01.cdkcluster.kubeinit.local  --copy-in /tmp/cdk-master-01/00-installer-ubuntu-netconfig.yaml:/etc/netplan  --copy-in /tmp/cdk-master-01/hosts.debian.tmpl:/etc/cloud/templates  --copy-in /tmp/cdk-master-01/90_dpkg.cfg:/etc/cloud/cloud.cfg.d  --copy-in /tmp/cdk-master-01/cloud.cfg:/etc/cloud
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="results" data-label="results" class="pf-m-width-20">
-                        <a href="#results">results</a>
+                    <td role="cell" id="delta" data-label="delta" class="pf-m-width-20">
+                        <a href="#delta">delta</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>0:00:10.516254
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="end" data-label="end" class="pf-m-width-20">
+                        <a href="#end">end</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>2021-05-20 11:38:11.378527
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
+                        <a href="#invocation">invocation</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;virt-customize -a /var/lib/libvirt/images/cdk-master-01.qcow2  --run-command &#39;useradd -s /bin/bash -u 1000 -p \&quot;$(openssl passwd -1 asdfasdf)\&quot; toor&#39;  --run-command &#39;echo \&quot;toor ALL=(root) NOPASSWD:ALL\&quot; &gt; /etc/sudoers.d/toor&#39;  --run-command &#39;mkdir -p /home/toor/.ssh&#39;  --run-command \&quot;sed -i &#39;s/PermitRootLogin no/PermitRootLogin yes/g&#39; /etc/ssh/sshd_config\&quot;  --run-command \&quot;sed -i &#39;s/PasswordAuthentication no/PasswordAuthentication yes/g&#39; /etc/ssh/sshd_config\&quot;  --run-command \&quot;dpkg-reconfigure openssh-server\&quot;  --ssh-inject toor:file:/home/toor/.ssh/id_rsa.pub  --ssh-inject root:file:/root/.ssh/authorized_keys  --run-command \&quot;echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYWNjkSfVT1mFHsPSx4rHF81QfAwFTcoSzBYDoRjTdRvygS+iJDmG0KVdRD72Q/xBnx8MhrB+kNZaEx5SSqqzHc8KBrb+x4jYTAJhkSb2n/Msj/PvT3pZjUWhxOCuMvMp9tDmcN1BcwNb7A8FVFAAssV7rMzs2TauVLZk+BzDAU9XJ657aOJZgOXRQ/dOC6es55Q/AkfTM5Q07WbV0VHoPKMdxLXfiZNG7OcGpLrVRUrwEq0F9L0b032dOxQc1N/Xl4LudeE4OECrxyeQletlL4HALNryUkBLFAC+xVWe76Rf83pIK1W7jDb1CgS0wCXAZfwCH7Tig+QStJfSMhjSICWEc3cx9RbJ2WyhuJgM/HN4990mM+112MjwW8DnXfumSM6+g0dAVYfFZHZRLtji1/Iv0Rh3Myoq/QjhJ5A6VaIQ56WmdBc2Nl5rsJ82CjMFXuyC/zZ5sPzh++mAWZjGN+4pZCNMa0OinZhE+8C/DVfgNM2tbnAnBJNdQ0gNS0GDdMxSs9GewS0PByJO7T3HYbLK1o7HO9rdyqB6jtDiUXd+FKhZBDvXhyiKuYX7AZzDe7XYPM/SOru69X9y/zrbhShoBjVM6SpinivVdLz6Mk4zGb+30cp8Kw19VEAG0cRR3eEqqPajnkLMatQJRQ0X/lT0QY//CKKD0X51G/LRksw==  &gt;&gt; /root/.ssh/authorized_keys\&quot;  --hostname cdk-master-01.cdkcluster.kubeinit.local  --copy-in /tmp/cdk-master-01/00-installer-ubuntu-netconfig.yaml:/etc/netplan  --copy-in /tmp/cdk-master-01/hosts.debian.tmpl:/etc/cloud/templates  --copy-in /tmp/cdk-master-01/90_dpkg.cfg:/etc/cloud/cloud.cfg.d  --copy-in /tmp/cdk-master-01/cloud.cfg:/etc/cloud\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="rc" data-label="rc" class="pf-m-width-20">
+                        <a href="#rc">rc</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>0
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="start" data-label="start" class="pf-m-width-20">
+                        <a href="#start">start</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>2021-05-20 11:38:00.862273
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stderr" data-label="stderr" class="pf-m-width-20">
+                        <a href="#stderr">stderr</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stderr_lines" data-label="stderr_lines" class="pf-m-width-20">
+                        <a href="#stderr_lines">stderr_lines</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stdout" data-label="stdout" class="pf-m-width-20">
+                        <a href="#stdout">stdout</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>[   0.0] Examining the guest ...
+[   4.6] Setting a random seed
+virt-customize: warning: random seed could not be set for this type of 
+guest
+[   4.6] Setting the machine ID in /etc/machine-id
+[   4.6] Running: useradd -s /bin/bash -u 1000 -p &quot;$(openssl passwd -1 asdfasdf)&quot; toor
+[   5.0] Running: echo &quot;toor ALL=(root) NOPASSWD:ALL&quot; &gt; /etc/sudoers.d/toor
+[   5.1] Running: mkdir -p /home/toor/.ssh
+[   5.2] Running: sed -i &#39;s/PermitRootLogin no/PermitRootLogin yes/g&#39; /etc/ssh/sshd_config
+[   5.2] Running: sed -i &#39;s/PasswordAuthentication no/PasswordAuthentication yes/g&#39; /etc/ssh/sshd_config
+[   5.2] Running: dpkg-reconfigure openssh-server
+[   7.5] SSH key inject: toor
+[   8.4] SSH key inject: root
+[   9.2] Running: echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYWNjkSfVT1mFHsPSx4rHF81QfAwFTcoSzBYDoRjTdRvygS+iJDmG0KVdRD72Q/xBnx8MhrB+kNZaEx5SSqqzHc8KBrb+x4jYTAJhkSb2n/Msj/PvT3pZjUWhxOCuMvMp9tDmcN1BcwNb7A8FVFAAssV7rMzs2TauVLZk+BzDAU9XJ657aOJZgOXRQ/dOC6es55Q/AkfTM5Q07WbV0VHoPKMdxLXfiZNG7OcGpLrVRUrwEq0F9L0b032dOxQc1N/Xl4LudeE4OECrxyeQletlL4HALNryUkBLFAC+xVWe76Rf83pIK1W7jDb1CgS0wCXAZfwCH7Tig+QStJfSMhjSICWEc3cx9RbJ2WyhuJgM/HN4990mM+112MjwW8DnXfumSM6+g0dAVYfFZHZRLtji1/Iv0Rh3Myoq/QjhJ5A6VaIQ56WmdBc2Nl5rsJ82CjMFXuyC/zZ5sPzh++mAWZjGN+4pZCNMa0OinZhE+8C/DVfgNM2tbnAnBJNdQ0gNS0GDdMxSs9GewS0PByJO7T3HYbLK1o7HO9rdyqB6jtDiUXd+FKhZBDvXhyiKuYX7AZzDe7XYPM/SOru69X9y/zrbhShoBjVM6SpinivVdLz6Mk4zGb+30cp8Kw19VEAG0cRR3eEqqPajnkLMatQJRQ0X/lT0QY//CKKD0X51G/LRksw==  &gt;&gt; /root/.ssh/authorized_keys
+[   9.2] Setting the hostname: cdk-master-01.cdkcluster.kubeinit.local
+[  10.0] Copying: /tmp/cdk-master-01/00-installer-ubuntu-netconfig.yaml to /etc/netplan
+[  10.0] Copying: /tmp/cdk-master-01/hosts.debian.tmpl to /etc/cloud/templates
+[  10.0] Copying: /tmp/cdk-master-01/90_dpkg.cfg to /etc/cloud/cloud.cfg.d
+[  10.0] Copying: /tmp/cdk-master-01/cloud.cfg to /etc/cloud
+[  10.2] Finishing off
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="stdout_lines" data-label="stdout_lines" class="pf-m-width-20">
+                        <a href="#stdout_lines">stdout_lines</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;cluster_role_item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;cluster_role_item&quot;</span><span class="p">:</span> <span class="s2">&quot;cdk-service-01&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;include_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;../../roles/kubeinit_cdk&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;public&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nt">&quot;tasks_from&quot;</span><span class="p">:</span> <span class="s2">&quot;00_bounce_packages.yml&quot;</span>
-        <span class="p">}</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;cluster_role_item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;cluster_role_item&quot;</span><span class="p">:</span> <span class="s2">&quot;cdk-master-01&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;include_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;../../roles/kubeinit_cdk&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;public&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nt">&quot;tasks_from&quot;</span><span class="p">:</span> <span class="s2">&quot;00_bounce_packages.yml&quot;</span>
-        <span class="p">}</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;cluster_role_item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;cluster_role_item&quot;</span><span class="p">:</span> <span class="s2">&quot;cdk-worker-01&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;include_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;../../roles/kubeinit_cdk&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;public&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nt">&quot;tasks_from&quot;</span><span class="p">:</span> <span class="s2">&quot;00_bounce_packages.yml&quot;</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
+    <span class="s2">&quot;[   0.0] Examining the guest ...&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   4.6] Setting a random seed&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;virt-customize: warning: random seed could not be set for this type of &quot;</span><span class="p">,</span>
+    <span class="s2">&quot;guest&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   4.6] Setting the machine ID in /etc/machine-id&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   4.6] Running: useradd -s /bin/bash -u 1000 -p \&quot;$(openssl passwd -1 asdfasdf)\&quot; toor&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   5.0] Running: echo \&quot;toor ALL=(root) NOPASSWD:ALL\&quot; &gt; /etc/sudoers.d/toor&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   5.1] Running: mkdir -p /home/toor/.ssh&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   5.2] Running: sed -i &#39;s/PermitRootLogin no/PermitRootLogin yes/g&#39; /etc/ssh/sshd_config&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   5.2] Running: sed -i &#39;s/PasswordAuthentication no/PasswordAuthentication yes/g&#39; /etc/ssh/sshd_config&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   5.2] Running: dpkg-reconfigure openssh-server&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   7.5] SSH key inject: toor&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   8.4] SSH key inject: root&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   9.2] Running: echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYWNjkSfVT1mFHsPSx4rHF81QfAwFTcoSzBYDoRjTdRvygS+iJDmG0KVdRD72Q/xBnx8MhrB+kNZaEx5SSqqzHc8KBrb+x4jYTAJhkSb2n/Msj/PvT3pZjUWhxOCuMvMp9tDmcN1BcwNb7A8FVFAAssV7rMzs2TauVLZk+BzDAU9XJ657aOJZgOXRQ/dOC6es55Q/AkfTM5Q07WbV0VHoPKMdxLXfiZNG7OcGpLrVRUrwEq0F9L0b032dOxQc1N/Xl4LudeE4OECrxyeQletlL4HALNryUkBLFAC+xVWe76Rf83pIK1W7jDb1CgS0wCXAZfwCH7Tig+QStJfSMhjSICWEc3cx9RbJ2WyhuJgM/HN4990mM+112MjwW8DnXfumSM6+g0dAVYfFZHZRLtji1/Iv0Rh3Myoq/QjhJ5A6VaIQ56WmdBc2Nl5rsJ82CjMFXuyC/zZ5sPzh++mAWZjGN+4pZCNMa0OinZhE+8C/DVfgNM2tbnAnBJNdQ0gNS0GDdMxSs9GewS0PByJO7T3HYbLK1o7HO9rdyqB6jtDiUXd+FKhZBDvXhyiKuYX7AZzDe7XYPM/SOru69X9y/zrbhShoBjVM6SpinivVdLz6Mk4zGb+30cp8Kw19VEAG0cRR3eEqqPajnkLMatQJRQ0X/lT0QY//CKKD0X51G/LRksw==  &gt;&gt; /root/.ssh/authorized_keys&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   9.2] Setting the hostname: cdk-master-01.cdkcluster.kubeinit.local&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  10.0] Copying: /tmp/cdk-master-01/00-installer-ubuntu-netconfig.yaml to /etc/netplan&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  10.0] Copying: /tmp/cdk-master-01/hosts.debian.tmpl to /etc/cloud/templates&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  10.0] Copying: /tmp/cdk-master-01/90_dpkg.cfg to /etc/cloud/cloud.cfg.d&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  10.0] Copying: /tmp/cdk-master-01/cloud.cfg to /etc/cloud&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  10.2] Finishing off&quot;</span>
 <span class="p">]</span>
 </pre></div>
 
