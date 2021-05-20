@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="../static/css/pygments.css">
     
-    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -20,7 +20,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -66,16 +66,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 21:06:04 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 03:12:07 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 21:53:31 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 03:56:35 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:47:27.24
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:44:28.25
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -107,7 +107,7 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">48 files</a>
+                            <a href="../playbooks/1.html#files">45 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -183,7 +183,7 @@
 
 <div class="pf-c-card" style="margin: 1em 0;">
     <div class="pf-c-card__header pf-c-title pf-m-md">
-        <strong>/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/20_mirror_okd.yml</strong>
+        <strong>/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_okd/tasks/40_remove_bootstrap_node.yml</strong>
     </div>
     <div class="pf-c-card__body">
         <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"><a href="#line-1"> 1</a></span>
@@ -217,38 +217,76 @@
 <span class="normal"><a href="#line-29">29</a></span>
 <span class="normal"><a href="#line-30">30</a></span>
 <span class="normal"><a href="#line-31">31</a></span>
-<span class="normal"><a href="#line-32">32</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a id="line-1" name="line-1"></a><span class="nn">---</span>
-</span><span id="line-2"><a id="line-2" name="line-2"></a>
-</span><span id="line-3"><a id="line-3" name="line-3"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">render the sync template</span>
-</span><span id="line-4"><a id="line-4" name="line-4"></a>  <span class="nt">ansible.builtin.template</span><span class="p">:</span>
-</span><span id="line-5"><a id="line-5" name="line-5"></a>    <span class="nt">src</span><span class="p">:</span> <span class="s">&quot;sync.yml.j2&quot;</span>
-</span><span id="line-6"><a id="line-6" name="line-6"></a>    <span class="nt">dest</span><span class="p">:</span> <span class="s">&#39;sync.yml&#39;</span>
-</span><span id="line-7"><a id="line-7" name="line-7"></a>    <span class="nt">mode</span><span class="p">:</span> <span class="s">&#39;0755&#39;</span>
-</span><span id="line-8"><a id="line-8" name="line-8"></a>
-</span><span id="line-9"><a id="line-9" name="line-9"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Mirror OKD remote registry to local</span>
-</span><span id="line-10"><a id="line-10" name="line-10"></a>  <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-11"><a id="line-11" name="line-11"></a>    <span class="no">set -o pipefail</span>
-</span><span id="line-12"><a id="line-12" name="line-12"></a>    <span class="no">set -e</span>
-</span><span id="line-13"><a id="line-13" name="line-13"></a>
-</span><span id="line-14"><a id="line-14" name="line-14"></a>
-</span><span id="line-15"><a id="line-15" name="line-15"></a>    <span class="no">oc adm \</span>
-</span><span id="line-16"><a id="line-16" name="line-16"></a>        <span class="no">release mirror \</span>
-</span><span id="line-17"><a id="line-17" name="line-17"></a>        <span class="no">--registry-config={{ kubeinit_registry_auth_file }} \</span>
-</span><span id="line-18"><a id="line-18" name="line-18"></a>        <span class="no">--from={{ kubeinit_okd_registry }}/{{ kubeinit_okd_registry_organization }}/{{ kubeinit_okd_registry_repository }}:{{ kubeinit_okd_registry_release_tag }}{% if ( kubeinit_okd_openshift_deploy | default(False) ) %}-x86_64{% endif %} \</span>
-</span><span id="line-19"><a id="line-19" name="line-19"></a>        <span class="no">--to={{ kubeinit_registry_uri }}/{{ kubeinit_okd_registry_repository }} \</span>
-</span><span id="line-20"><a id="line-20" name="line-20"></a>        <span class="no">--to-release-image={{ kubeinit_registry_uri }}/{{ kubeinit_okd_registry_repository }}:{{ kubeinit_okd_registry_release_tag }} \</span>
-</span><span id="line-21"><a id="line-21" name="line-21"></a>        <span class="no">2&gt;&amp;1 | tee mirror-output.txt</span>
-</span><span id="line-22"><a id="line-22" name="line-22"></a>    <span class="no">oc adm \</span>
-</span><span id="line-23"><a id="line-23" name="line-23"></a>        <span class="no">release extract \</span>
-</span><span id="line-24"><a id="line-24" name="line-24"></a>        <span class="no">--registry-config={{ kubeinit_registry_auth_file }} \</span>
-</span><span id="line-25"><a id="line-25" name="line-25"></a>        <span class="no">--command=openshift-install &quot;{{ kubeinit_registry_uri }}/{{ kubeinit_okd_registry_repository }}:{{ kubeinit_okd_registry_release_tag }}&quot;</span>
-</span><span id="line-26"><a id="line-26" name="line-26"></a>
-</span><span id="line-27"><a id="line-27" name="line-27"></a>    <span class="no"># This will override the current installer binary</span>
-</span><span id="line-28"><a id="line-28" name="line-28"></a>    <span class="no">cp openshift-install /usr/local/bin/</span>
-</span><span id="line-29"><a id="line-29" name="line-29"></a>  <span class="nt">args</span><span class="p">:</span>
-</span><span id="line-30"><a id="line-30" name="line-30"></a>    <span class="nt">executable</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/bin/bash</span>
-</span><span id="line-31"><a id="line-31" name="line-31"></a>  <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mirror_registry</span>
-</span><span id="line-32"><a id="line-32" name="line-32"></a>  <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;mirror_registry.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
+<span class="normal"><a href="#line-32">32</a></span>
+<span class="normal"><a href="#line-33">33</a></span>
+<span class="normal"><a href="#line-34">34</a></span>
+<span class="normal"><a href="#line-35">35</a></span>
+<span class="normal"><a href="#line-36">36</a></span>
+<span class="normal"><a href="#line-37">37</a></span>
+<span class="normal"><a href="#line-38">38</a></span>
+<span class="normal"><a href="#line-39">39</a></span>
+<span class="normal"><a href="#line-40">40</a></span>
+<span class="normal"><a href="#line-41">41</a></span>
+<span class="normal"><a href="#line-42">42</a></span>
+<span class="normal"><a href="#line-43">43</a></span>
+<span class="normal"><a href="#line-44">44</a></span>
+<span class="normal"><a href="#line-45">45</a></span>
+<span class="normal"><a href="#line-46">46</a></span>
+<span class="normal"><a href="#line-47">47</a></span>
+<span class="normal"><a href="#line-48">48</a></span>
+<span class="normal"><a href="#line-49">49</a></span>
+<span class="normal"><a href="#line-50">50</a></span>
+<span class="normal"><a href="#line-51">51</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a id="line-1" name="line-1"></a><span class="nn">---</span>
+</span><span id="line-2"><a id="line-2" name="line-2"></a><span class="c1"># Copyright kubeinit.com</span>
+</span><span id="line-3"><a id="line-3" name="line-3"></a><span class="c1"># All Rights Reserved.</span>
+</span><span id="line-4"><a id="line-4" name="line-4"></a><span class="c1">#</span>
+</span><span id="line-5"><a id="line-5" name="line-5"></a><span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
+</span><span id="line-6"><a id="line-6" name="line-6"></a><span class="c1"># not use this file except in compliance with the License. You may obtain</span>
+</span><span id="line-7"><a id="line-7" name="line-7"></a><span class="c1"># a copy of the License at</span>
+</span><span id="line-8"><a id="line-8" name="line-8"></a><span class="c1">#</span>
+</span><span id="line-9"><a id="line-9" name="line-9"></a><span class="c1">#     http://www.apache.org/licenses/LICENSE-2.0</span>
+</span><span id="line-10"><a id="line-10" name="line-10"></a><span class="c1">#</span>
+</span><span id="line-11"><a id="line-11" name="line-11"></a><span class="c1"># Unless required by applicable law or agreed to in writing, software</span>
+</span><span id="line-12"><a id="line-12" name="line-12"></a><span class="c1"># distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT</span>
+</span><span id="line-13"><a id="line-13" name="line-13"></a><span class="c1"># WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the</span>
+</span><span id="line-14"><a id="line-14" name="line-14"></a><span class="c1"># License for the specific language governing permissions and limitations</span>
+</span><span id="line-15"><a id="line-15" name="line-15"></a><span class="c1"># under the License.</span>
+</span><span id="line-16"><a id="line-16" name="line-16"></a>
+</span><span id="line-17"><a id="line-17" name="line-17"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Remove boostrap node</span>
+</span><span id="line-18"><a id="line-18" name="line-18"></a>  <span class="nt">block</span><span class="p">:</span>
+</span><span id="line-19"><a id="line-19" name="line-19"></a>
+</span><span id="line-20"><a id="line-20" name="line-20"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;remove</span><span class="nv"> </span><span class="s">bootstrap</span><span class="nv"> </span><span class="s">node</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">haproxy&quot;</span>
+</span><span id="line-21"><a id="line-21" name="line-21"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+</span><span id="line-22"><a id="line-22" name="line-22"></a>        <span class="no">sed -i &#39;/bootstrap/s/^/#/&#39; /var/kubeinit/haproxy/conf/haproxy.cfg</span>
+</span><span id="line-23"><a id="line-23" name="line-23"></a>        <span class="no">systemctl --user restart kubeinit-haproxy</span>
+</span><span id="line-24"><a id="line-24" name="line-24"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">remove_bootstrap_from_cluster</span>
+</span><span id="line-25"><a id="line-25" name="line-25"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;remove_bootstrap_from_cluster.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
+</span><span id="line-26"><a id="line-26" name="line-26"></a>      <span class="nt">ignore_errors</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">yes</span>
+</span><span id="line-27"><a id="line-27" name="line-27"></a>      <span class="nt">with_items</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">groups[&#39;all_service_nodes&#39;]</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-28"><a id="line-28" name="line-28"></a>      <span class="nt">delegate_to</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[item].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-29"><a id="line-29" name="line-29"></a>
+</span><span id="line-30"><a id="line-30" name="line-30"></a>    <span class="c1"># To run in the hypervisor where</span>
+</span><span id="line-31"><a id="line-31" name="line-31"></a>    <span class="c1"># the bootstrap machine is deployed</span>
+</span><span id="line-32"><a id="line-32" name="line-32"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Destroy bootstrap node VM</span>
+</span><span id="line-33"><a id="line-33" name="line-33"></a>      <span class="nt">community.libvirt.virt</span><span class="p">:</span>
+</span><span id="line-34"><a id="line-34" name="line-34"></a>        <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_deployment_node_name</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-35"><a id="line-35" name="line-35"></a>        <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">destroy</span>
+</span><span id="line-36"><a id="line-36" name="line-36"></a>
+</span><span id="line-37"><a id="line-37" name="line-37"></a>    <span class="c1"># To run in the hypervisor where</span>
+</span><span id="line-38"><a id="line-38" name="line-38"></a>    <span class="c1"># the bootstrap machine is deployed</span>
+</span><span id="line-39"><a id="line-39" name="line-39"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Undefine bootstrap node VM</span>
+</span><span id="line-40"><a id="line-40" name="line-40"></a>      <span class="nt">community.libvirt.virt</span><span class="p">:</span>
+</span><span id="line-41"><a id="line-41" name="line-41"></a>        <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_deployment_node_name</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-42"><a id="line-42" name="line-42"></a>        <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">undefine</span>
+</span><span id="line-43"><a id="line-43" name="line-43"></a>
+</span><span id="line-44"><a id="line-44" name="line-44"></a>    <span class="c1"># To run in the hypervisor where</span>
+</span><span id="line-45"><a id="line-45" name="line-45"></a>    <span class="c1"># the bootstrap machine is deployed</span>
+</span><span id="line-46"><a id="line-46" name="line-46"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Remove bootstrap node VM storage</span>
+</span><span id="line-47"><a id="line-47" name="line-47"></a>      <span class="nt">ansible.builtin.file</span><span class="p">:</span>
+</span><span id="line-48"><a id="line-48" name="line-48"></a>        <span class="nt">state</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">absent</span>
+</span><span id="line-49"><a id="line-49" name="line-49"></a>        <span class="nt">path</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_libvirt_target_image_dir</span><span class="nv"> </span><span class="s">}}/{{</span><span class="nv"> </span><span class="s">kubeinit_deployment_node_name</span><span class="nv"> </span><span class="s">}}.qcow2&quot;</span>
+</span><span id="line-50"><a id="line-50" name="line-50"></a>
+</span><span id="line-51"><a id="line-51" name="line-51"></a>  <span class="nt">delegate_to</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[kubeinit_deployment_node_name].target</span><span class="nv"> </span><span class="s">}}&quot;</span>
 </span></pre></div>
 </td></tr></table>
     </div>

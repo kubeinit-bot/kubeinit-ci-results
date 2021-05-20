@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 21:06:04 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 03:12:07 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 21:53:31 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 03:56:35 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:47:27.24
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:44:28.25
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -105,7 +105,7 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">48 files</a>
+                            <a href="../playbooks/1.html#files">45 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : enable and start OVN services in the first hypervisor</a></li>
-            <li><strong>Action</strong>: ansible.builtin.service</li>
-            <li><strong>Path</strong>: <a href="../files/13.html#line-113">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/20_ovn_install.yml:113</a>
+            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Undefine vms</a></li>
+            <li><strong>Action</strong>: community.libvirt.virt</li>
+            <li><strong>Path</strong>: <a href="../files/13.html#line-54">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/10_cleanup.yml:54</a>
             <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-01</a></li>
-            <li><strong>Status</strong>: skipped</li>
-            <li><strong>Started</strong>: 16 May 2021 21:07:51 -0400</li>
-            <li><strong>Ended</strong>: 16 May 2021 21:07:51 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.04</li>
+            <li><strong>Status</strong>: ignored</li>
+            <li><strong>Started</strong>: 20 May 2021 03:12:51 -0400</li>
+            <li><strong>Ended</strong>: 20 May 2021 03:12:52 -0400</li>
+            <li><strong>Duration</strong>: 00:00:01.30</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -236,23 +236,110 @@
     <span class="p">{</span>
         <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
         <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;openvswitch&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;skip_reason&quot;</span><span class="p">:</span> <span class="s2">&quot;Conditional result was False&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;skipped&quot;</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="nt">&quot;exception&quot;</span><span class="p">:</span> <span class="s2">&quot;Traceback (most recent call last):\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_65gxfzqa/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 596, in main\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_65gxfzqa/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 561, in core\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_65gxfzqa/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 418, in undefine\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_65gxfzqa/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 246, in undefine\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_65gxfzqa/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 222, in find_vm\nVMNotFound: virtual machine okd-service-01 not found\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;autostart&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;undefine&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-service-01&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;uri&quot;</span><span class="p">:</span> <span class="s2">&quot;qemu:///system&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;xml&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-service-01&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;virtual machine okd-service-01 not found&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
         <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
         <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;ovn-northd&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;skip_reason&quot;</span><span class="p">:</span> <span class="s2">&quot;Conditional result was False&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;skipped&quot;</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="nt">&quot;exception&quot;</span><span class="p">:</span> <span class="s2">&quot;Traceback (most recent call last):\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_lfh6o1lb/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 596, in main\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_lfh6o1lb/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 561, in core\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_lfh6o1lb/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 418, in undefine\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_lfh6o1lb/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 246, in undefine\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_lfh6o1lb/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 222, in find_vm\nVMNotFound: virtual machine okd-master-01 not found\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;autostart&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;undefine&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-master-01&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;uri&quot;</span><span class="p">:</span> <span class="s2">&quot;qemu:///system&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;xml&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-master-01&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;virtual machine okd-master-01 not found&quot;</span>
     <span class="p">},</span>
     <span class="p">{</span>
         <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
         <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;ovn-controller&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;skip_reason&quot;</span><span class="p">:</span> <span class="s2">&quot;Conditional result was False&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;skipped&quot;</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="nt">&quot;exception&quot;</span><span class="p">:</span> <span class="s2">&quot;Traceback (most recent call last):\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_qi7jlvp9/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 596, in main\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_qi7jlvp9/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 561, in core\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_qi7jlvp9/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 418, in undefine\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_qi7jlvp9/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 246, in undefine\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_qi7jlvp9/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 222, in find_vm\nVMNotFound: virtual machine okd-master-02 not found\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;autostart&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;undefine&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-master-02&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;uri&quot;</span><span class="p">:</span> <span class="s2">&quot;qemu:///system&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;xml&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-master-02&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;virtual machine okd-master-02 not found&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;exception&quot;</span><span class="p">:</span> <span class="s2">&quot;Traceback (most recent call last):\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_ut7quzfc/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 596, in main\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_ut7quzfc/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 561, in core\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_ut7quzfc/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 418, in undefine\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_ut7quzfc/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 246, in undefine\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_ut7quzfc/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 222, in find_vm\nVMNotFound: virtual machine okd-master-03 not found\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;autostart&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;undefine&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-master-03&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;uri&quot;</span><span class="p">:</span> <span class="s2">&quot;qemu:///system&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;xml&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-master-03&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;virtual machine okd-master-03 not found&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;exception&quot;</span><span class="p">:</span> <span class="s2">&quot;Traceback (most recent call last):\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_zclw3pta/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 596, in main\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_zclw3pta/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 561, in core\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_zclw3pta/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 418, in undefine\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_zclw3pta/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 246, in undefine\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_zclw3pta/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 222, in find_vm\nVMNotFound: virtual machine okd-worker-01 not found\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;autostart&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;undefine&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-worker-01&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;uri&quot;</span><span class="p">:</span> <span class="s2">&quot;qemu:///system&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;xml&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-worker-01&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;virtual machine okd-worker-01 not found&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;exception&quot;</span><span class="p">:</span> <span class="s2">&quot;Traceback (most recent call last):\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_1m5tvg4z/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 596, in main\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_1m5tvg4z/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 561, in core\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_1m5tvg4z/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 418, in undefine\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_1m5tvg4z/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 246, in undefine\n  File \&quot;/tmp/ansible_community.libvirt.virt_payload_1m5tvg4z/ansible_community.libvirt.virt_payload.zip/ansible_collections/community/libvirt/plugins/modules/virt.py\&quot;, line 222, in find_vm\nVMNotFound: virtual machine okd-bootstrap-01 not found\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;autostart&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;undefine&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-bootstrap-01&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;uri&quot;</span><span class="p">:</span> <span class="s2">&quot;qemu:///system&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;xml&quot;</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-bootstrap-01&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;virtual machine okd-bootstrap-01 not found&quot;</span>
     <span class="p">}</span>
 <span class="p">]</span>
 </pre></div>
