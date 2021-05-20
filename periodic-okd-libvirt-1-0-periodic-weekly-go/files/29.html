@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="../static/css/pygments.css">
     
-    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -20,7 +20,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -50,15 +50,15 @@
 
 
 
-<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-danger pf-m-inline">
+<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-success pf-m-inline">
 
     <ul class="pf-c-data-list" role="list">
         <li class="pf-c-data-list__item">
             <div class="pf-c-data-list__item-row">
                 <div class="pf-c-data-list__item-control pf-m-fit-content">
                     
-<div class="pf-c-alert__icon" title="Playbook completed with errors">
-    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+<div class="pf-c-alert__icon" title="Playbook completed successfully">
+    <i class="fas fa-check-circle" aria-hidden="true"></i>
 </div>
 
                 </div>
@@ -66,16 +66,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 22:42:40 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 04:44:43 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 23:19:56 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 05:22:22 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:37:16.28
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:37:38.70
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -102,12 +102,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">334 results</a>
+                            <a href="../playbooks/1.html#results">349 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">46 files</a>
+                            <a href="../playbooks/1.html#files">45 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -183,7 +183,7 @@
 
 <div class="pf-c-card" style="margin: 1em 0;">
     <div class="pf-c-card__header pf-c-title pf-m-md">
-        <strong>/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_validations/handlers/main.yml</strong>
+        <strong>/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/70_check_nodes_up.yml</strong>
     </div>
     <div class="pf-c-card__body">
         <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"><a href="#line-1"> 1</a></span>
@@ -200,8 +200,34 @@
 <span class="normal"><a href="#line-12">12</a></span>
 <span class="normal"><a href="#line-13">13</a></span>
 <span class="normal"><a href="#line-14">14</a></span>
-<span class="normal"><a href="#line-15">15</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a id="line-1" name="line-1"></a><span class="nn">---</span>
-</span><span id="line-2"><a id="line-2" name="line-2"></a><span class="c1"># Copyright 2020 KubeInit.</span>
+<span class="normal"><a href="#line-15">15</a></span>
+<span class="normal"><a href="#line-16">16</a></span>
+<span class="normal"><a href="#line-17">17</a></span>
+<span class="normal"><a href="#line-18">18</a></span>
+<span class="normal"><a href="#line-19">19</a></span>
+<span class="normal"><a href="#line-20">20</a></span>
+<span class="normal"><a href="#line-21">21</a></span>
+<span class="normal"><a href="#line-22">22</a></span>
+<span class="normal"><a href="#line-23">23</a></span>
+<span class="normal"><a href="#line-24">24</a></span>
+<span class="normal"><a href="#line-25">25</a></span>
+<span class="normal"><a href="#line-26">26</a></span>
+<span class="normal"><a href="#line-27">27</a></span>
+<span class="normal"><a href="#line-28">28</a></span>
+<span class="normal"><a href="#line-29">29</a></span>
+<span class="normal"><a href="#line-30">30</a></span>
+<span class="normal"><a href="#line-31">31</a></span>
+<span class="normal"><a href="#line-32">32</a></span>
+<span class="normal"><a href="#line-33">33</a></span>
+<span class="normal"><a href="#line-34">34</a></span>
+<span class="normal"><a href="#line-35">35</a></span>
+<span class="normal"><a href="#line-36">36</a></span>
+<span class="normal"><a href="#line-37">37</a></span>
+<span class="normal"><a href="#line-38">38</a></span>
+<span class="normal"><a href="#line-39">39</a></span>
+<span class="normal"><a href="#line-40">40</a></span>
+<span class="normal"><a href="#line-41">41</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a id="line-1" name="line-1"></a><span class="nn">---</span>
+</span><span id="line-2"><a id="line-2" name="line-2"></a><span class="c1"># Copyright kubeinit.com</span>
 </span><span id="line-3"><a id="line-3" name="line-3"></a><span class="c1"># All Rights Reserved.</span>
 </span><span id="line-4"><a id="line-4" name="line-4"></a><span class="c1">#</span>
 </span><span id="line-5"><a id="line-5" name="line-5"></a><span class="c1"># Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may</span>
@@ -215,6 +241,32 @@
 </span><span id="line-13"><a id="line-13" name="line-13"></a><span class="c1"># WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the</span>
 </span><span id="line-14"><a id="line-14" name="line-14"></a><span class="c1"># License for the specific language governing permissions and limitations</span>
 </span><span id="line-15"><a id="line-15" name="line-15"></a><span class="c1"># under the License.</span>
+</span><span id="line-16"><a id="line-16" name="line-16"></a>
+</span><span id="line-17"><a id="line-17" name="line-17"></a><span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Verify that nodes are up before continuing</span>
+</span><span id="line-18"><a id="line-18" name="line-18"></a>  <span class="nt">block</span><span class="p">:</span>
+</span><span id="line-19"><a id="line-19" name="line-19"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;make</span><span class="nv"> </span><span class="s">sure</span><span class="nv"> </span><span class="s">we</span><span class="nv"> </span><span class="s">can</span><span class="nv"> </span><span class="s">execute</span><span class="nv"> </span><span class="s">remote</span><span class="nv"> </span><span class="s">commands</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">kubeinit_deployment_node_name</span><span class="nv"> </span><span class="s">}}</span><span class="nv"> </span><span class="s">before</span><span class="nv"> </span><span class="s">continue&quot;</span>
+</span><span id="line-20"><a id="line-20" name="line-20"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+</span><span id="line-21"><a id="line-21" name="line-21"></a>        <span class="no">set -o pipefail</span>
+</span><span id="line-22"><a id="line-22" name="line-22"></a>        <span class="no">ssh \</span>
+</span><span id="line-23"><a id="line-23" name="line-23"></a>            <span class="no">-o ConnectTimeout=5 \</span>
+</span><span id="line-24"><a id="line-24" name="line-24"></a>            <span class="no">-o BatchMode=yes \</span>
+</span><span id="line-25"><a id="line-25" name="line-25"></a>            <span class="no">-o StrictHostKeyChecking=no \</span>
+</span><span id="line-26"><a id="line-26" name="line-26"></a>            <span class="no">root@{{ hostvars[kubeinit_deployment_node_name].ansible_host }} &#39;echo connected&#39; || true</span>
+</span><span id="line-27"><a id="line-27" name="line-27"></a>      <span class="nt">args</span><span class="p">:</span>
+</span><span id="line-28"><a id="line-28" name="line-28"></a>        <span class="nt">executable</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/bin/bash</span>
+</span><span id="line-29"><a id="line-29" name="line-29"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">cmd_boot_ok_res</span>
+</span><span id="line-30"><a id="line-30" name="line-30"></a>      <span class="nt">retries</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">30</span>
+</span><span id="line-31"><a id="line-31" name="line-31"></a>      <span class="nt">delay</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10</span>
+</span><span id="line-32"><a id="line-32" name="line-32"></a>      <span class="nt">until</span><span class="p">:</span> <span class="s">&quot;&#39;connected&#39;</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">cmd_boot_ok_res.stdout&quot;</span>
+</span><span id="line-33"><a id="line-33" name="line-33"></a>      <span class="nt">delegate_to</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">kubeinit_bastion_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-34"><a id="line-34" name="line-34"></a>
+</span><span id="line-35"><a id="line-35" name="line-35"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">wait for {{ kubeinit_deployment_node_name }} to boot</span>
+</span><span id="line-36"><a id="line-36" name="line-36"></a>      <span class="nt">ansible.builtin.wait_for_connection</span><span class="p">:</span>
+</span><span id="line-37"><a id="line-37" name="line-37"></a>        <span class="nt">connect_timeout</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">20</span>
+</span><span id="line-38"><a id="line-38" name="line-38"></a>        <span class="nt">sleep</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5</span>
+</span><span id="line-39"><a id="line-39" name="line-39"></a>        <span class="nt">delay</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5</span>
+</span><span id="line-40"><a id="line-40" name="line-40"></a>        <span class="nt">timeout</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">300</span>
+</span><span id="line-41"><a id="line-41" name="line-41"></a>      <span class="nt">delegate_to</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[kubeinit_deployment_node_name].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
 </span></pre></div>
 </td></tr></table>
     </div>

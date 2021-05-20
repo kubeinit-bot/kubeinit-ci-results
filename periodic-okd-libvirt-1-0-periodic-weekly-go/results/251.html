@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -48,15 +48,15 @@
 
 
 
-<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-danger pf-m-inline">
+<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-success pf-m-inline">
 
     <ul class="pf-c-data-list" role="list">
         <li class="pf-c-data-list__item">
             <div class="pf-c-data-list__item-row">
                 <div class="pf-c-data-list__item-control pf-m-fit-content">
                     
-<div class="pf-c-alert__icon" title="Playbook completed with errors">
-    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+<div class="pf-c-alert__icon" title="Playbook completed successfully">
+    <i class="fas fa-check-circle" aria-hidden="true"></i>
 </div>
 
                 </div>
@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 28 Apr 2021 00:51:21 +0200
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 04:44:43 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 28 Apr 2021 01:35:12 +0200
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 05:22:22 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:43:50.70
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:37:38.70
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">347 results</a>
+                            <a href="../playbooks/1.html#results">349 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">33 files</a>
+                            <a href="../playbooks/1.html#files">45 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Generate the htpasswd entry</a></li>
-            <li><strong>Action</strong>: community.general.htpasswd</li>
-            <li><strong>Path</strong>: <a href="../files/26.html#line-47">/root/builds/g-yZ6fMM/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:47</a>
-            <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-01</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Generate an OpenSSL CSR</a></li>
+            <li><strong>Action</strong>: community.crypto.openssl_csr</li>
+            <li><strong>Path</strong>: <a href="../files/38.html#line-54">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:54</a>
+            <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 28 Apr 2021 01:03:08 +0200</li>
-            <li><strong>Ended</strong>: 28 Apr 2021 01:03:09 +0200</li>
-            <li><strong>Duration</strong>: 00:00:00.77</li>
+            <li><strong>Started</strong>: 20 May 2021 04:57:09 -0400</li>
+            <li><strong>Ended</strong>: 20 May 2021 04:57:09 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.61</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -217,40 +217,135 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="invocation" data-label="invocation" class="pf-m-width-20">
-                        <a href="#invocation">invocation</a>
+                    <td role="cell" id="msg" data-label="msg" class="pf-m-width-20">
+                        <a href="#msg">msg</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;create&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;crypt_scheme&quot;</span><span class="p">:</span> <span class="s2">&quot;bcrypt&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="s2">&quot;root&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;0755&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;registryusername&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="s2">&quot;root&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;VALUE_SPECIFIED_IN_NO_LOG_PARAMETER&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/local_registry/auth/htpasswd&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+                        <div class="codehilite"><pre><span></span>All items completed
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="msg" data-label="msg" class="pf-m-width-20">
-                        <a href="#msg">msg</a>
+                    <td role="cell" id="results" data-label="results" class="pf-m-width-20">
+                        <a href="#results">results</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>Created /var/kubeinit/local_registry/auth/htpasswd and added registryusername
+                        <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;basicConstraints&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;CA:TRUE&quot;</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;extendedKeyUsage&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/local_registry/certs/domain.csr&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;authority_cert_issuer&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;authority_cert_serial_number&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;authority_key_identifier&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;backup&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+                <span class="nt">&quot;basic_constraints&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;CA:TRUE&quot;</span>
+                <span class="p">],</span>
+                <span class="nt">&quot;basic_constraints_critical&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;common_name&quot;</span><span class="p">:</span> <span class="s2">&quot;okd-service-01.okdcluster.kubeinit.local&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;country_name&quot;</span><span class="p">:</span> <span class="s2">&quot;US&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;create_subject_key_identifier&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;crl_distribution_points&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;digest&quot;</span><span class="p">:</span> <span class="s2">&quot;sha256&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;email_address&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;extended_key_usage&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;extended_key_usage_critical&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+                <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+                <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;key_usage&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;key_usage_critical&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+                <span class="nt">&quot;locality_name&quot;</span><span class="p">:</span> <span class="s2">&quot;MyCity&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;name_constraints_critical&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+                <span class="nt">&quot;name_constraints_excluded&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;name_constraints_permitted&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;ocsp_must_staple&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+                <span class="nt">&quot;ocsp_must_staple_critical&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+                <span class="nt">&quot;organization_name&quot;</span><span class="p">:</span> <span class="s2">&quot;MyCompany&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;organizational_unit_name&quot;</span><span class="p">:</span> <span class="s2">&quot;MyDepartment&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/local_registry/certs/domain.csr&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;privatekey_content&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;privatekey_passphrase&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;privatekey_path&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/local_registry/certs/domain.key&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;return_content&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+                <span class="nt">&quot;select_crypto_backend&quot;</span><span class="p">:</span> <span class="s2">&quot;auto&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;state_or_province_name&quot;</span><span class="p">:</span> <span class="s2">&quot;MyState&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;subject&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;subject_alt_name&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;DNS:okd-service-01&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;DNS:okd-service-01.okdcluster.kubeinit.local&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;DNS:registry.okdcluster.kubeinit.local&quot;</span>
+                <span class="p">],</span>
+                <span class="nt">&quot;subject_alt_name_critical&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+                <span class="nt">&quot;subject_key_identifier&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+                <span class="nt">&quot;use_common_name_for_san&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="mi">1</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;key&quot;</span><span class="p">:</span> <span class="s2">&quot;dns_server&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;okd-service-01&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;okd-service-01.okdcluster.kubeinit.local&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;registry.okdcluster.kubeinit.local&quot;</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;keyUsage&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;name_constraints_excluded&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;name_constraints_permitted&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;ocspMustStaple&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;privatekey&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/local_registry/certs/domain.key&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;subject&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">[</span>
+                <span class="s2">&quot;C&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;US&quot;</span>
+            <span class="p">],</span>
+            <span class="p">[</span>
+                <span class="s2">&quot;ST&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;MyState&quot;</span>
+            <span class="p">],</span>
+            <span class="p">[</span>
+                <span class="s2">&quot;L&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;MyCity&quot;</span>
+            <span class="p">],</span>
+            <span class="p">[</span>
+                <span class="s2">&quot;O&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;MyCompany&quot;</span>
+            <span class="p">],</span>
+            <span class="p">[</span>
+                <span class="s2">&quot;OU&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;MyDepartment&quot;</span>
+            <span class="p">],</span>
+            <span class="p">[</span>
+                <span class="s2">&quot;CN&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;okd-service-01.okdcluster.kubeinit.local&quot;</span>
+            <span class="p">]</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;subjectAltName&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;DNS:okd-service-01&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;DNS:okd-service-01.okdcluster.kubeinit.local&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;DNS:registry.okdcluster.kubeinit.local&quot;</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">]</span>
 </pre></div>
 
                     </td>
