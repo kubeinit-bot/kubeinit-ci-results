@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 21:55:12 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 03:58:19 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 22:41:07 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 04:42:54 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:45:54.51
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:44:35.13
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -105,7 +105,7 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">48 files</a>
+                            <a href="../playbooks/1.html#files">45 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Create the network interface template for networking details</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Create the hosts template</a></li>
             <li><strong>Action</strong>: ansible.builtin.template</li>
-            <li><strong>Path</strong>: <a href="../files/31.html#line-19">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/60_okd_deploy_nodes.yml:19</a>
+            <li><strong>Path</strong>: <a href="../files/28.html#line-25">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/60_okd_deploy_nodes.yml:25</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 16 May 2021 22:28:19 -0400</li>
-            <li><strong>Ended</strong>: 16 May 2021 22:28:19 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.72</li>
+            <li><strong>Started</strong>: 20 May 2021 04:29:52 -0400</li>
+            <li><strong>Ended</strong>: 20 May 2021 04:29:52 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.57</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -221,7 +221,7 @@
                         <a href="#checksum">checksum</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>b97b94058bb8d49a9868036a2e68531cbfa07cbe
+                        <div class="codehilite"><pre><span></span>ef79a6863afcd71e4c0c5f154db7a21940d3d722
 </pre></div>
 
                     </td>
@@ -232,7 +232,7 @@
                         <a href="#dest">dest</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>/tmp/okd-worker-01/ifcfg-eth0
+                        <div class="codehilite"><pre><span></span>/tmp/okd-worker-01/hosts.redhat.tmpl
 </pre></div>
 
                     </td>
@@ -278,12 +278,12 @@
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_original_basename&quot;</span><span class="p">:</span> <span class="s2">&quot;ifcfg-eth0.j2&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;_original_basename&quot;</span><span class="p">:</span> <span class="s2">&quot;101-cloudinit-hosts.tmpl.j2&quot;</span><span class="p">,</span>
         <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;backup&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;checksum&quot;</span><span class="p">:</span> <span class="s2">&quot;b97b94058bb8d49a9868036a2e68531cbfa07cbe&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;checksum&quot;</span><span class="p">:</span> <span class="s2">&quot;ef79a6863afcd71e4c0c5f154db7a21940d3d722&quot;</span><span class="p">,</span>
         <span class="nt">&quot;content&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;dest&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/okd-worker-01/ifcfg-eth0&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;dest&quot;</span><span class="p">:</span> <span class="s2">&quot;/tmp/okd-worker-01/hosts.redhat.tmpl&quot;</span><span class="p">,</span>
         <span class="nt">&quot;directory_mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;follow&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
@@ -296,7 +296,7 @@
         <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.ansible/tmp/ansible-tmp-1621218499.4553201-177463-265791234736988/source&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.ansible/tmp/ansible-tmp-1621499392.14221-536889-271141390976588/source&quot;</span><span class="p">,</span>
         <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;validate&quot;</span><span class="p">:</span> <span class="kc">null</span>
     <span class="p">}</span>
@@ -311,7 +311,7 @@
                         <a href="#md5sum">md5sum</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>56be0f44ca82b0a89b4de54c7f716d86
+                        <div class="codehilite"><pre><span></span>7b6b34e272425c485cc724ab493b2569
 </pre></div>
 
                     </td>
@@ -344,7 +344,7 @@
                         <a href="#size">size</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>637
+                        <div class="codehilite"><pre><span></span>1312
 </pre></div>
 
                     </td>
@@ -355,7 +355,7 @@
                         <a href="#src">src</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>/root/.ansible/tmp/ansible-tmp-1621218499.4553201-177463-265791234736988/source
+                        <div class="codehilite"><pre><span></span>/root/.ansible/tmp/ansible-tmp-1621499392.14221-536889-271141390976588/source
 </pre></div>
 
                     </td>

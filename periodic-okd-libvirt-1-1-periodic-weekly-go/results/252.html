@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 21:55:12 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 03:58:19 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 22:41:07 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 04:42:54 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:45:54.51
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:44:35.13
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -105,7 +105,7 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">48 files</a>
+                            <a href="../playbooks/1.html#files">45 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Generate an OpenSSL private key</a></li>
-            <li><strong>Action</strong>: community.crypto.openssl_privatekey</li>
-            <li><strong>Path</strong>: <a href="../files/41.html#line-95">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:95</a>
+            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Generate a selfsigned OpenSSL CA Certificate</a></li>
+            <li><strong>Action</strong>: community.crypto.x509_certificate</li>
+            <li><strong>Path</strong>: <a href="../files/38.html#line-74">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:74</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 16 May 2021 22:07:45 -0400</li>
-            <li><strong>Ended</strong>: 16 May 2021 22:07:46 -0400</li>
-            <li><strong>Duration</strong>: 00:00:01.47</li>
+            <li><strong>Started</strong>: 20 May 2021 04:10:17 -0400</li>
+            <li><strong>Ended</strong>: 20 May 2021 04:10:18 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.84</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -217,37 +217,22 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="filename" data-label="filename" class="pf-m-width-20">
-                        <a href="#filename">filename</a>
+                    <td role="cell" id="csr" data-label="csr" class="pf-m-width-20">
+                        <a href="#csr">csr</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>/var/kubeinit/local_registry/certs/domain.key
+                        <div class="codehilite"><pre><span></span>/var/kubeinit/local_registry/certs/domain.csr
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="fingerprint" data-label="fingerprint" class="pf-m-width-20">
-                        <a href="#fingerprint">fingerprint</a>
+                    <td role="cell" id="filename" data-label="filename" class="pf-m-width-20">
+                        <a href="#filename">filename</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;blake2b&quot;</span><span class="p">:</span> <span class="s2">&quot;09:f7:0c:f2:06:97:59:02:9b:9d:2f:53:c1:9b:e2:ef:ad:0b:ec:e3:46:06:ab:2a:69:0b:a5:35:19:6f:9d:c7:02:4b:49:9d:46:16:21:da:02:be:a5:9f:cd:f7:54:78:12:76:7c:c1:9d:aa:36:8b:c1:0a:48:50:09:46:16:c2&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;blake2s&quot;</span><span class="p">:</span> <span class="s2">&quot;17:3d:c8:3e:59:4d:41:b3:3d:10:61:d3:a3:c5:c5:aa:77:99:3c:b8:09:d4:85:d5:81:4f:3a:99:ce:7b:a7:f2&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;md5&quot;</span><span class="p">:</span> <span class="s2">&quot;a1:d9:69:74:49:29:4e:c6:c5:b1:8d:e6:8c:63:0a:6b&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;sha1&quot;</span><span class="p">:</span> <span class="s2">&quot;a3:55:94:a9:2e:4d:09:21:72:28:73:01:5e:58:93:63:71:dd:75:07&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;sha224&quot;</span><span class="p">:</span> <span class="s2">&quot;08:17:95:b7:4a:17:6e:d3:b7:48:3c:d2:e9:f0:f2:39:29:a0:30:94:dd:1f:73:1c:28:1e:be:d1&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;sha256&quot;</span><span class="p">:</span> <span class="s2">&quot;ab:f7:25:20:5b:9c:1e:e1:e4:d5:33:c2:31:30:f8:a6:3b:44:5c:3d:65:7d:12:74:4c:ea:90:e5:36:a2:05:a3&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;sha384&quot;</span><span class="p">:</span> <span class="s2">&quot;b9:9f:b6:45:80:af:f0:49:f8:cc:3b:22:55:c2:ef:e1:f2:f5:e6:6d:da:55:aa:54:7f:e3:03:f9:d8:37:55:19:3f:95:0a:8c:f6:ba:fd:5f:02:c0:90:fd:fd:a7:9a:17&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;sha3_224&quot;</span><span class="p">:</span> <span class="s2">&quot;8a:72:6f:69:8f:f9:23:4d:80:1a:1f:43:1e:93:b1:9c:5b:1c:28:89:1b:94:91:f2:99:52:e1:69&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;sha3_256&quot;</span><span class="p">:</span> <span class="s2">&quot;53:b3:53:98:bd:07:fd:10:b9:f0:d3:ee:18:c0:cb:20:aa:2c:20:33:b0:b8:55:d3:91:03:5b:bb:a4:90:d6:94&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;sha3_384&quot;</span><span class="p">:</span> <span class="s2">&quot;e6:88:51:ae:36:0c:9b:d9:e1:93:73:08:bf:60:1e:7c:d7:c2:2c:b1:dc:09:4c:93:5a:2f:1c:3e:99:66:3c:b4:8f:71:7c:81:4f:e9:86:29:ee:de:cf:25:1f:ac:b2:bd&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;sha3_512&quot;</span><span class="p">:</span> <span class="s2">&quot;25:a7:c5:cb:0b:8c:ae:82:cf:79:12:e5:b6:25:b0:b5:0e:c8:8b:be:2d:4f:20:f1:ad:a3:9e:23:53:44:01:8b:5f:62:7c:f5:88:f9:c6:4b:fc:ad:b6:89:f6:ee:61:c3:48:7c:59:f4:24:93:f6:a4:cf:72:87:e3:1f:79:4b:77&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;sha512&quot;</span><span class="p">:</span> <span class="s2">&quot;5f:d0:af:83:cb:2f:60:f0:12:1f:9e:23:d0:8c:8d:f6:16:10:17:98:fd:4a:dc:46:b0:f4:15:f1:29:9c:25:66:1f:c3:52:af:2c:06:16:47:27:ec:68:32:d8:f9:02:82:6c:ec:1c:47:77:e6:19:21:8c:e9:1b:8d:0f:63:c3:1a&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;shake_128&quot;</span><span class="p">:</span> <span class="s2">&quot;f3:c9:ea:9b:31:63:fe:47:73:9d:85:79:01:c8:24:93:3e:7a:9a:17:e3:f9:7e:2c:e4:7c:09:6e:6b:27:fc:60&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;shake_256&quot;</span><span class="p">:</span> <span class="s2">&quot;8c:bd:40:23:3c:53:a0:5b:b4:d4:ab:dc:20:7c:f8:bd:b0:2c:5e:ce:58:4d:60:f9:48:85:ff:cd:9b:8c:60:10&quot;</span>
-<span class="p">}</span>
+                        <div class="codehilite"><pre><span></span>/var/kubeinit/local_registry/certs/domainCA.crt
 </pre></div>
 
                     </td>
@@ -260,29 +245,75 @@
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;acme_accountkey_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;acme_chain&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;acme_challenge_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;acme_directory&quot;</span><span class="p">:</span> <span class="s2">&quot;https://acme-v02.api.letsencrypt.org/directory&quot;</span><span class="p">,</span>
         <span class="nt">&quot;attributes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;backup&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;cipher&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;curve&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;csr_content&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;csr_path&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/local_registry/certs/domain.csr&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;entrust_api_client_cert_key_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;entrust_api_client_cert_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;entrust_api_key&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;entrust_api_specification_path&quot;</span><span class="p">:</span> <span class="s2">&quot;https://cloud.entrust.net/EntrustCloud/documentation/cms-api-2.1.0.yaml&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;entrust_api_user&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;entrust_cert_type&quot;</span><span class="p">:</span> <span class="s2">&quot;STANDARD_SSL&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;entrust_not_after&quot;</span><span class="p">:</span> <span class="s2">&quot;+365d&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;entrust_requester_email&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;entrust_requester_name&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;entrust_requester_phone&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;extended_key_usage&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;extended_key_usage_strict&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;force&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;auto_ignore&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;format_mismatch&quot;</span><span class="p">:</span> <span class="s2">&quot;regenerate&quot;</span><span class="p">,</span>
         <span class="nt">&quot;group&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;0600&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;has_expired&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;invalid_at&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;issuer&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;issuer_strict&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;key_usage&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;key_usage_strict&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;not_after&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;not_before&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;ownca_content&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;ownca_create_authority_key_identifier&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;ownca_create_subject_key_identifier&quot;</span><span class="p">:</span> <span class="s2">&quot;create_if_not_provided&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ownca_digest&quot;</span><span class="p">:</span> <span class="s2">&quot;sha256&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ownca_not_after&quot;</span><span class="p">:</span> <span class="s2">&quot;+3650d&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ownca_not_before&quot;</span><span class="p">:</span> <span class="s2">&quot;+0s&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ownca_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;ownca_privatekey_content&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;ownca_privatekey_passphrase&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;ownca_privatekey_path&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;ownca_version&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
         <span class="nt">&quot;owner&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;passphrase&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/local_registry/certs/domain.key&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;regenerate&quot;</span><span class="p">:</span> <span class="s2">&quot;full_idempotence&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/local_registry/certs/domainCA.crt&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;privatekey_content&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;privatekey_passphrase&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;privatekey_path&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/local_registry/certs/domain.key&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;provider&quot;</span><span class="p">:</span> <span class="s2">&quot;selfsigned&quot;</span><span class="p">,</span>
         <span class="nt">&quot;return_content&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;select_crypto_backend&quot;</span><span class="p">:</span> <span class="s2">&quot;auto&quot;</span><span class="p">,</span>
         <span class="nt">&quot;selevel&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;selfsigned_create_subject_key_identifier&quot;</span><span class="p">:</span> <span class="s2">&quot;create_if_not_provided&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;selfsigned_digest&quot;</span><span class="p">:</span> <span class="s2">&quot;sha256&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;selfsigned_not_after&quot;</span><span class="p">:</span> <span class="s2">&quot;+3650d&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;selfsigned_not_before&quot;</span><span class="p">:</span> <span class="s2">&quot;+0s&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;selfsigned_version&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
         <span class="nt">&quot;serole&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;setype&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;seuser&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span>
+        <span class="nt">&quot;signature_algorithms&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;RSA&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span>
+        <span class="nt">&quot;subject&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;subject_alt_name&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;subject_alt_name_strict&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;subject_strict&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;unsafe_writes&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;valid_at&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;valid_in&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="kc">null</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -291,22 +322,44 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="size" data-label="size" class="pf-m-width-20">
-                        <a href="#size">size</a>
+                    <td role="cell" id="notAfter" data-label="notAfter" class="pf-m-width-20">
+                        <a href="#notAfter">notAfter</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>4096
+                        <div class="codehilite"><pre><span></span>20310518081018Z
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="type" data-label="type" class="pf-m-width-20">
-                        <a href="#type">type</a>
+                    <td role="cell" id="notBefore" data-label="notBefore" class="pf-m-width-20">
+                        <a href="#notBefore">notBefore</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>RSA
+                        <div class="codehilite"><pre><span></span>20210520081018Z
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="privatekey" data-label="privatekey" class="pf-m-width-20">
+                        <a href="#privatekey">privatekey</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>/var/kubeinit/local_registry/certs/domain.key
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
+                    <td role="cell" id="serial_number" data-label="serial_number" class="pf-m-width-20">
+                        <a href="#serial_number">serial_number</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>269852136071301853390130462622232011187508714276
 </pre></div>
 
                     </td>

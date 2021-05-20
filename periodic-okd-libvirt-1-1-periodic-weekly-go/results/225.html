@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 09 May 2021 21:34:42 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 03:58:19 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 09 May 2021 22:08:12 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 04:42:54 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:33:29.80
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:44:35.13
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">352 results</a>
+                            <a href="../playbooks/1.html#results">360 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">40 files</a>
+                            <a href="../playbooks/1.html#files">45 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Enable CentOS repositories</a></li>
-            <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/31.html#line-15">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/00_install.yml:15</a>
+            <li><strong>Task</strong>: ../../roles/kubeinit_okd : get root service machine public key</a></li>
+            <li><strong>Action</strong>: ansible.builtin.command</li>
+            <li><strong>Path</strong>: <a href="../files/31.html#line-116">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_okd/tasks/10_configure_service_nodes.yml:116</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 09 May 2021 21:41:52 -0400</li>
-            <li><strong>Ended</strong>: 09 May 2021 21:41:56 -0400</li>
-            <li><strong>Duration</strong>: 00:00:04.18</li>
+            <li><strong>Started</strong>: 20 May 2021 04:09:43 -0400</li>
+            <li><strong>Ended</strong>: 20 May 2021 04:09:44 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.32</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -221,8 +221,10 @@
                         <a href="#cmd">cmd</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>set -o pipefail
-dnf install -y @container-tools
+                        <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;cat&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;/root/.ssh/id_rsa.pub&quot;</span>
+<span class="p">]</span>
 </pre></div>
 
                     </td>
@@ -233,7 +235,7 @@ dnf install -y @container-tools
                         <a href="#delta">delta</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:00:04.003976
+                        <div class="codehilite"><pre><span></span>0:00:00.004503
 </pre></div>
 
                     </td>
@@ -244,7 +246,7 @@ dnf install -y @container-tools
                         <a href="#end">end</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-10 01:41:56.886104
+                        <div class="codehilite"><pre><span></span>2021-05-20 08:09:43.916576
 </pre></div>
 
                     </td>
@@ -257,12 +259,12 @@ dnf install -y @container-tools
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\ndnf install -y @container-tools\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;cat /root/.ssh/id_rsa.pub&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
@@ -291,7 +293,7 @@ dnf install -y @container-tools
                         <a href="#start">start</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-10 01:41:52.882128
+                        <div class="codehilite"><pre><span></span>2021-05-20 08:09:43.912073
 </pre></div>
 
                     </td>
@@ -324,66 +326,7 @@ dnf install -y @container-tools
                         <a href="#stdout">stdout</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>Last metadata expiration check: 0:06:02 ago on Mon 10 May 2021 01:35:51 AM UTC.
-Dependencies resolved.
-================================================================================
- Package        Arch   Version                                  Repo       Size
-================================================================================
-Installing group/module packages:
- buildah        x86_64 1.19.8-1.module_el8.5.0+733+9bb5dffa     appstream 6.9 M
- cockpit-podman noarch 29-3.module_el8.5.0+733+9bb5dffa         appstream 1.1 M
- crun           x86_64 0.18-1.module_el8.5.0+733+9bb5dffa       appstream 185 k
- skopeo         x86_64 1:1.2.2-4.module_el8.5.0+733+9bb5dffa    appstream 5.9 M
- toolbox        x86_64 0.0.99-1.module_el8.5.0+733+9bb5dffa     appstream 1.8 M
- udica          noarch 0.2.4-1.module_el8.5.0+733+9bb5dffa      appstream  51 k
-Installing module profiles:
- container-tools/common
-                                                                               
-
-Transaction Summary
-================================================================================
-Install  6 Packages
-
-Total download size: 16 M
-Installed size: 57 M
-Downloading Packages:
-(1/6): crun-0.18-1.module_el8.5.0+733+9bb5dffa. 1.2 MB/s | 185 kB     00:00    
-(2/6): cockpit-podman-29-3.module_el8.5.0+733+9 3.7 MB/s | 1.1 MB     00:00    
-(3/6): buildah-1.19.8-1.module_el8.5.0+733+9bb5 8.3 MB/s | 6.9 MB     00:00    
-(4/6): toolbox-0.0.99-1.module_el8.5.0+733+9bb5 3.1 MB/s | 1.8 MB     00:00    
-(5/6): skopeo-1.2.2-4.module_el8.5.0+733+9bb5df 8.0 MB/s | 5.9 MB     00:00    
-(6/6): udica-0.2.4-1.module_el8.5.0+733+9bb5dff 820 kB/s |  51 kB     00:00    
---------------------------------------------------------------------------------
-Total                                            15 MB/s |  16 MB     00:01     
-Running transaction check
-Transaction check succeeded.
-Running transaction test
-Transaction test succeeded.
-Running transaction
-  Preparing        :                                                        1/1 
-  Installing       : udica-0.2.4-1.module_el8.5.0+733+9bb5dffa.noarch       1/6 
-  Installing       : toolbox-0.0.99-1.module_el8.5.0+733+9bb5dffa.x86_64    2/6 
-  Installing       : skopeo-1:1.2.2-4.module_el8.5.0+733+9bb5dffa.x86_64    3/6 
-  Installing       : crun-0.18-1.module_el8.5.0+733+9bb5dffa.x86_64         4/6 
-  Installing       : cockpit-podman-29-3.module_el8.5.0+733+9bb5dffa.noar   5/6 
-  Installing       : buildah-1.19.8-1.module_el8.5.0+733+9bb5dffa.x86_64    6/6 
-  Running scriptlet: buildah-1.19.8-1.module_el8.5.0+733+9bb5dffa.x86_64    6/6 
-  Verifying        : buildah-1.19.8-1.module_el8.5.0+733+9bb5dffa.x86_64    1/6 
-  Verifying        : cockpit-podman-29-3.module_el8.5.0+733+9bb5dffa.noar   2/6 
-  Verifying        : crun-0.18-1.module_el8.5.0+733+9bb5dffa.x86_64         3/6 
-  Verifying        : skopeo-1:1.2.2-4.module_el8.5.0+733+9bb5dffa.x86_64    4/6 
-  Verifying        : toolbox-0.0.99-1.module_el8.5.0+733+9bb5dffa.x86_64    5/6 
-  Verifying        : udica-0.2.4-1.module_el8.5.0+733+9bb5dffa.noarch       6/6 
-
-Installed:
-  buildah-1.19.8-1.module_el8.5.0+733+9bb5dffa.x86_64                           
-  cockpit-podman-29-3.module_el8.5.0+733+9bb5dffa.noarch                        
-  crun-0.18-1.module_el8.5.0+733+9bb5dffa.x86_64                                
-  skopeo-1:1.2.2-4.module_el8.5.0+733+9bb5dffa.x86_64                           
-  toolbox-0.0.99-1.module_el8.5.0+733+9bb5dffa.x86_64                           
-  udica-0.2.4-1.module_el8.5.0+733+9bb5dffa.noarch                              
-
-Complete!
+                        <div class="codehilite"><pre><span></span>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDD2ODnv8tu4ZIbOhD93TThKNXUoKqSaZr5GkK1dNfplFbUnCcW06OvK10atSg06gV3MG9RBHtLjg4pBMNt3/2sOM5n/4ULOOAPhs/gyM2H3q1KzawROwX2dobvwT1cfCgKoWIR8diyZ93FafAuPElAOEudp5wRJ1Qrs4UHqtzdubikvTgcWdSgl/z+W5ts9MRQnEg8tr0+DC051btBV+UUKBgILFZ4Gi+1v0piTD7HEttKsByPy3sWDx4TAKJpaS3KiV8IhgXB15kbq95bk+eptRrSzOThMQcmvRUZuX9Ba3k7hgLUQF0jvIpGL0a205ZIlCK9Uo5d8dKgTy6XR5OKh6JGDXtor8dJRlWAlf/aF3EQOyPhIZ/qovkGF9GHAEGBJ28nS0Wx4Q0FyX335beuvWWGaBIn0lNyX7jwAM3DRtWsybgZz7x23/cqIrDaUgbOzhswog9S/Ixe8Rb3xJbgTrgGCN4sks0V0U5rkwe525wFPaaNoWVDvnx/CQkWKNk= root@okd-service-01.okdcluster.kubeinit.local
 </pre></div>
 
                     </td>
@@ -395,66 +338,7 @@ Complete!
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;Last metadata expiration check: 0:06:02 ago on Mon 10 May 2021 01:35:51 AM UTC.&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Dependencies resolved.&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;================================================================================&quot;</span><span class="p">,</span>
-    <span class="s2">&quot; Package        Arch   Version                                  Repo       Size&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;================================================================================&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installing group/module packages:&quot;</span><span class="p">,</span>
-    <span class="s2">&quot; buildah        x86_64 1.19.8-1.module_el8.5.0+733+9bb5dffa     appstream 6.9 M&quot;</span><span class="p">,</span>
-    <span class="s2">&quot; cockpit-podman noarch 29-3.module_el8.5.0+733+9bb5dffa         appstream 1.1 M&quot;</span><span class="p">,</span>
-    <span class="s2">&quot; crun           x86_64 0.18-1.module_el8.5.0+733+9bb5dffa       appstream 185 k&quot;</span><span class="p">,</span>
-    <span class="s2">&quot; skopeo         x86_64 1:1.2.2-4.module_el8.5.0+733+9bb5dffa    appstream 5.9 M&quot;</span><span class="p">,</span>
-    <span class="s2">&quot; toolbox        x86_64 0.0.99-1.module_el8.5.0+733+9bb5dffa     appstream 1.8 M&quot;</span><span class="p">,</span>
-    <span class="s2">&quot; udica          noarch 0.2.4-1.module_el8.5.0+733+9bb5dffa      appstream  51 k&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installing module profiles:&quot;</span><span class="p">,</span>
-    <span class="s2">&quot; container-tools/common&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;                                                                               &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Transaction Summary&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;================================================================================&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Install  6 Packages&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Total download size: 16 M&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed size: 57 M&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Downloading Packages:&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;(1/6): crun-0.18-1.module_el8.5.0+733+9bb5dffa. 1.2 MB/s | 185 kB     00:00    &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;(2/6): cockpit-podman-29-3.module_el8.5.0+733+9 3.7 MB/s | 1.1 MB     00:00    &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;(3/6): buildah-1.19.8-1.module_el8.5.0+733+9bb5 8.3 MB/s | 6.9 MB     00:00    &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;(4/6): toolbox-0.0.99-1.module_el8.5.0+733+9bb5 3.1 MB/s | 1.8 MB     00:00    &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;(5/6): skopeo-1.2.2-4.module_el8.5.0+733+9bb5df 8.0 MB/s | 5.9 MB     00:00    &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;(6/6): udica-0.2.4-1.module_el8.5.0+733+9bb5dff 820 kB/s |  51 kB     00:00    &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;--------------------------------------------------------------------------------&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Total                                            15 MB/s |  16 MB     00:01     &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Running transaction check&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Transaction check succeeded.&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Running transaction test&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Transaction test succeeded.&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Running transaction&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  Preparing        :                                                        1/1 &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  Installing       : udica-0.2.4-1.module_el8.5.0+733+9bb5dffa.noarch       1/6 &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  Installing       : toolbox-0.0.99-1.module_el8.5.0+733+9bb5dffa.x86_64    2/6 &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  Installing       : skopeo-1:1.2.2-4.module_el8.5.0+733+9bb5dffa.x86_64    3/6 &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  Installing       : crun-0.18-1.module_el8.5.0+733+9bb5dffa.x86_64         4/6 &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  Installing       : cockpit-podman-29-3.module_el8.5.0+733+9bb5dffa.noar   5/6 &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  Installing       : buildah-1.19.8-1.module_el8.5.0+733+9bb5dffa.x86_64    6/6 &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  Running scriptlet: buildah-1.19.8-1.module_el8.5.0+733+9bb5dffa.x86_64    6/6 &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  Verifying        : buildah-1.19.8-1.module_el8.5.0+733+9bb5dffa.x86_64    1/6 &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  Verifying        : cockpit-podman-29-3.module_el8.5.0+733+9bb5dffa.noar   2/6 &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  Verifying        : crun-0.18-1.module_el8.5.0+733+9bb5dffa.x86_64         3/6 &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  Verifying        : skopeo-1:1.2.2-4.module_el8.5.0+733+9bb5dffa.x86_64    4/6 &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  Verifying        : toolbox-0.0.99-1.module_el8.5.0+733+9bb5dffa.x86_64    5/6 &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  Verifying        : udica-0.2.4-1.module_el8.5.0+733+9bb5dffa.noarch       6/6 &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed:&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  buildah-1.19.8-1.module_el8.5.0+733+9bb5dffa.x86_64                           &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  cockpit-podman-29-3.module_el8.5.0+733+9bb5dffa.noarch                        &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  crun-0.18-1.module_el8.5.0+733+9bb5dffa.x86_64                                &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  skopeo-1:1.2.2-4.module_el8.5.0+733+9bb5dffa.x86_64                           &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  toolbox-0.0.99-1.module_el8.5.0+733+9bb5dffa.x86_64                           &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;  udica-0.2.4-1.module_el8.5.0+733+9bb5dffa.noarch                              &quot;</span><span class="p">,</span>
-    <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Complete!&quot;</span>
+    <span class="s2">&quot;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDD2ODnv8tu4ZIbOhD93TThKNXUoKqSaZr5GkK1dNfplFbUnCcW06OvK10atSg06gV3MG9RBHtLjg4pBMNt3/2sOM5n/4ULOOAPhs/gyM2H3q1KzawROwX2dobvwT1cfCgKoWIR8diyZ93FafAuPElAOEudp5wRJ1Qrs4UHqtzdubikvTgcWdSgl/z+W5ts9MRQnEg8tr0+DC051btBV+UUKBgILFZ4Gi+1v0piTD7HEttKsByPy3sWDx4TAKJpaS3KiV8IhgXB15kbq95bk+eptRrSzOThMQcmvRUZuX9Ba3k7hgLUQF0jvIpGL0a205ZIlCK9Uo5d8dKgTy6XR5OKh6JGDXtor8dJRlWAlf/aF3EQOyPhIZ/qovkGF9GHAEGBJ28nS0Wx4Q0FyX335beuvWWGaBIn0lNyX7jwAM3DRtWsybgZz7x23/cqIrDaUgbOzhswog9S/Ixe8Rb3xJbgTrgGCN4sks0V0U5rkwe525wFPaaNoWVDvnx/CQkWKNk= root@okd-service-01.okdcluster.kubeinit.local&quot;</span>
 <span class="p">]</span>
 </pre></div>
 

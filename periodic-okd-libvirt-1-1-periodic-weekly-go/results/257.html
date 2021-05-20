@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 21:55:12 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 03:58:19 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 22:41:07 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 04:42:54 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:45:54.51
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:44:35.13
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -105,7 +105,7 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">48 files</a>
+                            <a href="../playbooks/1.html#files">45 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Set trustbundle fact to contents of domain.crt</a></li>
-            <li><strong>Action</strong>: ansible.builtin.set_fact</li>
-            <li><strong>Path</strong>: <a href="../files/41.html#line-140">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:140</a>
+            <li><strong>Task</strong>: ../../roles/kubeinit_registry : Copy cert to pki directory</a></li>
+            <li><strong>Action</strong>: ansible.builtin.copy</li>
+            <li><strong>Path</strong>: <a href="../files/38.html#line-111">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:111</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
-            <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 16 May 2021 22:07:49 -0400</li>
-            <li><strong>Ended</strong>: 16 May 2021 22:07:49 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.03</li>
+            <li><strong>Status</strong>: skipped</li>
+            <li><strong>Started</strong>: 20 May 2021 04:10:20 -0400</li>
+            <li><strong>Ended</strong>: 20 May 2021 04:10:20 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.02</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -206,24 +206,22 @@
             <tbody>
                 
                 <tr role="row">
-                    <td role="cell" id="ansible_facts" data-label="ansible_facts" class="pf-m-width-20">
-                        <a href="#ansible_facts">ansible_facts</a>
+                    <td role="cell" id="changed" data-label="changed" class="pf-m-width-20">
+                        <a href="#changed">changed</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;trustbundle&quot;</span><span class="p">:</span> <span class="s2">&quot;-----BEGIN CERTIFICATE-----\nMIIGajCCBFKgAwIBAgIUCkCxFjccyGIf1xaxbNgeY2brVLwwDQYJKoZIhvcNAQEL\nBQAwgY4xCzAJBgNVBAYTAlVTMRAwDgYDVQQIDAdNeVN0YXRlMQ8wDQYDVQQHDAZN\neUNpdHkxEjAQBgNVBAoMCU15Q29tcGFueTEVMBMGA1UECwwMTXlEZXBhcnRtZW50\nMTEwLwYDVQQDDChva2Qtc2VydmljZS0wMS5va2RjbHVzdGVyLmt1YmVpbml0Lmxv\nY2FsMB4XDTIxMDUxNzAyMDc0OVoXDTMxMDUxNTAyMDc0OVowgY4xCzAJBgNVBAYT\nAlVTMRAwDgYDVQQIDAdNeVN0YXRlMQ8wDQYDVQQHDAZNeUNpdHkxEjAQBgNVBAoM\nCU15Q29tcGFueTEVMBMGA1UECwwMTXlEZXBhcnRtZW50MTEwLwYDVQQDDChva2Qt\nc2VydmljZS0wMS5va2RjbHVzdGVyLmt1YmVpbml0LmxvY2FsMIICIjANBgkqhkiG\n9w0BAQEFAAOCAg8AMIICCgKCAgEAmOYavH/NQSjIQGbcnSDgfrt0FHOSP6MjJNsE\naDBPQB2wuaImjlv3jYmbPXMRu3qvU33Aripqa/NL0Ly3VJ/MGdcLzO1Q7mgOC6M5\n63skOe+AOTjfwn1YPMeVhCMaOBwwB4CNNdnNWWuhv3hqAbBrYQgu+7OMPeAHkExG\npK62IhT+bAS16AYQp4bw96hp0Sy4EiPmQfHQ//hc/GdwrPGaTpAaQzpVtp0RfSaS\ndGKvV+2/WXsxTsU4xYwXRy14mHuFfsknIko391Df92ecnfTDeUspuxYaMDAEe71j\njKwZkqzsfWWNkYm7FueSiAuUeEVOiqSkinSSy5pJSIbTu/IpdXaXLwGV/GyXxAnH\nJ5td95UVat4XFhdmNYYz4ChhqXlz79KsU0cGCMXcTYic8n/JhF/wXIUx0vKMiDI2\n63zzu+d5u5xUqL8d58OsqUn28yINslNFJB7X0zuRnFcvuoYgisoJvDVTsdhjRcJs\nT24nguy2ZIuDHu4nbpkfE1f9rbI8mO3LqE/UbWlOeeGCN6DFHVpShewbGQzTUHBP\nBMkaBBH2vTh6B+jotOwXFXT1xccG4z4fCkf5b0uXycjRLssP/F7E/JELE7zFbXpi\nW89bOA1gyh+8yMcSv1fV0nwiUUJKpdq9Edx6vhqDtosCPHiTp3bQp4A4XBPBnVQY\n9u/tcUcCAwEAAaOBvTCBujBnBgNVHREEYDBegg5va2Qtc2VydmljZS0wMYIob2tk\nLXNlcnZpY2UtMDEub2tkY2x1c3Rlci5rdWJlaW5pdC5sb2NhbIIicmVnaXN0cnku\nb2tkY2x1c3Rlci5rdWJlaW5pdC5sb2NhbDAPBgNVHRMBAf8EBTADAQH/MB0GA1Ud\nDgQWBBSztwuKf4N2qjx1Hd2w0O22SE+XATAfBgNVHSMEGDAWgBSztwuKf4N2qjx1\nHd2w0O22SE+XATANBgkqhkiG9w0BAQsFAAOCAgEAQ6piDFvrVX6TC0HuT/6lkjYZ\nhuEaTol8fR7Uxmnaoids3VegHX4jnoPUQc2NI9vqhTFUdnyVaRriDoirqWqKGzvt\nAnU1boQxu/0Zbz0XjmuUcVBpcLnujnMZ0lvIt5LD6Sr1MiOO2g+1kpuOIeAhiKvI\nWU839FmDIzWpginiqUxn8UO7ie7dKwuht0gNeoMSKR06Eo2Iyv7vqiahPe+fiQlL\ntrsiZaUEIDTQE0fnzO6ExVFfHdcD2EJmdq9QeLahxkzrdcztkhvWD+7BJjmBEbCD\n0M+A23Ymem4z1P/TpaEXkshUHm4KCoig7BzDaEWNwR+4gBJoJ0CoW/Q8BfZcrScm\nEaQA17LRYqB95hKQKEkMqWHvMAv4gMiHh6kBoTeMz2lOd4lgrEjwqFT662hKA5MS\n2oiSvKzsdJZYye28qE9P2mQFXIkhG/C3yFhVzbNwwdMQBVrTB456cNBJt0rRcnF0\nmu43Mo8DXr99hFsf//87dz9uQqG3GHtNkjVnHZRqPUb/MroS98EkYtHZ/xe6rYKg\nOb3JlPIvAZ+rV52Ae7OkUwz64d+3sLi2YagwWc2BtodC7yZjzQaeDG6WZoJvytVf\nTsqFyzKEC2uavi+aEjFq2+ZwQxPeKn+GlexWujzPlX8VBJ1OdWSDn47pXRtscXHv\n37YLyIzdGSrLlub1KFY=\n-----END CERTIFICATE-----\n&quot;</span>
-<span class="p">}</span>
+                        <div class="codehilite"><pre><span></span>False
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="changed" data-label="changed" class="pf-m-width-20">
-                        <a href="#changed">changed</a>
+                    <td role="cell" id="skip_reason" data-label="skip_reason" class="pf-m-width-20">
+                        <a href="#skip_reason">skip_reason</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>False
+                        <div class="codehilite"><pre><span></span>Conditional result was False
 </pre></div>
 
                     </td>

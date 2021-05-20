@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -48,15 +48,15 @@
 
 
 
-<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-danger pf-m-inline">
+<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-success pf-m-inline">
 
     <ul class="pf-c-data-list" role="list">
         <li class="pf-c-data-list__item">
             <div class="pf-c-data-list__item-row">
                 <div class="pf-c-data-list__item-control pf-m-fit-content">
                     
-<div class="pf-c-alert__icon" title="Playbook completed with errors">
-    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+<div class="pf-c-alert__icon" title="Playbook completed successfully">
+    <i class="fas fa-check-circle" aria-hidden="true"></i>
 </div>
 
                 </div>
@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 02 May 2021 21:35:00 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 03:58:19 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 02 May 2021 22:03:24 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 04:42:54 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:28:24.72
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:44:35.13
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">358 results</a>
+                            <a href="../playbooks/1.html#results">360 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">33 files</a>
+                            <a href="../playbooks/1.html#files">45 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : make sure we can execute remote commands in okd-service-01 before continue</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_libvirt : Create VM definition for the service nodes</a></li>
             <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/17.html#line-19">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/70_check_nodes_up.yml:19</a>
-            <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-01</a></li>
+            <li><strong>Path</strong>: <a href="../files/28.html#line-70">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/60_okd_deploy_nodes.yml:70</a>
+            <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 02 May 2021 21:36:26 -0400</li>
-            <li><strong>Ended</strong>: 02 May 2021 21:36:40 -0400</li>
-            <li><strong>Duration</strong>: 00:00:13.58</li>
+            <li><strong>Started</strong>: 20 May 2021 04:00:00 -0400</li>
+            <li><strong>Ended</strong>: 20 May 2021 04:00:05 -0400</li>
+            <li><strong>Duration</strong>: 00:00:04.58</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -204,17 +204,6 @@
                 </tr>
             </thead>
             <tbody>
-                
-                <tr role="row">
-                    <td role="cell" id="attempts" data-label="attempts" class="pf-m-width-20">
-                        <a href="#attempts">attempts</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2
-</pre></div>
-
-                    </td>
-                </tr>
                 
                 <tr role="row">
                     <td role="cell" id="changed" data-label="changed" class="pf-m-width-20">
@@ -232,8 +221,7 @@
                         <a href="#cmd">cmd</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>set -o pipefail
-ssh    -o ConnectTimeout=5    -o BatchMode=yes    -o StrictHostKeyChecking=no    root@10.0.0.100 &#39;echo connected&#39; || true
+                        <div class="codehilite"><pre><span></span>virt-install    --connect qemu:///system    --name=okd-service-01    --memory memory=12288    --cpuset=auto    --vcpus=8,maxvcpus=16    --os-type=linux    --os-variant=rhel8.0    --autostart                            --network network=kimgtnet0,mac=52:54:00:47:94:58,model=virtio                      --graphics none    --noautoconsole    --import    --disk /var/lib/libvirt/images/okd-service-01.qcow2,format=qcow2,bus=virtio
 </pre></div>
 
                     </td>
@@ -244,7 +232,7 @@ ssh    -o ConnectTimeout=5    -o BatchMode=yes    -o StrictHostKeyChecking=no   
                         <a href="#delta">delta</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:00:00.150745
+                        <div class="codehilite"><pre><span></span>0:00:04.302889
 </pre></div>
 
                     </td>
@@ -255,7 +243,7 @@ ssh    -o ConnectTimeout=5    -o BatchMode=yes    -o StrictHostKeyChecking=no   
                         <a href="#end">end</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-02 21:36:40.145750
+                        <div class="codehilite"><pre><span></span>2021-05-20 04:00:05.252598
 </pre></div>
 
                     </td>
@@ -268,12 +256,12 @@ ssh    -o ConnectTimeout=5    -o BatchMode=yes    -o StrictHostKeyChecking=no   
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nssh    -o ConnectTimeout=5    -o BatchMode=yes    -o StrictHostKeyChecking=no    root@10.0.0.100 &#39;echo connected&#39; || true\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;virt-install    --connect qemu:///system    --name=okd-service-01    --memory memory=12288    --cpuset=auto    --vcpus=8,maxvcpus=16    --os-type=linux    --os-variant=rhel8.0    --autostart                            --network network=kimgtnet0,mac=52:54:00:47:94:58,model=virtio                      --graphics none    --noautoconsole    --import    --disk /var/lib/libvirt/images/okd-service-01.qcow2,format=qcow2,bus=virtio\n&quot;</span><span class="p">,</span>
         <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
@@ -302,7 +290,7 @@ ssh    -o ConnectTimeout=5    -o BatchMode=yes    -o StrictHostKeyChecking=no   
                         <a href="#start">start</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-02 21:36:39.995005
+                        <div class="codehilite"><pre><span></span>2021-05-20 04:00:00.949709
 </pre></div>
 
                     </td>
@@ -313,7 +301,7 @@ ssh    -o ConnectTimeout=5    -o BatchMode=yes    -o StrictHostKeyChecking=no   
                         <a href="#stderr">stderr</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>Warning: Permanently added &#39;10.0.0.100&#39; (ECDSA) to the list of known hosts.
+                        <div class="codehilite"><pre><span></span>
 </pre></div>
 
                     </td>
@@ -324,9 +312,7 @@ ssh    -o ConnectTimeout=5    -o BatchMode=yes    -o StrictHostKeyChecking=no   
                         <a href="#stderr_lines">stderr_lines</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;Warning: Permanently added &#39;10.0.0.100&#39; (ECDSA) to the list of known hosts.&quot;</span>
-<span class="p">]</span>
+                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
 </pre></div>
 
                     </td>
@@ -337,7 +323,8 @@ ssh    -o ConnectTimeout=5    -o BatchMode=yes    -o StrictHostKeyChecking=no   
                         <a href="#stdout">stdout</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>connected
+                        <div class="codehilite"><pre><span></span>Starting install...
+Domain creation completed.
 </pre></div>
 
                     </td>
@@ -349,7 +336,9 @@ ssh    -o ConnectTimeout=5    -o BatchMode=yes    -o StrictHostKeyChecking=no   
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;connected&quot;</span>
+    <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Starting install...&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Domain creation completed.&quot;</span>
 <span class="p">]</span>
 </pre></div>
 

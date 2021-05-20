@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 16 May 2021 21:55:12 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 03:58:19 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 16 May 2021 22:41:07 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 04:42:54 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:45:54.51
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:44:35.13
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -105,7 +105,7 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">48 files</a>
+                            <a href="../playbooks/1.html#files">45 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,13 +184,13 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_okd : Copy the kubeconfig</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_okd : get some final cluster information</a></li>
             <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/45.html#line-83">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_okd/tasks/50_post_deployment_tasks.yml:83</a>
+            <li><strong>Path</strong>: <a href="../files/42.html#line-89">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_okd/tasks/50_post_deployment_tasks.yml:89</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
-            <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 16 May 2021 22:39:51 -0400</li>
-            <li><strong>Ended</strong>: 16 May 2021 22:39:51 -0400</li>
+            <li><strong>Status</strong>: ignored</li>
+            <li><strong>Started</strong>: 20 May 2021 04:41:37 -0400</li>
+            <li><strong>Ended</strong>: 20 May 2021 04:41:37 -0400</li>
             <li><strong>Duration</strong>: 00:00:00.30</li>
         </ul>
     </div>
@@ -210,7 +210,7 @@
                         <a href="#changed">changed</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>True
+                        <div class="codehilite"><pre><span></span>False
 </pre></div>
 
                     </td>
@@ -221,7 +221,11 @@
                         <a href="#cmd">cmd</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>cp ~/install_dir/auth/kubeconfig ~/.kube/config
+                        <div class="codehilite"><pre><span></span>set -o pipefail
+set -e
+echo &quot;show stat&quot; | socat unix-connect:/var/lib/haproxy/stats stdio
+export KUBECONFIG=~/install_dir/auth/kubeconfig
+oc get nodes
 </pre></div>
 
                     </td>
@@ -232,7 +236,7 @@
                         <a href="#delta">delta</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:00:00.009879
+                        <div class="codehilite"><pre><span></span>0:00:00.014295
 </pre></div>
 
                     </td>
@@ -243,7 +247,7 @@
                         <a href="#end">end</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-17 02:39:51.900345
+                        <div class="codehilite"><pre><span></span>2021-05-20 08:41:37.355147
 </pre></div>
 
                     </td>
@@ -256,7 +260,7 @@
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;cp ~/install_dir/auth/kubeconfig ~/.kube/config\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\necho \&quot;show stat\&quot; | socat unix-connect:/var/lib/haproxy/stats stdio\nexport KUBECONFIG=~/install_dir/auth/kubeconfig\noc get nodes\n&quot;</span><span class="p">,</span>
         <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
@@ -275,11 +279,22 @@
                 </tr>
                 
                 <tr role="row">
+                    <td role="cell" id="msg" data-label="msg" class="pf-m-width-20">
+                        <a href="#msg">msg</a>
+                    </td>
+                    <td role="cell" data-label="Value" class="pf-m-width-80">
+                        <div class="codehilite"><pre><span></span>non-zero return code
+</pre></div>
+
+                    </td>
+                </tr>
+                
+                <tr role="row">
                     <td role="cell" id="rc" data-label="rc" class="pf-m-width-20">
                         <a href="#rc">rc</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0
+                        <div class="codehilite"><pre><span></span>1
 </pre></div>
 
                     </td>
@@ -290,7 +305,7 @@
                         <a href="#start">start</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-17 02:39:51.890466
+                        <div class="codehilite"><pre><span></span>2021-05-20 08:41:37.340852
 </pre></div>
 
                     </td>
@@ -301,7 +316,7 @@
                         <a href="#stderr">stderr</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>
+                        <div class="codehilite"><pre><span></span>2021/05/20 08:41:37 socat[84585] E connect(5, AF=1 &quot;/var/lib/haproxy/stats&quot;, 24): No such file or directory
 </pre></div>
 
                     </td>
@@ -312,7 +327,9 @@
                         <a href="#stderr_lines">stderr_lines</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
+                        <div class="codehilite"><pre><span></span><span class="p">[</span>
+    <span class="s2">&quot;2021/05/20 08:41:37 socat[84585] E connect(5, AF=1 \&quot;/var/lib/haproxy/stats\&quot;, 24): No such file or directory&quot;</span>
+<span class="p">]</span>
 </pre></div>
 
                     </td>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 09 May 2021 21:34:42 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 03:58:19 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 09 May 2021 22:08:12 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 04:42:54 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:33:29.80
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:44:35.13
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/okd.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">352 results</a>
+                            <a href="../playbooks/1.html#results">360 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">40 files</a>
+                            <a href="../playbooks/1.html#files">45 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_okd : install services requirements</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_okd : update packages</a></li>
             <li><strong>Action</strong>: ansible.builtin.yum</li>
-            <li><strong>Path</strong>: <a href="../files/26.html#line-36">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_okd/tasks/10_configure_service_nodes.yml:36</a>
+            <li><strong>Path</strong>: <a href="../files/30.html#line-31">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_okd/tasks/00_bounce_packages.yml:31</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 09 May 2021 21:39:45 -0400</li>
-            <li><strong>Ended</strong>: 09 May 2021 21:40:40 -0400</li>
-            <li><strong>Duration</strong>: 00:00:54.80</li>
+            <li><strong>Started</strong>: 20 May 2021 04:00:26 -0400</li>
+            <li><strong>Ended</strong>: 20 May 2021 04:06:10 -0400</li>
+            <li><strong>Duration</strong>: 00:05:43.55</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -243,32 +243,12 @@
         <span class="nt">&quot;list&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;lock_timeout&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
         <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;haproxy&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;httpd&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;bind&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;bind-utils&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;nfs-utils&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;wget&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;git&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;jq&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;socat&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;gcc&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;make&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;patch&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;libgomp&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;glibc-headers&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;glibc-devel&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;kernel-headers&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;kernel-devel&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;nano&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;libvirt-devel&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;podman&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;podman-docker&quot;</span>
+            <span class="s2">&quot;*&quot;</span>
         <span class="p">],</span>
         <span class="nt">&quot;releasever&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;security&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;skip_broken&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;present&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;latest&quot;</span><span class="p">,</span>
         <span class="nt">&quot;update_cache&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;update_only&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;validate_certs&quot;</span><span class="p">:</span> <span class="kc">true</span>
@@ -307,120 +287,253 @@
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;Installed: git-2.27.0-1.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: emacs-filesystem-1:26.1-5.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: git-core-2.27.0-1.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: git-core-doc-2.27.0-1.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Mozilla-CA-20160104-7.module_el8.3.0+416+dee7bcef.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: protobuf-c-1.3.0-6.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Net-SSLeay-1.88-1.module_el8.4.0+517+be1595ff.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: apr-1.6.3-11.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: apr-util-1.6.1-6.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: apr-util-bdb-1.6.1-6.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: apr-util-openssl-1.6.1-6.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: fuse-common-3.2.1-12.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: fuse3-3.2.1-12.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: fuse3-libs-3.2.1-12.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: runc-1.0.0-70.rc92.module_el8.5.0+733+9bb5dffa.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: iptables-1.8.4-17.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: mod_http2-1.15.7-2.module_el8.3.0+477+498bb568.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-TermReadKey-2.37-7.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: glibc-devel-2.28-158.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: wget-1.19.5-10.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: libxcrypt-devel-4.1.1-6.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: glibc-headers-2.28-158.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: bind-32:9.11.26-3.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: bind-libs-32:9.11.26-3.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: bind-libs-lite-32:9.11.26-3.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: bind-license-32:9.11.26-3.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: kernel-devel-4.18.0-301.1.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: kernel-headers-4.18.0-301.1.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: python3-bind-32:9.11.26-3.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: bind-utils-32:9.11.26-3.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-URI-1.73-3.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: slirp4netns-1.1.8-1.module_el8.5.0+733+9bb5dffa.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: mailcap-2.1.48-3.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: make-1:4.2.1-10.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: socat-1.7.4.1-1.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: nano-2.9.8-1.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: libslirp-4.3.1-1.module_el8.5.0+733+9bb5dffa.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-libnet-3.11-3.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: yajl-2.1.0-10.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: nftables-1:0.9.3-18.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: isl-0.16.1-6.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: fstrm-0.6.0-3.el8.1.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: libvirt-devel-6.0.0-35.module_el8.5.0+746+bbd5d70c.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: centos-logos-httpd-82.0-2.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: fuse-overlayfs-1.5.0-1.module_el8.5.0+733+9bb5dffa.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: libvirt-libs-6.0.0-35.module_el8.5.0+746+bbd5d70c.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: gcc-8.4.1-2.1.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: oniguruma-6.8.2-2.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: patch-2.7.6-11.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Digest-1.17-395.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: jq-1.5-12.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Digest-MD5-2.55-396.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: binutils-2.30-102.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Error-1:0.17025-2.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Carp-1.42-396.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Data-Dumper-2.167-399.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Encode-4:2.97-3.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Errno-1.28-419.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Exporter-5.72-396.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-File-Path-2.15-2.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-File-Temp-0.230.600-1.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Getopt-Long-1:2.50-4.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-HTTP-Tiny-0.074-1.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-IO-1.38-419.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-MIME-Base64-3.15-396.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-PathTools-3.74-1.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Pod-Escapes-1:1.07-395.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Pod-Perldoc-3.28-396.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Pod-Simple-1:3.35-395.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Pod-Usage-4:1.69-395.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Scalar-List-Utils-3:1.49-2.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: libmpc-1.1.0-9.1.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: conmon-2:2.0.27-1.module_el8.5.0+733+9bb5dffa.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Socket-4:2.027-3.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Storable-1:3.11-3.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Term-ANSIColor-4.06-396.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Term-Cap-1.17-395.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: container-selinux-2:2.159.0-1.module_el8.5.0+733+9bb5dffa.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Text-ParseWords-3.30-395.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Text-Tabs+Wrap-2013.0523-395.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: containernetworking-plugins-0.9.1-1.module_el8.5.0+733+9bb5dffa.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Time-Local-1:1.280-1.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Unicode-Normalize-1.25-396.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-constant-1.33-396.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: containers-common-1:1.2.2-4.module_el8.5.0+733+9bb5dffa.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: haproxy-1.8.27-2.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: cyrus-sasl-2.1.27-5.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: libnet-1.1.6-15.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-interpreter-4:5.26.3-419.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: libnetfilter_conntrack-1.0.6-5.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: cyrus-sasl-gssapi-2.1.27-5.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-libs-4:5.26.3-419.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-macros-4:5.26.3-419.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-parent-1:0.237-1.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-podlators-4.11-1.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: cpp-8.4.1-2.1.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-Git-2.27.0-1.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: libnfnetlink-1.0.1-13.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-threads-1:2.21-2.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-threads-shared-1.58-2.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: pkgconf-1.4.2-1.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: libnftnl-1.1.5-4.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: pkgconf-m4-1.4.2-1.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: pkgconf-pkg-config-1.4.2-1.el8.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: podman-3.1.0-0.13.module_el8.5.0+733+9bb5dffa.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: criu-3.15-1.module_el8.5.0+733+9bb5dffa.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: podman-catatonit-3.1.0-0.13.module_el8.5.0+733+9bb5dffa.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: podman-docker-3.1.0-0.13.module_el8.5.0+733+9bb5dffa.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-IO-Socket-IP-0.39-5.el8.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: httpd-2.4.37-30.module_el8.3.0+462+ba287492.0.1.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: httpd-filesystem-2.4.37-30.module_el8.3.0+462+ba287492.0.1.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: perl-IO-Socket-SSL-2.066-4.module_el8.4.0+517+be1595ff.noarch&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: httpd-tools-2.4.37-30.module_el8.3.0+462+ba287492.0.1.x86_64&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Installed: libpkgconf-1.4.2-1.el8.x86_64&quot;</span>
+    <span class="s2">&quot;Installed: dnf-data-4.4.2-11.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: python3-dnf-plugins-core-4.0.18-4.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: dnf-plugins-core-4.0.18-4.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: dracut-049-136.git20210426.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: python3-hawkey-0.55.0-7.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: qemu-guest-agent-15:4.2.0-48.module_el8.5.0+746+bbd5d70c.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: dracut-config-generic-049-136.git20210426.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: dracut-config-rescue-049-136.git20210426.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: dracut-network-049-136.git20210426.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: python3-libdnf-0.55.0-7.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: dracut-squash-049-136.git20210426.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: libseccomp-2.5.1-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: python3-libs-3.6.8-37.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: python3-perf-4.18.0-301.1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: python3-policycoreutils-2.9-14.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: python3-rpm-4.14.3-13.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: libssh-0.9.4-3.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: libssh-config-0.9.4-3.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: file-5.33-18.el8.0.1.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: libsss_autofs-2.4.0-9.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: libsss_certmap-2.4.0-9.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: file-libs-5.33-18.el8.0.1.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: libsss_idmap-2.4.0-9.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: gnutls-3.6.14-8.el8_3.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: libsss_nss_idmap-2.4.0-9.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: libsss_sudo-2.4.0-9.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: libstdc++-8.4.1-2.1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: grub2-common-1:2.02-99.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: python3-syspurpose-1.28.16-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: grub2-pc-1:2.02-99.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: grub2-pc-modules-1:2.02-99.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: grub2-tools-1:2.02-99.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: grub2-tools-efi-1:2.02-99.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: grub2-tools-extra-1:2.02-99.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: grub2-tools-minimal-1:2.02-99.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: quota-1:4.04-14.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: quota-nls-1:4.04-14.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: hwdata-0.314-8.8.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: ima-evm-utils-1.3.2-12.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: initscripts-10.00.15-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: iproute-5.12.0-0.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: libtirpc-1.1.4-5.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: rpm-4.14.3-13.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: authselect-compat-1.2.2-2.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: rpm-build-libs-4.14.3-13.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: rpm-libs-4.14.3-13.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: rpm-plugin-selinux-4.14.3-13.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: rpm-plugin-systemd-inhibit-4.14.3-13.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: glib2-2.56.4-11.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: iputils-20180629-7.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: glibc-2.28-158.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: glibc-all-langpacks-2.28-158.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: glibc-common-2.28-158.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: selinux-policy-3.14.3-67.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: libxcrypt-4.1.1-6.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: selinux-policy-targeted-3.14.3-67.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: json-c-0.13.1-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: linux-firmware-20201218-102.git05789708.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: kernel-4.18.0-301.1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: setroubleshoot-server-3.3.24-3.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: kernel-core-4.18.0-301.1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: sos-4.1-1.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: kernel-modules-4.18.0-301.1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: kernel-tools-4.18.0-301.1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: kernel-tools-libs-4.18.0-301.1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: kexec-tools-2.0.20-46.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: squashfs-tools-4.3-20.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: sssd-client-2.4.0-9.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: sssd-common-2.4.0-9.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: kpartx-0.8.4-11.el8.0.1.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: sssd-kcm-2.4.0-9.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: sssd-nfs-idmap-2.4.0-9.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: krb5-libs-1.18.2-10.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: microcode_ctl-4:20210216-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: systemd-239-45.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: systemd-libs-239-45.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: systemd-pam-239-45.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: systemd-udev-239-45.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: python3-jinja2-2.10.1-3.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: nettle-3.4.1-4.el8_3.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: tuned-2.15.0-2.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: python3-dnf-4.4.2-11.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: NetworkManager-1:1.32.0-0.2.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: virt-what-1.18-10.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: NetworkManager-libnm-1:1.32.0-0.2.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: which-2.21-14.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: NetworkManager-team-1:1.32.0-0.2.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: NetworkManager-tui-1:1.32.0-0.2.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: openssh-8.0p1-8.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: yum-4.4.2-11.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: libdnf-0.55.0-7.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: openssh-clients-8.0p1-8.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: yum-utils-4.0.18-4.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: openssh-server-8.0p1-8.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: openssl-1:1.1.1g-15.el8_3.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: openssl-libs-1:1.1.1g-15.el8_3.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: authselect-1.2.2-2.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: authselect-libs-1.2.2-2.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: libgcc-8.4.1-2.1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: libgomp-8.4.1-2.1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: bind-export-libs-32:9.11.26-3.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: pcre-8.42-5.el8.0.1.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: centos-stream-release-8.5-3.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: chrony-3.5-2.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: cockpit-bridge-242-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: cockpit-system-242-1.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: cockpit-ws-242-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: libldb-2.2.0-2.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: crypto-policies-20210209-1.gitbfb6bed.el8_3.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: crypto-policies-scripts-20210209-1.gitbfb6bed.el8_3.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: cryptsetup-libs-2.3.3-4.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: libndp-1.7-6.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: platform-python-3.6.8-37.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: policycoreutils-2.9-14.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: policycoreutils-python-utils-2.9-14.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: dbus-1:1.12.8-13.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: dbus-common-1:1.12.8-13.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: dbus-daemon-1:1.12.8-13.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: dbus-libs-1:1.12.8-13.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: dbus-tools-1:1.12.8-13.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: device-mapper-8:1.02.175-5.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: device-mapper-libs-8:1.02.175-5.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: python3-cryptography-3.2.1-4.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: libpwquality-1.4.4-3.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: dmidecode-1:3.2-10.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Installed: dnf-4.4.2-11.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: NetworkManager-1:1.30.0-0.9.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: NetworkManager-libnm-1:1.30.0-0.9.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: NetworkManager-team-1:1.30.0-0.9.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: NetworkManager-tui-1:1.30.0-0.9.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: authselect-1.2.2-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: authselect-compat-1.2.2-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: authselect-libs-1.2.2-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: bind-export-libs-32:9.11.26-2.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: centos-stream-release-8.4-1.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: chrony-3.5-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: cockpit-bridge-236-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: cockpit-system-236-1.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: cockpit-ws-236-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: crypto-policies-20200713-1.git51d1222.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: crypto-policies-scripts-20200713-1.git51d1222.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: cryptsetup-libs-2.3.3-2.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: dbus-1:1.12.8-12.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: dbus-common-1:1.12.8-12.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: dbus-daemon-1:1.12.8-12.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: dbus-libs-1:1.12.8-12.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: dbus-tools-1:1.12.8-12.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: device-mapper-8:1.02.175-3.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: device-mapper-libs-8:1.02.175-3.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: dmidecode-1:3.2-8.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: dnf-4.4.2-5.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: dnf-data-4.4.2-5.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: dnf-plugins-core-4.0.18-3.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: dracut-049-133.git20210112.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: dracut-config-generic-049-133.git20210112.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: dracut-config-rescue-049-133.git20210112.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: dracut-network-049-133.git20210112.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: dracut-squash-049-133.git20210112.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: file-5.33-16.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: file-libs-5.33-16.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: glib2-2.56.4-9.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: glibc-2.28-147.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: glibc-all-langpacks-2.28-147.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: glibc-common-2.28-147.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: gnutls-3.6.14-7.el8_3.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: grub2-common-1:2.02-93.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: grub2-pc-1:2.02-93.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: grub2-pc-modules-1:2.02-93.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: grub2-tools-1:2.02-93.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: grub2-tools-extra-1:2.02-93.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: grub2-tools-minimal-1:2.02-93.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: hwdata-0.314-8.7.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: ima-evm-utils-1.3.2-11.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: initscripts-10.00.12-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: iproute-5.9.0-2.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: iputils-20180629-6.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: json-c-0.13.1-0.4.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: kernel-tools-4.18.0-277.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: kernel-tools-libs-4.18.0-277.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: kexec-tools-2.0.20-45.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: kpartx-0.8.4-8.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: krb5-libs-1.18.2-8.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: libdnf-0.55.0-2.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: libgcc-8.4.1-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: libgomp-8.4.1-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: libldb-2.2.0-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: libndp-1.7-3.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: libpwquality-1.4.4-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: libseccomp-2.4.3-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: libssh-0.9.4-2.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: libssh-config-0.9.4-2.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: libsss_autofs-2.4.0-7.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: libsss_certmap-2.4.0-7.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: libsss_idmap-2.4.0-7.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: libsss_nss_idmap-2.4.0-7.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: libsss_sudo-2.4.0-7.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: libstdc++-8.4.1-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: libtirpc-1.1.4-4.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: libxcrypt-4.1.1-4.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: microcode_ctl-4:20201112-2.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: nettle-3.4.1-2.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: openssh-8.0p1-5.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: openssh-clients-8.0p1-5.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: openssh-server-8.0p1-5.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: openssl-1:1.1.1g-12.el8_3.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: openssl-libs-1:1.1.1g-12.el8_3.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: pcre-8.42-4.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: platform-python-3.6.8-36.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: policycoreutils-2.9-12.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: policycoreutils-python-utils-2.9-12.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: python3-cryptography-3.2.1-3.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: python3-dnf-4.4.2-5.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: python3-dnf-plugins-core-4.0.18-3.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: python3-hawkey-0.55.0-2.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: python3-jinja2-2.10.1-2.el8_0.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: python3-libdnf-0.55.0-2.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: python3-libs-3.6.8-36.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: python3-perf-4.18.0-277.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: python3-policycoreutils-2.9-12.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: python3-rpm-4.14.3-10.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: python3-syspurpose-1.28.10-1.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: qemu-guest-agent-15:4.2.0-35.module_el8.4.0+547+a85d02ba.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: quota-1:4.04-12.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: quota-nls-1:4.04-12.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: rpm-4.14.3-10.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: rpm-build-libs-4.14.3-10.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: rpm-libs-4.14.3-10.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: rpm-plugin-selinux-4.14.3-10.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: rpm-plugin-systemd-inhibit-4.14.3-10.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: selinux-policy-3.14.3-62.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: selinux-policy-targeted-3.14.3-62.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: setroubleshoot-server-3.3.24-2.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: sos-4.0-7.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: squashfs-tools-4.3-19.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: sssd-client-2.4.0-7.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: sssd-common-2.4.0-7.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: sssd-kcm-2.4.0-7.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: sssd-nfs-idmap-2.4.0-7.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: systemd-239-44.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: systemd-libs-239-44.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: systemd-pam-239-44.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: systemd-udev-239-44.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: tuned-2.15.0-1.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: virt-what-1.18-6.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: which-2.21-12.el8.x86_64&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: yum-4.4.2-5.el8.noarch&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Removed: yum-utils-4.0.18-3.el8.noarch&quot;</span>
 <span class="p">]</span>
 </pre></div>
 
