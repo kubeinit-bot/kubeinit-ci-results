@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 16:41:19 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 21:05:58 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 17:22:49 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 21:46:02 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:41:29.78
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:40:03.77
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -188,10 +188,10 @@
             <li><strong>Action</strong>: containers.podman.podman_pod</li>
             <li><strong>Path</strong>: <a href="../files/5.html#line-35">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_prepare/tasks/prepare_podman.yml:35</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
-            <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 20 May 2021 16:41:30 -0400</li>
-            <li><strong>Ended</strong>: 20 May 2021 16:41:31 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.79</li>
+            <li><strong>Status</strong>: ok</li>
+            <li><strong>Started</strong>: 20 May 2021 21:06:09 -0400</li>
+            <li><strong>Ended</strong>: 20 May 2021 21:06:09 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.53</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -210,9 +210,7 @@
                         <a href="#actions">actions</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;recreated kubeinit-service-pod&quot;</span>
-<span class="p">]</span>
+                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
 </pre></div>
 
                     </td>
@@ -223,7 +221,7 @@
                         <a href="#changed">changed</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>True
+                        <div class="codehilite"><pre><span></span>False
 </pre></div>
 
                     </td>
@@ -328,9 +326,9 @@
     <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;kubeinit-service-pod&quot;</span><span class="p">,</span>
     <span class="nt">&quot;NumContainers&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
     <span class="nt">&quot;SharedNamespaces&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;uts&quot;</span><span class="p">,</span>
         <span class="s2">&quot;ipc&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;net&quot;</span>
+        <span class="s2">&quot;net&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;uts&quot;</span>
     <span class="p">],</span>
     <span class="nt">&quot;State&quot;</span><span class="p">:</span> <span class="s2">&quot;Created&quot;</span>
 <span class="p">}</span>
@@ -344,10 +342,7 @@
                         <a href="#podman_actions">podman_actions</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;podman pod rm -f kubeinit-service-pod&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;podman pod create --name kubeinit-service-pod --dns 10.0.0.100 --dns 10.64.63.6 --dns-search ekscluster.kubeinit.local&quot;</span>
-<span class="p">]</span>
+                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
 </pre></div>
 
                     </td>
@@ -380,7 +375,7 @@
                         <a href="#stdout">stdout</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>32282fd0addef9990eedb9f5c61cfb000f1931178cbce48223f6268e194175fd
+                        <div class="codehilite"><pre><span></span>
 </pre></div>
 
                     </td>
@@ -391,9 +386,7 @@
                         <a href="#stdout_lines">stdout_lines</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;32282fd0addef9990eedb9f5c61cfb000f1931178cbce48223f6268e194175fd&quot;</span>
-<span class="p">]</span>
+                        <div class="codehilite"><pre><span></span><span class="p">[]</span>
 </pre></div>
 
                     </td>
