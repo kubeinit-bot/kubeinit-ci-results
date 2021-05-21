@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 21:05:58 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 21 May 2021 09:07:51 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 21:46:02 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 21 May 2021 10:03:10 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:40:03.77
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:55:19.14
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">308 results</a>
+                            <a href="../playbooks/1.html#results">479 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">36 files</a>
+                            <a href="../playbooks/1.html#files">41 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -188,10 +188,10 @@
             <li><strong>Action</strong>: ansible.builtin.shell</li>
             <li><strong>Path</strong>: <a href="../files/36.html#line-2">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/20_mirror_eks.yml:2</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
-            <li><strong>Status</strong>: failed</li>
-            <li><strong>Started</strong>: 20 May 2021 21:45:46 -0400</li>
-            <li><strong>Ended</strong>: 20 May 2021 21:46:02 -0400</li>
-            <li><strong>Duration</strong>: 00:00:15.81</li>
+            <li><strong>Status</strong>: changed</li>
+            <li><strong>Started</strong>: 21 May 2021 09:50:06 -0400</li>
+            <li><strong>Ended</strong>: 21 May 2021 09:54:57 -0400</li>
+            <li><strong>Duration</strong>: 00:04:50.50</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -236,13 +236,13 @@
     <span class="p">{</span>
         <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
         <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://docker  docker://eks-service-01.ekscluster.kubeinit.local:5000/docker  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://docker  docker://eks-service-01.ekscluster.kubeinit.local:5000/docker  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:14.775744&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 01:46:01.741586&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-provisioner:v2.1.1-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-csi/external-provisioner:v2.1.1-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-provisioner:v2.1.1-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/external-provisioner:v2.1.1-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:16.778707&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:50:23.230858&quot;</span><span class="p">,</span>
         <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://docker  docker://eks-service-01.ekscluster.kubeinit.local:5000/docker  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://docker  docker://eks-service-01.ekscluster.kubeinit.local:5000/docker  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-provisioner:v2.1.1-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-csi/external-provisioner:v2.1.1-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-provisioner:v2.1.1-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/external-provisioner:v2.1.1-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
                 <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
                 <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
@@ -255,47 +255,43 @@
                 <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
             <span class="p">}</span>
         <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;docker&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-csi/external-provisioner:v2.1.1-eks-1-20-1&quot;</span><span class="p">,</span>
         <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 01:45:46.965842&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:50:06.452151&quot;</span><span class="p">,</span>
         <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
         <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:2b7e0e3b754519331113e409b44b7401dda685cba747e0fbb619b907b85e65a6\nCopying blob sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba\nCopying blob sha256:5a38b3726f4b24fa93b80450be63ad67fd3239c2f3b83695118d7b1a88447d84\nCopying blob sha256:28d445cfca767cb2a0dbdc152ed5eeed364db2b6353f8dedf8f917562c116b9b\nCopying blob sha256:493333e9491fba57ff1ea5b8058546fc5a3e124d325f8720c018568f852e385b\nCopying blob sha256:e5fa5deb334027202841b051d10e7c7137fa3b63e97734309cedf6b48804df5f\nCopying blob sha256:32eb6dfb922720a338efac9871565ad3ca1a3ac69b540f214e1224bc55191c69\nCopying config sha256:d2979b152a7d43f040c7aef88c4c83de4e545227622b1045adf6fe409293f803\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:5a38b3726f4b24fa93b80450be63ad67fd3239c2f3b83695118d7b1a88447d84\nCopying blob sha256:2b7e0e3b754519331113e409b44b7401dda685cba747e0fbb619b907b85e65a6\nCopying blob sha256:e5fa5deb334027202841b051d10e7c7137fa3b63e97734309cedf6b48804df5f\nCopying blob sha256:493333e9491fba57ff1ea5b8058546fc5a3e124d325f8720c018568f852e385b\nCopying blob sha256:28d445cfca767cb2a0dbdc152ed5eeed364db2b6353f8dedf8f917562c116b9b\nCopying blob sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba\nCopying blob sha256:32eb6dfb922720a338efac9871565ad3ca1a3ac69b540f214e1224bc55191c69\nCopying config sha256:d2979b152a7d43f040c7aef88c4c83de4e545227622b1045adf6fe409293f803\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:cbba3c174380f577ee6e0ea8624849e83d471ed464a8716ba048b87adf461fff\nCopying blob sha256:8eb085334288c0a6b18eb13a5bfb3e66feee47d34a896f1f4081f780a0fe0179\nCopying blob sha256:4c09206b3898ae2041d37c45c37da27130184745947f2d0bd69a31864d9626f4\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying config sha256:52c641ef7dc96625d067392dd9bcca17a7ce4f4170d83b856e44374788717d99\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:4c09206b3898ae2041d37c45c37da27130184745947f2d0bd69a31864d9626f4\nCopying blob sha256:8eb085334288c0a6b18eb13a5bfb3e66feee47d34a896f1f4081f780a0fe0179\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:cbba3c174380f577ee6e0ea8624849e83d471ed464a8716ba048b87adf461fff\nCopying config sha256:52c641ef7dc96625d067392dd9bcca17a7ce4f4170d83b856e44374788717d99\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
         <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
             <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:2b7e0e3b754519331113e409b44b7401dda685cba747e0fbb619b907b85e65a6&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:5a38b3726f4b24fa93b80450be63ad67fd3239c2f3b83695118d7b1a88447d84&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:28d445cfca767cb2a0dbdc152ed5eeed364db2b6353f8dedf8f917562c116b9b&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:493333e9491fba57ff1ea5b8058546fc5a3e124d325f8720c018568f852e385b&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:e5fa5deb334027202841b051d10e7c7137fa3b63e97734309cedf6b48804df5f&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:32eb6dfb922720a338efac9871565ad3ca1a3ac69b540f214e1224bc55191c69&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:d2979b152a7d43f040c7aef88c4c83de4e545227622b1045adf6fe409293f803&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:cbba3c174380f577ee6e0ea8624849e83d471ed464a8716ba048b87adf461fff&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:8eb085334288c0a6b18eb13a5bfb3e66feee47d34a896f1f4081f780a0fe0179&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:4c09206b3898ae2041d37c45c37da27130184745947f2d0bd69a31864d9626f4&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:52c641ef7dc96625d067392dd9bcca17a7ce4f4170d83b856e44374788717d99&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:5a38b3726f4b24fa93b80450be63ad67fd3239c2f3b83695118d7b1a88447d84&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:2b7e0e3b754519331113e409b44b7401dda685cba747e0fbb619b907b85e65a6&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:e5fa5deb334027202841b051d10e7c7137fa3b63e97734309cedf6b48804df5f&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:493333e9491fba57ff1ea5b8058546fc5a3e124d325f8720c018568f852e385b&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:28d445cfca767cb2a0dbdc152ed5eeed364db2b6353f8dedf8f917562c116b9b&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:540db60ca9383eac9e418f78490994d0af424aab7bf6d0e47ac8ed4e2e9bcbba&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying blob sha256:32eb6dfb922720a338efac9871565ad3ca1a3ac69b540f214e1224bc55191c69&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Copying config sha256:d2979b152a7d43f040c7aef88c4c83de4e545227622b1045adf6fe409293f803&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:4c09206b3898ae2041d37c45c37da27130184745947f2d0bd69a31864d9626f4&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:8eb085334288c0a6b18eb13a5bfb3e66feee47d34a896f1f4081f780a0fe0179&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:cbba3c174380f577ee6e0ea8624849e83d471ed464a8716ba048b87adf461fff&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:52c641ef7dc96625d067392dd9bcca17a7ce4f4170d83b856e44374788717d99&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
             <span class="s2">&quot;Storing signatures&quot;</span>
         <span class="p">]</span>
     <span class="p">},</span>
     <span class="p">{</span>
         <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/\&quot;${ECR_BASE}/kubernetes/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:00.099963&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 01:46:02.133325&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-snapshotter/snapshot-validation-webhook:v3.0.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-csi/external-snapshotter/snapshot-validation-webhook:v3.0.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-snapshotter/snapshot-validation-webhook:v3.0.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/snapshot-validation-webhook:v3.0.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:14.649281&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:50:38.172629&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/\&quot;${ECR_BASE}/kubernetes/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-snapshotter/snapshot-validation-webhook:v3.0.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-csi/external-snapshotter/snapshot-validation-webhook:v3.0.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-snapshotter/snapshot-validation-webhook:v3.0.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/snapshot-validation-webhook:v3.0.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
                 <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
                 <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
@@ -308,27 +304,43 @@
                 <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
             <span class="p">}</span>
         <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;\&quot;${ECR_BASE}/kubernetes/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;non-zero return code&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 01:46:02.033362&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-21T01:46:02Z\&quot; level=fatal msg=\&quot;Invalid source name docker:///kubernetes/kube-proxy:-: invalid reference format\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-21T01:46:02Z\&quot; level=fatal msg=\&quot;Invalid source name docker:///kubernetes/kube-proxy:-: invalid reference format\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[]</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-csi/external-snapshotter/snapshot-validation-webhook:v3.0.3-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:50:23.523348&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:d292f48e9616acf1f739a1896e61a26c17ab54e59696a95e58178e7f3e578c76\nCopying blob sha256:8daf5a0261a096f711da3cf907637998dfe10078c5eba5c57c3d8dcc09c08f09\nCopying blob sha256:09bcf899c3396aca7271cf73c4deff2e310247540dc89d3090095fdd7fbab238\nCopying config sha256:e42db042afccce21cf4b75d76d68da4a29edfe90ee7ed422667f5bf6d5e3c8f7\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:09bcf899c3396aca7271cf73c4deff2e310247540dc89d3090095fdd7fbab238\nCopying blob sha256:d292f48e9616acf1f739a1896e61a26c17ab54e59696a95e58178e7f3e578c76\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:8daf5a0261a096f711da3cf907637998dfe10078c5eba5c57c3d8dcc09c08f09\nCopying config sha256:e42db042afccce21cf4b75d76d68da4a29edfe90ee7ed422667f5bf6d5e3c8f7\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:d292f48e9616acf1f739a1896e61a26c17ab54e59696a95e58178e7f3e578c76&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:8daf5a0261a096f711da3cf907637998dfe10078c5eba5c57c3d8dcc09c08f09&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:09bcf899c3396aca7271cf73c4deff2e310247540dc89d3090095fdd7fbab238&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:e42db042afccce21cf4b75d76d68da4a29edfe90ee7ed422667f5bf6d5e3c8f7&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:09bcf899c3396aca7271cf73c4deff2e310247540dc89d3090095fdd7fbab238&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:d292f48e9616acf1f739a1896e61a26c17ab54e59696a95e58178e7f3e578c76&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:8daf5a0261a096f711da3cf907637998dfe10078c5eba5c57c3d8dcc09c08f09&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:e42db042afccce21cf4b75d76d68da4a29edfe90ee7ed422667f5bf6d5e3c8f7&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span>
+        <span class="p">]</span>
     <span class="p">},</span>
     <span class="p">{</span>
         <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/\&quot;${ECR_BASE}/kubernetes/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:00.103564&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 01:46:02.524147&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-snapshotter/snapshot-controller:v3.0.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-csi/external-snapshotter/snapshot-controller:v3.0.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-snapshotter/snapshot-controller:v3.0.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/snapshot-controller:v3.0.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:17.409247&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:50:55.890328&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/\&quot;${ECR_BASE}/kubernetes/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://\&quot;${ECR_BASE}/kubernetes/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  docker://eks-service-01.ekscluster.kubeinit.local:5000/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-snapshotter/snapshot-controller:v3.0.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-csi/external-snapshotter/snapshot-controller:v3.0.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-snapshotter/snapshot-controller:v3.0.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/snapshot-controller:v3.0.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
                 <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
                 <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
                 <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
@@ -341,16 +353,797 @@
                 <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
             <span class="p">}</span>
         <span class="p">},</span>
-        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;\&quot;${ECR_BASE}/kubernetes/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;msg&quot;</span><span class="p">:</span> <span class="s2">&quot;non-zero return code&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 01:46:02.420583&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;time=\&quot;2021-05-21T01:46:02Z\&quot; level=fatal msg=\&quot;Invalid source name docker:///kubernetes/go-runner:-: invalid reference format\&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s2">&quot;time=\&quot;2021-05-21T01:46:02Z\&quot; level=fatal msg=\&quot;Invalid source name docker:///kubernetes/go-runner:-: invalid reference format\&quot;&quot;</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[]</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-csi/external-snapshotter/snapshot-controller:v3.0.3-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:50:38.481081&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:09bcf899c3396aca7271cf73c4deff2e310247540dc89d3090095fdd7fbab238\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:8daf5a0261a096f711da3cf907637998dfe10078c5eba5c57c3d8dcc09c08f09\nCopying blob sha256:65ae67e5817f9091c8633324b8782d8cd759b2108d8b7ce2f7eba378387e5cf4\nCopying config sha256:fe270d649ce9a130012c62a17c46ea09b4a82692682559edd109a1fe9d05924b\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:8daf5a0261a096f711da3cf907637998dfe10078c5eba5c57c3d8dcc09c08f09\nCopying blob sha256:09bcf899c3396aca7271cf73c4deff2e310247540dc89d3090095fdd7fbab238\nCopying blob sha256:65ae67e5817f9091c8633324b8782d8cd759b2108d8b7ce2f7eba378387e5cf4\nCopying config sha256:fe270d649ce9a130012c62a17c46ea09b4a82692682559edd109a1fe9d05924b\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:09bcf899c3396aca7271cf73c4deff2e310247540dc89d3090095fdd7fbab238&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:8daf5a0261a096f711da3cf907637998dfe10078c5eba5c57c3d8dcc09c08f09&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:65ae67e5817f9091c8633324b8782d8cd759b2108d8b7ce2f7eba378387e5cf4&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:fe270d649ce9a130012c62a17c46ea09b4a82692682559edd109a1fe9d05924b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:8daf5a0261a096f711da3cf907637998dfe10078c5eba5c57c3d8dcc09c08f09&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:09bcf899c3396aca7271cf73c4deff2e310247540dc89d3090095fdd7fbab238&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:65ae67e5817f9091c8633324b8782d8cd759b2108d8b7ce2f7eba378387e5cf4&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:fe270d649ce9a130012c62a17c46ea09b4a82692682559edd109a1fe9d05924b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-snapshotter/csi-snapshotter:v3.0.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-csi/external-snapshotter/csi-snapshotter:v3.0.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-snapshotter/csi-snapshotter:v3.0.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/csi-snapshotter:v3.0.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:15.763550&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:51:11.915742&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-snapshotter/csi-snapshotter:v3.0.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-csi/external-snapshotter/csi-snapshotter:v3.0.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-snapshotter/csi-snapshotter:v3.0.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/csi-snapshotter:v3.0.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-csi/external-snapshotter/csi-snapshotter:v3.0.3-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:50:56.152192&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:8daf5a0261a096f711da3cf907637998dfe10078c5eba5c57c3d8dcc09c08f09\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:09bcf899c3396aca7271cf73c4deff2e310247540dc89d3090095fdd7fbab238\nCopying blob sha256:15764c8cfc4df1898b6d98a2092429e08faa6eb3dba1da0f47214b5480f068e7\nCopying config sha256:28686d5a8b04a86d8b94b266ca12225164a16707a843adbb2d2632c8b55e7452\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:8daf5a0261a096f711da3cf907637998dfe10078c5eba5c57c3d8dcc09c08f09\nCopying blob sha256:15764c8cfc4df1898b6d98a2092429e08faa6eb3dba1da0f47214b5480f068e7\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:09bcf899c3396aca7271cf73c4deff2e310247540dc89d3090095fdd7fbab238\nCopying config sha256:28686d5a8b04a86d8b94b266ca12225164a16707a843adbb2d2632c8b55e7452\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:8daf5a0261a096f711da3cf907637998dfe10078c5eba5c57c3d8dcc09c08f09&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:09bcf899c3396aca7271cf73c4deff2e310247540dc89d3090095fdd7fbab238&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:15764c8cfc4df1898b6d98a2092429e08faa6eb3dba1da0f47214b5480f068e7&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:28686d5a8b04a86d8b94b266ca12225164a16707a843adbb2d2632c8b55e7452&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:8daf5a0261a096f711da3cf907637998dfe10078c5eba5c57c3d8dcc09c08f09&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:15764c8cfc4df1898b6d98a2092429e08faa6eb3dba1da0f47214b5480f068e7&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:09bcf899c3396aca7271cf73c4deff2e310247540dc89d3090095fdd7fbab238&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:28686d5a8b04a86d8b94b266ca12225164a16707a843adbb2d2632c8b55e7452&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-sigs/metrics-server:v0.4.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-sigs/metrics-server:v0.4.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-sigs/metrics-server:v0.4.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/metrics-server:v0.4.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:17.245426&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:51:29.468921&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-sigs/metrics-server:v0.4.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-sigs/metrics-server:v0.4.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-sigs/metrics-server:v0.4.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/metrics-server:v0.4.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-sigs/metrics-server:v0.4.3-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:51:12.223495&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:bcf85a4af9d2b4926416d161fac3a2797299d6582099d9f8d0cc30397714578e\nCopying blob sha256:1ed76bf403e40e19709a28bdfdd7a663e15c1115051a070a60afad498e48af5c\nCopying blob sha256:18e385509b14b88856c492de8a14d8651442737a33f0150c4da5807d90ae0649\nCopying config sha256:7c89f09f6f1ce78d59ea3535c0654b9dc4f656213995f10f8222be1ba8b90f3d\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:1ed76bf403e40e19709a28bdfdd7a663e15c1115051a070a60afad498e48af5c\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:bcf85a4af9d2b4926416d161fac3a2797299d6582099d9f8d0cc30397714578e\nCopying blob sha256:18e385509b14b88856c492de8a14d8651442737a33f0150c4da5807d90ae0649\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying config sha256:7c89f09f6f1ce78d59ea3535c0654b9dc4f656213995f10f8222be1ba8b90f3d\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:bcf85a4af9d2b4926416d161fac3a2797299d6582099d9f8d0cc30397714578e&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:1ed76bf403e40e19709a28bdfdd7a663e15c1115051a070a60afad498e48af5c&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:18e385509b14b88856c492de8a14d8651442737a33f0150c4da5807d90ae0649&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:7c89f09f6f1ce78d59ea3535c0654b9dc4f656213995f10f8222be1ba8b90f3d&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:1ed76bf403e40e19709a28bdfdd7a663e15c1115051a070a60afad498e48af5c&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:bcf85a4af9d2b4926416d161fac3a2797299d6582099d9f8d0cc30397714578e&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:18e385509b14b88856c492de8a14d8651442737a33f0150c4da5807d90ae0649&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:7c89f09f6f1ce78d59ea3535c0654b9dc4f656213995f10f8222be1ba8b90f3d&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-sigs/aws-iam-authenticator:v0.5.2-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-sigs/aws-iam-authenticator:v0.5.2-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-sigs/aws-iam-authenticator:v0.5.2-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/aws-iam-authenticator:v0.5.2-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:17.031777&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:51:46.810550&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-sigs/aws-iam-authenticator:v0.5.2-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-sigs/aws-iam-authenticator:v0.5.2-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-sigs/aws-iam-authenticator:v0.5.2-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/aws-iam-authenticator:v0.5.2-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-sigs/aws-iam-authenticator:v0.5.2-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:51:29.778773&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:a6feaf2053e5bd04cc5b84c122fd8390be224520d4c943c1c52b2249e29b2bb7\nCopying blob sha256:c2b4179104a09eb141317ffef3268ece9e1ae9c907edb9f18b046fea263780dc\nCopying blob sha256:13f40da9f7b5386c889cf25bafe37a39f5b8d65f71d7e2241ab69aeb2e80814b\nCopying blob sha256:d4ecddca438f4038047cc68535380547b8f856a014de6a195816595b29e5e463\nCopying blob sha256:481d16df1f1c64bbb015e30dd7224c276e9ae8e558db39dde40b80483fc60a1c\nCopying config sha256:64159195f3072247d6831f97e8cbfe1453e830816676024b47c98e4e2657b43a\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:13f40da9f7b5386c889cf25bafe37a39f5b8d65f71d7e2241ab69aeb2e80814b\nCopying blob sha256:d4ecddca438f4038047cc68535380547b8f856a014de6a195816595b29e5e463\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:c2b4179104a09eb141317ffef3268ece9e1ae9c907edb9f18b046fea263780dc\nCopying blob sha256:a6feaf2053e5bd04cc5b84c122fd8390be224520d4c943c1c52b2249e29b2bb7\nCopying blob sha256:481d16df1f1c64bbb015e30dd7224c276e9ae8e558db39dde40b80483fc60a1c\nCopying config sha256:64159195f3072247d6831f97e8cbfe1453e830816676024b47c98e4e2657b43a\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:a6feaf2053e5bd04cc5b84c122fd8390be224520d4c943c1c52b2249e29b2bb7&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:c2b4179104a09eb141317ffef3268ece9e1ae9c907edb9f18b046fea263780dc&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:13f40da9f7b5386c889cf25bafe37a39f5b8d65f71d7e2241ab69aeb2e80814b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:d4ecddca438f4038047cc68535380547b8f856a014de6a195816595b29e5e463&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:481d16df1f1c64bbb015e30dd7224c276e9ae8e558db39dde40b80483fc60a1c&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:64159195f3072247d6831f97e8cbfe1453e830816676024b47c98e4e2657b43a&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:13f40da9f7b5386c889cf25bafe37a39f5b8d65f71d7e2241ab69aeb2e80814b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:d4ecddca438f4038047cc68535380547b8f856a014de6a195816595b29e5e463&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:c2b4179104a09eb141317ffef3268ece9e1ae9c907edb9f18b046fea263780dc&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:a6feaf2053e5bd04cc5b84c122fd8390be224520d4c943c1c52b2249e29b2bb7&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:481d16df1f1c64bbb015e30dd7224c276e9ae8e558db39dde40b80483fc60a1c&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:64159195f3072247d6831f97e8cbfe1453e830816676024b47c98e4e2657b43a&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/node-driver-registrar:v2.1.0-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-csi/node-driver-registrar:v2.1.0-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/node-driver-registrar:v2.1.0-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/node-driver-registrar:v2.1.0-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:14.660811&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:52:01.782657&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/node-driver-registrar:v2.1.0-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-csi/node-driver-registrar:v2.1.0-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/node-driver-registrar:v2.1.0-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/node-driver-registrar:v2.1.0-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-csi/node-driver-registrar:v2.1.0-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:51:47.121846&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:9d057d310aa05fc5578cbc28c4cb3c9c607e2090cedcfbcfe8126df8de7960db\nCopying blob sha256:8dfc4e1d63e9f66ba4b81fc1925b18c5eca3027f6356a4146031d97770f5d3b2\nCopying blob sha256:425ad05daa25442fefb9229249f4ef66646414957a4a2444992d1331c3601119\nCopying config sha256:756d781125f8a0a36df9cf005454871dca0b125e8ca37ecbd1759db1f9348bb8\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:9d057d310aa05fc5578cbc28c4cb3c9c607e2090cedcfbcfe8126df8de7960db\nCopying blob sha256:425ad05daa25442fefb9229249f4ef66646414957a4a2444992d1331c3601119\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:8dfc4e1d63e9f66ba4b81fc1925b18c5eca3027f6356a4146031d97770f5d3b2\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying config sha256:756d781125f8a0a36df9cf005454871dca0b125e8ca37ecbd1759db1f9348bb8\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:9d057d310aa05fc5578cbc28c4cb3c9c607e2090cedcfbcfe8126df8de7960db&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:8dfc4e1d63e9f66ba4b81fc1925b18c5eca3027f6356a4146031d97770f5d3b2&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:425ad05daa25442fefb9229249f4ef66646414957a4a2444992d1331c3601119&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:756d781125f8a0a36df9cf005454871dca0b125e8ca37ecbd1759db1f9348bb8&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:9d057d310aa05fc5578cbc28c4cb3c9c607e2090cedcfbcfe8126df8de7960db&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:425ad05daa25442fefb9229249f4ef66646414957a4a2444992d1331c3601119&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:8dfc4e1d63e9f66ba4b81fc1925b18c5eca3027f6356a4146031d97770f5d3b2&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:756d781125f8a0a36df9cf005454871dca0b125e8ca37ecbd1759db1f9348bb8&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/livenessprobe:v2.2.0-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-csi/livenessprobe:v2.2.0-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/livenessprobe:v2.2.0-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/livenessprobe:v2.2.0-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:13.853478&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:52:15.937980&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/livenessprobe:v2.2.0-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-csi/livenessprobe:v2.2.0-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/livenessprobe:v2.2.0-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/livenessprobe:v2.2.0-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-csi/livenessprobe:v2.2.0-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:52:02.084502&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:14d8aceeccdbfb2b70c3e0a439f665f4f0df4edeb1ee01ed0edfc0136e3635ba\nCopying blob sha256:d88ea18f29915e11a00c1370535c96be2145650e55a0b8c0aa1c42cad265df9c\nCopying blob sha256:d5347d4d4f3b158115ad901409bd725f9da465bdf23cf9572fbed456bdb214c8\nCopying config sha256:b3f845018f5067da6248015797e6bed8b5c656265047d4b860c3c7b2cab64fbe\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:d88ea18f29915e11a00c1370535c96be2145650e55a0b8c0aa1c42cad265df9c\nCopying blob sha256:d5347d4d4f3b158115ad901409bd725f9da465bdf23cf9572fbed456bdb214c8\nCopying blob sha256:14d8aceeccdbfb2b70c3e0a439f665f4f0df4edeb1ee01ed0edfc0136e3635ba\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying config sha256:b3f845018f5067da6248015797e6bed8b5c656265047d4b860c3c7b2cab64fbe\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:14d8aceeccdbfb2b70c3e0a439f665f4f0df4edeb1ee01ed0edfc0136e3635ba&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:d88ea18f29915e11a00c1370535c96be2145650e55a0b8c0aa1c42cad265df9c&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:d5347d4d4f3b158115ad901409bd725f9da465bdf23cf9572fbed456bdb214c8&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:b3f845018f5067da6248015797e6bed8b5c656265047d4b860c3c7b2cab64fbe&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:d88ea18f29915e11a00c1370535c96be2145650e55a0b8c0aa1c42cad265df9c&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:d5347d4d4f3b158115ad901409bd725f9da465bdf23cf9572fbed456bdb214c8&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:14d8aceeccdbfb2b70c3e0a439f665f4f0df4edeb1ee01ed0edfc0136e3635ba&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:b3f845018f5067da6248015797e6bed8b5c656265047d4b860c3c7b2cab64fbe&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-resizer:v1.1.0-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-csi/external-resizer:v1.1.0-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-resizer:v1.1.0-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/external-resizer:v1.1.0-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:14.051367&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:52:30.288913&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-resizer:v1.1.0-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-csi/external-resizer:v1.1.0-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-resizer:v1.1.0-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/external-resizer:v1.1.0-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-csi/external-resizer:v1.1.0-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:52:16.237546&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:1157c9235f2589a10fab327c45bde5742bbfdf88988d5370342e5156a4d8329a\nCopying blob sha256:388334493d55ce73dec30e03891ce991cd7d7ec728489c7aeb3b141f9c0f8fdf\nCopying blob sha256:3b976383a032dee129cdd06859ed58d169c4cb8886219787b8b84fbebfadd4af\nCopying config sha256:501af79f3e5df0c1859b1807f5e281f92c8478110e15705cda5f1741191bcd1f\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:1157c9235f2589a10fab327c45bde5742bbfdf88988d5370342e5156a4d8329a\nCopying blob sha256:388334493d55ce73dec30e03891ce991cd7d7ec728489c7aeb3b141f9c0f8fdf\nCopying blob sha256:3b976383a032dee129cdd06859ed58d169c4cb8886219787b8b84fbebfadd4af\nCopying config sha256:501af79f3e5df0c1859b1807f5e281f92c8478110e15705cda5f1741191bcd1f\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:1157c9235f2589a10fab327c45bde5742bbfdf88988d5370342e5156a4d8329a&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:388334493d55ce73dec30e03891ce991cd7d7ec728489c7aeb3b141f9c0f8fdf&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3b976383a032dee129cdd06859ed58d169c4cb8886219787b8b84fbebfadd4af&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:501af79f3e5df0c1859b1807f5e281f92c8478110e15705cda5f1741191bcd1f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:1157c9235f2589a10fab327c45bde5742bbfdf88988d5370342e5156a4d8329a&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:388334493d55ce73dec30e03891ce991cd7d7ec728489c7aeb3b141f9c0f8fdf&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3b976383a032dee129cdd06859ed58d169c4cb8886219787b8b84fbebfadd4af&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:501af79f3e5df0c1859b1807f5e281f92c8478110e15705cda5f1741191bcd1f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-attacher:v3.1.0-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-csi/external-attacher:v3.1.0-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-attacher:v3.1.0-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/external-attacher:v3.1.0-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:14.947135&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:52:45.576554&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-attacher:v3.1.0-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes-csi/external-attacher:v3.1.0-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes-csi/external-attacher:v3.1.0-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/external-attacher:v3.1.0-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-csi/external-attacher:v3.1.0-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:52:30.629419&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:83e08988c7af60ad9b5ff3832c97d45152e0c329a7c984b9bb8bf10fd573e567\nCopying blob sha256:aef8f1896e381042ed41cdcfa9b6dd317b665a0586d226559d18b7c20c26e008\nCopying blob sha256:e4b78af167493b97dbd3b01ecf1d592d55cf467b94535e1c0a8d520c874de286\nCopying config sha256:f72d456180dd84213a07638fb0000d5accfdadae17d5295c83169d2c813c2f5f\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:aef8f1896e381042ed41cdcfa9b6dd317b665a0586d226559d18b7c20c26e008\nCopying blob sha256:83e08988c7af60ad9b5ff3832c97d45152e0c329a7c984b9bb8bf10fd573e567\nCopying blob sha256:e4b78af167493b97dbd3b01ecf1d592d55cf467b94535e1c0a8d520c874de286\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying config sha256:f72d456180dd84213a07638fb0000d5accfdadae17d5295c83169d2c813c2f5f\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:83e08988c7af60ad9b5ff3832c97d45152e0c329a7c984b9bb8bf10fd573e567&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:aef8f1896e381042ed41cdcfa9b6dd317b665a0586d226559d18b7c20c26e008&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:e4b78af167493b97dbd3b01ecf1d592d55cf467b94535e1c0a8d520c874de286&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:f72d456180dd84213a07638fb0000d5accfdadae17d5295c83169d2c813c2f5f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:aef8f1896e381042ed41cdcfa9b6dd317b665a0586d226559d18b7c20c26e008&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:83e08988c7af60ad9b5ff3832c97d45152e0c329a7c984b9bb8bf10fd573e567&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:e4b78af167493b97dbd3b01ecf1d592d55cf467b94535e1c0a8d520c874de286&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:f72d456180dd84213a07638fb0000d5accfdadae17d5295c83169d2c813c2f5f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/etcd-io/etcd:v3.4.15-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/etcd-io/etcd:v3.4.15-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/etcd-io/etcd:v3.4.15-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/etcd:v3.4.15-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:15.141105&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:53:01.015879&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/etcd-io/etcd:v3.4.15-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/etcd-io/etcd:v3.4.15-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/etcd-io/etcd:v3.4.15-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/etcd:v3.4.15-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;public.ecr.aws/eks-distro/etcd-io/etcd:v3.4.15-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:52:45.874774&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:bd2e88b973fc7c2390b46e2fa9b978573e52230d6759776dfd5b99f18bc13c1b\nCopying blob sha256:a71655436f7807895ce9e43caf8a566065c8de698e30b10307d32ff2ecc5af3f\nCopying blob sha256:a8656937a22801d28c271005b8b929200c0d6bc71a1fa4f6ea23acc23cd941c4\nCopying blob sha256:fbd0b76dbcfd21bd703c6e80484cae1d3070f060a6f08a27e517501d67ddd146\nCopying config sha256:239c5ce1d7bb72c505dbdea59dbb674c1fda1738c21dbc37c8febd0295eeca19\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:bd2e88b973fc7c2390b46e2fa9b978573e52230d6759776dfd5b99f18bc13c1b\nCopying blob sha256:a8656937a22801d28c271005b8b929200c0d6bc71a1fa4f6ea23acc23cd941c4\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:fbd0b76dbcfd21bd703c6e80484cae1d3070f060a6f08a27e517501d67ddd146\nCopying blob sha256:a71655436f7807895ce9e43caf8a566065c8de698e30b10307d32ff2ecc5af3f\nCopying config sha256:239c5ce1d7bb72c505dbdea59dbb674c1fda1738c21dbc37c8febd0295eeca19\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:bd2e88b973fc7c2390b46e2fa9b978573e52230d6759776dfd5b99f18bc13c1b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:a71655436f7807895ce9e43caf8a566065c8de698e30b10307d32ff2ecc5af3f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:a8656937a22801d28c271005b8b929200c0d6bc71a1fa4f6ea23acc23cd941c4&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:fbd0b76dbcfd21bd703c6e80484cae1d3070f060a6f08a27e517501d67ddd146&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:239c5ce1d7bb72c505dbdea59dbb674c1fda1738c21dbc37c8febd0295eeca19&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:bd2e88b973fc7c2390b46e2fa9b978573e52230d6759776dfd5b99f18bc13c1b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:a8656937a22801d28c271005b8b929200c0d6bc71a1fa4f6ea23acc23cd941c4&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:fbd0b76dbcfd21bd703c6e80484cae1d3070f060a6f08a27e517501d67ddd146&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:a71655436f7807895ce9e43caf8a566065c8de698e30b10307d32ff2ecc5af3f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:239c5ce1d7bb72c505dbdea59dbb674c1fda1738c21dbc37c8febd0295eeca19&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/coredns/coredns:v1.8.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/coredns/coredns:v1.8.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/coredns/coredns:v1.8.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/coredns:v1.8.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:15.052608&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:53:16.375423&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/coredns/coredns:v1.8.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/coredns/coredns:v1.8.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/coredns/coredns:v1.8.3-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/coredns:v1.8.3-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;public.ecr.aws/eks-distro/coredns/coredns:v1.8.3-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:53:01.322815&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:be3eb2d213f82fbeb250ca4dc04fcd51f5790af051e004b7f946301d033dc6a9\nCopying blob sha256:4d70372699155f976ffad9c4465b6f74aa54abe38c4e70b2bf4fd7ed7b7a5380\nCopying blob sha256:287d61c6321825ee40e5cb0dbb6721433642d04032e3344fb2a07037a8b628ea\nCopying blob sha256:58ef3cf918d64c89a6c43a2065cce088ef91065176926d1f229009d464a4e3ec\nCopying config sha256:9b5f2c89d7eb381357776cbbf432d12f33f91198c8c7caf3e9b01438f3228dd9\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:be3eb2d213f82fbeb250ca4dc04fcd51f5790af051e004b7f946301d033dc6a9\nCopying blob sha256:4d70372699155f976ffad9c4465b6f74aa54abe38c4e70b2bf4fd7ed7b7a5380\nCopying blob sha256:58ef3cf918d64c89a6c43a2065cce088ef91065176926d1f229009d464a4e3ec\nCopying blob sha256:287d61c6321825ee40e5cb0dbb6721433642d04032e3344fb2a07037a8b628ea\nCopying config sha256:9b5f2c89d7eb381357776cbbf432d12f33f91198c8c7caf3e9b01438f3228dd9\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:be3eb2d213f82fbeb250ca4dc04fcd51f5790af051e004b7f946301d033dc6a9&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:4d70372699155f976ffad9c4465b6f74aa54abe38c4e70b2bf4fd7ed7b7a5380&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:287d61c6321825ee40e5cb0dbb6721433642d04032e3344fb2a07037a8b628ea&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:58ef3cf918d64c89a6c43a2065cce088ef91065176926d1f229009d464a4e3ec&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:9b5f2c89d7eb381357776cbbf432d12f33f91198c8c7caf3e9b01438f3228dd9&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:be3eb2d213f82fbeb250ca4dc04fcd51f5790af051e004b7f946301d033dc6a9&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:4d70372699155f976ffad9c4465b6f74aa54abe38c4e70b2bf4fd7ed7b7a5380&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:58ef3cf918d64c89a6c43a2065cce088ef91065176926d1f229009d464a4e3ec&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:287d61c6321825ee40e5cb0dbb6721433642d04032e3344fb2a07037a8b628ea&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:9b5f2c89d7eb381357776cbbf432d12f33f91198c8c7caf3e9b01438f3228dd9&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/pause:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes/pause:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/pause:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/pause:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:13.642662&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:53:30.328652&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/pause:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes/pause:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/pause:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/pause:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes/pause:v1.20.4-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:53:16.685990&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:68bffae5964932f997ff2ca0eeb1d516f7e56fa73489b12acd8a580fa7ca348a\nCopying config sha256:7e907285502c1d78e3387cc0a43216838994fbf2f9af13d23ce54c27e7933ff1\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:68bffae5964932f997ff2ca0eeb1d516f7e56fa73489b12acd8a580fa7ca348a\nCopying config sha256:7e907285502c1d78e3387cc0a43216838994fbf2f9af13d23ce54c27e7933ff1\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:68bffae5964932f997ff2ca0eeb1d516f7e56fa73489b12acd8a580fa7ca348a&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:7e907285502c1d78e3387cc0a43216838994fbf2f9af13d23ce54c27e7933ff1&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:68bffae5964932f997ff2ca0eeb1d516f7e56fa73489b12acd8a580fa7ca348a&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:7e907285502c1d78e3387cc0a43216838994fbf2f9af13d23ce54c27e7933ff1&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/kube-proxy:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes/kube-proxy:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/kube-proxy:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/kube-proxy:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:20.838514&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:53:51.471649&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/kube-proxy:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes/kube-proxy:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/kube-proxy:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/kube-proxy:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes/kube-proxy:v1.20.4-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:53:30.633135&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:a3b90ffeb6c4256a9a36515d96739164b7364dd9fd1eee8963809f89072183c5\nCopying blob sha256:aeb64e1f98cff7b40687c496b8114459c434e553256c8b917efc48764e0c9f06\nCopying blob sha256:70d55f85de13370ba62d3324038c01e14f1b352eb6226da5d80f901c000a5791\nCopying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef\nCopying blob sha256:5bb58a6c8e6c546c6173bb1b6140952065b24290052b09f6783503c231b374cf\nCopying blob sha256:9a5d9a8c83ab76005e981adb8f738952447a73d7b144d47e914cc61b0b6e692f\nCopying blob sha256:f96f3ff4feed3050ff8217d918cc8953c2805cc903c9ab77dfdd79c7a7b5d8be\nCopying blob sha256:3986ead3cc2cfbb400b4e529a89cbd5b8e39c0818b68ddc707a3b078f227df02\nCopying blob sha256:161cc4d11e9f2ebd1fbcf7e25176f9a3cae61fe97f6294c26752a182782b6429\nCopying blob sha256:dbf4598f5b9122262fb507e3f9e317fa0cead14bfd8d779fe5ec4836438dfe5e\nCopying blob sha256:12ff0ea6c86d1991725cbc1c1b3a895e19bbc7254adb520a48793f2144074ef8\nCopying config sha256:0c01b5ece1c2e20faa5ee06fee6d3df052d7cc6cd5ca3501c97d550215d86e17\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:aeb64e1f98cff7b40687c496b8114459c434e553256c8b917efc48764e0c9f06\nCopying blob sha256:70d55f85de13370ba62d3324038c01e14f1b352eb6226da5d80f901c000a5791\nCopying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef\nCopying blob sha256:a3b90ffeb6c4256a9a36515d96739164b7364dd9fd1eee8963809f89072183c5\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:5bb58a6c8e6c546c6173bb1b6140952065b24290052b09f6783503c231b374cf\nCopying blob sha256:12ff0ea6c86d1991725cbc1c1b3a895e19bbc7254adb520a48793f2144074ef8\nCopying blob sha256:f96f3ff4feed3050ff8217d918cc8953c2805cc903c9ab77dfdd79c7a7b5d8be\nCopying blob sha256:3986ead3cc2cfbb400b4e529a89cbd5b8e39c0818b68ddc707a3b078f227df02\nCopying blob sha256:161cc4d11e9f2ebd1fbcf7e25176f9a3cae61fe97f6294c26752a182782b6429\nCopying blob sha256:9a5d9a8c83ab76005e981adb8f738952447a73d7b144d47e914cc61b0b6e692f\nCopying blob sha256:dbf4598f5b9122262fb507e3f9e317fa0cead14bfd8d779fe5ec4836438dfe5e\nCopying config sha256:0c01b5ece1c2e20faa5ee06fee6d3df052d7cc6cd5ca3501c97d550215d86e17\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:a3b90ffeb6c4256a9a36515d96739164b7364dd9fd1eee8963809f89072183c5&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:aeb64e1f98cff7b40687c496b8114459c434e553256c8b917efc48764e0c9f06&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:70d55f85de13370ba62d3324038c01e14f1b352eb6226da5d80f901c000a5791&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:5bb58a6c8e6c546c6173bb1b6140952065b24290052b09f6783503c231b374cf&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:9a5d9a8c83ab76005e981adb8f738952447a73d7b144d47e914cc61b0b6e692f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:f96f3ff4feed3050ff8217d918cc8953c2805cc903c9ab77dfdd79c7a7b5d8be&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3986ead3cc2cfbb400b4e529a89cbd5b8e39c0818b68ddc707a3b078f227df02&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:161cc4d11e9f2ebd1fbcf7e25176f9a3cae61fe97f6294c26752a182782b6429&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:dbf4598f5b9122262fb507e3f9e317fa0cead14bfd8d779fe5ec4836438dfe5e&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:12ff0ea6c86d1991725cbc1c1b3a895e19bbc7254adb520a48793f2144074ef8&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:0c01b5ece1c2e20faa5ee06fee6d3df052d7cc6cd5ca3501c97d550215d86e17&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:aeb64e1f98cff7b40687c496b8114459c434e553256c8b917efc48764e0c9f06&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:70d55f85de13370ba62d3324038c01e14f1b352eb6226da5d80f901c000a5791&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:a3b90ffeb6c4256a9a36515d96739164b7364dd9fd1eee8963809f89072183c5&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:5bb58a6c8e6c546c6173bb1b6140952065b24290052b09f6783503c231b374cf&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:12ff0ea6c86d1991725cbc1c1b3a895e19bbc7254adb520a48793f2144074ef8&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:f96f3ff4feed3050ff8217d918cc8953c2805cc903c9ab77dfdd79c7a7b5d8be&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3986ead3cc2cfbb400b4e529a89cbd5b8e39c0818b68ddc707a3b078f227df02&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:161cc4d11e9f2ebd1fbcf7e25176f9a3cae61fe97f6294c26752a182782b6429&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:9a5d9a8c83ab76005e981adb8f738952447a73d7b144d47e914cc61b0b6e692f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:dbf4598f5b9122262fb507e3f9e317fa0cead14bfd8d779fe5ec4836438dfe5e&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:0c01b5ece1c2e20faa5ee06fee6d3df052d7cc6cd5ca3501c97d550215d86e17&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/kube-scheduler:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes/kube-scheduler:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/kube-scheduler:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/kube-scheduler:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:17.229962&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:54:09.006792&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/kube-scheduler:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes/kube-scheduler:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/kube-scheduler:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/kube-scheduler:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes/kube-scheduler:v1.20.4-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:53:51.776830&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef\nCopying blob sha256:5d8ffc2fe40123fb191dac4383647af77b7950015d8eb7fe241c5bac3bc5748b\nCopying blob sha256:7a58528a93531e27b49e7c9744c4196e690b6f3ae8ea7d7f3d3050780ec4d83a\nCopying blob sha256:79dfc0eccb38a6641b625a49ae941bd7d32c70e6c2e5843d5f647ea759b8076c\nCopying blob sha256:a97301eee36fa2305307cfcc7622dcca0f8f0fe9707a0860e84264bcaf51208d\nCopying blob sha256:12ff0ea6c86d1991725cbc1c1b3a895e19bbc7254adb520a48793f2144074ef8\nCopying config sha256:27aba0d5aab373b244f9cad312dd5fa2cba5ea9349441de3d0e8544a84b74317\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef\nCopying blob sha256:7a58528a93531e27b49e7c9744c4196e690b6f3ae8ea7d7f3d3050780ec4d83a\nCopying blob sha256:5d8ffc2fe40123fb191dac4383647af77b7950015d8eb7fe241c5bac3bc5748b\nCopying blob sha256:79dfc0eccb38a6641b625a49ae941bd7d32c70e6c2e5843d5f647ea759b8076c\nCopying blob sha256:12ff0ea6c86d1991725cbc1c1b3a895e19bbc7254adb520a48793f2144074ef8\nCopying blob sha256:a97301eee36fa2305307cfcc7622dcca0f8f0fe9707a0860e84264bcaf51208d\nCopying config sha256:27aba0d5aab373b244f9cad312dd5fa2cba5ea9349441de3d0e8544a84b74317\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:5d8ffc2fe40123fb191dac4383647af77b7950015d8eb7fe241c5bac3bc5748b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:7a58528a93531e27b49e7c9744c4196e690b6f3ae8ea7d7f3d3050780ec4d83a&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:79dfc0eccb38a6641b625a49ae941bd7d32c70e6c2e5843d5f647ea759b8076c&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:a97301eee36fa2305307cfcc7622dcca0f8f0fe9707a0860e84264bcaf51208d&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:12ff0ea6c86d1991725cbc1c1b3a895e19bbc7254adb520a48793f2144074ef8&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:27aba0d5aab373b244f9cad312dd5fa2cba5ea9349441de3d0e8544a84b74317&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:7a58528a93531e27b49e7c9744c4196e690b6f3ae8ea7d7f3d3050780ec4d83a&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:5d8ffc2fe40123fb191dac4383647af77b7950015d8eb7fe241c5bac3bc5748b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:79dfc0eccb38a6641b625a49ae941bd7d32c70e6c2e5843d5f647ea759b8076c&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:12ff0ea6c86d1991725cbc1c1b3a895e19bbc7254adb520a48793f2144074ef8&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:a97301eee36fa2305307cfcc7622dcca0f8f0fe9707a0860e84264bcaf51208d&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:27aba0d5aab373b244f9cad312dd5fa2cba5ea9349441de3d0e8544a84b74317&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/kube-controller-manager:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes/kube-controller-manager:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/kube-controller-manager:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/kube-controller-manager:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:16.370688&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:54:25.722581&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/kube-controller-manager:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes/kube-controller-manager:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/kube-controller-manager:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/kube-controller-manager:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes/kube-controller-manager:v1.20.4-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:54:09.351893&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef\nCopying blob sha256:5d8ffc2fe40123fb191dac4383647af77b7950015d8eb7fe241c5bac3bc5748b\nCopying blob sha256:7a58528a93531e27b49e7c9744c4196e690b6f3ae8ea7d7f3d3050780ec4d83a\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:79dfc0eccb38a6641b625a49ae941bd7d32c70e6c2e5843d5f647ea759b8076c\nCopying blob sha256:12ff0ea6c86d1991725cbc1c1b3a895e19bbc7254adb520a48793f2144074ef8\nCopying blob sha256:fa7fbf056e748a7a44ad0d987e6c24f004c0d9f71563a79c3d9f87ec998d284a\nCopying config sha256:06faedfac5e57f27ceee6e50287bfe153a61ff98838669c3daeb9f9cfa867fca\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:5d8ffc2fe40123fb191dac4383647af77b7950015d8eb7fe241c5bac3bc5748b\nCopying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef\nCopying blob sha256:7a58528a93531e27b49e7c9744c4196e690b6f3ae8ea7d7f3d3050780ec4d83a\nCopying blob sha256:79dfc0eccb38a6641b625a49ae941bd7d32c70e6c2e5843d5f647ea759b8076c\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:12ff0ea6c86d1991725cbc1c1b3a895e19bbc7254adb520a48793f2144074ef8\nCopying blob sha256:fa7fbf056e748a7a44ad0d987e6c24f004c0d9f71563a79c3d9f87ec998d284a\nCopying config sha256:06faedfac5e57f27ceee6e50287bfe153a61ff98838669c3daeb9f9cfa867fca\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:5d8ffc2fe40123fb191dac4383647af77b7950015d8eb7fe241c5bac3bc5748b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:7a58528a93531e27b49e7c9744c4196e690b6f3ae8ea7d7f3d3050780ec4d83a&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:79dfc0eccb38a6641b625a49ae941bd7d32c70e6c2e5843d5f647ea759b8076c&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:12ff0ea6c86d1991725cbc1c1b3a895e19bbc7254adb520a48793f2144074ef8&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:fa7fbf056e748a7a44ad0d987e6c24f004c0d9f71563a79c3d9f87ec998d284a&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:06faedfac5e57f27ceee6e50287bfe153a61ff98838669c3daeb9f9cfa867fca&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:5d8ffc2fe40123fb191dac4383647af77b7950015d8eb7fe241c5bac3bc5748b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:7a58528a93531e27b49e7c9744c4196e690b6f3ae8ea7d7f3d3050780ec4d83a&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:79dfc0eccb38a6641b625a49ae941bd7d32c70e6c2e5843d5f647ea759b8076c&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:12ff0ea6c86d1991725cbc1c1b3a895e19bbc7254adb520a48793f2144074ef8&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:fa7fbf056e748a7a44ad0d987e6c24f004c0d9f71563a79c3d9f87ec998d284a&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:06faedfac5e57f27ceee6e50287bfe153a61ff98838669c3daeb9f9cfa867fca&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/kube-apiserver:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes/kube-apiserver:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/kube-apiserver:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/kube-apiserver:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:18.323283&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:54:44.358920&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/kube-apiserver:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes/kube-apiserver:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/kube-apiserver:v1.20.4-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/kube-apiserver:v1.20.4-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes/kube-apiserver:v1.20.4-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:54:26.035637&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:5d8ffc2fe40123fb191dac4383647af77b7950015d8eb7fe241c5bac3bc5748b\nCopying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef\nCopying blob sha256:79dfc0eccb38a6641b625a49ae941bd7d32c70e6c2e5843d5f647ea759b8076c\nCopying blob sha256:7a58528a93531e27b49e7c9744c4196e690b6f3ae8ea7d7f3d3050780ec4d83a\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:12ff0ea6c86d1991725cbc1c1b3a895e19bbc7254adb520a48793f2144074ef8\nCopying blob sha256:6d03fe8353eebc5c2cd19b5a154f97c3360de4467e91b00ee9de1db6bfec865d\nCopying config sha256:7e0881102e55bb6063f0673610845fc7e48d650b440834f4646def90ec1ad922\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:7a58528a93531e27b49e7c9744c4196e690b6f3ae8ea7d7f3d3050780ec4d83a\nCopying blob sha256:79dfc0eccb38a6641b625a49ae941bd7d32c70e6c2e5843d5f647ea759b8076c\nCopying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef\nCopying blob sha256:5d8ffc2fe40123fb191dac4383647af77b7950015d8eb7fe241c5bac3bc5748b\nCopying blob sha256:12ff0ea6c86d1991725cbc1c1b3a895e19bbc7254adb520a48793f2144074ef8\nCopying blob sha256:6d03fe8353eebc5c2cd19b5a154f97c3360de4467e91b00ee9de1db6bfec865d\nCopying config sha256:7e0881102e55bb6063f0673610845fc7e48d650b440834f4646def90ec1ad922\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:5d8ffc2fe40123fb191dac4383647af77b7950015d8eb7fe241c5bac3bc5748b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:79dfc0eccb38a6641b625a49ae941bd7d32c70e6c2e5843d5f647ea759b8076c&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:7a58528a93531e27b49e7c9744c4196e690b6f3ae8ea7d7f3d3050780ec4d83a&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:12ff0ea6c86d1991725cbc1c1b3a895e19bbc7254adb520a48793f2144074ef8&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:6d03fe8353eebc5c2cd19b5a154f97c3360de4467e91b00ee9de1db6bfec865d&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:7e0881102e55bb6063f0673610845fc7e48d650b440834f4646def90ec1ad922&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:7a58528a93531e27b49e7c9744c4196e690b6f3ae8ea7d7f3d3050780ec4d83a&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:79dfc0eccb38a6641b625a49ae941bd7d32c70e6c2e5843d5f647ea759b8076c&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:5d8ffc2fe40123fb191dac4383647af77b7950015d8eb7fe241c5bac3bc5748b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:12ff0ea6c86d1991725cbc1c1b3a895e19bbc7254adb520a48793f2144074ef8&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:6d03fe8353eebc5c2cd19b5a154f97c3360de4467e91b00ee9de1db6bfec865d&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:7e0881102e55bb6063f0673610845fc7e48d650b440834f4646def90ec1ad922&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;ansible_loop_var&quot;</span><span class="p">:</span> <span class="s2">&quot;item&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;changed&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;cmd&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/go-runner:v0.4.2-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes/go-runner:v0.4.2-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/go-runner:v0.4.2-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/go-runner:v0.4.2-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;delta&quot;</span><span class="p">:</span> <span class="s2">&quot;0:00:11.966154&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;end&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:54:56.635165&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;failed&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;invocation&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;set -o pipefail\nset -e\nmkdir -p /etc/containers/\ncat &lt;&lt; EOF &gt; /etc/containers/policy.json\n{\n    \&quot;default\&quot;: [\n        {\n            \&quot;type\&quot;: \&quot;insecureAcceptAnything\&quot;\n        }\n    ],\n    \&quot;transports\&quot;:\n        {\n            \&quot;docker-daemon\&quot;:\n                {\n                    \&quot;\&quot;: [{\&quot;type\&quot;:\&quot;insecureAcceptAnything\&quot;}]\n                }\n        }\n}\nEOF\n#\n# In old versions of skopeo there is no sync...\n# TODO:FIXME: How the images should be pushed...\n# The whole namespace\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/go-runner:v0.4.2-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/eks-distro/kubernetes/go-runner:v0.4.2-eks-1-20-1  --dest-creds registryusername:registrypassword\n#\n# Or in the root\n#\nskopeo copy  docker://public.ecr.aws/eks-distro/kubernetes/go-runner:v0.4.2-eks-1-20-1  docker://eks-service-01.ekscluster.kubeinit.local:5000/go-runner:v0.4.2-eks-1-20-1  --dest-creds registryusername:registrypassword\n&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="s2">&quot;/bin/bash&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;item&quot;</span><span class="p">:</span> <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes/go-runner:v0.4.2-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rc&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21 13:54:44.669011&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stderr_lines&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;stdout&quot;</span><span class="p">:</span> <span class="s2">&quot;Getting image source signatures\nCopying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:5d8ffc2fe40123fb191dac4383647af77b7950015d8eb7fe241c5bac3bc5748b\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying blob sha256:7a58528a93531e27b49e7c9744c4196e690b6f3ae8ea7d7f3d3050780ec4d83a\nCopying config sha256:819b484b5bc23444938760a9e92cf2e4732ee04bae52be2ebf3b0b4bf9b15113\nWriting manifest to image destination\nStoring signatures\nGetting image source signatures\nCopying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f\nCopying blob sha256:5d8ffc2fe40123fb191dac4383647af77b7950015d8eb7fe241c5bac3bc5748b\nCopying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef\nCopying blob sha256:7a58528a93531e27b49e7c9744c4196e690b6f3ae8ea7d7f3d3050780ec4d83a\nCopying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15\nCopying config sha256:819b484b5bc23444938760a9e92cf2e4732ee04bae52be2ebf3b0b4bf9b15113\nWriting manifest to image destination\nStoring signatures&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stdout_lines&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:5d8ffc2fe40123fb191dac4383647af77b7950015d8eb7fe241c5bac3bc5748b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:7a58528a93531e27b49e7c9744c4196e690b6f3ae8ea7d7f3d3050780ec4d83a&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:819b484b5bc23444938760a9e92cf2e4732ee04bae52be2ebf3b0b4bf9b15113&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Getting image source signatures&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:3e8a3c5dab649c5a27c3758f970987f6b09ea88ccb502c80795427eac098185f&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:5d8ffc2fe40123fb191dac4383647af77b7950015d8eb7fe241c5bac3bc5748b&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:9e203f5aade0eacbe57f7ef175469dc3f1cde70bcac45ca72d96df73569772ef&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:7a58528a93531e27b49e7c9744c4196e690b6f3ae8ea7d7f3d3050780ec4d83a&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying blob sha256:b703fcc79e4a9fd918b2f975f1bb6006558ebb31c5e90bbeaeb19820a1d4ed15&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Copying config sha256:819b484b5bc23444938760a9e92cf2e4732ee04bae52be2ebf3b0b4bf9b15113&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Writing manifest to image destination&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Storing signatures&quot;</span>
+        <span class="p">]</span>
     <span class="p">}</span>
 <span class="p">]</span>
 </pre></div>

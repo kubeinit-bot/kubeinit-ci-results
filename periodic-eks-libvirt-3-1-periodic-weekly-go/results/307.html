@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 21:05:58 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 21 May 2021 09:07:51 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 21:46:02 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 21 May 2021 10:03:10 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:40:03.77
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:55:19.14
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">308 results</a>
+                            <a href="../playbooks/1.html#results">479 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">36 files</a>
+                            <a href="../playbooks/1.html#files">41 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -189,8 +189,8 @@
             <li><strong>Path</strong>: <a href="../files/34.html#line-210">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:210</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 20 May 2021 21:45:46 -0400</li>
-            <li><strong>Ended</strong>: 20 May 2021 21:45:46 -0400</li>
+            <li><strong>Started</strong>: 21 May 2021 09:50:06 -0400</li>
+            <li><strong>Ended</strong>: 21 May 2021 09:50:06 -0400</li>
             <li><strong>Duration</strong>: 00:00:00.03</li>
         </ul>
     </div>
@@ -212,9 +212,24 @@
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;kubeinit_registry_images&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;docker&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;\&quot;${ECR_BASE}/kubernetes/kube-proxy:${KUBERNETES_GIT_TAG}-${RELEASE_TAG}\&quot;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;\&quot;${ECR_BASE}/kubernetes/go-runner:${GO_RUNNER_GIT_TAG}-${RELEASE_TAG}\&quot;&quot;</span>
+        <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-csi/external-provisioner:v2.1.1-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-csi/external-snapshotter/snapshot-validation-webhook:v3.0.3-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-csi/external-snapshotter/snapshot-controller:v3.0.3-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-csi/external-snapshotter/csi-snapshotter:v3.0.3-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-sigs/metrics-server:v0.4.3-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-sigs/aws-iam-authenticator:v0.5.2-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-csi/node-driver-registrar:v2.1.0-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-csi/livenessprobe:v2.2.0-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-csi/external-resizer:v1.1.0-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes-csi/external-attacher:v3.1.0-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;public.ecr.aws/eks-distro/etcd-io/etcd:v3.4.15-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;public.ecr.aws/eks-distro/coredns/coredns:v1.8.3-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes/pause:v1.20.4-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes/kube-proxy:v1.20.4-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes/kube-scheduler:v1.20.4-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes/kube-controller-manager:v1.20.4-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes/kube-apiserver:v1.20.4-eks-1-20-1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;public.ecr.aws/eks-distro/kubernetes/go-runner:v0.4.2-eks-1-20-1&quot;</span>
     <span class="p">]</span>
 <span class="p">}</span>
 </pre></div>
