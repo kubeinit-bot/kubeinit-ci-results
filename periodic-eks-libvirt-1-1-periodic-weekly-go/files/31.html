@@ -66,16 +66,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 21:47:23 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 21 May 2021 11:54:18 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 22:13:23 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 21 May 2021 12:29:26 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:25:59.38
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:35:07.69
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -321,7 +321,9 @@
 <span class="normal"><a href="#line-133">133</a></span>
 <span class="normal"><a href="#line-134">134</a></span>
 <span class="normal"><a href="#line-135">135</a></span>
-<span class="normal"><a href="#line-136">136</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a id="line-1" name="line-1"></a><span class="nn">---</span>
+<span class="normal"><a href="#line-136">136</a></span>
+<span class="normal"><a href="#line-137">137</a></span>
+<span class="normal"><a href="#line-138">138</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a id="line-1" name="line-1"></a><span class="nn">---</span>
 </span><span id="line-2"><a id="line-2" name="line-2"></a><span class="c1"># Copyright kubeinit.com</span>
 </span><span id="line-3"><a id="line-3" name="line-3"></a><span class="c1"># All Rights Reserved.</span>
 </span><span id="line-4"><a id="line-4" name="line-4"></a><span class="c1">#</span>
@@ -385,78 +387,80 @@
 </span><span id="line-62"><a id="line-62" name="line-62"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Get</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">required</span><span class="nv"> </span><span class="s">container</span><span class="nv"> </span><span class="s">images&quot;</span>
 </span><span id="line-63"><a id="line-63" name="line-63"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
 </span><span id="line-64"><a id="line-64" name="line-64"></a>        <span class="no">set -o pipefail</span>
-</span><span id="line-65"><a id="line-65" name="line-65"></a>        <span class="no">wget https://raw.githubusercontent.com/aws/eks-distro/main/development/pull-all.sh</span>
-</span><span id="line-66"><a id="line-66" name="line-66"></a>        <span class="no">cat pull-all.sh | grep &#39;docker pull&#39; | cut -d&#39; &#39; -f3 &gt; ~/kubeinit_deployment_images.txt</span>
-</span><span id="line-67"><a id="line-67" name="line-67"></a>      <span class="nt">args</span><span class="p">:</span>
-</span><span id="line-68"><a id="line-68" name="line-68"></a>        <span class="nt">executable</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/bin/bash</span>
-</span><span id="line-69"><a id="line-69" name="line-69"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">render_images_list</span>
-</span><span id="line-70"><a id="line-70" name="line-70"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;render_images_list.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
-</span><span id="line-71"><a id="line-71" name="line-71"></a>
-</span><span id="line-72"><a id="line-72" name="line-72"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Configure a local container image registry</span>
-</span><span id="line-73"><a id="line-73" name="line-73"></a>      <span class="c1"># delegate_facts: true</span>
-</span><span id="line-74"><a id="line-74" name="line-74"></a>      <span class="nt">ansible.builtin.import_role</span><span class="p">:</span>
-</span><span id="line-75"><a id="line-75" name="line-75"></a>        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">../../roles/kubeinit_registry</span>
-</span><span id="line-76"><a id="line-76" name="line-76"></a>        <span class="nt">tasks_from</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">main</span>
-</span><span id="line-77"><a id="line-77" name="line-77"></a>      <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit_registry_enabled|bool</span>
-</span><span id="line-78"><a id="line-78" name="line-78"></a>
-</span><span id="line-79"><a id="line-79" name="line-79"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Mirror local registry</span>
-</span><span id="line-80"><a id="line-80" name="line-80"></a>      <span class="nt">ansible.builtin.import_role</span><span class="p">:</span>
-</span><span id="line-81"><a id="line-81" name="line-81"></a>        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">../../roles/kubeinit_registry</span>
-</span><span id="line-82"><a id="line-82" name="line-82"></a>        <span class="nt">tasks_from</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">20_mirror_eks.yml</span>
-</span><span id="line-83"><a id="line-83" name="line-83"></a>      <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit_registry_enabled|bool</span>
-</span><span id="line-84"><a id="line-84" name="line-84"></a>
-</span><span id="line-85"><a id="line-85" name="line-85"></a>    <span class="c1">#</span>
-</span><span id="line-86"><a id="line-86" name="line-86"></a>    <span class="c1"># Configure bind</span>
+</span><span id="line-65"><a id="line-65" name="line-65"></a>        <span class="no">git clone https://github.com/aws/eks-distro.git</span>
+</span><span id="line-66"><a id="line-66" name="line-66"></a>        <span class="no">cd eks-distro</span>
+</span><span id="line-67"><a id="line-67" name="line-67"></a>        <span class="no">./development/pull-all.sh</span>
+</span><span id="line-68"><a id="line-68" name="line-68"></a>        <span class="no">podman images | grep public.ecr.aws | awk &#39;{ print $1 &quot;:&quot; $2}&#39; &gt; ~/kubeinit_deployment_images.txt</span>
+</span><span id="line-69"><a id="line-69" name="line-69"></a>      <span class="nt">args</span><span class="p">:</span>
+</span><span id="line-70"><a id="line-70" name="line-70"></a>        <span class="nt">executable</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/bin/bash</span>
+</span><span id="line-71"><a id="line-71" name="line-71"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">render_images_list</span>
+</span><span id="line-72"><a id="line-72" name="line-72"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;render_images_list.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
+</span><span id="line-73"><a id="line-73" name="line-73"></a>
+</span><span id="line-74"><a id="line-74" name="line-74"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Configure a local container image registry</span>
+</span><span id="line-75"><a id="line-75" name="line-75"></a>      <span class="c1"># delegate_facts: true</span>
+</span><span id="line-76"><a id="line-76" name="line-76"></a>      <span class="nt">ansible.builtin.import_role</span><span class="p">:</span>
+</span><span id="line-77"><a id="line-77" name="line-77"></a>        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">../../roles/kubeinit_registry</span>
+</span><span id="line-78"><a id="line-78" name="line-78"></a>        <span class="nt">tasks_from</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">main</span>
+</span><span id="line-79"><a id="line-79" name="line-79"></a>      <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit_registry_enabled|bool</span>
+</span><span id="line-80"><a id="line-80" name="line-80"></a>
+</span><span id="line-81"><a id="line-81" name="line-81"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Mirror local registry</span>
+</span><span id="line-82"><a id="line-82" name="line-82"></a>      <span class="nt">ansible.builtin.import_role</span><span class="p">:</span>
+</span><span id="line-83"><a id="line-83" name="line-83"></a>        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">../../roles/kubeinit_registry</span>
+</span><span id="line-84"><a id="line-84" name="line-84"></a>        <span class="nt">tasks_from</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">20_mirror_eks.yml</span>
+</span><span id="line-85"><a id="line-85" name="line-85"></a>      <span class="nt">when</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">kubeinit_registry_enabled|bool</span>
+</span><span id="line-86"><a id="line-86" name="line-86"></a>
 </span><span id="line-87"><a id="line-87" name="line-87"></a>    <span class="c1">#</span>
-</span><span id="line-88"><a id="line-88" name="line-88"></a>
-</span><span id="line-89"><a id="line-89" name="line-89"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Configure Bind</span>
-</span><span id="line-90"><a id="line-90" name="line-90"></a>      <span class="c1"># delegate_facts: true</span>
-</span><span id="line-91"><a id="line-91" name="line-91"></a>      <span class="nt">ansible.builtin.import_role</span><span class="p">:</span>
-</span><span id="line-92"><a id="line-92" name="line-92"></a>        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">../../roles/kubeinit_bind</span>
-</span><span id="line-93"><a id="line-93" name="line-93"></a>        <span class="nt">tasks_from</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">main</span>
-</span><span id="line-94"><a id="line-94" name="line-94"></a>
-</span><span id="line-95"><a id="line-95" name="line-95"></a>    <span class="c1">#</span>
-</span><span id="line-96"><a id="line-96" name="line-96"></a>    <span class="c1"># Configure HAproxy</span>
+</span><span id="line-88"><a id="line-88" name="line-88"></a>    <span class="c1"># Configure bind</span>
+</span><span id="line-89"><a id="line-89" name="line-89"></a>    <span class="c1">#</span>
+</span><span id="line-90"><a id="line-90" name="line-90"></a>
+</span><span id="line-91"><a id="line-91" name="line-91"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Configure Bind</span>
+</span><span id="line-92"><a id="line-92" name="line-92"></a>      <span class="c1"># delegate_facts: true</span>
+</span><span id="line-93"><a id="line-93" name="line-93"></a>      <span class="nt">ansible.builtin.import_role</span><span class="p">:</span>
+</span><span id="line-94"><a id="line-94" name="line-94"></a>        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">../../roles/kubeinit_bind</span>
+</span><span id="line-95"><a id="line-95" name="line-95"></a>        <span class="nt">tasks_from</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">main</span>
+</span><span id="line-96"><a id="line-96" name="line-96"></a>
 </span><span id="line-97"><a id="line-97" name="line-97"></a>    <span class="c1">#</span>
-</span><span id="line-98"><a id="line-98" name="line-98"></a>
-</span><span id="line-99"><a id="line-99" name="line-99"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Configure HAProxy</span>
-</span><span id="line-100"><a id="line-100" name="line-100"></a>      <span class="c1"># delegate_facts: true</span>
-</span><span id="line-101"><a id="line-101" name="line-101"></a>      <span class="nt">ansible.builtin.import_role</span><span class="p">:</span>
-</span><span id="line-102"><a id="line-102" name="line-102"></a>        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">../../roles/kubeinit_haproxy</span>
-</span><span id="line-103"><a id="line-103" name="line-103"></a>        <span class="nt">tasks_from</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">main</span>
-</span><span id="line-104"><a id="line-104" name="line-104"></a>
-</span><span id="line-105"><a id="line-105" name="line-105"></a>    <span class="c1">#</span>
-</span><span id="line-106"><a id="line-106" name="line-106"></a>    <span class="c1"># Configure httpd</span>
+</span><span id="line-98"><a id="line-98" name="line-98"></a>    <span class="c1"># Configure HAproxy</span>
+</span><span id="line-99"><a id="line-99" name="line-99"></a>    <span class="c1">#</span>
+</span><span id="line-100"><a id="line-100" name="line-100"></a>
+</span><span id="line-101"><a id="line-101" name="line-101"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Configure HAProxy</span>
+</span><span id="line-102"><a id="line-102" name="line-102"></a>      <span class="c1"># delegate_facts: true</span>
+</span><span id="line-103"><a id="line-103" name="line-103"></a>      <span class="nt">ansible.builtin.import_role</span><span class="p">:</span>
+</span><span id="line-104"><a id="line-104" name="line-104"></a>        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">../../roles/kubeinit_haproxy</span>
+</span><span id="line-105"><a id="line-105" name="line-105"></a>        <span class="nt">tasks_from</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">main</span>
+</span><span id="line-106"><a id="line-106" name="line-106"></a>
 </span><span id="line-107"><a id="line-107" name="line-107"></a>    <span class="c1">#</span>
-</span><span id="line-108"><a id="line-108" name="line-108"></a>
-</span><span id="line-109"><a id="line-109" name="line-109"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Configure Apache</span>
-</span><span id="line-110"><a id="line-110" name="line-110"></a>      <span class="c1"># delegate_facts: true</span>
-</span><span id="line-111"><a id="line-111" name="line-111"></a>      <span class="nt">ansible.builtin.import_role</span><span class="p">:</span>
-</span><span id="line-112"><a id="line-112" name="line-112"></a>        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">../../roles/kubeinit_apache</span>
-</span><span id="line-113"><a id="line-113" name="line-113"></a>        <span class="nt">tasks_from</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">main</span>
-</span><span id="line-114"><a id="line-114" name="line-114"></a>
-</span><span id="line-115"><a id="line-115" name="line-115"></a>    <span class="c1">#</span>
-</span><span id="line-116"><a id="line-116" name="line-116"></a>    <span class="c1"># Include the install configuration</span>
+</span><span id="line-108"><a id="line-108" name="line-108"></a>    <span class="c1"># Configure httpd</span>
+</span><span id="line-109"><a id="line-109" name="line-109"></a>    <span class="c1">#</span>
+</span><span id="line-110"><a id="line-110" name="line-110"></a>
+</span><span id="line-111"><a id="line-111" name="line-111"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Configure Apache</span>
+</span><span id="line-112"><a id="line-112" name="line-112"></a>      <span class="c1"># delegate_facts: true</span>
+</span><span id="line-113"><a id="line-113" name="line-113"></a>      <span class="nt">ansible.builtin.import_role</span><span class="p">:</span>
+</span><span id="line-114"><a id="line-114" name="line-114"></a>        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">../../roles/kubeinit_apache</span>
+</span><span id="line-115"><a id="line-115" name="line-115"></a>        <span class="nt">tasks_from</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">main</span>
+</span><span id="line-116"><a id="line-116" name="line-116"></a>
 </span><span id="line-117"><a id="line-117" name="line-117"></a>    <span class="c1">#</span>
-</span><span id="line-118"><a id="line-118" name="line-118"></a>
-</span><span id="line-119"><a id="line-119" name="line-119"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Render</span><span class="nv"> </span><span class="s">root</span><span class="nv"> </span><span class="s">keys</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">service</span><span class="nv"> </span><span class="s">node&quot;</span>
-</span><span id="line-120"><a id="line-120" name="line-120"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-</span><span id="line-121"><a id="line-121" name="line-121"></a>        <span class="no">cd</span>
-</span><span id="line-122"><a id="line-122" name="line-122"></a>        <span class="no">mkdir ~/.ssh</span>
-</span><span id="line-123"><a id="line-123" name="line-123"></a>        <span class="no">ssh-keygen -t rsa -N &quot;&quot; -f .ssh/id_rsa &lt;&lt;&lt; y</span>
-</span><span id="line-124"><a id="line-124" name="line-124"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">render_service_keys</span>
-</span><span id="line-125"><a id="line-125" name="line-125"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;render_service_keys.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
-</span><span id="line-126"><a id="line-126" name="line-126"></a>
-</span><span id="line-127"><a id="line-127" name="line-127"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">get root service machine public key</span>
-</span><span id="line-128"><a id="line-128" name="line-128"></a>      <span class="nt">ansible.builtin.command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">cat /root/.ssh/id_rsa.pub</span>
-</span><span id="line-129"><a id="line-129" name="line-129"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">public_key_service_content</span>
-</span><span id="line-130"><a id="line-130" name="line-130"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;public_key_service_content.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
-</span><span id="line-131"><a id="line-131" name="line-131"></a>
-</span><span id="line-132"><a id="line-132" name="line-132"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">register the public key of the root service machine public key</span>
-</span><span id="line-133"><a id="line-133" name="line-133"></a>      <span class="nt">ansible.builtin.set_fact</span><span class="p">:</span>
-</span><span id="line-134"><a id="line-134" name="line-134"></a>        <span class="l l-Scalar l-Scalar-Plain">kubeinit_provision_service_public_key={{ public_key_service_content.stdout }}</span>
-</span><span id="line-135"><a id="line-135" name="line-135"></a>
-</span><span id="line-136"><a id="line-136" name="line-136"></a>  <span class="nt">delegate_to</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[kubeinit_deployment_node_name].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-118"><a id="line-118" name="line-118"></a>    <span class="c1"># Include the install configuration</span>
+</span><span id="line-119"><a id="line-119" name="line-119"></a>    <span class="c1">#</span>
+</span><span id="line-120"><a id="line-120" name="line-120"></a>
+</span><span id="line-121"><a id="line-121" name="line-121"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="s">&quot;Render</span><span class="nv"> </span><span class="s">root</span><span class="nv"> </span><span class="s">keys</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">service</span><span class="nv"> </span><span class="s">node&quot;</span>
+</span><span id="line-122"><a id="line-122" name="line-122"></a>      <span class="nt">ansible.builtin.shell</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+</span><span id="line-123"><a id="line-123" name="line-123"></a>        <span class="no">cd</span>
+</span><span id="line-124"><a id="line-124" name="line-124"></a>        <span class="no">mkdir ~/.ssh</span>
+</span><span id="line-125"><a id="line-125" name="line-125"></a>        <span class="no">ssh-keygen -t rsa -N &quot;&quot; -f .ssh/id_rsa &lt;&lt;&lt; y</span>
+</span><span id="line-126"><a id="line-126" name="line-126"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">render_service_keys</span>
+</span><span id="line-127"><a id="line-127" name="line-127"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;render_service_keys.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
+</span><span id="line-128"><a id="line-128" name="line-128"></a>
+</span><span id="line-129"><a id="line-129" name="line-129"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">get root service machine public key</span>
+</span><span id="line-130"><a id="line-130" name="line-130"></a>      <span class="nt">ansible.builtin.command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">cat /root/.ssh/id_rsa.pub</span>
+</span><span id="line-131"><a id="line-131" name="line-131"></a>      <span class="nt">register</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">public_key_service_content</span>
+</span><span id="line-132"><a id="line-132" name="line-132"></a>      <span class="nt">changed_when</span><span class="p">:</span> <span class="s">&quot;public_key_service_content.rc</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">0&quot;</span>
+</span><span id="line-133"><a id="line-133" name="line-133"></a>
+</span><span id="line-134"><a id="line-134" name="line-134"></a>    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">register the public key of the root service machine public key</span>
+</span><span id="line-135"><a id="line-135" name="line-135"></a>      <span class="nt">ansible.builtin.set_fact</span><span class="p">:</span>
+</span><span id="line-136"><a id="line-136" name="line-136"></a>        <span class="l l-Scalar l-Scalar-Plain">kubeinit_provision_service_public_key={{ public_key_service_content.stdout }}</span>
+</span><span id="line-137"><a id="line-137" name="line-137"></a>
+</span><span id="line-138"><a id="line-138" name="line-138"></a>  <span class="nt">delegate_to</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[kubeinit_deployment_node_name].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
 </span></pre></div>
 </td></tr></table>
     </div>

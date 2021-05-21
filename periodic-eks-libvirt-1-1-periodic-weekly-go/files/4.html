@@ -66,16 +66,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 20 May 2021 21:47:23 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 21 May 2021 11:54:18 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 20 May 2021 22:13:23 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 21 May 2021 12:29:26 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:25:59.38
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:35:07.69
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -222,7 +222,8 @@
 <span class="normal"><a href="#line-34">34</a></span>
 <span class="normal"><a href="#line-35">35</a></span>
 <span class="normal"><a href="#line-36">36</a></span>
-<span class="normal"><a href="#line-37">37</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a id="line-1" name="line-1"></a><span class="nn">---</span>
+<span class="normal"><a href="#line-37">37</a></span>
+<span class="normal"><a href="#line-38">38</a></span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span id="line-1"><a id="line-1" name="line-1"></a><span class="nn">---</span>
 </span><span id="line-2"><a id="line-2" name="line-2"></a><span class="c1"># Copyright 2020 KubeInit.</span>
 </span><span id="line-3"><a id="line-3" name="line-3"></a><span class="c1"># All Rights Reserved.</span>
 </span><span id="line-4"><a id="line-4" name="line-4"></a><span class="c1">#</span>
@@ -253,12 +254,13 @@
 </span><span id="line-29"><a id="line-29" name="line-29"></a>    <span class="nt">kubeinit_nexus_service_hostname</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[groups[&#39;all_service_nodes&#39;][0]].inventory_hostname</span><span class="nv"> </span><span class="s">}}&quot;</span>
 </span><span id="line-30"><a id="line-30" name="line-30"></a>    <span class="nt">kubeinit_nfs_service_address</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[groups[&#39;all_service_nodes&#39;][0]].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
 </span><span id="line-31"><a id="line-31" name="line-31"></a>    <span class="nt">kubeinit_registry_service_hostname</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[groups[&#39;all_service_nodes&#39;][0]].inventory_hostname</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-32"><a id="line-32" name="line-32"></a>    <span class="nt">kubeinit_services_service_address</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[groups[&#39;all_service_nodes&#39;][0]].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-33"><a id="line-33" name="line-33"></a>    <span class="nt">kubeinit_services_service_hostname</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[groups[&#39;all_service_nodes&#39;][0]].inventory_hostname</span><span class="nv"> </span><span class="s">}}&quot;</span>
-</span><span id="line-34"><a id="line-34" name="line-34"></a>    <span class="nt">kubeinit_services_pod_name</span><span class="p">:</span> <span class="s">&quot;kubeinit-service-pod&quot;</span>
-</span><span id="line-35"><a id="line-35" name="line-35"></a>    <span class="nt">kubeinit_service_user</span><span class="p">:</span> <span class="s">&quot;root&quot;</span>
-</span><span id="line-36"><a id="line-36" name="line-36"></a>    <span class="nt">kubeinit_service_user_dir</span><span class="p">:</span> <span class="s">&quot;/root&quot;</span>
-</span><span id="line-37"><a id="line-37" name="line-37"></a>    <span class="nt">kubeinit_ingress_hostname</span><span class="p">:</span> <span class="s">&quot;ingress&quot;</span>
+</span><span id="line-32"><a id="line-32" name="line-32"></a>    <span class="nt">kubeinit_registry_service_address</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[groups[&#39;all_service_nodes&#39;][0]].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-33"><a id="line-33" name="line-33"></a>    <span class="nt">kubeinit_services_service_address</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[groups[&#39;all_service_nodes&#39;][0]].ansible_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-34"><a id="line-34" name="line-34"></a>    <span class="nt">kubeinit_services_service_hostname</span><span class="p">:</span> <span class="s">&quot;{{</span><span class="nv"> </span><span class="s">hostvars[groups[&#39;all_service_nodes&#39;][0]].inventory_hostname</span><span class="nv"> </span><span class="s">}}&quot;</span>
+</span><span id="line-35"><a id="line-35" name="line-35"></a>    <span class="nt">kubeinit_services_pod_name</span><span class="p">:</span> <span class="s">&quot;kubeinit-service-pod&quot;</span>
+</span><span id="line-36"><a id="line-36" name="line-36"></a>    <span class="nt">kubeinit_service_user</span><span class="p">:</span> <span class="s">&quot;root&quot;</span>
+</span><span id="line-37"><a id="line-37" name="line-37"></a>    <span class="nt">kubeinit_service_user_dir</span><span class="p">:</span> <span class="s">&quot;/root&quot;</span>
+</span><span id="line-38"><a id="line-38" name="line-38"></a>    <span class="nt">kubeinit_ingress_hostname</span><span class="p">:</span> <span class="s">&quot;ingress&quot;</span>
 </span></pre></div>
 </td></tr></table>
     </div>
