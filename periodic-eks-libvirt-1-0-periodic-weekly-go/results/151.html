@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -48,15 +48,15 @@
 
 
 
-<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-danger pf-m-inline">
+<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-success pf-m-inline">
 
     <ul class="pf-c-data-list" role="list">
         <li class="pf-c-data-list__item">
             <div class="pf-c-data-list__item-row">
                 <div class="pf-c-data-list__item-control pf-m-fit-content">
                     
-<div class="pf-c-alert__icon" title="Playbook completed with errors">
-    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+<div class="pf-c-alert__icon" title="Playbook completed successfully">
+    <i class="fas fa-check-circle" aria-hidden="true"></i>
 </div>
 
                 </div>
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 17 May 2021 10:13:42 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 21 May 2021 12:30:34 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 17 May 2021 10:33:34 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 21 May 2021 13:00:28 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:19:51.74
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:29:54.56
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">247 results</a>
+                            <a href="../playbooks/1.html#results">351 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">39 files</a>
+                            <a href="../playbooks/1.html#files">43 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -186,12 +186,12 @@
         <ul class="pf-c-list">
             <li><strong>Task</strong>: Gathering Facts</a></li>
             <li><strong>Action</strong>: gather_facts</li>
-            <li><strong>Path</strong>: <a href="../files/1.html#line-53">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml:53</a>
+            <li><strong>Path</strong>: <a href="../files/1.html#line-54">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml:54</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 17 May 2021 10:14:31 -0400</li>
-            <li><strong>Ended</strong>: 17 May 2021 10:14:32 -0400</li>
-            <li><strong>Duration</strong>: 00:00:00.71</li>
+            <li><strong>Started</strong>: 21 May 2021 12:31:28 -0400</li>
+            <li><strong>Ended</strong>: 21 May 2021 12:31:29 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.68</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -216,10 +216,8 @@
         <span class="s2">&quot;10.0.0.254&quot;</span>
     <span class="p">],</span>
     <span class="nt">&quot;ansible_all_ipv6_addresses&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;fe80::3efd:feff:fe61:7112&quot;</span><span class="p">,</span>
         <span class="s2">&quot;fe80::20a:f7ff:fec8:4a80&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;fe80::20a:f7ff:fec8:4a81&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;fe80::3efd:feff:fe61:7110&quot;</span>
+        <span class="s2">&quot;fe80::20a:f7ff:fec8:4a81&quot;</span>
     <span class="p">],</span>
     <span class="nt">&quot;ansible_apparmor&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;disabled&quot;</span>
@@ -245,22 +243,22 @@
         <span class="nt">&quot;rootflags&quot;</span><span class="p">:</span> <span class="s2">&quot;subvol=root&quot;</span>
     <span class="p">},</span>
     <span class="nt">&quot;ansible_date_time&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;date&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;day&quot;</span><span class="p">:</span> <span class="s2">&quot;17&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;epoch&quot;</span><span class="p">:</span> <span class="s2">&quot;1621260871&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;hour&quot;</span><span class="p">:</span> <span class="s2">&quot;10&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;iso8601&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17T14:14:31Z&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;iso8601_basic&quot;</span><span class="p">:</span> <span class="s2">&quot;20210517T101431897329&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;iso8601_basic_short&quot;</span><span class="p">:</span> <span class="s2">&quot;20210517T101431&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;iso8601_micro&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-17T14:14:31.897329Z&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;minute&quot;</span><span class="p">:</span> <span class="s2">&quot;14&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;date&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;day&quot;</span><span class="p">:</span> <span class="s2">&quot;21&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;epoch&quot;</span><span class="p">:</span> <span class="s2">&quot;1621614688&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;hour&quot;</span><span class="p">:</span> <span class="s2">&quot;12&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;iso8601&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21T16:31:28Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;iso8601_basic&quot;</span><span class="p">:</span> <span class="s2">&quot;20210521T123128793541&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;iso8601_basic_short&quot;</span><span class="p">:</span> <span class="s2">&quot;20210521T123128&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;iso8601_micro&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21T16:31:28.793541Z&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;minute&quot;</span><span class="p">:</span> <span class="s2">&quot;31&quot;</span><span class="p">,</span>
         <span class="nt">&quot;month&quot;</span><span class="p">:</span> <span class="s2">&quot;05&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;second&quot;</span><span class="p">:</span> <span class="s2">&quot;31&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;time&quot;</span><span class="p">:</span> <span class="s2">&quot;10:14:31&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;second&quot;</span><span class="p">:</span> <span class="s2">&quot;28&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;time&quot;</span><span class="p">:</span> <span class="s2">&quot;12:31:28&quot;</span><span class="p">,</span>
         <span class="nt">&quot;tz&quot;</span><span class="p">:</span> <span class="s2">&quot;EDT&quot;</span><span class="p">,</span>
         <span class="nt">&quot;tz_offset&quot;</span><span class="p">:</span> <span class="s2">&quot;-0400&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;weekday&quot;</span><span class="p">:</span> <span class="s2">&quot;Monday&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;weekday_number&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;weekday&quot;</span><span class="p">:</span> <span class="s2">&quot;Friday&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;weekday_number&quot;</span><span class="p">:</span> <span class="s2">&quot;5&quot;</span><span class="p">,</span>
         <span class="nt">&quot;weeknumber&quot;</span><span class="p">:</span> <span class="s2">&quot;20&quot;</span><span class="p">,</span>
         <span class="nt">&quot;year&quot;</span><span class="p">:</span> <span class="s2">&quot;2021&quot;</span>
     <span class="p">},</span>
@@ -564,13 +562,6 @@
     <span class="nt">&quot;ansible_ens4f0&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;ens4f0&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;ipv6&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;fe80::3efd:feff:fe61:7110&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;prefix&quot;</span><span class="p">:</span> <span class="s2">&quot;64&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;scope&quot;</span><span class="p">:</span> <span class="s2">&quot;link&quot;</span>
-            <span class="p">}</span>
-        <span class="p">],</span>
         <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;3c:fd:fe:61:71:10&quot;</span><span class="p">,</span>
         <span class="nt">&quot;module&quot;</span><span class="p">:</span> <span class="s2">&quot;i40e&quot;</span><span class="p">,</span>
         <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span>
@@ -582,13 +573,6 @@
     <span class="nt">&quot;ansible_ens4f1&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;ens4f1&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;ipv6&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;fe80::3efd:feff:fe61:7112&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;prefix&quot;</span><span class="p">:</span> <span class="s2">&quot;64&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;scope&quot;</span><span class="p">:</span> <span class="s2">&quot;link&quot;</span>
-            <span class="p">}</span>
-        <span class="p">],</span>
         <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;3c:fd:fe:61:71:12&quot;</span><span class="p">,</span>
         <span class="nt">&quot;module&quot;</span><span class="p">:</span> <span class="s2">&quot;i40e&quot;</span><span class="p">,</span>
         <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span>
@@ -627,19 +611,19 @@
     <span class="nt">&quot;ansible_hostname&quot;</span><span class="p">:</span> <span class="s2">&quot;dell-r740-001&quot;</span><span class="p">,</span>
     <span class="nt">&quot;ansible_hostnqn&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
     <span class="nt">&quot;ansible_interfaces&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;eno1&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;kimgtbr0-nic&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;lo&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;ens4f0&quot;</span><span class="p">,</span>
         <span class="s2">&quot;eno3&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;ens4f2&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;kimgtbr0&quot;</span><span class="p">,</span>
         <span class="s2">&quot;eno2&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;eno1&quot;</span><span class="p">,</span>
         <span class="s2">&quot;ens4f3&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;ens4f1&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;eno4&quot;</span><span class="p">,</span>
         <span class="s2">&quot;ens1f1np1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;eno4&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;kimgtbr0-nic&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;ens4f1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;lo&quot;</span><span class="p">,</span>
         <span class="s2">&quot;ens1f0np0&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;ens4f0&quot;</span>
+        <span class="s2">&quot;ens4f2&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;kimgtbr0&quot;</span>
     <span class="p">],</span>
     <span class="nt">&quot;ansible_is_chroot&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
     <span class="nt">&quot;ansible_iscsi_iqn&quot;</span><span class="p">:</span> <span class="s2">&quot;iqn.1994-05.com.redhat:22d38ad52841&quot;</span><span class="p">,</span>
@@ -648,7 +632,7 @@
     <span class="nt">&quot;ansible_kimgtbr0&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;kimgtbr0&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;8000.52540051c6d3&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;8000.525400fb5f43&quot;</span><span class="p">,</span>
         <span class="nt">&quot;interfaces&quot;</span><span class="p">:</span> <span class="p">[</span>
             <span class="s2">&quot;kimgtbr0-nic&quot;</span>
         <span class="p">],</span>
@@ -658,7 +642,7 @@
             <span class="nt">&quot;netmask&quot;</span><span class="p">:</span> <span class="s2">&quot;255.255.255.0&quot;</span><span class="p">,</span>
             <span class="nt">&quot;network&quot;</span><span class="p">:</span> <span class="s2">&quot;10.0.0.0&quot;</span>
         <span class="p">},</span>
-        <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;52:54:00:51:c6:d3&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;52:54:00:fb:5f:43&quot;</span><span class="p">,</span>
         <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span>
         <span class="nt">&quot;promisc&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
@@ -668,7 +652,7 @@
     <span class="nt">&quot;ansible_kimgtbr0_nic&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;active&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;kimgtbr0-nic&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;52:54:00:51:c6:d3&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;macaddress&quot;</span><span class="p">:</span> <span class="s2">&quot;52:54:00:fb:5f:43&quot;</span><span class="p">,</span>
         <span class="nt">&quot;mtu&quot;</span><span class="p">:</span> <span class="mi">1500</span><span class="p">,</span>
         <span class="nt">&quot;promisc&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
         <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;ether&quot;</span>
@@ -695,16 +679,16 @@
     <span class="p">},</span>
     <span class="nt">&quot;ansible_machine&quot;</span><span class="p">:</span> <span class="s2">&quot;x86_64&quot;</span><span class="p">,</span>
     <span class="nt">&quot;ansible_machine_id&quot;</span><span class="p">:</span> <span class="s2">&quot;cc597211800e4ddfa2c3be9ac2790bd8&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;ansible_memfree_mb&quot;</span><span class="p">:</span> <span class="mi">378226</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_memfree_mb&quot;</span><span class="p">:</span> <span class="mi">377000</span><span class="p">,</span>
     <span class="nt">&quot;ansible_memory_mb&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;nocache&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;free&quot;</span><span class="p">:</span> <span class="mi">383307</span><span class="p">,</span>
-            <span class="nt">&quot;used&quot;</span><span class="p">:</span> <span class="mi">2330</span>
+            <span class="nt">&quot;free&quot;</span><span class="p">:</span> <span class="mi">382863</span><span class="p">,</span>
+            <span class="nt">&quot;used&quot;</span><span class="p">:</span> <span class="mi">2774</span>
         <span class="p">},</span>
         <span class="nt">&quot;real&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;free&quot;</span><span class="p">:</span> <span class="mi">378226</span><span class="p">,</span>
+            <span class="nt">&quot;free&quot;</span><span class="p">:</span> <span class="mi">377000</span><span class="p">,</span>
             <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="mi">385637</span><span class="p">,</span>
-            <span class="nt">&quot;used&quot;</span><span class="p">:</span> <span class="mi">7411</span>
+            <span class="nt">&quot;used&quot;</span><span class="p">:</span> <span class="mi">8637</span>
         <span class="p">},</span>
         <span class="nt">&quot;swap&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;cached&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
@@ -716,10 +700,10 @@
     <span class="nt">&quot;ansible_memtotal_mb&quot;</span><span class="p">:</span> <span class="mi">385637</span><span class="p">,</span>
     <span class="nt">&quot;ansible_mounts&quot;</span><span class="p">:</span> <span class="p">[</span>
         <span class="p">{</span>
-            <span class="nt">&quot;block_available&quot;</span><span class="p">:</span> <span class="mi">729525088</span><span class="p">,</span>
+            <span class="nt">&quot;block_available&quot;</span><span class="p">:</span> <span class="mi">729304616</span><span class="p">,</span>
             <span class="nt">&quot;block_size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span>
             <span class="nt">&quot;block_total&quot;</span><span class="p">:</span> <span class="mi">731610368</span><span class="p">,</span>
-            <span class="nt">&quot;block_used&quot;</span><span class="p">:</span> <span class="mi">2085280</span><span class="p">,</span>
+            <span class="nt">&quot;block_used&quot;</span><span class="p">:</span> <span class="mi">2305752</span><span class="p">,</span>
             <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;/dev/sda2&quot;</span><span class="p">,</span>
             <span class="nt">&quot;fstype&quot;</span><span class="p">:</span> <span class="s2">&quot;btrfs&quot;</span><span class="p">,</span>
             <span class="nt">&quot;inode_available&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
@@ -727,15 +711,15 @@
             <span class="nt">&quot;inode_used&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
             <span class="nt">&quot;mount&quot;</span><span class="p">:</span> <span class="s2">&quot;/&quot;</span><span class="p">,</span>
             <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;rw,relatime,space_cache,subvolid=258,subvol=/root,bind&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;size_available&quot;</span><span class="p">:</span> <span class="mi">2988134760448</span><span class="p">,</span>
+            <span class="nt">&quot;size_available&quot;</span><span class="p">:</span> <span class="mi">2987231707136</span><span class="p">,</span>
             <span class="nt">&quot;size_total&quot;</span><span class="p">:</span> <span class="mi">2996676067328</span><span class="p">,</span>
             <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;9bd1fc79-1b55-4fbe-b052-858e76150a89&quot;</span>
         <span class="p">},</span>
         <span class="p">{</span>
-            <span class="nt">&quot;block_available&quot;</span><span class="p">:</span> <span class="mi">729525088</span><span class="p">,</span>
+            <span class="nt">&quot;block_available&quot;</span><span class="p">:</span> <span class="mi">729304616</span><span class="p">,</span>
             <span class="nt">&quot;block_size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span>
             <span class="nt">&quot;block_total&quot;</span><span class="p">:</span> <span class="mi">731610368</span><span class="p">,</span>
-            <span class="nt">&quot;block_used&quot;</span><span class="p">:</span> <span class="mi">2085280</span><span class="p">,</span>
+            <span class="nt">&quot;block_used&quot;</span><span class="p">:</span> <span class="mi">2305752</span><span class="p">,</span>
             <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;/dev/sda2&quot;</span><span class="p">,</span>
             <span class="nt">&quot;fstype&quot;</span><span class="p">:</span> <span class="s2">&quot;btrfs&quot;</span><span class="p">,</span>
             <span class="nt">&quot;inode_available&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
@@ -743,23 +727,23 @@
             <span class="nt">&quot;inode_used&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
             <span class="nt">&quot;mount&quot;</span><span class="p">:</span> <span class="s2">&quot;/home&quot;</span><span class="p">,</span>
             <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;rw,relatime,space_cache,subvolid=256,subvol=/home,bind&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;size_available&quot;</span><span class="p">:</span> <span class="mi">2988134760448</span><span class="p">,</span>
+            <span class="nt">&quot;size_available&quot;</span><span class="p">:</span> <span class="mi">2987231707136</span><span class="p">,</span>
             <span class="nt">&quot;size_total&quot;</span><span class="p">:</span> <span class="mi">2996676067328</span><span class="p">,</span>
             <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;9bd1fc79-1b55-4fbe-b052-858e76150a89&quot;</span>
         <span class="p">},</span>
         <span class="p">{</span>
-            <span class="nt">&quot;block_available&quot;</span><span class="p">:</span> <span class="mi">194285</span><span class="p">,</span>
+            <span class="nt">&quot;block_available&quot;</span><span class="p">:</span> <span class="mi">185627</span><span class="p">,</span>
             <span class="nt">&quot;block_size&quot;</span><span class="p">:</span> <span class="mi">4096</span><span class="p">,</span>
             <span class="nt">&quot;block_total&quot;</span><span class="p">:</span> <span class="mi">249830</span><span class="p">,</span>
-            <span class="nt">&quot;block_used&quot;</span><span class="p">:</span> <span class="mi">55545</span><span class="p">,</span>
+            <span class="nt">&quot;block_used&quot;</span><span class="p">:</span> <span class="mi">64203</span><span class="p">,</span>
             <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;/dev/sda1&quot;</span><span class="p">,</span>
             <span class="nt">&quot;fstype&quot;</span><span class="p">:</span> <span class="s2">&quot;ext4&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;inode_available&quot;</span><span class="p">:</span> <span class="mi">65104</span><span class="p">,</span>
+            <span class="nt">&quot;inode_available&quot;</span><span class="p">:</span> <span class="mi">65098</span><span class="p">,</span>
             <span class="nt">&quot;inode_total&quot;</span><span class="p">:</span> <span class="mi">65536</span><span class="p">,</span>
-            <span class="nt">&quot;inode_used&quot;</span><span class="p">:</span> <span class="mi">432</span><span class="p">,</span>
+            <span class="nt">&quot;inode_used&quot;</span><span class="p">:</span> <span class="mi">438</span><span class="p">,</span>
             <span class="nt">&quot;mount&quot;</span><span class="p">:</span> <span class="s2">&quot;/boot&quot;</span><span class="p">,</span>
             <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;rw,relatime&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;size_available&quot;</span><span class="p">:</span> <span class="mi">795791360</span><span class="p">,</span>
+            <span class="nt">&quot;size_available&quot;</span><span class="p">:</span> <span class="mi">760328192</span><span class="p">,</span>
             <span class="nt">&quot;size_total&quot;</span><span class="p">:</span> <span class="mi">1023303680</span><span class="p">,</span>
             <span class="nt">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;ed91f1ee-91fe-4475-b016-84ecd0282526&quot;</span>
         <span class="p">}</span>
@@ -1016,7 +1000,7 @@
     <span class="nt">&quot;ansible_system_capabilities&quot;</span><span class="p">:</span> <span class="p">[],</span>
     <span class="nt">&quot;ansible_system_capabilities_enforced&quot;</span><span class="p">:</span> <span class="s2">&quot;False&quot;</span><span class="p">,</span>
     <span class="nt">&quot;ansible_system_vendor&quot;</span><span class="p">:</span> <span class="s2">&quot;Dell Inc.&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;ansible_uptime_seconds&quot;</span><span class="p">:</span> <span class="mi">173410</span><span class="p">,</span>
+    <span class="nt">&quot;ansible_uptime_seconds&quot;</span><span class="p">:</span> <span class="mi">527227</span><span class="p">,</span>
     <span class="nt">&quot;ansible_user_dir&quot;</span><span class="p">:</span> <span class="s2">&quot;/root&quot;</span><span class="p">,</span>
     <span class="nt">&quot;ansible_user_gecos&quot;</span><span class="p">:</span> <span class="s2">&quot;root&quot;</span><span class="p">,</span>
     <span class="nt">&quot;ansible_user_gid&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
