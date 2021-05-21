@@ -48,15 +48,15 @@
 
 
 
-<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-danger pf-m-inline">
+<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-success pf-m-inline">
 
     <ul class="pf-c-data-list" role="list">
         <li class="pf-c-data-list__item">
             <div class="pf-c-data-list__item-row">
                 <div class="pf-c-data-list__item-control pf-m-fit-content">
                     
-<div class="pf-c-alert__icon" title="Playbook completed with errors">
-    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+<div class="pf-c-alert__icon" title="Playbook completed successfully">
+    <i class="fas fa-check-circle" aria-hidden="true"></i>
 </div>
 
                 </div>
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 21 May 2021 09:07:51 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 21 May 2021 10:49:51 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 21 May 2021 10:03:10 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 21 May 2021 11:51:49 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:55:19.14
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 01:01:58.42
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">479 results</a>
+                            <a href="../playbooks/1.html#results">558 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">41 files</a>
+                            <a href="../playbooks/1.html#files">44 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -189,9 +189,9 @@
             <li><strong>Path</strong>: <a href="../files/28.html#line-50">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_libvirt/tasks/60_k8s_deploy_nodes.yml:50</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 21 May 2021 09:16:08 -0400</li>
-            <li><strong>Ended</strong>: 21 May 2021 09:16:35 -0400</li>
-            <li><strong>Duration</strong>: 00:00:27.40</li>
+            <li><strong>Started</strong>: 21 May 2021 10:58:08 -0400</li>
+            <li><strong>Ended</strong>: 21 May 2021 10:58:36 -0400</li>
+            <li><strong>Duration</strong>: 00:00:27.73</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -232,7 +232,7 @@
                         <a href="#delta">delta</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:00:27.186020
+                        <div class="codehilite"><pre><span></span>0:00:27.512717
 </pre></div>
 
                     </td>
@@ -243,7 +243,7 @@
                         <a href="#end">end</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-21 09:16:35.386197
+                        <div class="codehilite"><pre><span></span>2021-05-21 10:58:36.387027
 </pre></div>
 
                     </td>
@@ -290,7 +290,7 @@
                         <a href="#start">start</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-05-21 09:16:08.200177
+                        <div class="codehilite"><pre><span></span>2021-05-21 10:58:08.874310
 </pre></div>
 
                     </td>
@@ -324,22 +324,22 @@
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span>[   0.0] Examining the guest ...
-[   4.6] Setting a random seed
-[   4.7] Setting the machine ID in /etc/machine-id
-[   4.7] Installing packages: python3
-[  11.8] Running: sed -i &#39;s/PasswordAuthentication no/PasswordAuthentication yes/g&#39; /etc/ssh/sshd_config
-[  11.8] Running: id -u toor &amp;&gt;/dev/null || /usr/sbin/useradd -u 1000 toor
-[  12.2] Running: sed -i s/^SELINUX=.*$/SELINUX=disabled/g /etc/selinux/config
-[  12.2] SSH key inject: toor
-[  13.3] SSH key inject: root
-[  14.2] Running: echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYWNjkSfVT1mFHsPSx4rHF81QfAwFTcoSzBYDoRjTdRvygS+iJDmG0KVdRD72Q/xBnx8MhrB+kNZaEx5SSqqzHc8KBrb+x4jYTAJhkSb2n/Msj/PvT3pZjUWhxOCuMvMp9tDmcN1BcwNb7A8FVFAAssV7rMzs2TauVLZk+BzDAU9XJ657aOJZgOXRQ/dOC6es55Q/AkfTM5Q07WbV0VHoPKMdxLXfiZNG7OcGpLrVRUrwEq0F9L0b032dOxQc1N/Xl4LudeE4OECrxyeQletlL4HALNryUkBLFAC+xVWe76Rf83pIK1W7jDb1CgS0wCXAZfwCH7Tig+QStJfSMhjSICWEc3cx9RbJ2WyhuJgM/HN4990mM+112MjwW8DnXfumSM6+g0dAVYfFZHZRLtji1/Iv0Rh3Myoq/QjhJ5A6VaIQ56WmdBc2Nl5rsJ82CjMFXuyC/zZ5sPzh++mAWZjGN+4pZCNMa0OinZhE+8C/DVfgNM2tbnAnBJNdQ0gNS0GDdMxSs9GewS0PByJO7T3HYbLK1o7HO9rdyqB6jtDiUXd+FKhZBDvXhyiKuYX7AZzDe7XYPM/SOru69X9y/zrbhShoBjVM6SpinivVdLz6Mk4zGb+30cp8Kw19VEAG0cRR3eEqqPajnkLMatQJRQ0X/lT0QY//CKKD0X51G/LRksw==  &gt;&gt; /root/.ssh/authorized_keys
-[  14.2] Setting the hostname: eks-master-01.ekscluster.kubeinit.local
-[  14.2] Copying: /tmp/eks-master-01/ifcfg-eth0 to /etc/sysconfig/network-scripts
-[  14.2] Copying: /tmp/eks-master-01/hosts.redhat.tmpl to /etc/cloud/templates
-[  14.2] Copying: /tmp/eks-master-01/cloud.cfg to /etc/cloud
-[  14.3] Setting passwords
-[  15.3] SELinux relabelling
-[  26.9] Finishing off
+[   4.9] Setting a random seed
+[   5.0] Setting the machine ID in /etc/machine-id
+[   5.0] Installing packages: python3
+[  12.3] Running: sed -i &#39;s/PasswordAuthentication no/PasswordAuthentication yes/g&#39; /etc/ssh/sshd_config
+[  12.3] Running: id -u toor &amp;&gt;/dev/null || /usr/sbin/useradd -u 1000 toor
+[  12.7] Running: sed -i s/^SELINUX=.*$/SELINUX=disabled/g /etc/selinux/config
+[  12.7] SSH key inject: toor
+[  13.8] SSH key inject: root
+[  14.7] Running: echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYWNjkSfVT1mFHsPSx4rHF81QfAwFTcoSzBYDoRjTdRvygS+iJDmG0KVdRD72Q/xBnx8MhrB+kNZaEx5SSqqzHc8KBrb+x4jYTAJhkSb2n/Msj/PvT3pZjUWhxOCuMvMp9tDmcN1BcwNb7A8FVFAAssV7rMzs2TauVLZk+BzDAU9XJ657aOJZgOXRQ/dOC6es55Q/AkfTM5Q07WbV0VHoPKMdxLXfiZNG7OcGpLrVRUrwEq0F9L0b032dOxQc1N/Xl4LudeE4OECrxyeQletlL4HALNryUkBLFAC+xVWe76Rf83pIK1W7jDb1CgS0wCXAZfwCH7Tig+QStJfSMhjSICWEc3cx9RbJ2WyhuJgM/HN4990mM+112MjwW8DnXfumSM6+g0dAVYfFZHZRLtji1/Iv0Rh3Myoq/QjhJ5A6VaIQ56WmdBc2Nl5rsJ82CjMFXuyC/zZ5sPzh++mAWZjGN+4pZCNMa0OinZhE+8C/DVfgNM2tbnAnBJNdQ0gNS0GDdMxSs9GewS0PByJO7T3HYbLK1o7HO9rdyqB6jtDiUXd+FKhZBDvXhyiKuYX7AZzDe7XYPM/SOru69X9y/zrbhShoBjVM6SpinivVdLz6Mk4zGb+30cp8Kw19VEAG0cRR3eEqqPajnkLMatQJRQ0X/lT0QY//CKKD0X51G/LRksw==  &gt;&gt; /root/.ssh/authorized_keys
+[  14.7] Setting the hostname: eks-master-01.ekscluster.kubeinit.local
+[  14.7] Copying: /tmp/eks-master-01/ifcfg-eth0 to /etc/sysconfig/network-scripts
+[  14.7] Copying: /tmp/eks-master-01/hosts.redhat.tmpl to /etc/cloud/templates
+[  14.7] Copying: /tmp/eks-master-01/cloud.cfg to /etc/cloud
+[  14.8] Setting passwords
+[  15.7] SELinux relabelling
+[  27.2] Finishing off
 </pre></div>
 
                     </td>
@@ -352,22 +352,22 @@
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
     <span class="s2">&quot;[   0.0] Examining the guest ...&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[   4.6] Setting a random seed&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[   4.7] Setting the machine ID in /etc/machine-id&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[   4.7] Installing packages: python3&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[  11.8] Running: sed -i &#39;s/PasswordAuthentication no/PasswordAuthentication yes/g&#39; /etc/ssh/sshd_config&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[  11.8] Running: id -u toor &amp;&gt;/dev/null || /usr/sbin/useradd -u 1000 toor&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[  12.2] Running: sed -i s/^SELINUX=.*$/SELINUX=disabled/g /etc/selinux/config&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[  12.2] SSH key inject: toor&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[  13.3] SSH key inject: root&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[  14.2] Running: echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYWNjkSfVT1mFHsPSx4rHF81QfAwFTcoSzBYDoRjTdRvygS+iJDmG0KVdRD72Q/xBnx8MhrB+kNZaEx5SSqqzHc8KBrb+x4jYTAJhkSb2n/Msj/PvT3pZjUWhxOCuMvMp9tDmcN1BcwNb7A8FVFAAssV7rMzs2TauVLZk+BzDAU9XJ657aOJZgOXRQ/dOC6es55Q/AkfTM5Q07WbV0VHoPKMdxLXfiZNG7OcGpLrVRUrwEq0F9L0b032dOxQc1N/Xl4LudeE4OECrxyeQletlL4HALNryUkBLFAC+xVWe76Rf83pIK1W7jDb1CgS0wCXAZfwCH7Tig+QStJfSMhjSICWEc3cx9RbJ2WyhuJgM/HN4990mM+112MjwW8DnXfumSM6+g0dAVYfFZHZRLtji1/Iv0Rh3Myoq/QjhJ5A6VaIQ56WmdBc2Nl5rsJ82CjMFXuyC/zZ5sPzh++mAWZjGN+4pZCNMa0OinZhE+8C/DVfgNM2tbnAnBJNdQ0gNS0GDdMxSs9GewS0PByJO7T3HYbLK1o7HO9rdyqB6jtDiUXd+FKhZBDvXhyiKuYX7AZzDe7XYPM/SOru69X9y/zrbhShoBjVM6SpinivVdLz6Mk4zGb+30cp8Kw19VEAG0cRR3eEqqPajnkLMatQJRQ0X/lT0QY//CKKD0X51G/LRksw==  &gt;&gt; /root/.ssh/authorized_keys&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[  14.2] Setting the hostname: eks-master-01.ekscluster.kubeinit.local&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[  14.2] Copying: /tmp/eks-master-01/ifcfg-eth0 to /etc/sysconfig/network-scripts&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[  14.2] Copying: /tmp/eks-master-01/hosts.redhat.tmpl to /etc/cloud/templates&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[  14.2] Copying: /tmp/eks-master-01/cloud.cfg to /etc/cloud&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[  14.3] Setting passwords&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[  15.3] SELinux relabelling&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[  26.9] Finishing off&quot;</span>
+    <span class="s2">&quot;[   4.9] Setting a random seed&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   5.0] Setting the machine ID in /etc/machine-id&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[   5.0] Installing packages: python3&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  12.3] Running: sed -i &#39;s/PasswordAuthentication no/PasswordAuthentication yes/g&#39; /etc/ssh/sshd_config&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  12.3] Running: id -u toor &amp;&gt;/dev/null || /usr/sbin/useradd -u 1000 toor&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  12.7] Running: sed -i s/^SELINUX=.*$/SELINUX=disabled/g /etc/selinux/config&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  12.7] SSH key inject: toor&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  13.8] SSH key inject: root&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  14.7] Running: echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYWNjkSfVT1mFHsPSx4rHF81QfAwFTcoSzBYDoRjTdRvygS+iJDmG0KVdRD72Q/xBnx8MhrB+kNZaEx5SSqqzHc8KBrb+x4jYTAJhkSb2n/Msj/PvT3pZjUWhxOCuMvMp9tDmcN1BcwNb7A8FVFAAssV7rMzs2TauVLZk+BzDAU9XJ657aOJZgOXRQ/dOC6es55Q/AkfTM5Q07WbV0VHoPKMdxLXfiZNG7OcGpLrVRUrwEq0F9L0b032dOxQc1N/Xl4LudeE4OECrxyeQletlL4HALNryUkBLFAC+xVWe76Rf83pIK1W7jDb1CgS0wCXAZfwCH7Tig+QStJfSMhjSICWEc3cx9RbJ2WyhuJgM/HN4990mM+112MjwW8DnXfumSM6+g0dAVYfFZHZRLtji1/Iv0Rh3Myoq/QjhJ5A6VaIQ56WmdBc2Nl5rsJ82CjMFXuyC/zZ5sPzh++mAWZjGN+4pZCNMa0OinZhE+8C/DVfgNM2tbnAnBJNdQ0gNS0GDdMxSs9GewS0PByJO7T3HYbLK1o7HO9rdyqB6jtDiUXd+FKhZBDvXhyiKuYX7AZzDe7XYPM/SOru69X9y/zrbhShoBjVM6SpinivVdLz6Mk4zGb+30cp8Kw19VEAG0cRR3eEqqPajnkLMatQJRQ0X/lT0QY//CKKD0X51G/LRksw==  &gt;&gt; /root/.ssh/authorized_keys&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  14.7] Setting the hostname: eks-master-01.ekscluster.kubeinit.local&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  14.7] Copying: /tmp/eks-master-01/ifcfg-eth0 to /etc/sysconfig/network-scripts&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  14.7] Copying: /tmp/eks-master-01/hosts.redhat.tmpl to /etc/cloud/templates&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  14.7] Copying: /tmp/eks-master-01/cloud.cfg to /etc/cloud&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  14.8] Setting passwords&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  15.7] SELinux relabelling&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;[  27.2] Finishing off&quot;</span>
 <span class="p">]</span>
 </pre></div>
 

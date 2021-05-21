@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../static/css/patternfly.min.css">
     <link rel="stylesheet" href="../static/css/ara.css">
     
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/favicon.ico">
     
     
 </head>
@@ -18,7 +18,7 @@
         <header role="banner" class="pf-c-page__header">
             <div class="pf-c-page__header-brand">
                 <a class="pf-c-page__header-brand-link" href="../">
-                    <img class="pf-c-brand" src="../static/images/logo.svg" alt="KubeInit job report">
+                    <img class="pf-c-brand" src="https://raw.githubusercontent.com/Kubeinit/kubeinit/master/images/logo_white.svg" alt="KubeInit job report">
                 </a>
             </div>
             <div class="pf-c-page__header-nav">
@@ -64,25 +64,25 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 29 Apr 2021 21:06:56 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 21 May 2021 10:49:51 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 29 Apr 2021 21:42:48 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 21 May 2021 11:51:49 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:35:51.76
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 01:01:58.42
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Ansible version">
-                            Ansible 2.10.8
+                            Ansible 2.10.9
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-5">
-                        <div style="padding-top:1em;" title="/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml">
+                        <div style="padding-top:1em;" title="/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml">
                             <a href="../playbooks/1.html">
                                 ...0/kubeinit/kubeinit/tmp/kubeinit/playbooks/eks.yml
                             </a>
@@ -95,17 +95,17 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#plays">3 plays</a>
+                            <a href="../playbooks/1.html#plays">4 plays</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">560 results</a>
+                            <a href="../playbooks/1.html#results">558 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">34 files</a>
+                            <a href="../playbooks/1.html#files">44 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -184,14 +184,14 @@
     <div class="pf-c-card__header pf-c-title pf-m-md">
         <h1><strong>Details</strong></h1>
         <ul class="pf-c-list">
-            <li><strong>Task</strong>: ../../roles/kubeinit_eks : Joining worker nodes with kubernetes master</a></li>
-            <li><strong>Action</strong>: ansible.builtin.shell</li>
-            <li><strong>Path</strong>: <a href="../files/32.html#line-81">/root/builds/X-HRQDtP/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_eks/tasks/40_configure_worker_nodes.yml:81</a>
-            <li><strong>Host</strong>: <a href="../hosts/2.html">hypervisor-01</a></li>
+            <li><strong>Task</strong>: ../../roles/kubeinit_eks : Copying the kubeconfig to a variable</a></li>
+            <li><strong>Action</strong>: ansible.builtin.slurp</li>
+            <li><strong>Path</strong>: <a href="../files/43.html#line-19">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_eks/tasks/50_post_deployment_tasks.yml:19</a>
+            <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: ok</li>
-            <li><strong>Started</strong>: 29 Apr 2021 21:42:29 -0400</li>
-            <li><strong>Ended</strong>: 29 Apr 2021 21:42:43 -0400</li>
-            <li><strong>Duration</strong>: 00:00:14.03</li>
+            <li><strong>Started</strong>: 21 May 2021 11:51:37 -0400</li>
+            <li><strong>Ended</strong>: 21 May 2021 11:51:37 -0400</li>
+            <li><strong>Duration</strong>: 00:00:00.46</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -217,35 +217,22 @@
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="cmd" data-label="cmd" class="pf-m-width-20">
-                        <a href="#cmd">cmd</a>
+                    <td role="cell" id="content" data-label="content" class="pf-m-width-20">
+                        <a href="#content">content</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>kubeadm reset -f || true
-cat ~/eks_token &gt; out.sh
-sh out.sh
+                        <div class="codehilite"><pre><span></span>YXBpVmVyc2lvbjogdjEKY2x1c3RlcnM6Ci0gY2x1c3RlcjoKICAgIGNlcnRpZmljYXRlLWF1dGhvcml0eS1kYXRhOiBMUzB0TFMxQ1JVZEpUaUJEUlZKVVNVWkpRMEZVUlMwdExTMHRDazFKU1VONVJFTkRRV0pEWjBGM1NVSkJaMGxDUVVSQlRrSm5hM0ZvYTJsSE9YY3dRa0ZSYzBaQlJFRldUVkpOZDBWUldVUldVVkZFUlhkd2NtUlhTbXdLWTIwMWJHUkhWbnBOUWpSWVJGUkplRTFFVlhsTlZFVXhUa1JqTUU1V2IxaEVWRTE0VFVSVmVFOVVSVEZPUkdNd1RsWnZkMFpVUlZSTlFrVkhRVEZWUlFwQmVFMUxZVE5XYVZwWVNuVmFXRkpzWTNwRFEwRlRTWGRFVVZsS1MyOWFTV2gyWTA1QlVVVkNRbEZCUkdkblJWQkJSRU5EUVZGdlEyZG5SVUpCVHpSeUNtNXlhR000VWsxc2VVZ3piM2xFZEd3d2VHWlRSbGhVTlhVM1VHODJZVEl2ZUN0Uk1UUXlTREZXYkdKQmFFNWFjMnN2ZDNaUVFVNVFRVkpYTlVWc01Fd0tja2hNVTBoWlZFeEtiVlZ3TmpGTmEwZFVTQ3MxUmsxamRtNDVZM05xWTFaT2NuZFJZVEZTUmpabGRXcHdiRTgwWlU5dldYSnZOR1pUYWxZNWQwNXJTUXBNWmtSV1VqbE1XbE5RTjNsUGNraExRVWc0Y0ZSRFdGaDJhV2xMYkhkalZ6Y3lTbWgyTTFGbVpsQk5hbWRNV1VKaE1HbEVXVVJ3VXk5SlltaGlkM0F5Q2taRVIwVktSRzB4WVVOTmRHSjBjalZaYzI0MmJrOXZjVlJTTVc5Rk4ybFFVbmhHS3pZeGJDOUdWR3BKUWs0dldUZFdRazkwZGs0MU1FVnZkakJsZWxFS05IUnVSVk5zZWtadlFsSnBOVVUwY1RoTGMyOHZNRTFqWW5wMU1VUnpRbTFzUTJKMmJsQTJUWEZxUm5jMk1rcGhSVE4xT1RkVFVXcElXbTV1WjJZMVZ3bzJVMHRDYjNaSVVIQkhMMGxWZWtKM1ZsUmpRMEYzUlVGQllVMXFUVU5GZDBSbldVUldVakJRUVZGSUwwSkJVVVJCWjB0clRVRTRSMEV4VldSRmQwVkNDaTkzVVVaTlFVMUNRV1k0ZDBSUldVcExiMXBKYUhaalRrRlJSVXhDVVVGRVoyZEZRa0ZLZUd0bFUxVjVjbWRXTUcwd1dXbG5jR1kwYlVwSllXRldiRklLWmpjd04xSk1hVFk0VVU5RE1YcE9Wa3RZVUUwMmVUUXlaVmhLZWtGNlpucHZhQ3RuYkZOclozVTFla1Z4VFZWUlFYZ3ZOekZGWTNFeU1USXdaWHBpUlFwd2FUaE1aSEoxU1V0Tk1XTjFSMEZYUmtNemJVTlpTa0o2YkhaV1NrUTBhVFJaWTJSd01WZFdSRTVqWVZSMmNrOUViRGhtZUZkdWNHdFFTMVJwYmxJMUNqWlFVVEJOT1hsdGFuQXlSaTloY1VoR1kwSlpMMmN6VkRSbk9IUmlaMnhMYUZoeVlVRnJkSEZKYjJneFIyRkNiblp5ZVdkS2FHTnNOelJqU2xGcU5FY0tUWFJuT0N0cGVrUkhjeTgxZUhaNlIyRTFhVk50VUc1dlVUTllPVXhJZDFCRFMyVnJVSGxaY25oUVdGUXJkSGxGVUhkeGNHdFJSMnN5YlRNNFVrUjRlUXBMVEhCR05rcFZUbGxWU0hkNFprSlFhV3BXVWxwNGJVMU9UVVJZUkdaRk1GQXdjV3RYWlhkeFRTdHVRakZxZG10bVVESkJkVWxzT1dGeU5EMEtMUzB0TFMxRlRrUWdRMFZTVkVsR1NVTkJWRVV0TFMwdExRbz0KICAgIHNlcnZlcjogaHR0cHM6Ly9hcGkuZWtzY2x1c3Rlci5rdWJlaW5pdC5sb2NhbDo2NDQzCiAgbmFtZToga3ViZXJuZXRlcwpjb250ZXh0czoKLSBjb250ZXh0OgogICAgY2x1c3Rlcjoga3ViZXJuZXRlcwogICAgdXNlcjoga3ViZXJuZXRlcy1hZG1pbgogIG5hbWU6IGt1YmVybmV0ZXMtYWRtaW5Aa3ViZXJuZXRlcwpjdXJyZW50LWNvbnRleHQ6IGt1YmVybmV0ZXMtYWRtaW5Aa3ViZXJuZXRlcwpraW5kOiBDb25maWcKcHJlZmVyZW5jZXM6IHt9CnVzZXJzOgotIG5hbWU6IGt1YmVybmV0ZXMtYWRtaW4KICB1c2VyOgogICAgY2xpZW50LWNlcnRpZmljYXRlLWRhdGE6IExTMHRMUzFDUlVkSlRpQkRSVkpVU1VaSlEwRlVSUzB0TFMwdENrMUpTVU00YWtORFFXUnhaMEYzU1VKQlowbEpUa3hZUTJkbU1YQjNaMnQzUkZGWlNrdHZXa2xvZG1OT1FWRkZURUpSUVhkR1ZFVlVUVUpGUjBFeFZVVUtRWGhOUzJFelZtbGFXRXAxV2xoU2JHTjZRV1ZHZHpCNVRWUkJNVTFxUlhoT1ZGRXpUa1JXWVVaM01IbE5ha0V4VFdwRmVFNVVVVE5PUkdSaFRVUlJlQXBHZWtGV1FtZE9Wa0pCYjFSRWJrNDFZek5TYkdKVWNIUlpXRTR3V2xoS2VrMVNhM2RHZDFsRVZsRlJSRVY0UW5Ka1YwcHNZMjAxYkdSSFZucE1WMFpyQ21KWGJIVk5TVWxDU1dwQlRrSm5hM0ZvYTJsSE9YY3dRa0ZSUlVaQlFVOURRVkU0UVUxSlNVSkRaMHREUVZGRlFUZGhSMVY2WVM4M1lVRXlUWE5qUm5BS09WTk5ZelZST0daek4yMVpha3BVVFUxQ1dqUkpVRVpNYzFaa1NISXhUMXBtYkdJM0sxWk1UamRyZW05RlpXUkJSMGw0TTIxbmJ6TlRkVFl6WkRKMlVRcE9aM2RsZWxZeVNsazRhRzR6S3pCQ1VHODBkMFJ4YkZReVkwcE9kMW8yT1dKMmFYaHJPWGxhVkc1RFlWcGtXVlpKZUhCcGNHVXlRMDlFZG01VlNXTnpDbWcxTm5CWU4zaHhhSEJoZVRGV2FHSlBhVFJQV0RWSldYTlpiMWgzVm1abmVuZzBWalV6TVRZMk5VaHNSbm8xU21aV1V6RXZSV3gxZVVKNk5ERjJjRFlLY2pKaFNXSk1WMmN3ZVRaMlV6ZHVWR2xITWpFdlIyUjBSelF3YTA5MlN6RXJPSGhEWkVsalVWWmpiVXRaWmxab2QzTmxSRzFDV1daWGJYbFhOa0UwWkFwblYxaHdRV2N2TW1nMVdGTlJOR2d5VTFaNmVuWnlTakF6V1hob09DdHJiRlJoY2xCQk5sSjNiRVJ6V2xwQlJUbE9hazB3TUVNNVEzbE1VbU56Y1VRckNtNHpaSGQyVVVsRVFWRkJRbTk1WTNkS1ZFRlBRbWRPVmtoUk9FSkJaamhGUWtGTlEwSmhRWGRGZDFsRVZsSXdiRUpCZDNkRFoxbEpTM2RaUWtKUlZVZ0tRWGRKZDBSUldVcExiMXBKYUhaalRrRlJSVXhDVVVGRVoyZEZRa0ZMU2tocFlVRkVhVzk0U1VWeWFuRldabkoxZG5sd1pFMUxVSE5EVTJWbWJGQlpTQXBHVEZSeldWVldaMHQxY1hCbFIxQlplVnBEZDBSaGQzVnhkMDVwZVRORmQyeERXVVJRUkdSUVJESkdaMnN4WVhrdlJWQndWUzlTVjFRMU5GWnBUVXBYQ2s5YVJrUm9TR3BXTjBWM01XNDNWVWc1WmpaQ2IySnRUbFJLY25keWRVaGtabTlwVjNBekswdGxTa3gzVEVZMllWTktVSFY2YUUwMFpUbGxPRTVLYldnS1VuWmhSR2RSZDJGRk9UbGpSREJrZFU5d05tWk1Oa0ZtWml0M1pWSTRUamxwWjFwT1ptZFRVMGh1T0RaclNsWlVNRGxSVFVseWNuZzNNVFZhUVVZd1NRcDFlVFJJWlRWeFZURk9WbVYyTkRZMWFqUmhTbmc1UzJGM1lXUjBVMDVDYW05NlIxTkNNamx4VTNJM1FYSlNkSGhCTHpreVZ6ZDFNM2xCVGxaamExRXJDaTlWY0hGeE1WQTJZVVZzUmpSeGN6QTNZM0JOWkRsdE9XSldjalpuZUhwMGQwb3lWRlJFYVRaTVEyUmpUMFUxYkdodlp6MEtMUzB0TFMxRlRrUWdRMFZTVkVsR1NVTkJWRVV0TFMwdExRbz0KICAgIGNsaWVudC1rZXktZGF0YTogTFMwdExTMUNSVWRKVGlCU1UwRWdVRkpKVmtGVVJTQkxSVmt0TFMwdExRcE5TVWxGY0VGSlFrRkJTME5CVVVWQk4yRkhWWHBoTHpkaFFUSk5jMk5HY0RsVFRXTTFVVGhtY3pkdFdXcEtWRTFOUWxvMFNWQkdUSE5XWkVoeU1VOWFDbVpzWWpjclZreE9OMnQ2YjBWbFpFRkhTWGd6Yldkdk0xTjFOak5rTW5aUlRtZDNaWHBXTWtwWk9HaHVNeXN3UWxCdk5IZEVjV3hVTW1OS1RuZGFOamtLWW5acGVHczVlVnBVYmtOaFdtUlpWa2w0Y0dsd1pUSkRUMFIyYmxWSlkzTm9OVFp3V0RkNGNXaHdZWGt4Vm1oaVQyazBUMWcxU1ZseldXOVlkMVptWndwNmVEUldOVE14TmpZMVNHeEdlalZLWmxaVE1TOUZiSFY1UW5vME1YWndObkl5WVVsaVRGZG5NSGsyZGxNM2JsUnBSekl4TDBka2RFYzBNR3RQZGtzeENpczRlRU5rU1dOUlZtTnRTMWxtVm1oM2MyVkViVUpaWmxkdGVWYzJRVFJrWjFkWWNFRm5MekpvTlZoVFVUUm9NbE5XZW5wMmNrb3dNMWw0YURncmEyd0tWR0Z5VUVFMlVuZHNSSE5hV2tGRk9VNXFUVEF3UXpsRGVVeFNZM054UkN0dU0yUjNkbEZKUkVGUlFVSkJiMGxDUVZGRFZtaEtiWGRaWnpVMlFtbDVSUXB1UVVscVkwSm9OazRyTTIxck9YcGpaRGRQVTJac1JGQjVXVTl4TjJoUU5IbFZNVWhLVlhkbFRVY3ZTMmhVUm5kTmJWVjFSRkpSYTBwR1JuVkpTVE51Q2pScWNEaENNWGhMVFRWVFF6WkdTVlJ1TTJsek9UWktaRll3VjJaUGNHSmhVVkowU1dVNGNXZEZjVzFVY0ZZMVFYWldaRWhaZHpZelFVbzFlVFkxTkRnS1IxSkdNM01yYXpKb09FMTJUa0p6UzBOcVNUaG9WVmxrT1VSeU9WZFpVRlJYWWtGaVRYTkdXV0pUZWpBNWRVeEhSRE5PZDBWSlVuazFSVkpDVm5jMWR3cHFjVEpsZHpjMWRuUnNMemhOY2tjd2NYTnJhVVZxVHpsRFRXRk1OMll2Vm5KWWNIVmlkbTU2VFdOelZVbHNPWEZOTlc5MlFXTnFSVUZaYUc5VFFVSjFDalJ5VTJ4eU5rbzVaM1ZVTlhOUll6VkxjWGh1YjBJMlJubHVZems0Y1ZaVEt5c3lZbGQzVm5SaFpVSmlSRmhqVjNWMVRHVnNUV2MyVGpaNlNHazRRaklLU25sQlZsaGpOSGhCYjBkQ1FWQTNkMlZaTVVob1Mwa3hPSEpGUkd0UVptVjZaVk5pZEdaWVRYbHBRM3B0YjA1clRYZ3pRMFYyZVdWSGNubDBkWEJvUmdwdlNEbDVVbTlXY1ZFelpFUnBURGR4VjBGcVMyTlBNbGxOTW1WS1FrTkdjM2xwWVhadlVqZGhNa1YyWW5WU1ZXbG5RMXBNUzJsQ00wdzBiRWRYVEVWeENsaE1NVFIwYXk5UlUyMHdSMDFUYlhSR1kwdzJkbXBLVm5oTVpDdHVObGxaWm0xM1YyNXNNM0JGV2tOTFZuZERLMWd3WTBReU1VdHVRVzlIUWtGUE5tVUtja0ptV2pkVlNrSjFkRlJTZDFOb2QzaFZUa3BLWkZwWVFuTllSR1pEUXpSM1FreFNVV05wUjNVdmFHVmpLMFZyUldGVVkzQlJORzlWTUZSdlIzWm9XZ28wYVhSTVRFbDBZVEprUkhoUVkySlpjMU5DU2l0M0wxcHVSMnhIVDNGeGRHdHNRakZSWkVWT2FpOXdla2s1WjA1Uk5rSkZTSEExVmtGclMweERTMlprQ2xaRGJXbHhTR1JuZFZJNE9XZEpVelUzWm5kYVppdE9XbkJTWTFsRE1teE9XV3AyZDBvd1NEZEJiMGRCU0RaVmMwRlhlRFpQTUZKc1JISklOVzlpYzBnS1dtSlJjVmgzZEM5dU5WZE1kbGh0U0cxek9FaFhiRWx3TUZobWFreEtiV1k1V2toNWVsRmlSM1o0ZDJvNGEySlhha3RxVFZsalJ6bDRPRVpNVVZCaWJncEdUM2hEU0V4c1pteG1URGxSTTBaWU5VOXFOVzV5VVUxek5HRkhOV1EzZWxOb1YyTXdPRlozU2pVMVdVcGxjekZSTVVkeGIwVmlhazU2TDBKbk0xZFJDalE0ZG1VNWNIUkRjMlZXY1V4Vk5UQk9lbFl3VjFGelEyZFpRbTAwVlV0U2FHZFJiR0pRUjBGclJ6aFlXVWxsYzFkMk1WWlVTRUV2UlN0dFVYTm9ZMlVLUW1SeE1pdHRRbEV4VjJobmVWbDRValpGTDBKeGRVVTNPVVpoYzJaU1VtMVdhVXdyWTJzd00wdE5kbHA2T1U5UFpVWmpiVzVyZDNoc00xaDZORXRKVlFwNmJteDVRMDFpY1RGSWJTOTZVR2MzVVZOT2VWbElValF2UkdwbVNuazBRMUpZT0dNclZHSlliMVY1YmpkUlNVOXFNaTh3VG1SS1dVRnhXRzgwVGxKYUNuY3hSWEIzVVV0Q1oxRkVSMjFXVmtodllqUm5Nelp4V1ZZNFRqVmxRVEVyUzBWUVpreEdXa3BCYzA5clRtTnhSa3gzUlVWdVN6VXJOR1JXYzFOeE5HUUtTbkZGWXk5V1NVOW1SazB6UTNGbU5ucElOVTVqUlhWcVJFdExXbEJSVVdOdFVVRjBLMXBrVW5WbmJ6aExUbVYwVkVaWmFuUnNiVEppU2pkWVYwWkhjZ3BxVm10d1FXaGxkMWQ1UmpKNE1ub3hhM0JZWW5vclNubFhVVmxKUVdrdk5razJOelo2TmpKWU9WRXlibTVyVVZsUGVHNHJUbmM5UFFvdExTMHRMVVZPUkNCU1UwRWdVRkpKVmtGVVJTQkxSVmt0TFMwdExRbz0K
 </pre></div>
 
                     </td>
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="delta" data-label="delta" class="pf-m-width-20">
-                        <a href="#delta">delta</a>
+                    <td role="cell" id="encoding" data-label="encoding" class="pf-m-width-20">
+                        <a href="#encoding">encoding</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0:00:13.849011
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="end" data-label="end" class="pf-m-width-20">
-                        <a href="#end">end</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-04-30 01:42:43.749982
+                        <div class="codehilite"><pre><span></span>base64
 </pre></div>
 
                     </td>
@@ -258,17 +245,7 @@ sh out.sh
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;module_args&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;_raw_params&quot;</span><span class="p">:</span> <span class="s2">&quot;kubeadm reset -f || true\ncat ~/eks_token &gt; out.sh\nsh out.sh\n&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;_uses_shell&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;argv&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;chdir&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;creates&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;executable&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;removes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;stdin&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-        <span class="nt">&quot;stdin_add_newline&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;strip_empty_ends&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nt">&quot;warn&quot;</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="nt">&quot;src&quot;</span><span class="p">:</span> <span class="s2">&quot;/root/.kube/config&quot;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -277,138 +254,11 @@ sh out.sh
                 </tr>
                 
                 <tr role="row">
-                    <td role="cell" id="rc" data-label="rc" class="pf-m-width-20">
-                        <a href="#rc">rc</a>
+                    <td role="cell" id="source" data-label="source" class="pf-m-width-20">
+                        <a href="#source">source</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>0
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="start" data-label="start" class="pf-m-width-20">
-                        <a href="#start">start</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>2021-04-30 01:42:29.900971
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stderr" data-label="stderr" class="pf-m-width-20">
-                        <a href="#stderr">stderr</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>W0430 01:42:29.932064   63650 removeetcdmember.go:79] [reset] No kubeadm config, using etcd pod spec to get data directory
-W0430 01:42:29.939284   63650 cleanupnode.go:99] [reset] Failed to evaluate the &quot;/var/lib/kubelet&quot; directory. Skipping its unmount and cleanup: lstat /var/lib/kubelet: no such file or directory
-W0430 01:42:29.994591   63673 join.go:346] [preflight] WARNING: JoinControlPane.controlPlane settings will be ignored when control-plane flag is not set.
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stderr_lines" data-label="stderr_lines" class="pf-m-width-20">
-                        <a href="#stderr_lines">stderr_lines</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;W0430 01:42:29.932064   63650 removeetcdmember.go:79] [reset] No kubeadm config, using etcd pod spec to get data directory&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;W0430 01:42:29.939284   63650 cleanupnode.go:99] [reset] Failed to evaluate the \&quot;/var/lib/kubelet\&quot; directory. Skipping its unmount and cleanup: lstat /var/lib/kubelet: no such file or directory&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;W0430 01:42:29.994591   63673 join.go:346] [preflight] WARNING: JoinControlPane.controlPlane settings will be ignored when control-plane flag is not set.&quot;</span>
-<span class="p">]</span>
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stdout" data-label="stdout" class="pf-m-width-20">
-                        <a href="#stdout">stdout</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>[preflight] Running pre-flight checks
-[reset] No etcd config found. Assuming external etcd
-[reset] Please, manually reset etcd to prevent further issues
-[reset] Stopping the kubelet service
-[reset] Unmounting mounted directories in &quot;/var/lib/kubelet&quot;
-[reset] Deleting contents of config directories: [/etc/kubernetes/manifests /etc/kubernetes/pki]
-[reset] Deleting files: [/etc/kubernetes/admin.conf /etc/kubernetes/kubelet.conf /etc/kubernetes/bootstrap-kubelet.conf /etc/kubernetes/controller-manager.conf /etc/kubernetes/scheduler.conf]
-[reset] Deleting contents of stateful directories: [/var/lib/dockershim /var/run/kubernetes /var/lib/cni]
-
-The reset process does not clean CNI configuration. To do so, you must remove /etc/cni/net.d
-
-The reset process does not reset or clean up iptables rules or IPVS tables.
-If you wish to reset iptables, you must do so manually by using the &quot;iptables&quot; command.
-
-If your cluster was setup to utilize IPVS, run ipvsadm --clear (or similar)
-to reset your system&#39;s IPVS tables.
-
-The reset process does not clean your kubeconfig files and you must remove them manually.
-Please, check the contents of the $HOME/.kube/config file.
-[preflight] Running pre-flight checks
-[preflight] Reading configuration from the cluster...
-[preflight] FYI: You can look at this config file with &#39;kubectl -n kube-system get cm kubeadm-config -oyaml&#39;
-[kubelet-start] Downloading configuration for the kubelet from the &quot;kubelet-config-1.18&quot; ConfigMap in the kube-system namespace
-[kubelet-start] Writing kubelet configuration to file &quot;/var/lib/kubelet/config.yaml&quot;
-[kubelet-start] Writing kubelet environment file with flags to file &quot;/var/lib/kubelet/kubeadm-flags.env&quot;
-[kubelet-start] Starting the kubelet
-[kubelet-start] Waiting for the kubelet to perform the TLS Bootstrap...
-
-This node has joined the cluster:
-* Certificate signing request was sent to apiserver and a response was received.
-* The Kubelet was informed of the new secure connection details.
-
-Run &#39;kubectl get nodes&#39; on the control-plane to see this node join the cluster.
-</pre></div>
-
-                    </td>
-                </tr>
-                
-                <tr role="row">
-                    <td role="cell" id="stdout_lines" data-label="stdout_lines" class="pf-m-width-20">
-                        <a href="#stdout_lines">stdout_lines</a>
-                    </td>
-                    <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;[preflight] Running pre-flight checks&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[reset] No etcd config found. Assuming external etcd&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[reset] Please, manually reset etcd to prevent further issues&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[reset] Stopping the kubelet service&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[reset] Unmounting mounted directories in \&quot;/var/lib/kubelet\&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[reset] Deleting contents of config directories: [/etc/kubernetes/manifests /etc/kubernetes/pki]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[reset] Deleting files: [/etc/kubernetes/admin.conf /etc/kubernetes/kubelet.conf /etc/kubernetes/bootstrap-kubelet.conf /etc/kubernetes/controller-manager.conf /etc/kubernetes/scheduler.conf]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[reset] Deleting contents of stateful directories: [/var/lib/dockershim /var/run/kubernetes /var/lib/cni]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;The reset process does not clean CNI configuration. To do so, you must remove /etc/cni/net.d&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;The reset process does not reset or clean up iptables rules or IPVS tables.&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;If you wish to reset iptables, you must do so manually by using the \&quot;iptables\&quot; command.&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;If your cluster was setup to utilize IPVS, run ipvsadm --clear (or similar)&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;to reset your system&#39;s IPVS tables.&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;The reset process does not clean your kubeconfig files and you must remove them manually.&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Please, check the contents of the $HOME/.kube/config file.&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[preflight] Running pre-flight checks&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[preflight] Reading configuration from the cluster...&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[preflight] FYI: You can look at this config file with &#39;kubectl -n kube-system get cm kubeadm-config -oyaml&#39;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[kubelet-start] Downloading configuration for the kubelet from the \&quot;kubelet-config-1.18\&quot; ConfigMap in the kube-system namespace&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[kubelet-start] Writing kubelet configuration to file \&quot;/var/lib/kubelet/config.yaml\&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[kubelet-start] Writing kubelet environment file with flags to file \&quot;/var/lib/kubelet/kubeadm-flags.env\&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[kubelet-start] Starting the kubelet&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;[kubelet-start] Waiting for the kubelet to perform the TLS Bootstrap...&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;This node has joined the cluster:&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;* Certificate signing request was sent to apiserver and a response was received.&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;* The Kubelet was informed of the new secure connection details.&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Run &#39;kubectl get nodes&#39; on the control-plane to see this node join the cluster.&quot;</span>
-<span class="p">]</span>
+                        <div class="codehilite"><pre><span></span>/root/.kube/config
 </pre></div>
 
                     </td>

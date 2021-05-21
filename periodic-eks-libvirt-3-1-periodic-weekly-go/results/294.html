@@ -48,15 +48,15 @@
 
 
 
-<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-danger pf-m-inline">
+<div class="pf-c-card pf-m-hoverable pf-c-alert pf-m-success pf-m-inline">
 
     <ul class="pf-c-data-list" role="list">
         <li class="pf-c-data-list__item">
             <div class="pf-c-data-list__item-row">
                 <div class="pf-c-data-list__item-control pf-m-fit-content">
                     
-<div class="pf-c-alert__icon" title="Playbook completed with errors">
-    <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+<div class="pf-c-alert__icon" title="Playbook completed successfully">
+    <i class="fas fa-check-circle" aria-hidden="true"></i>
 </div>
 
                 </div>
@@ -64,16 +64,16 @@
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;">
                             <span title="Date at which the playbook started">
-                                <i class="fas fa-play-circle" aria-hidden="true"></i> 21 May 2021 09:07:51 -0400
+                                <i class="fas fa-play-circle" aria-hidden="true"></i> 21 May 2021 10:49:51 -0400
                             </span><br>
                             <span title="Date at which the playbook ended">
-                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 21 May 2021 10:03:10 -0400
+                                <i class="fas fa-stop-circle" aria-hidden="true" title="Date at which the playbook ended"></i> 21 May 2021 11:51:49 -0400
                             </span>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
                         <div style="padding-top:1em; white-space:nowrap;" title="Duration of the playbook">
-                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 00:55:19.14
+                            <i class="fas fa-stopwatch" aria-hidden="true"></i> 01:01:58.42
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-fit-content">
@@ -100,12 +100,12 @@
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#results">479 results</a>
+                            <a href="../playbooks/1.html#results">558 results</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
                         <div style="padding-top:1em;">
-                            <a href="../playbooks/1.html#files">41 files</a>
+                            <a href="../playbooks/1.html#files">44 files</a>
                         </div>
                     </div>
                     <div class="pf-c-data-list__cell pf-m-flex-1">
@@ -189,9 +189,9 @@
             <li><strong>Path</strong>: <a href="../files/34.html#line-145">/root/builds/KLyGQ7Jp/0/kubeinit/kubeinit/tmp/kubeinit/kubeinit/roles/kubeinit_registry/tasks/10_configure.yml:145</a>
             <li><strong>Host</strong>: <a href="../hosts/1.html">localhost</a></li>
             <li><strong>Status</strong>: changed</li>
-            <li><strong>Started</strong>: 21 May 2021 09:49:51 -0400</li>
-            <li><strong>Ended</strong>: 21 May 2021 09:49:58 -0400</li>
-            <li><strong>Duration</strong>: 00:00:07.45</li>
+            <li><strong>Started</strong>: 21 May 2021 11:33:32 -0400</li>
+            <li><strong>Ended</strong>: 21 May 2021 11:33:40 -0400</li>
+            <li><strong>Duration</strong>: 00:00:07.58</li>
         </ul>
     </div>
     <div class="pf-c-card__body">
@@ -308,13 +308,13 @@
             <span class="s2">&quot;PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin&quot;</span><span class="p">,</span>
             <span class="s2">&quot;TERM=xterm&quot;</span><span class="p">,</span>
             <span class="s2">&quot;container=podman&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;REGISTRY_AUTH_HTPASSWD_REALM=Registry&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;REGISTRY_HTTP_SECRET=ALongRandomSecretForRegistry&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;REGISTRY_HTTP_TLS_CERTIFICATE=certs/domain.crt&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;REGISTRY_COMPATIBILITY_SCHEMA1_ENABLED=True&quot;</span><span class="p">,</span>
             <span class="s2">&quot;REGISTRY_AUTH_HTPASSWD_PATH=auth/htpasswd&quot;</span><span class="p">,</span>
             <span class="s2">&quot;REGISTRY_HTTP_TLS_KEY=certs/domain.key&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;REGISTRY_COMPATIBILITY_SCHEMA1_ENABLED=True&quot;</span><span class="p">,</span>
             <span class="s2">&quot;REGISTRY_AUTH=htpasswd&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;REGISTRY_HTTP_SECRET=ALongRandomSecretForRegistry&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;REGISTRY_HTTP_TLS_CERTIFICATE=certs/domain.crt&quot;</span>
+            <span class="s2">&quot;REGISTRY_AUTH_HTPASSWD_REALM=Registry&quot;</span>
         <span class="p">],</span>
         <span class="nt">&quot;Hostname&quot;</span><span class="p">:</span> <span class="s2">&quot;kubeinit-service-pod&quot;</span><span class="p">,</span>
         <span class="nt">&quot;Image&quot;</span><span class="p">:</span> <span class="s2">&quot;docker.io/library/registry:2&quot;</span><span class="p">,</span>
@@ -329,10 +329,10 @@
         <span class="nt">&quot;Volumes&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;WorkingDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/&quot;</span>
     <span class="p">},</span>
-    <span class="nt">&quot;ConmonPidFile&quot;</span><span class="p">:</span> <span class="s2">&quot;/run/containers/storage/overlay-containers/1cfe143f2cf67be1f9e430d0ed0848404e5a08a9f3872f96719845ab0ac693ce/userdata/conmon.pid&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;Created&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21T13:49:57.732642977Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ConmonPidFile&quot;</span><span class="p">:</span> <span class="s2">&quot;/run/containers/storage/overlay-containers/da72345cd9f47b28320436013dbfda6ba3dd717ffcdccd1ed47973873adabcb9/userdata/conmon.pid&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Created&quot;</span><span class="p">:</span> <span class="s2">&quot;2021-05-21T15:33:39.735319967Z&quot;</span><span class="p">,</span>
     <span class="nt">&quot;Dependencies&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;c8a4633d1f7e5c1c52f8612a6f2ac51faa0aefef193b2b3383c4c5bddc3583fe&quot;</span>
+        <span class="s2">&quot;319006c76003ac0632e0d5816f2f68cff08d7f8185de8b0a438f713b3d91d804&quot;</span>
     <span class="p">],</span>
     <span class="nt">&quot;Driver&quot;</span><span class="p">:</span> <span class="s2">&quot;overlay&quot;</span><span class="p">,</span>
     <span class="nt">&quot;EffectiveCaps&quot;</span><span class="p">:</span> <span class="p">[</span>
@@ -372,22 +372,22 @@
         <span class="s2">&quot;file&quot;</span><span class="p">,</span>
         <span class="s2">&quot;container&quot;</span><span class="p">,</span>
         <span class="s2">&quot;cleanup&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;1cfe143f2cf67be1f9e430d0ed0848404e5a08a9f3872f96719845ab0ac693ce&quot;</span>
+        <span class="s2">&quot;da72345cd9f47b28320436013dbfda6ba3dd717ffcdccd1ed47973873adabcb9&quot;</span>
     <span class="p">],</span>
     <span class="nt">&quot;GraphDriver&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;Data&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;LowerDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/containers/storage/overlay/f6918946baccb82bac36ab6f6c3ad28fbcfae516e358ee7fd825ebb4ec28e866/diff:/var/lib/containers/storage/overlay/14cbeee4ee44ad2a9887d5ace51c6bd8d49f69915783388a6db88b59a78f8eb6/diff:/var/lib/containers/storage/overlay/d8e0a2ffc8db50b94df8fbd3ec6b5aa0ba6ba2d7a4c099c7b51bbe7ee93fb35a/diff:/var/lib/containers/storage/overlay/f3e4c4d33690c962f213533abbdc02b0bc5d45f2c9b174dededaed9d8484c939/diff:/var/lib/containers/storage/overlay/9a5d14f9f5503e55088666beef7e85a8d9625d4fa7418e2fe269e9c54bcb853c/diff&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;UpperDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/containers/storage/overlay/8093d50238521c5ec88a3375f8d3d37eda5f96b35245467569e81fda8d3cba7c/diff&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;WorkDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/containers/storage/overlay/8093d50238521c5ec88a3375f8d3d37eda5f96b35245467569e81fda8d3cba7c/work&quot;</span>
+            <span class="nt">&quot;UpperDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/containers/storage/overlay/a662bf1df13e926aaa5a6dfa153f231e5621bf96d91c67947fabebb98210f1fc/diff&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;WorkDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/containers/storage/overlay/a662bf1df13e926aaa5a6dfa153f231e5621bf96d91c67947fabebb98210f1fc/work&quot;</span>
         <span class="p">},</span>
         <span class="nt">&quot;Name&quot;</span><span class="p">:</span> <span class="s2">&quot;overlay&quot;</span>
     <span class="p">},</span>
     <span class="nt">&quot;HostConfig&quot;</span><span class="p">:</span> <span class="p">{</span>
         <span class="nt">&quot;AutoRemove&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
         <span class="nt">&quot;Binds&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;/var/kubeinit/local_registry/auth:/auth:z,rw,rprivate,rbind&quot;</span><span class="p">,</span>
             <span class="s2">&quot;/var/kubeinit/local_registry/certs:/certs:z,rw,rprivate,rbind&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;/var/kubeinit/local_registry/data:/var/lib/registry:z,rw,rprivate,rbind&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;/var/kubeinit/local_registry/auth:/auth:z,rw,rprivate,rbind&quot;</span>
+            <span class="s2">&quot;/var/kubeinit/local_registry/data:/var/lib/registry:z,rw,rprivate,rbind&quot;</span>
         <span class="p">],</span>
         <span class="nt">&quot;BlkioDeviceReadBps&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;BlkioDeviceReadIOps&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
@@ -404,7 +404,7 @@
         <span class="nt">&quot;CgroupConf&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;CgroupManager&quot;</span><span class="p">:</span> <span class="s2">&quot;systemd&quot;</span><span class="p">,</span>
         <span class="nt">&quot;CgroupMode&quot;</span><span class="p">:</span> <span class="s2">&quot;host&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;CgroupParent&quot;</span><span class="p">:</span> <span class="s2">&quot;machine.slice/machine-libpod_pod_5edc212381f3fb7856e1a34a745efae04b47e3126b3fec13e91eb3e09dd613cc.slice&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;CgroupParent&quot;</span><span class="p">:</span> <span class="s2">&quot;machine.slice/machine-libpod_pod_57aebae8229c8c038db6e603568d6eff684db13e8d8f57482336276e0543efda.slice&quot;</span><span class="p">,</span>
         <span class="nt">&quot;Cgroups&quot;</span><span class="p">:</span> <span class="s2">&quot;default&quot;</span><span class="p">,</span>
         <span class="nt">&quot;ConsoleSize&quot;</span><span class="p">:</span> <span class="p">[</span>
             <span class="mi">0</span><span class="p">,</span>
@@ -429,13 +429,13 @@
         <span class="nt">&quot;GroupAdd&quot;</span><span class="p">:</span> <span class="p">[],</span>
         <span class="nt">&quot;IOMaximumBandwidth&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
         <span class="nt">&quot;IOMaximumIOps&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;IpcMode&quot;</span><span class="p">:</span> <span class="s2">&quot;container:c8a4633d1f7e5c1c52f8612a6f2ac51faa0aefef193b2b3383c4c5bddc3583fe&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;IpcMode&quot;</span><span class="p">:</span> <span class="s2">&quot;container:319006c76003ac0632e0d5816f2f68cff08d7f8185de8b0a438f713b3d91d804&quot;</span><span class="p">,</span>
         <span class="nt">&quot;Isolation&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
         <span class="nt">&quot;KernelMemory&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
         <span class="nt">&quot;Links&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
         <span class="nt">&quot;LogConfig&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="nt">&quot;Config&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
-            <span class="nt">&quot;Path&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/containers/storage/overlay-containers/1cfe143f2cf67be1f9e430d0ed0848404e5a08a9f3872f96719845ab0ac693ce/userdata/ctr.log&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Path&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/containers/storage/overlay-containers/da72345cd9f47b28320436013dbfda6ba3dd717ffcdccd1ed47973873adabcb9/userdata/ctr.log&quot;</span><span class="p">,</span>
             <span class="nt">&quot;Size&quot;</span><span class="p">:</span> <span class="s2">&quot;0B&quot;</span><span class="p">,</span>
             <span class="nt">&quot;Tag&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
             <span class="nt">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;k8s-file&quot;</span>
@@ -462,7 +462,7 @@
         <span class="nt">&quot;SecurityOpt&quot;</span><span class="p">:</span> <span class="p">[],</span>
         <span class="nt">&quot;ShmSize&quot;</span><span class="p">:</span> <span class="mi">65536000</span><span class="p">,</span>
         <span class="nt">&quot;Tmpfs&quot;</span><span class="p">:</span> <span class="p">{},</span>
-        <span class="nt">&quot;UTSMode&quot;</span><span class="p">:</span> <span class="s2">&quot;container:c8a4633d1f7e5c1c52f8612a6f2ac51faa0aefef193b2b3383c4c5bddc3583fe&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;UTSMode&quot;</span><span class="p">:</span> <span class="s2">&quot;container:319006c76003ac0632e0d5816f2f68cff08d7f8185de8b0a438f713b3d91d804&quot;</span><span class="p">,</span>
         <span class="nt">&quot;Ulimits&quot;</span><span class="p">:</span> <span class="p">[</span>
             <span class="p">{</span>
                 <span class="nt">&quot;Hard&quot;</span><span class="p">:</span> <span class="mi">1048576</span><span class="p">,</span>
@@ -481,12 +481,24 @@
     <span class="p">},</span>
     <span class="nt">&quot;HostnamePath&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
     <span class="nt">&quot;HostsPath&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;Id&quot;</span><span class="p">:</span> <span class="s2">&quot;1cfe143f2cf67be1f9e430d0ed0848404e5a08a9f3872f96719845ab0ac693ce&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Id&quot;</span><span class="p">:</span> <span class="s2">&quot;da72345cd9f47b28320436013dbfda6ba3dd717ffcdccd1ed47973873adabcb9&quot;</span><span class="p">,</span>
     <span class="nt">&quot;Image&quot;</span><span class="p">:</span> <span class="s2">&quot;1fd8e1b0bb7ef6cc63e0094e2fb5a35259bdce7041ef5e7e4c99694ded1041d7&quot;</span><span class="p">,</span>
     <span class="nt">&quot;ImageName&quot;</span><span class="p">:</span> <span class="s2">&quot;docker.io/library/registry:2&quot;</span><span class="p">,</span>
     <span class="nt">&quot;IsInfra&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
     <span class="nt">&quot;MountLabel&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
     <span class="nt">&quot;Mounts&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="nt">&quot;Destination&quot;</span><span class="p">:</span> <span class="s2">&quot;/auth&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Driver&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Mode&quot;</span><span class="p">:</span> <span class="s2">&quot;z&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Options&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;rbind&quot;</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;Propagation&quot;</span><span class="p">:</span> <span class="s2">&quot;rprivate&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;RW&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;Source&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/local_registry/auth&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;bind&quot;</span>
+        <span class="p">},</span>
         <span class="p">{</span>
             <span class="nt">&quot;Destination&quot;</span><span class="p">:</span> <span class="s2">&quot;/certs&quot;</span><span class="p">,</span>
             <span class="nt">&quot;Driver&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
@@ -509,18 +521,6 @@
             <span class="nt">&quot;Propagation&quot;</span><span class="p">:</span> <span class="s2">&quot;rprivate&quot;</span><span class="p">,</span>
             <span class="nt">&quot;RW&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
             <span class="nt">&quot;Source&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/local_registry/data&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;bind&quot;</span>
-        <span class="p">},</span>
-        <span class="p">{</span>
-            <span class="nt">&quot;Destination&quot;</span><span class="p">:</span> <span class="s2">&quot;/auth&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;Driver&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;Mode&quot;</span><span class="p">:</span> <span class="s2">&quot;z&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;Options&quot;</span><span class="p">:</span> <span class="p">[</span>
-                <span class="s2">&quot;rbind&quot;</span>
-            <span class="p">],</span>
-            <span class="nt">&quot;Propagation&quot;</span><span class="p">:</span> <span class="s2">&quot;rprivate&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;RW&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-            <span class="nt">&quot;Source&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/kubeinit/local_registry/auth&quot;</span><span class="p">,</span>
             <span class="nt">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;bind&quot;</span>
         <span class="p">}</span>
     <span class="p">],</span>
@@ -561,7 +561,7 @@
     <span class="p">},</span>
     <span class="nt">&quot;OCIRuntime&quot;</span><span class="p">:</span> <span class="s2">&quot;crun&quot;</span><span class="p">,</span>
     <span class="nt">&quot;Path&quot;</span><span class="p">:</span> <span class="s2">&quot;/entrypoint.sh&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;Pod&quot;</span><span class="p">:</span> <span class="s2">&quot;5edc212381f3fb7856e1a34a745efae04b47e3126b3fec13e91eb3e09dd613cc&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;Pod&quot;</span><span class="p">:</span> <span class="s2">&quot;57aebae8229c8c038db6e603568d6eff684db13e8d8f57482336276e0543efda&quot;</span><span class="p">,</span>
     <span class="nt">&quot;ProcessLabel&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
     <span class="nt">&quot;ResolvConfPath&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
     <span class="nt">&quot;RestartCount&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
@@ -585,7 +585,7 @@
         <span class="nt">&quot;StartedAt&quot;</span><span class="p">:</span> <span class="s2">&quot;0001-01-01T00:00:00Z&quot;</span><span class="p">,</span>
         <span class="nt">&quot;Status&quot;</span><span class="p">:</span> <span class="s2">&quot;configured&quot;</span>
     <span class="p">},</span>
-    <span class="nt">&quot;StaticDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/containers/storage/overlay-containers/1cfe143f2cf67be1f9e430d0ed0848404e5a08a9f3872f96719845ab0ac693ce/userdata&quot;</span>
+    <span class="nt">&quot;StaticDir&quot;</span><span class="p">:</span> <span class="s2">&quot;/var/lib/containers/storage/overlay-containers/da72345cd9f47b28320436013dbfda6ba3dd717ffcdccd1ed47973873adabcb9/userdata&quot;</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -770,7 +770,7 @@
                         <a href="#stdout">stdout</a>
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
-                        <div class="codehilite"><pre><span></span>1cfe143f2cf67be1f9e430d0ed0848404e5a08a9f3872f96719845ab0ac693ce
+                        <div class="codehilite"><pre><span></span>da72345cd9f47b28320436013dbfda6ba3dd717ffcdccd1ed47973873adabcb9
 </pre></div>
 
                     </td>
@@ -782,7 +782,7 @@
                     </td>
                     <td role="cell" data-label="Value" class="pf-m-width-80">
                         <div class="codehilite"><pre><span></span><span class="p">[</span>
-    <span class="s2">&quot;1cfe143f2cf67be1f9e430d0ed0848404e5a08a9f3872f96719845ab0ac693ce&quot;</span>
+    <span class="s2">&quot;da72345cd9f47b28320436013dbfda6ba3dd717ffcdccd1ed47973873adabcb9&quot;</span>
 <span class="p">]</span>
 </pre></div>
 
